@@ -25,6 +25,6 @@ To add sources: append to `links.txt`, scrape, analyse into a new batch file, pl
 
 ## State
 
-v1: 63 lessons (153 tricks) across 13 modules, built from 60 posts (one inaccessible). Public repo `mia-cx/free-game`. Every push to main deploys to staging.seo.mia.cx; Changesets release pull requests deploy to seo.mia.cx.
+v1: 63 lessons (153 tricks) across 13 modules, built from 60 posts (one inaccessible). Public repo `mia-cx/earshot`. Every push to main deploys the `earshot-staging` Worker to staging.seo.mia.cx; Changesets release pull requests deploy the `earshot` Worker to seo.mia.cx.
 
 Next: Mia reviews the whole course on staging. Production waits for that review; the first release pull request stays unmerged until she says it's ready.
