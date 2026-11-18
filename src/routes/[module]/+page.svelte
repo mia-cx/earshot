@@ -116,7 +116,7 @@
 		}
 		&[aria-current='step'] {
 			background: var(--accent-soft);
-			box-shadow: inset 4px 0 0 var(--accent);
+			box-shadow: inset 0 0 0 2px var(--accent);
 		}
 	}
 </style>

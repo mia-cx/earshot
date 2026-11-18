@@ -19,7 +19,7 @@ Free Game is read by people with ADHD who are learning marketing from zero. The 
 - **Lesson (`/<module>/<lesson>`)**: reading progress bar along the top (CSS `scroll()` timeline), module pips, lesson body with diagrams placed in it, Check yourself cards, sources, and a footer whose button marks the lesson done (with a check-draw animation), adds its cards to the deck and opens the next lesson. The reading column is centred. Its outline highlights the section being read: it sticks in the right gutter on wide screens and opens from a Contents button at the bottom right on narrower ones. ← and → move between lessons.
 - **Reading rhythm**: each `##` topic reads as its own page, with close to a screen of space above it (`--space-topic` in `layout.css`). Paragraphs sit a blank line apart, and callouts, diagrams and code get more room than prose. A heading sits close to the text it introduces.
 - **Review (`/review`)**: one card at a time with a progress bar. Space reveals, 1 is "Not yet", 2 is "Got it". When nothing is due it says when cards come back and offers a practice round.
-- **Tricks (`/tricks`)**: every cheap trick as a card in course order, filterable by module, with "Pick one for me".
+- **Tricks (`/tricks`)**: every cheap trick as a card bordered in its module's colour, filterable by module, with "Pick one for me". On wide screens the cards form a two-column masonry whose columns end level (`src/lib/balance.ts`), each column in course order.
 - **Sources (`/sources`)**: every cited author, then every lesson's sources grouped by module (`src/lib/server/credits.ts` counts them for the landing page and footer).
 - **Footer**: on every page. The course in one line, the credit count with a link to the sources, the modules, the pages, what agents read (skills, `llms.txt`, sitemap), and who made it: Mia, the 0rwx AI level, the GitHub repo and Svartz.
 - **Lab (`/lab`)**: every diagram under any module colour, for building and checking diagrams. Not linked from the nav.
@@ -30,7 +30,7 @@ Free Game is read by people with ADHD who are learning marketing from zero. The 
 
 ## Lesson anatomy
 
-Enforced by `src/lib/server/build-course.spec.ts`: title, summary, TLDR first, a DO, exactly three CHECK cards, only diagrams that exist, and forms with questions. Callouts render by kind: **TL;DR** (the lesson's idea in one sentence, then numbered key points on a rail), **Cheap trick** (highlighter yellow), **Watch out** (red), **Do it now** (green).
+Enforced by `src/lib/server/build-course.spec.ts`: title, summary, TLDR first, a DO, exactly three CHECK cards, only diagrams that exist, and forms with questions. Callouts are tinted boxes with a thin border all round, never a side stripe, and render by kind: **TL;DR** (the lesson's idea in one sentence, then numbered key points on a rail), **Cheap trick** (highlighter yellow), **Watch out** (red), **Do it now** (green).
 
 ## Worksheets
 

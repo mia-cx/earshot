@@ -98,8 +98,6 @@
 
 	.lesson-sources {
 		margin-top: 1.75rem;
-		padding-left: 1rem;
-		border-left: 3px solid var(--accent-line);
 		& h3 {
 			font-weight: 750;
 			& a:hover {

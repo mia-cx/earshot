@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { tick } from 'svelte';
+	import { balance } from '#lib/balance.ts';
 	import Seo from '#lib/Seo.svelte';
 
 	let { data } = $props();
@@ -9,6 +10,35 @@
 
 	const shown = $derived(filter ? data.tricks.filter((t) => t.module === filter) : data.tricks);
 	const counts = $derived(Object.groupBy(data.tricks, (t) => t.module));
+
+	/** Tailwind's `md`, where the cards go into two columns. */
+	const TWO_COLUMNS = '(width >= 48rem)';
+	let list = $state<HTMLElement>();
+	let columns = $state<(typeof shown)[]>();
+	let placed = $state(false);
+	let width = 0;
+
+	/**
+	 * Masonry: renders the shown cards in CSS columns to measure them, then splits them into two
+	 * columns that end level. Runs within one task, so the measuring layout never paints.
+	 */
+	const place = async () => {
+		placed = false;
+		columns = undefined;
+		width = innerWidth;
+		await document.fonts.ready;
+		await tick();
+		if (list && matchMedia(TWO_COLUMNS).matches) {
+			const cards = [...list.children].map((card) => card.getBoundingClientRect().height + parseFloat(getComputedStyle(card).marginBottom));
+			columns = balance(cards).map((column) => column.map((i) => shown[i]));
+		}
+		placed = true;
+	};
+
+	$effect(() => {
+		void shown;
+		place();
+	});
 
 	/** Picks a random trick from the current filter and moves focus to it. */
 	const pick = async () => {
@@ -53,24 +83,43 @@
 	{/each}
 </div>
 
-<ul class="mt-8 grid items-start gap-5 md:grid-cols-2">
-	{#each shown as trick (trick.key)}
-		<li
-			id={trick.key}
-			tabindex="-1"
-			class="callout {picked === trick.key ? 'ring-4 ring-ink' : ''}"
-			data-kind="trick"
-			data-hue
-			style="--hue: {trick.hue}"
-		>
-			<p class="callout-title">{trick.title}</p>
-			<div class="lesson text-[0.95rem]">{@html trick.html}</div>
-			<a href={trick.lesson.href} class="from mt-3 block text-sm font-semibold underline underline-offset-4">
-				From: {trick.lesson.title}
-			</a>
-		</li>
-	{/each}
-</ul>
+<svelte:window onresize={() => innerWidth !== width && place()} />
+
+{#snippet card(trick: (typeof shown)[number])}
+	<li
+		id={trick.key}
+		tabindex="-1"
+		class="callout {picked === trick.key ? 'ring-4 ring-ink' : ''}"
+		data-kind="trick"
+		data-hue
+		style="--hue: {trick.hue}"
+	>
+		<p class="callout-title">{trick.title}</p>
+		<div class="lesson text-[0.95rem]">{@html trick.html}</div>
+		<a href={trick.lesson.href} class="from mt-3 block text-sm font-semibold underline underline-offset-4">
+			From: {trick.lesson.title}
+		</a>
+	</li>
+{/snippet}
+
+{#if columns}
+	<div class="masonry placed mt-8 grid grid-cols-2 items-start gap-5">
+		{#each columns as column, c (c)}
+			<ul>
+				{#each column as trick (trick.key)}
+					{@render card(trick)}
+				{/each}
+			</ul>
+		{/each}
+	</div>
+{:else}
+	<!-- Without JavaScript, and while measuring: CSS columns, in course order down each column. -->
+	<ul bind:this={list} class="masonry mt-8 gap-5 md:columns-2" class:placed>
+		{#each shown as trick (trick.key)}
+			{@render card(trick)}
+		{/each}
+	</ul>
+{/if}
 
 <style>
 	.chip {
@@ -88,8 +137,17 @@
 			color: var(--paper);
 		}
 	}
+	/* With scripts on, wide screens wait for the level columns instead of painting the measuring layout. */
+	@media (width >= 48rem) {
+		:global([data-js]) .masonry:not(.placed) {
+			visibility: hidden;
+		}
+	}
+
+	/* The border carries the module's colour. */
 	.callout {
-		margin-top: 0;
-		box-shadow: inset 0 4px 0 var(--accent);
+		--edge: var(--accent);
+		margin: 0 0 1.25rem;
+		break-inside: avoid;
 	}
 </style>

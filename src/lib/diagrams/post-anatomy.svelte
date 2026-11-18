@@ -76,8 +76,6 @@
 	dd {
 		display: grid;
 		gap: 0.15rem;
-		padding-left: 0.75rem;
-		border-left: 2px solid var(--accent-line);
 	}
 
 	@container (min-width: 30rem) {

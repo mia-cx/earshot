@@ -120,7 +120,7 @@
 	.test {
 		padding: 0.75rem 0.9rem;
 		border-radius: 10px;
-		border-left: 5px solid;
+		border: 1px solid;
 		transition: background-color var(--duration-quick) var(--ease-out);
 		&[data-zone='0'] {
 			border-color: var(--do-edge);

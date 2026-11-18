@@ -208,7 +208,7 @@
 	}
 
 	.reason {
-		border-left: 4px solid var(--accent);
+		border: 1px solid var(--accent);
 		border-radius: 10px;
 		padding: 0.7rem 0.9rem;
 		background: var(--paper);

@@ -101,7 +101,7 @@ html {
 	--bg: var(--surface);
 	--edge: var(--line);
 	background: var(--bg);
-	border-left: 5px solid var(--edge);
+	border: 1px solid var(--edge);
 	border-radius: 10px;
 	padding: 1rem 1.15rem;
 
@@ -262,8 +262,9 @@ html {
 		}
 	}
 	& blockquote:not(.diagram *, .worksheet *) {
-		border-left: 3px solid var(--line);
-		padding-left: 1rem;
+		padding: 0.9rem 1.1rem;
+		border-radius: 10px;
+		background: var(--surface);
 		color: var(--muted);
 	}
 	& table:not(.diagram *, .worksheet *) {
