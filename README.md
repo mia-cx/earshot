@@ -1,5 +1,12 @@
 # Free Game
 
+<a href="https://0rwx.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://0rwx.com/static/AI-W-dark.svg">
+    <img alt="AI:W" src="https://0rwx.com/static/AI-W-light.svg" height="48">
+  </picture>
+</a>
+
 A marketing and growth course for builders, learned from zero. Rewritten from the best posts people shared for free on X, with credit and links on every lesson.
 
 Built for ADHD brains: every lesson starts with the short version, keeps sections short, marks cheap tricks and risks, and ends with one thing to do now. Your progress stays in your browser.
