@@ -41,10 +41,10 @@
 		goto(next?.href ?? '/');
 	};
 
-	/** ← and → move between lessons, unless the reader is typing or using a modifier. */
+	/** ← and → move between lessons, unless the reader is typing, scrolling a table or using a modifier. */
 	const onkeydown = (event: KeyboardEvent) => {
 		if (event.metaKey || event.ctrlKey || event.altKey || event.shiftKey) return;
-		if (event.target instanceof HTMLElement && event.target.closest('input, textarea, select, [contenteditable]')) return;
+		if (event.target instanceof HTMLElement && event.target.closest('input, textarea, select, table, [contenteditable]')) return;
 		const target = event.key === 'ArrowLeft' ? prev : event.key === 'ArrowRight' ? next : undefined;
 		if (target) goto(target.href);
 	};
@@ -102,7 +102,7 @@
 					<a
 						href={lesson.href}
 						title={lesson.title}
-						aria-label="Lesson {lesson.number}: {lesson.title}"
+						aria-label="Lesson {lesson.number}: {lesson.title}{progress.done.has(lesson.id) ? ', done' : ''}"
 						aria-current={lesson.id === data.lesson.id ? 'page' : undefined}
 						class="pip"
 						data-done={progress.done.has(lesson.id) || undefined}
@@ -151,7 +151,7 @@
 	</article>
 
 	<!-- Wide screens: the outline sits in the right gutter. -->
-	<nav aria-label="In this lesson" class="gutter max-xl:hidden">
+	<nav aria-label="In this lesson" class="gutter">
 		{@render contents()}
 	</nav>
 
@@ -194,26 +194,37 @@
 </div>
 
 <style>
-	/* One centred reading column; the outline gets the right gutter on wide screens. */
+	/*
+	 * One centred reading column; the outline gets the right gutter when the page is wide enough.
+	 * A container query in rem, so enlarged text moves the outline to the Contents button instead
+	 * of pushing the page sideways.
+	 */
 	.page {
+		container-type: inline-size;
 		display: grid;
 		grid-template-columns: minmax(0, 1fr) minmax(0, 40rem) minmax(0, 1fr);
 		& > * {
 			grid-column: 2;
 		}
-		@media (width >= 80rem) {
-			column-gap: 3rem;
-		}
 	}
 
 	.gutter {
+		display: none;
 		grid-column: 3;
 		grid-row: 2;
 		align-self: start;
 		position: sticky;
 		top: 2rem;
 		max-width: 15rem;
-		margin-top: 2rem;
+		margin: 2rem 0 0 3rem;
+		@container (width >= 66rem) {
+			display: block;
+		}
+	}
+
+	/* Focused fields and links near the bottom edge stay clear of the Contents button. */
+	:global(html):has(.contents-toggle) {
+		scroll-padding-bottom: 5rem;
 	}
 
 	.topic {
@@ -235,7 +246,7 @@
 		box-shadow: 0 4px 16px rgb(0 0 0 / 0.12);
 		font-size: 0.95rem;
 		font-weight: 700;
-		@media (width >= 80rem) {
+		@container (width >= 66rem) {
 			display: none;
 		}
 		& svg {
@@ -302,12 +313,14 @@
 		}
 	}
 
+	/* A not-done pip's edge is its only boundary, so it carries the accent (WCAG 1.4.11). */
 	.pip {
 		display: block;
 		width: 1.6rem;
 		height: 0.6rem;
 		border-radius: 999px;
 		background: var(--accent-line);
+		box-shadow: inset 0 0 0 1.5px var(--accent);
 		&:hover {
 			background: var(--muted);
 		}
@@ -316,6 +329,27 @@
 		}
 		&[aria-current='page'] {
 			background: var(--ink);
+			box-shadow: none;
+		}
+	}
+
+	/* Forced colours drop backgrounds, so pips and the reading bar draw in system colours. */
+	@media (forced-colors: active) {
+		.reading {
+			forced-color-adjust: none;
+			background: Highlight;
+		}
+		.pip {
+			forced-color-adjust: none;
+			box-shadow: inset 0 0 0 1.5px LinkText;
+			background: Canvas;
+			&[data-done] {
+				background: LinkText;
+			}
+			&[aria-current='page'] {
+				background: Highlight;
+				box-shadow: none;
+			}
 		}
 	}
 

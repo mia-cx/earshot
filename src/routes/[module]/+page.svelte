@@ -65,6 +65,7 @@
 	</div>
 
 	<div class="mt-12 grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,40rem)]">
+		<h2 class="sr-only">Lessons</h2>
 		<ol class="steps">
 			{#each module.lessons as lesson (lesson.id)}
 				<li>
@@ -82,6 +83,7 @@
 
 		{#if module.diagram}
 			<div class="lg:sticky lg:top-6 [&_.diagram]:mt-0">
+				<h2 class="sr-only">The module in one diagram</h2>
 				<Diagram name={module.diagram} />
 			</div>
 		{/if}
@@ -89,7 +91,9 @@
 </div>
 
 <style>
+	/* The glyph box reaches up into the nav, so clicks pass through to the links under it. */
 	.numeral {
+		pointer-events: none;
 		font-size: clamp(5rem, 16vw, 10rem);
 		line-height: 0.8;
 		font-weight: 800;

@@ -158,7 +158,7 @@ ${questions
 
 	.first-asked {
 		margin-top: 0.15rem;
-		font-size: 0.85rem;
+		font-size: 0.875rem;
 		color: var(--muted);
 		& a {
 			color: inherit;
@@ -178,7 +178,7 @@ ${questions
 		line-height: 1.5;
 		color: var(--ink);
 		background: var(--paper);
-		border: 1px solid var(--line);
+		border: 1px solid var(--field-line);
 		border-radius: 10px;
 		&:focus-visible {
 			outline-offset: 0;
@@ -208,7 +208,7 @@ ${questions
 			border: 1px solid var(--line);
 		}
 		& span {
-			font-size: 0.85rem;
+			font-size: 0.875rem;
 			color: var(--muted);
 		}
 	}

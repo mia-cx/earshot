@@ -18,7 +18,7 @@
 </script>
 
 <figure class="diagram doctor">
-	<ul class="tree" role="group" aria-label="Symptom">
+	<ul class="tree" aria-label="Symptom">
 		{#each branches as b (b.symptom)}
 			{@const lit = symptom === b.symptom}
 			<li class="branch" class:lit>

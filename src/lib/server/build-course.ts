@@ -17,7 +17,7 @@
  *   Forms with the same title are one sheet, and the export holds the whole sheet.
  */
 
-import { Marked, type Tokens } from 'marked';
+import { Marked, Renderer, type Tokens } from 'marked';
 import type { Block, Callout, CalloutKind, Check, Course, Form, Lesson, Module, Question, Trick } from '#lib/course.ts';
 
 /** The fields of a Svartz index entry the course reads. */
@@ -74,6 +74,13 @@ const marked: Marked = new Marked({
 		link({ href, text }: Tokens.Link) {
 			const external = /^https?:/.test(href);
 			return `<a href="${href}"${external ? ' target="_blank" rel="noopener"' : ''}>${text}</a>`;
+		},
+		/** Tables scroll sideways on narrow screens, so keyboard users can focus them, by their columns. */
+		table(token: Tokens.Table) {
+			const label = escapeHtml(`Table: ${token.header.map((cell) => plain(cell.text)).join(', ')}`);
+			return Renderer.prototype.table
+				.call(this, token)
+				.replace('<table>', `<table tabindex="0" aria-label="${label}">`);
 		}
 	}
 });

@@ -94,7 +94,7 @@
 		flex-wrap: wrap;
 		align-items: center;
 		gap: 0.25rem 0.6rem;
-		font-size: 0.85rem;
+		font-size: 0.875rem;
 		font-weight: 700;
 
 		& input {
@@ -117,7 +117,7 @@
 			padding: 0.3rem 0.75rem;
 			border: 1.5px dashed var(--accent-line);
 			border-radius: 999px;
-			font-size: 0.85rem;
+			font-size: 0.875rem;
 			color: var(--muted);
 			animation: grow var(--duration-fast) var(--ease-bounce) both;
 		}

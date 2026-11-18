@@ -132,7 +132,7 @@
 	}
 
 	.axis {
-		font-size: 0.8rem;
+		font-size: 0.875rem;
 		font-weight: 650;
 		color: var(--muted);
 		&.y {
@@ -188,7 +188,7 @@
 		}
 		.diagram-chip {
 			padding-inline: 0.5rem;
-			font-size: 0.8rem;
+			font-size: 0.875rem;
 		}
 	}
 

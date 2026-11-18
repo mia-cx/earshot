@@ -231,6 +231,10 @@
 		display: grid;
 		grid-template-columns: repeat(13, minmax(0, 1fr));
 		gap: 4px;
+		/* Two rows on phones, so each link stays at least 24px wide (WCAG 2.5.8). */
+		@media (width < 30rem) {
+			grid-template-columns: repeat(7, minmax(0, 1fr));
+		}
 		& a {
 			display: grid;
 			place-items: end center;
@@ -397,7 +401,7 @@
 		margin-top: 2rem;
 		display: grid;
 		gap: 2rem;
-		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
 		& h3 {
 			font-size: 1.2rem;
 			font-weight: 800;

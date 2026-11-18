@@ -93,7 +93,7 @@
 			font-variant-numeric: tabular-nums;
 		}
 		& .label {
-			font-size: 0.8rem;
+			font-size: 0.875rem;
 			line-height: 1.3;
 		}
 		& li.current {
@@ -122,7 +122,7 @@
 	.ticks {
 		position: relative;
 		height: 1.1rem;
-		font-size: 0.75rem;
+		font-size: 0.875rem;
 		color: var(--muted);
 		font-variant-numeric: tabular-nums;
 		& span {

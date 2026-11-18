@@ -166,16 +166,21 @@
 		text-wrap: pretty;
 	}
 
+	/*
+	 * Wrapped rows sit far enough apart for a 24px target round each pip (WCAG 2.5.8), and a
+	 * not-done pip's edge carries the accent because it is the pip's only boundary (1.4.11).
+	 */
 	.pips {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 5px;
+		gap: 0.8rem 5px;
 		& a {
 			display: block;
 			width: 1.6rem;
 			height: 0.6rem;
 			border-radius: 999px;
 			background: var(--accent-line);
+			box-shadow: inset 0 0 0 1.5px var(--accent);
 			transition: background-color var(--duration-quick) var(--ease-out);
 			&:hover {
 				background: var(--accent);
@@ -223,6 +228,22 @@
 	@media (prefers-reduced-motion: reduce) {
 		.trail {
 			animation: none;
+		}
+	}
+
+	/* Forced colours drop backgrounds, so pips draw in system colours. */
+	@media (forced-colors: active) {
+		.pips a {
+			forced-color-adjust: none;
+			background: Canvas;
+			box-shadow: inset 0 0 0 1.5px LinkText;
+			&[data-done] {
+				background: LinkText;
+			}
+			&[aria-current='step'] {
+				background: Canvas;
+				box-shadow: inset 0 0 0 3px Highlight;
+			}
 		}
 	}
 </style>

@@ -68,7 +68,7 @@
 	}
 
 	dt {
-		font-size: 0.75rem;
+		font-size: 0.875rem;
 		font-weight: 700;
 		color: var(--accent);
 	}

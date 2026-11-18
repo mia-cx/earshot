@@ -82,6 +82,7 @@
 		</button>
 	{/each}
 </div>
+<p class="sr-only" role="status">{shown.length} {shown.length === 1 ? 'trick' : 'tricks'}</p>
 
 <svelte:window onresize={() => innerWidth !== width && place()} />
 
@@ -94,7 +95,7 @@
 		data-hue
 		style="--hue: {trick.hue}"
 	>
-		<p class="callout-title">{trick.title}</p>
+		<h2 class="callout-title">{trick.title}</h2>
 		<div class="lesson text-[0.95rem]">{@html trick.html}</div>
 		<a href={trick.lesson.href} class="from mt-3 block text-sm font-semibold underline underline-offset-4">
 			From: {trick.lesson.title}

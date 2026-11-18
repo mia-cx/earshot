@@ -84,7 +84,7 @@
 			font-weight: 750;
 		}
 		& .cost {
-			font-size: 0.8rem;
+			font-size: 0.875rem;
 			line-height: 1.3;
 			color: var(--muted);
 			transition: color var(--duration-fast) var(--ease-out);
@@ -93,7 +93,7 @@
 			order: -1;
 			align-self: flex-start;
 			margin-bottom: auto;
-			font-size: 0.75rem;
+			font-size: 0.875rem;
 			font-weight: 750;
 			opacity: 0;
 			translate: 0 var(--distance-micro);

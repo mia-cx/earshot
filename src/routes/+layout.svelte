@@ -5,6 +5,7 @@
 	import { progress } from '#lib/progress.svelte.ts';
 	import { review } from '#lib/review.svelte.ts';
 	import { copyCode } from '#lib/copy.ts';
+	import ReaderSettings from '#lib/ReaderSettings.svelte';
 	import ThemeToggle from '#lib/ThemeToggle.svelte';
 	import type { LayoutProps } from './$types';
 
@@ -32,14 +33,17 @@
 
 <header class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-4 sm:px-6">
 	<a href="/" class="mr-auto text-lg font-[800] tracking-tight whitespace-nowrap">Free Game</a>
-	<nav class="flex items-center gap-3 text-[0.95rem] sm:gap-5">
+	<nav aria-label="Main" class="flex flex-wrap items-center gap-3 text-[0.95rem] sm:gap-5">
 		<a href="/map" aria-current={current('/map')} class="nav-link">Map</a>
 		<a href="/review" aria-current={current('/review')} class="nav-link">
 			Review{#if due}<span class="badge"><span class="sr-only">,</span> {due}<span class="sr-only"> due</span></span>{/if}
 		</a>
 		<a href="/tricks" aria-current={current('/tricks')} class="nav-link">Tricks</a>
 		<span class="text-muted tabular-nums max-sm:hidden">{progress.done.size}/{total} done</span>
-		<ThemeToggle />
+		<span class="flex">
+			<ReaderSettings />
+			<ThemeToggle />
+		</span>
 	</nav>
 </header>
 
@@ -57,7 +61,7 @@
 			</p>
 			<p class="mt-4 max-w-sm">
 				Rewritten from {data.credits.posts} free posts by {data.credits.people} people on X.
-				<a href="/sources" class="footer-link">Every source</a>
+				<a href="/sources" class="footer-link underline">Every source</a>
 			</p>
 		</div>
 
@@ -91,9 +95,11 @@
 			<nav aria-labelledby="footer-made">
 				<h2 id="footer-made">Made by</h2>
 				<ul>
-					<li><a href="https://mia.cx" class="footer-link">Mia</a>, with AI (<a href="https://0rwx.com" class="footer-link">AI:W</a>)</li>
+					<li>
+						<a href="https://mia.cx" class="footer-link underline">Mia</a>, with AI (<a href="https://0rwx.com" class="footer-link underline">AI:W</a>)
+					</li>
 					<li><a href="https://github.com/mia-cx/free-game" class="footer-link">Source on GitHub</a></li>
-					<li>Built with <a href="https://github.com/mia-cx/svartz" class="footer-link">Svartz</a></li>
+					<li>Built with <a href="https://github.com/mia-cx/svartz" class="footer-link underline">Svartz</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -144,14 +150,15 @@
 	.badge {
 		display: inline-grid;
 		place-items: center;
-		min-width: 1.3rem;
-		height: 1.3rem;
+		min-width: 1.45rem;
+		height: 1.45rem;
 		margin-left: 0.3rem;
-		padding-inline: 0.3rem;
+		padding-inline: 0.35rem;
 		border-radius: 999px;
 		background: var(--accent);
 		color: var(--accent-ink);
-		font-size: 0.75rem;
+		font-size: 0.875rem;
+		line-height: 1;
 		font-weight: 800;
 		font-variant-numeric: tabular-nums;
 		vertical-align: 0.1em;

@@ -201,7 +201,7 @@
 		height: 1.5rem;
 		border-radius: 50%;
 		background: var(--accent-soft);
-		font-size: 0.8rem;
+		font-size: 0.875rem;
 		font-weight: 750;
 		font-variant-numeric: tabular-nums;
 	}
@@ -223,7 +223,7 @@
 		border: 1.5px solid var(--accent);
 		border-radius: 999px;
 		padding: 0.3rem 0.85rem;
-		font-size: 0.85rem;
+		font-size: 0.875rem;
 		font-weight: 700;
 		color: var(--ink);
 		transition: background-color var(--duration-quick) var(--ease-out);

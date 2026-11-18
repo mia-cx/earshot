@@ -118,7 +118,7 @@
 		gap: 0.4rem;
 		padding-block: 0.3rem;
 		color: var(--muted);
-		font-size: 0.8rem;
+		font-size: 0.875rem;
 		& svg {
 			flex: none;
 			color: var(--accent);
@@ -164,7 +164,7 @@
 	}
 
 	.makes {
-		font-size: 0.8rem;
+		font-size: 0.875rem;
 		line-height: 1.3;
 		color: var(--muted);
 		transition: color var(--duration-quick) var(--ease-out);
@@ -196,7 +196,7 @@
 		border: 1.5px solid var(--risk-edge);
 		border-radius: 999px;
 		background: var(--paper);
-		font-size: 0.8rem;
+		font-size: 0.875rem;
 		font-weight: 650;
 		animation: ask-in var(--duration-fast) var(--ease-smooth-out) both;
 	}

@@ -94,7 +94,7 @@
 		padding-top: calc(6% - 0.65em);
 		border: 1.5px solid var(--accent-line);
 		border-radius: 50%;
-		font-size: 0.75rem;
+		font-size: 0.875rem;
 		font-weight: 650;
 		line-height: 1.3;
 		color: var(--ink);

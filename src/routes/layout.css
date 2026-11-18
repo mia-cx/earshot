@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "@fontsource-variable/atkinson-hyperlegible-next";
 @import "@fontsource/atkinson-hyperlegible-mono/400.css";
+@import "@fontsource-variable/lexend";
 
 /*
  * Roles, not hues. See DESIGN.md. Each token is `light-dark(light, dark)`: the page follows the
@@ -22,6 +23,16 @@
 	--do-bg: light-dark(#dff3e7, #12301f);
 	--do-edge: light-dark(#0f7a4a, #4cc38a);
 	--focus: light-dark(#2563eb, #7aa7ff);
+	/* The edge of a text field, its only boundary: at least 3:1 (WCAG 1.4.11). */
+	--field-line: light-dark(oklch(0.6 0.015 75), oklch(0.56 0.015 75));
+}
+
+/* Readers who ask for more contrast get darker secondary text and visible rules. */
+@media (prefers-contrast: more) {
+	:root {
+		--muted: light-dark(oklch(0.42 0.015 75), oklch(0.82 0.015 75));
+		--line: var(--field-line);
+	}
 }
 
 :root[data-theme="light"] {
@@ -58,7 +69,7 @@
  */
 :root,
 [data-hue] {
-	--accent: light-dark(oklch(0.52 0.13 var(--hue, 155)), oklch(0.78 0.12 var(--hue, 155)));
+	--accent: light-dark(oklch(0.5 0.13 var(--hue, 155)), oklch(0.78 0.12 var(--hue, 155)));
 	--accent-ink: light-dark(#ffffff, oklch(0.2 0.03 var(--hue, 155)));
 	--accent-soft: light-dark(oklch(0.95 0.035 var(--hue, 155)), oklch(0.26 0.04 var(--hue, 155)));
 	--accent-line: light-dark(oklch(0.84 0.07 var(--hue, 155)), oklch(0.42 0.07 var(--hue, 155)));
@@ -69,7 +80,7 @@
 	--color-accent-ink: var(--accent-ink);
 	--color-accent-soft: var(--accent-soft);
 	--color-accent-line: var(--accent-line);
-	--font-sans: "Atkinson Hyperlegible Next Variable", system-ui, sans-serif;
+	--font-sans: var(--font-reader);
 	--font-mono: "Atkinson Hyperlegible Mono", ui-monospace, monospace;
 	--color-paper: var(--paper);
 	--color-surface: var(--surface);
@@ -82,11 +93,50 @@
 	--color-trick-edge: var(--trick-edge);
 }
 
+/*
+ * Reading settings (src/lib/ReaderSettings.svelte), set as data attributes on <html> before first
+ * paint by app.html. Fonts are named, not ranked: the best one differs per reader.
+ */
+:root {
+	--font-atkinson: "Atkinson Hyperlegible Next Variable", system-ui, sans-serif;
+	--font-lexend: "Lexend Variable", system-ui, sans-serif;
+	--font-system: system-ui, sans-serif;
+	--font-reader: var(--font-atkinson);
+	--text-scale: 1;
+}
+
+:root[data-font="lexend"] {
+	--font-reader: var(--font-lexend);
+}
+
+:root[data-font="system"] {
+	--font-reader: var(--font-system);
+}
+
+:root[data-text-size="115"] {
+	--text-scale: 1.15;
+}
+
+:root[data-text-size="130"] {
+	--text-scale: 1.3;
+}
+
+/* Roomy widens letters and words together (never letters alone) and paragraph gaps. */
+:root[data-spacing="roomy"] {
+	--space-paragraph: 2.25rem;
+	& body {
+		letter-spacing: 0.05em;
+		word-spacing: 0.2em;
+	}
+}
+
 html {
 	background: var(--paper);
 	color: var(--ink);
-	font-family: var(--font-sans);
-	font-size: 112.5%;
+	font-family: var(--font-reader);
+	font-size: calc(112.5% * var(--text-scale));
+	/* At the largest text size a long word can outgrow a 320px column; break it rather than scroll. */
+	overflow-wrap: break-word;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -165,6 +215,8 @@ html {
 .lesson {
 	max-width: 40rem;
 	line-height: 1.65;
+	/* Long URLs break instead of pushing a narrow page sideways (WCAG 1.4.10). */
+	overflow-wrap: anywhere;
 
 	& > * + * {
 		margin-top: var(--space-paragraph);
@@ -231,7 +283,7 @@ html {
 	& pre:not(.diagram *, .worksheet *) {
 		position: relative;
 		font-family: var(--font-mono);
-		font-size: 0.85rem;
+		font-size: 0.875rem;
 		line-height: 1.55;
 		background: var(--surface);
 		border: 1px solid var(--line);
@@ -251,7 +303,7 @@ html {
 			min-width: 4rem;
 			padding: 0.25rem 0.6rem;
 			font-family: var(--font-sans);
-			font-size: 0.8rem;
+			font-size: 0.875rem;
 			font-weight: 700;
 			background: var(--paper);
 			border: 1px solid var(--line);
@@ -327,7 +379,7 @@ html {
 				border-radius: 999px;
 				background: var(--ink);
 				color: var(--paper);
-				font-size: 0.8rem;
+				font-size: 0.875rem;
 				font-weight: 800;
 			}
 			/* The rail joining each step to the next. */
@@ -364,7 +416,7 @@ html {
 
 	& figcaption {
 		margin-top: 1rem;
-		font-size: 0.85rem;
+		font-size: 0.875rem;
 		color: var(--muted);
 	}
 }
@@ -386,7 +438,7 @@ html {
 	border: 1.5px solid var(--accent-line);
 	border-radius: 999px;
 	padding: 0.3rem 0.75rem;
-	font-size: 0.85rem;
+	font-size: 0.875rem;
 	font-weight: 650;
 	background: var(--paper);
 	transition:

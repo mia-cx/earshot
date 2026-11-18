@@ -99,7 +99,7 @@
 		border: 1.5px solid var(--accent-line);
 		border-radius: 10px;
 		background: var(--paper);
-		font-size: 0.85rem;
+		font-size: 0.875rem;
 		font-weight: 650;
 		line-height: 1.25;
 		transition:
@@ -123,7 +123,7 @@
 
 	.note {
 		display: block;
-		font-size: 0.75rem;
+		font-size: 0.875rem;
 		font-weight: 500;
 	}
 
