@@ -91,8 +91,14 @@ Programmatic SEO means generating many pages from one template and a data source
 >
 > Pace matters on a new site too. Dulait's earlier product, a business plan generator, had real demand and low competition, and never ranked: a brand-new domain with no brand searches and no backlinks, publishing at a rate that looked like generated content. Start slower than you can produce: the authors TheoAGI read suggest 1 to 4 new pages a week. They disagree on the number, not the direction.
 
+> [!FORM] Your purchase pages
+> 1. Which of the five purchase pages do you already have: pricing, comparisons, "alternative to X", migration guides, feature and integration demos?
+> 2. Which one is the first missing?
+> 3. A headline for that page.
+> 4. Three bullet points for that page.
+
 > [!DO] List your purchase pages
-> Write down the five purchase pages from the list above, mark which ones you already have, and draft the headline and three bullet points for the first missing one.
+> Fill in your purchase pages above, then download them.
 
 > [!CHECK] Which pages do buyers look for before they pay?
 > Pricing, comparisons against each rival, "alternative to X" pages, migration guides, and feature or integration demos. Put a trial or demo button on every one.

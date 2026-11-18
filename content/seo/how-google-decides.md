@@ -54,8 +54,13 @@ The same marketer points to a second edge: in new or fast-moving categories, man
 
 AI removes the excuses for skipping audits, but it can't choose which keywords make money or read your market for you. And sometimes a competitor outranks you for reasons no page can fix. One local SEO consultant's example: a business that has sponsored local youth sports for 10 years and earned links from every local news site. Check what a competitor does offline before you try to out-write them.
 
+> [!FORM] Your page's gap
+> 1. Which article is your most important? Give its URL and main keyword.
+> 2. Which of the three angles from the prompt will you add?
+> 3. Your paragraph for that angle, written from your own experience.
+
 > [!DO] Find one gap in your best page
-> Paste your most important article into the prompt above, pick one of the three angles it suggests, and write one paragraph from your own experience to add to the page.
+> Paste your most important article into the prompt above. Fill in your page's gap with one of the angles it suggests, download it, and add the paragraph to the page.
 
 > [!CHECK] What signals make a page easy for readers and Google to trust?
 > A real byline linked to the author's experience, firsthand tests shown on the page, a factual About page, and the same company facts everywhere you appear.

@@ -20,13 +20,17 @@ Kunal argues that smoother onboarding alone puts you ahead of 90% of projects. T
 
 ## Know why people stay and why they leave
 
-Retention is harder than acquisition, so answer these questions early:
+Retention is harder than acquisition, so answer these questions early, starting with your onboarded event:
 
-- **Hero features:** which features bring people back?
-- **Levelling up:** how does a casual user become a power user?
-- **Segments:** split users by the usage numbers that matter for your product.
-- **Churn:** track why people leave, and plan campaigns to win them back.
-- **Analytics:** Google Analytics for the website, plus a product analytics tool for what happens inside the product. Kunal uses Redash and Dune for on-chain data.
+> [!FORM] Your retention plan
+> 1. Which single action means a new user got value? Finish the sentence: "A user is onboarded when they…"
+> 2. How many of last month's sign-ups did it? Check your analytics.
+> 3. Hero features: which features bring people back?
+> 4. Levelling up: how does a casual user become a power user?
+> 5. Segments: which usage numbers matter for your product, so you can split users by them?
+> 6. Churn: why do people leave, and which campaign would win them back?
+
+For the numbers, use Google Analytics for the website, plus a product analytics tool for what happens inside the product. Kunal uses Redash and Dune for on-chain data.
 
 Pricing belongs here too. Write down why, how and what you'll charge on day one. Free with no revenue model doesn't last. *Read your pricing from your numbers* covers the signals that tell you the price is wrong.
 
@@ -66,7 +70,7 @@ If you sell a service or a membership, weekly check-ins are part of retention. *
 > ```
 
 > [!DO] Write your onboarded event
-> Write one sentence naming the single action that means a new user got value. Then check your analytics: how many of last month's sign-ups did it? Write both down at the top of your roadmap.
+> Fill in the first two questions of your retention plan above: your onboarded event, and how many of last month's sign-ups did it. Download the plan and put both answers at the top of your roadmap.
 
 > [!CHECK] In retention, how do you define "onboarded"?
 > As one event: the first action that delivers value, such as "first document shared" in a writing app.

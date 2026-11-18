@@ -150,8 +150,12 @@ Spend the least you can per usable second. Then let the coding agent do post-pro
 
 Agents can't feel motion or hear sound. Watching and listening stays your job.
 
+> [!FORM] Your character sheet
+> 1. Which character from your film is this?
+> 2. Every fixed detail with its position ("tattoo on left forearm", "red scarf, knot on the right").
+
 > [!DO] Make one character sheet
-> Pick one character for your film. List every fixed detail with its position ("tattoo on left forearm", "red scarf, knot on the right"), then generate a front view and a side view from that list. Save both images with the list as `characters/<name>.md`.
+> Fill in your character sheet above and download it as `characters/<name>.md`. Then generate a front view and a side view from that list, and save both images next to it.
 
 > [!CHECK] In AI video, in what order do you fix a bad clip?
 > Trim it if the problem is only at the start or end, then try fixing it in code, and reshoot only after changing the prompt or frames. Keep the old take.

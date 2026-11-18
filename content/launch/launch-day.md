@@ -57,14 +57,15 @@ Gandhi's warning: mediocre influencers deliver numbers that turn into nothing. A
 
 Fit means they live with the problem and their audience would plausibly try the product. Read their posts and replies first: who pays attention, what questions come up? Then give them real access and let them write their own take. If every creator posts the same paragraph, you've lost the point.
 
-> [!TRICK] Brief a creator in five lines
-> - Here's what the product does.
-> - Here's what you can test yourself.
-> - This is the part I think your audience would care about.
-> - Here's the evidence behind the claim.
-> - What's your take after trying it?
->
-> Offer a call if they need help understanding it.
+Brief each creator in five lines: what the product does, what they can test themselves, the part their audience would care about, the evidence behind the claim, and a closing question: "What's your take after trying it?"
+
+> [!FORM] Your creator brief
+> 1. What do we do? What problem do we solve? Give one short, precise answer.
+> 2. What can the creator test themselves?
+> 3. Which part do you think their audience would care about?
+> 4. What's the evidence behind the claim?
+
+Offer a call if they need help understanding it.
 
 > [!RISK] Undisclosed paid posts
 > Paid posts without disclosure break platform rules and advertising law in many countries. Disclose every paid partnership.

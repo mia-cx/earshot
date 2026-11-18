@@ -14,13 +14,13 @@ description: Go from no clarity to a public marketing flywheel in seven days.
 
 Kunal Gandhi wrote this plan for a marketer joining a day-0 crypto project, but nothing in it depends on crypto. It works for any product with no marketing yet, including your own.
 
-**Day 1, clarity.** Before you touch X or design a banner, answer five questions in one doc. If you can't, you don't understand the product yet.
+**Day 1, clarity.** Before you touch X or design a banner, answer five questions in one doc: what you do, what problem you solve, which category you compete in, why you're better, and who exactly you're for. If you can't, you don't understand the product yet.
 
-- What do we do?
-- What problem do we solve?
-- In which category do we compete?
-- Why are we better?
-- Who exactly are we for?
+> [!FORM] Your clarity doc
+> 1. What do we do? What problem do we solve? Give one short, precise answer.
+> 2. Which market category do we compete in?
+> 3. Why is our approach the best? What sets us apart?
+> 4. Target audience: who exactly are we for?
 
 **Day 2, positioning.** Run the Goal → Audience → Creative → Channel plan from *Fit your strategy on one page*. Map three messaging pillars: "What we build", "Why now" and "Who it's for". Check them with the founders and developers, because marketing is not separate from the product.
 
@@ -50,7 +50,7 @@ Keep the weekly recap thread going, track daily execution in one place, and revi
 The plan is the author's own playbook. The post was bookmarked 223 times, but it reports no outcomes, so treat it as a sensible order of work rather than a proven result.
 
 > [!DO] Do day 1 now
-> Open a doc and answer the five clarity questions in one sentence each. Leave any you can't answer highlighted: that's your first conversation with the founders or with yourself.
+> Fill in your clarity doc above, one sentence each, then download it. Leave any you can't answer blank: that's your first conversation with the founders or with yourself.
 
 > [!CHECK] On day 1 of marketing a brand-new product, what five questions do you answer?
 > What do we do, what problem do we solve, in which category do we compete, why are we better, and who exactly are we for?

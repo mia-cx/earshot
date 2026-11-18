@@ -72,8 +72,15 @@ These lists are for discovery: pick only entries where you qualify and your buye
 > [!RISK] Empty profiles and reciprocal badges
 > Listings that require a link back to them, and mass submissions to many directories, can count as link schemes under Google's spam policies. A profile created only to hold your URL adds nothing. Fill in every profile you create, and skip directories whose free route demands a reciprocal badge.
 
+> [!FORM] Your link kit
+> 1. What do we do? What problem do we solve? Give one short, precise answer.
+> 2. Which URL should every listing point to?
+> 3. Your one-line description, identical on every listing.
+> 4. Your one-paragraph description, to tailor to each audience.
+> 5. Your founder bio, in two sentences.
+
 > [!DO] Build your submission kit
-> Create a folder named "Link kit" with your URL, a one-line and a one-paragraph description, your logo, three screenshots and a two-sentence founder bio. Next Monday, use it on your first five prospects.
+> Fill in your link kit above and download it. Put it in a folder named "Link kit" with your logo and three screenshots. Next Monday, use it on your first five prospects.
 
 > [!CHECK] What does each weekday of the five-a-week backlink routine cover?
 > Monday research and qualify five prospects, Tuesday prepare materials, Wednesday submit or pitch, Thursday follow up, Friday check approvals and update your tracker.

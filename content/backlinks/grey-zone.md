@@ -73,8 +73,14 @@ Press-release sites host your announcement; they are not news coverage. Use them
 > [!RISK] Little SEO value
 > A hosted release carries little SEO value and is not independent coverage. Don't count it as press, and don't pay for distribution expecting rankings.
 
+> [!FORM] Your link policy
+> 1. Paid roundup spots: "yes", "no" or "only if"? Give your reason.
+> 2. Link exchanges: "yes", "no" or "only if"? Give your reason.
+> 3. Exact-match "best X" domains: "yes", "no" or "only if"? Give your reason.
+> 4. Press-release sites: "yes", "no" or "only if"? Give your reason.
+
 > [!DO] Write your link policy
-> In your marketing doc, write one line per tactic above: paid roundups, link exchanges, exact-match domains, press releases. Mark each "yes", "no" or "only if", with your reason.
+> Fill in your link policy above, one line per tactic: mark each "yes", "no" or "only if", with your reason. Then download it.
 
 > [!CHECK] When does Google allow a paid link?
 > Only when it's marked `rel="sponsored"` or `nofollow`, so it passes no ranking credit. An unmarked paid link counts as link spam.

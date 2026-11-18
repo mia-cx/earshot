@@ -31,6 +31,15 @@ Generic AI output usually means the AI knows nothing about your business. The re
 - Your GBP details: categories, attributes, photos, services.
 - A prompt library, one file per SEO task.
 
+> [!FORM] Your business file
+> 1. Your business name, address and phone number, exactly as they appear everywhere.
+> 2. Your website and Google Business Profile URL.
+> 3. Which areas do you serve?
+> 4. Which keywords do you want to rank for?
+> 5. Which competitors show up in the map pack? Give each one's Google Business Profile URL.
+> 6. Your primary and secondary Google Business Profile categories.
+> 7. Which secondary category do the map-pack leaders have that you're missing?
+
 ## Copy the map-pack leaders' profiles
 
 **Your primary and secondary GBP categories decide which searches show you on the map.** Adding a missing secondary category is often the fastest local win. The author says clients who added one appeared for new searches within a week.
@@ -89,7 +98,7 @@ Run the audits in order of impact, one block a week, then switch to a steady rou
 > The author names attribute, description and photo audits but doesn't share those prompts. He claims 90 days of this outranks long-established businesses; that's his unverified claim.
 
 > [!DO] Run the category audit
-> Run the category audit prompt for your main service and city, and add one secondary category the map-pack leaders have that you're missing.
+> Run the category audit prompt for your main service and city. Note the missing secondary category in your business file above, add it to your profile, then download the file for your agent's folder.
 
 > [!CHECK] On a Google Business Profile, what change often gives the fastest local ranking win?
 > Adding a secondary category the map-pack leaders have and you're missing. Your categories decide which searches show you on the map.

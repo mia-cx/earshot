@@ -55,8 +55,15 @@ If you want AI to write first drafts, keep the last pass for yourself and make t
 
 *Give each bot one job* covers how to set up bots like this one safely.
 
+> [!FORM] Your voice card
+> 1. How do you want to come across? Pick one: smart, funny or blunt.
+> 2. Which opinion do you hold that others in your field don't?
+> 3. Which second opinion do you hold that others in your field don't?
+> 4. Which story actually happened to you?
+> 5. Which quirk will you keep?
+
 > [!DO] Write a five-line voice card
-> In a note, write: how you want to come across (pick one: smart, funny or blunt), two opinions you hold that others in your field don't, one story that actually happened to you, and one quirk you'll keep. Keep the note open next to your drafts.
+> Fill in your voice card above, one line each, then download it. Keep it open next to your drafts.
 
 > [!CHECK] In writing, why is your voice the lasting difference between you and others posting on the same topic?
 > Anyone can copy your hooks and formats, but nobody can copy how you sound.

@@ -59,6 +59,7 @@ description: Write a positioning doc you can test today.
 > [!FORM] Your positioning doc
 > 1. A question the reader answers on the page.
 > 2. Each list item becomes an answer field; answers download as Markdown or PDF.
+> 3. An earlier lesson's question, repeated word for word, shows the reader's answer to refine.
 
 > [!DO] One small action
 > Something you can finish in 20 minutes.

@@ -20,9 +20,12 @@ Test the brief with one question: could the bot finish without asking you, the c
 
 A messy first automation makes the whole tool look bad. Start with a job that passes all three checks, and leave anything that fails one for month two:
 
-1. It happens every week.
-2. It touches 2 or more of your apps.
-3. The steps don't change from one run to the next.
+> [!FORM] Your first bot's job
+> 1. Which 3 tasks did you do last week?
+> 2. Does it happen every week? Yes or no for each task.
+> 3. Does it touch 2 or more of your apps? Yes or no for each task.
+> 4. Do the steps stay the same from one run to the next? Yes or no for each task.
+> 5. Which task got three yeses? That's your first bot's job.
 
 ## Fill in the charter
 
@@ -84,7 +87,7 @@ One clean run only proves the easy case. Run the job manually on 3 different inp
 > Triggers: use the clock for reports (weekdays at 7am, the 1st of the month). Use events, such as a new Slack message, for anything that only matters when something happens, where your tool supports it.
 
 > [!DO] Score three jobs against the checks
-> Write down 3 tasks you did last week. Next to each, mark yes or no for weekly, 2+ apps and stable steps. Circle the one with three yeses: that's your first bot.
+> Fill in your first bot's job above for 3 tasks you did last week: yes or no for weekly, 2+ apps and stable steps. The one with three yeses is your first bot. Then download it.
 
 > [!CHECK] What three checks should the job for your first bot pass?
 > It happens every week, it touches 2 or more of your apps, and its steps don't change from run to run.

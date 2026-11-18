@@ -152,8 +152,13 @@ Shot design and colour decide quality more than plot does. Each shot needs a dif
 
 Once the shot list and palette are approved, move on to *Generate AI shots without rerolls*.
 
+> [!FORM] Your film
+> 1. The film you want, about your product, in one sentence.
+> 2. Song: title, length and BPM, or none.
+> 3. Reference film, if any.
+
 > [!DO] Get a story for a 15-second film
-> Fill in the first three lines of the story prompt (film idea, 15 seconds, song or none) for a short film about your product. Paste it into any chat model, answer its questions, and save the shot-by-shot story it returns as `story.md`.
+> Fill in your film above, then copy your answers into the first three lines of the story prompt, with 15 seconds as the length. Paste it into any chat model, answer its questions, and save the shot-by-shot story it returns as `story.md`.
 
 > [!CHECK] In an AI video setup with Claude Code, Codex and Seedance, what does each one do?
 > Claude Code directs: story, prompts, checks and post-production. Codex draws the frames, and Seedance animates between first and last frames, while you approve direction and spend.

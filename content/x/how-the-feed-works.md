@@ -48,8 +48,12 @@ X keeps one post per conversation in the feed. Epstein's example: spread a launc
 
 The main post has to stand alone: everything a stranger needs, with nothing left for the replies to explain. *Give strangers a reason to care* covers what goes in it.
 
+> [!FORM] Your cluster
+> 1. Which interest community do you want X to put you in? Name it in one line.
+> 2. How many of your last 10 posts stay inside it?
+
 > [!DO] Name your cluster
-> Write one line naming the interest community you want X to put you in. Then tick each of your last 10 posts that stays inside it, and count the ticks.
+> Fill in your cluster above, then download it. To count, tick each of your last 10 posts that stays inside the community.
 
 > [!CHECK] What three stages does every post pass through in X's For You feed?
 > X finds candidate posts, scores each one per viewer, then filters some out.

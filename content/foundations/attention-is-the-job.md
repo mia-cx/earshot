@@ -33,6 +33,13 @@ If a user can't figure out your product, no ad fixes that. Read the original: [T
 
 > [!DIAGRAM] circles
 
+> [!FORM] Your four circles
+> 1. Product: where does it stand today?
+> 2. Usability and support: where do they stand today?
+> 3. Story, price, community, tribe: where do they stand today?
+> 4. Ads, hype, clicks: where do they stand today?
+> 5. Which ring is the weakest?
+
 ## Community follows a good product
 
 A great community forms around a great product. Teams that build a community before they have something worth gathering around end up with nothing that lasts. That's one marketer's observation (@kunalvg) from watching many crypto projects.
@@ -44,7 +51,7 @@ So marketing's job is simpler than it looks: make sure everyone who should know 
 Good execution of the right strategy beats great execution of a mediocre one, and most teams are running a mediocre strategy. You still need both. The rest of this module gives you the strategy half: who you're for (*Say what you are, for whom, against what*), what buyers say (*Research a market in an afternoon*) and a plan (*Fit your strategy on one page*).
 
 > [!DO] Draw your four circles
-> On one page, write one line for each of Godin's four rings as it stands for your product today. Circle the weakest ring. That's where your next hour of marketing goes.
+> Fill in your four circles above, one line for each of Godin's rings as it stands for your product today, and name the weakest ring. That's where your next hour of marketing goes. Then download it.
 
 > [!CHECK] In Seth Godin's circles of marketing, what sits at the centre and what sits in the outermost ring?
 > The product sits at the centre, then usability and support, then story, price, community and tribe. Ads, hype, buzz and clicks sit in the outermost ring.

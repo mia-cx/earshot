@@ -232,8 +232,14 @@ Trend Radar judges each trend on one thing: would your buyer care. Size doesn't 
 > comment. Save it as social/comments.md.
 > ```
 
+> [!FORM] Your social brief
+> 1. What do we do? What problem do we solve? Give one short, precise answer.
+> 2. Target audience: who exactly are we for?
+> 3. Which claims are off limits?
+> 4. Which result do we want from content: calls, signups or sales?
+
 > [!DO] Write social/brief.md
-> Create a `social/` folder and a `brief.md` inside it with four lines: what you sell, who buys it, claims that are off limits, and the result you want from content (calls, signups or sales). Every bot reads this file first.
+> Fill in your social brief above: what you sell, who buys it, claims that are off limits, and the result you want from content. Download it as Markdown and save it as `brief.md` in a new `social/` folder. Every bot reads this file first.
 
 > [!CHECK] In a team of social research bots, how do the bots share their work?
 > Through files in one shared folder. Each bot writes to its own file, and a head bot reads them all and sends you the best ideas.

@@ -38,17 +38,19 @@ Before you publish, ask: **what could a stranger add to this?** If you can't ans
 
 Start from a conversation people already have, then put your product inside it. Attach the claim to something people already feel, so it reads bigger than the product.
 
-> [!TRICK] Answer six questions before writing launch copy
+Answer six questions before you write launch copy. The enemy builds on what you're against in *Say what you are, for whom, against what*, so your answer from there comes first. The customers' exact words are what *Research a market in an afternoon* collects.
+
+> [!FORM] Your launch narrative
 > 1. What does the market already love?
 > 2. What does the market already hate?
-> 3. Who is the enemy?
-> 4. What is the highest-status outcome?
-> 5. What exact words do customers use?
-> 6. What is the most polarizing thing you can say that's true?
->
-> Example from the source: a hospital intake and notes software launch started as "first step toward medical superintelligence, $24M raised, 10M+ patients". True, but any health-AI company could say it. The rewrite gave four groups a reason to reply: patients who'd been told "it's probably nothing", families who lost someone to a late diagnosis, clinicians, and people who argue about AI. The author's agency reports 1.5M views on day one and a trending launch (their own claim).
+> 3. What are we against? Name a status quo, a bad habit or an incumbent way of doing things.
+> 4. Who is the enemy?
+> 5. What is the highest-status outcome?
+> 6. What exact words do customers use?
+> 7. What is the most polarizing thing you can say that's true?
+> 8. What could a stranger add to this?
 
-Questions 3 and 5 overlap with work you may have done already: see *Say what you are, for whom, against what* and *Research a market in an afternoon*.
+Example from the source: a hospital intake and notes software launch started as "first step toward medical superintelligence, $24M raised, 10M+ patients". True, but any health-AI company could say it. The rewrite gave four groups a reason to reply: patients who'd been told "it's probably nothing", families who lost someone to a late diagnosis, clinicians, and people who argue about AI. The author's agency reports 1.5M views on day one and a trending launch (their own claim).
 
 ## Treat each launch as a small go-to-market
 
@@ -57,7 +59,7 @@ A launch is not one post. Each one needs its own ideal customer, its own channel
 A launch is a single moment. Your brand is what people see the rest of the year (see *Build a brand, not a viral hit*). Both matter: the launch gets the spike, the brand keeps the people it brings.
 
 > [!DO] Answer the six questions for your next launch
-> Open a doc and write one line for each of the six narrative questions, then one line for "what could a stranger add to this?". Keep it next to you when you write the launch post.
+> Fill in your launch narrative above, one line per question, then download it. Keep it next to you when you write the launch post.
 
 > [!CHECK] What question does every launch post have to answer for a stranger scrolling past?
 > "Why do I care?" They decide in under a second, so announcement language like "We're excited to announce" never passes.

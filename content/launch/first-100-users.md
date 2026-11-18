@@ -58,8 +58,15 @@ Every description should say **what it does, for whom, and how it differs**. "Th
 
 Write that core once, then adjust the wording to each site's audience instead of pasting the same promotional copy everywhere. For each listing, prepare screenshots, pick the categories that actually match, and check the product URL works.
 
+> [!FORM] Your launch listing
+> 1. Which five places from the lists above do your buyers already browse?
+> 2. What do we do? What problem do we solve? Give one short, precise answer.
+> 3. Who would be most interested? What do the most excited users have in common, and where can we find them?
+> 4. Why is our approach the best? What sets us apart?
+> 5. Your description, in two sentences: what it does, for whom, and how it differs.
+
 > [!DO] Pick your five places
-> From the lists above, choose five places your buyers already browse. Write them in a doc with your two-sentence description underneath: what it does, for whom, how it differs.
+> Fill in your launch listing above: five places your buyers already browse, and your two-sentence description built from your positioning answers. Then download it.
 
 > [!CHECK] What three things should every launch site or directory description say?
 > What the product does, for whom, and how it differs. "The ultimate AI-powered productivity platform" says none of them.

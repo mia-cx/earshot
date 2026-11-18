@@ -48,8 +48,13 @@ Use this rule: every post needs its own job. A daily article plus a few posts th
 
 Platform guides like the ones this module draws on run to thousands of words. Ryan's suggestion: tag Grok on the post, or paste the guide into any assistant, and ask what the algorithm rewards, the best practices, and how to increase your reach. Then ask how it applies to your account and your last few posts.
 
+> [!FORM] Your article plan
+> 1. Which interest community do you want X to put you in? Name it in one line.
+> 2. Your one topic.
+> 3. 10 article titles for that topic, each with a number in the first line.
+
 > [!DO] Write ten titles
-> Pick your one topic and write 10 article titles for it, each with a number in the first line. Save them as your next two weeks of articles.
+> Fill in your article plan above, then download it as your next two weeks of articles.
 
 > [!CHECK] On X, what three parts of an article show in the feed and should tell one story?
 > The cover image, the title and the first line.

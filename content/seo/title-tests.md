@@ -75,8 +75,15 @@ If you want an answer before touching the page, you can buy one.
 > [!RISK] Ad spend on quiet keywords
 > This costs real money, and a low-volume keyword may never reach 1,000 impressions per ad. Set a total budget before you start, and skip this test for keywords with little search volume.
 
+> [!FORM] Your title test
+> 1. Which page is furthest below its CTR benchmark? Give its URL, position and CTR.
+> 2. Before you change anything: today's date, its clicks and its CTR.
+> 3. Title 1: query first, a specific promise, a reason to click now, under 60 characters.
+> 4. Title 2: query first, a specific promise, a reason to click now, under 60 characters.
+> 5. Title 3: query first, a specific promise, a reason to click now, under 60 characters.
+
 > [!DO] Find one underperforming title
-> In Search Console, filter pages to position 3 to 10, find the one furthest below its CTR benchmark, and write three new titles for it with the recipe above.
+> In Search Console, filter pages to position 3 to 10 and find the one furthest below its CTR benchmark. Fill in your title test above with three new titles from the recipe, then download it.
 
 > [!CHECK] Which pages make the best SEO title-test targets?
 > Pages ranking 3 to 10 whose click rate is 40% or more below normal for their position. A position-4 page under 1% is a first target.

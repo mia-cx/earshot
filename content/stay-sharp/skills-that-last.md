@@ -14,9 +14,12 @@ description: Choose skills that AI amplifies, and keep the ones you need to supe
 
 The skills that pay are the ones where AI makes someone who already knows a field faster. Skills AI can do without you are losing value. Run any skill you're considering through **three questions**:
 
-1. Do people already pay for this result today?
-2. Does AI make you faster at it, instead of doing it without you?
-3. Does it need knowledge of a field, like sales, health or law?
+> [!FORM] Your skill test
+> 1. Which three skills are you considering?
+> 2. Do people already pay for this result today? Answer yes or no for each skill.
+> 3. Does AI make you faster at it, instead of doing it without you? Yes or no for each skill.
+> 4. Does it need knowledge of a field, like sales, health or law? Yes or no for each skill.
+> 5. Which skill got three yeses?
 
 If it passes all three, it's worth learning. The author, @notkvtwts, cites these studies to back the split (not checked here):
 
@@ -56,7 +59,7 @@ When you hit something beyond your understanding, learn it properly instead of p
 > - **Anytime:** ask yourself how lost you'd be if AI didn't exist.
 
 > [!DO] Score three skills
-> Write a three-row table in a note: three skills you're considering, with yes or no for each of the three questions. Circle the one that gets three yeses.
+> Fill in the skill test above for three skills you're considering, with yes or no for each of the three questions, then download it. The one that gets three yeses is worth learning.
 
 > [!CHECK] What three questions tell you a skill is worth learning now that AI exists?
 > Whether people already pay for the result, whether AI makes you faster rather than doing it without you, and whether it needs knowledge of a field.

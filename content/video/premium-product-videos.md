@@ -64,8 +64,15 @@ Tempo sets the energy of the whole video, including whether it feels premium. Pi
 
 These BPM ranges are the author's opinion, but they give you a starting point instead of scrolling a music library at random.
 
+> [!FORM] Your video rulebook
+> 1. Which type of video is this for: launch, feature or explainer?
+> 2. Your 3 colours, as hex codes.
+> 3. Your one background.
+> 4. Your one font.
+> 5. Your BPM range from the table, and the feeling you want.
+
 > [!DO] Write your video rulebook
-> Open a doc and write the rules for your next product video: 3 colours (hex codes), 1 background, 1 font, and a BPM range from the table. Keep it next to your editor and check every frame against it.
+> Fill in your video rulebook above for your next product video, then download it. Keep it next to your editor and check every frame against it.
 
 > [!CHECK] In a product video, what three animation habits make motion look expensive?
 > Ease and overlap your keyframes, let one scene flow into the next instead of cutting, and vary the pace by section.

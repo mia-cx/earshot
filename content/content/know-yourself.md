@@ -13,9 +13,9 @@ description: Build a brand document and a voice document that every draft starts
 
 Dan Koe's process for a new client starts with a recorded interview. The transcript becomes the brand document, and it goes into the AI every time anyone plans or drafts a post.
 
-You can do this alone. Paste the questions below into Claude, have it interview you one section at a time, and save the answers in one file. Exact words matter more than polish: the way your reader complains to a friend is the language your posts should use.
+You can do this alone. Answer the nine sections below, or paste them into Claude and have it interview you one section at a time. Exact words matter more than polish: the way your reader complains to a friend is the language your posts should use.
 
-> [!TRICK] Answer the nine-section brand interview
+> [!FORM] Your brand document
 > 1. Who you help: Describe one real person. What does a bad day look like for them? What do they say when they complain to a friend (exact words)? What have they already tried that didn't work?
 > 2. Your story: What have you lived through that your audience is living through now? The moment things changed? What have you built, tried, failed at, figured out (biggest to smallest)? What results can you point to?
 > 3. Who shaped your mind: Whose books, posts, videos do you never skip (real names and titles)? Which idea do you keep coming back to and why? Who changed how you think, even if you now disagree?
@@ -48,7 +48,7 @@ These two files are the context every later step reads: the content map in *Plan
 A note on evidence: this is Koe's client process, described anecdotally, and Koe founded Eden, the tool the article recommends. The questions and prompt work in any assistant.
 
 > [!DO] Answer the first two sections
-> Paste sections 1 and 2 of the brand interview into Claude, let it ask you the questions, and save your answers as `brand.md`.
+> Fill in sections 1 and 2 of your brand document above, with Claude asking you the questions if that helps, then download it.
 
 > [!CHECK] In building a personal brand, what are the two documents you feed to AI every time you plan or draft?
 > A brand document, the transcript of an interview about you and your audience, and a voice document on what makes your favourite writers distinctive.

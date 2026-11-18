@@ -50,8 +50,15 @@ When someone replies with interest, **answer within 5 minutes**.
 > [!RISK] Opt-out rules differ by country and volume
 > The US CAN-SPAM Act accepts a working reply-based opt-out. EU and UK law, and Gmail and Yahoo bulk-sender rules (one-click unsubscribe above 5,000 messages a day), may require more. Check the rules for where your prospects are and how much you send, and honour every opt-out.
 
+> [!FORM] Your cold email
+> 1. What do we do? What problem do we solve? Give one short, precise answer.
+> 2. Who is the one real prospect you're writing to?
+> 3. What is your one clear offer?
+> 4. Your email, under 40 words, with no AI-written first line.
+> 5. Your follow-up #4, a two-word bump.
+
 > [!DO] Write one cold email under 40 words
-> Write an email for one real prospect: no AI first line, one clear offer, under 40 words. Then write follow-up #4 as a two-word bump.
+> Fill in your cold email above for one real prospect, then download it.
 
 > [!CHECK] In cold email, what do these symptoms point to: 0 replies and 0 bounces, replies with no interest, bounces over 2%?
 > Spam placement, the offer, and the list. Fix only the part the symptom points to instead of rewriting everything.

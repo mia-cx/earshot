@@ -42,6 +42,14 @@ Pair every outcome goal (a macro KPI) with input goals you control (micro KPIs).
 
 Report weekly and monthly from Google Analytics and Search Console. If goal-setting is new to you, HubSpot's [SMART goal examples](https://blog.hubspot.com/marketing/smart-goal-examples) are a good start. This approach comes from one marketer's four years building a marketing function through to the company's acquisition.
 
+> [!FORM] Your one-page strategy
+> 1. Brand promise: what do we promise every customer?
+> 2. Target audience: who exactly are we for?
+> 3. Growth strategy: how will we grow over the next three months?
+> 4. Marketing initiatives: which projects will we run to get there?
+> 5. Macro KPI: which outcome do we want in three months?
+> 6. Micro KPI: which input that we control drives it?
+
 ## Run the week from a board and a calendar
 
 The same marketer runs execution with three tools:
@@ -51,7 +59,7 @@ The same marketer runs execution with three tools:
 - a weekly review of the data, where you double down on what worked
 
 > [!DO] Fill in your one-page strategy
-> Copy the template or open a blank page with the four headings: Brand promise, Target audience, Growth strategy, Marketing initiatives. Write two or three lines under each, and one macro KPI with one micro KPI for the next three months.
+> Fill in your one-page strategy above: two or three lines for each of the four sections, and one macro KPI with one micro KPI for the next three months. Then download it.
 
 > [!CHECK] What are the four steps of a GACC marketing brief, in order?
 > Goal, audience, creative, channel. You fill them in that order for every task.

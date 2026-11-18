@@ -54,8 +54,15 @@ From Kunal's list of content mistakes:
 - No distribution plan: publishing and hoping people find it.
 - Hard to understand: posts readers struggle to follow. *Write for one reader and one action* fixes this one.
 
+> [!FORM] Your first three posts
+> 1. Where do they read? Are they even on X?
+> 2. Which one platform do the people you want to reach spend time on?
+> 3. Post 1: a draft about one thing you built, fixed or learned this week.
+> 4. Post 2: a draft about another thing you built, fixed or learned this week.
+> 5. Post 3: a draft about a third thing you built, fixed or learned this week.
+
 > [!DO] Write your first three posts
-> Name your one platform in a doc. Under it, write three post drafts, each about one thing you built, fixed or learned this week.
+> Fill in your first three posts above: name your one platform, then write three drafts. Download them when you're done.
 
 > [!CHECK] In content marketing, what is the test for whether you have a brand?
 > If you stopped posting, would anyone ask where you went? A viral post followed by silence means the post worked and the brand doesn't exist.

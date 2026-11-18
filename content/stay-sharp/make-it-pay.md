@@ -48,8 +48,14 @@ Kyle Hunt's example: an agency audit sold at $5,000 used to take 5 hours by hand
 
 For the checking half, see *Use AI without surrendering your judgment*. See *Read your pricing from your numbers* for when to raise prices.
 
+> [!FORM] Your offer
+> 1. Which task do you already do well with AI?
+> 2. Who pays for it?
+> 3. What result do they get?
+> 4. What price would you charge for that result?
+
 > [!DO] Write a three-line offer
-> Pick one task you already do well with AI. In a note, write three lines: who pays for it, the result they get, and the price you'd charge for that result.
+> Pick one task you already do well with AI and fill in your offer above: who pays for it, the result they get, and the price you'd charge for that result. Then download it.
 
 > [!CHECK] When you sell outbound outreach as a service, which companies make good clients?
 > B2B companies with high-priced offers that already sell, shown by a case study with a number in it.

@@ -49,8 +49,15 @@ Researching what performs can feel like selling out. Koe frames it as an artist'
 
 One way to stay original: research platforms you don't post on. Koe says that's where you find the ideas nobody on your platform has used yet. *Reuse formats that already work* goes deeper on copying the format and never the content.
 
+> [!FORM] Your content map
+> 1. Pillars and perspective: What could you talk about for hours (everything)? Which 2-3 matter most? How do you come at each differently ("through psychology", "as a former nurse")? What do people ask your advice on? What do you keep explaining?
+> 2. Pillar 1: a broad theme you'll own.
+> 3. Pillar 2: a broad theme you'll own.
+> 4. Pillar 3: a broad theme you'll own.
+> 5. Under the pillar you know best, list 5 topics: areas inside that theme.
+
 > [!DO] Sketch the top of your map
-> In `content-map.md`, write 3 pillars. Under the one you know best, write 5 topics. Run the full prompt later, once your brand document exists.
+> Fill in your content map above: 3 pillars, then 5 topics under the one you know best. Download it, and run the full prompt later, once your brand document exists.
 
 > [!CHECK] What are the four levels of a content map, from broadest to narrowest?
 > Pillars, topics, ideas and angles. A typical map has 3 to 4 pillars, 5 to 7 topics each, 5 to 10 ideas per topic and 4 to 5 angles per idea.

@@ -84,8 +84,12 @@ The same author behind the stack list describes a six-step pipeline that replace
 
 If your product is an AI system, one reproducible benchmark is a credible marketing asset: compare your system with the naive approach on cost, speed and task success. DeepSeek's super-agent write-up is an example of the form, a small table (4 designs, 5 runs each, typical and worst-case times, token cost) with honest caveats. Nobody in these sources reports results from doing this as marketing, so treat it as an idea to test.
 
+> [!FORM] Your first agent brief
+> 1. Which report or check do you do by hand every week?
+> 2. List every step in order, including each decision you make, like "skip it if the price didn't change".
+
 > [!DO] Write down your weekly report as steps
-> Pick the one report or check you do by hand every week. In a doc, list every step in order, including each decision you make ("skip it if the price didn't change"). That doc is the agent's first brief.
+> Pick the one report or check you do by hand every week and fill in the brief above: every step in order, including each decision you make. Then download it. That doc is the agent's first brief.
 
 > [!CHECK] What is the difference between a marketing automation and a marketing agent?
 > An automation follows fixed steps. An agent gets a goal and works out the steps.

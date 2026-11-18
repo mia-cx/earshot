@@ -28,6 +28,10 @@ It's tempting to treat marketing as acquisition: get people in the door. But the
 
 "Onboarded" should be a single event you can count: the first action that delivers value. In a crypto product that might be "wallet connected" or "first transaction". In a note-taking app it might be the first saved note. Design that flow with whoever builds the product, then engineer the first "aha" moment inside it.
 
+> [!FORM] Your onboarded event
+> 1. Which single action means a new user got value? Finish the sentence: "A user is onboarded when they…"
+> 2. How many users did that last week? Write "unknown" if you can't measure it yet.
+
 ## Measure every stage
 
 Use Google Analytics for the website and a product analytics tool for what happens inside the product. (The source author uses Redash and Dune because their products are on-chain.)
@@ -44,7 +48,7 @@ Products now have short shelf lives, and keeping users is harder than it used to
 - **Running it all with less effort:** *AI agents as your team*.
 
 > [!DO] Write your onboarding event
-> Finish this sentence for your product and pin it where you work: "A user is onboarded when they ___." Then write the number of users who did that last week, or "unknown" if you can't measure it yet.
+> Fill in your onboarded event above, then download it and pin it where you work.
 
 > [!CHECK] What are the five stages of the marketing funnel?
 > Acquisition, onboarding, engagement, retention and monetisation.

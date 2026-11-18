@@ -49,8 +49,13 @@ AI assistants look for tools to use on a person's behalf. If your product has an
 >
 > The author, a staff engineer with several SaaS products, says Claude now sends them "multiple customers a day" through integrations. One person's report.
 
+> [!FORM] Your segment pages
+> 1. Which category does AI name you least in?
+> 2. Who is the first buyer segment, and what is the exact page title for it? For example, "X for small teams".
+> 3. Who is the second buyer segment, who decides differently, and what is the exact page title for it? For example, "X for enterprises".
+
 > [!DO] Name your two segment pages
-> Pick the category where AI names you least. Write the two buyer segments who decide differently in it, and the exact page title for each (for example, "X for small teams" and "X for enterprises").
+> Pick the category where AI names you least and fill in your segment pages above: the two buyer segments who decide differently in it, and the exact page title for each. Then download it.
 
 > [!CHECK] How do you list your API as an agent skill on skills.sh?
 > Write a `SKILL.md` that tells an agent how to use your API, put it in a public GitHub repo, and run `npx skills add your-org/your-repo` once.

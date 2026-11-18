@@ -71,8 +71,12 @@ Because shares, replies and quotes dominate the score, the posts that win are or
 
 *Make the first line earn the second* covers the hook that gets someone to read far enough to share.
 
+> [!FORM] Your share reasons
+> 1. For each of your last 5 posts, one line: why would someone send it to a friend or reply?
+> 2. The post with the weakest answer, rewritten as a new draft.
+
 > [!DO] Find the share reason
-> For each of your last 5 posts, write one line: why would someone send this to a friend or reply? Rewrite the post with the weakest answer as a new draft.
+> Fill in your share reasons above, then download them.
 
 > [!CHECK] In X's ranking, roughly how many likes is a share by copied link worth?
 > About 30 likes. Shares, replies and quotes count far more than likes.

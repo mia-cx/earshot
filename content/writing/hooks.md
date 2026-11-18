@@ -61,8 +61,16 @@ You don't know what the post promises until it's written. So write the body firs
 > 4. Refine each survivor until every line rolls into the next.
 > 5. Cut words that repeat or add nothing.
 
+> [!FORM] Your hooks
+> 1. First hook: name its type, then write the line.
+> 2. Second hook, using a different type.
+> 3. Third hook, using a different type.
+> 4. Fourth hook, using a different type.
+> 5. Fifth hook, using a different type.
+> 6. Which one would you stop scrolling for?
+
 > [!DO] Write five hooks for one post
-> Take a post you've drafted or already published. Write five new first lines for it, each using a different type from the list of eight. Cut to the one you'd stop scrolling for, and save all five in a doc.
+> Take a post you've drafted or already published. Fill in your hooks above: five new first lines for it, each using a different type from the list of eight, and the one you'd stop scrolling for. Then download all five.
 
 > [!CHECK] What is the one job of a hook in a post?
 > To get the next line read. It does that by opening a gap the reader wants closed and making it about them.

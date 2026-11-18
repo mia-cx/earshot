@@ -38,8 +38,13 @@ Aim for that. Write something a layperson finds interesting and an expert finds 
 
 Storytelling only works when the product makes a real change in someone's life. Find the focal point of that change, the moment things are different, and tell it through the user's eyes. The user is the main character; the product is what helped.
 
+> [!FORM] Your post plan
+> 1. Reader: who is this post for?
+> 2. Action: what should they do? Read, reply, share, follow or buy.
+> 3. Takeaway: what does someone walk away with? One sentence.
+
 > [!DO] Write a three-line post plan
-> Take your next post idea and write three lines above the draft: "Reader: ___", "Action: ___" (one of read, reply, share, follow, buy) and "Takeaway: ___" (one sentence). Cut anything in the draft that doesn't serve those three.
+> Take your next post idea and fill in the post plan above. Cut anything in the draft that doesn't serve those three lines, then download the plan.
 
 > [!CHECK] In copywriting, what three things does every post need?
 > A clear takeaway, a specific reader and a specific call to action.

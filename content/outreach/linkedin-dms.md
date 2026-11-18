@@ -68,8 +68,14 @@ Once the method works by hand, an agent can repeat the research every week. It n
 
 For how to keep an agent from doing damage on its own, see *Keep bots from doing damage*.
 
+> [!FORM] Your competitor ads
+> 1. If not us, what would users choose instead? Include doing nothing.
+> 2. Which 3 companies do you lose deals to?
+> 3. Paste the text of 5 of their ads from the last 30 days. Under each, note the problem it opens with, the offer and the job title it's written for.
+> 4. Which problem do all 3 companies advertise?
+
 > [!DO] Pull your competitors' ads
-> Open linkedin.com/ad-library, search the 3 companies you lose deals to (last 30 days), and paste the text of 5 ads into a doc with the problem each one opens with.
+> Open linkedin.com/ad-library and search the 3 companies you lose deals to (last 30 days). Fill in your competitor ads above, then download them.
 
 > [!CHECK] When an agent researches and drafts your LinkedIn DMs, which step stays yours?
 > Approving every send. LinkedIn's terms prohibit third-party automation of messaging, so the agent only researches and drafts.

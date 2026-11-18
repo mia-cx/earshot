@@ -59,8 +59,12 @@ Human attention is the limit, not the model. The DeepSeek Harness team reports t
 
 For how to check AI work once it's done, see *Check the work before it ships*.
 
+> [!FORM] Your guess and gap
+> 1. Before your next AI task: what do you expect the answer to be?
+> 2. After it finishes: what is one thing it didn't check?
+
 > [!DO] Log one guess and one gap
-> Before your next AI task today, write one line in a note: what you expect the answer to be. When it finishes, add a second line: one thing it didn't check.
+> Before your next AI task today, write your guess above: what you expect the answer to be. When it finishes, add one thing it didn't check, then download it.
 
 > [!CHECK] What is the test for whether you've surrendered your judgment to AI output?
 > Whether you can explain it. If someone asks about a line and you can't, you've surrendered it.

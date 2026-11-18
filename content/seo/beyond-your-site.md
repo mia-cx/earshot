@@ -47,8 +47,14 @@ When something changes in your field, new questions appear before anyone has wri
 
 For reshaping one piece of research into each platform's own format, see *Turn one conversation into ten posts*.
 
+> [!FORM] Your borrowed platform
+> 1. What are your three most important buyer questions?
+> 2. Which third-party platforms (LinkedIn, YouTube, Reddit, Medium) show up on page one for them?
+> 3. Which one platform will you publish on?
+> 4. The headline you'd publish there, with the query early.
+
 > [!DO] Find one platform that ranks for you
-> Search your three most important buyer questions in a private window and list every third-party platform (LinkedIn, YouTube, Reddit, Medium) on page one. Pick one and note the headline you'd publish there.
+> Search your three most important buyer questions in a private window. Fill in your borrowed platform above, then download it.
 
 > [!CHECK] Before you write about a rising search in Google Trends, what do you check?
 > Its history, to tell seasonal demand from a real spike. Then read the original announcement, not the coverage of it.

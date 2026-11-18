@@ -19,13 +19,14 @@ A good narrative makes someone stop scrolling (see *Give strangers a reason to c
 
 Matt Epstein uses the Tesla Roadster launch as an example. The car drives up a curved ramp, hangs upside down, flips through the air, lands on its wheels, then jumps over a whole row of Teslas. Jumping one car is interesting; jumping the fleet is something you send to ten friends. And it was done live, in front of a crowd, on a livestream. Filmed any other way, viewers would have assumed CGI.
 
-You don't need a stunt budget. You need two answers.
+You don't need a stunt budget. You need two answers, then film only the moments that answer both.
 
-> [!TRICK] Answer two questions, then film only those moments
+> [!FORM] Your demo shot list
 > 1. What is the most extreme thing your product can do?
 > 2. How do you make people believe it happened?
->
-> Film exactly the moments that answer both. For software, show the real input, the real output and anything you fixed by hand (the spreadsheet-to-app example in *Give strangers a reason to care*).
+> 3. Which three moments would you film to prove both? One line each.
+
+For software, show the real input, the real output and anything you fixed by hand (the spreadsheet-to-app example in *Give strangers a reason to care*).
 
 ## Learn video as a medium
 
@@ -34,7 +35,7 @@ Kunal Gandhi argues you should master video as a way to communicate, whatever pl
 Start with a screen recording of the extreme moment. When you want it to look premium, see *Make product videos feel premium*.
 
 > [!DO] Write your demo's shot list
-> Write your answers to the two questions, then list the three moments you would film to prove them, one line each.
+> Fill in your demo shot list above: the two answers, then the three moments you would film to prove them. Then download it.
 
 > [!CHECK] What two questions should a launch demo answer?
 > What is the most extreme thing your product can do, and how do you make people believe it happened? Film only the moments that answer both.

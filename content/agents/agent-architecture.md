@@ -15,9 +15,11 @@ description: Design an agent that filters noise, works ahead, keeps context lean
 Most incoming events need no action. **Drop noise with cheap, fixed rules first** (source, channel, allowlists) and send only the ambiguous candidates to the model, whose policies you can edit in plain language.
 
 For each source, set one of three modes:
-- respond only to explicit requests
-- treat as candidate events
-- ignore
+
+> [!FORM] Your agent's filters
+> 1. Which sources should it respond to only on explicit requests?
+> 2. Which sources should it treat as candidate events?
+> 3. Which sources should it ignore?
 
 The same split applies to choosing models: route easy requests to a fast, cheap path and escalate only the hard ones to a reasoning model. Suraj Sharma's checklist frames it as resolving about 95% cheaply and escalating 5%; he gives no evidence for the split.
 
@@ -61,7 +63,7 @@ Telling a single agent to delegate is unreliable, because it decides case by cas
 The fix is structural: the coordinator has no tools to do the work, and workers see only their own threads. See *Put a coordinator over your bots* for the timings and the solo version of this split.
 
 > [!DO] Write your agent's filter table
-> List every source your agent watches (inboxes, channels, repos, calendars). Next to each, write one mode: explicit requests only, candidate events, or ignore.
+> Fill in your agent's filters above: put every source your agent watches (inboxes, channels, repos, calendars) under one mode, then download it.
 
 > [!CHECK] In an always-on agent, what three modes can you set for each incoming source?
 > Respond only to explicit requests, treat as candidate events, or ignore.

@@ -41,8 +41,13 @@ The end of a post isn't the only spot for an ask.
 - Post your call to action as a reply under your best-performing post.
 - Ask readers for something: their advice, or what they want you to write next.
 
+> [!FORM] Your call to action
+> 1. Action: what should they do? Read, reply, share, follow or buy.
+> 2. Is your next post for strangers, regulars or warm readers?
+> 3. Your ask, written as the post's last line. Pick it from the table to match the reader.
+
 > [!DO] Add one ask to your next post
-> Decide whether your next post is for strangers, regulars or warm readers. Pick the matching ask from the table, write it as the last line, and add the same line as a reply under your best-performing post.
+> Fill in your call to action above and download it. Add the line to the end of your next post, and the same line as a reply under your best-performing post.
 
 > [!CHECK] In a post's call to action, what should you ask readers who don't know you yet?
 > A follow or a share. A sale is too big a jump for a stranger.

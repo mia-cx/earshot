@@ -67,8 +67,12 @@ The same approach works for partnerships, not just clients. If you're choosing c
 
 Note the last lines: the bot builds the list, and you do the reaching out. Then send each creator the work first, as above, or brief them with *Line up your launch-day voices*.
 
+> [!FORM] Your post for a target
+> 1. Which account would you want as a client or partner? Give their handle.
+> 2. One post for them, in their voice, written after reading their last 10 posts.
+
 > [!DO] Pick one target and draft one post
-> Choose one account you'd want as a client or partner. Read their last 10 posts, then write one post for them in their voice and save it in a doc with their handle at the top.
+> Choose one account you'd want as a client or partner and read their last 10 posts. Then fill in your post for a target above and download it.
 
 > [!CHECK] What is the "permissionless apprentice" way to land a client?
 > Do free work for a client you'd love to have, such as 10 posts written for them, and send it. Ask them to use it, then hire you for more or give you a testimonial.

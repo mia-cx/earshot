@@ -121,8 +121,14 @@ The bots read and write a shared `social/` folder. Start with `social/brief.md`:
 > the one platform that has them.
 > ```
 
+> [!FORM] Your outlier
+> 1. Which creator in your niche, with under 100,000 followers, did you pick?
+> 2. Of their last 20 videos, which has the most views compared with the rest? Give its link.
+> 3. Its first line, word for word.
+> 4. Its beats, in order.
+
 > [!DO] Find one outlier in your niche
-> Pick a creator in your niche with under 100,000 followers. Scroll their last 20 videos and find the one with the most views compared with the rest. Write down its first line word for word and its beats in order, in a doc called `social/templates.md`.
+> Pick a creator in your niche with under 100,000 followers and scroll their last 20 videos. Fill in your outlier above, then download it into `social/templates.md`.
 
 > [!CHECK] In short-form video, what is an outlier?
 > A video that did far better than its creator's usual views or follower count. The gap shows the format did the work, not the audience.

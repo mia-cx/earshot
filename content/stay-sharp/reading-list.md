@@ -59,8 +59,17 @@ For *Stay sharp*:
 - [What is first principles thinking?](https://fs.blog/first-principles/)
 - [A roadmap for your first month as a growth marketing hire](https://medium.com/tradecraft-traction/succeed-as-a-growth-marketing-hire-c1bc44f295e0)
 
+> [!FORM] Your one-page strategy
+> 1. Brand promise: what do we promise every customer?
+> 2. Target audience: who exactly are we for?
+> 3. Growth strategy: how will we grow over the next three months?
+> 4. Marketing initiatives: which projects will we run to get there?
+> 5. Macro KPI: which outcome do we want in three months?
+> 6. Micro KPI: which input that we control drives it?
+> 7. Which essay did you read, and which line of your strategy changed because of it?
+
 > [!DO] Read one essay for your hardest module
-> Pick the module you found hardest and open its first essay above (no essay listed: open the first source of its first lesson). Read it, then write one sentence in your one-page strategy (from *Fit your strategy on one page*) that changes because of it.
+> Pick the module you found hardest and open its first essay above (no essay listed: open the first source of its first lesson). Read it, then change one line of your one-page strategy above (from *Fit your strategy on one page*) because of it, note what changed, and download it.
 
 > [!CHECK] What do the four parts of a GACC marketing brief stand for?
 > Goal, Audience, Creative, Channel.
