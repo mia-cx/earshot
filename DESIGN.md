@@ -20,11 +20,13 @@ Free Game is read by people with ADHD who are learning marketing from zero. The 
 - **Reading rhythm**: each `##` topic reads as its own page, with close to a screen of space above it (`--space-topic` in `layout.css`). Paragraphs sit a blank line apart, and callouts, diagrams and code get more room than prose. A heading sits close to the text it introduces.
 - **Review (`/review`)**: one card at a time with a progress bar. Space reveals, 1 is "Not yet", 2 is "Got it". When nothing is due it says when cards come back and offers a practice round.
 - **Tricks (`/tricks`)**: every cheap trick as a card in course order, filterable by module, with "Pick one for me".
+- **Sources (`/sources`)**: every cited author, then every lesson's sources grouped by module (`src/lib/server/credits.ts` counts them for the landing page and footer).
+- **Footer**: on every page. The course in one line, the credit count with a link to the sources, the modules, the pages, what agents read (skills, `llms.txt`, sitemap), and who made it: Mia, the 0rwx AI level, the GitHub repo and Svartz.
 - **Lab (`/lab`)**: every diagram under any module colour, for building and checking diagrams. Not linked from the nav.
 
 ## Search and sharing
 
-`src/lib/Seo.svelte` writes each page's title, description, canonical URL, Open Graph tags and structured data. The landing, modules, lessons and tricks are indexable and listed in `/sitemap.xml`; the map, review and lab are personal or internal, so they're `noindex`. Title and H1 say the same thing. Each module and lesson links its Markdown copy (written by Svartz) with `<link rel="alternate" type="text/markdown">`; `/llms.txt` lists the agent skills and every lesson's copy. Module and lesson pages mark up their visible trail as a `BreadcrumbList`; the landing page carries `WebSite`. Course rich results were retired by Google in 2025, so there's no `Course` markup. The share image `static/og.png` is rendered from `research/tools/og.html`.
+`src/lib/Seo.svelte` writes each page's title, description, canonical URL, Open Graph tags and structured data. The landing, modules, lessons, tricks and sources are indexable and listed in `/sitemap.xml`; the map, review and lab are personal or internal, so they're `noindex`. Title and H1 say the same thing. Each module and lesson links its Markdown copy (written by Svartz) with `<link rel="alternate" type="text/markdown">`; `/llms.txt` lists the agent skills and every lesson's copy. Module and lesson pages mark up their visible trail as a `BreadcrumbList`; the landing page carries `WebSite`. Course rich results were retired by Google in 2025, so there's no `Course` markup. The share image `static/og.png` is rendered from `research/tools/og.html`.
 
 ## Lesson anatomy
 

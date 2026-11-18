@@ -133,7 +133,7 @@
 	</ul>
 </section>
 
-<section class="agents" aria-labelledby="agents-title">
+<section id="agents" class="agents" aria-labelledby="agents-title">
 	<h2 id="agents-title">Give the course to your agent</h2>
 	<p>
 		The methods from these lessons are also {data.skills.reduce((n, g) => n + 1 + g.branches.length, 0)} agent skills:
