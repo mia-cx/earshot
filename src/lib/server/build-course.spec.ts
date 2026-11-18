@@ -65,6 +65,27 @@ describe.each(course.lessons.map((l) => [l.id, l] as const))('%s', (_, lesson) =
 	});
 });
 
+// Proves a later lesson that asks an earlier question again shares its answer, and a sheet spans lessons.
+it('lets a later form riff on an earlier answer', () => {
+	const note = (path: string, order: number, markdown: string): Note => ({
+		path,
+		title: path,
+		properties: { order },
+		markdown
+	});
+	const { lessons } = buildCourse([
+		note('m/index.md', 1, ''),
+		note('m/one.md', 1, '> [!FORM] Plan\n> - Who is it for?'),
+		note('m/two.md', 2, '> [!FORM] Plan\n> - Who is it for?\n> - What do you post first?')
+	]);
+	const form = lessons[1].blocks.find((b) => b.kind === 'form')?.form;
+	expect(form?.questions.map((q) => [q.id, q.lesson.href])).toEqual([
+		['who-is-it-for', '/m/one'],
+		['what-do-you-post-first', '/m/two']
+	]);
+	expect(form?.sheet.map((q) => q.id)).toEqual(['who-is-it-for', 'what-do-you-post-first']);
+});
+
 // Proves every module page has a signature diagram that exists.
 describe.each(course.modules.map((m) => [m.slug, m] as const))('module %s', (_, module) => {
 	it('has a signature diagram', () => {

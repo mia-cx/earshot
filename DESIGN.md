@@ -32,7 +32,7 @@ Enforced by `src/lib/server/build-course.spec.ts`: title, summary, TLDR first, a
 
 ## Worksheets
 
-Where a lesson asks the reader questions to answer, `> [!FORM] Title` with the questions as a list places a worksheet right there in the lesson (`src/lib/Worksheet.svelte`): one answer field per question, saved in the browser as the reader types. **Download Markdown** saves the questions and answers as a `.md` file; **Save as PDF** prints the worksheet alone from a hidden frame. Both name the lesson it came from.
+Where a lesson asks the reader questions to answer, `> [!FORM] Title` with the questions as a list places a worksheet right there in the lesson (`src/lib/Worksheet.svelte`): one answer field per question, saved in the browser as the reader types (`src/lib/answers.ts`). Answers belong to the question, not the form: a later lesson that asks an earlier question again, word for word, shows the reader's answer with a link to where it was first asked, and editing it there edits it everywhere. That lets a later worksheet build on an earlier one. Forms with the same title are one sheet. **Download Markdown** saves the sheet so far as a `.md` file: this form's questions plus every answered question on the sheet. **Save as PDF** prints the same from a hidden frame. Both name the lessons the questions came from.
 
 ## Diagrams
 
@@ -62,4 +62,4 @@ Durations and easings are the transitions.dev motion tokens in `layout.css`. Scr
 
 ## Storage
 
-Done lessons (`free-game:done`), the review deck (`free-game:review`), the theme (`free-game:theme`) and playback speed (`free-game:speed`) live in `localStorage`, per browser. When storage is blocked, both last for the visit.
+Done lessons (`free-game:done`), the review deck (`free-game:review`), worksheet answers (`free-game:answers:<question>`), the theme (`free-game:theme`) and playback speed (`free-game:speed`) live in `localStorage`, per browser. When storage is blocked, they last for the visit.

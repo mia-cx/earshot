@@ -9,14 +9,27 @@ export type Trick = { title: string; html: string };
 export type Check = { id: string; question: string; answer: string };
 
 /** A question the reader answers on the page; `text` is its Markdown for the export, `html` for the page. */
-export type Question = { text: string; html: string };
+export type Question = {
+	/** Slug of the text, and the key of its answer: the same question in any form shares one answer. */
+	id: string;
+	text: string;
+	html: string;
+	/** The lesson that asks it first. */
+	lesson: { title: string; href: string };
+};
 
-/** A worksheet placed in the lesson: the reader answers each question and downloads the answers. */
+/**
+ * A worksheet placed in the lesson. A question asked again shows and edits the earlier answer.
+ * Forms with the same title in different lessons are one sheet, which each adds questions to.
+ */
 export type Form = {
-	/** Slug of the title, unique within its lesson. */
+	/** Slug of the title, naming the sheet. */
 	id: string;
 	title: string;
+	/** The questions this form asks. */
 	questions: Question[];
+	/** Every question the sheet asks across the course, in course order, for the export. */
+	sheet: Question[];
 };
 
 /** A lesson body is HTML with interactive diagrams and forms mounted between the pieces. */

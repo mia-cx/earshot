@@ -1,41 +1,35 @@
 <script lang="ts">
-	import type { Form } from './course.ts';
+	import { answers } from './answers.ts';
+	import type { Form, Question } from './course.ts';
 
 	/**
-	 * A lesson's `[!FORM]` worksheet: one answer field per question. Answers save in this browser as
-	 * the reader types, and download as Markdown or print to PDF with the lesson they came from.
+	 * A lesson's `[!FORM]` worksheet: one answer field per question, saved in this browser as the
+	 * reader types (`answers.ts`). A question an earlier lesson asked shows that answer, and editing
+	 * it here edits it everywhere. The export holds the sheet so far: this form's questions plus every
+	 * answered question that forms with the same title ask.
 	 */
-	let { form, lesson }: { form: Form; lesson: { id: string; title: string } } = $props();
+	let { form, lesson }: { form: Form; lesson: { href: string } } = $props();
 
-	const key = $derived(`free-game:answers:${lesson.id}#${form.id}`);
-	let answers = $state<string[]>([]);
+	const answer = (q: Question) => $answers[q.id]?.trim() ?? '';
 
-	/** Restores saved answers in the browser; storage can be blocked, and answers then last for the visit. */
-	$effect(() => {
-		try {
-			answers = JSON.parse(localStorage.getItem(key) ?? '[]');
-		} catch {
-			answers = [];
-		}
-	});
-
-	const save = () => {
-		try {
-			localStorage.setItem(key, JSON.stringify(answers));
-		} catch {
-			// Storage blocked: answers stay on the page for this visit.
-		}
+	const exported = () => {
+		const asked = new Set(form.questions.map((q) => q.id));
+		const questions = form.sheet.filter((q) => asked.has(q.id) || answer(q));
+		const lessons = [...new Map(questions.map((q) => [q.lesson.href, q.lesson])).values()].map((l) => ({
+			title: l.title,
+			url: `${location.origin}${l.href}`
+		}));
+		return { questions, lessons };
 	};
 
-	const answer = (i: number) => answers[i]?.trim() ?? '';
-	const source = () => `${location.origin}/${lesson.id}`;
-
-	const markdown = () =>
-		[
+	const markdown = () => {
+		const { questions, lessons } = exported();
+		return `${[
 			`# ${form.title}`,
-			`From [${lesson.title}](${source()}) in Free Game.`,
-			...form.questions.flatMap((q, i) => [`## ${i + 1}. ${q.text}`, answer(i) || '_No answer yet._'])
-		].join('\n\n') + '\n';
+			`From ${lessons.map((l) => `[${l.title}](${l.url})`).join(', ')} in Free Game.`,
+			...questions.flatMap((q, i) => [`## ${i + 1}. ${q.text}`, answer(q) || '_No answer yet._'])
+		].join('\n\n')}\n`;
+	};
 
 	const download = () => {
 		const link = document.createElement('a');
@@ -49,7 +43,9 @@
 		text.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] ?? c);
 
 	/** The answers as a standalone page, printed from a hidden frame so the PDF holds only the worksheet. */
-	const printable = () => `<!doctype html>
+	const printable = () => {
+		const { questions, lessons } = exported();
+		return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><title>${escape(form.title)}</title>
 <style>
 	body { font: 12pt/1.55 system-ui, sans-serif; color: #1d1b18; max-width: 40rem; margin: 2rem auto; }
@@ -62,14 +58,15 @@
 	a { color: inherit; }
 </style></head><body>
 <h1>${escape(form.title)}</h1>
-<p class="from">From ${escape(lesson.title)} in Free Game · ${escape(source())}</p>
-${form.questions
+<p class="from">From ${lessons.map((l) => `${escape(l.title)} (${escape(l.url)})`).join(', ')} in Free Game</p>
+${questions
 	.map(
 		(q, i) =>
-			`<section><h2>${i + 1}. ${q.html}</h2>${answer(i) ? `<p>${escape(answer(i))}</p>` : '<p class="blank">No answer yet.</p>'}</section>`
+			`<section><h2>${i + 1}. ${q.html}</h2>${answer(q) ? `<p>${escape(answer(q))}</p>` : '<p class="blank">No answer yet.</p>'}</section>`
 	)
 	.join('\n')}
 </body></html>`;
+	};
 
 	const print = () => {
 		const frame = document.createElement('iframe');
@@ -89,10 +86,19 @@ ${form.questions
 	<p class="worksheet-kind">Fill it in</p>
 	<h3 id="{form.id}-title" class="worksheet-title">{form.title}</h3>
 	<ol>
-		{#each form.questions as question, i (i)}
+		{#each form.questions as question (question.id)}
+			{@const id = `${form.id}-${question.id}`}
 			<li>
-				<label for="{form.id}-{i}">{@html question.html}</label>
-				<textarea id="{form.id}-{i}" rows="2" bind:value={answers[i]} oninput={save}></textarea>
+				<label for={id}>{@html question.html}</label>
+				{#if question.lesson.href !== lesson.href}
+					<p class="first-asked">First asked in <a href={question.lesson.href}>{question.lesson.title}</a></p>
+				{/if}
+				<textarea
+					{id}
+					rows="2"
+					value={$answers[question.id] ?? ''}
+					oninput={(e) => answers.setKey(question.id, e.currentTarget.value)}
+				></textarea>
 			</li>
 		{/each}
 	</ol>
@@ -147,6 +153,16 @@ ${form.questions
 			content: counter(question) '. ';
 			color: var(--accent);
 			font-weight: 800;
+		}
+	}
+
+	.first-asked {
+		margin-top: 0.15rem;
+		font-size: 0.85rem;
+		color: var(--muted);
+		& a {
+			color: inherit;
+			text-decoration: underline;
 		}
 	}
 

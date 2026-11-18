@@ -12,11 +12,13 @@
  * - `> [!CHECK] Question?` with the answer as its body becomes a review card, kept out of the lesson body.
  * - `> [!DIAGRAM] name` places the component `src/lib/diagrams/<name>.svelte` at that point.
  * - `> [!FORM] Title` with a list of questions as its body places a worksheet at that point: an
- *   answer field per question, saved in the browser and downloadable as Markdown or PDF.
+ *   answer field per question, saved in the browser and downloadable as Markdown or PDF. A
+ *   question asked again word for word, in any form, shows and edits the answer given earlier.
+ *   Forms with the same title are one sheet, and the export holds the whole sheet.
  */
 
 import { Marked, type Tokens } from 'marked';
-import type { Block, Callout, CalloutKind, Check, Course, Form, Lesson, Module, Trick } from '#lib/course.ts';
+import type { Block, Callout, CalloutKind, Check, Course, Form, Lesson, Module, Question, Trick } from '#lib/course.ts';
 
 /** The fields of a Svartz index entry the course reads. */
 export type Note = {
@@ -104,12 +106,15 @@ const minutesToRead = (body: string) => {
 };
 
 /** Reads a `[!FORM]` callout: its title, and each item of the list in its body as a question. */
-const toForm = (callout: Callout): Form => {
+const toForm = (callout: Callout) => {
 	const list = marked.lexer(callout.body).find((t): t is Tokens.List => t.type === 'list');
 	return {
 		id: slugify(callout.title),
 		title: plain(callout.title),
-		questions: (list?.items ?? []).map((item) => ({ text: item.text.trim(), html: inline(item.text.trim()) }))
+		questions: (list?.items ?? []).map((item) => {
+			const text = item.text.trim();
+			return { id: slugify(text), text, html: inline(text) };
+		})
 	};
 };
 
@@ -215,6 +220,21 @@ export const buildCourse = (notes: readonly Note[]): Course => {
 		...drafts.flatMap(({ lessons }) => lessons.map(({ lesson }) => [lesson.title, lesson.href] as const))
 	]);
 
+	// Walking the course in order: every question with the lesson that asks it first, and every sheet's questions.
+	const asked = new Map<string, Question>();
+	const sheets = new Map<string, Set<string>>();
+	for (const { lesson } of drafts.flatMap((d) => d.lessons))
+		for (const form of lesson.forms) {
+			const sheet = sheets.get(form.id) ?? new Set();
+			sheets.set(form.id, sheet);
+			for (const q of form.questions) {
+				sheet.add(q.id);
+				if (!asked.has(q.id))
+					asked.set(q.id, { ...q, html: link(q.html), lesson: { title: lesson.title, href: lesson.href } });
+			}
+		}
+	const question = (id: string) => asked.get(id) as Question;
+
 	const modules = drafts.map(
 		({ module, lessons }): Module => ({
 			...module,
@@ -223,7 +243,13 @@ export const buildCourse = (notes: readonly Note[]): Course => {
 					...lesson,
 					...splitSources(
 						link(html),
-						forms.map((f) => ({ ...f, questions: f.questions.map((q) => ({ ...q, html: link(q.html) })) }))
+						forms.map(
+							(f): Form => ({
+								...f,
+								questions: f.questions.map((q) => question(q.id)),
+								sheet: [...(sheets.get(f.id) ?? [])].map(question)
+							})
+						)
 					),
 					tldr: link(lesson.tldr),
 					task: { ...lesson.task, html: link(lesson.task.html) },
