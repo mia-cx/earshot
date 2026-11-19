@@ -20,9 +20,9 @@
 		review.restore();
 	});
 
-	// The header sticks to the top, so anything else that sticks or scrolls into view clears it via --header.
+	// The header sticks to the top, so anything else that sticks or scrolls into view clears it via --header (layout.css).
 	let headerHeight = $state(0);
-	$effect(() => document.documentElement.style.setProperty('--header', `${headerHeight}px`));
+	$effect(() => document.documentElement.style.setProperty('--header-measured', `${headerHeight}px`));
 </script>
 
 <svelte:document onclick={copyCode} />
@@ -113,12 +113,15 @@
 </footer>
 
 <style>
+	/* Sticks only where it leaves room to read: not in landscape phones or at 400% zoom (WCAG 1.4.10). */
 	.site-header {
-		position: sticky;
-		top: 0;
-		z-index: 20;
 		border-bottom: 1px solid var(--line);
 		background: var(--paper);
+		@media (height >= 25rem) {
+			position: sticky;
+			top: 0;
+			z-index: 20;
+		}
 	}
 
 	.site-footer {

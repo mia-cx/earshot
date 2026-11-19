@@ -215,6 +215,8 @@
 		align-self: start;
 		position: sticky;
 		top: calc(var(--header) + 2rem);
+		max-height: calc(100dvh - var(--header) - 4rem);
+		overflow: auto;
 		max-width: 15rem;
 		margin: 2rem 0 0 3rem;
 		@container (width >= 66rem) {
