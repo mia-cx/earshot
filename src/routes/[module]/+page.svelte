@@ -82,7 +82,7 @@
 		</ol>
 
 		{#if module.diagram}
-			<div class="lg:sticky lg:top-6 [&_.diagram]:mt-0">
+			<div class="lg:sticky lg:top-[calc(var(--header)+1.5rem)] [&_.diagram]:mt-0">
 				<h2 class="sr-only">The module in one diagram</h2>
 				<Diagram name={module.diagram} />
 			</div>

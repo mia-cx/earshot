@@ -19,6 +19,10 @@
 		progress.restore();
 		review.restore();
 	});
+
+	// The header sticks to the top, so anything else that sticks or scrolls into view clears it via --header.
+	let headerHeight = $state(0);
+	$effect(() => document.documentElement.style.setProperty('--header', `${headerHeight}px`));
 </script>
 
 <svelte:document onclick={copyCode} />
@@ -31,20 +35,22 @@
 	Skip to content
 </a>
 
-<header class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-4 sm:px-6">
-	<a href="/" class="mr-auto text-lg font-[800] tracking-tight whitespace-nowrap">Free Game</a>
-	<nav aria-label="Main" class="flex flex-wrap items-center gap-3 text-[0.95rem] sm:gap-5">
-		<a href="/map" aria-current={current('/map')} class="nav-link">Map</a>
-		<a href="/review" aria-current={current('/review')} class="nav-link">
-			Review{#if due}<span class="badge"><span class="sr-only">,</span> {due}<span class="sr-only"> due</span></span>{/if}
-		</a>
-		<a href="/tricks" aria-current={current('/tricks')} class="nav-link">Tricks</a>
-		<span class="text-muted tabular-nums max-sm:hidden">{progress.done.size}/{total} done</span>
-		<span class="flex">
-			<ReaderSettings />
-			<ThemeToggle />
-		</span>
-	</nav>
+<header bind:offsetHeight={headerHeight} class="site-header">
+	<div class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 sm:px-6">
+		<a href="/" class="mr-auto text-lg font-[800] tracking-tight whitespace-nowrap">Free Game</a>
+		<nav aria-label="Main" class="flex flex-wrap items-center gap-3 text-[0.95rem] sm:gap-5">
+			<a href="/map" aria-current={current('/map')} class="nav-link">Map</a>
+			<a href="/review" aria-current={current('/review')} class="nav-link">
+				Review{#if due}<span class="badge"><span class="sr-only">,</span> {due}<span class="sr-only"> due</span></span>{/if}
+			</a>
+			<a href="/tricks" aria-current={current('/tricks')} class="nav-link">Tricks</a>
+			<span class="text-muted tabular-nums max-sm:hidden">{progress.done.size}/{total} done</span>
+			<span class="flex">
+				<ReaderSettings />
+				<ThemeToggle />
+			</span>
+		</nav>
+	</div>
 </header>
 
 <main id="main" class="mx-auto max-w-6xl px-4 pt-4 pb-24 sm:px-6">
@@ -107,6 +113,14 @@
 </footer>
 
 <style>
+	.site-header {
+		position: sticky;
+		top: 0;
+		z-index: 20;
+		border-bottom: 1px solid var(--line);
+		background: var(--paper);
+	}
+
 	.site-footer {
 		border-top: 1px solid var(--line);
 		background: var(--surface);

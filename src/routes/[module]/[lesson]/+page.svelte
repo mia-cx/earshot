@@ -214,7 +214,7 @@
 		grid-row: 2;
 		align-self: start;
 		position: sticky;
-		top: 2rem;
+		top: calc(var(--header) + 2rem);
 		max-width: 15rem;
 		margin: 2rem 0 0 3rem;
 		@container (width >= 66rem) {
