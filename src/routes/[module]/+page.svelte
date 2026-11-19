@@ -16,7 +16,7 @@
 </script>
 
 <Seo
-	title="{module.title}: {module.lessons.length} short lessons · Free Game"
+	title="{module.title}: {module.lessons.length} short lessons · Earshot"
 	description="{module.summary} Lessons: {module.lessons.map((l) => l.title).join(', ')}."
 	markdown={module.markdownHref}
 	crumbs={[

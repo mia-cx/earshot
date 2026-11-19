@@ -2,7 +2,7 @@
 
 ## What it is
 
-Free Game is a marketing and growth course for builders learning it from zero, rewritten from posts people shared for free on X. It keeps both durable principles and cheap, specific tricks, and it is built for readers with ADHD: short lessons, the short version first, one small action per lesson, visible progress.
+Earshot is a marketing and growth course for builders learning it from zero, rewritten from posts people shared for free on X. It keeps both durable principles and cheap, specific tricks, and it is built for readers with ADHD: short lessons, the short version first, one small action per lesson, visible progress.
 
 ## How the course is made
 

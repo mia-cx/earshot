@@ -7,7 +7,7 @@ export const prerender = true;
 export const GET = ({ url }) => {
 	const at = (path: string) => new URL(path, url.origin).href;
 	const body = [
-		'# Free Game',
+		'# Earshot',
 		'',
 		`> A free marketing course for builders with ADHD: ${course.lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, rewritten from free posts on X. Each lesson starts with the short version and ends with one task.`,
 		'',

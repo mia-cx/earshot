@@ -37,7 +37,7 @@
 
 <header bind:offsetHeight={headerHeight} class="site-header">
 	<div class="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 sm:px-6">
-		<a href="/" class="mr-auto text-lg font-[800] tracking-tight whitespace-nowrap">Free Game</a>
+		<a href="/" class="mr-auto text-lg font-[800] tracking-tight whitespace-nowrap">Earshot</a>
 		<nav aria-label="Main" class="flex flex-wrap items-center gap-3 text-[0.95rem] sm:gap-5">
 			<a href="/map" aria-current={current('/map')} class="nav-link">Map</a>
 			<a href="/review" aria-current={current('/review')} class="nav-link">
@@ -60,7 +60,7 @@
 <footer class="site-footer">
 	<div class="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.4fr_1fr_1fr]">
 		<div>
-			<a href="/" class="text-lg font-[800] tracking-tight">Free Game</a>
+			<a href="/" class="text-lg font-[800] tracking-tight">Earshot</a>
 			<p class="mt-2 max-w-sm">
 				A free marketing course for builders, learned from zero. No sign-up: your progress and answers stay in your
 				browser.
@@ -104,7 +104,7 @@
 					<li>
 						<a href="https://mia.cx" class="footer-link underline">Mia</a>, with AI (<a href="https://0rwx.com" class="footer-link underline">AI:W</a>)
 					</li>
-					<li><a href="https://github.com/mia-cx/free-game" class="footer-link">Source on GitHub</a></li>
+					<li><a href="https://github.com/mia-cx/earshot" class="footer-link">Source on GitHub</a></li>
 					<li>Built with <a href="https://github.com/mia-cx/svartz" class="footer-link underline">Svartz</a></li>
 				</ul>
 			</nav>

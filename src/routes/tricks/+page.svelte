@@ -52,7 +52,7 @@
 </script>
 
 <Seo
-	title="{data.tricks.length} cheap marketing tricks you can try today · Free Game"
+	title="{data.tricks.length} cheap marketing tricks you can try today · Earshot"
 	description="Specific marketing moves for builders, from cold email and X posts to SEO and launches, each linked to the lesson that explains it."
 />
 

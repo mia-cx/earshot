@@ -1,6 +1,6 @@
 import { SvelteSet } from 'svelte/reactivity';
 
-const KEY = 'free-game:done';
+const KEY = 'earshot:done';
 
 /**
  * Lessons the reader has finished, kept in this browser only.

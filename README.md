@@ -1,4 +1,4 @@
-# Free Game
+# Earshot
 
 <a href="https://0rwx.com">
   <picture>

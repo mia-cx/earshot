@@ -5,14 +5,14 @@
 </script>
 
 <Seo
-	title="Sources and credits: {data.posts} posts by {data.authors.length} people · Free Game"
-	description="Every post the Free Game course was rewritten from, lesson by lesson, and the people who shared them for free on X."
+	title="Sources and credits: {data.posts} posts by {data.authors.length} people · Earshot"
+	description="Every post the Earshot course was rewritten from, lesson by lesson, and the people who shared them for free on X."
 />
 
 <div class="sources-page">
 	<h1>Sources and credits</h1>
 	<p class="lede">
-		Free Game is rewritten from {data.posts} posts by {data.authors.length} people who shared what worked for them on
+		Earshot is rewritten from {data.posts} posts by {data.authors.length} people who shared what worked for them on
 		X. Every lesson links its sources; here they are in one place.
 	</p>
 

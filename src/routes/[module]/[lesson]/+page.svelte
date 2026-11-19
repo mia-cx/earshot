@@ -67,7 +67,7 @@
 <svelte:window {onkeydown} />
 
 <Seo
-	title="{data.lesson.title} · Free Game"
+	title="{data.lesson.title} · Earshot"
 	description={data.lesson.summary}
 	markdown={data.lesson.markdownHref}
 	crumbs={[

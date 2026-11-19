@@ -3,7 +3,7 @@
 	let { src }: { src: string } = $props();
 
 	const SPEEDS = [1, 1.25, 1.5, 2, 0.75];
-	const SPEED_KEY = 'free-game:speed';
+	const SPEED_KEY = 'earshot:speed';
 	const SKIP_SECONDS = 15;
 
 	let audio = $state<HTMLAudioElement>();
