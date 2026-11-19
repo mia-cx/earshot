@@ -51,6 +51,7 @@
 
 	/** Marks the outline entry for the section being read. */
 	$effect(() => {
+		active = '';
 		const headings = outline.map((s) => document.getElementById(s.id)).filter((h) => h !== null);
 		const observer = new IntersectionObserver(
 			(entries) => {
