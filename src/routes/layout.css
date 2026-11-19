@@ -112,8 +112,15 @@
  * Reading settings (src/lib/ReaderSettings.svelte), set as data attributes on <html> before first
  * paint by app.html. Fonts are named, not ranked: the best one differs per reader.
  */
+@font-face {
+	font-family: "Atkinson fallback";
+	src: local("Arial"), local("Liberation Sans"), local("Roboto");
+	/* Match text widths while loading; leave symbols missing from Atkinson to system-ui. */
+	unicode-range: U+0020-007E;
+}
+
 :root {
-	--font-atkinson: "Atkinson Hyperlegible Next Variable", system-ui, sans-serif;
+	--font-atkinson: "Atkinson Hyperlegible Next Variable", "Atkinson fallback", system-ui, sans-serif;
 	--font-lexend: "Lexend Variable", system-ui, sans-serif;
 	--font-system: system-ui, sans-serif;
 	--font-reader: var(--font-atkinson);

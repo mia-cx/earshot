@@ -84,7 +84,7 @@
 	<h1 class="text-4xl font-[800] tracking-tight">Review</h1>
 
 	{#if queue === null}
-		<p class="mt-6 text-muted">Loading your cards.</p>
+		<p class="mt-6 text-muted" data-review-loading>Loading your cards.</p>
 	{:else if card && queue}
 		<div class="mt-6 flex items-center gap-3 text-sm text-muted tabular-nums" role="status">
 			<div class="bar" aria-hidden="true"><span style="width: {(position / queue.length) * 100}%"></span></div>
@@ -140,6 +140,11 @@
 </div>
 
 <style>
+	/* The saved deck can replace this short placeholder with an entire card. Reveal the footer in its final position. */
+	:global([data-js] main:has([data-review-loading]) + .site-footer) {
+		visibility: hidden;
+	}
+
 	.bar {
 		flex: 1;
 		height: 6px;
