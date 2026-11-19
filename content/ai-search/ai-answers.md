@@ -53,9 +53,9 @@ Analytics undercounts AI. **Add "How did you hear about us?" to your signup form
 > 2. Log which brands and which URLs each answer cites.
 > 3. Read the cited pages. The author observes they share three traits: a direct answer in the first paragraph, original numbers, and a clear author.
 > 4. Rewrite your 10 most important pages to match.
-> 5. Add `llms.txt` (a file that tells AI what your site is about) and schema markup (hidden labels that help AI read your pages).
+> 5. Add `llms.txt` (a file that tells AI what your site is about) and schema markup.
 >
-> `llms.txt` has no confirmed effect on AI citations. It's cheap, so treat it as optional. For the first-paragraph rule, see *Improve the pages that already rank*.
+> Skip step 5 unless you have another reason for it. Google's AI answers run on ordinary SEO and need no special schema or file, and `llms.txt` has no confirmed effect on AI citations. Add structured data only where it describes what the page already shows. For the first-paragraph rule, see *Improve the pages that already rank*.
 
 You don't need the script on day one. A spreadsheet and ten questions asked by hand gives you a baseline; automate once the list stops changing.
 

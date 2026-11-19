@@ -16,8 +16,8 @@ If Google can't fetch, render and index a page, nothing else in this module matt
 
 The checklist below ends with two items no agent can do for you: writing that doesn't read like AI filler, and links from sites people trust. Those are covered in *How Google decides who ranks* and the *Backlinks* module.
 
-> [!TRICK] Paste the full checklist into your coding agent
-> This prompt from @suraj_sharma14 is written tongue in cheek ("Make no mistakes") but the list is complete. Paste it as is:
+> [!TRICK] Paste the checklist into your coding agent
+> This prompt is adapted from a tongue-in-cheek one by @suraj_sharma14. The original strips every noindex tag, adds FAQ schema everywhere and promises page one by Monday. This version keeps the noindex tags you added on purpose, adds structured data only for what a page shows, and promises no date, because nobody can promise when Google ranks you:
 >
 > ```
 > My vibe-coded site doesn't show up on Google. Fix it.
@@ -25,24 +25,24 @@ The checklist below ends with two items no agent can do for you: writing that do
 > - Create an XML sitemap.
 > - Submit it in Search Console.
 > - Let Googlebot in through robots.txt.
-> - Strip out every noindex tag.
+> - Remove noindex tags I didn't add on purpose. Keep them on staging, admin and login pages.
 > - Collapse the redirect chains.
 > - Fix every broken link.
 > - Set canonical URLs.
 > - Give every page a unique title and meta description.
-> - Use one H1 per page.
-> - Add FAQ and Article schema.
-> - Add breadcrumb navigation.
+> - Keep each page's title and H1 saying the same thing.
+> - Add structured data only for what each page shows. Skip FAQ schema: Google no longer shows FAQ rich results.
+> - Add breadcrumb navigation if the site has a real hierarchy.
 > - Internally link every orphan page.
 > - Write alt text for every image.
 > - Compress images to WebP.
-> - Get CLS under 0.1.
-> - Load every page in under 2 seconds.
+> - Pass Core Web Vitals: LCP under 2.5 seconds, INP under 200 ms, CLS under 0.1.
 > - Rewrite anything that sounds like AI slop.
 > - Add a real author with a real bio.
 > - Earn backlinks from sites people trust.
 >
-> Page one by Monday. Make no mistakes.
+> Show me the diff before you change robots.txt or a canonical.
+> When you're done, list what you changed and which items I have to do myself.
 > ```
 >
 > The agent can't submit the sitemap in Search Console for you unless it's connected to it. Do that step yourself.
@@ -59,7 +59,7 @@ An agent saying "done" is not the same as Google seeing the page. Confirm each f
 - Open `www.yoursite.com`: it should redirect to your main address.
 - Keep structured data matching the facts visible on the page. Test it with Google's Rich Results Test.
 - Compress images, remove scripts you don't need, and fix anything broken on mobile.
-- Optionally add an `llms.txt` file as an index for AI agents that read it.
+- Add an `llms.txt` file only if a tool you use reads it. It has no confirmed effect on AI citations.
 
 ## Let the AI search bots in
 
