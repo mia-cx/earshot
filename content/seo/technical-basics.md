@@ -17,7 +17,7 @@ If Google can't fetch, render and index a page, nothing else in this module matt
 The checklist below ends with two items no agent can do for you: writing that doesn't read like AI filler, and links from sites people trust. Those are covered in *How Google decides who ranks* and the *Backlinks* module.
 
 > [!TRICK] Paste the checklist into your coding agent
-> This prompt is adapted from a tongue-in-cheek one by @suraj_sharma14. The original strips every noindex tag, adds FAQ schema everywhere and promises page one by Monday. This version keeps the noindex tags you added on purpose, adds structured data only for what a page shows, and promises no date, because nobody can promise when Google ranks you:
+> This prompt is adapted from a tongue-in-cheek one by @suraj_sharma14. The original strips every noindex tag, adds FAQ schema everywhere and promises page one by Monday. This version asks before it removes any noindex tag, adds structured data only for what a page shows, and promises no date, because nobody can promise when Google ranks you:
 >
 > ```
 > My vibe-coded site doesn't show up on Google. Fix it.
@@ -25,7 +25,7 @@ The checklist below ends with two items no agent can do for you: writing that do
 > - Create an XML sitemap.
 > - Submit it in Search Console.
 > - Let Googlebot in through robots.txt.
-> - Remove noindex tags I didn't add on purpose. Keep them on staging, admin and login pages.
+> - List every noindex tag and ask me before removing any. Keep them on staging, admin and login pages.
 > - Collapse the redirect chains.
 > - Fix every broken link.
 > - Set canonical URLs.
