@@ -113,7 +113,8 @@
  * paint by app.html. Fonts are named, not ranked: the best one differs per reader.
  */
 :root {
-	--font-atkinson: "Atkinson Hyperlegible Next Variable", system-ui, sans-serif;
+	/* Arial is closer in width than system-ui, so the header is less likely to wrap during a font swap. */
+	--font-atkinson: "Atkinson Hyperlegible Next Variable", Arial, sans-serif;
 	--font-lexend: "Lexend Variable", system-ui, sans-serif;
 	--font-system: system-ui, sans-serif;
 	--font-reader: var(--font-atkinson);

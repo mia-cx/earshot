@@ -1,6 +1,7 @@
 <script lang="ts">
 	import './layout.css';
 	import favicon from '#lib/assets/favicon.svg';
+	import atkinsonLatin from '@fontsource-variable/atkinson-hyperlegible-next/files/atkinson-hyperlegible-next-latin-wght-normal.woff2?url';
 	import { page } from '$app/state';
 	import { progress } from '#lib/progress.svelte.ts';
 	import { review } from '#lib/review.svelte.ts';
@@ -29,6 +30,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<link rel="preload" href={atkinsonLatin} as="font" type="font/woff2" crossorigin="anonymous" />
 </svelte:head>
 
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-paper focus:p-2">
