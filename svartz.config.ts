@@ -14,7 +14,7 @@ export default defineConfig({
 			mountPath: '/',
 			target: { type: 'host' },
 			index: { markdown: true },
-			site: { title: 'Free Game', url: process.env.SITE_URL },
+			site: { title: 'Earshot', url: process.env.SITE_URL },
 			// The app owns the sitemap, llms.txt, favicon and share image; lessons carry no dates for a feed.
 			// Svartz still writes a Markdown copy of every lesson beside its page.
 			discovery: {

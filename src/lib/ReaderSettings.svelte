@@ -3,7 +3,7 @@
 	 * Text size, spacing and font for this reader. Each choice is a `data-*` attribute on <html> that
 	 * `layout.css` reads; it's saved in this browser and applied before first paint by app.html.
 	 */
-	const KEY = 'free-game:reader';
+	const KEY = 'earshot:reader';
 
 	const SETTINGS = [
 		{

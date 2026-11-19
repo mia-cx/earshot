@@ -67,7 +67,7 @@
 <svelte:window {onkeydown} />
 
 <Seo
-	title="{data.lesson.title} · Free Game"
+	title="{data.lesson.title} · Earshot"
 	description={data.lesson.summary}
 	markdown={data.lesson.markdownHref}
 	crumbs={[
@@ -214,7 +214,9 @@
 		grid-row: 2;
 		align-self: start;
 		position: sticky;
-		top: 2rem;
+		top: calc(var(--header) + 2rem);
+		max-height: calc(100dvh - var(--header) - 4rem);
+		overflow: auto;
 		max-width: 15rem;
 		margin: 2rem 0 0 3rem;
 		@container (width >= 66rem) {

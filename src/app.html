@@ -9,12 +9,12 @@
 			document.documentElement.dataset.js = "";
 			// Apply a saved theme before first paint. Without one the page follows the system setting.
 			try {
-				const theme = localStorage.getItem("free-game:theme");
+				const theme = localStorage.getItem("earshot:theme");
 				if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
 			} catch {}
 			// Apply saved reading settings (src/lib/ReaderSettings.svelte) the same way. Unknown values match no CSS.
 			try {
-				const reader = JSON.parse(localStorage.getItem("free-game:reader") ?? "{}");
+				const reader = JSON.parse(localStorage.getItem("earshot:reader") ?? "{}");
 				for (const name of ["textSize", "spacing", "font"]) {
 					if (typeof reader[name] === "string") document.documentElement.dataset[name] = reader[name];
 				}

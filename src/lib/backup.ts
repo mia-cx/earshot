@@ -1,8 +1,8 @@
 /**
- * A backup is one JSON file holding every saved `free-game:*` key in this browser (done lessons,
+ * A backup is one JSON file holding every saved `earshot:*` key in this browser (done lessons,
  * the review deck, answers, settings), so the reader can move their progress to another browser.
  */
-const PREFIX = 'free-game:';
+const PREFIX = 'earshot:';
 
 type Saved = Record<string, string>;
 

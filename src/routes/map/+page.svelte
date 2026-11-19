@@ -35,10 +35,10 @@
 	const today = () => new Date().toISOString().slice(0, 10);
 
 	const remind = () =>
-		download('free-game-review.ics', reviewEvent(upcoming, `${location.origin}/review`), 'text/calendar');
+		download('earshot-review.ics', reviewEvent(upcoming, `${location.origin}/review`), 'text/calendar');
 
 	const backUp = () =>
-		download(`free-game-backup-${today()}.json`, exportBackup({ ...localStorage }), 'application/json');
+		download(`earshot-backup-${today()}.json`, exportBackup({ ...localStorage }), 'application/json');
 
 	/** Writes a picked backup file into this browser and reloads, so every page reads it. */
 	const restore = async (input: HTMLInputElement) => {
@@ -47,7 +47,7 @@
 		if (!file) return;
 		const saved = parseBackup(await file.text());
 		if (!saved) {
-			problem = `${file.name} isn't a Free Game backup. Pick a file that Download backup saved.`;
+			problem = `${file.name} isn't an Earshot backup. Pick a file that Download backup saved.`;
 			return;
 		}
 		try {
@@ -61,7 +61,7 @@
 </script>
 
 <!-- The reader's own progress view; the landing page carries the same route for search. -->
-<Seo title="Your map · Free Game" noindex />
+<Seo title="Your map · Earshot" noindex />
 
 <h1 class="sr-only">Your map</h1>
 

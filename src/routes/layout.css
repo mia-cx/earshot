@@ -25,6 +25,21 @@
 	--focus: light-dark(#2563eb, #7aa7ff);
 	/* The edge of a text field, its only boundary: at least 3:1 (WCAG 1.4.11). */
 	--field-line: light-dark(oklch(0.6 0.015 75), oklch(0.56 0.015 75));
+	/* Space the sticky header covers. Zero where it doesn't stick (see .site-header in +layout.svelte). */
+	--header: 0px;
+}
+
+/*
+ * Where the header sticks, use its measured height (set by +layout.svelte). Before that runs, or
+ * without JavaScript, estimate it: one row, or two once it wraps on phones.
+ */
+@media (height >= 25rem) {
+	:root {
+		--header: var(--header-measured, 4rem);
+		@media (width < 40rem) {
+			--header: var(--header-measured, 6.5rem);
+		}
+	}
 }
 
 /* Readers who ask for more contrast get darker secondary text and visible rules. */
@@ -131,6 +146,8 @@
 }
 
 html {
+	/* Anchors and focused elements land below the sticky header. */
+	scroll-padding-top: calc(var(--header) + 1rem);
 	background: var(--paper);
 	color: var(--ink);
 	font-family: var(--font-reader);

@@ -60,7 +60,7 @@
 		<link rel="canonical" href={canonical} />
 		{#if markdown}<link rel="alternate" type="text/markdown" href={markdown} />{/if}
 		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="Free Game" />
+		<meta property="og:site_name" content="Earshot" />
 		<meta property="og:title" content={title} />
 		{#if description}<meta property="og:description" content={description} />{/if}
 		<meta property="og:url" content={canonical} />

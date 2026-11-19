@@ -78,7 +78,7 @@
 
 <svelte:window {onkeydown} />
 
-<Seo title="Review · Free Game" noindex />
+<Seo title="Review · Earshot" noindex />
 
 <div class="mx-auto max-w-2xl">
 	<h1 class="text-4xl font-[800] tracking-tight">Review</h1>

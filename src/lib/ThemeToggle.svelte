@@ -3,7 +3,7 @@
 	 * Switches between light and dark. The choice is saved in this browser and applied before
 	 * first paint by the script in app.html; until the reader chooses, the page follows the system.
 	 */
-	const KEY = 'free-game:theme';
+	const KEY = 'earshot:theme';
 
 	let dark = $state(false);
 

@@ -26,7 +26,7 @@
 		const { questions, lessons } = exported();
 		return `${[
 			`# ${form.title}`,
-			`From ${lessons.map((l) => `[${l.title}](${l.url})`).join(', ')} in Free Game.`,
+			`From ${lessons.map((l) => `[${l.title}](${l.url})`).join(', ')} in Earshot.`,
 			...questions.flatMap((q, i) => [`## ${i + 1}. ${q.text}`, answer(q) || '_No answer yet._'])
 		].join('\n\n')}\n`;
 	};
@@ -58,7 +58,7 @@
 	a { color: inherit; }
 </style></head><body>
 <h1>${escape(form.title)}</h1>
-<p class="from">From ${lessons.map((l) => `${escape(l.title)} (${escape(l.url)})`).join(', ')} in Free Game</p>
+<p class="from">From ${lessons.map((l) => `${escape(l.title)} (${escape(l.url)})`).join(', ')} in Earshot</p>
 ${questions
 	.map(
 		(q, i) =>

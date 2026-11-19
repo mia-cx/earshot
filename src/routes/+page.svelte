@@ -16,13 +16,13 @@
 </script>
 
 <Seo
-	title="Free Game: a free marketing course for builders with ADHD"
+	title="Earshot: a free marketing course for builders with ADHD"
 	description="{lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, rewritten from the best free posts on X. Short version first, one small task per lesson, no sign-up."
 	schema={[
 		{
 			'@context': 'https://schema.org',
 			'@type': 'WebSite',
-			name: 'Free Game',
+			name: 'Earshot',
 			url: new URL('/', page.url.origin).href
 		}
 	]}

@@ -16,7 +16,7 @@
 </script>
 
 <Seo
-	title="{module.title}: {module.lessons.length} short lessons · Free Game"
+	title="{module.title}: {module.lessons.length} short lessons · Earshot"
 	description="{module.summary} Lessons: {module.lessons.map((l) => l.title).join(', ')}."
 	markdown={module.markdownHref}
 	crumbs={[
@@ -82,7 +82,7 @@
 		</ol>
 
 		{#if module.diagram}
-			<div class="lg:sticky lg:top-6 [&_.diagram]:mt-0">
+			<div class="lg:sticky lg:top-[calc(var(--header)+1.5rem)] [&_.diagram]:mt-0">
 				<h2 class="sr-only">The module in one diagram</h2>
 				<Diagram name={module.diagram} />
 			</div>

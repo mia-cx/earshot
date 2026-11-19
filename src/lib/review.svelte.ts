@@ -1,4 +1,4 @@
-const KEY = 'free-game:review';
+const KEY = 'earshot:review';
 const DAY_MS = 86_400_000;
 /** Days a card waits before it comes back, by the Leitner box it sits in (index 0 is unused). */
 const INTERVAL_DAYS = [0, 1, 3, 7, 16, 35];
