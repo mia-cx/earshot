@@ -151,7 +151,6 @@ const extract = (body: string, lessonId: string) => {
 
 /** Splits rendered HTML at mount markers into HTML, diagram and form blocks, in reading order. */
 const toBlocks = (html: string, forms: Form[]): Block[] => {
-	// Splitting on a regex with two groups yields [html, kind, name, html, kind, name, …, html].
 	const parts = html.split(MOUNT_MARKER);
 	return parts.flatMap((part, i): Block[] => {
 		if (i % 3 === 0) return part.trim() ? [{ kind: 'html', html: part }] : [];
