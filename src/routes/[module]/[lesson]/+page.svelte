@@ -4,7 +4,7 @@
 	import Diagram from '#lib/Diagram.svelte';
 	import ListenBar from '#lib/ListenBar.svelte';
 	import { progress } from '#lib/progress.svelte.ts';
-	import { checkIds, review } from '#lib/review.svelte.ts';
+	import { review } from '#lib/review.svelte.ts';
 	import Seo from '#lib/Seo.svelte';
 	import Worksheet from '#lib/Worksheet.svelte';
 
@@ -32,7 +32,7 @@
 	const finish = async () => {
 		const wasDone = done;
 		progress.set(data.lesson.id, true);
-		review.enroll(checkIds(data.lesson.id, data.lesson.checks.length));
+		review.enroll(data.lesson.checks.map((c) => c.id));
 		if (!wasDone && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
 			finishing = true;
 			await new Promise((r) => setTimeout(r, CELEBRATE_MS));

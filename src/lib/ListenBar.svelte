@@ -1,9 +1,11 @@
 <script lang="ts">
+	import { readStorage, writeStorage } from './storage.ts';
+
 	/** Plays a lesson's narration, which reads the page's own words. Speed is remembered across lessons. */
 	let { src }: { src: string } = $props();
 
 	const SPEEDS = [1, 1.25, 1.5, 2, 0.75];
-	const SPEED_KEY = 'earshot:speed';
+	const SPEED_STORAGE = 'speed';
 	const SKIP_SECONDS = 15;
 
 	let audio = $state<HTMLAudioElement>();
@@ -13,21 +15,13 @@
 	let speed = $state(1);
 
 	$effect(() => {
-		try {
-			const saved = Number(localStorage.getItem(SPEED_KEY));
-			if (SPEEDS.includes(saved)) speed = saved;
-		} catch {
-			// Storage blocked: start at normal speed.
-		}
+		const saved = Number(readStorage(SPEED_STORAGE));
+		if (SPEEDS.includes(saved)) speed = saved;
 	});
 
 	const cycleSpeed = () => {
 		speed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length];
-		try {
-			localStorage.setItem(SPEED_KEY, String(speed));
-		} catch {
-			// Storage blocked: the speed lasts for this lesson.
-		}
+		writeStorage(SPEED_STORAGE, String(speed));
 	};
 
 	const skip = (seconds: number) => {
