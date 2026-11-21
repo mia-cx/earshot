@@ -8,15 +8,14 @@ export const load = () => ({
 	credits: { research: credits.research, posts: credits.posts, people: credits.authors.length },
 	outline: course.modules.map(({ lessons, ...module }) => ({
 		...module,
-		lessons: lessons.map(({ id, href, module, number, title, summary, minutes, checks }) => ({
+		lessons: lessons.map(({ id, href, module, number, title, summary, minutes }) => ({
 			id,
 			href,
 			module,
 			number,
 			title,
 			summary,
-			minutes,
-			checks: checks.length
+			minutes
 		}))
 	})) satisfies Outline
 });

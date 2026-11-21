@@ -2,7 +2,7 @@
 	import { tick } from 'svelte';
 	import CheckCard from '#lib/CheckCard.svelte';
 	import { progress } from '#lib/progress.svelte.ts';
-	import { review } from '#lib/review.svelte.ts';
+	import { DAY_MS, review } from '#lib/review.svelte.ts';
 	import Seo from '#lib/Seo.svelte';
 
 	let { data } = $props();
@@ -17,7 +17,7 @@
 	/** The current card, or the end-of-session message once the queue runs out. */
 	let current = $state<HTMLElement>();
 
-	const deckSize = $derived(Object.keys(review.cards).filter((id) => data.cards[id]).length);
+	const deckSize = $derived(review.enrolled().filter((id) => data.cards[id]).length);
 	const currentId = $derived(queue?.[position]);
 	const card = $derived(currentId ? data.cards[currentId] : undefined);
 	const nextLesson = $derived(
@@ -45,7 +45,7 @@
 	};
 
 	const practise = () => {
-		const ids = Object.keys(review.cards).filter((id) => data.cards[id]);
+		const ids = review.enrolled().filter((id) => data.cards[id]);
 		queue = ids.sort(() => Math.random() - 0.5).slice(0, PRACTICE_SIZE);
 		position = 0;
 		recalled = 0;
@@ -55,7 +55,7 @@
 	const nextDue = $derived.by(() => {
 		const at = review.nextDue();
 		if (at === null) return null;
-		const days = Math.max(1, Math.round((at - Date.now()) / 86_400_000));
+		const days = Math.max(1, Math.round((at - Date.now()) / DAY_MS));
 		return new Intl.RelativeTimeFormat('en', { numeric: 'auto' }).format(days, 'day');
 	});
 

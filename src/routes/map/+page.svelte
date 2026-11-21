@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { exportBackup, parseBackup } from '#lib/backup.ts';
 	import { reviewEvent } from '#lib/calendar.ts';
+	import { downloadFile } from '#lib/download.ts';
 	import { progress } from '#lib/progress.svelte.ts';
 	import { review } from '#lib/review.svelte.ts';
 	import Route from '#lib/Route.svelte';
@@ -13,10 +14,7 @@
 	const nextModule = $derived(data.outline.find((m) => m.slug === next?.module));
 	const percent = $derived(Math.round((progress.done.size / lessons.length) * 100));
 	const due = $derived(review.due().length);
-	/** When the next cards that aren't due yet come back, for the calendar reminder. */
-	const upcoming = $derived(
-		Math.min(...Object.values(review.cards).map((c) => c.due).filter((d) => d > Date.now()))
-	);
+	const upcoming = $derived(review.nextDue(Date.now()));
 
 	let picker = $state<HTMLInputElement>();
 	let problem = $state('');
@@ -24,21 +22,15 @@
 	const longDate = (time: number) =>
 		new Date(time).toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' });
 
-	const download = (name: string, text: string, type: string) => {
-		const link = document.createElement('a');
-		link.href = URL.createObjectURL(new Blob([text], { type }));
-		link.download = name;
-		link.click();
-		URL.revokeObjectURL(link.href);
-	};
-
 	const today = () => new Date().toISOString().slice(0, 10);
 
-	const remind = () =>
-		download('earshot-review.ics', reviewEvent(upcoming, `${location.origin}/review`), 'text/calendar');
+	const remind = () => {
+		if (upcoming !== null)
+			downloadFile('earshot-review.ics', reviewEvent(upcoming, `${location.origin}/review`), 'text/calendar');
+	};
 
 	const backUp = () =>
-		download(`earshot-backup-${today()}.json`, exportBackup({ ...localStorage }), 'application/json');
+		downloadFile(`earshot-backup-${today()}.json`, exportBackup({ ...localStorage }), 'application/json');
 
 	/** Writes a picked backup file into this browser and reloads, so every page reads it. */
 	const restore = async (input: HTMLInputElement) => {
@@ -100,7 +92,7 @@
 				Keep it fresh in review <span aria-hidden="true">→</span>
 			</a>
 		{/if}
-		{#if Number.isFinite(upcoming)}
+		{#if upcoming !== null}
 			<p class="mt-5 opacity-90">
 				Next review on {longDate(upcoming)}.
 				<button type="button" class="font-semibold underline underline-offset-4" onclick={remind}>
