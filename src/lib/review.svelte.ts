@@ -14,23 +14,23 @@ type Card = { box: number; due: number };
  * and further out; "Not yet" sends it back to box 1, due tomorrow.
  */
 class Review {
-	cards = $state<Record<string, Card>>({});
+	#cards = $state<Record<string, Card>>({});
 	restored = $state(false);
 
 	/** Reads saved cards. Call once in the browser. */
 	restore() {
-		this.cards = readJson<Record<string, Card>>(STORAGE_NAME, {});
+		this.#cards = readJson<Record<string, Card>>(STORAGE_NAME, {});
 		this.restored = true;
 	}
 
 	/** All enrolled card ids. */
 	enrolled() {
-		return Object.keys(this.cards);
+		return Object.keys(this.#cards);
 	}
 
 	/** Card ids due now, oldest first. */
 	due(now = Date.now()) {
-		return Object.entries(this.cards)
+		return Object.entries(this.#cards)
 			.filter(([, card]) => card.due <= now)
 			.sort(([, a], [, b]) => a.due - b.due)
 			.map(([id]) => id);
@@ -38,7 +38,7 @@ class Review {
 
 	/** Earliest due timestamp after `after` (default: any card), or null when none match. */
 	nextDue(after = -Infinity) {
-		const dues = Object.values(this.cards)
+		const dues = Object.values(this.#cards)
 			.map((c) => c.due)
 			.filter((d) => d > after);
 		return dues.length ? Math.min(...dues) : null;
@@ -46,14 +46,14 @@ class Review {
 
 	/** Adds a finished lesson's cards to the deck. Cards already in it keep their schedule. */
 	enroll(ids: string[], now = Date.now()) {
-		for (const id of ids) this.cards[id] ??= { box: 1, due: now + DAY_MS };
-		writeJson(STORAGE_NAME, this.cards);
+		for (const id of ids) this.#cards[id] ??= { box: 1, due: now + DAY_MS };
+		writeJson(STORAGE_NAME, this.#cards);
 	}
 
 	answer(id: string, recalled: boolean, now = Date.now()) {
-		const box = recalled ? Math.min((this.cards[id]?.box ?? 1) + 1, LAST_BOX) : 1;
-		this.cards[id] = { box, due: now + INTERVAL_DAYS[box] * DAY_MS };
-		writeJson(STORAGE_NAME, this.cards);
+		const box = recalled ? Math.min((this.#cards[id]?.box ?? 1) + 1, LAST_BOX) : 1;
+		this.#cards[id] = { box, due: now + INTERVAL_DAYS[box] * DAY_MS };
+		writeJson(STORAGE_NAME, this.#cards);
 	}
 }
 
