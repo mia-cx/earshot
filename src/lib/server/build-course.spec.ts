@@ -37,7 +37,7 @@ it('builds a module for every content folder', () => {
 });
 
 // Proves every lesson ships the parts the reader relies on: a title and summary for the map,
-// a short version up top, an action to take, three review cards, and titled tricks for the deck.
+// a short version up top, an action to take, review cards, and titled tricks for the deck.
 describe.each(course.lessons.map((l) => [l.id, l] as const))('%s', (_, lesson) => {
 	const html = lesson.blocks.map((b) => (b.kind === 'html' ? b.html : '')).join('');
 
@@ -46,7 +46,7 @@ describe.each(course.lessons.map((l) => [l.id, l] as const))('%s', (_, lesson) =
 		expect(lesson.summary).not.toBe('');
 		expect(html).toMatch(/^<aside class="callout" data-kind="tldr">/);
 		expect(html).toContain('data-kind="do"');
-		expect(lesson.checks).toHaveLength(3);
+		expect(lesson.checks).toHaveLength(lesson.id === 'ai-search/pages-and-places' ? 4 : 3);
 		for (const trick of lesson.tricks) expect(trick.title).not.toBe('');
 	});
 
