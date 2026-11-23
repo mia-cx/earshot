@@ -16,7 +16,7 @@ Positioning lives in your buyer's mind, an idea Al Ries and Jack Trout [made fam
 
 Dunford's method starts with **competitive alternatives**: what buyers would do if you didn't exist. A difference only counts against what they actually compare you with.
 
-Write yours in one document before you market anything. If you can't answer a question below, that's the finding: **you don't understand the product well enough yet**.
+Write yours in one document before you market anything. If you can't answer a question below, one marketer (@kunalvg) reads that as the finding: **you don't understand the product well enough yet**.
 
 > [!FORM] Your positioning doc
 > 1. What do we do? What problem do we solve? Give one short, precise answer.
@@ -41,7 +41,7 @@ For a deeper version, work through Dunford's [positioning exercise](https://hack
 
 ## What weak positioning breaks
 
-Unclear positioning breaks two things at once. Your product drifts because nobody is obsessed with a specific user. Your go-to-market plan stays thin: no clear ideal customer, no chosen channels, no plan to grow them.
+@kunalvg also sees unclear positioning break two things at once. Your product drifts because nobody is obsessed with a specific user. Your go-to-market plan stays thin: no clear ideal customer, no chosen channels, no plan to grow them.
 
 Both trace back to the same blank page. Fix the page first.
 
@@ -51,7 +51,7 @@ Win the conviction battle before the distribution battle. Decide who or what you
 
 - If you don't strongly believe in the product, fix that first.
 - Pick a clear opposing force: a status quo, a bad habit, an incumbent way of doing things.
-- Be opinionated. One marketer (@kunalvg) argues middle-of-the-road messaging no longer stands out.
+- Be opinionated. @kunalvg argues middle-of-the-road messaging no longer stands out.
 
 > [!RISK] Most buyers won't notice your difference
 > Across 17 markets, only 17% of a brand's own buyers on average called it different or unique ([Romaniuk, Sharp and Ehrenberg, 2007](https://byronsharp.wordpress.com/wp-content/uploads/2008/04/different1.pdf)). Buyers also have to recognise you, so look and sound the same everywhere you show up.
@@ -80,7 +80,7 @@ Clayton Christensen's [jobs to be done](https://www.christenseninstitute.org/the
 > Name what you're against: a status quo, a bad habit or an incumbent way of doing things. Then write your messaging around that opposing force.
 
 > [!CHECK] Why does weak positioning hurt the product as well as the marketing?
-> The product drifts because nobody is obsessed with a specific user. The go-to-market plan also ends up with no clear ideal customer or chosen channels.
+> In one marketer's experience, the product drifts because nobody is obsessed with a specific user. The go-to-market plan also ends up with no clear ideal customer or chosen channels.
 
 ## Sources
 

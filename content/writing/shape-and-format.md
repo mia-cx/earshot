@@ -35,7 +35,7 @@ A post without structure reads like a ramble. Pick a shape before you write, ope
 
 ## Format for a thumb, not a desk
 
-Most of your readers are probably on a phone. In Kate Moran's [NN/g study](https://www.nngroup.com/articles/mobile-content/), people understood text on a phone as well as on a computer, but hard passages took longer. Keep it brief, and put the meaning at the start of each line.
+The guide author says most of your readers are on a phone. In Kate Moran's [NN/g study](https://www.nngroup.com/articles/mobile-content/), people understood text on a phone as well as on a computer, but hard passages took longer. Keep it brief, and put the meaning at the start of each line.
 
 > [!TRICK] Format for phone skimmers
 > - Use line breaks. No walls of text.
@@ -61,7 +61,7 @@ If deleting a word doesn't change the meaning, delete it. George Orwell's rules 
 > - Say "you" more than "I".
 > - Avoid AI tells: em dashes, and the "it's not [X], it's [Y]" pattern.
 
-One caveat on "AI tells": across 4,600 people, [Maurice Jakesch, Jeffrey Hancock and Mor Naaman](https://arxiv.org/abs/2206.07271) found readers can't reliably spot AI text because they look for the wrong cues. Skipping em dashes avoids a stereotype; plain, specific words are what make a post yours.
+One caveat on "AI tells": across 4,600 people, [Maurice Jakesch, Jeffrey Hancock and Mor Naaman](https://arxiv.org/abs/2206.07271) found people couldn't spot AI-written profiles because they looked for the wrong cues, such as first-person pronouns and family topics. Skipping em dashes avoids a stereotype; plain, specific words are what make a post yours.
 
 > [!DO] Reformat one post
 > Take your last post or a draft. Break it into lines of one thought each, cut every "really, very, just, actually", and rewrite the last line as a takeaway, a question or a tease. Preview it on your phone and save the new version.

@@ -16,7 +16,7 @@ Use AI for desk research and hypotheses, never for the final decision. Nielsen N
 
 To draft a first go-to-market hypothesis in an afternoon, feed an AI model your market's raw material and ask hard questions. The key is what you ask: **ask for synthesis, not summary**.
 
-The source author claims Y Combinator teaches this method and that it replaces about four weeks of research. Neither claim is verified, and the post ends with a plug for Gojiberry, their company.
+The quoted post claims Y Combinator teaches this method and that it replaces about four weeks of research. Neither claim is verified, and the post ends with a plug for Gojiberry, where its author works.
 
 > [!TRICK] Run a three-hour market research session
 > 1. Gather raw material:
@@ -68,7 +68,7 @@ Read reviews at scale instead of guessing. One author says most teams have read 
 
 A competitor's longest-running ads make a good shortlist of ideas to test. The source author reads a long run as a sign the ad pays for itself; the data can't show that. Pull their live Meta ads and sort oldest first.
 
-Meta's public Ad Library shows each ad's copy and start date; the source also pulls landing pages using Virlo, a tool its author co-founded. In the EU, the [Digital Services Act](https://www.eu-digital-services-act.com/Digital_Services_Act_Article_39.html) requires large platforms to publish run dates and keep each ad listed for a year after it stops.
+Meta's public Ad Library shows each ad's copy and start date, but spend and impressions only for political and issue ads ([Meta](https://developers.facebook.com/docs/marketing-api/reference/archived-ad/)). The source also pulls landing pages using Virlo, a tool its author co-founded. In the EU, the [Digital Services Act](https://www.eu-digital-services-act.com/Digital_Services_Act_Article_39.html) requires large platforms to publish run dates and keep each ad listed for a year after it stops.
 
 > [!RISK] A long run isn't proof of profit
 > The library shows when an ad ran, not what it spent or earned. A small ad someone forgot to switch off can run for months. Treat run time as a lead to test, not a result to copy.
@@ -94,6 +94,7 @@ Meta's public Ad Library shows each ad's copy and start date; the source also pu
 - [Clayton Christensen Institute: Jobs to Be Done theory](https://www.christenseninstitute.org/theory/jobs-to-be-done/)
 - [Joanna Wiebe, *Amazon review mining for copywriting* (2014)](https://copyhackers.com/2014/10/amazon-review-mining/)
 - [EU Digital Services Act: Article 39, online advertising transparency](https://www.eu-digital-services-act.com/Digital_Services_Act_Article_39.html)
+- [Meta for Developers: Archived Ad, Ad Library API reference](https://developers.facebook.com/docs/marketing-api/reference/archived-ad/)
 - [@romanbuildsaas: three-hour AI market research](https://x.com/romanbuildsaas/status/2119091729181880583)
 - [@korzhov_dm: mining 5,000 reviews for hooks](https://x.com/korzhov_dm/status/2118984106335756532)
 - [@dsqjaffa: competitors' oldest running ads](https://x.com/dsqjaffa/status/2119160045263077664)
