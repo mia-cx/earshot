@@ -4,7 +4,7 @@ order: 4
 description: Draw first and last frames, write timed prompts, audit them, then fix clips in code.
 ---
 
-> [!TLDR]
+> [!TLDR] Pin the model down at both ends and in positive words, because video models drift, ignore "no" and mix up left and right.
 > - Lock style and character sheets first, with the position of every fixed detail written down.
 > - Draw a first and last frame for every shot. Video generated between two frames breaks far less.
 > - Write each clip prompt in seven sections, timed second by second, and have a fresh agent pass it before you pay.
@@ -12,15 +12,17 @@ description: Draw first and last frames, write timed prompts, audit them, then f
 
 ## Lock the look before any shot
 
-This picks up after *Plan an AI video before you pay for it*, with the same director setup. The prompts are English translations of @EianLu's Chinese originals.
+Lock your art style from one reference image: soft warm hand-drawn, cut-paper, photoreal, US hand-drawn, whatever you picked. Then draw a sheet for each character and recurring prop, with front, side and a few expressions.
 
-Fix the art style from one reference image: soft warm hand-drawn, cut-paper, photoreal, US hand-drawn, whatever you chose. Then draw a sheet for each character and recurring prop: front, side and a few expressions.
+**Write down where every fixed detail sits** ("tattoo on left forearm"), or details drift from image to image.
 
-**Write down where every fixed detail sits** ("tattoo on left forearm"). Without that, details drift from image to image.
+This continues *Plan an AI video before you pay for it* with the same director setup. Prompts are English translations of @EianLu's Chinese originals.
 
 ## Draw both ends of every shot
 
-Generating video between a drawn first and last frame, instead of from text alone, prevents most logic errors and disappearing details.
+Generating video between a drawn first and last frame gives the model fewer choices to get wrong than text alone. @EianLu says this mode prevents most logic errors and disappearing details.
+
+Seedance's [API docs](https://ai.byteplus.com/ark/region:ap-southeast-1/docs/create-video-generation-task-api) accept both images with the roles `first_frame` and `last_frame`. If their aspect ratios differ, the first frame wins and Seedance crops the last frame to fit, so match their sizes yourself.
 
 > [!TRICK] Draw first and last frames
 > - Describe each shot's first frame, last frame and what happens between. Have the review agent pass that text before drawing; it saves image quota.
@@ -53,7 +55,9 @@ Generating video between a drawn first and last frame, instead of from text alon
 
 ## Write and audit every clip prompt
 
-Most bad generations trace back to the prompt. Write every clip with the same seven sections, time each second, and **phrase fixes positively**: models often ignore "doesn't".
+Most bad clips trace back to the prompt. Give every clip the same seven sections, time each second, and **phrase fixes positively** because models often ignore "doesn't".
+
+Model makers agree. Google's [Veo prompt guide](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide) warns against "no" or "don't" and says "specificity helps avoid generic outputs". OpenAI notes Sora can [confuse left and right](https://openai.com/index/sora/), so the fixes below give directions in screen terms.
 
 > [!TRICK] Use the seven-part clip prompt
 > ```
@@ -90,7 +94,7 @@ Most bad generations trace back to the prompt. Write every clip with the same se
 > | Timing differs from the prompt | Treat times as approximate, leave slack, retime in the edit |
 > | Push-in weaker than written | Push further in code afterwards |
 > | Mouths move | "characters don't speak"; fix in code if it persists |
-> | Seedance 2.5 adds music despite "no music" | Discard clip audio; add sound in post |
+> | Seedance 2.5 adds music despite "no music" | Audio generation is on by default and includes music. Set `generate_audio` to `false`, or discard clip audio; add sound in post |
 > | Seedance 2.5 jumps to the last frame at the end | Freeze on a clean frame |
 > | Seedance 2.5 first frame oversharpened | Drop that frame |
 > | Seedance 2.0 mini drifts darker and cooler | Colour-match each clip to its first frame |
@@ -168,4 +172,7 @@ Agents can't feel motion or hear sound. Watching and listening stays your job.
 
 ## Sources
 
+- [BytePlus ModelArk: Create a video generation task (Seedance)](https://ai.byteplus.com/ark/region:ap-southeast-1/docs/create-video-generation-task-api)
+- [Google Cloud: Video generation prompt guide (Veo)](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide)
+- [OpenAI: Sora (2024)](https://openai.com/index/sora/)
 - [@EianLu: AI video workflow with Claude Code, Codex and Seedance (original in Chinese)](https://x.com/EianLu/status/2118317430665613741)

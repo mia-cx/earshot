@@ -1,52 +1,54 @@
 ---
 title: How X picks what people see
 order: 1
-description: Know the three stages every post passes and where reach beyond followers comes from.
+description: How X finds, scores and filters every post, and where reach beyond followers comes from.
 ---
 
-> [!TLDR]
-> - Every post passes three stages: X finds candidates, scores them per viewer, then filters some out.
-> - Your followers see you first. Reach beyond them comes from interest matching, not follows.
-> - X shows one post per conversation, so a launch must live in one self-contained post.
+> [!TLDR] X ranks your post by predicting what each viewer will do with it.
+> - Every refresh finds candidates, filters some out, and scores the rest for each viewer.
+> - Posts from accounts the viewer follows and from accounts they don't are ranked together, with an edge for followed accounts. Reach beyond your followers comes from interest matching, not follows.
+> - X shows one post per conversation, so put a launch in one self-contained post.
 
-## Every post passes three stages
+## Every refresh runs three stages
 
-The For You feed is built in three steps, and your post has to survive all of them. Ryan (@ryangrowthh), who read X's open-source ranking code, nicknames them Scouts, Judge and Bouncer.
+X publishes its For You feed code on GitHub as [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm). Every refresh narrows millions of posts to thousands of candidates, drops some, then scores the rest for each viewer.
 
-1. Find (Scouts): several retrieval systems pull roughly 2,000+ candidate posts each time a feed refreshes.
-2. Score (Judge): for each post and each viewer, a model predicts the chance of a like, reply, share, read-through, follow, mute and so on, multiplies each by a weight, and adds them up.
-3. Filter (Bouncer): stale, already seen, blocked or muted, spam and low-reputation posts are dropped.
+Ryan (@ryangrowthh), who read the code, nicknames the stages Scouts, Judge and Bouncer:
 
-Every rule follows from one goal: **keep people on the platform**. When you're unsure what X rewards, ask what keeps a viewer scrolling and talking.
+1. **Find (Scouts).** Retrieval systems pull thousands of candidate posts each time a feed refreshes.
+2. **Score (Judge).** A model reads the viewer's recent engagement history and **predicts how likely they are to like, reply, share, read through, follow or mute**. It multiplies each prediction by a weight and adds them up.
+3. **Filter (Bouncer).** X drops stale, already seen, blocked or muted posts; in the code this mostly happens before scoring, so the Judge only sees what's left. A separate system drops posts with spam or safety labels after selection.
 
-Ryan isn't on the X team and some parts of the system are closed, so treat this as a well-informed reading, not a spec.
+Ryan sums up the goal as **keep people on the platform**. That's his reading, not a line in the code, though the code does reward predicted reading time and penalise predicted scroll-pasts. When you're unsure what X rewards, ask what keeps someone reading and talking.
 
 > [!DIAGRAM] x-feed
 
 ## Four places X finds posts
 
-Reach beyond your followers comes from the two sources that don't depend on follows.
+To reach strangers, your post has to come from a source that doesn't rely on follows.
 
 | Source | What it pulls |
 | --- | --- |
-| Thunder | Recent posts from accounts the viewer follows and interacts with |
+| Thunder | Recent posts from accounts the viewer follows |
 | Phoenix | Posts from accounts the viewer doesn't follow, matched to an interest profile built from their history |
-| SimClusters | Posts liked by the interest community the viewer belongs to, grouped by who engages with what |
+| SimClusters | Posts popular in the viewer's interest community, grouped by who engages with what |
 | Popular Posts | A small shared list of popular recent posts, first seeded from the most-followed active accounts |
 
-Phoenix is where broad virality comes from. SimClusters explains niche virality: a post can blow up inside one community, such as tech startups, without going platform-wide. That's also why one idea per post matters (see *Write for one reader and one action*): mixed topics confuse which community to show it to.
+Phoenix drives broad virality. SimClusters drives niche virality. Venu Satuluri and colleagues at Twitter explain SimClusters in their [KDD 2020 paper](https://dl.acm.org/doi/10.1145/3394486.3403370). It finds overlapping communities from who follows whom, then places both accounts and posts inside them.
 
-## Your followers are round one
+That means a post can blow up inside one niche, like tech startups, without going platform-wide. It's also why one idea per post matters (see *Write for one reader and one action*). Mixing topics makes it harder for X to pick the right community for your post.
 
-Matt Epstein, whose company Shown Media runs tech launches on X, points out that the first audience for any post is your own follower circle via Thunder. That's why big accounts get bigger launches, and it's the part you control most.
+## Your followers are your surest route
 
-In Epstein's words, your followers feed Thunder for your account, "and that's where it stops". Getting further takes a strong score from the ranking model, or other people quoting you to their own followers (see *Line up your launch-day voices*).
+Thunder is how your post reaches your followers. Matt Epstein, whose company Shown Media runs tech launches on X, notes that this is why big accounts get bigger launches, and it's the part you control most.
+
+In Epstein's words, your followers feed Thunder for your account, "and that's where it stops". X's code ranks followed and unfollowed candidates together on each refresh, not in rounds, but it gives followed accounts an edge: posts from accounts a viewer doesn't follow have their score multiplied by a factor below 1. Breaking out past your circle takes a strong predicted score, or other people quoting you to their own followers (see *Line up your launch-day voices*).
 
 ## Keep a launch in one post
 
-X keeps one post per conversation in the feed. Epstein's example: spread a launch across 5 tweets and 4 of them flop, and non-followers never see them recommended.
+X shows at most one post per conversation in a viewer's feed. `DedupConversationFilter` keeps the highest-scoring post in a reply chain and drops the rest. In Epstein's example, if you spread a launch across 5 tweets in a thread, 4 of them never reach non-followers.
 
-The main post has to stand alone: everything a stranger needs, with nothing left for the replies to explain. *Give strangers a reason to care* covers what goes in it.
+Your main post has to stand alone. Give a stranger everything they need there, with nothing left for the replies to explain. *Give strangers a reason to care* covers what goes in it.
 
 > [!FORM] Your cluster
 > 1. Which interest community do you want X to put you in? Name it in one line.
@@ -55,16 +57,18 @@ The main post has to stand alone: everything a stranger needs, with nothing left
 > [!DO] Name your cluster
 > Fill in your cluster above, then download it. To count, tick each of your last 10 posts that stays inside the community.
 
-> [!CHECK] What three stages does every post pass through in X's For You feed?
-> X finds candidate posts, scores each one per viewer, then filters some out.
+> [!CHECK] What three stages does X's For You feed run on each refresh?
+> X finds candidate posts, drops some (stale, seen, blocked or muted), scores the rest per viewer, then runs final safety checks.
 
 > [!CHECK] You plan to announce a launch on X across five tweets. What do you change?
 > Put the whole launch in one self-contained post. X shows one post per conversation, so the other tweets never reach non-followers.
 
-> [!CHECK] On X, why do the rules for what gets reach all point the same way?
-> They serve one goal: keep people on the platform. When unsure what X rewards, ask what keeps a viewer scrolling and talking.
+> [!CHECK] What does X's ranking model actually score when it ranks your post for one viewer?
+> Its prediction of what that viewer will do: like, reply, share, follow, mute and so on, each multiplied by a weight and added up.
 
 ## Sources
 
+- [xAI: X For You feed algorithm (GitHub)](https://github.com/xai-org/x-algorithm)
+- [Satuluri et al., *SimClusters: Community-Based Representations for Heterogeneous Recommendations at Twitter* (2020)](https://dl.acm.org/doi/10.1145/3394486.3403370)
 - [@ryangrowthh: how the X algorithm finds, scores and filters posts](https://x.com/ryangrowthh/status/2117684231983800732)
 - [@mattepstein: candidate sources and one post per conversation](https://x.com/mattepstein/status/2117351855856779486)

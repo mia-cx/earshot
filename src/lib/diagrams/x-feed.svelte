@@ -1,23 +1,22 @@
 <script lang="ts">
 	/**
-	 * X's For You pipeline (find, score, filter) as @ryangrowthh reads the open-source ranking code,
-	 * from "How X picks what people see". Dot proportions are illustrative.
+	 * X's For You pipeline (find, score, filter) as X's open-source ranking code describes it, from
+	 * "How X picks what people see". Dot proportions are illustrative.
 	 */
 	const DOTS = 100;
-	const POSTS_PER_DOT = 20;
 	const FEED_TOP = 12;
 
 	const sources = [
-		{ name: 'Thunder', pulls: 'Recent posts from accounts you follow and interact with' },
+		{ name: 'Thunder', pulls: 'Recent posts from accounts you follow' },
 		{ name: 'Phoenix', pulls: 'Posts from accounts you don’t follow, matched to your interests' },
-		{ name: 'SimClusters', pulls: 'Posts liked by the interest community you belong to' },
+		{ name: 'SimClusters', pulls: 'Posts popular in the interest community you belong to' },
 		{ name: 'Popular Posts', pulls: 'A small shared list of popular recent posts' }
 	];
-	const dropped = ['Already seen', 'Stale', 'Blocked or muted', 'Spam', 'Low reputation'];
+	const dropped = ['Already seen', 'Stale', 'Blocked or muted', 'Spam or safety labels'];
 
 	const stages = [
-		{ name: 'Find', result: `About ${(DOTS * POSTS_PER_DOT).toLocaleString('en')} candidates` },
-		{ name: 'Score', result: 'Every candidate scored for one viewer' },
+		{ name: 'Find', result: 'Thousands of candidates' },
+		{ name: 'Score', result: 'The remaining candidates scored for one viewer' },
 		{ name: 'Filter', result: 'Some dropped, the rest ranked into the feed' }
 	];
 
@@ -62,7 +61,7 @@
 	</div>
 	<p class="mt-2 text-sm text-muted">
 		{#if index === 0}
-			Each dot stands for about {POSTS_PER_DOT} posts.
+			Each dot stands for a batch of candidate posts.
 		{:else if index === 1}
 			Darker dot, higher score.
 		{:else}
@@ -96,8 +95,8 @@
 	</div>
 
 	<figcaption>
-		Every feed refresh runs these three stages. Names and steps from @ryangrowthh’s reading of X’s open-source ranking
-		code; parts of the system are closed.
+		A simplified picture of each feed refresh, based on X’s open-source ranking code. In the real pipeline, stale, seen,
+		blocked and muted posts can be dropped before scoring, and safety checks run after. Parts of the system are closed.
 	</figcaption>
 </figure>
 
