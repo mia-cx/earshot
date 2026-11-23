@@ -4,16 +4,22 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="text-scale" content="scale" />
-		<!-- Browser chrome matches --paper (src/routes/layout.css) in each colour scheme. -->
-		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbf8f2" />
-		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#15140f" />
+		<!-- Browser chrome matches --paper (src/routes/layout.css) in each colour scheme. A chosen theme
+		     switches on its own tag (here and in src/lib/ThemeToggle.svelte). -->
+		<meta name="theme-color" data-scheme="light" media="(prefers-color-scheme: light)" content="#fbf8f2" />
+		<meta name="theme-color" data-scheme="dark" media="(prefers-color-scheme: dark)" content="#15140f" />
 		<script>
 			// Mark that scripts run, so layouts JavaScript finishes (the tricks masonry) can wait for it.
 			document.documentElement.dataset.js = "";
 			// Apply a saved theme before first paint. Without one the page follows the system setting.
 			try {
 				const theme = localStorage.getItem("earshot:theme");
-				if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+				if (theme === "light" || theme === "dark") {
+					document.documentElement.dataset.theme = theme;
+					for (const meta of document.querySelectorAll('meta[name="theme-color"]')) {
+						meta.media = meta.dataset.scheme === theme ? "all" : "not all";
+					}
+				}
 			} catch {}
 			// Apply saved reading settings (src/lib/ReaderSettings.svelte) the same way. Unknown values match no CSS.
 			try {
