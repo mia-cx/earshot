@@ -5,7 +5,7 @@ description: Diagnose a lost AI prompt, make one fix, and rerun to see if it mov
 ---
 
 > [!TLDR]
-> - Run AI visibility as an experiment: same prompts, one change, rerun. In a controlled study, adding evidence to a page raised its share of AI answers by 30 to 40%.
+> - Run AI visibility as an experiment: same prompts, one change, rerun. In a controlled study, adding evidence to a page made AI answers draw on it 30 to 40% more.
 > - When AI skips you, find which of four causes applies before writing anything new.
 > - AI leans on other people's pages. Sort every cited source into own, claim, earn or contest; each needs a different action.
 
@@ -13,7 +13,7 @@ description: Diagnose a lost AI prompt, make one fix, and rerun to see if it mov
 
 **AI visibility improves through small, measured experiments, not by publishing more.** [Pranjal Aggarwal and colleagues](https://arxiv.org/abs/2311.09735) tested this directly (KDD 2024): they rewrote source pages one method at a time and measured how much of each page the AI answer used.
 
-Adding quotations, statistics or cited sources raised visibility by 30 to 40%, with the biggest gains on pages ranked lower in search. Keyword stuffing didn't help. Their engine and queries were a benchmark, not your market, so rerun your own prompts to check.
+Adding quotations, statistics or cited sources raised the paper's visibility score by 30 to 40%, with the biggest gains on pages ranked lower in search. That score counts how many of an answer's words come from the page, weighted toward the top. It measures how much one answer uses the page, not how often the page shows up across runs. Keyword stuffing didn't help. Their engine and queries were a benchmark, not your market, so rerun your own prompts to check.
 
 Keep a fixed list of real buying prompts (see *Track the questions buyers ask AI*) so before and after stay comparable. Because answers vary from run to run, rerun each prompt several times before calling a change.
 
@@ -39,7 +39,13 @@ When you lose a prompt, the reflex is to write a new article. Most lost prompts 
 
 The engines spell out the crawl rules themselves. [OpenAI says](https://developers.openai.com/api/docs/bots) sites blocking OAI-SearchBot "will not be shown in ChatGPT search answers". [Perplexity](https://docs.perplexity.ai/guides/bots) asks you to allow PerplexityBot. [Google](https://developers.google.com/search/docs/appearance/ai-features) links only pages that are indexed and eligible for a snippet.
 
-Granola, the AI meeting-notes company, ran this diagnosis on every lost prompt. [Discovered Labs](https://discoveredlabs.com/case-studies/granola), the agency that did the work, reports that from January to August 2026 monthly new active users from AI search rose 4,600%, non-branded AI citation rate 558%, non-branded mention rate 739%, and organic sessions 134%. Those citation and mention rates come from the agency's own tool, so read them as direction, not a promise.
+Granola, the AI meeting-notes company, ran this diagnosis on every lost prompt, according to @wespreadjam. [Discovered Labs](https://discoveredlabs.com/case-studies/granola), the agency behind Granola's wider SEO and AI-search programme, reports results for the programme as a whole, not for this diagnosis alone:
+
+- Monthly new active users from AI search: up 4,600% since January 2026.
+- Non-branded AI citation rate up 558% and mention rate up 739%, January to August 2026, measured with the agency's own tool.
+- Organic sessions: up 134%, January to July 2026.
+
+Read them as direction, not a promise.
 
 > [!DIAGRAM] ai-loop
 

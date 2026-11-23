@@ -61,7 +61,7 @@ Analytics undercounts AI. **Add "How did you hear about us?" to your signup form
 >
 > Skip step 5 unless you have another reason for it. Google says its AI answers need "no special schema.org structured data" and no "AI text files". Jeremy Howard's [`llms.txt` proposal](https://llmstxt.org/) is for agents reading your docs, mostly coding agents, and claims no effect on AI citations. Add structured data only to describe what the page already shows. For the first-paragraph rule, see *Improve the pages that already rank*.
 
-Skip the script on day one. Ten questions asked by hand in a spreadsheet give a baseline; automate once the list stops changing.
+Skip the script on day one. Ten questions asked by hand in a spreadsheet get you started. One answer per question isn't a baseline yet, because answers vary from run to run: ask each a few times before you compare against it, and automate once the list stops changing.
 
 > [!DO] Start your question sheet
 > Write 10 real buyer questions in a spreadsheet. Ask each one in ChatGPT and fill two columns: brands named, URLs cited.

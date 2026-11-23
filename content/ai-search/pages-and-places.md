@@ -42,7 +42,7 @@ Share what the community would value even without your link, and contribute befo
 
 AI assistants look for tools they can use on a person's behalf. If your product has an API, give agents instructions for using it and list them where assistants look.
 
-[Anthropic's Agent Skills docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) explain how discovery works: at startup the agent reads only each skill's `name` and `description`, and "the `description` is what Claude matches your request against". Write that description in the words a user would type, saying what your skill does and when to use it.
+[Anthropic's Agent Skills docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) explain how discovery works: at startup the agent reads only each skill's `name` and `description`, and "the `description` is what Claude matches your request against". That matching only runs once the skill is installed in the user's agent, so a public listing makes your skill easy to install; it doesn't put it in front of Claude for everyone. Write the description in the words a user would type, saying what your skill does and when to use it.
 
 > [!TRICK] List an agent skill on skills.sh
 > 1. Write a `SKILL.md` that tells an agent how to use your API, with a `description` that names the task and when to use it. Claude can write it for you.

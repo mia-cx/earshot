@@ -93,7 +93,7 @@ Existing articles already have readers. Find what's missing and hand it over.
 > Read the archived page, publish a matching replacement, and send the editor the broken link plus yours.
 
 > [!CHECK] Why work to get into "best X for Y" roundups?
-> AI search leans on third-party pages, and roundups are the most-cited kind of page. One spot puts you in front of buyers and in AI answers at once.
+> AI search leans on third-party pages, and in one vendor's sample roundups were the most-cited kind. A spot puts you in front of the roundup's buyers and gives AI a page that names you. It doesn't guarantee AI will recommend you.
 
 ## Sources
 

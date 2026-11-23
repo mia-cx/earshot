@@ -73,7 +73,7 @@ Press-release sites host your announcement; they aren't news coverage. Use them 
 > PRLog, openPR, PR.com, IssueWire, 1888PressRelease, Express Press Release, Pressbox, PressReleaseBox, PressReleasePoint, Press Release Power, PRFree, Circle Acts, Press Release Submit, PR News Releaser, SubmitPR. Some limit free publication or clickable links.
 
 > [!RISK] Little SEO value
-> A hosted release carries little SEO value and isn't independent coverage. Google's spam policies name "links with optimized anchor text in articles, guest posts, or press releases distributed on other sites" as link spam. Link with your brand name or plain URL, don't count it as press, and don't pay for distribution expecting rankings.
+> A hosted release carries little SEO value and isn't independent coverage. Google's spam policies name "links with optimized anchor text in articles, guest posts, or press releases distributed on other sites" as link spam. Link with your brand name or plain URL. That avoids keyword-stuffed anchors, but if you paid for the placement, the link must still carry `rel="sponsored"` or `nofollow`. Don't count it as press, and don't pay for distribution expecting rankings.
 
 > [!FORM] Your link policy
 > 1. Paid roundup spots: "yes", "no" or "only if"? Give your reason.
