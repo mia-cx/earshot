@@ -150,7 +150,7 @@ The 38% / 62% rule for heads in the prompt is @EianLu's. Stephen Palmer's lab at
 > 3. Don't run several shots of the same size in a row; alternate full, medium and close-up.
 > 4. State what moves in each shot: camera, focus, light, something passing in front of the lens, or a small gesture; at least one. Don't move all the time either: move where it matters, stay still where it matters.
 > 5. Camera moves need a reason: follow something, slowly push in to a close-up, or slowly pull out from close.
-> 6. Every frame should look good as a still. Put heads or eyes at roughly 38% or 62% of frame width, not centre.
+> 6. Every frame should look good as a still. Centre a single subject facing the camera. Put a subject in profile at roughly 38% or 62% of frame width, with space in the direction they face.
 >
 > Design the colour separately, before the first image. The palette I want: [my preference; if unsure give me options].
 > List each scene's colours in a separate colour table.

@@ -38,11 +38,11 @@ Phoenix drives broad virality. SimClusters drives niche virality. Venu Satuluri 
 
 That means a post can blow up inside one niche, like tech startups, without going platform-wide. It's also why one idea per post matters (see *Write for one reader and one action*). Mixing topics makes it harder for X to pick the right community for your post.
 
-## Your followers are round one
+## Your followers are your surest route
 
-Your own followers see your post first, through Thunder. Matt Epstein, whose company Shown Media runs tech launches on X, notes that this is why big accounts get bigger launches, and it's the part you control most.
+Thunder is how your post reaches your followers. Matt Epstein, whose company Shown Media runs tech launches on X, notes that this is why big accounts get bigger launches, and it's the part you control most.
 
-In Epstein's words, your followers feed Thunder for your account, "and that's where it stops". X's code backs the mechanism. Posts from accounts a viewer doesn't follow have their score multiplied by a factor below 1. Breaking out past your circle takes a strong predicted score, or other people quoting you to their own followers (see *Line up your launch-day voices*).
+In Epstein's words, your followers feed Thunder for your account, "and that's where it stops". X's code ranks followed and unfollowed candidates together on each refresh, not in rounds, but it gives followed accounts an edge: posts from accounts a viewer doesn't follow have their score multiplied by a factor below 1. Breaking out past your circle takes a strong predicted score, or other people quoting you to their own followers (see *Line up your launch-day voices*).
 
 ## Keep a launch in one post
 

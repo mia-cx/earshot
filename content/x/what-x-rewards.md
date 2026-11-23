@@ -48,7 +48,7 @@ Ryan (@ryangrowthh) turned the table into like-equivalents, such as a share wort
 >
 > Profile clicks count for 0, so posts built to send people to your profile earn nothing for it.
 
-The diagram shows each weight in like-units, the way Ryan reads it. Use it to compare weights, not to count actions.
+The diagram scores one post for one viewer the way X's code does: each action's chance times its weight. Raise the share chance, then the mute chance, and watch which one moves the score.
 
 > [!DIAGRAM] x-score
 

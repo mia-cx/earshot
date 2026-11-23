@@ -28,9 +28,9 @@ Only the chapter list of tuanle's video was available, so the reasoning behind t
 
 ## Look for outliers, not big numbers
 
-A big creator's views mostly reflect their audience size. The useful signal is the **outlier**: a video that did far better than that creator's usual views or follower count. The gap shows the format did the work, not the audience.
+A big creator's views mostly reflect their audience size. The useful signal is the **outlier**: a video that did far better than that creator's usual views or follower count. The gap suggests the format did some of the work. It doesn't prove it: luck, timing and topic play a part too, so treat outliers as formats worth testing, not proof they work.
 
-The platforms measure the same way. YouTube's [retention report](https://support.google.com/youtube/answer/9314415) compares each video with your own 10 most recent videos of similar length. TikTok says follower count and past hits aren't direct ranking factors, so a small account's breakout came from viewers, not reach.
+The platforms judge a video against its own baseline too. YouTube's [retention report](https://support.google.com/youtube/answer/9314415) compares a video's retention curve with your own 10 most recent videos of similar length. TikTok says follower count and past hits aren't direct ranking factors, though a bigger following can still bring more views.
 
 1. Shortlist creators under about 100,000 followers who have several breakouts.
 2. For each one, scroll their last 20 videos and note their usual views.
@@ -139,7 +139,7 @@ The bots read and write a shared `social/` folder. Start with `social/brief.md`:
 > Pick a creator in your niche with under 100,000 followers and scroll their last 20 videos. Fill in your outlier above, then download it into `social/templates.md`.
 
 > [!CHECK] In short-form video, what is an outlier?
-> A video that did far better than its creator's usual views or follower count. The gap shows the format did the work, not the audience.
+> A video that did far better than its creator's usual views or follower count. The gap suggests the format did some of the work, so it's a format worth testing, not proof.
 
 > [!CHECK] You want to reuse a short-form video format that broke out. What do you take, and what stays yours?
 > Take the structure: the opening, the beats, the framing. The subject, words, footage and claims stay yours.
