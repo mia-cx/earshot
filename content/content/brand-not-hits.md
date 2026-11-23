@@ -5,14 +5,16 @@ description: Pick one platform and post about your real work 3 to 5 times a week
 ---
 
 > [!TLDR]
-> - One viral post followed by silence means the content worked and the brand doesn't exist.
+> - A spike of attention fades fast; a brand builds over months and years. One viral post followed by silence means the post worked and the brand doesn't exist.
 > - Post about what you build and learn, 3 to 5 times a week, on the one platform your people use.
-> - Your own account grows faster than a brand account or ads.
+> - Steady beats frequent. Expect six months or more before it pays off.
 > - Content fails when it's irregular, unplanned, hard to follow or ignores what people are talking about.
 
 ## One hit is not a brand
 
-A post with a million views followed by posts at a thousand tells you the post was fine and nobody cares who wrote it. Dan Koe's aim is **a body of work people want to explore**: they read one post, then go looking for more.
+Short-term spikes fade fast; a brand builds over years. In [*The Long and the Short of It*](https://ipa.co.uk/media/5811/long_and_short_of_it_presentation_final.pdf), Les Binet and Peter Field analysed 996 campaigns in the IPA effectiveness databank. Short-term pushes gave a big jump in sales that decayed quickly. Brand building gave a smaller jump that decayed slowly, built up over years, and drove growth and profit.
+
+A post with a million views followed by posts at a thousand is the short-term kind: the post worked, and nobody cares who wrote it. Dan Koe's aim is **a body of work people want to explore**: they read one post, then go looking for more.
 
 The test: if you stopped posting, would anyone ask where you went? A brand's ideas play out over 6 to 12 months of posts, so no single post has to carry everything.
 
@@ -30,20 +32,29 @@ Working alone, you hold all three. *Write down what makes you you* covers the br
 
 When anyone can build something in a weekend, attention goes to people others already know and trust. Writing in public about your real work is the cheapest way to become one of them.
 
-- Pick the one platform where the people you want to reach spend time. For most builders that's X or LinkedIn.
-- Post 3 to 5 times a week about what you built and learned: an agent you made, a task you sped up, your exact setup.
-- Let AI research and draft. The experience, opinions and results must be yours.
-- Expect a few months before it pays off. After that, people come to you, which makes every other skill worth more.
+Joe Pulizzi, author of *Content Inc.*, calls starting on one platform "building the base". [In his words](https://www.magnificent.com/magnificent-stuff/content-inc-model), you "focus on one content type, and one platform, and consistently deliver on time." Other platforms come later, once the base works.
 
-This is @notkvtwts's opinion, not a measured result.
+1. Pick the one platform where the people you want to reach spend time. For most builders that's X or LinkedIn.
+2. Post 3 to 5 times a week about what you built and learned: an agent you made, a task you sped up, your exact setup.
+3. Let AI research and draft. The experience, opinions and results must be yours.
+4. Keep going for at least six months before you judge it. After that, people come to you, which makes every other skill worth more.
 
-## Your own account beats a brand account
+The 3 to 5 times a week is @notkvtwts's opinion, not a measured result.
 
-Early on, a founder posting from their own account drives more growth than a company page or paid campaigns. Kunal Gandhi, who built a marketing team at an AI startup, saw this firsthand: the team "achieved a lot more through social media than we thought".
+> [!RISK] It takes longer than a few months
+> @notkvtwts says to expect a few months. Pulizzi's own experience was slower: "radio silence" for the first six months, the first signs between months six and nine, and no direct revenue until after twelve. Plan for that, so a quiet third month doesn't make you quit.
 
-Kunal went further and made social media training part of new-hire onboarding, starting with the CEO. If you have a team, everyone's account is a channel.
+## Start from your own account
 
-Kunal says post daily; @notkvtwts says 3 to 5 times a week. Pick the number you can keep up for months. **Consistency beats volume**, and you can raise it later.
+Early on, a founder posting from their own account drives more growth than a company page or paid campaigns. That's Kunal Gandhi's experience, not a study: after building a marketing team at an AI startup, Kunal says they "achieved a lot more through social media than we thought".
+
+Kunal even made social media training part of new-hire onboarding, starting with the CEO. If you have a team, every account is a channel.
+
+## Steady beats often
+
+Kunal says post daily; @notkvtwts says 3 to 5 times a week. Pick the number you can keep up for months. **Show up every week**, and raise the number later.
+
+A [2025 Buffer study](https://buffer.com/resources/consistent-posting-study/) tracked over 100,000 accounts across 26 weeks. People who posted in at least 20 of those weeks got about 4.5 times the engagement per post of those who posted in 4 weeks or fewer, and the gain flattened after about 21 weeks. It counted weeks with any post, not posts per week, so it can't settle daily versus three times a week. It's also a correlation from a company that sells scheduling tools. It points the same way as Pulizzi: on time, every week, beats a burst.
 
 ## Four ways content fails
 
@@ -68,13 +79,16 @@ From Kunal's list of content mistakes:
 > If you stopped posting, would anyone ask where you went? A viral post followed by silence means the post worked and the brand doesn't exist.
 
 > [!CHECK] You can't decide between posting daily or 3 times a week. How do you choose?
-> Pick the number you can keep up for months. Consistency beats volume, and you can raise it later.
+> Pick the number you can keep up for months, so you post every week. You can raise it later.
 
-> [!CHECK] Early on, why post from your own account instead of a company account or ads?
-> A founder's own account drives more early growth than a brand page or paid campaigns, because attention goes to people others already know and trust.
+> [!CHECK] Why does a viral hit fade while steady posting builds a brand?
+> Binet and Field's analysis of 996 campaigns found short-term spikes decay fast, while brand building grows slowly and lasts for years. Steady posting is the brand-building kind.
 
 ## Sources
 
+- [Les Binet and Peter Field, IPA: *The Long and the Short of It*, 10 key principles (2013)](https://ipa.co.uk/media/5811/long_and_short_of_it_presentation_final.pdf)
+- [Joe Pulizzi on the Content Inc. model, Magnificent Marketing interview](https://www.magnificent.com/magnificent-stuff/content-inc-model)
+- [Kirsti Lang, Buffer: Consistent posting study (2025)](https://buffer.com/resources/consistent-posting-study/)
 - [@thedankoe: brand versus viral hits and the three content roles](https://x.com/thedankoe/status/2117664712532123680)
 - [@mogulinfluence: repost of Dan Koe's article](https://x.com/mogulinfluence/status/2118351989511749841)
 - [@notkvtwts: post about what you build, 3 to 5 times a week](https://x.com/notkvtwts/status/2115810173830750575)
