@@ -5,16 +5,17 @@ description: Turn one weekly marketing chore into a scheduled agent that reports
 ---
 
 > [!TLDR]
+> - Use the simplest system that does the job. Most weekly chores need fixed steps with one AI step, not a full agent.
 > - A coding agent with access to your data and channels can run one channel as a loop that learns from its own results.
 > - Start with a weekly manual report: write every step, let an agent run it, approve the output yourself.
 > - Bigger pipelines (research tools, pain-point-to-ad machines) are the same idea at more steps.
 > - Most posts selling this setup also sell the product that does it. Copy the pattern, judge the claims.
 
-## Pick one channel and close the loop
+## Start with the simplest system
 
-**Marketing as code** means an agent does the work through APIs and scripts, then reads the results and adjusts. Don't automate everything at once. Pick one channel and build a system that improves from that channel's own performance data.
+Know the difference between the two words people mix up. An automation follows fixed steps. An agent gets a goal and works out the steps. Anthropic's guide [*Building effective agents*](https://www.anthropic.com/engineering/building-effective-agents) draws the same line and says to find "the simplest solution possible", which may mean no agent at all. [OpenAI's agent guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) adds when an agent earns its cost: the job needs judgement, its rules are too messy to maintain, or it reads unstructured text such as emails and reviews. Otherwise, fixed steps are cheaper and more predictable.
 
-Know the difference between the two words people mix up. An automation follows fixed steps. An agent gets a goal and works out the steps.
+**Marketing as code** means software does the work through APIs and scripts, then reads the results and adjusts. Don't automate everything at once. Pick one channel and build a system that improves from that channel's own performance data.
 
 > [!TRICK] Give the agent the environment it needs
 > Cody Schneider lists what a coding agent needs to run a brand's marketing:
@@ -34,6 +35,8 @@ The easiest first loop is the report someone builds by hand every week. One auth
 > - Put the numbers in a dashboard: Looker Studio or Metabase.
 > - The report compares last week with the week before, explains what changed and suggests the next test.
 > - AI writes the summary. A Slack bot posts it before anyone logs in.
+>
+> Only the summary needs AI. The dashboard and the posting are fixed steps, so this report is an automation with one AI step.
 
 The same shape works for any weekly manual task, such as checking what competitors changed.
 
@@ -91,8 +94,8 @@ If your product is an AI system, one reproducible benchmark is a credible market
 > [!DO] Write down your weekly report as steps
 > Pick the one report or check you do by hand every week and fill in the brief above: every step in order, including each decision you make. Then download it. That doc is the agent's first brief.
 
-> [!CHECK] What is the difference between a marketing automation and a marketing agent?
-> An automation follows fixed steps. An agent gets a goal and works out the steps.
+> [!CHECK] What is the difference between a marketing automation and a marketing agent, and which do you reach for first?
+> An automation follows fixed steps. An agent gets a goal and works out the steps. Start with the automation, and use an agent only where a step needs judgement or reads messy text.
 
 > [!CHECK] You want your first marketing agent. What do you start with, and how?
 > A report or check you do by hand every week. Write every step including your decisions, have the agent send the results to you for approval, and run it 2 to 3 weeks before you trust it.
@@ -102,6 +105,8 @@ If your product is an AI system, one reproducible benchmark is a credible market
 
 ## Sources
 
+- [Anthropic: Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)
+- [OpenAI: A practical guide to building agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)
 - [@codyschneider: the environment a coding agent needs for marketing](https://x.com/codyschneider/status/2119173056673309041)
 - [@codyschneider: pain-point-to-ad pipeline](https://x.com/codyschneider/status/2119429831163027708)
 - [@mattepstein: research tool for outliers, objections and hooks](https://x.com/mattepstein/status/2117351855856779486)

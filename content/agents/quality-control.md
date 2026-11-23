@@ -5,10 +5,15 @@ description: Catch bot mistakes with a finish line, a fresh reviewer and spot ch
 ---
 
 > [!TLDR]
+> - AI does some tasks better than you and quietly fails at similar-looking ones, so every bot needs checks you set up front.
 > - When a draft is wrong, fix the charter, not the draft. Most bad output traces to missing input.
 > - Decide what "verified" means before the agent starts, and ask what each passing check didn't prove.
 > - Review with a fresh agent that sees only the finished work, and open the sources behind any summary.
 > - Start every bot at full review and drop to spot checks only after 9 of 10, then 18 of 20, clean runs.
+
+## You can't see where the bot is weak
+
+In a field experiment with 758 Boston Consulting Group consultants, [Fabrizio Dell'Acqua, Ethan Mollick and colleagues](https://doi.org/10.1287/orsc.2025.21838) found AI made them 25.1% faster with better work on tasks it handled well. On one task picked to sit just outside what it could do, consultants using AI were 19% less likely to get the right answer. The authors call this a jagged frontier: tasks that look equally hard fall on different sides. And [OpenAI researchers found](https://arxiv.org/abs/2509.04664) that models guess rather than say "I don't know", because their training rewards guessing, so a confident draft tells you nothing about whether it's right.
 
 ## Fix the brief, not the draft
 
@@ -28,7 +33,7 @@ Kyle Hunt saw 50%+ client revision rates as an agency COO; he traces 80% of them
 
 Set a tangible finish line up front: a passing test, a screenshot, a log. Decide it after the fact and you'll call any outcome done.
 
-- Give the agent a way to check its own work, so it can loop change, check, retry before you look.
+- Give the agent a way to check its own work, so it can loop change, check, retry before you look. The check has to come from outside the model: [Huang and colleagues found](https://arxiv.org/abs/2310.01798) that models asked to review their own reasoning rarely fix it, and sometimes make it worse.
 - When it reports done, read the command it ran and its output before you read its summary.
 - At the end, ask "Did I miss anything?" Osmani says it routinely surfaces two or three more items.
 
@@ -44,6 +49,9 @@ The agent you've been working with fills gaps from context it shares with you. A
 > - Gate any paid step, such as a video generation, on a written "pass".
 >
 > EianLu says this caught a 13% size mismatch on a cup between two frames, a hat brim present in one frame and missing in the next, and left/right reversals. Osmani bakes the same fresh-context critique into every run, not just when he remembers.
+
+> [!RISK] A model goes easy on its own kind
+> [Panickssery, Bowman and Feng found](https://arxiv.org/abs/2404.13076) that models rate their own writing above equally good writing from others. A fresh agent on the same model still shares that bias. For anything a client sees, have a different model or a person do the review.
 
 ## Open the sources behind any summary
 
@@ -62,6 +70,9 @@ Hunt puts the AI error rate at 1 to 5% (his estimate), which clients won't accep
 >
 > If you're fixing the same thing two weeks running, go back up a stage. Anything a client sees stays a draft you send yourself.
 
+> [!RISK] Ten runs is a small sample
+> Amos Tversky and Daniel Kahneman showed that people [trust small samples too much](https://doi.org/10.1037/h0031322). A bot that fails 1 run in 5 still scores 9 of 10 about 38% of the time. The ladder catches bots that fail often. Rare, costly mistakes, like a wrong price, need their own pass/fail check on every run.
+
 > [!RISK] You can't automate a process you haven't built
 > Hunt's examples: a $1.4M agency with AI at every stage still misspelled client names (the fix was one checklist line), and a $2.1M agency wanted AI QA without a checklist at all. Write the checklist first, then let a bot run it.
 
@@ -71,14 +82,19 @@ Hunt puts the AI error rate at 1 to 5% (his estimate), which clients won't accep
 > [!CHECK] On the review ladder for a new bot, when do you review less?
 > Start at 100% review. Drop to 50% once 9 of the last 10 runs pass without revision, then to 10% spot checks once 18 of the last 20 do.
 
-> [!CHECK] A bot hands you a wrong draft. What do you fix?
-> The charter or shared config, not the draft. Most bad output traces to missing input, so fixing the brief stops the next mistake too.
+> [!CHECK] Your bot writes great first drafts. Why still check every run of a new job?
+> AI quality is jagged: in the BCG study, AI helped on most tasks but made consultants 19% less likely to be right on one that looked just as hard. You can't tell in advance which side a job falls on.
 
 > [!CHECK] Why have a fresh agent review the work instead of the agent that made it?
 > The agent you worked with fills gaps from context it shares with you. A fresh one reads like a first-time viewer and finds what is actually unclear or wrong.
 
 ## Sources
 
+- [Fabrizio Dell'Acqua et al., *Navigating the jagged technological frontier* (2026)](https://doi.org/10.1287/orsc.2025.21838)
+- [Adam Tauman Kalai et al., *Why language models hallucinate* (2025)](https://arxiv.org/abs/2509.04664)
+- [Jie Huang et al., *Large language models cannot self-correct reasoning yet* (2024)](https://arxiv.org/abs/2310.01798)
+- [Arjun Panickssery, Samuel R. Bowman, Shi Feng, *LLM evaluators recognize and favor their own generations* (2024)](https://arxiv.org/abs/2404.13076)
+- [Amos Tversky, Daniel Kahneman, *Belief in the law of small numbers* (1971)](https://doi.org/10.1037/h0031322)
 - [@huntkyle: revision diagnostic and the review ladder](https://x.com/huntkyle/status/2118086670918750341)
 - [@addyosmani: defining verified, green checks and spot checks](https://x.com/addyosmani/status/2117512471930167377)
 - [@EianLu: fresh-agent review before paid generation](https://x.com/EianLu/status/2118317430665613741)
