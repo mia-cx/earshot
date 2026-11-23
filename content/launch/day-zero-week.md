@@ -13,7 +13,7 @@ description: Go from zero clarity to a public marketing rhythm in seven days.
 
 ## Why marketing starts in week one
 
-Almost every failed startup had a product, Gabriel Weinberg and Justin Mares argue in [*Traction*](https://leananalyticsbook.com/wp-content/uploads/2014/08/Traction-1-3.pdf). What it lacked was customers. Their 50% rule splits your time evenly between product and traction, in parallel, because traction work shows which message and niche land.
+Almost every failed startup had a product, Gabriel Weinberg and Justin Mares argue in [*Traction*](https://leananalyticsbook.com/wp-content/uploads/2014/08/Traction-1-3.pdf). What it lacked was enough customers. Their 50% rule splits your time evenly between product and traction, in parallel, because traction work shows which message and niche land.
 
 Positioning comes first. April Dunford's [positioning exercise](https://hackernoon.com/obviously-awesome-a-product-positioning-exercise-604e8ced841e) explains why. The market you claim sets the context people judge you by, and your messaging follows from that choice.
 
@@ -60,7 +60,7 @@ This plan is Gandhi's own playbook. The post got 223 bookmarks, yet it reports n
 > Fill in your clarity doc above, one sentence each, then download it. Leave any blank you can't answer. That blank is your first conversation with the founders or with yourself.
 
 > [!CHECK] Why does marketing a new product start in week one, alongside building it?
-> Almost every failed startup had a product; what it lacked was customers. *Traction*'s 50% rule splits time between product and traction, because traction work shows which message and niche land.
+> Almost every failed startup had a product; what it lacked was enough customers. *Traction*'s 50% rule splits time between product and traction, because traction work shows which message and niche land.
 
 > [!CHECK] It's day 3 of marketing a new product and you have no designer. What do you post?
 > Post anyway, using screenshots, mockups or Loom demos. A line like "We're building X for Y. Early testers wanted." is enough to start.

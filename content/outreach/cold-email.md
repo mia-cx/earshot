@@ -7,7 +7,7 @@ description: Read a cold email campaign's numbers and know which part to fix.
 > [!TLDR]
 > - Cold email fails in three places, in order: the inbox, the offer, the list. Each failure pattern points to one of them.
 > - Pass the inbox first. Google and Microsoft set sender rules, and the law sets opt-out rules.
-> - Follow up. In a study of 12 million outreach emails, one follow-up brought about 66% more replies.
+> - Follow up. In a study of 12 million outreach emails, sending one follow-up went with about 66% more replies.
 > - Most numbers here are one practitioner's cheat sheet, not shown data. Treat them as starting points to test.
 
 ## Read the symptom, fix the cause
@@ -44,7 +44,7 @@ Skip AI-written personalised first lines. The cheat sheet puts them at about a 0
 
 ## Follow up, then answer fast
 
-Following up is where the replies are. Dean's study found one follow-up lifted replies by 65.8%, and three or more messages did best overall. The cheat sheet's follow-up #4 is two words: "Hi John???"
+Following up is where the replies are. In Dean's study, emails with one follow-up got 65.8% more replies, and three or more messages did best overall. That's a correlation in the data, not a controlled test. The cheat sheet's follow-up #4 is two words: "Hi John???"
 
 When someone replies with interest, **answer within 5 minutes**. The cheat sheet gives that number. James Oldroyd and colleagues [found most companies answer online leads far too slowly](https://scholarsarchive.byu.edu/facpub/9711/).
 

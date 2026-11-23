@@ -64,7 +64,7 @@ Each angle pulls in a different crowd, so plan the takes others could run with b
 
 Mediocre influencers deliver numbers that turn into nothing, Kunal Gandhi warns. A few well-matched ones shape the right narrative and bring the right audience.
 
-Research backs this up. Simone Wies, Alexander Bleier and Alexander Edeling [studied over 800 Instagram campaigns](https://www.ama.org/2022/10/11/finding-goldilocks-influencers-why-high-follower-count-may-not-be-the-best-driver-of-engagement-on-social-media/) and found engagement rises with follower count only up to a point, then falls. Mid-sized creators were the sweet spot because followers of huge accounts feel a weaker tie to them. Big creators did better when they made original content in their own style.
+Research backs the part about reach. Simone Wies, Alexander Bleier and Alexander Edeling [studied over 800 Instagram campaigns](https://www.ama.org/2022/10/11/finding-goldilocks-influencers-why-high-follower-count-may-not-be-the-best-driver-of-engagement-on-social-media/) and found engagement rises with follower count only up to a point, then falls. Mid-sized creators were the sweet spot because followers of huge accounts feel a weaker tie to them. Big creators did better when they made original content in their own style.
 
 Fit means the creator lives with the problem and their audience would plausibly try your product. Read their posts and replies first to see who pays attention and what questions come up. Give them real access and let them write their own take. If every creator posts the same paragraph, you've lost the point.
 
@@ -79,7 +79,7 @@ Brief each creator in five lines: what the product does, what they can test them
 Offer a call if they need help understanding it.
 
 > [!RISK] Undisclosed paid posts
-> The FTC's [guide for influencers](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers) says any financial, employment, personal or family relationship needs disclosure, including free access to your product. Put the disclosure in the post itself, not only in a bio. Undisclosed paid posts break platform rules and advertising law in many countries.
+> The FTC's [guide for influencers](https://www.ftc.gov/business-guidance/resources/disclosures-101-social-media-influencers) says any financial, employment, personal or family relationship needs disclosure, including free access to your product. Put the disclosure in the post itself, not only in a bio. US law applies to any post likely to reach US buyers, and other countries have their own rules.
 
 > [!DO] Draft your top-25 quote list
 > In a spreadsheet, list 25 people who could quote your next launch, with one column for their reach into your customer and one for the angle you'd ask them to take.

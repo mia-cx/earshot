@@ -1,6 +1,6 @@
 # Launching: literature notes
 
-Research behind `content/launch/`. Each lesson lists the principles it rests on, the sources that back them, and a check of every number and factual claim in the lesson as written before this pass. All sources were opened and read on 2026-11-23 unless marked **not verified**.
+Research behind `content/launch/`. Each lesson lists the principles it rests on and an independent audit of every factual claim in it. Verdicts: **supported** (the source says this), **overstated** (the source says something narrower), **misattributed** (true, but the cited source doesn't say it), **disputed**, **unsupported**, or **one person's claim** (a practitioner's number, labelled as such in the lesson). Where a claim wasn't supported, the lesson was corrected and the row says how. All sources were opened and read on 2026-11-23. ftc.gov and Reddit Help block scripts, so those were read through the Wayback Machine's 2026 copies, and the two journal abstracts through Crossref.
 
 ## Sources used across the module
 
@@ -21,7 +21,7 @@ Research behind `content/launch/`. Each lesson lists the principles it rests on,
 | [Eric Ries, "Vanity Metrics vs. Actionable Metrics" (2009)](https://tim.blog/2009/05/19/vanity-metrics-vs-actionable-metrics/) | Vanity metrics (hits, page views) feel good but don't guide action. Actionable metrics are per customer or per segment: cohorts and split tests. |
 | [Rob Fitzpatrick on *The Mom Test*, The Learning Leader show notes](https://learningleader.com/robfitzpatrick/) | The three rules: talk about their life instead of your idea; ask about specifics in the past instead of generics or opinions about the future; talk less and listen more. Book page: [momtestbook.com](https://www.momtestbook.com/). |
 | [April Dunford, "Obviously Awesome: a product positioning exercise" (2016)](https://hackernoon.com/obviously-awesome-a-product-positioning-exercise-604e8ced841e) | Five steps: let go of your default market, isolate what's unique, turn it into value, find who cares a lot, choose the market frame that makes your strengths obvious. Declaring your market sets context for prospects; positioning is the input to messaging. |
-| [Snopes, "Are videos of Tesla's new 'flying' car performing mid-air stunts real?" (2026)](https://www.snopes.com/fact-check/tesla-flying-roadster-car-real/) | Rated true. Tesla livestreamed the Roadster event on YouTube on 15 October 2026 in front of a live audience; attendees' own videos corroborate it. Musk: "We need an audience to prove that it's not AI." Sustained flight was not shown. |
+| [Snopes, "Are videos of Tesla's new 'flying' car performing mid-air stunts real?" (2026)](https://www.snopes.com/fact-check/tesla-flying-roadster-car-real/) | Rated true. Tesla livestreamed the Roadster event on YouTube on 15 October 2026 in front of a live audience; attendees' own videos corroborate it. Musk: "We need an audience to prove that it's not AI or SI." Sustained flight was not shown. |
 
 **Not verified, kept out of lessons:** Geoffrey Moore's *Crossing the Chasm* (beachhead niche, pragmatists buying on peer references). I could open only secondary summaries and Wikipedia, not Moore's text or publisher page (HarperCollins blocked the fetch).
 
@@ -29,71 +29,98 @@ Research behind `content/launch/`. Each lesson lists the principles it rests on,
 
 **Principles.** Attention in a feed is decided in a second or two (Meta 2016). What gets shared is content that is surprising, useful or emotionally arousing (Berger & Milkman 2012). A launch is a traction test, not a finish line (Weinberg & Mares; Graham).
 
-**Claim check.**
-
-| Claim | Verdict | Source |
+| Claim | Verdict | Source that settles it |
 | --- | --- | --- |
-| A stranger decides "in under a second" | **Disputed** as worded. Recall can start at 0.25 s, but average time on a mobile feed item is 1.7 s. Lesson now says "a second or two". | Meta 2016 |
-| A funding number, a fight people have opinions on, or an unbelievable result makes people stop | **Confirmed in principle**: surprise and high-arousal emotion (awe, anger, anxiety) predict sharing. Specific examples are Epstein's. | Berger & Milkman |
-| Launch comments rarely ask about features | **Unverified**, Epstein's observation | Epstein post |
-| Hospital software launch: 1.5M views day one, trending | **Unverified**, agency's own claim (already labelled) | Epstein post |
-| Each launch needs its own ideal customer, channels and plan | **Confirmed in principle**: test channels, focus on the one that works | *Traction* ch. 2 |
-| Gandhi is a former Eigen Labs marketer | **Confirmed** from his X bio | source post |
-| Launches are big moments that make a product | **Disputed**: Graham calls the Big Launch a tactic that "usually doesn't work". Added as a Watch out. | Graham |
+| People spend about 1.7 s on a mobile News Feed item on average (2016) | **supported** | Meta 2016 |
+| Surprising, useful and high-arousal content (awe, anger, anxiety) is shared more; sad, low-arousal content less | **supported** | Berger & Milkman, abstract via Crossref |
+| A funding number, a fight people have opinions on, or an unbelievable result makes people stop | **supported** in principle: surprise and high arousal predict sharing. The examples are Epstein's. | Berger & Milkman |
+| Anger shares as well as awe | **supported** | Berger & Milkman |
+| Launch comments rarely ask about features | **one person's claim**, labelled (Epstein) | Epstein post |
+| Hospital software launch: 1.5M views day one, trending | **one person's claim**, labelled | Epstein post |
+| Each launch needs its own ideal customer, channels, plan and video | **one person's claim**, labelled (Gandhi) | Gandhi post |
+| Gandhi is a former Eigen Labs marketer | **supported** | his X bio ("Prev. @eigenlabs") |
+| Test a few channels cheaply, then focus on the one that works | **supported** | *Traction* ch. 2 |
+| Graham calls the Big Launch a tactic that "usually doesn't work"; all you need is an initial core of users | **supported** | Graham |
 
 ## Show the product at its extreme (`the-demo.md`)
 
-**Principles.** Awe and surprise are among the strongest drivers of sharing (Berger & Milkman). In feeds, video ads that show the product early and get the message across succinctly are best recalled, and feed video must work without sound (Meta 2016). The most credible demo is one people can try (Show HN guidelines).
+**Principles.** Awe and surprise are among the strongest drivers of sharing (Berger & Milkman). In feeds, video ads that show the product and get the message across succinctly are best recalled, and feed video must work without sound (Meta 2016). The most credible demo is one people can try (Show HN guidelines).
 
-| Claim | Verdict | Source |
+| Claim | Verdict | Source that settles it |
 | --- | --- | --- |
-| Tesla Roadster drove a curved ramp upside down, flipped, jumped a row of Teslas, live, in front of a crowd, on a livestream | **Confirmed** (15 Oct 2026) | Snopes |
-| Filmed any other way, viewers would assume CGI | **Confirmed in spirit**: Musk said the audience was there "to prove that it's not AI" | Snopes |
-| Product previews, demo videos and quirky humour outperform everything else | **Unverified**, Gandhi's experience. Meta's research supports showing the product; nothing found on humour. | Meta 2016 |
-| Launches gain the most from video | **Unverified** | none found |
+| People share content that sparks awe or surprise more | **supported** | Berger & Milkman |
+| The Roadster drives up an upside-down ramp, flips, lands on its wheels, jumps a row of Teslas | **supported** | Snopes |
+| Tesla streamed it on 15 October 2026; attendees posted their own clips | **supported** | Snopes |
+| Musk said on stage, "We need an audience to prove that it's not AI." | **misattributed** as quoted: Snopes gives the full line as "…it's not AI or SI" and doesn't say where he said it. Lesson now quotes the part that stands alone, "to prove that it's not AI". | Snopes |
+| Show HN asks for something people can play with, ideally without a sign-up | **supported** | Show HN guidelines |
+| Master video as a medium; previews, demo videos and humour outperform | **one person's claim**, labelled (Gandhi) | Gandhi posts |
+| Launches gain the most from video | **overstated**: Gandhi lists ignoring video in launches as a common mistake, not that launches gain most. Lesson now says so. | Gandhi post 1685889947461402624 |
+| Across 600+ video ads, recall was best when the ad showed the product and kept the message short | **supported** | Meta 2016 |
+| Feeds are watched fast and without sound | **supported** | Meta 2016 |
 
 ## Line up your launch-day voices (`launch-day.md`)
 
 **Principles.** Social proof: uncertain people copy similar others (Cialdini). Mid-sized creators get more engagement than the biggest (Wies, Bleier & Edeling). Platform rules forbid organised voting (Product Hunt, Hacker News). Paid or gifted posts need disclosure (FTC).
 
-| Claim | Verdict | Source |
+| Claim | Verdict | Source that settles it |
 | --- | --- | --- |
-| A quote becomes a new post to the quoter's followers; a retweet does far less | **Unverified**, Epstein's reading of X | Epstein post |
-| Epstein's agency: 200M views, 30+ launches, 2,000+ demos, WithCoverage 600 | **Unverified**, agency's own numbers (already labelled) | Epstein post |
-| Mediocre influencers deliver numbers that turn into nothing; pick fit over reach | **Confirmed in part**: engagement peaks at mid follower counts; tie strength drives it | Wies et al. |
-| Undisclosed paid posts break rules and law | **Confirmed**, and broader: free products, friendship and employment also need disclosure | FTC |
-| Line everyone up to post at once (thunderclap) | **Allowed on X; disputed for Product Hunt and HN**: asking for upvotes there breaks the rules and can remove the launch. Added as a Watch out. | Product Hunt; Show HN |
+| When uncertain, people look to what similar others do | **supported** | Cialdini |
+| The "same room" towel card beat every other message | **supported** ("the single most effective message") | Cialdini |
+| A quote becomes a new post to the quoter's followers; a retweet does far less | **one person's claim**, labelled (Epstein) | Epstein post |
+| X shows one post per conversation | **supported** | x-algorithm `dedup_conversation_filter.rs` (see `x.md`) |
+| JD Ross's favour story | **one person's claim** | Epstein post |
+| 200M views, 30+ launches, 2,000+ demos, WithCoverage 600 | **one person's claim**, labelled | Epstein post |
+| Thunderclap; ecosystem attention beats paid campaigns | **one person's claim**, labelled (Gandhi) | Gandhi post |
+| Product Hunt: "Never ask for upvotes"; it can get a launch removed; new accounts' votes barely count | **supported** | Product Hunt promotion guide and FAQ |
+| Hacker News: "Please don't ask friends to upvote or comment." | **supported** | Show HN guidelines |
+| Mediocre influencers bring numbers that turn into nothing | **one person's claim**, labelled (Gandhi) | Gandhi post |
+| "Research backs this up" (fit over reach) | **overstated**: the study measures follower count against engagement, not fit. Lesson now says research backs the part about reach. | Wies et al. |
+| 800+ Instagram campaigns; engagement rises then falls with follower count; weaker tie for big accounts | **supported** | Wies et al., abstract via Crossref; AMA summary |
+| Big creators do better with original content in their own style | **supported** (content customisation flattens the curve) | AMA summary |
+| Disclose any financial, employment, personal or family relationship, free products included, in the post itself | **supported** | FTC Disclosures 101 |
+| Undisclosed paid posts break platform rules and advertising law in many countries | **unsupported** by the cited source. Lesson now says what the FTC page says: US law applies to posts likely to reach US consumers, and foreign laws may also apply. | FTC Disclosures 101 |
 
 ## Work the conversation after launch (`after-the-launch.md`)
 
 **Principles.** Views are vanity metrics; trials and conversations per person are actionable (Ries). Early users need delight and personal attention (Graham). Feedback is only useful when it is about what people did, not compliments (Fitzpatrick).
 
-| Claim | Verdict | Source |
+| Claim | Verdict | Source that settles it |
 | --- | --- | --- |
-| Judge a launch by trials, DMs and calls, not views | **Confirmed in principle** | Ries |
-| Go back and tell people when you ship their fix | **Confirmed in principle** (delight early users) | Graham |
-| Rebook creators within 1 to 2 weeks | **Unverified**, 0xfJuan's practice (already labelled) | source post |
+| Ries calls hits and views vanity metrics: they feel good but don't guide action | **supported** | Ries |
+| Actionable metrics are per customer or per segment | **supported** | Ries |
+| Judge a launch by trials, relevant DMs and sales calls | **supported** in principle; the list is 0xfJuan's | Ries; 0xfJuan post |
+| All you need from a launch is an initial core; small companies can give attention big ones can't | **supported** | Graham |
+| The Mom Test: ask about specifics in the past, not opinions about the future | **supported** | The Learning Leader show notes |
+| Ask prospects where they found you; track only what you can verify | **one person's claim** | 0xfJuan post |
+| Rebook creators within 1 to 2 weeks | **one person's claim**, labelled | 0xfJuan post |
 
 ## Find your first 100 users (`first-100-users.md`)
 
 **Principles.** Recruit early users by hand, starting narrow (Graham). Test a few channels cheaply, then focus on the one that works (Weinberg & Mares). Each community sets its own promotion rules.
 
-| Claim | Verdict | Source |
+| Claim | Verdict | Source that settles it |
 | --- | --- | --- |
-| Five good fits beat fifty submissions | **Confirmed in principle**: test about three channels, focus on one | *Traction* |
-| "Most subreddits and Lobsters ban or downvote plain self-promotion" | **Disputed** as worded. Reddit: promotion isn't inherently spam; some communities ban it, others allow 10%. Lobsters: under a quarter, none in your first 70 days. Lesson corrected. | Reddit Help; Lobsters |
-| Links without context on HN get treated as spam | **Confirmed in part**: Show HN must be something people can try; landing and sign-up pages are off topic | Show HN |
-| Google names low-quality directory links, automated link creation and link schemes as spam | **Confirmed** | Google spam policies |
-| Product Hunt is "built around launches" | **Confirmed** | Product Hunt guide |
-| @solyatic sells upplaunch.com; @2whazzuup runs a backlink database | **Confirmed** from the posts (already labelled) | source posts |
+| "The most common unscalable thing founders have to do at the start is to recruit users manually." | **supported** (quote matches) | Graham |
+| Start narrow, like a contained fire | **supported** | Graham |
+| Bullseye: list channels, pick three, test cheaply, focus; "one traction channel dominates" | **supported** | *Traction* ch. 2 |
+| Five good fits beat fifty submissions | **supported** in principle | *Traction* |
+| @solyatic lists 50 places; @2whazzuup lists 200 | **supported** | source posts |
+| @solyatic sells upplaunch.com; @2whazzuup runs a backlink database | **supported** | source posts and bios |
+| Reddit: promotion isn't spam on its own; some subreddits ban it, others cap it at 10% | **supported** | Reddit Help |
+| Lobsters: under a quarter of activity, none in the first 70 days | **supported** | Lobsters About |
+| Show HN takes only things people can try; landing and sign-up pages are off topic | **supported** | Show HN guidelines |
+| Product Hunt: no famous hunter needed; link straight to your product | **supported** | Product Hunt FAQ |
+| Google names low-quality directory links, excessive link exchanges and automated link creation as link spam | **supported** | Google spam policies |
 
 ## Your first week on a brand-new product (`day-zero-week.md`)
 
-**Principles.** Positioning first: your chosen market frame sets context, and messaging follows from it (Dunford). Build traction in parallel with product from week one (Weinberg & Mares's 50% rule). Early users come from hands-on work (Graham).
+**Principles.** Positioning first: your chosen market frame sets context, and messaging follows from it (Dunford). Build traction in parallel with product from week one (Weinberg & Mares's 50% rule).
 
-| Claim | Verdict | Source |
+| Claim | Verdict | Source that settles it |
 | --- | --- | --- |
-| The post was bookmarked 223 times | **Confirmed** (scraped post: 159 likes, 223 bookmarks) | source post |
-| Answer clarity questions before posting | **Confirmed in principle** | Dunford |
-| Marketing is not separate from the product | **Confirmed in principle**: the 50% rule | *Traction* ch. 3 |
-| The seven-day order works | **Unverified**, author's playbook with no outcomes (already labelled) | source post |
+| Almost every failed startup had a product; what it lacked was customers | **overstated**: the book says they lacked *enough* customers. Lesson and check card now say so. | *Traction* ch. 3 |
+| 50% rule: split time between product and traction, in parallel; traction work shows which message and niche land | **supported** | *Traction* ch. 3 |
+| The market you claim sets the context; messaging follows from positioning | **supported** | Dunford |
+| Gandhi wrote the plan for a day-0 crypto project | **supported** | source post |
+| The post got 223 bookmarks and reports no outcomes | **supported** | scraped post |
+| The seven-day order works | **one person's claim**, labelled | source post |

@@ -16,7 +16,7 @@ description: Define your onboarded event, find what brings users back, and messa
 
 Customers who stay get more profitable each year. [Fred Reichheld's research at Bain](https://media.bain.com/Images/BB_Prescription_cutting_costs.pdf) found they buy more, cost less to serve and refer others: in financial services, a 5% rise in retention lifted profit by more than 25%.
 
-Keeping customers still won't grow you on its own. [A 2014 study by Byron Sharp's team at the Ehrenberg-Bass Institute](https://ideas.repec.org/a/eee/jbrese/v67y2014i5p990-997.html) found that growing and shrinking brands differed mostly in how many new customers they won, not in how many they lost.
+Keeping customers still won't grow you on its own. [A 2014 study by Erica Riebe, Byron Sharp and colleagues at the Ehrenberg-Bass Institute](https://ideas.repec.org/a/eee/jbrese/v67y2014i5p990-997.html) found that growing and shrinking brands differed mostly in how many new customers they won, not in how many they lost.
 
 ## Define onboarded as a habit, not a click
 
@@ -46,7 +46,7 @@ Retention takes as much planning as acquisition, so answer these questions early
 
 Track the site with Google Analytics and in-product actions with a product analytics tool. Kunal uses Redash and Dune for on-chain data.
 
-For rough benchmarks, [Lenny Rachitsky and Casey Winters asked about 20 growth leaders](https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29) what good six-month retention looks like: about 25% active for consumer social, 40% of paying subscribers for consumer software, and 60% of paying companies for small-business software. These are practitioner estimates, not a study.
+For rough benchmarks, [Lenny Rachitsky and Casey Winters asked about 20 growth leaders](https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29) what good six-month retention looks like: about 25% active for consumer social, 40% of paying subscribers for consumer software, and 60% of paying companies for software sold to small and mid-sized businesses. These are practitioner estimates, not a study.
 
 Pricing belongs here too. Write down why, how and what you'll charge on day one; free with no revenue model doesn't last. *Read your pricing from your numbers* covers the signals that your price is wrong.
 
@@ -54,9 +54,9 @@ Pricing belongs here too. Write down why, how and what you'll charge on day one;
 
 ## Message people on what they did
 
-Send messages triggered by what a user just did. [BJ Fogg's behaviour model](https://behaviormodel.org/) says an action happens only when motivation, ability and a prompt meet at the same moment, so a timely prompt catches motivation while it's still there. Selling again to an existing customer also costs a fraction of finding a new one.
+Send messages triggered by what a user just did. [BJ Fogg's behaviour model](https://behaviormodel.org/) says an action happens only when motivation, ability and a prompt meet at the same moment, so a timely prompt catches motivation while it's still there. Keeping a customer also costs less than finding one: winning a new customer costs [5 to 25 times more](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers), depending on the study and the industry.
 
-To measure whether the messages add revenue, hold out a random control group. [Ron Kohavi's experiments at Microsoft](https://hbr.org/2017/09/the-surprising-power-of-online-experiments) showed how often intuition misjudges a change; only a random group that gets nothing tells you what the messages added.
+To measure whether the messages add revenue, hold out a random control group. [Ron Kohavi's experiments at Microsoft](https://hbr.org/2017/09/the-surprising-power-of-online-experiments) showed that even experts misjudge which changes will pay off; only a random group that gets nothing tells you what the messages added.
 
 > [!TRICK] Build five behaviour flows with a holdout
 > 1. Use Klaviyo (or your email tool). Send it product events: viewed, added to cart, bought, went quiet.
@@ -103,7 +103,8 @@ If you sell a service or a membership, weekly check-ins are part of retention. *
 
 - [Fred Reichheld, *Prescription for cutting costs* (Bain, 2001)](https://media.bain.com/Images/BB_Prescription_cutting_costs.pdf)
 - [Riebe, Wright, Stern and Sharp, *How to grow a brand: Retain or acquire customers?* (2014)](https://ideas.repec.org/a/eee/jbrese/v67y2014i5p990-997.html)
-- [Ehrenberg-Bass Institute: Effective brand growth, acquisition or retention?](http://marketingscience.info/effective-brand-growth-acquisition-or-retention)
+- [Ehrenberg-Bass Institute: Effective brand growth, acquisition or retention?](https://marketingscience.info/news-and-insights/effective-brand-growth-acquisition-or-retention)
+- [Amy Gallo, *The Value of Keeping the Right Customers* (2014)](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers)
 - [Casey Winters, *Why Onboarding is the Most Crucial Part of Your Growth Strategy* (2017)](https://www.caseyaccidental.com/p/why-onboarding-is-the-most-crucial-part-of-your-growth-strategy)
 - [Lenny Rachitsky and Casey Winters, *What is good retention* (2020)](https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29)
 - [BJ Fogg: Fogg Behavior Model](https://behaviormodel.org/)

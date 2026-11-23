@@ -1,6 +1,6 @@
 # Keep and convert: literature notes
 
-Research behind `content/keep-users/`. Every source below was opened and read; where only an abstract or summary was readable, the note says so. Claims are marked **confirmed**, **disputed** or **unverified**.
+Research behind `content/keep-users/`. Every source below was opened and read on 2026-11-23; where only an abstract or summary was readable, the note says so. Each lesson ends with an independent audit of every factual claim in it. Verdicts: **supported** (the source says this), **overstated** (the source says something narrower), **misattributed** (true, but the cited source doesn't say it), **disputed**, **unsupported**, or **one person's claim** (a practitioner's number, labelled as such in the lesson). Where a claim wasn't supported, the lesson was corrected and the row says how.
 
 ## retention.md: Keep the users you get
 
@@ -9,9 +9,9 @@ Research behind `content/keep-users/`. Every source below was opened and read; w
 **Retention pays, but it doesn't grow you on its own.**
 
 - Fred Reichheld (Bain), [*Prescription for cutting costs*](https://media.bain.com/Images/BB_Prescription_cutting_costs.pdf) (2001), full PDF read. Customers generate more profit each year they stay: they buy more, cost less to serve, refer others and pay a premium. "In financial services, for example, a 5% increase in customer retention produces more than a 25% increase in profit." He also says not every customer can be profitable and long-standing, so segment and invest only in the ones that can.
-- Amy Gallo, HBR, [*The Value of Keeping the Right Customers*](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers) (2014), opening only (paywall). Repeats "5 to 25 times" more to win a new customer than keep one, and hedges it herself: depends on the study and the industry. Cites Reichheld for 5% retention giving 25% to 95% more profit.
+- Amy Gallo, HBR, [*The Value of Keeping the Right Customers*](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers) (2014), opening read (paywall). "Depending on which study you believe, and what industry you're in, acquiring a new customer is anywhere from five to 25 times more expensive than retaining an existing one." Cited in the lesson with that hedge. Cites Reichheld for 5% retention giving 25% to 95% more profit.
 - Riebe, Wright, Stern and Sharp, [*How to grow a brand: Retain or acquire customers?*](https://ideas.repec.org/a/eee/jbrese/v67y2014i5p990-997.html), *Journal of Business Research* 67(5), 2014. Abstract read. Using doctors' prescribing panels and a residential-finance tracker, "for both growth and decline, unusual acquisition plays a much stronger role than unusual defection." Acquisition also explained far more variation in profit in their simulation.
-- Ehrenberg-Bass Institute, [*Effective brand growth: Acquisition or retention?*](http://marketingscience.info/effective-brand-growth-acquisition-or-retention) Read in full. Summarises Double Jeopardy (small brands have fewer buyers who are slightly less loyal), says acquisition is "roughly twice as important" as reduced defection for growing brands, and that much defection is outside a marketer's control. Concludes retention still matters (don't alienate customers) but doesn't drive share growth.
+- Ehrenberg-Bass Institute, [*Effective brand growth: Acquisition or retention?*](https://marketingscience.info/news-and-insights/effective-brand-growth-acquisition-or-retention) Read in full. Summarises Double Jeopardy (small brands have fewer buyers who are slightly less loyal), says acquisition is "roughly twice as important" as reduced defection for growing brands, and that much defection is outside a marketer's control. Concludes retention still matters (don't alienate customers) but doesn't drive share growth.
 
 **Define activation as a repeated key action, not a single first step.**
 
@@ -35,16 +35,24 @@ Research behind `content/keep-users/`. Every source below was opened and read; w
 
 ### Claim check
 
-| Claim in the lesson | Status | Source |
+| Claim in the lesson | Verdict | Source that settles it |
 | --- | --- | --- |
-| Getting users is the easy part; retention is harder than acquisition (Kunal) | **disputed** | Riebe et al. 2014 and Ehrenberg-Bass: acquisition drives most growth and decline. Retention is cheaper per customer, not a substitute for acquisition. |
-| Onboarded = one event, the first action that delivers value | **disputed in part** | Winters defines activation as the key action repeated at a frequency; a first action is at best a leading indicator. Lesson now says so. |
-| Smoother onboarding alone puts you ahead of 90% of projects (Kunal, crypto) | **unverified** | No source; stays labelled as his read. |
-| Selling again to an existing customer costs a fraction of finding a new one | **confirmed, with caveat** | Gallo (5 to 25x, hedged by industry); Reichheld (cost to serve falls with tenure). |
-| A 10% holdout proves messages add revenue | **confirmed as method** | Kohavi et al. Holdout must be random and large enough; small lists may not reach significance. |
-| Most online stores have one abandoned-cart email and nothing else (Korzhov) | **unverified** | His claim, labelled. |
-| Late check-ins: team waited 1 to 3 days for approvals (Hunt) | **unverified** | His anecdote, labelled. |
-| Churn before month 4 loses you money (Hunt's prompt) | **unverified** | Consistent with Reichheld's point that customers become profitable over time; no number checked. |
+| Customers who stay buy more, cost less to serve and refer others; in financial services a 5% retention rise lifts profit by more than 25% | **supported** | Reichheld 2001 |
+| Growing and shrinking brands differ mostly in acquisition, not defection | **supported**. The lesson credited "Byron Sharp's team"; it now names the first author, Erica Riebe, with Sharp. | Riebe et al. 2014; Ehrenberg-Bass |
+| Onboarded means one key action; Kunal's examples are "wallet connected" or "first transaction" | **supported** | Kunal post 1951276376251617737 |
+| Activation is the key action repeated on an expected rhythm weeks after sign-up; Pinterest used weekly savers four weeks after sign-up | **supported** | Winters 2017 |
+| Grubhub took its monthly rhythm from ordering by phone | **supported** ("once or twice a month", benchmarked at once a month) | Winters 2017 |
+| Smoother onboarding alone puts you ahead of 90% of projects | **one person's claim**, labelled (Kunal) | Kunal post 2042111501608391080 |
+| About 20 growth leaders; good six-month retention is ~25% consumer social, ~40% consumer subscriptions | **supported**, labelled as practitioner estimates | Rachitsky & Winters 2020 |
+| ~60% of paying companies for "small-business software" | **overstated**: the category is SMB and mid-market SaaS, sold to companies of about 100 to 1,000 employees. Lesson now says small and mid-sized businesses. | Rachitsky & Winters 2020 |
+| Kunal uses Redash and Dune for on-chain data | **supported** | Kunal post 1951276376251617737 |
+| Behaviour happens when motivation, ability and a prompt meet at the same moment | **supported** | Fogg |
+| Selling again to an existing customer costs a fraction of finding a new one | **unsupported** as written: no source in the lesson, and it is Korzhov's line. Lesson now cites Gallo: winning a new customer costs 5 to 25 times more than keeping one, depending on the study and industry. | Gallo 2014 |
+| Kohavi's experiments showed "how often" intuition misjudges a change | **overstated**: the readable part of the article shows one case (a shelved Bing headline that raised revenue 12%) and says even experts struggle to judge ideas. Lesson now says even experts misjudge which changes will pay off. | Kohavi & Thomke 2017 |
+| Five behaviour flows with a 10% random holdout | **one person's claim** (Korzhov); the holdout method is sound | Korzhov post; Kohavi & Thomke |
+| Most online stores have one abandoned-cart email and nothing else | **one person's claim**, labelled | Korzhov post |
+| A 35-client agency waited 1 to 3 days on approvals clients never asked to give | **one person's claim**, labelled | Hunt post |
+| Churn before month 4 loses you money | **one person's claim** (Hunt's prompt) | Hunt post |
 
 ## paid-ads.md: Run paid ads you can measure
 
@@ -60,8 +68,8 @@ Research behind `content/keep-users/`. Every source below was opened and read; w
 
 **Clean conversion data.**
 
-- Meta for Developers, [Deduplicate Pixel and server events](https://developers.facebook.com/docs/marketing-api/conversions-api/deduplicate-pixel-and-server-events/). Read. Browser `eventID` must match server `event_id`, and event names must match; duplicates within 48 hours are discarded.
-- Meta for Developers, [Conversions API best practices](https://developers.facebook.com/docs/marketing-api/conversions-api/best-practices/). Read. Event Match Quality is scored out of 10; only matched events feed attribution and optimisation. No numeric "good" threshold given.
+- Meta for Developers, [Deduplicate Pixel and server events](https://developers.facebook.com/documentation/ads-commerce/conversions-api/deduplicate-pixel-and-server-events). Read. Browser `eventID` must match server `event_id`, and event names must match; duplicates within 48 hours are discarded.
+- Meta for Developers, [Conversions API best practices](https://developers.facebook.com/documentation/ads-commerce/conversions-api/best-practices). Read. Event Match Quality is scored out of 10; only matched events feed attribution and optimisation. No numeric "good" threshold given.
 
 **Match the page to the ad.**
 
@@ -70,7 +78,7 @@ Research behind `content/keep-users/`. Every source below was opened and read; w
 
 **Creative.**
 
-- Nielsen, [*When it comes to advertising effectiveness, what is key?*](https://www.nielsen.com/insights/2017/when-it-comes-to-advertising-effectiveness-what-is-key/) (2017). Read. Across ~500 FMCG campaigns, creative remained the largest driver of sales lift; media's share rose to 36%. Supports "creative matters most"; says nothing about creative volume.
+- Nielsen, [*When it comes to advertising effectiveness, what is key?*](https://www.nielsen.com/insights/2017/when-it-comes-to-advertising-effectiveness-what-is-key/) (2017). Read. Across nearly 500 FMCG campaigns from 2016 and early 2017, creative remained the largest driver of sales lift; media's share rose to 36%. Supports "creative matters most"; says nothing about creative volume.
 
 **Fake testimonials.**
 
@@ -78,19 +86,28 @@ Research behind `content/keep-users/`. Every source below was opened and read; w
 
 ### Claim check
 
-| Claim in the lesson | Status | Source |
+| Claim in the lesson | Verdict | Source that settles it |
 | --- | --- | --- |
-| Ad algorithms optimise on the conversion events you send | **confirmed** | Meta CAPI best practices: only matched events feed delivery optimisation. |
-| Same event ID from browser and server lets Meta merge them | **confirmed** | Meta dedup docs (also event name must match; 48-hour window). |
-| Event match quality above 7 | **unverified** | Meta scores EMQ out of 10 but publishes no threshold. Labelled as Korzhov's target. |
-| Most accounts send duplicates or miss about a quarter of orders | **unverified** | Korzhov's claim. |
-| Platforms take credit for 2 to 5 times the sales they cause | **consistent, not confirmed** | Gordon et al.: observational estimates off by about 3x in half the studies, usually too high. Blake et al.: a fraction of naive estimates. The range is his. |
-| Regional holdout: 5 regions for 4 weeks | **method confirmed, size disputed** | Vaver and Koehler confirm geo experiments; Lewis and Rao show small tests are often too noisy to read. Added a Watch out. |
-| Calculate sample size first, don't call it early | **confirmed** | Evan Miller. |
-| Run time is the only public performance signal; 60+ days means it pays | **unverified heuristic** | No study. Brand ads, big budgets and neglected accounts also run long. Lesson now calls it a heuristic. |
-| The account that tests more creatives usually wins; $20k shoot vs 1,000 AI videos | **unverified** | Nielsen supports creative as the main driver, not volume. Labelled as his. |
-| FTC's 2024 rule covers fake testimonials | **confirmed** | FTC press release. |
-| Meridian and Robyn are free MMM tools | **confirmed** | Both open source. |
+| Across 15 Facebook RCTs, tracking-based estimates were off by a factor of three in half the studies, mostly too high | **supported** | Gordon et al. 2019 |
+| eBay switched off brand-keyword ads and lost almost no sales; traffic went to the free result | **supported**. The lesson credited "Steven Tadelis's team"; it now names all three authors. | Blake, Nosko & Tadelis |
+| Only events matched to a person feed delivery optimisation | **supported** | Meta CAPI best practices |
+| Most accounts send duplicates or miss a quarter of orders | **one person's claim**, labelled | Korzhov post |
+| Same event ID and event name from browser and server; duplicates within 48 hours are dropped | **supported** | Meta dedup docs |
+| Event match quality is scored out of 10; Meta publishes no target; Korzhov aims above 7 | **supported**; the 7 is labelled as his | Meta CAPI best practices |
+| The ad-to-page gap is "where most paid traffic leaves" | **unsupported** as fact; it is Korzhov's line. Lesson now attributes it to him. | Korzhov post |
+| People click on a guess of what a page holds and leave fast when it doesn't confirm it | **supported** | NN/g, Information Scent |
+| Fixing the page costs less than raising ad spend | **unsupported** as fact; Korzhov's line. Lesson now labels it as his claim. | Korzhov post |
+| Checking a test until it looks significant turns noise into false wins | **supported** | Miller |
+| Platforms over-credit by 2 to 5 times | **one person's claim**, labelled; experiments point the same way | Korzhov post; Gordon et al. |
+| Geo experiment: random regions on and off; off regions show what would have happened | **supported** | Vaver & Koehler |
+| Meridian and Robyn are free and take experiment results as a check | **supported** (both open source; both calibrate with geo or lift studies) | Meridian; Robyn |
+| Large retailers' experiments often left a return range over 100 points wide | **supported** (median confidence interval on ROI) | Lewis & Rao 2015 |
+| Run time is the best public hint that an ad performs | **one person's claim**, labelled a heuristic (Korzhov says "the only") | Korzhov post |
+| Nielsen: across about 500 campaigns, creative drove more sales lift than reach, targeting or timing | **overstated** in scope: the campaigns were consumer packaged goods. Lesson now says consumer-goods. | Nielsen 2017 |
+| The account that tests more creatives wins; $20k shoot vs 1,000 API videos | **one person's claim**, labelled | Korzhov post |
+| The FTC's 2024 rule bans testimonials that misrepresent who gave them, AI-generated ones included | **supported** | FTC press release |
+| Competitors' ad accounts are increasingly run by agents | **unsupported** as fact; Korzhov's premise. Lesson now attributes it to him. | Korzhov post |
+| Hourly agent rules (3x cost, 50 conversions, +20% budget) | **one person's claim** | Korzhov post |
 
 ## pricing-signals.md: Read your pricing from your numbers
 
@@ -99,6 +116,7 @@ Research behind `content/keep-users/`. Every source below was opened and read; w
 **Some customers cost more than they pay; time-based costing finds them.**
 
 - Robert S. Kaplan, HBS Working Knowledge, [*A Balanced Scorecard Approach to Measure Customer Profitability*](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability) (2005). Read. In nearly every study, 15 to 20% of customers produce 100% or more of profits; in his insurance example the bottom 5% lost the equivalent of 30% of profits. Remedy: time-driven activity-based costing, which needs only the cost per hour of each resource and the time each activity takes. Fix order: improve your own process, price menu options to cover their cost, cross-sell, and drop the account only as a last resort.
+- Harvard Business School, [Robert S. Kaplan faculty profile](https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6487). Read. Says Kaplan co-developed activity-based costing and the Balanced Scorecard.
 - Kaplan and Narayanan, *Measuring and Managing Customer Profitability* (2001): full text not reachable; **not verified**, not cited.
 
 **Pricing is under-managed.**
@@ -108,12 +126,14 @@ Research behind `content/keep-users/`. Every source below was opened and read; w
 
 ### Claim check
 
-| Claim in the lesson | Status | Source |
+| Claim in the lesson | Verdict | Source that settles it |
 | --- | --- | --- |
-| Close rate above ~40% means you're too cheap, losing ~20% margin | **unverified** | Hunt's rule of thumb; no study found. |
-| 10% to 20% of an agency's clients sit near or below zero margin | **consistent** | Kaplan: unprofitable tails are normal across costing studies. The agency share is Hunt's. |
-| Count your hours at replacement cost | **confirmed as method** | Kaplan's time-driven ABC: cost per hour times time spent. |
-| Churn grades 15 / 10 / 5 / 2.5% monthly | **unverified** | Hunt's benchmarks. Lenny's six-month retention benchmarks are for software, not agencies. |
-| 50% margin floor, 60% target | **unverified** | Hunt's benchmarks. |
-| $18K to $20K of work on $8K to $10K retainers | **unverified** | Hunt's anecdote. |
-| Reprice, rescope or sunset | **confirmed, reordered** | Kaplan puts fixing your own process and repricing before dropping a customer. |
+| Above about 40% close rate you're losing about 20% margin | **one person's claim**, labelled (Hunt) | Hunt post |
+| ProfitWell research found companies spend 10 hours or less a year on pricing | **supported** as quoted; no method published, labelled as a vendor's claim | Campbell 2020 |
+| In virtually every customer profitability study, 15% to 20% of customers produce 100% or more of profit, and the least profitable few wipe part of it out | **supported**; the lesson said "nearly every company studied" and now uses Kaplan's wording | Kaplan 2005 |
+| Kaplan co-developed activity-based costing | **misattributed**: true, but the cited article doesn't say it. Lesson now links his HBS faculty profile, which does. | HBS faculty profile |
+| Time-driven costing needs two numbers: hourly cost of each resource and time per customer | **supported** | Kaplan 2005 |
+| 10% to 20% of an agency's clients sit near or below zero gross margin | **one person's claim**, labelled; fits Kaplan's pattern | Hunt post |
+| Churn grades 15 / 10 / 5 / 2.5% monthly; 50% margin floor, 60% target | **one person's claim**, labelled | Hunt post |
+| $18K to $20K of work on $8K to $10K retainers | **one person's claim**, labelled | Hunt post |
+| Fix your process first, then reprice, then rescope or sell more, and drop the client last | **supported** | Kaplan 2005 |

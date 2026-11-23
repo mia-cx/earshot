@@ -15,22 +15,22 @@ description: Count each sale once, match pages to ads, and measure what ads real
 Ads often reach people who were likely to buy anyway, so "saw the ad, then bought" overstates what the ad did. Two large field experiments show how far off that gets:
 
 - Across 15 randomised Facebook experiments, Brett Gordon and colleagues found tracking-based estimates were [off by a factor of three in half the studies](https://www.kellogg.northwestern.edu/faculty/gordon_b/files/fb_comparison.pdf), mostly too high.
-- At eBay, [Steven Tadelis's team switched off search ads](https://www.nber.org/system/files/working_papers/w20171/w20171.pdf) and found ads on eBay's own brand name added almost no extra sales: people clicked the free result instead.
+- At eBay, [Tom Blake, Chris Nosko and Steven Tadelis switched off search ads](https://www.nber.org/system/files/working_papers/w20171/w20171.pdf) and found ads on eBay's own brand name added almost no extra sales: people clicked the free result instead.
 
 The playbook below is one person's way of working inside that problem: @korzhov_dm's eleven workflows for Meta and Google ads on an online store. His numbers are unverified claims. If you don't spend on ads yet, skim this and come back when you do.
 
 ## Count every sale exactly once
 
-Ad platforms optimise on the conversion events you send. [Meta's documentation](https://developers.facebook.com/docs/marketing-api/conversions-api/best-practices/) says only events matched to a person feed delivery optimisation. Duplicate or missing sales mean **the algorithm learns from wrong data**. Korzhov claims most accounts send duplicates or miss about a quarter of orders.
+Ad platforms optimise on the conversion events you send. [Meta's documentation](https://developers.facebook.com/documentation/ads-commerce/conversions-api/best-practices) says only events matched to a person feed delivery optimisation. Duplicate or missing sales mean **the algorithm learns from wrong data**. Korzhov claims most accounts send duplicates or miss about a quarter of orders.
 
 > [!TRICK] Deduplicate the purchase event
 > 1. Stack: Google Tag Manager, GA4, server-side tracking (Stape), Meta Conversions API.
-> 2. Send the purchase event from both the browser and the server with the same event ID and event name, so Meta merges them. [Meta drops the duplicate](https://developers.facebook.com/docs/marketing-api/conversions-api/deduplicate-pixel-and-server-events/) if it arrives within 48 hours.
+> 2. Send the purchase event from both the browser and the server with the same event ID and event name, so Meta merges them. [Meta drops the duplicate](https://developers.facebook.com/documentation/ads-commerce/conversions-api/deduplicate-pixel-and-server-events) if it arrives within 48 hours.
 > 3. In Meta Events Manager, confirm each order counts once. Check event match quality, which Meta scores out of 10. Korzhov aims for above 7; Meta publishes no target.
 
 ## Match the page to the ad
 
-The ad promises one thing, the page says another, and that gap is where most paid traffic leaves. [Nielsen Norman Group's research on information scent](https://www.nngroup.com/articles/information-scent/) shows people click on a guess of what the page holds, and leave fast when the page doesn't confirm it. Fixing the page costs less than raising ad spend.
+The ad promises one thing, the page says another, and Korzhov says that gap is where most paid traffic leaves. [Nielsen Norman Group's research on information scent](https://www.nngroup.com/articles/information-scent/) shows why: people click on a guess of what the page holds, and leave fast when the page doesn't confirm it. He also claims fixing the page costs less than raising ad spend.
 
 > [!TRICK] Rewrite the page per ad
 > - Build a landing page whose headline and first section change to match the ad the visitor clicked. AI writes the variants.
@@ -70,7 +70,7 @@ The only way to know what ads add for your account is to switch them off somewhe
 > [!RISK] Copying creative invites IP complaints
 > Copy the structure only. Never reuse a competitor's wording, footage or claims.
 
-**Creative matters more than any other choice you make.** [Nielsen's analysis of about 500 campaigns](https://www.nielsen.com/insights/2017/when-it-comes-to-advertising-effectiveness-what-is-key/) found the ad itself drove more sales lift than reach, targeting or timing.
+**Creative matters more than any other choice you make.** [Nielsen's analysis of about 500 consumer-goods campaigns](https://www.nielsen.com/insights/2017/when-it-comes-to-advertising-effectiveness-what-is-key/) found the ad itself drove more sales lift than reach, targeting or timing.
 
 Korzhov goes further and claims the account that tests more creatives usually wins on Meta. He compares a $20k shoot giving 10 videos with the same budget in API calls giving 1,000 (his estimate).
 
@@ -84,7 +84,7 @@ Korzhov goes further and claims the account that tests more creatives usually wi
 
 ## Let an agent run the account on hard rules
 
-Competitors' ad accounts are increasingly run by agents bidding in the same auction with the same platform data. Two agents with the same rules tie. **The winner has inputs others lack**: your review data, a scrape of your competitors, and what a customer really costs you across all channels.
+Korzhov expects competitors' ad accounts to be run by agents bidding in the same auction with the same platform data. Two agents with the same rules tie. **The winner has inputs others lack**: your review data, a scrape of your competitors, and what a customer really costs you across all channels.
 
 > [!TRICK] Build an hourly ad agent
 > Connect Claude Code to your Meta and Google Ads accounts, run it on a schedule with spend limits, and give it these rules:
@@ -117,8 +117,8 @@ Competitors' ad accounts are increasingly run by agents bidding in the same auct
 - [Blake, Nosko and Tadelis, *Consumer Heterogeneity and Paid Search Effectiveness* (2014)](https://www.nber.org/system/files/working_papers/w20171/w20171.pdf)
 - [Lewis and Rao, *The Unfavorable Economics of Measuring the Returns to Advertising* (2015)](https://ideas.repec.org/a/oup/qjecon/v130y2015i4p1941-1973.html)
 - [Vaver and Koehler, *Measuring Ad Effectiveness Using Geo Experiments* (Google, 2011)](https://research.google/pubs/measuring-ad-effectiveness-using-geo-experiments/)
-- [Meta for Developers: Conversions API best practices](https://developers.facebook.com/docs/marketing-api/conversions-api/best-practices/)
-- [Meta for Developers: Deduplicate Pixel and server events](https://developers.facebook.com/docs/marketing-api/conversions-api/deduplicate-pixel-and-server-events/)
+- [Meta for Developers: Conversions API best practices](https://developers.facebook.com/documentation/ads-commerce/conversions-api/best-practices)
+- [Meta for Developers: Deduplicate Pixel and server events](https://developers.facebook.com/documentation/ads-commerce/conversions-api/deduplicate-pixel-and-server-events)
 - [Raluca Budiu, *Information Scent* (Nielsen Norman Group, 2020)](https://www.nngroup.com/articles/information-scent/)
 - [Evan Miller, *How Not To Run an A/B Test* (2010)](https://www.evanmiller.org/how-not-to-run-an-ab-test.html)
 - [Nielsen: When it comes to advertising effectiveness, what is key?](https://www.nielsen.com/insights/2017/when-it-comes-to-advertising-effectiveness-what-is-key/)

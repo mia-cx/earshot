@@ -20,7 +20,7 @@ The check itself is free. Keep a sheet with calls, closes and close rate, and no
 
 ## Count margin per client, not revenue
 
-A billing report shows revenue, not which clients lose you money. [Robert Kaplan at Harvard Business School](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability), co-developer of activity-based costing, found that in nearly every company studied, 15% to 20% of customers produce all of the profit or more, while the least profitable few wipe part of it out. His method needs two numbers: the hourly cost of each person's time, and the hours each customer takes.
+A billing report shows revenue, not which clients lose you money. [Robert Kaplan at Harvard Business School](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability), [co-developer of activity-based costing](https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6487), found that in virtually every customer profitability study, 15% to 20% of customers produce all of the profit or more, while the least profitable few wipe part of it out. His method needs two numbers: the hourly cost of each person's time, and the hours each customer takes.
 
 In Hunt's audits, 10% to 20% of an agency's clients sit near or below zero gross margin once the owner's hours are counted. That's his figure, though it fits Kaplan's pattern.
 
@@ -83,5 +83,6 @@ The bot sorts and suggests. Talking to the client stays your job.
 ## Sources
 
 - [Robert S. Kaplan, *A Balanced Scorecard Approach to Measure Customer Profitability* (HBS Working Knowledge, 2005)](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability)
+- [Harvard Business School: Robert S. Kaplan faculty profile](https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6487)
 - [Patrick Campbell, *A Guide to Unlocking Growth with Optimized Pricing* (2020)](https://www.mindtheproduct.com/a-guide-to-unlocking-growth-with-optimized-pricing/)
 - [@huntkyle: running business operations with bots, including close rate, month-end and scope checks](https://x.com/huntkyle/status/2118086670918750341)
