@@ -10,8 +10,8 @@ const documentKey = (url: string) => {
 	return `${hostname.replace(/^www\./, '')}${pathname.replace(/\/$/, '')}${search}`;
 };
 
-/** The X posts a lesson's Sources section links, once each, in order. */
-export const sourcePosts = (sources: string) => [...new Set(sources.match(X_POST))];
+/** Every link in a lesson's Sources section, research and X posts, once each, in order. */
+export const sourceLinks = (sources: string) => [...new Set(Array.from(sources.matchAll(LINK), ([, url]) => url))];
 
 const posts = new Map<string, string>();
 const research = new Set<string>();
