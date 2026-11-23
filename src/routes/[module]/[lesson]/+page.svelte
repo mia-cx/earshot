@@ -39,7 +39,7 @@
 			await new Promise((r) => setTimeout(r, CELEBRATE_MS));
 		}
 		finishing = false;
-		goto(next?.href ?? '/');
+		goto(next?.href ?? '/map');
 	};
 
 	/** ← and → move between lessons, unless the reader is typing, scrolling a table or using a modifier. */
