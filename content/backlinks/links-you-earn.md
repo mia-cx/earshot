@@ -37,7 +37,7 @@ In [one vendor's data](https://arxiv.org/abs/2606.20065), "best X for Y" roundup
 > Paying for a spot is a separate route with separate risks: see *Tricks with a price tag*.
 
 > [!RISK] Cold email law
-> Emailing site owners is cold email, so CAN-SPAM (US) and GDPR (EU) rules apply. The [FTC's CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) states the law "makes no exception for business-to-business email": include your postal address and a working opt-out. See *Fix cold email by its symptoms* for the mechanics.
+> Emailing site owners is cold email, so email marketing law applies: CAN-SPAM in the US, and in the UK the [ICO's PECR rules](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/), which let you email a company but need consent before you email an individual or sole trader. EU countries set their own rules. The [FTC's CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) states the law "makes no exception for business-to-business email": include your postal address and a working opt-out. See *Fix cold email by its symptoms* for the mechanics.
 
 ## Give writers evidence to cite
 
@@ -103,6 +103,7 @@ Existing articles already have readers. Find what's missing and hand it over.
 - [Mahe Chen, Xiaoxuan Wang, Kaiwen Chen and Nick Koudas, *Generative Engine Optimization: How to Dominate AI Search* (2025)](https://arxiv.org/abs/2509.08919)
 - [Pratyush Kumar, *Generative Engine Optimization at Scale* (2026)](https://arxiv.org/abs/2606.20065)
 - [US Federal Trade Commission: CAN-SPAM Act, a compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
+- [UK Information Commissioner's Office: Electronic mail marketing (PECR)](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)
 - [@borjafat: 69 backlink tactics, ranked by tier](https://x.com/borjafat/status/2116164330014007296)
 - [@SimonHoiberg: finding the listicles Google and ChatGPT cite](https://x.com/SimonHoiberg/status/2119368837208686724)
 - [@2whazzuup: journalist platforms and free tools on developer platforms](https://x.com/2whazzuup/status/2119247229601062993)
