@@ -12,7 +12,7 @@ description: Score a link prospect, then aim it at a page it can actually move.
 
 ## Judge a link by who could click it
 
-**A link is a path for a person before it is a signal for Google.** [Sergey Brin and Lawrence Page's 1998 paper](https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/) describes PageRank as "a model of user behavior": a surfer keeps clicking links, and the chance they land on your page is its score. Each page splits its vote across all its links, so one link on a focused page counts for more than one buried among hundreds.
+**A link is a path for a person before it is a signal for Google.** [Sergey Brin and Lawrence Page's 1998 paper](https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/) describes PageRank as "a model of user behavior": a surfer keeps clicking links, and the chance they land on your page is its score. Each page splits its vote across all its links, so one link on a page with few links counts for more than one buried among hundreds.
 
 A [later Google patent](https://patents.google.com/patent/US7716225B1/en) weights each link by how likely a person is to click it, using its spot on the page, its wording and its topic fit. A patent isn't proof Google uses it, though [Google still names PageRank](https://developers.google.com/search/docs/appearance/ranking-systems-guide) as a core ranking system.
 
@@ -51,7 +51,7 @@ You'll only earn a few links, so spend them where they move something. Pages Goo
 > One agency owner's report, not a measured study. Before linking, make the page itself complete: see *Improve the pages that already rank*.
 
 > [!RISK] Mass submission is link spam
-> Google's spam policies name low-quality directory links, automated link creation and manipulative link schemes as link spam. Since 2022, Google's SpamBrain system has neutralised them so they pass nothing, and a pattern of them can earn a manual action. Use backlink lists to pick a few places that fit, never as a batch to submit everywhere.
+> Google's spam policies name low-quality directory links, automated link creation and manipulative link schemes as link spam. Since 2022, Google's SpamBrain system neutralises the unnatural links it detects, so they pass nothing, and a pattern of them can earn a manual action. Use backlink lists to pick a few places that fit, never as a batch to submit everywhere.
 
 > [!DO] Pick your five link targets
 > Open Search Console, find five pages ranking between positions 10 and 30, and paste their URLs into a doc titled "Link targets". If your site isn't in Search Console yet, set it up first (see *Get your site found at all*).

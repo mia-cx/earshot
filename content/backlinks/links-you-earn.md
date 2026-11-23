@@ -14,7 +14,7 @@ description: Earn links by handing writers the list entry, number, fix or visual
 
 **Every earned link answers one question for the writer: "what does this give my readers?"** [Brin and Page built PageRank](https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/) on academic citation counting: a link is one page citing another. Google's own content check asks whether a page offers ["original information, reporting, research, or analysis"](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) and whether you'd recommend it to a friend. Hand a writer a finished improvement and saying yes is easy.
 
-Most tactics below come from one SaaS builder's ranked list of 69 link tactics (the author sells Distribb, a backlink tool). Top tier: roundups, original statistics, and journalist requests. Next: recovering links and building free tools. Visuals, video and case studies sit lower.
+Most tactics below come from one SaaS builder's ranked list of 69 link tactics (the author sells Distribb, a backlink tool). Top tier: link exchanges (see *Tricks with a price tag*), roundups, original statistics and journalist requests. Next: mining competitors' links, recovering links and building free tools. Visuals, video and case studies sit lower.
 
 ## Get into the lists buyers read
 
@@ -81,7 +81,7 @@ Existing articles already have readers. Find what's missing and hand it over.
 - **Unlinked mentions:** search Google for `"your brand" -site:yoursite.com` to find pages that name you without linking, and ask for the link.
 - **Reused assets:** search for your charts and quotes used without credit.
 - **Dead pages:** restore removed pages that still have live backlinks, or redirect old URLs to equivalent replacements.
-- **Tools you use:** list your software, document your workflow and result, and send the case study to the vendor's relevant editor. Vendors often feature customer stories with a link.
+- **Tools you use:** list your software, document your workflow and result, and send the case study to the vendor's relevant editor. A vendor that runs customer stories may feature yours with a link.
 
 > [!DO] Find five roundups to pitch
 > Search your main buying query in Google and ChatGPT, open the cited "best X" lists, and log five in a sheet with the author's contact and one buyer need each list misses.

@@ -14,7 +14,7 @@ description: Build a list of buyer questions and log who AI recommends for each 
 
 **Your unit of measurement is a question a buyer asks before choosing, asked many times.** "What's the best meeting notes app for a sales team?" tells you more than the keyword "meeting notes app", because it carries the decision.
 
-You ask it many times because AI answers drift. [Rand Fishkin at SparkToro and Patrick O'Donnell at Gumshoe](https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/) had 600 volunteers run 12 prompts nearly 3,000 times in ChatGPT, Claude and Google's AI. ChatGPT and Google's AI had under a 1 in 100 chance of naming the same brands twice, yet strong brands still appeared in most runs. Fishkin's conclusion: how often you appear across many runs is a fair measure, and a "ranking position in AI" isn't. The study isn't peer reviewed, and O'Donnell sells AI tracking.
+You ask it many times because AI answers drift. [Rand Fishkin at SparkToro and Patrick O'Donnell at Gumshoe](https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/) had 600 volunteers run 12 prompts nearly 3,000 times in ChatGPT, Claude and Google's AI. ChatGPT and Google's AI had under a 1 in 100 chance of naming the same brands twice, yet strong brands still appeared in most runs. Fishkin's conclusion: how often you appear across many runs is probably a fair measure, and a "ranking position in AI" isn't. The study isn't peer reviewed, and O'Donnell sells AI tracking.
 
 List the decisions people make before buying something like yours. Take the wording from your inbox, sales calls and reviews, not your head. Turn each one into a Google keyword and an AI prompt, then check where you show up for both.
 
@@ -44,7 +44,7 @@ Analytics undercounts AI. **Add "How did you hear about us?" to your signup form
 > 2. Run each one at least twice per engine, logged out: ChatGPT, Claude, Perplexity, Gemini.
 > 3. Log brands named and URLs cited in separate columns. Being cited and being recommended are two different numbers.
 > 4. Under about 100 AI visits a month, report counts, not percentages.
-> 5. Add Bing's [AI Performance report](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview) for Copilot citations and the searches behind them (setup in *Get your site found at all*).
+> 5. Add Bing's [AI Performance report](https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/) for Copilot citations and the searches behind them (setup in *Get your site found at all*).
 >
 > The free stack: Google Search Console, Bing Webmaster Tools, Ahrefs Webmaster Tools, Screaming Frog (free up to 500 URLs).
 
@@ -81,7 +81,7 @@ Skip the script on day one. Ten questions asked by hand in a spreadsheet get you
 - [Mahe Chen, Xiaoxuan Wang, Kaiwen Chen and Nick Koudas, *Generative Engine Optimization: How to Dominate AI Search* (2025)](https://arxiv.org/abs/2509.08919)
 - [Pranjal Aggarwal et al., *GEO: Generative Engine Optimization* (2024)](https://arxiv.org/abs/2311.09735)
 - [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
-- [Microsoft Bing: Introducing AI Performance in Bing Webmaster Tools](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview)
+- [Microsoft Bing: Introducing AI Performance in Bing Webmaster Tools](https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/)
 - [Jeremy Howard, *The /llms.txt file* (2024)](https://llmstxt.org/)
 - [@wespreadjam: Granola's buyer-decision workflow for AI search](https://x.com/wespreadjam/status/2115568290307469548)
 - [@wespreadjam: Ramp's questions for finding AI gaps](https://x.com/wespreadjam/status/2117333079106932897)

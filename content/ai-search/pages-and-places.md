@@ -12,7 +12,7 @@ description: Publish a page per buying decision, join the right threads, and lis
 
 ## Write one page per decision and buyer
 
-**A small business and a large one ask the same question with different needs, so each deserves its own answer.** AI search doesn't run your buyer's question as typed. [OpenAI says](https://help.openai.com/en/articles/9237897-chatgpt-search) ChatGPT rewrites it into "one or more targeted queries", adding context such as location. [Google](https://developers.google.com/search/docs/appearance/ai-features) describes "query fan-out": "issuing multiple related searches across subtopics".
+**A small business and a large one ask the same question with different needs, so each deserves its own answer.** AI search doesn't run your buyer's question as typed. [OpenAI says](https://help.openai.com/en/articles/9237897-searching-the-web-with-chatgpt) ChatGPT rewrites it into "one or more targeted queries", adding context such as location. [Google](https://developers.google.com/search/docs/appearance/ai-features) describes "query fan-out": "issuing multiple related searches across subtopics".
 
 A page written for one segment's version of the decision matches one of those narrower searches directly. Pick a category where your AI visibility is low, check what AI already cites there, and write dedicated pages for each buyer segment.
 
@@ -22,7 +22,7 @@ A page written for one segment's version of the decision matches one of those na
 > 3. Write one page per segment: "accounts payable software for small businesses" and "accounts payable software for large businesses".
 > 4. Support them with related pages: accounts payable automation software comparisons, and AI in accounts payable.
 >
-> Reported result from [Profound's case study](https://www.tryprofound.com/customers/ramp-case-study) (the vendor whose tool Ramp used): the two pages earned 300+ citations in one month, visibility rose from 3.2% to 22.2%, and Ramp moved from 19th to 8th among fintech brands in the category.
+> Reported result from [Profound's case study](https://www.tryprofound.com/customers/ramp) (the vendor whose tool Ramp used): the two pages earned 300+ citations in one month, visibility rose from 3.2% to 22.2%, and Ramp moved from 19th to 8th among fintech brands in the category.
 
 > [!RISK] The "one month" doesn't match the charts
 > Profound's copy says one month, yet its own charts span 1 December 2024 to 15 February 2025, about ten weeks. The page names no AI engines or prompt counts, so you can't rerun its measurement. Expect a slower, smaller result.
@@ -76,9 +76,9 @@ AI assistants look for tools they can use on a person's behalf. If your product 
 
 ## Sources
 
-- [OpenAI: ChatGPT search](https://help.openai.com/en/articles/9237897-chatgpt-search)
+- [OpenAI: Searching the web with ChatGPT](https://help.openai.com/en/articles/9237897-searching-the-web-with-chatgpt)
 - [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
-- [Profound: How Ramp increased AI brand visibility 7x in accounts payable](https://www.tryprofound.com/customers/ramp-case-study)
+- [Profound: How Ramp increased AI brand visibility 7x in accounts payable](https://www.tryprofound.com/customers/ramp)
 - [Pratyush Kumar, *Generative Engine Optimization at Scale* (2026)](https://arxiv.org/abs/2606.20065)
 - [Anthropic: Agent Skills overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
 - [@wespreadjam: Ramp's pages per buying decision](https://x.com/wespreadjam/status/2117333079106932897)

@@ -2,6 +2,8 @@
 
 Research notes behind `content/backlinks/`. Every source below was opened and read on 2026-11-23. Anything not opened is marked "not verified" and kept out of the lessons.
 
+The claim tables carry the verdicts of an independent audit (2026-11-23) by a reader who did not write the lessons and re-opened every source: **supported**, **overstated**, **misattributed**, **disputed**, **unsupported**, or **one person's claim** (labelled as such in the lesson). Where the lesson changed, the table says how.
+
 ## Sources
 
 ### How links count
@@ -36,54 +38,70 @@ Research notes behind `content/backlinks/`. Every source below was opened and re
 
 **Principles.** A link counts because a person might follow it (Brin and Page's random surfer; the reasonable surfer patent). Links are a relevance signal and a discovery path (Google link best practices). Third-party authority scores are estimates, not Google's numbers (Ahrefs). Mass, automated or low-quality directory links are link spam (Google spam policies), and SpamBrain neutralises them (2022 update).
 
-| Claim in the lesson | Status | Source |
+| Claim in the lesson | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| Domain Rating is a tiebreaker, not the reason | **confirmed** in substance: DR is Ahrefs' relative score; Ahrefs itself warns against judging by DR alone; Google never names it | Ahrefs DR page; SEO Starter Guide |
-| A link is a path for a person before it is a signal for Google | **confirmed** as a model: PageRank models a surfer clicking links; the reasonable surfer patent weights links by click likelihood | Brin and Page 1998; US 7,716,225 |
-| Point links at pages ranking 10 to 30; 2 to 5 links a month can lift them to page one | **unverified**: one agency owner's post (@asaio87). The post says "2–5 a month is enough" and calls your top pages the best link targets because "they already rank". No data shown | @asaio87 |
-| Google has decided those pages are relevant | **unverified** mechanism; plausible reading of the fact that Google already ranks them | none beyond the post |
-| Google's spam policies name low-quality directory links, automated link creation and link schemes as link spam | **confirmed** | Google spam policies |
-| Some sites restrict clickable links to paid plans | **unverified** (practitioner observation, @2whazzuup) | @2whazzuup |
+| PageRank is "a model of user behavior": a random surfer clicking links | **supported** (section 2.1.2) | Brin and Page 1998, full text |
+| Each page splits its vote across its links | **overstated** as "one link on a focused page": PageRank normalises by the number of links on a page, not by topic focus. Lesson now says "a page with few links" | Brin and Page 1998, section 2.1.1 |
+| A patent weights links by click likelihood: position, wording, topic fit | **supported**: features include position, font, anchor words and topical cluster. The patent expired in March 2025 | US 7,716,225 |
+| Google still names PageRank as a core ranking system | **supported** | Ranking systems guide (updated 2025-12-10) |
+| DR is Ahrefs' relative score; correlates with rankings; don't judge a site by DR alone | **supported** | Ahrefs DR page |
+| Use descriptive link text, not keywords | **supported** | Link best practices |
+| Point links at pages ranking 10 to 30; 2 to 5 links a month | **one person's claim** (@asaio87, "2–5 a month is enough", no data), labelled in the lesson | @asaio87 |
+| Some sites restrict clickable links to paid plans | **one person's claim** (@2whazzuup: "some are free, others have paid tiers"; "others restrict clickable hyperlinks") | @2whazzuup |
+| Spam policies name low-quality directory links and automated link creation as link spam | **supported** | Spam policies |
+| Since 2022 SpamBrain has neutralised them so they pass nothing | **overstated**: SpamBrain neutralises the unnatural links it detects. Lesson now says so | December 2022 link spam update |
+| A pattern of them can earn a manual action | **supported** | Manual actions report |
 
 ## Lesson: Earn five links a week (`weekly-link-habit.md`)
 
 **Principles.** Links accrue "naturally over time" from promotion people value, and too much promotion can harm a site (SEO Starter Guide). Low-quality directories, automated creation and required reciprocal links are link spam (spam policies). An approved listing may carry a `nofollow`, `ugc` or `sponsored` link, which Google generally doesn't follow (qualify outbound links).
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| Approval is not a link; links may be missing, unclickable or nofollow | **confirmed** that qualified links are "generally not followed"; missing links are a practitioner observation | Qualify outbound links; @2whazzuup |
-| Identical name, description and logo help Google and AI recognise listings as one product | **unverified** for Google and AI generally; practitioner advice (@borjafat, tactic 69) | @borjafat |
-| Pick 20 to 30 platforms, not 300 | **unverified**, one person's advice | @2whazzuup |
-| Listings that require a link back, and mass submissions, can count as link schemes | **confirmed**: "Requiring a link as part of a Terms of Service... without allowing" the owner to qualify it; low-quality directories; automated programs | Google spam policies |
-| Five a week, Monday to Friday | practitioner routine, not a factual claim | @2whazzuup |
+| Links build up "naturally over time"; "you can overdo promoting your site and actually harm it" | **supported** | SEO Starter Guide |
+| Low-quality directory links and automated link creation are link spam | **supported** | Spam policies |
+| Approval is not a link; `nofollow`, `ugc` and `sponsored` links "will generally not be followed" | **supported** | Qualify outbound links (updated 2025-12-10) |
+| Keep name, description and logo identical so listings match one product | **one person's claim**, labelled as practitioner advice (@borjafat tactic 69; TheoAGI: "same name, same one-line description, same logo") | @borjafat; @TheoAGI |
+| Pick 20 to 30 platforms, not 300 | **one person's claim**. The words are TheoAGI's, not @2whazzuup's (who says "choose your best 20") | @TheoAGI |
+| Requiring a link in terms of service without letting the owner qualify it is link spam | **supported** | Spam policies |
+| Five a week, Monday to Friday; tracker columns | **one person's claim**: practitioner routine | @2whazzuup |
 
 ## Lesson: Give people a reason to link (`links-you-earn.md`)
 
 **Principles.** Links work like citations (Brin and Page). Google asks whether content offers "original information, reporting, research, or analysis" and is worth recommending (helpful content). Pages with statistics, quotations and cited sources are quoted more by generative engines (Aggarwal et al.). AI search leans on earned, third-party media more than Google does (Chen et al.).
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| For most buying queries, the sources Google and ChatGPT cite are listicles | **disputed** as stated. One vendor's observational data puts best-of listicles as the single most-cited format, at about 21% of AI citations, not most. Chen et al. confirm AI favours third-party pages | Kumar 2026; Chen et al. 2025; @SimonHoiberg |
-| Top tier: roundups, statistics, journalist requests (69 tactics ranked) | one vendor's ranking (@borjafat sells Distribb); not evidence | @borjafat |
-| Original statistics earn links | **confirmed** in direction: Google rewards original research; GEO found statistics raise AI visibility. No study of link counts opened | Helpful content; ranking systems guide (reviews system); Aggarwal et al. |
-| Keep the pitch to 120 to 180 words | **unverified**, practitioner rule (TheoAGI) | @TheoAGI |
-| Cold email must follow CAN-SPAM and GDPR | **confirmed** for CAN-SPAM, including B2B; GDPR **not verified** in this pass | FTC guide |
-| Vendors often feature customer stories with a link | **unverified** practitioner observation | @TheoAGI |
-| Journalist platforms listed; some paid | **unverified** list, kept as discovery list | @2whazzuup |
+| PageRank builds on academic citation counting | **supported** (section 2.1.1) | Brin and Page 1998 |
+| Google asks for "original information, reporting, research, or analysis" and pages you'd recommend | **supported** | Helpful content |
+| Top tier of the 69 tactics: roundups, statistics, journalist requests | **overstated**: the S tier also opens with link exchanges, and the A tier includes mining competitors' links. Lesson now lists both | @borjafat |
+| AI search shows a "systematic and overwhelming bias" toward earned, third-party sources | **supported** | Chen et al. 2025, abstract |
+| "Best X for Y" roundups are the single most-cited page type, about a fifth of AI citations | **supported** as one vendor's data from brands its customers track; correlational | Kumar 2026, abstract and acknowledgements |
+| Cited sources for buying queries are "mostly listicles" | **disputed**, and the lesson says so: largest single format, not the majority | Kumar 2026; @SimonHoiberg |
+| Keep the pitch to 120 to 180 words; one follow-up | **one person's claim** (TheoAGI) | @TheoAGI |
+| CAN-SPAM "makes no exception for business-to-business email"; postal address; opt-out | **supported**. ftc.gov returns 404 to scripted requests; the page was read through the Wayback Machine (snapshot 2026-11-17) | FTC guide |
+| Adding statistics, quotations or cited sources raised AI visibility 30 to 40%; keyword stuffing didn't help | **supported** (relative gain on position-adjusted word count; up to 37% on Perplexity) | Aggarwal et al. 2024, HTML v3 |
+| Journalist platforms; some paid; no publication guaranteed | **one person's claim**, kept as a discovery list | @2whazzuup |
+| Vendors often feature customer stories with a link | **unsupported** as a generalisation: the post only says to find vendors that "could feature your story". Lesson now says a vendor that runs customer stories may feature yours | @borjafat |
 
 ## Lesson: Tricks with a price tag (`grey-zone.md`)
 
 **Principles.** Google defines link spam by purpose: links made "primarily" to manipulate rankings. Paid links are fine when qualified. Since 2022 SpamBrain detects link buyers and sellers and neutralises the links, so the usual cost of an unmarked paid link is that it passes nothing; a pattern of them can earn a manual action on some or all of the site.
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| Paid links allowed only when marked sponsored or nofollow | **confirmed** | Spam policies; qualify outbound links |
-| "Excessive link exchanges" named as a scheme | **confirmed** | Spam policies |
-| Google demoted low-quality exact-match domains in 2012 | **unverified date** (the 2012 announcement could not be opened). **Confirmed** that Google runs an exact-match domain system so such domains don't get "too much credit", and that keywords in a domain have "hardly any effect" | Ranking systems guide; SEO Starter Guide |
-| Exact-match "best X" domains ranked #1 in 10 days and drew a seven-figure offer | **unverified**, one investor's claim with no URLs; amplified by a domain broker | @margatix; @andrewrosener |
-| Press-release sites carry little SEO value | **confirmed** and stronger: Google names links with optimised anchor text in distributed press releases as link spam | Spam policies |
-| One SEO ranks link exchange top-tier and sells an exchange product | **confirmed** from the post itself (S tier, item 1; Distribb exchange ad) | @borjafat |
-| Cited sources for buying queries are mostly listicles | see *links-you-earn*: **disputed** as "mostly" | Kumar 2026 |
+| Link spam is links made "primarily for the purpose of manipulating search rankings" | **supported** | Spam policies |
+| Paid links allowed only when marked `sponsored` or `nofollow` | **supported** | Spam policies; qualify outbound links |
+| "Excessive link exchanges" named as a scheme | **supported** | Spam policies |
+| SpamBrain detects link buyers and sellers; "any credit passed" is lost | **supported** | December 2022 link spam update |
+| "Usually, a bought link is money for nothing" | **overstated**: Google says credit is lost for links SpamBrain detects, not for most bought links. Lesson now says "once SpamBrain catches it" | December 2022 link spam update |
+| A pattern of unnatural links can earn a manual action on some or all of the site | **supported** | Manual actions report |
+| TheoAGI's refuse list (exchange networks, paid Reddit tasks, 1,500 AI posts, city × service pages) | **one person's claim**: an AI-made summary of 66 articles by a founder of another product | @TheoAGI |
+| Paid roundup pitch; "don't use" backlink marketplaces | **one person's claim** | @SimonHoiberg |
+| One SEO ranks link exchange top-tier and sells an exchange product | **supported** from the post (S tier, item 1; Distribb exchange ad) | @borjafat |
+| Exact-match "best X" domains ranked #1 in 10 days and drew a seven-figure offer | **one person's claim**, no URLs, amplified by a domain broker | @margatix; @andrewrosener |
+| Google runs an exact-match domain system; keywords in a domain have "hardly any effect beyond appearing in breadcrumbs" | **supported** | Ranking systems guide; SEO Starter Guide |
+| Links with optimised anchor text in distributed press releases are link spam | **supported** | Spam policies |
 
 ## Not verified, kept out of the lessons
 
