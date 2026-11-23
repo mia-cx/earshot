@@ -7,6 +7,7 @@ description: Read a cold email campaign's numbers and know which part to fix.
 > [!TLDR]
 > - Cold email fails in three places, in order: the inbox, the offer, the list. Each failure pattern points to one of them.
 > - Pass the inbox first. Google and Microsoft set sender rules, and the law sets opt-out rules.
+> - Chris's offer benchmark: one lead per 300 contacts is a great campaign. One per 500 is still solid. At 2,000 or more, test a different offer.
 > - Follow up. In a study of 12 million outreach emails, those with one follow-up got about 66% more replies.
 > - Most numbers here are one practitioner's cheat sheet, not shown data. Treat them as starting points to test.
 
@@ -29,9 +30,19 @@ Without a benchmark, every result feels like failure. The same cheat sheet gives
 - **1 lead per 300 contacts** is a great campaign.
 - 1 lead per 500 is still solid.
 
-So a list of 1,000 contacts that brings in 2 to 3 leads is working.
+So a list of 1,000 contacts that brings in 2 to 3 leads is working. In his Ramp breakdown, Chris says **at 2,000 contacts or more per lead, the offer is the problem**, and no copy change fixes it. Judge on contacts per lead, not reply rate.
 
 For replies, Brian Dean's [study of 12 million outreach emails](https://backlinko.com/email-outreach-study) found 8.5% got any response. Those were mostly SEO pitches from 2019, so use it as a rough guide.
+
+## Test the offer, not the words
+
+Cold email gives the fastest feedback on an offer of any channel. Ramp found its pitch this way: a card that saves money, with a number on it (its median customer cuts costs by 5%).
+
+> [!TRICK] Find your offer in two weeks
+> Offers that win in cold email rank: make money, save money, save time, lower risk.
+> 1. Write versions that are identical apart from the offer line, so you know which offer booked the meeting.
+> 2. Give each version 1,000 sends.
+> 3. After two weeks, kill the bottom 60 to 70%.
 
 ## Write for the inbox they use
 
@@ -85,3 +96,4 @@ When someone replies with interest, **answer within 5 minutes**. The cheat sheet
 - [Yahoo: Sender best practices](https://senders.yahooinc.com/best-practices/)
 - [UK Information Commissioner's Office: Electronic mail marketing (PECR)](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)
 - [@coldemailchris: the cold email cheat sheet](https://x.com/coldemailchris/status/2119415642202034427)
+- [@coldemailchris: how Ramp found its offer with cold email](https://x.com/coldemailchris/status/2124591211985952946)
