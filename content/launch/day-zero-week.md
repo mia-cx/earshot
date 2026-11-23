@@ -5,10 +5,17 @@ description: Go from no clarity to a public marketing flywheel in seven days.
 ---
 
 > [!TLDR]
+> - Start marketing in week one, alongside the product, and start with positioning: it decides how every later message lands.
 > - Days 1 and 2: write down what you do and for whom, then turn it into positioning. No posting yet.
 > - Days 3 and 4: post with what you have (screenshots, Loom demos) and anchor on the ecosystem you build in.
 > - Days 5 to 7: show proof, ship something people can click, and recap the week in public.
 > - After week one, build community in two phases: onboard and listen, then activate and reward.
+
+## Why marketing starts in week one
+
+Gabriel Weinberg and Justin Mares argue in [*Traction*](https://leananalyticsbook.com/wp-content/uploads/2014/08/Traction-1-3.pdf) that almost every failed startup had a product; what it lacked was customers. Their 50% rule: spend half your time on product and half on getting traction, in parallel, because traction work tells you which message and which niche land.
+
+The first piece of that work is positioning. April Dunford's [positioning exercise](https://hackernoon.com/obviously-awesome-a-product-positioning-exercise-604e8ced841e) shows why: the market you say you're in sets the context people judge you by, and your messaging is built from that choice.
 
 ## Days 1 and 2: get clear before you post
 
@@ -52,8 +59,8 @@ The plan is the author's own playbook. The post was bookmarked 223 times, but it
 > [!DO] Do day 1 now
 > Fill in your clarity doc above, one sentence each, then download it. Leave any you can't answer blank: that's your first conversation with the founders or with yourself.
 
-> [!CHECK] On day 1 of marketing a brand-new product, what five questions do you answer?
-> What do we do, what problem do we solve, in which category do we compete, why are we better, and who exactly are we for?
+> [!CHECK] Why does marketing a new product start in week one, alongside building it?
+> Almost every failed startup had a product; what it lacked was customers. *Traction*'s 50% rule splits time between product and traction, because traction work shows which message and niche land.
 
 > [!CHECK] It's day 3 of marketing a new product and you have no designer. What do you post?
 > Post anyway, using screenshots, mockups or Loom demos. A line like "We're building X for Y. Early testers wanted." is enough to start.
@@ -63,4 +70,6 @@ The plan is the author's own playbook. The post was bookmarked 223 times, but it
 
 ## Sources
 
+- [Gabriel Weinberg and Justin Mares, *Traction* (2014)](https://leananalyticsbook.com/wp-content/uploads/2014/08/Traction-1-3.pdf)
+- [April Dunford, *Obviously Awesome: a product positioning exercise* (2016)](https://hackernoon.com/obviously-awesome-a-product-positioning-exercise-604e8ced841e)
 - [@kunalvg: a seven-day plan for a day-0 project](https://x.com/kunalvg/status/1985573315830772193)

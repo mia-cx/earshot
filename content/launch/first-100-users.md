@@ -5,15 +5,29 @@ description: Pick the communities and launch sites where your first buyers alrea
 ---
 
 > [!TLDR]
-> - The lists below are a menu, not a checklist. Pick the few places your buyers already browse.
-> - In communities, take part before you promote. Plain self-promotion gets removed or downvoted.
+> - Your first users come from you going out and getting them, by hand, in a few places at a time.
+> - The lists below are a menu, not a checklist. Test the few places your buyers already browse, then focus on the one that works.
+> - In communities, take part before you promote. Each one sets its own limit on self-promotion.
 > - On launch sites and directories, a complete, specific profile beats a generic one everywhere.
+
+## Get them by hand, a few places at a time
+
+Paul Graham's essay [*Do Things That Don't Scale*](https://paulgraham.com/ds.html) puts it bluntly: "The most common unscalable thing founders have to do at the start is to recruit users manually." You can't wait for users to come to you. And you start narrow, like a fire you keep small until it's hot.
+
+Gabriel Weinberg and Justin Mares turn this into a method in [*Traction*](https://leananalyticsbook.com/wp-content/uploads/2014/08/Traction-1-3.pdf). They call it the Bullseye: list every channel, pick the three most promising, test each cheaply, then put your effort into the one that works. In their words, at any stage "one traction channel dominates".
 
 ## Go where your buyers already look
 
 Early users come from places where people already hunt for new tools: communities, launch sites and software directories. @solyatic lists 50 of them for your first 100 users. @2whazzuup lists 200 more and calls them "places to investigate", not guaranteed results. Both lists are merged below with duplicates removed.
 
 **Don't treat these sites as interchangeable.** AppSumo is a marketplace, LibHunt is for open source, Product Hunt is built around launches. Choose by one test: would your buyer browse here when they need what you make? Five good fits beat fifty submissions.
+
+> [!TRICK] Run a small Bullseye on the lists
+> 1. Skim the lists and note every place your buyer might browse.
+> 2. Rank them: likely, possible, long shot.
+> 3. Pick the top three and post or submit to each in the same week.
+> 4. Count the sign-ups or conversations each one brought.
+> 5. Put your effort into the one that worked. If none did, go back to step 2.
 
 Both authors have something to sell: @solyatic lists their own launch service (upplaunch.com), and @2whazzuup runs a backlink database.
 
@@ -30,13 +44,13 @@ Communities reward members, not visitors. Post things the community would value 
 > - **General:** LinkedIn groups, Facebook groups
 
 > [!RISK] Self-promotion gets you banned
-> Most subreddits and Lobsters ban or downvote plain self-promotion, and links posted without context on Reddit or Hacker News get treated as spam. Read each community's rules first, and post as a story or a request for feedback.
+> Each community sets its own limit. Reddit [doesn't count promotion as spam](https://support.reddithelp.com/hc/en-us/articles/28012014962580-How-do-I-keep-spam-out-of-my-community) by itself, but some subreddits ban it and others allow it in only 10% of your posts and comments there. [Lobsters](https://lobste.rs/about) asks for under a quarter, and none in your first 70 days. Hacker News's [Show HN](https://news.ycombinator.com/showhn.html) takes only things people can try: landing pages and sign-up pages are off topic. Read each community's rules first, and post as a story or a request for feedback.
 
 To choose which Reddit threads matter most once you track what buyers ask AI, see *Be the page AI quotes*.
 
 ## Submit to launch sites and directories
 
-Launch sites put you in front of people who browse new products. Software directories catch people comparing alternatives. Before you submit, check whether the site accepts your stage (some take pre-launch waitlists, others need a live product) and whether the free route means a queue, a badge or community participation.
+Launch sites put you in front of people who browse new products. Software directories catch people comparing alternatives. Before you submit, check whether the site accepts your stage (some take pre-launch waitlists, others need a live product) and whether the free route means a queue, a badge or community participation. Read each site's own guide: Product Hunt's [launch FAQ](http://help.producthunt.com/en/articles/17734646-8-launch-faq-and-myths), for example, says you don't need a famous hunter and should link straight to your product.
 
 > [!TRICK] Launch sites
 > 10words, StartupBlink, Startup Ranking, F6S, Crunchbase, Startup Stash, PitchWall, Launching Next, BetaPage, Huzzler, IndieHunt, Tiny Startups, OpenHunts, ShinyLaunch, PeerPush, MicroLaunch, MakerHunt, Makerlist, Product Watch, What Launched Today, smollaunch.com, nicklaunches.com, startupbase.io, saasearch.io, startuplist.ing, builtbyindies.com, hundredusers.com, indieneed.com, scrappystartups.com, smashingstartups.com, startups.fm, startupspotlight.com, upplaunch.com (@solyatic's own)
@@ -50,7 +64,7 @@ Launch sites put you in front of people who browse new products. Software direct
 Review profiles, developer registries and industry listings work more like backlinks than launch traffic: see *Earn five links a week*.
 
 > [!RISK] Mass submission can look like a link scheme
-> Google names low-quality directory links, automated link creation and manipulative link schemes as potential link spam, and reciprocal-link listings can fall into that. Empty profiles made only to hold a URL add nothing. Use the lists for discovery, not mass submission, and fill every profile properly.
+> Google's [spam policies](https://developers.google.com/search/docs/essentials/spam-policies) name "low-quality directory or bookmark site links", excessive link exchanges and automated link creation as link spam, so reciprocal-link listings can fall into that. Empty profiles made only to hold a URL add nothing. Use the lists for discovery, not mass submission, and fill every profile properly.
 
 ## Write a specific description
 
@@ -72,12 +86,19 @@ Write that core once, then adjust the wording to each site's audience instead of
 > What the product does, for whom, and how it differs. "The ultimate AI-powered productivity platform" says none of them.
 
 > [!CHECK] You have a list of 50 launch sites and directories. How do you choose where to submit?
-> Pick the few where your buyer would browse when they need what you make. Five good fits beat fifty submissions.
+> Pick the three where your buyer is most likely to browse, test each, then focus on the one that brings users. That's the Bullseye from *Traction*: one channel usually dominates.
 
 > [!CHECK] In communities like Reddit or Hacker News, why take part before you post your product link?
-> Communities reward members, not visitors, and most ban or downvote plain self-promotion. Share the product as a story or a request for feedback once you belong.
+> Communities reward members, not visitors, and each sets its own limit on self-promotion. Share the product as a story or a request for feedback once you belong.
 
 ## Sources
 
+- [Paul Graham, *Do Things That Don't Scale* (2013)](https://paulgraham.com/ds.html)
+- [Gabriel Weinberg and Justin Mares, *Traction* (2014)](https://leananalyticsbook.com/wp-content/uploads/2014/08/Traction-1-3.pdf)
+- [Reddit Help: How do I keep spam out of my community?](https://support.reddithelp.com/hc/en-us/articles/28012014962580-How-do-I-keep-spam-out-of-my-community)
+- [Lobsters: About](https://lobste.rs/about)
+- [Hacker News: Show HN guidelines](https://news.ycombinator.com/showhn.html)
+- [Product Hunt: Launch FAQ and myths](http://help.producthunt.com/en/articles/17734646-8-launch-faq-and-myths)
+- [Google Search Central: Spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies)
 - [@solyatic: 50 places to get your first 100 users](https://x.com/solyatic/status/2117540123294171201)
 - [@2whazzuup: 200 directories, launch platforms and communities](https://x.com/2whazzuup/status/2119247229601062993)

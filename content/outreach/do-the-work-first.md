@@ -5,10 +5,16 @@ description: Land a client or partner by sending finished work instead of a pitc
 ---
 
 > [!TLDR]
+> - People feel obliged to return what they were given first, especially when it's personal and unexpected. So give before you ask.
 > - Don't pitch. Do the work for someone first (for example, 10 posts written for them), then send it.
-> - Ask them to use it, then hire you for more, or just give you a testimonial.
-> - If DMs don't land, post the work in public and tag them.
-> - Choose targets whose audience matches your buyer: small creators who beat their follower count and whose commenters look like your customers.
+> - Ask them to use it, then hire you for more, or just give you a testimonial. If DMs don't land, post the work in public and tag them.
+> - Choose targets whose audience matches your buyer: mid-sized creators who beat their follower count and whose commenters look like your customers.
+
+## Give first
+
+Robert Cialdini calls it [reciprocity](https://www.influenceatwork.com/7-principles-of-persuasion/): people feel obliged to give back what they received first. In one restaurant study, a single mint with the bill raised tips about 3%. When the server gave one mint, turned back, and offered a second "for you nice people", tips rose 23%. The gift was tiny; making it personal and unexpected did the work.
+
+Paul Graham describes the same move from the other side in [*Do Things That Don't Scale*](https://paulgraham.com/ds.html). Stripe's founders didn't promise new users a beta link. They said "give me your laptop" and set them up on the spot. Doing the work for someone removes their reason to say no.
 
 ## Send finished work instead of a pitch
 
@@ -29,6 +35,9 @@ Even the fallback ask (a testimonial) gives you something you can use with the n
 >
 > Koe expects that pace to land at least one content client a month at $2,500 to $5,000 a month. That's the author's expectation, not measured results, and Koe sells Eden, the AI tool the article recommends for the research step.
 
+> [!RISK] Free work has costs on both sides
+> The design profession calls this spec work, and AIGA, the US design association, [warns against it](https://www.aiga.org/resources/aiga-position-on-spec-work). Work done without research or feedback tends to be weaker, the person doing it risks being used for free labour, and both sides take on intellectual property risk. Keep the sample small, say plainly that they can use it, and don't chase someone who has said no.
+
 ## Go public when DMs don't land
 
 If a DM gets no answer, post the work openly where the target can see it. Koe says this works on X, Substack or any other platform.
@@ -37,7 +46,7 @@ Koe's example is a reel by someone else, hooked with "Grant Cardone needs a new 
 
 ## Pick targets whose audience is your buyer
 
-The same approach works for partnerships, not just clients. If you're choosing creators to work with on your product, look for small ones whose audience already matches your buyer. Follower count misleads; views relative to followers and who comments tell you more.
+The same approach works for partnerships, not just clients. If you're choosing creators to work with on your product, look for ones whose audience already matches your buyer. Follower count misleads: Simone Wies, Alexander Bleier and Alexander Edeling [studied over 800 Instagram campaigns](https://www.ama.org/2022/10/11/finding-goldilocks-influencers-why-high-follower-count-may-not-be-the-best-driver-of-engagement-on-social-media/) and found engagement peaks with mid-sized creators, then falls as audiences grow. Views relative to followers and who comments tell you more.
 
 @dsqjaffa runs this as a scheduled bot. Their version searches Virlo, a social data tool they co-founded; any source that shows creators' follower counts and views per video can fill that step.
 
@@ -74,8 +83,8 @@ Note the last lines: the bot builds the list, and you do the reaching out. Then 
 > [!DO] Pick one target and draft one post
 > Choose one account you'd want as a client or partner and read their last 10 posts. Then fill in your post for a target above and download it.
 
-> [!CHECK] What is the "permissionless apprentice" way to land a client?
-> Do free work for a client you'd love to have, such as 10 posts written for them, and send it. Ask them to use it, then hire you for more or give you a testimonial.
+> [!CHECK] Why does sending finished work beat a pitch, according to Cialdini's reciprocity principle?
+> People feel obliged to return what they were given first, especially when it's personal and unexpected. Finished work is that gift, and it costs them nothing to try.
 
 > [!CHECK] You sent a creator 10 posts you wrote for them, and the DM got no answer. What next?
 > Post the work in public where they can see it, and tag them.
@@ -85,6 +94,10 @@ Note the last lines: the bot builds the list, and you do the reaching out. Then 
 
 ## Sources
 
+- [Robert Cialdini: the principles of persuasion](https://www.influenceatwork.com/7-principles-of-persuasion/)
+- [Paul Graham, *Do Things That Don't Scale* (2013)](https://paulgraham.com/ds.html)
+- [AIGA: Position on spec work](https://www.aiga.org/resources/aiga-position-on-spec-work)
+- [Simone Wies, Alexander Bleier and Alexander Edeling, *Finding Goldilocks Influencers* (2023)](https://journals.sagepub.com/doi/10.1177/00222429221125131)
 - [@thedankoe: the permissionless apprentice approach](https://x.com/thedankoe/status/2117664712532123680)
 - [@mogulinfluence: sharing Dan Koe's article](https://x.com/mogulinfluence/status/2118351989511749841)
 - [@dsqjaffa: Creator Scout bot](https://x.com/dsqjaffa/status/2119160045263077664)

@@ -5,20 +5,22 @@ description: Read a cold email campaign's numbers and know which part to fix.
 ---
 
 > [!TLDR]
-> - Each failure pattern points at one cause: no replies and no bounces means spam, uninterested replies mean the offer, bounces over 2% mean the list.
-> - One lead per 300 contacts is a great campaign. One per 500 is still solid.
-> - Keep copy short, skip AI-written first lines, and answer interested replies within 5 minutes.
-> - All numbers here are one practitioner's cheat sheet, not shown data. Use them as starting points to test.
+> - Cold email fails in three places, in order: the inbox, the offer, the list. Each failure pattern points at one of them.
+> - Pass the inbox first: Google and Microsoft set sender rules, and the law sets opt-out rules.
+> - Follow up: in a study of 12 million outreach emails, one follow-up brought about 66% more replies.
+> - Most numbers here are one practitioner's cheat sheet, not shown data. Use them as starting points to test.
 
 ## Read the symptom, fix the cause
 
 When a campaign fails, don't rewrite everything. **The pattern of failure tells you which part is broken.**
 
+The inbox comes first: fail it and your copy never gets read. Google's [sender guidelines](https://support.google.com/a/answer/81126) require every sender to set up SPF or DKIM and keep reported spam below 0.3%. Microsoft [requires SPF, DKIM and DMARC](https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730) above 5,000 emails a day.
+
 > [!DIAGRAM] cold-email-doctor
 
-Turn off open-rate tracking. The tracking pixel itself hurts your inbox placement, so the number costs more than it tells you.
+Turn off open-rate tracking. The number is unreliable: Apple Mail's [privacy protection](https://www.apple.com/legal/privacy/data/en/mail-privacy-protection/) loads tracking pixels whether the email is opened or not. The cheat sheet also claims the pixel hurts inbox placement; no mailbox provider confirms that.
 
-These rules come from a cold email cheat sheet by @coldemailchris, who builds outbound systems for B2B companies. No data is shown behind them.
+The symptom rules come from a cold email cheat sheet by @coldemailchris, who builds outbound systems for B2B companies. No data is shown behind them.
 
 ## Know what good looks like
 
@@ -29,26 +31,28 @@ Without a benchmark, every result feels like failure. The same cheat sheet gives
 
 So a list of 1,000 contacts that brings in 2 to 3 leads is working.
 
+For replies, Brian Dean's [study of 12 million outreach emails](https://backlinko.com/email-outreach-study) found 8.5% got any response. Those were mostly SEO pitches from 2019, so treat it as a rough guide.
+
 ## Write for the inbox they use
 
-Your prospect's email provider changes how they respond. Per the cheat sheet, prospects on Google Workspace reply about 6.5 times more than those on Microsoft.
+Your prospect's email provider changes how they respond. Per the cheat sheet, prospects on Google Workspace reply about 6.5 times more than those on Microsoft. That's one practitioner's number; no public data confirms it.
 
 > [!TRICK] Split your list by email provider
 > Sort prospects into Google and Microsoft. Send Microsoft prospects copy **under 40 words**.
 
-Skip AI-written personalised first lines. The cheat sheet puts them at about a 0.27% reply rate and calls personalisation at scale fake.
+Skip AI-written personalised first lines. The cheat sheet puts them at about a 0.27% reply rate and calls personalisation at scale fake. Real personalisation is different: in Dean's study, personalised bodies got about a third more replies.
 
 ## Follow up, then answer fast
 
-The cheat sheet's follow-up #4 is two words: "Hi John???"
+Following up is where the replies are. Dean's study found one follow-up lifted replies by 65.8%, and three or more messages did best overall. The cheat sheet's follow-up #4 is two words: "Hi John???"
 
-When someone replies with interest, **answer within 5 minutes**.
+When someone replies with interest, **answer within 5 minutes**. The number is the cheat sheet's; James Oldroyd and colleagues [found most companies answer online leads far too slowly](https://scholarsarchive.byu.edu/facpub/9711/).
 
 > [!TRICK] Swap the unsubscribe link for a reply word
 > Instead of an unsubscribe link, ask people to reply with a word to opt out, for example: reply "banana".
 
 > [!RISK] Opt-out rules differ by country and volume
-> The US CAN-SPAM Act accepts a working reply-based opt-out. EU and UK law, and Gmail and Yahoo bulk-sender rules (one-click unsubscribe above 5,000 messages a day), may require more. Check the rules for where your prospects are and how much you send, and honour every opt-out.
+> The US [CAN-SPAM Act](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) accepts a reply-based opt-out, B2B included, but also requires your postal address in every email and honouring opt-outs within 10 business days. Gmail requires one-click unsubscribe above 5,000 messages a day. EU and UK law may require more. Check the rules for where your prospects are and how much you send, and honour every opt-out.
 
 > [!FORM] Your cold email
 > 1. What do we do? What problem do we solve? Give one short, precise answer.
@@ -67,8 +71,14 @@ When someone replies with interest, **answer within 5 minutes**.
 > No, it's working. One lead per 300 contacts is a great campaign, and one per 500 is still solid.
 
 > [!CHECK] Why turn off open-rate tracking in cold email?
-> The tracking pixel itself hurts your inbox placement, so the number costs more than it tells you.
+> The number is unreliable, because Apple Mail's privacy protection loads tracking pixels whether or not the email is opened. The cheat sheet also claims the pixel hurts inbox placement.
 
 ## Sources
 
+- [Google: Email sender guidelines](https://support.google.com/a/answer/81126)
+- [Microsoft: Outlook's new requirements for high-volume senders (2025)](https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730)
+- [Brian Dean, *We Analyzed 12 Million Outreach Emails* (2019)](https://backlinko.com/email-outreach-study)
+- [Apple: Mail Privacy Protection](https://www.apple.com/legal/privacy/data/en/mail-privacy-protection/)
+- [James Oldroyd, Kristina McElheran and David Elkington, *The Short Life of Online Sales Leads* (2011)](https://scholarsarchive.byu.edu/facpub/9711/)
+- [FTC: CAN-SPAM Act compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
 - [@coldemailchris: the cold email cheat sheet](https://x.com/coldemailchris/status/2119415642202034427)
