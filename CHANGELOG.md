@@ -1,5 +1,24 @@
 # earshot
 
+## 0.1.5
+
+### Patch Changes
+
+- a329bb2: The AI search lessons add Ramp's test of which pages AI passes an offer on from: start with pages AI already cites, count the AI bots in your logs, and track each AI separately. Showing bots content people don't see is flagged as cloaking.
+- e400dff: The "What marketing is" and "Writing that gets read" lessons now match their sources: practitioners' opinions are labelled as theirs, study numbers are exact, and the X feed facts follow X's 2026 code.
+- b1daaab: The Launching, Outreach and Keep and convert lessons now say only what their sources say: claims that went further are narrowed, practitioners' claims are credited to them, and two dead or moved links are fixed.
+- aca2c16: The backlinks, AI search and agents lessons now match their sources more closely: DeepSeek's agent timings, X's reply rule and the CAN-SPAM opt-in exception are corrected, a few claims are narrowed to what the research says, and moved source links point to their current pages.
+- 23b9603: The "Search engines" and "Content that builds a brand" lessons now match their sources: Google's title and spam examples are quoted as Google wrote them, practitioners' claims are labelled as theirs, and the Buffer and Wiebe numbers are exact.
+- f91ae38: The X, video and "Stay sharp" lessons now match their sources: X facts follow X's code and its history, dated model notes say when they're from, and every study finding links the paper that states it.
+- c9dd936: When the browser blocks the clipboard, Copy lesson link shows the link in a box to copy by hand. "Copied" no longer carries over to the next lesson, and lessons without their own share image describe the course image correctly.
+- 4e1efb0: Finishing the last lesson now opens the course map, where your progress and review cards wait, instead of the home page.
+- 8a97e86: Each lesson has its own link preview, with the lesson title in its module's colour, and a Copy lesson link button at the end that copies the live address.
+- a329bb2: New lesson, *Scale outbound without burning your market*: warm intros, one scored market table, signal-ranked accounts, who presses send, and a 30 to 60 day contact cap. *Fix cold email by its symptoms* adds an offer test.
+- a329bb2: *Find your first 100 users* adds an hourly Reddit lead watch: an agent finds posts from people asking for what you make, and you write each reply yourself.
+- 2cfb09c: Returning readers see Continue with lesson N as the main button on the home page, or Review on your map once they have finished, with Start lesson 1 as a small link beside it. The hero also counts the sources the lessons cite.
+- eeac58b: Module pages describe themselves in one line for search results, and llms.txt opens with where to start: the course home, the first lesson and the sources.
+- a329bb2: *Let an agent run your SEO* adds a verdict for each of the ten most-starred AI SEO repos on GitHub, and warns that mass-producing AI articles across sites is scaled content abuse.
+
 ## 0.1.4
 
 ### Patch Changes
