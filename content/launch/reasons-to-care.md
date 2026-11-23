@@ -8,13 +8,15 @@ description: Write a launch post that makes strangers stop, reply and quote it.
 > - People share what surprises them, helps them or stirs a strong feeling. An announcement does none of that.
 > - Strangers give a post a second or two. "We're excited to announce" never passes.
 > - Give strangers something to add: a demo they can examine, dispute or try.
-> - Before you write any copy, answer the narrative questions that place your product inside a conversation people already have.
+> - Before you write copy, answer the narrative questions below to put your product inside a conversation people already have.
 
 ## Strangers decide in a second or two
 
-Every launch post has to pass one filter first: **why do I care?** Meta's 2016 [feed attention research](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative) found people spend about 1.7 seconds on a piece of mobile feed content. And what makes them pass it on is well studied. Jonah Berger and Katherine Milkman [tracked three months of New York Times articles](https://journals.sagepub.com/doi/10.1509/jmr.10.0353) and found that surprising, useful and high-arousal content (awe, anger, anxiety) was shared more, and content that left people sad or flat was shared less.
+Every launch post hits one filter first: **why do I care?** Meta's 2016 [feed attention research](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative) found people spend about 1.7 seconds on a mobile feed item.
 
-Announcement language and product detail arouse nothing, so they don't survive the filter.
+We also know what makes people pass a post on. Jonah Berger and Katherine Milkman [tracked three months of New York Times articles](https://journals.sagepub.com/doi/10.1509/jmr.10.0353) and found people share surprising, useful and high-arousal content (awe, anger, anxiety) more, and share content that leaves them sad or flat less.
+
+Announcement copy and feature details stir none of that, so people scroll right past.
 
 What fails:
 
@@ -23,22 +25,24 @@ What fails:
 - launches of a niche category nobody outside it has heard of
 - 12 seconds of a founder talking before anything happens
 
-What stops people: a funding number ("$20M raise" signals it matters), a fight people already have opinions on (datacenters, OpenAI), or a result so big it sounds fake. Each one is surprise or strong feeling. One launch agency founder, Matt Epstein, puts it plainly: in his experience, launch comments rarely ask about features. People congratulate the raise or argue about what it means. So decide what people will argue about before you write.
+What stops people: a funding number ("$20M raise" signals it matters), a fight people already have opinions on (datacenters, OpenAI), or a result so big it sounds fake. Each one triggers surprise or strong feeling.
+
+Launch agency founder Matt Epstein says launch comments rarely ask about features, in his experience. People congratulate the raise or argue over what it means. Decide what they will argue about before you write.
 
 > [!TRICK] Watch people scroll
-> Get on a subway or bus and watch people on their phones. Note the moment each one stops on a post, and what the post had. That is the filter your launch has to pass.
+> Get on a subway or bus and watch people on their phones. Note the moment each one stops on a post, and what caught their eye. That is the filter your launch has to pass.
 
 ## Give strangers something to add
 
-A post spreads through quotes only when someone who doesn't know you has something to say about it. Announcements give them nothing. Concrete material they can examine, dispute or try themselves gives them a reason to quote.
+Quotes spread your launch, and strangers only quote when they have something to add. Announcements give them nothing to work with. Concrete material they can examine, dispute or try gives them a reason to chime in.
 
-Swap "Excited to announce our new platform" for a specific demo. For example: a messy inventory spreadsheet turning into a working app, showing the input, the output, and what you had to fix by hand. Showing the hand fixes makes it believable and gives people a detail to discuss.
+Skip "Excited to announce our new platform" and show a specific demo. Turn a messy inventory spreadsheet into a working app, showing the input, the output and what you had to fix by hand. Those hand fixes make it believable and give people a detail to discuss.
 
 Before you publish, ask: **what could a stranger add to this?** If you can't answer, add something more specific. *Line up your launch-day voices* covers how to seed the angles they might take.
 
 ## Plant the narrative before the copy
 
-Start from a conversation people already have, then put your product inside it. Attach the claim to something people already feel, so it reads bigger than the product.
+Start from a conversation people already have, then put your product inside it. Tie your claim to something people already feel so it reads bigger than one product.
 
 Answer these questions before you write launch copy. The enemy builds on what you're against in *Say what you are, for whom, against what*, so your answer from there comes first. The customers' exact words are what *Research a market in an afternoon* collects.
 
@@ -52,21 +56,21 @@ Answer these questions before you write launch copy. The enemy builds on what yo
 > 7. What is the most polarizing thing you can say that's true?
 > 8. What could a stranger add to this?
 
-Example from the source: a hospital intake and notes software launch started as "first step toward medical superintelligence, $24M raised, 10M+ patients". True, but any health-AI company could say it. The rewrite gave four groups a reason to reply: patients who'd been told "it's probably nothing", families who lost someone to a late diagnosis, clinicians, and people who argue about AI. The author's agency reports 1.5M views on day one and a trending launch (their own claim).
+In Epstein's example, a hospital intake and notes software launch started as "first step toward medical superintelligence, $24M raised, 10M+ patients". True, yet any health-AI company could say it. The rewrite gave four groups a reason to reply: patients told "it's probably nothing", families who lost someone to a late diagnosis, clinicians, and people who argue about AI. His agency reports 1.5M views on day one and a trending launch (their own claim).
 
 > [!RISK] Anger spreads, and it sticks to you
-> Berger and Milkman found anger shares as well as awe. A polarizing line gets you reach, but people remember the fight along with the product. Only say what's true and what you can defend with evidence.
+> Berger and Milkman found anger shares as well as awe. A polarizing line buys reach, but people remember the fight along with your product. Only say what's true and what you can defend with evidence.
 
 ## Treat each launch as a small go-to-market
 
-A launch is not one post. Each one needs its own ideal customer, its own channels to reach them, a plan for scaling what works, and a launch video. Kunal Gandhi, a former marketer at Eigen Labs, lists skipping this as a common launch mistake and points to thirdweb's launches as one done well.
+A launch is not one post. Each one needs its own ideal customer, its own channels, a plan to scale what works, and a launch video. Kunal Gandhi, a former marketer at Eigen Labs, lists skipping this as a common launch mistake and points to thirdweb's launches as an example done well.
 
-This is the same discipline Gabriel Weinberg and Justin Mares teach in [*Traction*](https://leananalyticsbook.com/wp-content/uploads/2014/08/Traction-1-3.pdf): test a few channels cheaply, then put your effort into the one that works. A launch is one of those tests.
+Gabriel Weinberg and Justin Mares teach the same habit in [*Traction*](https://leananalyticsbook.com/wp-content/uploads/2014/08/Traction-1-3.pdf). Test a few channels cheaply, then focus on the one that works. A launch is one of those tests.
 
 > [!RISK] One launch rarely makes a product
-> Paul Graham [calls the Big Launch](https://paulgraham.com/ds.html) a tactic that "usually doesn't work": all you need from a launch is an initial core of users. Plan the weeks after it, not just the day.
+> Paul Graham [calls the Big Launch](https://paulgraham.com/ds.html) a tactic that "usually doesn't work". All you need from a launch is an initial core of users, so plan the weeks after it, not just the day.
 
-A launch is a single moment. Your brand is what people see the rest of the year (see *Build a brand, not a viral hit*). Both matter: the launch gets the spike, the brand keeps the people it brings.
+A launch is one moment. Your brand is what people see the rest of the year (see *Build a brand, not a viral hit*). The launch gets the spike, and your brand keeps the people who show up.
 
 > [!DO] Answer the narrative questions for your next launch
 > Fill in your launch narrative above, one line per question, then download it. Keep it next to you when you write the launch post.
