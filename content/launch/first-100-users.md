@@ -8,6 +8,7 @@ description: Pick the communities and launch sites where your first buyers alrea
 > - Recruit your first users by hand, in a few places at a time.
 > - Treat the lists below as a menu, not a checklist. Test the few places your buyers already browse, then focus on the one that works.
 > - In communities, take part before you promote. Each one sets its own limit on self-promotion.
+> - Have an agent watch Reddit for people asking for what you make, and reply yourself within the hour.
 > - On launch sites and directories, a complete, specific profile beats a generic one pasted everywhere.
 
 ## Get them by hand, a few places at a time
@@ -47,6 +48,21 @@ Communities reward members, not visitors. Post things people would value even wi
 > Each community sets its own limit. Reddit [doesn't count promotion as spam](https://support.reddithelp.com/hc/en-us/articles/28012014962580-How-do-I-keep-spam-out-of-my-community) on its own, yet some subreddits ban it and others cap it at 10% of your posts and comments there. [Lobsters](https://lobste.rs/about) asks for under a quarter, with none in your first 70 days. Hacker News's [Show HN](https://news.ycombinator.com/showhn.html) takes only things people can try, so landing pages and sign-up pages are off topic. Read each community's rules first, and post as a story or a request for feedback.
 
 Once you track what buyers ask AI, see *Be the page AI quotes* to choose which Reddit threads matter most.
+
+## Catch buyers asking on Reddit
+
+**A post asking for a tool like yours is a lead, and it goes cold within hours.** The best time to reply is minutes after someone posts. Dench, a YC-backed AI CRM, reports $3M+ in pipeline from Reddit conversations it would otherwise have missed. Context.dev, the scraping service Dench used, published the story and one of its staff shared it, so read it as a customer story.
+
+> [!TRICK] An hourly Reddit lead watch
+> 1. List the words a buyer uses when asking for what you make: "alternative to [competitor]", "any tool that [does your job]", your problem in their words.
+> 2. Have an agent search new Reddit posts for them every hour.
+> 3. Have it send you only the posts where someone is ready to choose, with the link and one line on why.
+> 4. Reply yourself, fast: answer the question in full, say you work on the product, and link only if it helps.
+>
+> Dench's agents run in sandboxes, and Reddit blocks sandbox IP addresses, so they fetch posts through Context.dev. Setup was a docs link and an API key handed to Dench's own agent.
+
+> [!RISK] Let the agent find, not reply
+> Some teams let agents auto-reply to every mention. Bot replies carrying your link are the self-promotion subreddits ban, so keep the send yours, as in *Open DMs with a problem buyers already pay to solve*. Reddit's user agreement also limits automated data collection to what Reddit permits, so a service built to get past its blocks is a terms risk.
 
 ## Submit to launch sites and directories
 
@@ -104,3 +120,5 @@ Write that core once, then adapt the wording to each site's audience instead of 
 - [Google Search Central: Spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies)
 - [@solyatic: 50 places to get your first 100 users](https://x.com/solyatic/status/2117540123294171201)
 - [@2whazzuup: 200 directories, launch platforms and communities](https://x.com/2whazzuup/status/2119247229601062993)
+- [@getcontextdev: Dench's hourly Reddit lead watch](https://x.com/getcontextdev/status/2124702311582986301)
+- [@michael_chomsky: a competitor that auto-replies on Reddit](https://x.com/michael_chomsky/status/2124703302814433577)
