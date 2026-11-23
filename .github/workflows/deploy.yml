@@ -23,9 +23,9 @@ jobs:
       cancel-in-progress: false
     environment:
       name: ${{ inputs.environment }}
-      url: ${{ inputs.environment == 'production' && 'https://earshot.mia.cx' || 'https://staging.earshot.mia.cx' }}
+      url: ${{ inputs.environment == 'production' && 'https://seo.mia.cx' || 'https://staging.seo.mia.cx' }}
     env:
-      SITE_URL: ${{ inputs.environment == 'production' && 'https://earshot.mia.cx' || 'https://staging.earshot.mia.cx' }}
+      SITE_URL: ${{ inputs.environment == 'production' && 'https://seo.mia.cx' || 'https://staging.seo.mia.cx' }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -43,7 +43,3 @@ jobs:
           printf '/*\n  X-Robots-Tag: noindex\n' > _headers
       - run: pnpm build
       - run: pnpm exec wrangler deploy ${{ inputs.environment == 'staging' && '--env staging' || '' }}
-      # Runs after the site deploy, which releases seo.mia.cx, so the redirect can claim it.
-      - name: Redirect seo.mia.cx to earshot.mia.cx
-        if: inputs.environment == 'production'
-        run: pnpm exec wrangler deploy --config redirect/wrangler.jsonc
