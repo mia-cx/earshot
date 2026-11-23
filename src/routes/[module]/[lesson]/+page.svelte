@@ -32,14 +32,17 @@
 
 	/** Copies the lesson's public URL, so a link shared from a mirror still points at the live site. */
 	const copyLink = async () => {
+		const link = data.link;
+		clearTimeout(copiedTimer);
+		let result: 'copied' | 'failed' = 'copied';
 		try {
-			await navigator.clipboard.writeText(data.link);
-			copied = 'copied';
-			clearTimeout(copiedTimer);
-			copiedTimer = setTimeout(() => (copied = null), 1500);
+			await navigator.clipboard.writeText(link);
 		} catch {
-			copied = 'failed';
+			result = 'failed';
 		}
+		if (link !== data.link) return;
+		copied = result;
+		if (result === 'copied') copiedTimer = setTimeout(() => (copied = null), 1500);
 	};
 
 	// Client navigation reuses this component, so feedback from one lesson must not show on the next.
