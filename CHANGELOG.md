@@ -1,5 +1,12 @@
 # earshot
 
+## 0.1.2
+
+### Patch Changes
+
+- 038e385: Earshot's address is seo.mia.cx again. earshot.mia.cx shows the same pages, and search engines are pointed to seo.mia.cx.
+- fbe7487: Lessons tell search engines and AI assistants what they are: an article with its reading time and the X posts it was rewritten from. Shared links get large image previews, and phone browsers tint their toolbar to match the page.
+
 ## 0.1.1
 
 ### Patch Changes
