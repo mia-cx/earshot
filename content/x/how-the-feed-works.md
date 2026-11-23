@@ -17,7 +17,7 @@ Ryan (@ryangrowthh), who read the code, nicknames the stages Scouts, Judge and B
 
 1. **Find (Scouts).** Retrieval systems pull thousands of candidate posts each time a feed refreshes.
 2. **Score (Judge).** A model reads the viewer's recent engagement history and **predicts how likely they are to like, reply, share, read through, follow or mute**. It multiplies each prediction by a weight and adds them up.
-3. **Filter (Bouncer).** X drops stale, already seen, blocked or muted posts. A separate system drops posts with spam or safety labels.
+3. **Filter (Bouncer).** X drops stale, already seen, blocked or muted posts; in the code this mostly happens before scoring, so the Judge only sees what's left. A separate system drops posts with spam or safety labels after selection.
 
 Ryan sums up the goal as **keep people on the platform**. That's his reading, not a line in the code, though the code does reward predicted reading time and penalise predicted scroll-pasts. When you're unsure what X rewards, ask what keeps someone reading and talking.
 
@@ -58,7 +58,7 @@ Your main post has to stand alone. Give a stranger everything they need there, w
 > Fill in your cluster above, then download it. To count, tick each of your last 10 posts that stays inside the community.
 
 > [!CHECK] What three stages does every post pass through in X's For You feed?
-> X finds candidate posts, scores each one per viewer, then filters some out.
+> X finds candidate posts, drops some (stale, seen, blocked or muted), scores the rest per viewer, then runs final safety checks.
 
 > [!CHECK] You plan to announce a launch on X across five tweets. What do you change?
 > Put the whole launch in one self-contained post. X shows one post per conversation, so the other tweets never reach non-followers.
