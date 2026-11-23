@@ -27,6 +27,18 @@
 	]);
 
 	let finishing = $state(false);
+	let copied = $state<'Copied' | 'Copy failed' | null>(null);
+
+	/** Copies the lesson's public URL, so a link shared from a mirror still points at the live site. */
+	const copyLink = async () => {
+		try {
+			await navigator.clipboard.writeText(data.link);
+			copied = 'Copied';
+		} catch {
+			copied = 'Copy failed';
+		}
+		setTimeout(() => (copied = null), 1500);
+	};
 	let active = $state('');
 	let panel = $state<HTMLElement>();
 
@@ -73,6 +85,8 @@
 	description={data.lesson.summary}
 	type="article"
 	markdown={data.lesson.markdownHref}
+	image={data.image}
+	imageAlt="{data.lesson.title}, a lesson in {module.title} on Earshot"
 	schema={[
 		{
 			'@context': 'https://schema.org',
@@ -80,7 +94,7 @@
 			headline: data.lesson.title,
 			description: data.lesson.summary,
 			url: new URL(data.lesson.href, page.url.origin).href,
-			image: new URL('/og.png', page.url.origin).href,
+			image: new URL(data.image, page.url.origin).href,
 			inLanguage: 'en',
 			timeRequired: `PT${data.lesson.minutes}M`,
 			author: maker,
@@ -192,6 +206,9 @@
 		{:else}
 			<span class="mr-auto"></span>
 		{/if}
+		<button type="button" class="text-sm text-muted underline" onclick={copyLink} aria-live="polite">
+			{copied ?? 'Copy lesson link'}
+		</button>
 		{#if done}
 			<button type="button" class="text-sm text-muted underline" onclick={() => progress.set(data.lesson.id, false)}>
 				Mark as not done

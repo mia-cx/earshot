@@ -3,7 +3,9 @@
 	The share image, static/og.png (1200x630). Render it again after changing this file:
 	"/Applications/Chromium.app/Contents/MacOS/Chromium" --headless --hide-scrollbars \
 	  --window-size=1200,630 --screenshot=static/og.png "file://$PWD/research/tools/og.html"
-	Module hues match MODULE_HUES in src/lib/server/course.ts.
+	Module hues match MODULE_HUES in src/lib/server/build-course.ts.
+	Lesson images: ?kicker=…&title=…&module=<number> sets the text and lights that module's colour.
+	research/tools/og.mjs renders one per lesson into static/og/.
 -->
 <html lang="en">
 	<head>
@@ -54,6 +56,9 @@
 				border-radius: 12px;
 				background: oklch(0.52 0.13 var(--hue));
 			}
+			.strip[data-module] span:not([data-on]) {
+				opacity: 0.18;
+			}
 		</style>
 	</head>
 	<body>
@@ -68,5 +73,17 @@
 				<span style="--hue: 5"></span>
 			</div>
 		</main>
+		<script>
+			const params = new URLSearchParams(location.search);
+			if (params.has('title')) {
+				document.querySelector('p').textContent = params.get('kicker') ?? 'Earshot';
+				document.querySelector('h1').textContent = params.get('title');
+			}
+			if (params.has('module')) {
+				const strip = document.querySelector('.strip');
+				strip.dataset.module = '';
+				strip.children[Number(params.get('module')) - 1]?.setAttribute('data-on', '');
+			}
+		</script>
 	</body>
 </html>

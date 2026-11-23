@@ -2,7 +2,7 @@
 	/** Who makes Earshot, as the footer credits her: the author and publisher in structured data. */
 	export const maker = { '@type': 'Person', name: 'Mia', url: 'https://mia.cx' };
 
-	/** Describes the share image, `static/og.png`. */
+	/** Describes the course share image, `static/og.png`. */
 	const IMAGE_ALT = 'Earshot: a free marketing course for builders with ADHD';
 </script>
 
@@ -15,7 +15,7 @@
 	 * Pages readers use privately (`/review`, `/lab`) pass `noindex` and no description. Every page of
 	 * a staging build is noindex, so staging never competes with the live site in search.
 	 * `crumbs` mirrors the visible trail above the page (module, then lesson) as a BreadcrumbList.
-	 * Lessons pass `type="article"`.
+	 * Lessons pass `type="article"` and their own share `image`, described by `imageAlt`.
 	 */
 	let {
 		title,
@@ -24,7 +24,9 @@
 		type = 'website',
 		crumbs = [],
 		schema = [],
-		markdown
+		markdown,
+		image: imagePath = '/og.png',
+		imageAlt = IMAGE_ALT
 	}: {
 		title: string;
 		description?: string;
@@ -34,12 +36,15 @@
 		schema?: object[];
 		/** The page's Markdown copy, linked so an agent reading the page finds it. */
 		markdown?: string;
+		/** Path of a 1200x630 share image. */
+		image?: string;
+		imageAlt?: string;
 	} = $props();
 
 	const hidden = $derived(noindex || page.url.hostname.startsWith('staging.'));
 	const absolute = (path: string) => new URL(path, page.url.origin).href;
 	const canonical = $derived(absolute(page.url.pathname));
-	const image = $derived(absolute('/og.png'));
+	const image = $derived(absolute(imagePath));
 	const all = $derived(
 		crumbs.length
 			? [
@@ -80,9 +85,9 @@
 		<meta property="og:image" content={image} />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
-		<meta property="og:image:alt" content={IMAGE_ALT} />
+		<meta property="og:image:alt" content={imageAlt} />
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:image:alt" content={IMAGE_ALT} />
+		<meta name="twitter:image:alt" content={imageAlt} />
 		{#each all as data, i (i)}
 			{@html json(data)}
 		{/each}
