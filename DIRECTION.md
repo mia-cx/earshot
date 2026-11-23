@@ -2,7 +2,7 @@
 
 ## What it is
 
-Earshot is a marketing and growth course for builders learning it from zero, rewritten from posts people shared for free on X. It keeps both durable principles and cheap, specific tricks, and it is built for readers with ADHD: short lessons, the short version first, one small action per lesson, visible progress.
+Earshot is a marketing and growth course for builders learning it from zero. Each lesson starts from what marketing research and official documentation show, then applies it through posts practitioners shared for free on X. It keeps both durable principles and cheap, specific tricks, and it is built for readers with ADHD: short lessons, the short version first, one small action per lesson, visible progress.
 
 ## How the course is made
 
@@ -11,7 +11,9 @@ Earshot is a marketing and growth course for builders learning it from zero, rew
 3. `research/tools/course-outline.md` deduplicates the units and orders them into 13 modules. Every unit lives in exactly one lesson.
 4. Writers followed `research/tools/writing-brief.md` to produce the lessons in `content/`.
 
-To add sources: append to `links.txt`, scrape, analyse into a new batch file, place the units in the outline, then write or revise the affected lessons.
+5. A research pass grounded every module in the literature: `research/literature/<module>.md` lists the books, studies and official docs behind each lesson and checks every claim in it as confirmed, disputed or unverified. Lessons open with the principle and its evidence; the posts' tricks follow as ways to apply it.
+
+To add sources: append to `links.txt`, scrape, analyse into a new batch file, place the units in the outline, then write or revise the affected lessons and check their claims against the module's literature notes.
 
 ## Decisions
 
@@ -20,8 +22,9 @@ To add sources: append to `links.txt`, scrape, analyse into a new batch file, pl
 - Svartz is the index, the app is the host: `content/` is a Svartz vault that indexes the lessons and writes a Markdown copy of each for agents, and the app renders every page with its own design. A full Svartz theme was ruled out: its three-column shell with a file explorer works against "start the next thing without deciding".
 - Agents get the course two ways: the gtm, seo and marketing-agents skills at `/.well-known/agent-skills/` (installable with `npx skills add <site>`), and `/llms.txt` with every lesson's Markdown copy.
 - Lessons are plain markdown with GitHub-style callouts (`[!TLDR]`, `[!TRICK]`, `[!RISK]`, `[!DO]`), so they read fine on GitHub too.
-- Unverified numbers stay in, labelled as one person's claim. Risky tricks stay in with a concrete Watch out note; the reader decides.
-- Sources are credited and linked on every lesson.
+- Research leads, posts apply it. Where the research disputes a post, the lesson says so. Unverified numbers stay in, labelled as one person's claim. Risky tricks stay in with a concrete Watch out note; the reader decides.
+- Sources are credited and linked on every lesson: research first, then the posts.
+- Feedback without accounts: "Check my work" hands the lesson and the reader's answers to their own AI assistant. A small model running in the browser over WebGPU could give that feedback on the page later; until then the reader's assistant does it. Questions and ideas go to GitHub Discussions.
 
 ## State
 

@@ -6,14 +6,15 @@
 
 <Seo
 	title="Sources and credits: {data.posts} posts by {data.authors.length} people · Earshot"
-	description="Every post the Earshot course was rewritten from, lesson by lesson, and the people who shared them for free on X."
+	description="Every study, book, guide and post the Earshot course stands on, lesson by lesson, and the people who shared what worked for them on X."
 />
 
 <div class="sources-page">
 	<h1>Sources and credits</h1>
 	<p class="lede">
-		Earshot is rewritten from {data.posts} posts by {data.authors.length} people who shared what worked for them on
-		X. Every lesson links its sources; here they are in one place.
+		Earshot stands on {data.research} studies, books, guides and essays, and {data.posts} posts by
+		{data.authors.length} people who shared what worked for them on X. Every lesson links its sources; here they are in
+		one place.
 	</p>
 
 	<section aria-labelledby="people">

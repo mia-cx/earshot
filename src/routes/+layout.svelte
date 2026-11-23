@@ -70,7 +70,8 @@
 				browser.
 			</p>
 			<p class="mt-4 max-w-sm">
-				Rewritten from {data.credits.posts} free posts by {data.credits.people} people on X.
+				Grounded in {data.credits.research} studies, books, guides and essays, and {data.credits.posts} free posts by
+				{data.credits.people} people on X.
 				<a href="/sources" class="footer-link underline">Every source</a>
 			</p>
 		</div>
