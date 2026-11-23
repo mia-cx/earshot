@@ -28,7 +28,7 @@ To add sources: append to `links.txt`, scrape, analyse into a new batch file, pl
 
 ## State
 
-Live on seo.mia.cx: 63 lessons (155 tricks) across 13 modules, each grounded in the research it cites (214 studies, books, guides and essays) and applied through free posts on X. Public repo `mia-cx/earshot`. seo.mia.cx is the canonical address and the one we advertise: Google already lists unrelated AI-made pages for "earshot", so the name alone won't find the course. earshot.mia.cx serves the same pages without a redirect; their canonical URLs point to seo.mia.cx. Every push to main deploys the `earshot-staging` Worker to staging.seo.mia.cx; merging a Changesets release pull request deploys the `earshot` Worker to both production hostnames and tags the release.
+Live on seo.mia.cx: 63 lessons (156 tricks) across 13 modules, each grounded in the research it cites (214 studies, books, guides and essays) and applied through free posts on X. Public repo `mia-cx/earshot`. seo.mia.cx is the canonical address and the one we advertise: Google already lists unrelated AI-made pages for "earshot", so the name alone won't find the course. earshot.mia.cx serves the same pages without a redirect; their canonical URLs point to seo.mia.cx. Every push to main deploys the `earshot-staging` Worker to staging.seo.mia.cx; merging a Changesets release pull request deploys the `earshot` Worker to both production hostnames and tags the release.
 
 seo.mia.cx is in Google Search Console with its sitemap (79 pages) and in Bing Webmaster Tools, and each release sends every page to IndexNow. Cloudflare allows every crawler, AI crawlers included.
 
