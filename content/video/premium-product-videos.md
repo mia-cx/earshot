@@ -5,18 +5,18 @@ description: Set fixed rules for design, motion and music so every video looks d
 ---
 
 > [!TLDR] A video looks premium when nothing in it looks accidental, so set fixed rules and keep them.
-> - Set fixed rules (3 colours, the same backgrounds, the same kind of music) and keep them. Repeated choices read as deliberate and become recognisable.
+> - Stick to 3 colours, the same backgrounds and the same kind of music. Repeated choices read as deliberate and become recognisable.
 > - Design and storyboard every frame before anyone animates.
 > - Ease the motion, flow between scenes instead of cutting, and vary the pace.
 > - Pick music by tempo for the feeling you want, then delete any sound effect that doesn't help.
 
 ## Premium comes from restraint
 
-A video feels premium when **every choice looks deliberate**. Rolf Reber and colleagues [reviewed the evidence on processing fluency](https://pages.ucsd.edu/~pwinkiel/abs_beauty-PSPR-2004.htm): the easier something is to take in, through repetition, symmetry and clear contrast, the more people like it. The [Ehrenberg-Bass Institute](https://marketingscience.info/news-and-insights/differentiation-versus-distinctiveness) adds that buyers pick brands they easily recognise, and colours and house styles make them recognisable.
+A video feels premium when **every choice looks deliberate**. When your font, background, music and colour never wander, viewers assume someone made those choices on purpose. Most cheap-looking videos fail by piling things on: too many effects, unnecessary sound effects, hype music.
 
-When font, background, music and colour never wander, viewers assume someone decided them. Most cheap-looking videos fail by adding things: too many effects, unnecessary sound effects, hype music.
+Rolf Reber and colleagues [reviewed processing fluency](https://pages.ucsd.edu/~pwinkiel/abs_beauty-PSPR-2004.htm) and found people like things more when repetition, symmetry and clear contrast make them easy to take in. The [Ehrenberg-Bass Institute](https://marketingscience.info/news-and-insights/differentiation-versus-distinctiveness) adds that buyers pick brands they recognise easily, built through consistent colours and house styles.
 
-The rules below come from @leomeethewoo, whose studio sells product videos to fintech companies and made 50+ of them in one summer. They're his team's practice, not tested claims. His model is Apple, whose videos he reads as made to make existing buyers feel special.
+The rules below come from @leomeethewoo, whose studio sells product videos to fintech companies and made 50+ of them in one summer. They're his team's practice, not tested claims. His model is Apple, whose videos he reads as built to make existing buyers feel special.
 
 > [!RISK] Premium polish won't grow you alone
 > Ehrenberg-Bass research found that [brands grow by acquiring new customers, not by increasing loyalty](https://marketingscience.info/news-and-insights/how-b2b-brands-grow). Make sure some of your videos reach people who haven't bought yet.
@@ -31,16 +31,16 @@ The rules below come from @leomeethewoo, whose studio sells product videos to fi
 
 ## Design every frame before you animate
 
-Quality is set at the design stage, not by hiring a great motion designer later. Leo says Apple keeps a brand guideline for typography, backgrounds and more, and sticks to it from video to video. Leo's team storyboards every animation frame by frame in Figma before any motion work starts.
+You decide quality at the design stage, not by hiring a great motion designer later. Leo says Apple keeps a brand guideline for typography, backgrounds and more, and sticks to it from video to video. His team storyboards every animation frame by frame in Figma before any motion work starts.
 
-Check each frame against four principles:
+Check each frame against four rules:
 
 - One shot, one idea.
-- Every scene has room to breathe.
-- The key object sits in the centre of the frame.
-- The background follows your brand guideline and never competes with the key object.
+- Give every scene room to breathe.
+- Put the key object in the centre of the frame.
+- Keep the background on brand so it never competes with the key object.
 
-Stephen Palmer's lab at Berkeley [backs the centring rule](https://palmerlab.berkeley.edu/pdf/PalmerGardner&Wickens-1.pdf): viewers like a single front-facing object best at the centre, and a sideways-facing one facing into the frame. So centre the product, and when a person faces sideways, use the off-centre lines from *Plan an AI video before you pay for it*.
+Stephen Palmer's lab at Berkeley [backs the centring rule](https://palmerlab.berkeley.edu/pdf/PalmerGardner&Wickens-1.pdf). Viewers prefer a single front-facing object in the centre, and a sideways-facing one looking into the frame. Centre your product, and when someone faces sideways, use the off-centre lines from *Plan an AI video before you pay for it*.
 
 ## Make the motion look expensive
 
@@ -53,7 +53,7 @@ Things in the real world speed up and slow down. Page Laubheimer at NN/g found t
 
 ## Choose the music by tempo
 
-Tempo sets the energy of the whole video. Gabriela Husain and colleagues played people one Mozart sonata, fast or slow, major or minor: [tempo changed how aroused listeners felt, and mode changed their mood](https://research.bond.edu.au/en/publications/effects-of-musical-tempo-and-mode-on-arousal-mood-and-spatial-abi/). Pick the BPM for energy first, then a key and genre for the mood.
+Tempo sets the energy of the whole video. Gabriela Husain and colleagues played one Mozart sonata fast or slow, major or minor. [Tempo changed listeners' arousal, while mode changed their mood](https://research.bond.edu.au/en/publications/effects-of-musical-tempo-and-mode-on-arousal-mood-and-spatial-abi/). Pick BPM for energy first, then key and genre for mood.
 
 > [!TRICK] Pick the BPM for the feeling
 > | BPM | Feeling |
@@ -65,7 +65,7 @@ Tempo sets the energy of the whole video. Gabriela Husain and colleagues played 
 >
 > Then do a sound pass: listen to the whole video and remove any effect that is too loud, out of place, or doesn't help people stay engaged or understand the product.
 
-These BPM ranges are Leo's opinion; the research backs only the direction, faster is more energising. They still beat scrolling a music library at random.
+These BPM ranges are Leo's opinion. The research only backs the direction, that faster is more energising. Still, they beat scrolling a music library at random.
 
 > [!FORM] Your video rulebook
 > 1. Which type of video is this for: launch, feature or explainer?

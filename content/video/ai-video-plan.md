@@ -1,10 +1,10 @@
 ---
 title: Plan an AI video before you pay for it
 order: 3
-description: Set up a director agent and get a shootable story and shot list before any image.
+description: Set up a director agent and lock in a shootable story and shot list before generating images.
 ---
 
-> [!TLDR] Catch every error at the cheapest stage, and have a reviewer other than the writer check the work.
+> [!TLDR] Catch errors at the cheapest stage, and have a separate reviewer check the work.
 > - Catch errors in text first, then in images, then in video. Each stage costs more than the one before.
 > - One coding agent directs, an image model draws, a video model animates. A separate agent reviews. You approve direction and spend.
 > - Write a story AI can shoot: a one-sentence point, the best image first, episodic shots, no known failure shots.
@@ -12,21 +12,21 @@ description: Set up a director agent and get a shootable story and shot list bef
 
 ## Fix errors where they're cheapest
 
-Editing a prompt is free. Regenerating an image is cheap. Regenerating video is billed per second. So **every check belongs as early as possible**.
+Editing a prompt is free and regenerating an image is cheap, while video is billed per second. Put **every check as early as possible**.
 
-Barry Boehm and Victor Basili made this rule famous in software: [a bug found after delivery often costs 100 times more to fix than one found in design](https://www.cs.umd.edu/projects/SoftEng/ESEG/papers/82.78.pdf), though only about 5 times more in small projects. Tim Menzies and colleagues later [checked 171 software projects and found no consistent effect](https://arxiv.org/abs/1609.04886). In AI video the rule holds for a plainer reason: the price list. Every rerolled second is billed again.
+Software engineers know this idea from Barry Boehm and Victor Basili, who reported that [a bug caught after delivery often costs 100 times more to fix than one caught in design](https://www.cs.umd.edu/projects/SoftEng/ESEG/papers/82.78.pdf), though only about 5 times more in small projects. Tim Menzies and colleagues later [checked 171 software projects and found no consistent effect](https://arxiv.org/abs/1609.04886). In AI video the rule holds for a simpler reason. Every rerolled second hits your bill again.
 
-The second rule is who checks. Jie Huang and colleagues found that [language models struggle to correct their own reasoning without outside feedback](https://arxiv.org/abs/2310.01798), and sometimes get worse. Boehm and Basili report that peer review catches a median of about 60% of defects. So the reviewer is a separate agent that never saw the chat.
+Who checks matters just as much. Jie Huang and colleagues found that [language models struggle to correct their own reasoning without outside feedback](https://arxiv.org/abs/2310.01798), and sometimes get worse. Boehm and Basili also report that peer review catches a median of about 60% of defects. That's why a separate agent, with no access to your chat, reviews the work.
 
-The workflow in this lesson and the next comes from @EianLu, who attributes a very low reroll rate to these rules (his own experience):
+The workflow here and in the next lesson comes from @EianLu, who credits these rules for a very low reroll rate (his own experience):
 
 - No images until you approve the story.
 - No final shots until you approve the style.
-- A separate review agent passes prompts and frames before any video is generated.
-- Fix a bad clip in code before you regenerate it.
-- Save every new version as a new file. Never overwrite.
+- A separate review agent approves prompts and frames before generating any video.
+- Fix a bad clip in code before regenerating it.
+- Save every version as a new file and never overwrite.
 
-The original prompts are in Chinese at the source link. The ones here are English translations.
+The source links to @EianLu's Chinese originals. The prompts below are English translations.
 
 > [!DIAGRAM] cost-ladder
 
@@ -90,11 +90,11 @@ Codex alone can do the whole job. The author prefers Claude's taste for directin
 
 ## Write a story the model can shoot
 
-A short film needs a point you can say in one sentence, its most striking image first, and turns that make sense in the real world. Write every gag in three beats: problem, how the protagonist solves it, how bystanders react, with reactions staggered like real people.
+A shootable AI short needs a one-sentence point, its most striking image first, and turns that follow real-world logic. Write every gag in three beats: the problem, how the protagonist solves it, and staggered bystander reactions like real people.
 
-**Prefer episodic stories**, where no shot has to match the one before. Continuous stories break most easily. Then let a fresh agent, one that has never seen your chat, review the result.
+**Prefer episodic stories**, where no shot has to match the one before. Continuous stories break the fastest. Once the story is down, hand it to a fresh agent that has never seen your chat.
 
-Write around what video models get wrong. OpenAI says its Sora model [may struggle with the physics of a complex scene, with cause and effect, and with telling left from right](https://openai.com/index/sora/). The list in the prompt below is @EianLu's, from his own failed shots.
+Write around what video models get wrong. OpenAI says its Sora model [may struggle with the physics of a complex scene, with cause and effect, and with telling left from right](https://openai.com/index/sora/). The longer failure list in the prompt below comes from @EianLu's own failed shots.
 
 > [!TRICK] Develop the story, then have it reviewed
 > Story prompt:
@@ -132,9 +132,9 @@ Write around what video models get wrong. OpenAI says its Sora model [may strugg
 
 ## Storyboard angle, motion and colour
 
-Shot design and colour decide quality more than plot does. Each shot needs a different angle from the last, something that moves, and a reason for any camera move. Lock the palette before the first image, and check it in greyscale: if people merge into the background, the contrast is too low.
+Shot design and colour decide quality more than plot does. Give each shot a different angle from the last, something moving in frame, and a reason for any camera move. Lock the palette before drawing the first image, then check your sketches in greyscale. If people blend into the background, your contrast is too low.
 
-The prompt's 38% / 62% rule for heads is the author's. Stephen Palmer's lab at Berkeley found viewers [prefer a single front-facing subject at the centre](https://palmerlab.berkeley.edu/pdf/PalmerGardner&Wickens-1.pdf), and a subject facing sideways placed so it faces into the frame. Use the off-centre lines for people in profile, looking into the space you left them.
+The 38% / 62% rule for heads in the prompt is @EianLu's. Stephen Palmer's lab at Berkeley found that viewers [prefer a single front-facing subject at the centre](https://palmerlab.berkeley.edu/pdf/PalmerGardner&Wickens-1.pdf), and a sideways-facing subject placed so it faces into the frame. Save those off-centre lines for people in profile, looking into the space you leave them.
 
 > [!TRICK] Turn the story into a shot list
 > If you have a reference film, the agent studies it frame by frame first. Otherwise it designs to the rules in the prompt.

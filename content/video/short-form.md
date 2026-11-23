@@ -4,37 +4,37 @@ order: 2
 description: Find formats that beat their creator's usual numbers and rebuild them for you.
 ---
 
-> [!TLDR] Platforms rank videos on how viewers respond, so reuse formats viewers have already responded to.
+> [!TLDR] Platforms rank videos on viewer response, so reuse formats viewers already respond to.
 > - A format that broke out has already earned the watch time and shares platforms rank on. Copy the format, never the content.
-> - Judge someone's video against that creator's usual views, not by raw views.
+> - Judge a video against its creator's usual views, not raw numbers.
 > - Run three bots: one tears down a viral video, one turns a voice note into 3 scripts, one learns from your own results every week.
 
 ## Copy the format, never the content
 
-Platforms don't pick formats. They watch viewers. Cristos Goodrow, YouTube's VP of Engineering, writes that its recommender learns from [clicks, watch time, survey answers, shares, likes and dislikes](https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/), and TikTok [describes the same kind of signals](https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you). A format that broke out has already earned those signals, and viewers know how to watch it. Rolf Reber and colleagues reviewed evidence that [familiar, easy-to-process forms are liked more](https://pages.ucsd.edu/~pwinkiel/abs_beauty-PSPR-2004.htm).
+Platforms don't rank formats directly. They rank viewer behaviour. Cristos Goodrow, YouTube's VP of Engineering, writes that its recommender reads [clicks, watch time, survey answers, shares, likes and dislikes](https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/), and TikTok [describes similar signals](https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you).
 
-So the core skill is **spotting which proven format to reuse, and when**. Inventing a new format is the slow road.
+A breakout format has already earned those signals, and viewers know how to follow it. Rolf Reber and colleagues reviewed evidence that [people like familiar, easy-to-process forms more](https://pages.ucsd.edu/~pwinkiel/abs_beauty-PSPR-2004.htm). The core skill is **spotting which proven format to reuse, and when**. Inventing one from scratch is the slow road.
 
-@tuanle (who claims 4B+ views) says he spent two years trying to be original before a 4M-view iPhone video changed his approach. His examples:
+@tuanle (who claims 4B+ views) says he spent two years trying to be original before a 4M-view iPhone video changed his mind. His examples:
 
 - The "Hey chef, can you make me something with this?" format.
 - Stan copying the "how much do you pay for rent" office-tour format.
 - Buldak reaching 900M views with proven formats.
 - MrBeast starting every video from the title and thumbnail.
 
-Copying a format means taking its structure: the opening, the beats, the framing. The subject, words, footage and claims stay yours. Lifting someone's script or clips is plain copying, and it gives you nothing you own.
+Reusing a format means taking its structure: the opening, the beats and the framing. The subject, words, footage and claims stay yours. Lifting someone's script or clips is plain copying and gives you nothing you own.
 
-Only the chapter list of tuanle's video was available, so the reasoning behind these examples is unverified. He also says no views, no saves and no shares point to three different problems, but the fixes aren't in the source.
+Only the chapter list of tuanle's video was available, so the reasoning behind these examples is unverified. He also says no views, no saves and no shares point to three different problems, though the source doesn't include his fixes.
 
 ## Look for outliers, not big numbers
 
 A big creator's views mostly reflect their audience size. The useful signal is the **outlier**: a video that did far better than that creator's usual views or follower count. The gap shows the format did the work, not the audience.
 
-The platforms measure the same way. YouTube's [retention report](https://support.google.com/youtube/answer/9314415) compares each video with your own 10 most recent videos of similar length. TikTok says follower count and past hits are not direct ranking factors, so a small account's breakout came from viewers, not reach.
+The platforms measure the same way. YouTube's [retention report](https://support.google.com/youtube/answer/9314415) compares each video with your own 10 most recent videos of similar length. TikTok says follower count and past hits aren't direct ranking factors, so a small account's breakout came from viewers, not reach.
 
 1. Shortlist creators under about 100,000 followers who have several breakouts.
 2. For each one, scroll their last 20 videos and note their usual views.
-3. Mark any video far above that. One outlier can be luck; a format that broke out twice is a pattern.
+3. Mark any video far above that. One outlier can be luck. A format that broke out twice is a pattern.
 
 Their formats are the ones most likely to work for a small account like yours.
 

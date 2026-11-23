@@ -4,7 +4,7 @@ order: 3
 description: Keep your posts eligible for the feed and your account's reputation growing.
 ---
 
-> [!TLDR] A post can only rank if it survives X's filters, and those filters are written down in X's code.
+> [!TLDR] A post can only rank if it survives X's filters, which are written in X's code.
 > - A post has 48 hours to take off, and each extra post you send the same viewer counts for less.
 > - Fresh posts from accounts under 50,000 followers get a small boost. Big accounts get no guaranteed reach.
 > - Labels for spam or inauthentic behaviour limit who sees your posts. X's Under the Hood tool shows them.
@@ -12,27 +12,31 @@ description: Keep your posts eligible for the feed and your account's reputation
 
 ## Each post lives 48 hours
 
-X's open-source feed code, [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm), lists its filters by name. The `AgeFilter` drops "posts older than 48 hours", so **a post makes or misses its reach within two days**.
+**A post makes or misses its reach within two days.** In X's open-source feed code ([xai-org/x-algorithm](https://github.com/xai-org/x-algorithm)), `AgeFilter` drops "posts older than 48 hours".
 
-Other filters drop posts the viewer has already seen, reposts and replies from accounts they don't follow, and blocked or muted accounts and keywords. A separate visibility system drops posts carrying spam or safety labels. Posts from accounts the viewer doesn't follow get their score multiplied by a discount below 1.
+Other filters drop posts the viewer has already seen, reposts and replies from accounts they don't follow, and blocked or muted accounts and keywords. A separate visibility system drops posts with spam or safety labels. Posts from accounts the viewer doesn't follow also have their score multiplied by a discount below 1.
 
-Posting more is not free. The code multiplies each further post from the same author in one viewer's feed by a decaying factor. Ryan (@ryangrowthh) reads this as "if you post too often, X doesn't give every post a chance". *Run a daily article routine* sets a rule for how much to post.
+Posting more isn't free. Each extra post from you in the same viewer's feed gets multiplied by a decaying factor. Ryan (@ryangrowthh) sums this up as "if you post too often, X doesn't give every post a chance". *Run a daily article routine* gives you a rule for how much to post.
 
 ## Small accounts get a head start
 
-The code has a cold-start boost. It lifts posts under 2 hours old from authors under 50,000 followers, while the post has had fewer than 200 impressions. It runs as an experiment, so not every viewer gets it. A new account can still go viral early: Ryan's own first viral post came three days after starting a new account. Ryan reports 8,000+ followers and 4M+ impressions in 4 weeks, solo, and about 9,900 followers in a month. That's one person's result.
+Starting small isn't a handicap. X's code includes a cold-start boost for posts under 2 hours old from authors under 50,000 followers, while the post has fewer than 200 impressions. It runs as an experiment, so not every viewer gets it.
 
-The flip side: big accounts get no guaranteed reach. Follower count isn't one of the scored actions. Ryan has watched many big accounts fade over about 18 months. Starting small is not a handicap.
+A new account can still break out early. Ryan's own first viral post came three days after starting a new account, and he reports 8,000+ followers and 4M+ impressions in 4 weeks solo, reaching about 9,900 followers in a month. Treat that as one person's result.
+
+Big accounts get no guaranteed reach either. Follower count isn't part of the score, and Ryan says he has watched many big accounts fade over about 18 months.
 
 ## Reputation and labels
 
-Twitter's 2023 open-source release computed a credibility score called [Tweepcred](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/graph/batch/job/tweepcred/README): PageRank over who mentions and reposts whom. X's 2026 code still keeps a PageRank-style score and uses it in its spam rules. Engagement from well-connected accounts in your niche counts for more than a big follower count. Ryan says the score lifts or caps every post. The code shows it in spam rules, not as a multiplier on every post.
+Engagement from well-connected accounts in your niche counts for more than a big follower count. Twitter's 2023 open-source release computed a credibility score called [Tweepcred](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/graph/batch/job/tweepcred/README), using PageRank over who mentions and reposts whom.
+
+X's 2026 code still keeps a PageRank-style score, used in its spam rules. Ryan says it lifts or caps every post, though the code only shows it in spam rules, not as a multiplier on every post.
 
 - Engage genuinely with people in your niche to build a dense, high-quality network.
-- Engagement groups (accounts that agree to engage with each other's posts) do little. X's code comments say only actions on posts served in the Home feed count, and going to a post directly from a group chat "has no ranking impact".
+- Engagement groups (accounts that agree to engage with each other's posts) do little. X's code comments say only actions on posts served in the Home feed count, so opening a post straight from a group chat "has no ranking impact".
 
 > [!RISK] Labels limit every post
-> A label for spam or inauthentic behaviour cuts the visibility of your account or individual posts, and account labels add up from what your posts collected. Avoid content that gets you muted, blocked or reported, and check X's Under the Hood tool, which shows labels on your account and on posts marked as spam.
+> A spam or inauthentic-behaviour label cuts the visibility of a post or your whole account. Account labels also add up from what your posts collected. Avoid content that gets you muted, blocked or reported, and check X's Under the Hood tool to see labels on your account or posts marked as spam.
 
 > [!TRICK] Keep your account clean
 > - Don't let AI write and post 100% of your copy. X tracks inauthentic behaviour over time.
@@ -42,7 +46,7 @@ Twitter's 2023 open-source release computed a credibility score called [Tweepcre
 >
 > This is Ryan's advice from reading the code, unverified beyond that.
 
-Ryan also warns that a troll blocking or muting you cuts your reach. The code comments say otherwise: blocks and reports mostly change what *similar* viewers see, not your reach for everyone. Mute them anyway. The fight costs you time.
+Ryan also warns that a troll blocking or muting you cuts your reach. X's code comments say otherwise. Blocks and reports mostly change what *similar* viewers see, not your reach for everyone. Mute them anyway, because the fight costs you time.
 
 > [!DO] Check your labels
 > Open [X's Under the Hood tool](https://x.com/i/jf/under_the_hood) and look for labels on your account or posts. Write down what you find, even if it's "none".
