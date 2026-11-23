@@ -90,11 +90,15 @@ Be direct and specific. Skip praise that doesn't teach me anything.`;
 			checkStatus = 'empty';
 			return;
 		}
-		try {
-			const response = await fetch(`${lesson.href}.md`);
+		const prompt = fetch(`${lesson.href}.md`).then(async (response) => {
 			if (!response.ok) throw new Error(`${response.status} for ${lesson.href}.md`);
-			const prompt = `${REVIEW_PROMPT}\n\n<lesson url="${location.origin}${lesson.href}">\n${(await response.text()).trim()}\n</lesson>\n\n<my-answers>\n${markdown().trim()}\n</my-answers>\n`;
-			await navigator.clipboard.writeText(prompt);
+			const text = `${REVIEW_PROMPT}\n\n<lesson url="${location.origin}${lesson.href}">\n${(await response.text()).trim()}\n</lesson>\n\n<my-answers>\n${markdown().trim()}\n</my-answers>\n`;
+			return new Blob([text], { type: 'text/plain' });
+		});
+		try {
+			// The write starts inside the click and takes the prompt as a promise, so Safari keeps the
+			// click's permission to use the clipboard while the lesson downloads.
+			await navigator.clipboard.write([new ClipboardItem({ 'text/plain': prompt })]);
 			checkStatus = 'copied';
 		} catch (error) {
 			console.error('Check my work: could not copy the prompt', error);
@@ -150,7 +154,7 @@ Be direct and specific. Skip praise that doesn't teach me anything.`;
 		{:else if checkStatus === 'empty'}
 			Answer at least one question, then check your work.
 		{:else if checkStatus === 'failed'}
-			Couldn't copy. Download the Markdown and paste it into your AI assistant instead.
+			Couldn't copy. Download the Markdown and give it to your AI assistant with a link to this lesson.
 		{/if}
 	</p>
 </form>
