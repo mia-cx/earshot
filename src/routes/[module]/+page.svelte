@@ -17,7 +17,7 @@
 
 <Seo
 	title="{module.title}: {module.lessons.length} short lessons · Earshot"
-	description="{module.summary} Lessons: {module.lessons.map((l) => l.title).join(', ')}."
+	description="{module.summary} {module.lessons.length} short lessons, {minutes} minutes in all, free with no sign-up."
 	markdown={module.markdownHref}
 	crumbs={[
 		{ name: 'Course map', href: '/map' },
