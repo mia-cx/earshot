@@ -26,7 +26,7 @@ Koe points to two forecasts. Goldman Sachs Research [estimated in 2023](https://
 
 When your marketing isn't working, go one circle in.
 
-That's Seth Godin's rule from [The circles of marketing](https://seths.blog/2012/07/the-circles-of-marketing/). The product sits in the centre. Around it sit usability, support and atmosphere. Next is your story, price, community and the tribe it's for. Only the outermost ring holds ads, spin, buzz, hype, clicks and "getting the word out", the part most people call marketing.
+That's Seth Godin's rule from [The circles of marketing](https://seths.blog/2012/07/the-circles-of-marketing/). The product sits in the centre. Around it sit usability, support and atmosphere. Next are your story, price, community and the tribe it's for. Only the outermost ring holds ads, spin, buzz, hype, clicks and "getting the word out", the part most people call marketing.
 
 Spend your effort from the centre outwards:
 
@@ -54,7 +54,7 @@ So marketing's job is simpler than it looks: make sure everyone who should know 
 
 ## Get the strategy right, then execute
 
-@kunalvg also argues that good execution of the right strategy beats great execution of a mediocre one, and that most teams run a mediocre strategy. You still need both.
+In @kunalvg's view, good execution of the right strategy beats great execution of a mediocre one, and most teams run a mediocre strategy. You still need both.
 
 The rest of this module gives you the strategy half: who you're for (*Say what you are, for whom, against what*), what buyers say (*Research a market in an afternoon*) and a plan (*Fit your strategy on one page*).
 

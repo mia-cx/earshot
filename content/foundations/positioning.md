@@ -16,7 +16,7 @@ Positioning lives in your buyer's mind, an idea Al Ries and Jack Trout [made fam
 
 Dunford's method starts with **competitive alternatives**: what buyers would do if you didn't exist. A difference only counts against what they actually compare you with.
 
-Write yours in one document before you market anything. If you can't answer a question below, one marketer (@kunalvg) reads that as the finding: **you don't understand the product well enough yet**.
+Write yours in one document before you market anything. One marketer (@kunalvg) says that if you can't answer a question below, **you don't understand the product well enough yet**.
 
 > [!FORM] Your positioning doc
 > 1. What do we do? What problem do we solve? Give one short, precise answer.
@@ -41,7 +41,7 @@ For a deeper version, work through Dunford's [positioning exercise](https://hack
 
 ## What weak positioning breaks
 
-@kunalvg also sees unclear positioning break two things at once. Your product drifts because nobody is obsessed with a specific user. Your go-to-market plan stays thin: no clear ideal customer, no chosen channels, no plan to grow them.
+In @kunalvg's experience, unclear positioning breaks two things at once. Your product drifts because nobody is obsessed with a specific user. Your go-to-market plan stays thin: no clear ideal customer, no chosen channels, no plan to grow them.
 
 Both trace back to the same blank page. Fix the page first.
 

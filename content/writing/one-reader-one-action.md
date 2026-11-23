@@ -20,7 +20,7 @@ The "right person" is the reader you pictured in *Say what you are, for whom, ag
 
 ## Keep one idea per post
 
-One idea per post is easier to remember and easier to pass on. The Heaths found that ideas that stick share a few traits, and [simplicity](https://stanfordmag.org/contents/getting-attention) is the first. If you have three ideas, you have three posts.
+One idea per post is easier to remember and easier to pass on. The Heaths found [simplicity](https://stanfordmag.org/contents/getting-attention) is the first trait sticky ideas share. If you have three ideas, you have three posts.
 
 It may also help in the feed. [X's 2026 feed code](https://github.com/xai-org/x-algorithm) still uses SimClusters as one way to find posts for people who don't follow you. Twitter's [2023 SimClusters code](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/simclusters_v2/README.md) groups accounts into about 145,000 communities by who follows whom, then places each post by who likes it. One author reads this to mean a post about three topics fits none of them well. The code lets a post span several communities, so that's a guess, not a tested result. *How X picks what people see* covers the feed in detail.
 

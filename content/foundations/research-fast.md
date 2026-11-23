@@ -16,7 +16,7 @@ Use AI for desk research and hypotheses, never for the final decision. Nielsen N
 
 To draft a first go-to-market hypothesis in an afternoon, feed an AI model your market's raw material and ask hard questions. The key is what you ask: **ask for synthesis, not summary**.
 
-The quoted post claims Y Combinator teaches this method and that it replaces about four weeks of research. Neither claim is verified, and the post ends with a plug for Gojiberry, where its author works.
+The source quotes a post claiming Y Combinator teaches this method and that it replaces about four weeks of research. Neither claim is verified, and that post plugs Gojiberry, where its author works.
 
 > [!TRICK] Run a three-hour market research session
 > 1. Gather raw material:
@@ -68,7 +68,7 @@ Read reviews at scale instead of guessing. One author says most teams have read 
 
 A competitor's longest-running ads make a good shortlist of ideas to test. The source author reads a long run as a sign the ad pays for itself; the data can't show that. Pull their live Meta ads and sort oldest first.
 
-Meta's public Ad Library shows each ad's copy and start date, but spend and impressions only for political and issue ads ([Meta](https://developers.facebook.com/docs/marketing-api/reference/archived-ad/)). The source also pulls landing pages using Virlo, a tool its author co-founded. In the EU, the [Digital Services Act](https://www.eu-digital-services-act.com/Digital_Services_Act_Article_39.html) requires large platforms to publish run dates and keep each ad listed for a year after it stops.
+Meta's public Ad Library shows each ad's copy and start date, but gives spend and impressions only for political and issue ads ([Meta](https://developers.facebook.com/docs/marketing-api/reference/archived-ad/)). The source also pulls landing pages using Virlo, a tool its author co-founded. In the EU, the [Digital Services Act](https://www.eu-digital-services-act.com/Digital_Services_Act_Article_39.html) requires large platforms to publish run dates and keep each ad listed for a year after it stops.
 
 > [!RISK] A long run isn't proof of profit
 > The library shows when an ad ran, not what it spent or earned. A small ad someone forgot to switch off can run for months. Treat run time as a lead to test, not a result to copy.

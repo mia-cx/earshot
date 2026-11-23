@@ -27,7 +27,7 @@ To pick your tone, start with Kate Moran's [four scales at NN/g](https://www.nng
 
 ## Polish is no longer a signal
 
-AI output arrives tidy and confident, so polish no longer signals quality. Readers can't spot it either: across six experiments with 4,600 people, [Maurice Jakesch, Jeffrey Hancock and Mor Naaman](https://arxiv.org/abs/2206.07271) found people could not tell AI-written profiles for jobs, hosting and dating from human ones. Untrained readers in [Elizabeth Clark and colleagues' study](https://aclanthology.org/2021.acl-long.565/) did no better than chance on stories, news and recipes.
+AI output arrives tidy and confident, so polish no longer signals quality. Readers can't spot it either. Across six experiments with 4,600 participants, [Maurice Jakesch, Jeffrey Hancock and Mor Naaman](https://arxiv.org/abs/2206.07271) found people couldn't tell AI-written job, hosting and dating profiles from human ones. Untrained readers in [Elizabeth Clark and colleagues' study](https://aclanthology.org/2021.acl-long.565/) did no better than chance on stories, news and recipes.
 
 Judge every draft by your own standard. If you wouldn't sign your name to it, don't publish it. Addy Osmani says most of their own AI-made creative work stays unpublished for this reason.
 

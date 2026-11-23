@@ -61,7 +61,7 @@ If deleting a word doesn't change the meaning, delete it. George Orwell's rules 
 > - Say "you" more than "I".
 > - Avoid AI tells: em dashes, and the "it's not [X], it's [Y]" pattern.
 
-One caveat on "AI tells": across 4,600 people, [Maurice Jakesch, Jeffrey Hancock and Mor Naaman](https://arxiv.org/abs/2206.07271) found people couldn't spot AI-written profiles because they looked for the wrong cues, such as first-person pronouns and family topics. Skipping em dashes avoids a stereotype; plain, specific words are what make a post yours.
+One caveat on "AI tells": across 4,600 participants, [Maurice Jakesch, Jeffrey Hancock and Mor Naaman](https://arxiv.org/abs/2206.07271) found people couldn't spot AI-written profiles because they looked for the wrong cues, such as first-person pronouns and family topics. Skipping em dashes avoids a stereotype; plain, specific words are what make a post yours.
 
 > [!DO] Reformat one post
 > Take your last post or a draft. Break it into lines of one thought each, cut every "really, very, just, actually", and rewrite the last line as a takeaway, a question or a tease. Preview it on your phone and save the new version.
