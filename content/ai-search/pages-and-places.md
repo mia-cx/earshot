@@ -1,14 +1,33 @@
 ---
 title: Be the page AI quotes
 order: 3
-description: Publish a page per buying decision, join the right threads, and list for agents.
+description: Use the pages AI already cites, add pages per decision, and list for agents.
 ---
 
 > [!TLDR]
+> - Put your message on pages AI already cites, yours or other people's, before you write new ones.
 > - AI splits a question into narrower searches, so a page built for one buyer segment has a specific search to match.
 > - Where AI barely mentions you, write one page per buyer segment for that decision, backed by comparison pages.
 > - Join only the Reddit threads your tracked buyer questions surface, and contribute before you link.
 > - Publish an agent skill for your API so AI assistants can find and use your product.
+
+## Start with pages AI already cites
+
+**AI repeats pages it already trusts.** In Ramp's test, an offer reached AI answers only from pages AI was already citing. Pages with few AI citations got zero mentions, whatever their format, and one of the best performers was a page Ramp never cared about for Google.
+
+So before you write a new page, check your citation log (see *Track the questions buyers ask AI*) for the pages of yours AI already cites, and put your message there. For other people's pages, get mentioned on the ones AI cites in your niche: the own, claim, earn, contest sort in *Fix why AI skips you* tells you how.
+
+> [!TRICK] Test which pages AI passes on
+> Ramp's experiment, relayed by CrowdReply, which sells citation outreach:
+> 1. Put one trackable offer on about 50 pages.
+> 2. Every day, ask each AI the questions your buyer would ask. For Ramp: a CFO picking a spend management tool.
+> 3. Check every answer for the offer, per engine.
+> 4. Compare formats. Ramp tested Markdown, stripped-down HTML and pages packed with schema; only Markdown reliably showed up in AI answers.
+>
+> Reported result: 1,300+ AI bot visits in the first 2.5 weeks, about 40 answers mentioning the offer at 2.5 weeks, 370 by day 32, and a peak of 33 in one day. One company's test, secondhand.
+
+> [!RISK] Content only bots can see
+> Ramp showed the offer only to AI bots; human visitors saw nothing different. Showing search engines content people don't see is what Google's spam policies call cloaking, and Google's AI answers come from Googlebot. Put the offer on the page for everyone.
 
 ## Write one page per decision and buyer
 
@@ -74,6 +93,9 @@ AI assistants look for tools they can use on a person's behalf. If your product 
 > [!CHECK] On Reddit, why answer a question in full before you add your link?
 > A link dropped without context gets treated as spam. The full answer is what the community values, and the link only helps where it adds something.
 
+> [!CHECK] You have a new offer to get into AI answers. Which pages should carry it first?
+> The pages AI already cites. In Ramp's test, pages with few AI citations got zero mentions, whatever their format.
+
 ## Sources
 
 - [OpenAI: Searching the web with ChatGPT](https://help.openai.com/en/articles/9237897-searching-the-web-with-chatgpt)
@@ -81,6 +103,7 @@ AI assistants look for tools they can use on a person's behalf. If your product 
 - [Profound: How Ramp increased AI brand visibility 7x in accounts payable](https://www.tryprofound.com/customers/ramp)
 - [Pratyush Kumar, *Generative Engine Optimization at Scale* (2026)](https://arxiv.org/abs/2606.20065)
 - [Anthropic: Agent Skills overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
+- [@CrowdReply_io: Ramp's test of which pages AI passes on](https://x.com/CrowdReply_io/status/2124253365165326674)
 - [@wespreadjam: Ramp's pages per buying decision](https://x.com/wespreadjam/status/2117333079106932897)
 - [@wespreadjam: Granola's Reddit targeting from tracked questions](https://x.com/wespreadjam/status/2115568290307469548)
 - [@2whazzuup: links without context on Reddit and Hacker News](https://x.com/2whazzuup/status/2119247229601062993)

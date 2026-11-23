@@ -56,9 +56,28 @@ Free SEO skills and repos for agents are everywhere, and GitHub stars don't tell
 >
 > TheoAGI's two picks after reading 14 repos: RomeoSEO/seo-skills (the clearest method, MIT licence, nothing sold inside) and AgriciDaniel/claude-seo (the most precise technical checks; it adds a link to a paid community after big reports).
 
+> [!TRICK] The ten most-starred AI SEO repos, checked
+> Nicholas Dulait (co-founder of ChatSEO, which sells an SEO agent) ranked these by GitHub stars on 21 November 2026. Verdicts on the middle six are TheoAGI's; the other four were checked for this course.
+>
+> | Repo | What it is | Verdict |
+> | --- | --- | --- |
+> | coreyhaines31/marketingskills | Marketing skills for agents, SEO included | Passes the bot question. Ignore its HowTo schema advice |
+> | AgriciDaniel/claude-seo | 26 SEO skills for Claude Code | Install. Use the page, technical and schema commands |
+> | every-app/open-seo | Open-source Semrush and Ahrefs | Once you have data. Needs paid data |
+> | zubair-trabzada/geo-seo-claude | AI-citation audits | Take only its live robots.txt check. Fails the bot question |
+> | Ryze-AI-Adgent/open-seo-mcp-skills | SEO tools for agents (MCP) | Short skills. Your data goes through their hosted connector |
+> | TheCraigHewitt/seomachine | Long-form post workspace | Keep the context files. Drop the keyword density target and any fictional stories |
+> | nowork-studio/notfair-plugin | SEO and marketing skills | A solid page audit, through their hosted server. Overrates FAQ markup |
+> | yaojingang/GEOFlow | AI articles published across many sites | See the risk below |
+> | ericosiu/ai-marketing-skills | Growth, sales and content skills | SEO is one folder of many. No AI crawler guidance |
+> | AgriciDaniel/claude-blog | Answer-first blog writer from claude-seo's author | Gets FAQ and HowTo markup right. Ignore its 100-point score |
+>
+> Whichever you install, check every change it makes in Search Console.
+
 > [!RISK] Scores and installers
 > - Some tools give your site a score out of 100. TheoAGI found that none of the three that do had checked their weights against real rankings or citations. Read the findings and ignore the number.
 > - Read every file of a skill or repo before you install it. One popular SEO repo installs by piping a script from its main branch straight into your shell (`curl | bash`), so whatever is on that branch runs on your machine.
+> - Tools that mass-produce AI articles across many sites, like GEOFlow, can run you into what Google's spam policies call scaled content abuse: many pages made mainly to rank, not to help anyone. Publish only pages you would write by hand.
 
 Two companies that sell SEO tools, Distribb and ChatSEO, wrote most of the articles behind this playbook. TheoAGI says so.
 
@@ -83,3 +102,4 @@ Two companies that sell SEO tools, Distribb and ChatSEO, wrote most of the artic
 - [Google Search Central: Consolidate duplicate URLs](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
 - [OpenAI: Overview of OpenAI crawlers](https://developers.openai.com/api/docs/bots)
 - [@TheoAGI: the one SEO/GEO playbook distilled from 66 articles](https://x.com/TheoAGI/status/2120163220312699025)
+- [@NicholasDulait: the top 10 AI SEO repos on GitHub](https://x.com/NicholasDulait/status/2124496217233314057)

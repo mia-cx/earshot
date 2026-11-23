@@ -139,11 +139,12 @@ Summary: Give strangers a reason to care, then work the conversation that follow
 
 ## 06-outreach: "Outreach"
 
-Summary: Cold email and DMs that get replies, and doing the work before you ask.
+Summary: Cold email and DMs that get replies, doing the work first, and scaling without burning your market.
 
 - `01-cold-email.md` "Fix cold email by its symptoms"
   - E: Diagnose cold email by symptom
   - E: Benchmark cold email at 1 lead per 300 contacts
+  - Test offers with otherwise identical emails; 2,000+ contacts per lead means the offer (Ramp breakdown)
   - E: Split prospects by email provider
   - E: Skip AI-written first lines
   - E: Replace the unsubscribe link with a reply word
@@ -156,6 +157,12 @@ Summary: Cold email and DMs that get replies, and doing the work before you ask.
 - `03-do-the-work-first.md` "Do the work first, then ask"
   - A: Do the work for free, then send it (permissionless apprentice)
   - B: Creator Scout bot: find small creators whose commenters are your buyers
+- `04-own-your-market.md` "Scale outbound without burning your market" (from @coldemailchris's Ramp breakdown, 2124591211985952946; no analysis batch)
+  - Start with warm intros mined from your network
+  - Score and tier your whole market in one table before automating
+  - Work signal-ranked accounts first, with a reason per account
+  - Agent sends only in simple sales; a person sends to senior buyers
+  - Cap contact to every 30-60 days; size segments; re-enrich before each pass
 
 ## 07-seo: "Search engines"
 
