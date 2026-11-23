@@ -92,6 +92,7 @@
 					<li><a href="/review" class="footer-link">Review</a></li>
 					<li><a href="/tricks" class="footer-link">Tricks</a></li>
 					<li><a href="/sources" class="footer-link">Sources and credits</a></li>
+					<li><a href="https://github.com/mia-cx/earshot/discussions" class="footer-link">Questions and ideas</a></li>
 				</ul>
 			</nav>
 			<nav aria-labelledby="footer-agents">
