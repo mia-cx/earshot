@@ -12,11 +12,11 @@ description: Use Search Console data to add missing answers to pages Google alre
 
 ## Start with pages Google already trusts
 
-**A page that already ranks is closer to a win than a page that doesn't exist.** Google has decided it's relevant. If it ranks on page 2 or 3 (positions 10 to 30), Google thinks the page fits but is incomplete. Add what's missing and it can climb.
+**A page that already ranks is closer to a win than a page that doesn't exist.** Google has decided it's relevant. If it sits on page 2 or 3 (positions 10 to 30), Google thinks the page fits but is incomplete. Add what's missing and it can climb.
 
-Search Console tells you what's missing. Every page has a Queries tab listing the searches it appeared for. Some of those queries the article never mentions. Those are your additions.
+Search Console shows what's missing. Each page's Queries tab lists every search it appeared for, including ones the article never mentions. Add those answers.
 
-Be patient with the result. Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) says changes take anywhere from a few hours to several months, and to wait a few weeks before judging. Expect one to three months, not days.
+Give changes time to show up. Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) says updates take anywhere from a few hours to several months, and advises waiting a few weeks before judging. Expect one to three months, not days.
 
 > [!TRICK] Refresh a top page from its own query data
 > From @asaio87, who runs an SEO agency.
@@ -59,9 +59,11 @@ Be patient with the result. Google's [SEO Starter Guide](https://developers.goog
 
 ## Answer the question up front
 
-**Put the answer in the first two paragraphs.** Journalists call this the inverted pyramid. Amy Schade at the [Nielsen Norman Group](https://www.nngroup.com/articles/inverted-pyramid/) explains why it suits the web: people skim, and they can stop at any point and still get the main idea. No "in today's digital world" intro, no 300-word story before the point.
+**Put the answer in the first two paragraphs.** Journalists call this the inverted pyramid. Amy Schade at the [Nielsen Norman Group](https://www.nngroup.com/articles/inverted-pyramid/) explains why it fits the web: people skim, and can stop at any point and still get the main idea. Skip the 300-word warm-up story.
 
-Then check the main keyword appears in the title, the meta description and the first paragraph. Many pages miss at least one. The meta description earns the click, not the ranking: Google [builds most snippets from the page itself](https://developers.google.com/search/docs/appearance/snippet) and uses your description only when it fits the search better. Keep the title matching the H1, and give the page a useful share image.
+Check that the main keyword appears in three places: the title, the meta description and the first paragraph. Many pages miss at least one. Keep the title matching the H1, and give the page a useful share image.
+
+Treat the meta description as click copy, not a ranking lever: Google [builds most snippets from the page itself](https://developers.google.com/search/docs/appearance/snippet) and uses your description only when it fits the search better.
 
 > [!TRICK] Check the intro and get title options
 > From @asaio87:
@@ -82,7 +84,7 @@ Then check the main keyword appears in the title, the meta description and the f
 
 ## Link where a reader wants to go next
 
-Internal links tell Google which pages matter and help readers keep going. Google's [link guidance](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) sets the floor: every page you care about needs a link from at least one other page, with anchor text that makes sense out of context. **Add 3 to 5 per article, only where a reader would actually click.** The 3 to 5 is @asaio87's rule of thumb.
+**Link every page you care about from at least one other page, with anchor text that makes sense out of context.** That's the floor in Google's [link guidance](https://developers.google.com/search/docs/crawling-indexing/links-crawlable): internal links show Google which pages matter and help readers keep going. As a rule of thumb, @asaio87 adds 3 to 5 per article, only where a reader would actually click.
 
 - Link articles to the product pages they relate to.
 - Link to orphan pages (pages nothing else links to).
@@ -102,19 +104,19 @@ Internal links tell Google which pages matter and help readers keep going. Googl
 
 ## Make it a weekly job for Claude
 
-These checks repeat, so hand them to an agent with a written playbook. Borja Fat describes this setup; note that he sells a Claude SEO connector (Distribb).
+These checks repeat, so hand them to an agent with a written playbook. Borja Fat describes this setup; he sells a Claude SEO connector (Distribb).
 
 - Give Claude your website, product facts and Search Console data. Pick one tactic list and have it work through it.
 - Connect Search Console (MCP connector) and your CMS so Claude can prepare page edits.
 - Keep a playbook file: product facts, writing examples, instructions, finished examples. Add every correction you make.
-- Schedule page and citation checks. Have it open each published URL to confirm the change went live. Log finished jobs and failures so nothing is done twice.
+- Schedule page and citation checks, and have Claude open each published URL to confirm changes went live. Log finished jobs and failures so nothing runs twice.
 - Track starting metrics and edits, sales by landing page, UTM-tagged links, and profile calls and bookings.
 
 *Give the bot your context, not clever prompts* goes deeper on playbooks.
 
-## New domain? Save this for month three
+## Save this for month three on a new domain
 
-Everything above runs on Search Console data. **A new domain doesn't have that data yet.** Striking-distance fixes, title tests and pruning all need months of queries and positions, so start them in month three, and wait 2 to 3 months before you judge any change.
+**A new domain doesn't have Search Console data yet.** Striking-distance fixes, title tests and pruning all need months of queries and positions. Start them in month three, and wait 2 to 3 months before judging any change.
 
 > [!TRICK] The order for a new domain
 > From TheoAGI's playbook, distilled from the articles they read:

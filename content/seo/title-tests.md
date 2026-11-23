@@ -14,13 +14,13 @@ description: Find pages where the title loses clicks, write better ones, and tes
 
 **Title tests give you more learning cycles per year than anything else in SEO.** Google picks up a new title on its next crawl, which [takes a few days to a few weeks](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl), and Search Console shows the effect soon after. A new article can take months to tell you anything.
 
-Studies agree that the title and position drive clicks. Brian Dean's [Backlinko study](https://backlinko.com/google-ctr-stats) of about 4 million results found that moving up one spot raises click rate by about a third on average. The title decides who clicks among the results a searcher sees.
+Studies agree that position and title drive clicks. Brian Dean's [Backlinko study](https://backlinko.com/google-ctr-stats) of about 4 million results found that moving up one spot raises click rate by about a third on average. Once you rank, the title decides who earns the click.
 
 This lesson follows Borja Fat, who runs Distribb and claims 20M+ clicks across connected sites in 12 months. His benchmarks come from his own data, so treat them as starting points.
 
 ## Find the pages where the title is the problem
 
-Look for pages that rank well but get skipped. Click rate (CTR) depends on position, so compare each page to the norm for where it sits.
+**Look for pages that rank well but get skipped.** Because click rate (CTR) depends on position, compare each page to the norm for its spot.
 
 | Position | Author's typical CTR |
 | --- | --- |
@@ -28,7 +28,7 @@ Look for pages that rank well but get skipped. Click rate (CTR) depends on posit
 | 4 | about 6% |
 | 5 | about 4% |
 
-Other studies find much lower numbers. [Advanced Web Ranking](https://www.advancedwebranking.com/seo/organic-ctr) puts position 3 at about 4% on US desktop in July 2026, and click rates swing with AI Overviews, maps and videos on the page. Your own data beats any table: average the CTR of your own pages at each position, and use that as the benchmark.
+Other studies find much lower numbers. [Advanced Web Ranking](https://www.advancedwebranking.com/seo/organic-ctr) puts position 3 at about 4% on US desktop in July 2026, and click rates swing with AI Overviews, maps and videos on the page. Your own data beats any table: average the CTR of your pages at each position and use that as your benchmark.
 
 > [!TRICK] Pull your underperformers
 > 1. Search Console → Performance → turn on all four metrics → Pages tab.
@@ -40,9 +40,11 @@ Other studies find much lower numbers. [Advanced Web Ranking](https://www.advanc
 
 ## See the results page as a searcher does
 
-Before you rewrite, search the query in a private window. **Google rewrites some titles**, usually to your H1, when the title is too long, stuffed with keywords, repeated across pages, out of date, or off-topic. Its [title link docs](https://developers.google.com/search/docs/appearance/title-link) list these causes, and in 2021 Google said it [kept the title element about 87% of the time](https://developers.google.com/search/blog/2021/09/more-info-about-titles). You can ask Claude to run the search several times until it catches a rewrite. Keep the title and H1 saying the same thing.
+**Search the query in a private window before rewriting.** Google rewrites some titles, usually to your H1, when a title is too long, keyword-stuffed, repeated across pages, out of date or off-topic. Its [title link docs](https://developers.google.com/search/docs/appearance/title-link) list those causes; in 2021 Google said it [kept the title element about 87% of the time](https://developers.google.com/search/blog/2021/09/more-info-about-titles).
 
-Note which query words the results above you use that you don't. In the author's 90 days of data, titles with the searcher's exact words ("QuickBooks alternatives") got 4.7% CTR, while titles naming only the category ("best accounting software") got under 1% on the same searches. That's about 5 times the clicks, on one site.
+Keep the title and H1 saying the same thing. You can also ask Claude to run the search several times until it catches a rewrite.
+
+Note which query words the results above you use that you don't. In the author's 90 days of data on one site, titles with the searcher's exact words ("QuickBooks alternatives") got 4.7% CTR, while titles naming only the category ("best accounting software") got under 1% on the same searches: about 5 times the clicks.
 
 ## Write three titles with one recipe
 
@@ -57,13 +59,13 @@ Note which query words the results above you use that you don't. In the author's
 > For a prompt that drafts three titles and three meta descriptions, see *Improve the pages that already rank*.
 
 > [!RISK] A year the page doesn't back up
-> One [SearchPilot test](https://www.searchpilot.com/resources/case-studies/seo-split-test-lessons-adding-month-year-to-title-tags) on a listings site found adding the month and year to titles raised organic visits by about 5%. But Google rewrites titles whose year doesn't match the page, and its [helpful content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) flags dates changed without real updates. Put a year in the title only when the page content is current for that year.
+> One [SearchPilot test](https://www.searchpilot.com/resources/case-studies/seo-split-test-lessons-adding-month-year-to-title-tags) on a listings site found adding the month and year to titles raised organic visits by about 5%. Still, Google rewrites titles whose year doesn't match the page, and its [helpful content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) flags dates changed without real updates. Put a year in the title only when the page is current for that year.
 
 ## Run a test you can't fool yourself with
 
-**Change one thing on one page, and judge on clicks.** CTR is clicks divided by impressions ([Search Console Help](https://support.google.com/webmasters/answer/7042828)). A new title often starts ranking for new long-tail queries, so impressions rise and CTR falls while clicks go up. CTR alone would call that a loss.
+**Change one thing on one page, and judge on clicks.** CTR is clicks divided by impressions ([Search Console Help](https://support.google.com/webmasters/answer/7042828)). A new title often picks up new long-tail queries, pushing impressions up and CTR down even while clicks rise. CTR alone would call that a loss.
 
-A before-and-after test on one page can't rule out season or a Google update. SEO testing firms like [SearchPilot](https://www.searchpilot.com/resources/case-studies/seo-split-test-lessons-adding-month-year-to-title-tags) split similar pages into a group that changes and a group that doesn't, and compare the two. Step 6 below is the small version of that.
+A before-and-after test on one page can't rule out seasons or a Google update. Testing firms like [SearchPilot](https://www.searchpilot.com/resources/case-studies/seo-split-test-lessons-adding-month-year-to-title-tags) split similar pages into changed and unchanged groups and compare the two. Step 6 below is the small version of that.
 
 > [!TRICK] Honest title test
 > 1. Write down the date, clicks and CTR before you change anything.

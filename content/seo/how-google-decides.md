@@ -12,17 +12,21 @@ description: Know which signals Google trusts, so you write pages it wants to sh
 
 ## Clicks are a ranking signal
 
-**Google ranks pages partly by how people click on them.** Google says so itself: [How Search works](https://www.google.com/search/howsearchworks/how-search-works/ranking-results/) uses "aggregated and anonymized interaction data to assess whether search results are relevant". The court record shows how. In the US antitrust case, Judge Amit Mehta's [2024 opinion](https://storage.courtlistener.com/recap/gov.uscourts.dcd.223205/gov.uscourts.dcd.223205.1033.0_2.pdf) describes NavBoost, one of Google's core ranking signals. It remembers which results people clicked for each query, over the last 13 months, according to the testimony of Pandu Nayak, Google's VP of Search. Bing's guidelines say the same openly: Bing checks whether people [click a result and stay, or quickly come back](https://www.seroundtable.com/bing-ranking-algorithm-signals-29706.html).
+**Google ranks pages partly by how people click on them.** Its [How Search works](https://www.google.com/search/howsearchworks/how-search-works/ranking-results/) page says it uses "aggregated and anonymized interaction data to assess whether search results are relevant". Bing says the same openly: it checks whether people [click a result and stay, or quickly come back](https://www.seroundtable.com/bing-ranking-algorithm-signals-29706.html).
 
-The 2024 leak of Google's internal docs, [published by Rand Fishkin](https://sparktoro.com/blog/an-anonymous-source-shared-thousands-of-leaked-google-search-api-documents-with-me-everyone-in-seo-should-see-them/), mentions "good clicks", "bad clicks" and "last longest clicks". It names the fields but doesn't show how much they weigh.
+The US antitrust court record shows how Google does it. Judge Amit Mehta's [2024 opinion](https://storage.courtlistener.com/recap/gov.uscourts.dcd.223205/gov.uscourts.dcd.223205.1033.0_2.pdf) describes NavBoost, one of Google's core ranking signals. Based on testimony from Pandu Nayak, Google's VP of Search, NavBoost remembers which results people clicked for each query over the last 13 months.
 
-Two things follow. A page that ranks but gets skipped is leaving rankings on the table. And a page that overpromises earns clicks that bounce straight back, which tells Google it didn't help. Never write a title the page can't deliver.
+The 2024 leak of Google's internal docs, [published by Rand Fishkin](https://sparktoro.com/blog/an-anonymous-source-shared-thousands-of-leaked-google-search-api-documents-with-me-everyone-in-seo-should-see-them/), mentions "good clicks", "bad clicks" and "last longest clicks". It names those fields, not how much they weigh.
 
-AI Overviews take some of those clicks. Trackers disagree on how often they appear: from about 4 in 10 US desktop searches ([Advanced Web Ranking](https://www.advancedwebranking.com/seo/organic-ctr)) to over 8 in 10 ([Search Engine Roundtable](https://www.seroundtable.com/over-80-of-google-searches-have-ai-overviews-42372.html), combining several tools). [Ahrefs estimates](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update) the #1 result gets about 58% fewer clicks when one shows. That's a correlation from desktop data on informational searches, not a controlled test.
+Two things follow. A ranking page that gets skipped leaves rankings on the table. A page that overpromises earns clicks that bounce straight back, which tells Google it didn't help. Never write a title the page can't deliver.
+
+AI Overviews take some of those clicks. Trackers disagree on how often they show: from about 4 in 10 US desktop searches ([Advanced Web Ranking](https://www.advancedwebranking.com/seo/organic-ctr)) to over 8 in 10 ([Search Engine Roundtable](https://www.seroundtable.com/over-80-of-google-searches-have-ai-overviews-42372.html), combining several tools). [Ahrefs estimates](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update) the #1 result gets about 58% fewer clicks when one shows. That figure is a correlation from desktop informational searches, not a controlled test.
 
 ## Show who wrote it
 
-Readers and search engines both ask "should I trust this?" Google's [Search Quality Rater Guidelines](https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf) call this E-E-A-T: experience, expertise, authoritativeness and trust, with trust the most important. Experience means first-hand use: a review from someone who used the product beats one from someone who didn't. E-E-A-T [isn't a ranking factor by itself](https://developers.google.com/search/docs/fundamentals/creating-helpful-content). It describes what Google's systems try to reward. Make the answer easy:
+**Both readers and search engines ask whether they can trust your page.** Google's [Search Quality Rater Guidelines](https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf) frame this as E-E-A-T: experience, expertise, authoritativeness and trust, with trust the most important. Experience means first-hand use. A review from someone who used the product beats one from someone who didn't.
+
+E-E-A-T [isn't a ranking factor by itself](https://developers.google.com/search/docs/fundamentals/creating-helpful-content); it describes what Google's systems try to reward. Make trust easy to see:
 
 - A real byline on every article, linked to the author's relevant experience.
 - Firsthand tests shown on the page, and how you ran them.
@@ -34,9 +38,11 @@ Readers and search engines both ask "should I trust this?" Google's [Search Qual
 
 ## Add what only you can provide
 
-The top 10 results for most queries say the same things in the same way. **Your page wins by adding what they lack**: your own tests, your own data, screenshots of you doing the thing, a new angle. Google's [own checklist](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) asks whether a page offers "original information, reporting, research, or analysis" and "substantial value when compared to other pages in search results".
+**Your page wins by adding what the top 10 results lack:** your own tests, your own data, screenshots of you doing the thing, or a new angle. Most top results repeat each other. Google's [own checklist](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) asks whether a page offers "original information, reporting, research, or analysis" and "substantial value when compared to other pages in search results".
 
-Split the work. AI researches the gap: it reads the top results, YouTube transcripts, forum threads and review complaints, and compares what buyers ask with what pages answer. You fill the gap. Have Claude interview you for examples, analyse your own records, count complaints in reviews, run the same task in competing products and note what happened. Write those sentences yourself. When AI drafts the page, have it mark every fact it couldn't verify as `[CHECK]`, then clear every mark before publishing.
+Split the work. Let AI find the gap by reading the top results, YouTube transcripts, forum threads and review complaints, then comparing what buyers ask with what existing pages answer.
+
+You fill the gap. Have Claude interview you for examples, analyse your own records, count review complaints, or run the same task in competing products and note what happened. Write those sentences yourself. If AI drafts the page, make it mark every unverified fact as `[CHECK]`, then clear every mark before publishing.
 
 > [!TRICK] Ask AI where your article is generic
 > This prompt is from @asaio87, who runs an SEO agency:
@@ -51,13 +57,13 @@ Split the work. AI researches the gap: it reads the top results, YouTube transcr
 
 ## Pick topics where you have an edge
 
-Firsthand content is hard to fake, and a team already produces it every week. One marketer's team asked engineers and other staff to write up problems they had solved, following basic keyword guidelines for each. They published 70+ articles in four years and report top rankings and steady business without much link building (no traffic numbers given). If you work alone, every bug you fixed or question a customer asked is a candidate page.
+**Firsthand content is hard to fake, and your work already produces it every week.** One marketer had engineers and other staff write up problems they solved, using basic keyword guidelines. Over four years they published 70+ articles and report top rankings and steady business without much link building (no traffic numbers given). If you work alone, every bug you fixed or customer question you answered is a candidate page.
 
-The same marketer points to a second edge: in new or fast-moving categories, many searches have plenty of volume and no good answer yet. He saw it in crypto; it holds for any young category. If you build in one, check how weak the current results are before you write anything else.
+The same marketer notes a second edge: new or fast-moving categories often have plenty of search volume with no good answer yet. He saw this in crypto, and it holds for any young category. Check how weak the current results are before writing anything else.
 
 ## Some rankings aren't about SEO
 
-AI removes the excuses for skipping audits, but it can't choose which keywords make money or read your market for you. And sometimes a competitor outranks you for reasons no page can fix. One local SEO consultant's example: a business that has sponsored local youth sports for 10 years and earned links from every local news site. Check what a competitor does offline before you try to out-write them.
+**Sometimes a competitor outranks you for reasons no page can fix.** AI removes excuses for skipping audits, but it can't pick which keywords make money or read your market. One local SEO consultant's example: a business that sponsored local youth sports for 10 years and earned links from every local news site. Check what a competitor does offline before trying to out-write them.
 
 > [!FORM] Your page's gap
 > 1. Which article is your most important? Give its URL and main keyword.

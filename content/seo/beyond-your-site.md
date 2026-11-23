@@ -1,7 +1,7 @@
 ---
 title: Rank on sites that already rank
 order: 6
-description: Get found through LinkedIn, YouTube and rising searches when your own site can't rank yet.
+description: Get found via LinkedIn, YouTube and rising searches before your own site ranks.
 ---
 
 > [!TLDR] Google ranks pages, not companies, so a strong page on a site that already ranks can reach searchers before your own site can.
@@ -11,12 +11,14 @@ description: Get found through LinkedIn, YouTube and rising searches when your o
 
 ## Borrow a site Google already trusts
 
-A new site takes months to earn rankings. **Some platforms already have them.** Google's [ranking systems](https://developers.google.com/search/docs/appearance/ranking-systems-guide) work mostly page by page, with some sitewide signals, so a page on a trusted platform starts with that platform's standing. If you search your target query and see LinkedIn articles, Medium posts or forum threads on page one, Google is happy to rank that platform for it. Publish a complete answer there and link to your site as the next step.
+**A new site takes months to rank, while some platforms already do.** Google's [ranking systems](https://developers.google.com/search/docs/appearance/ranking-systems-guide) work mostly page by page with some sitewide signals, so a page on a trusted platform starts with that platform's standing.
+
+Search your target query. If LinkedIn articles, Medium posts or forum threads sit on page one, Google is happy to rank that platform for it. Publish a complete answer there and link to your site as the next step.
 
 > [!RISK] Where this becomes spam
-> People call this parasite SEO, a name for the abuse Google penalises. Google's [site reputation abuse policy](https://developers.google.com/search/docs/essentials/spam-policies) targets content placed on a host "mainly because of that host's already-established ranking signals", like paid coupon or casino pages on a news site. Platforms built for user content, like forums, and signed opinion pieces are named as fine. Publish under your own name, on platforms where anyone can post, and write for that platform's readers.
+> People call this "parasite SEO", a name tied to abuse Google penalises. Google's [site reputation abuse policy](https://developers.google.com/search/docs/essentials/spam-policies) targets content placed on a host "mainly because of that host's already-established ranking signals", such as paid coupon or casino pages on a news site. Platforms built for user content, like forums, and signed opinion pieces are named as fine. Publish under your own name, on platforms where anyone can post, and write for that platform's readers.
 
-The rules are simple. Put the topic in the headline and the answer in the opening. Write for that platform's readers, not as a copy of your blog post. Link to one relevant next step, not five.
+Keep it simple: put the topic in the headline and the answer up top. Write for that platform's readers, not as a copy of your blog post, and link to one relevant next step, not five.
 
 > [!TRICK] Rank a LinkedIn article
 > - Pick queries LinkedIn already ranks for.
@@ -26,7 +28,9 @@ The rules are simple. Put the topic in the headline and the answer in the openin
 
 ## Make videos where Google shows videos
 
-For some questions, Google puts videos on the results page. **Those are openings for a product demo.** Google's [video guidance](https://developers.google.com/search/docs/appearance/video) says it shows "key moments" inside videos and prefers the ones you set yourself, through chapters in the YouTube description. Search your buyer questions and note which ones show video results. If you sell software, search your "best X" query on a phone too: a row of videos there means you should make the video.
+**When Google puts videos on a results page, that's an opening for a product demo.** Google's [video guidance](https://developers.google.com/search/docs/appearance/video) says it shows "key moments" inside videos and prefers the ones you set yourself through chapters in the YouTube description.
+
+Search your buyer questions and note which ones show video results. If you sell software, check your "best X" query on a phone too: a video row there means it's worth making one.
 
 > [!TRICK] Publish a demo for a video search
 > 1. Confirm videos appear for the query.
@@ -39,9 +43,9 @@ For some questions, Google puts videos on the results page. **Those are openings
 
 ## Answer rising searches early
 
-When something changes in your field, new questions appear before anyone has written good answers. **Being early is the advantage.** Google's [freshness systems](https://developers.google.com/search/docs/appearance/ranking-systems-guide) favour newer pages for searches where people expect them. Explain the news through your own expertise rather than repeating it.
+**When something changes in your field, being early is the advantage.** New questions appear before good answers exist, and Google's [freshness systems](https://developers.google.com/search/docs/appearance/ranking-systems-guide) favour newer pages where people expect them. Explain the news through your own expertise instead of repeating it.
 
-Google Trends shows [relative interest from a sample](https://support.google.com/trends/answer/4365533), scaled from 0 to 100, not search volume. Use it to spot a rise, then check volume in a keyword tool.
+Google Trends tracks [relative interest from a sample](https://support.google.com/trends/answer/4365533) on a 0 to 100 scale, not search volume. Use it to spot a rise, then check volume in a keyword tool.
 
 > [!TRICK] Ride a rising search with Google Trends
 > 1. Filter Google Trends by your category and country.

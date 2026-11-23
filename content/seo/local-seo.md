@@ -12,11 +12,15 @@ description: Audit and fix your Google Business Profile against the businesses i
 
 ## Get your listings right first
 
-**A complete, accurate Google Business Profile is the base of local search.** Google [names three factors](https://support.google.com/business/answer/7091): relevance (how well your profile matches the search), distance (how far you are from the searcher) and prominence (how well known you are, including links and reviews). You can't move your shop, so relevance and prominence are where the work goes. Google says "businesses with complete and accurate info are more likely to show up", and that there's no way to pay for a better local ranking.
+**A complete, accurate Google Business Profile is the base of local search.** Google [ranks local results on three factors](https://support.google.com/business/answer/7091):
 
-Pick the most specific category that fits. Keep your name, address and phone number identical everywhere they appear. Link the profile to the matching service page on your site, fill in contact and booking details, upload real job photos, publish current offers, and track calls and bookings that come from the profile.
+- **Relevance:** how well your profile matches the search.
+- **Distance:** how far you are from the searcher.
+- **Prominence:** how well known you are, including links and reviews.
 
-After every job, ask for an honest review, and reply with relevant details.
+You can't move your shop, so focus on relevance and prominence. Google says "businesses with complete and accurate info are more likely to show up", and there's no way to pay for a better local ranking.
+
+Pick the most specific category that fits, and keep your name, address and phone number identical everywhere. Link the profile to the matching service page on your site, fill in contact and booking details, upload real job photos, publish current offers, and track calls and bookings from the profile. After every job, ask for an honest review and reply with relevant details.
 
 > [!TRICK] Citation sites to fill in
 > List your business only where customers in your area really look: Google Business Profile, Apple Business, Bing Places, Yelp, Better Business Bureau, Manta, Brownbook, EZlocal, Hotfrog, CitySquares, Cylex, Cybo, Foursquare, MerchantCircle, Superpages, DexKnows, Yellowbook, Alignable, Nextdoor Business, Chamber of Commerce.
@@ -26,7 +30,7 @@ After every job, ask for an honest review, and reply with relevant details.
 
 ## Load context once, then run task prompts
 
-Generic AI output usually means the AI knows nothing about your business. The rest of this lesson follows @bloggersarvesh, a local SEO consultant with 14 years in the field who sells the service. He uses Grok; any agent that can browse the web works. Before any prompt, give it a folder with:
+Generic AI output usually means the AI knows nothing about your business. The rest of this lesson follows @bloggersarvesh, a local SEO consultant with 14 years in the field who sells the service. He uses Grok; any agent that can browse the web works. Before running any prompt, give it a folder with:
 
 - One file with your business name, address, phone, website, GBP URL, service areas and target keywords.
 - One file per competitor, with their GBP URL.
@@ -44,7 +48,9 @@ Generic AI output usually means the AI knows nothing about your business. The re
 
 ## Copy the map-pack leaders' profiles
 
-**Your primary and secondary GBP categories decide which searches show you on the map.** In Whitespark's [2026 Local Search Ranking Factors](https://whitespark.ca/local-search-ranking-factors/) survey, 47 local SEO experts ranked the primary category as the top map-pack factor, and secondary categories eighth. That's expert opinion, not Google data. Adding a missing secondary category is often the fastest local win. The author says clients who added one appeared for new searches within a week.
+**Your primary and secondary GBP categories decide which searches put you on the map.** In Whitespark's [2026 Local Search Ranking Factors](https://whitespark.ca/local-search-ranking-factors/) survey, 47 local SEO experts ranked the primary category first and secondary categories eighth. That's expert opinion, not Google data.
+
+Adding a missing secondary category is often the fastest local win: the author says clients who added one appeared for new searches within a week.
 
 > [!RISK] Only categories you really are
 > Google's guidelines say to use "as few categories as possible" to describe your core business, and never to use categories as keywords. Copy a competitor's category only if it's work you actually do.
@@ -55,7 +61,7 @@ Generic AI output usually means the AI knows nothing about your business. The re
 > ```
 > Look for patterns. Example: every business ranking for "emergency plumber in [city]" also lists "water damage restoration".
 
-The services section is the other part you fully control. List every service with a description, and **add any service on your website that's missing from GBP**. A plumber offering "trenchless sewer repair" on the site but not on GBP is invisible for that map search.
+The services section is the other part you fully control. List every service with a description, and **add any service from your website that's missing on GBP**. A plumber offering "trenchless sewer repair" on their site but not on GBP is invisible for that map search.
 
 > [!TRICK] Services audit prompt
 > ```
@@ -64,7 +70,9 @@ The services section is the other part you fully control. List every service wit
 
 ## Win on recent reviews and replies
 
-**Track review pace, not star rating: recent reviews count for more than total reviews.** Google confirms the base of this: "more reviews and positive ratings can help your business's local ranking". Recency is the experts' view: Whitespark's panel ranks review recency 11th of 187 factors. A business with 90 reviews gaining 15 a month beats one with 200 reviews, 180 of them two years old. The services and neighbourhoods customers mention also signal what you're relevant for.
+**Track review pace, not star rating: recent reviews count more than old totals.** Google confirms the base of this: "more reviews and positive ratings can help your business's local ranking". Recency is the experts' view: Whitespark's panel ranks review recency 11th of 187 factors.
+
+A business with 90 reviews gaining 15 a month beats one with 200 reviews where 180 are two years old. The services and neighbourhoods customers mention also signal what you're relevant for.
 
 > [!TRICK] Review velocity prompt
 > ```
@@ -75,7 +83,9 @@ The services section is the other part you fully control. List every service wit
 > [!RISK] Review rules
 > Google's [review policy](https://support.google.com/contributionpolicy/answer/7400114) bans paying or rewarding customers for reviews and asking only happy customers (review gating). Ask everyone for an honest review. Don't script what they write.
 
-Then reply to every review, for the customers reading them. The author says Google has confirmed that replying helps local ranking. Google's own page says only that replies show you value feedback and help you stand out, and Whitespark's experts rank owner replies 122nd of 187 ranking factors. Reply because people read replies, not to rank. Templates with variations cut each reply to under a minute and let you mention services and places naturally.
+Reply to every review for the customers reading them, not to rank. The author says Google has confirmed that replying helps local ranking, yet Google's own page says only that replies show you value feedback and help you stand out. Whitespark's experts rank owner replies 122nd of 187 ranking factors.
+
+Templates with variations cut each reply to under a minute and let you mention services and places naturally.
 
 > [!TRICK] Review response template prompt
 > ```
@@ -84,7 +94,9 @@ Then reply to every review, for the customers reading them. The author says Goog
 
 ## Post weekly and fix in order
 
-Post 2 to 3 times a week. Most competitors never post on their GBP. **Steady posts naming the neighbourhoods you serve** show customers you're active. Example angle: "just completed a kitchen remodel in [neighborhood]", rotated across 8 to 10 neighbourhoods a month. Posts help people choose you more than they help you rank: Whitespark's experts put post frequency 148th of 187 ranking factors. The author says posts expire after 7 days. Google now says posts [stay up for 6 months](https://support.google.com/business/answer/7342169) unless you set a date range.
+**Post 2 to 3 times a week naming the neighbourhoods you serve.** Most competitors never post on their GBP, so steady updates show customers you're active. One simple angle: "just completed a kitchen remodel in [neighborhood]", rotated across 8 to 10 neighbourhoods a month.
+
+Posts help people choose you more than they help you rank: Whitespark's experts put post frequency 148th of 187 ranking factors. The author says posts expire after 7 days, though Google now says posts [stay up for 6 months](https://support.google.com/business/answer/7342169) unless you set a date range.
 
 > [!TRICK] Posting calendar prompt
 > ```
