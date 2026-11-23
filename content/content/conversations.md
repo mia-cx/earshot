@@ -61,7 +61,7 @@ Every sales call records a buyer explaining their problem in their own words. @h
 
 Don't post the same article on five sites. Take one piece of research and rebuild it in the form each platform rewards: a demo on YouTube, a finding as a Reddit answer, a case study on Behance.
 
-Save this for later. Joe Pulizzi's Content Inc. model [starts on one platform](https://www.magnificent.com/magnificent-stuff/content-inc-model) instead of "every channel you can possibly think of", and spreads to others only once that base has an audience.
+Save this for after your base works. Joe Pulizzi's Content Inc. model [starts on one platform](https://www.magnificent.com/magnificent-stuff/content-inc-model) instead of "every channel you can possibly think of", and spreads to others only once that base has an audience.
 
 > [!TRICK] Match each piece to its native platform
 > From @borjafat's workflow:
