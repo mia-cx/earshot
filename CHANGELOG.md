@@ -1,5 +1,12 @@
 # earshot
 
+## 0.1.3
+
+### Patch Changes
+
+- 55a10f8: Each release tells Bing and the other IndexNow search engines that its pages changed, so they recrawl them without waiting for their own schedule.
+- 03e2dda: The first page you open paints sooner: its styles arrive inside the page instead of as separate files.
+
 ## 0.1.2
 
 ### Patch Changes
