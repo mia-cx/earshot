@@ -56,13 +56,14 @@ Pricing belongs here too. Write down why, how and what you'll charge on day one;
 
 Send messages triggered by what a user just did. [BJ Fogg's behaviour model](https://behaviormodel.org/) says an action happens only when motivation, ability and a prompt meet at the same moment, so a timely prompt catches motivation while it's still there. Keeping a customer also costs less than finding one: winning a new customer costs [5 to 25 times more](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers), depending on the study and the industry.
 
-To measure whether the messages add revenue, hold out a random control group. [Ron Kohavi's experiments at Microsoft](https://hbr.org/2017/09/the-surprising-power-of-online-experiments) showed that even experts misjudge which changes will pay off; only a random group that gets nothing tells you what the messages added.
+To measure whether the messages add revenue, hold out a random control group. [Ron Kohavi's experiments at Microsoft](https://hbr.org/2017/09/the-surprising-power-of-online-experiments) showed that even experts misjudge which changes will pay off; only a random group that gets nothing tells you what the messages added. Decide the test's size and end date before it starts, because [checking until the difference looks real](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) makes chance results look like wins.
 
 > [!TRICK] Build five behaviour flows with a holdout
 > 1. Use Klaviyo (or your email tool). Send it product events: viewed, added to cart, bought, went quiet.
 > 2. Build five flows, each fired by one behaviour.
 > 3. Hold out 10% of customers at random. They receive nothing.
-> 4. Compare revenue between the two groups.
+> 4. Fix how many customers and how many weeks the test runs before you start.
+> 5. Compare revenue between the two groups only at the end. On a small list, the test may show nothing either way.
 
 @korzhov_dm writes for online stores and claims most have one abandoned-cart email and nothing else. Swap in your own events, such as signed up, reached the aha moment, or went quiet.
 
@@ -94,7 +95,7 @@ If you sell a service or a membership, weekly check-ins are part of retention. *
 > As one key action that shows a user got value. Count them as activated only once they keep doing it at the rhythm you expect, such as "saved a pin every week, four weeks after sign-up".
 
 > [!CHECK] You send emails triggered by what customers do. How do you prove they add revenue?
-> Hold out 10% of customers who receive nothing, then compare revenue between the two groups.
+> Hold out a random 10% of customers who receive nothing, fix the test's size and length up front, then compare revenue between the two groups at the end.
 
 > [!CHECK] Why should a client check-in end with what happens next and by when, instead of "let me know what you think"?
 > Asking for feedback leaves the team waiting days for approvals the client never needed to give. Stating the next step keeps delivery moving.
@@ -109,6 +110,7 @@ If you sell a service or a membership, weekly check-ins are part of retention. *
 - [Lenny Rachitsky and Casey Winters, *What is good retention* (2020)](https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29)
 - [BJ Fogg: Fogg Behavior Model](https://behaviormodel.org/)
 - [Ron Kohavi and Stefan Thomke, *The Surprising Power of Online Experiments* (2017)](https://hbr.org/2017/09/the-surprising-power-of-online-experiments)
+- [Evan Miller, *How Not To Run an A/B Test* (2010)](https://www.evanmiller.org/how-not-to-run-an-ab-test.html)
 - [@kunalvg: product marketing basics, from acquisition to monetisation](https://x.com/kunalvg/status/1951276376251617737)
 - [@kunalvg: the funnel and smoother onboarding](https://x.com/kunalvg/status/1685889947461402624)
 - [@kunalvg: think in funnels from day one](https://x.com/kunalvg/status/2042111501608391080)
