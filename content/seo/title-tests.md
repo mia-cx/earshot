@@ -100,7 +100,7 @@ If you want an answer before touching the page, you can buy one.
 > Pages ranking 3 to 10 whose click rate is 40% or more below normal for their position. A position-4 page under 1% is a first target.
 
 > [!CHECK] After a title change, impressions rose, click rate fell and clicks went up. Did the new title win?
-> Maybe. Clicks are the right measure, because a new title often adds long-tail queries that raise impressions and lower click rate. But a before-and-after test can't rule out a season or a demand spike, so only a split test or a repeat shows the title caused it.
+> Maybe. Clicks are the right measure, because a new title often adds long-tail queries that raise impressions and lower click rate. But a before-and-after test can't rule out a season or a demand spike, even if you repeat it. Clicks went up; only a split test against unchanged pages shows the title caused it.
 
 > [!CHECK] Why do title tests teach you faster than new articles in SEO?
 > Search Console shows a new title's effect in about two weeks, while a new article can take months to tell you anything.
