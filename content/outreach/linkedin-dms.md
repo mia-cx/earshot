@@ -54,12 +54,12 @@ Don't send your best guess to the whole list. Split-test on a slice first.
 Once the method works by hand, an agent can do the thinking every week while you do the collecting and the sending. The author's setup connects an ad scraper and a sending tool through MCP (the connector that lets an agent use a tool on its own); both break LinkedIn's terms (see below), so this version keeps those two steps with you.
 
 > [!TRICK] A weekly DM research agent
-> **You:** copy competitors' new ads from the LinkedIn Ad Library into a file each week, and send every DM yourself in LinkedIn.
+> **You:** read competitors' new ads in the LinkedIn Ad Library each week and write down, in your own words, the problems they open with. Don't paste their ad text into the tool; LinkedIn's terms also limit copying other people's content. Send every DM yourself in LinkedIn.
 >
 > **The agent** (such as Claude Code, with Firecrawl to read your website and case studies, so it knows what you sell and your results):
-> 1. Read this week's ads file.
+> 1. Read this week's notes.
 > 2. Find the problems that repeat.
-> 3. Rewrite the ads as DMs.
+> 3. Turn each problem into a DM.
 > 4. Write new versions of the best DM.
 > 5. Send you the drafts.
 

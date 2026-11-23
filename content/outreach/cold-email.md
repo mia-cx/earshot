@@ -49,10 +49,10 @@ Following up is where the replies are. Dean's study found one follow-up lifted r
 When someone replies with interest, **answer within 5 minutes**. The cheat sheet gives that number. James Oldroyd and colleagues [found most companies answer online leads far too slowly](https://scholarsarchive.byu.edu/facpub/9711/).
 
 > [!TRICK] Offer a reply word to opt out
-> Ask people to reply with a word to opt out, such as "banana". It works only while you're not a Gmail bulk sender. Once you've sent 5,000 messages in a day to personal Gmail accounts, Google counts you as one for good, and you then need one-click unsubscribe headers and a visible unsubscribe link as well.
+> Ask people to reply with a word to opt out, such as "banana". It works only while you're not a Gmail bulk sender. Google counts you as one once you've sent close to 5,000 or more messages in a day to personal Gmail accounts, and for good. Check your status before you rely on a reply word: bulk senders also need one-click unsubscribe headers and a visible unsubscribe link.
 
 > [!RISK] Opt-out rules differ by country and volume
-> The US [CAN-SPAM Act](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) accepts a reply-based opt-out, B2B included, but also requires your postal address in every email and honouring opt-outs within 10 business days. [Gmail requires one-click unsubscribe](https://support.google.com/a/answer/14229414) from bulk senders: anyone who has sent 5,000 messages in a day to personal Gmail accounts, even if their volume later drops. EU and UK law may require more. Check the rules for where your prospects are and how much you send, and honour every opt-out.
+> The US [CAN-SPAM Act](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) accepts a reply-based opt-out, B2B included, but also requires your postal address in every email and honouring opt-outs within 10 business days. [Gmail requires one-click unsubscribe](https://support.google.com/a/answer/14229414) from bulk senders: anyone who has sent close to 5,000 or more messages in a day to personal Gmail accounts, even if their volume later drops. EU and UK law may require more. Check the rules for where your prospects are and how much you send, and honour every opt-out.
 
 > [!FORM] Your cold email
 > 1. What do we do? What problem do we solve? Give one short, precise answer.
