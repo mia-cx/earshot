@@ -25,6 +25,6 @@ To add sources: append to `links.txt`, scrape, analyse into a new batch file, pl
 
 ## State
 
-v1: 63 lessons (153 tricks) across 13 modules, built from 60 posts (one inaccessible). Public repo `mia-cx/earshot`. Every push to main deploys the `earshot-staging` Worker to staging.seo.mia.cx; Changesets release pull requests deploy the `earshot` Worker to seo.mia.cx.
+v0.1.0 is live on seo.mia.cx: 63 lessons (153 tricks) across 13 modules, built from 60 posts (one inaccessible). Public repo `mia-cx/earshot`. Every push to main deploys the `earshot-staging` Worker to staging.seo.mia.cx; merging a Changesets release pull request deploys the `earshot` Worker to seo.mia.cx and tags the release.
 
-Next: Mia reviews the whole course on staging. Production waits for that review; the first release pull request stays unmerged until she says it's ready.
+Next: add seo.mia.cx to Google Search Console and submit its sitemap.
