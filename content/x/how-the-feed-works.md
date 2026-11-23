@@ -5,8 +5,8 @@ description: How X finds, scores and filters every post, and where reach beyond 
 ---
 
 > [!TLDR] X ranks your post by predicting what each viewer will do with it.
-> - Every post passes three stages: find candidates, score them per viewer, filter some out.
-> - Your followers see you first. Reach beyond them comes from interest matching, not follows.
+> - Every refresh finds candidates, filters some out, and scores the rest for each viewer.
+> - Followers and strangers are ranked together, with an edge for accounts the viewer follows. Reach beyond your followers comes from interest matching, not follows.
 > - X shows one post per conversation, so put a launch in one self-contained post.
 
 ## Every post passes three stages
