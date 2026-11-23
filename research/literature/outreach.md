@@ -1,6 +1,6 @@
 # Outreach: literature notes
 
-Research behind `content/outreach/`. Each lesson lists the principles it rests on, the sources that back them, and a check of every number and factual claim in the lesson as written before this pass. All sources were opened and read on 2026-11-23 unless marked **not verified**.
+Research behind `content/outreach/`. Each lesson lists the principles it rests on and an independent audit of every factual claim in it. Verdicts: **supported** (the source says this), **overstated** (the source says something narrower), **misattributed** (true, but the cited source doesn't say it), **disputed**, **unsupported**, or **one person's claim** (a practitioner's number, labelled as such in the lesson). Where a claim wasn't supported, the lesson was corrected and the row says how. All sources were opened and read on 2026-11-23. ftc.gov and aiga.org block scripts, so those were read through the Wayback Machine's 2026 copies.
 
 ## Sources used across the module
 
@@ -19,50 +19,65 @@ Research behind `content/outreach/`. Each lesson lists the principles it rests o
 | [Evan Miller, "How Not To Run an A/B Test" (2010)](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) | Checking results as they come in and stopping when one looks ahead inflates false positives. Fix the sample size in advance. Rule of thumb: n = 16σ²/δ² per version, with σ² = p(1 − p). At a 10% reply rate, detecting a jump to 15% needs about 576 sends per version (16 × 0.09 / 0.05²). |
 | [Robert Cialdini / Influence at Work: the principles of persuasion](https://www.influenceatwork.com/7-principles-of-persuasion/) | Reciprocity: people feel obliged to return what they received first. Restaurant study: one mint raised tips about 3%, a second mint offered personally ("For you nice people") 23%. Give first, and make it personalised and unexpected. |
 | [Paul Graham, "Do Things That Don't Scale" (2013)](https://paulgraham.com/ds.html) | The Collison brothers didn't promise a beta link; they said "give me your laptop" and set people up on the spot. B2B founders can act as consultants for a single user, as long as they aren't paid for it. |
-| [AIGA, "Position on Spec Work"](https://www.aiga.org/resources/aiga-position-on-spec-work) | Spec work is work done before engagement in hope of payment. Clients risk compromised quality because spec work skips research and testing. Designers risk being taken advantage of, and it lowers the value of the work. Both sides carry intellectual property risk. |
+| [AIGA, "Position on Spec Work"](https://www.aiga.org/resources/aiga-position-on-spec-work) | Spec work is work done before engagement in hope of payment. AIGA asks designers to be aware of the risks before doing it and leaves the decision to designer and client. Clients risk compromised quality because spec work skips research and testing. Designers risk being taken advantage of, and it lowers the value of the work. Both sides carry intellectual property risk. |
 | [Simone Wies, Alexander Bleier & Alexander Edeling, "Finding Goldilocks Influencers", *Journal of Marketing* (2023)](https://www.ama.org/2022/10/11/finding-goldilocks-influencers-why-high-follower-count-may-not-be-the-best-driver-of-engagement-on-social-media/) | Via the AMA's summary. Engagement follows an inverted U by follower count; mid-sized creators are the sweet spot. |
 
 ## Fix cold email by its symptoms (`cold-email.md`)
 
-**Principles.** Deliverability comes first: mailbox providers set hard rules (Google, Microsoft). Replies come from follow-ups and real personalisation (Backlinko/Pitchbox). Law sets the floor for opt-outs (FTC). Fast replies to interested leads matter (Oldroyd et al.).
+**Principles.** Deliverability comes first: mailbox providers set hard rules (Google, Microsoft). Replies go with follow-ups and real personalisation (Backlinko/Pitchbox, a correlation). Law sets the floor for opt-outs (FTC). Fast replies to interested leads matter (Oldroyd et al.).
 
-| Claim | Verdict | Source |
+| Claim | Verdict | Source that settles it |
 | --- | --- | --- |
-| 0 replies and 0 bounces means spam placement | **Unverified** as a rule; consistent with Google's authentication and spam-rate thresholds | Google |
-| Bounces over 2% mean the list | **Unverified**; neither Google nor Microsoft publishes a bounce threshold | none found |
-| The open-tracking pixel hurts inbox placement | **Unverified**. What is confirmed: Apple Mail loads pixels for every message, so open rates are unreliable. Lesson and check card now lead with that. | Apple |
-| 1 lead per 300 contacts is great, 1 per 500 solid | **Unverified**, one practitioner's benchmark (already labelled) | source post |
-| Google Workspace prospects reply 6.5x more than Microsoft | **Unverified** | none found |
-| Microsoft prospects need copy under 40 words | **Unverified** | none found |
-| AI-written first lines get 0.27% replies | **Unverified**. Backlinko found genuine personalisation correlated with about a third more replies, so the target is fake personalisation, not personalisation. | Backlinko |
-| A short bump as follow-up #4 | **Confirmed in principle**: one follow-up +65.8%, three or more messages best | Backlinko |
-| Answer interested replies within 5 minutes | **Unverified** for cold email. Research on inbound web leads found most firms reply far too slowly. | Oldroyd et al. |
-| CAN-SPAM accepts a reply-based opt-out | **Confirmed**, but the same law also requires a physical postal address and honouring within 10 business days. Added. | FTC |
-| Gmail and Yahoo require one-click unsubscribe above 5,000 a day | **Confirmed for Gmail**; Yahoo not checked, dropped from the lesson | Google |
+| Every sender needs SPF or DKIM; keep reported spam below 0.3% | **supported** | Google sender guidelines |
+| Microsoft requires SPF, DKIM and DMARC above 5,000 emails a day | **supported**; non-compliant mail is now rejected | Microsoft 2025 post and its update |
+| Apple Mail loads tracking pixels whether or not the email is opened | **supported** | Apple Mail Privacy Protection |
+| The pixel hurts inbox placement | **one person's claim**, labelled; no mailbox provider says so | cheat sheet |
+| 0 replies and 0 bounces means spam; bounces over 2% mean the list | **one person's claim**, labelled; neither Google nor Microsoft publishes a bounce threshold | cheat sheet |
+| 1 lead per 300 contacts is great, 1 per 500 solid | **one person's claim**, labelled | cheat sheet |
+| 8.5% of 12 million outreach emails got a reply; mostly SEO pitches, 2019 | **supported** (study last updated April 2019; top topics are links, guest posts and roundups) | Backlinko |
+| Google prospects reply 6.5x more than Microsoft ones | **one person's claim**, labelled | cheat sheet |
+| Microsoft prospects need copy under 40 words | **one person's claim**, labelled | cheat sheet |
+| AI-written first lines get a 0.27% reply rate | **one person's claim**, labelled | cheat sheet |
+| Personalised bodies got about a third more replies | **supported** (32.7%) | Backlinko |
+| One follow-up "lifted" replies by 65.8% | **overstated**: the study reports a correlation ("appear to"), not a controlled test. Lesson and TLDR now say emails with a follow-up got 65.8% more replies, and that it's a correlation. | Backlinko |
+| Three or more messages did best overall | **supported** | Backlinko |
+| Follow-up #4 is "Hi John???"; answer within 5 minutes | **one person's claim**, labelled | cheat sheet |
+| Most companies answer online leads far too slowly | **supported** (abstract) | Oldroyd et al. |
+| Gmail bulk sender: close to 5,000+ messages a day to personal Gmail, permanently; needs one-click unsubscribe and a visible link | **supported** | Google sender guidelines and FAQ |
+| CAN-SPAM: reply-based opt-out allowed, B2B included; postal address required; honour opt-outs within 10 business days | **supported** | FTC CAN-SPAM guide |
 
 ## Open DMs with a problem buyers already pay to solve (`linkedin-dms.md`)
 
 **Principles.** Open with the buyer's problem, not your product (Fitzpatrick's first rule). Competitors' paid ads are public evidence of that problem (LinkedIn Ad Library). Small tests can't pick a winner reliably (Miller). Automation and scraping break LinkedIn's terms.
 
-| Claim | Verdict | Source |
+| Claim | Verdict | Source that settles it |
 | --- | --- | --- |
-| LinkedIn Ad Library needs no account | **Partly confirmed**: LinkedIn calls it a publicly available database | LinkedIn Help |
-| Ads searchable by advertiser and date | **Confirmed**; only ads since 1 June 2023 | LinkedIn Help |
-| Send each of 3 DMs to 50 people, keep the winner | **Disputed**: at typical reply rates, 50 sends per version can't separate versions unless the gap is very large; Miller's rule needs hundreds. Added as a Watch out. | Miller |
-| LinkedIn limits weekly invitations and restricts automated accounts | **Confirmed** (limits and week-long restrictions; numbers unpublished) | LinkedIn Help |
-| LinkedIn's terms prohibit third-party automation of messaging | **Confirmed** | User Agreement 8.2 |
-| Apify pulls every ad from the LinkedIn Ad Library | **Disputed for compliance**: section 8.2 also bans scraping the services with scripts or crawlers. Watch out extended. | User Agreement 8.2 |
-| The method works | **Unverified**; the post shows no results (already labelled) | source post |
+| The Mom Test's first rule: talk about their life instead of your idea | **supported** | The Learning Leader show notes |
+| A problem three competitors all pay to advertise is on buyers' minds | **one person's claim** | DinScales post |
+| The author sells a done-for-you LinkedIn outreach service and a sending tool | **supported** (EagleRev; its own sending engine, InMailer.ai) | eaglerev.io |
+| The Ad Library is publicly available | **supported** | LinkedIn Help |
+| It holds ads run since June 2023 | **overstated**: ads stay for one year after their last impression. Lesson now says so. | LinkedIn Help |
+| 3 DMs to 50 people each; send the winner to the other 850 | **one person's claim**, labelled; disputed as a test design (row below) | DinScales post |
+| Telling 10% from 15% apart takes about 576 sends per version; don't stop early | **supported** (16 × 0.09 / 0.05²) | Miller |
+| LinkedIn limits invitations, restricts accounts typically for a week, publishes no number | **supported** | LinkedIn Help |
+| Section 8.2 bans bots that "send or redirect messages" and scripts, crawlers and plugins that scrape or copy | **supported** | User Agreement 8.2 |
+| The terms also limit copying other people's content | **supported** | User Agreement 8.2 |
+| The method works | **one person's claim**; the post shows no results (labelled) | DinScales post |
 
 ## Do the work first, then ask (`do-the-work-first.md`)
 
-**Principles.** Reciprocity: people return what they received first, especially when it's personal and unexpected (Cialdini). Doing the work for the user lowers the cost of saying yes (Graham's "Collison installation"). Unpaid spec work has real costs (AIGA). Mid-sized creators engage best (Wies et al.).
+**Principles.** Reciprocity: people return what they received first, especially when it's personal and unexpected (Cialdini). Doing the work for the user lowers the cost of saying yes (Graham's "Collison installation"). Unpaid spec work has real risks (AIGA). Mid-sized creators engage best (Wies et al.).
 
-| Claim | Verdict | Source |
+| Claim | Verdict | Source that settles it |
 | --- | --- | --- |
-| Free finished work persuades better than a pitch | **Confirmed in principle** | Cialdini; Graham |
-| JK Molina's DM to Dan Koe | **Unverified** beyond Koe's account | source post |
-| 10 DMs a day lands at least one $2,500 to $5,000 a month client | **Unverified**, Koe's expectation (already labelled) | source post |
-| Grant Cardone replied "Hit me I'm stuck" | **Unverified** beyond Koe's account | source post |
-| Follower count misleads | **Confirmed**: engagement peaks at mid follower counts | Wies et al. |
-| Spec work costs nothing but time | **Disputed**: AIGA lists quality, exploitation and IP risks. Added as a Watch out. | AIGA |
+| One mint raised tips about 3%; a second mint offered personally, 23% | **supported** | Cialdini |
+| Give first, and make it personal and unexpected | **supported** | Cialdini |
+| Stripe's founders said "give me your laptop" and set users up on the spot | **supported** | Graham |
+| JK Molina's DM to Koe, quoted | **one person's claim** (matches Koe's article word for word) | Koe article |
+| 10 DMs a day lands at least one $2,500 to $5,000 a month client | **one person's claim**, labelled | Koe article |
+| Koe sells Eden, the tool the article recommends | **supported** | Koe article and bio |
+| AIGA "warns against" spec work | **overstated**: AIGA's position lists the risks and leaves the choice to designer and client. Lesson now says it warns of the risks. | AIGA position |
+| Spec work risks weaker quality, being used for free labour, and IP risk on both sides | **supported** | AIGA position |
+| Going public works on X, Substack or any platform; Cardone replied "Hit me I'm stuck" | **one person's claim** | Koe article |
+| Engagement peaks with mid-sized creators | **supported** | Wies et al. |
+| @dsqjaffa co-founded Virlo | **supported** | their X bio |

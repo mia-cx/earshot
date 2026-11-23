@@ -36,7 +36,7 @@ Even the fallback ask (a testimonial) gives you something you can use with the n
 > Koe expects that pace to land at least one content client a month at $2,500 to $5,000 a month. That's his expectation, not measured results, and he sells Eden, the AI tool the article recommends for the research step.
 
 > [!RISK] Free work has costs on both sides
-> Designers call this spec work, and AIGA, the US design association, [warns against it](https://www.aiga.org/resources/aiga-position-on-spec-work). Work done without research or feedback tends to be weaker, you risk being used for free labour, and both sides take on intellectual property risk. Keep the sample small, say plainly that they can use it, and don't chase anyone who says no.
+> Designers call this spec work, and AIGA, the US design association, [warns of its risks](https://www.aiga.org/resources/aiga-position-on-spec-work). Work done without research or feedback tends to be weaker, you risk being used for free labour, and both sides take on intellectual property risk. Keep the sample small, say plainly that they can use it, and don't chase anyone who says no.
 
 ## Go public when DMs don't land
 

@@ -21,7 +21,7 @@ Jonah Berger and Katherine Milkman's [research on sharing](https://journals.sage
 
 Matt Epstein points to Tesla's Roadster launch. The car drives up a curved ramp, hangs upside down, flips through the air, lands on its wheels, then jumps a whole row of Teslas. Jumping one car is neat. Jumping the fleet is what you send to ten friends.
 
-Tesla did it live on a livestream in front of a crowd. [Snopes checked it](https://www.snopes.com/fact-check/tesla-flying-roadster-car-real/): Tesla streamed the event on 15 October 2026, attendees posted their own clips, and Elon Musk said on stage, "We need an audience to prove that it's not AI."
+Tesla did it live on a livestream in front of a crowd. [Snopes checked it](https://www.snopes.com/fact-check/tesla-flying-roadster-car-real/): Tesla streamed the event on 15 October 2026, attendees posted their own clips, and Elon Musk said Tesla needed an audience "to prove that it's not AI".
 
 You don't need a stunt budget. Answer two questions first, then film only the moments that prove both.
 
@@ -34,7 +34,7 @@ For software, show the real input, the real output and anything you fixed by han
 
 ## Learn video as a medium
 
-Kunal Gandhi argues you should master video as a medium, whatever platform it lands on, because the skill is holding your audience's imagination on screen. In his experience, product previews, demo videos and quirky humour beat everything else, and launches gain the most from video. He points to thirdweb's launch videos as a model.
+Kunal Gandhi argues you should master video as a medium, whatever platform it lands on, because the skill is holding your audience's imagination on screen. In his experience, product previews, demo videos and quirky humour beat everything else, and skipping video is a common launch mistake. He points to thirdweb's launch videos as a model.
 
 Meta's research backs the product part. In a [study of over 600 video ads](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative), viewers remembered ads best when they showed the product and kept the message short. Meta notes that people watch feeds fast and without sound, so a feed video has to make sense on mute.
 

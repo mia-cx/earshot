@@ -19,7 +19,7 @@ Every LinkedIn ad is a message a company paid to show buyers. When **three compe
 This method comes from @DinScales26, who sells a done-for-you LinkedIn outreach service and a sending tool. They wrote it for agencies messaging on a client's behalf, and the steps below adapt it for your own product. The post shows no results, so test it on a small slice first.
 
 > [!TRICK] Mine the LinkedIn Ad Library
-> 1. Go to linkedin.com/ad-library, which LinkedIn [describes as publicly available](https://www.linkedin.com/help/linkedin/answer/a1517918). It holds ads run since June 2023.
+> 1. Go to linkedin.com/ad-library, which LinkedIn [describes as publicly available](https://www.linkedin.com/help/linkedin/answer/a1517918). It holds ads run since June 2023, each kept for a year after it last ran.
 > 2. List the 3 companies you lose deals to. Search each as the advertiser, with the date filter set to the last 30 days.
 > 3. For each ad, note three things: the problem it opens with, the offer (a demo, a free audit, a report), and the job title it's written for ("for heads of sales").
 > 4. Find the problem all 3 companies advertise, and gather your notes on the 5 to 10 ads about it. Keep the notes in your own words; don't copy the ad text.
