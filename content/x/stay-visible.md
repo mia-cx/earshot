@@ -20,7 +20,7 @@ Posting more isn't free. Each extra post from you in the same viewer's feed gets
 
 ## Small accounts get a head start
 
-Starting small isn't a handicap. X's code includes a cold-start boost for original posts (not replies or reposts) under 2 hours old from authors with up to 50,000 followers, while the post has fewer than 200 impressions. Each refresh lifts at most one such post to around the 15th slot. It runs as an experiment that decides which authors qualify for which viewers.
+Starting small isn't a handicap. X's code gives a cold-start boost to original posts (not replies or reposts) from authors with up to 50,000 followers. A post qualifies while it's under 2 hours old and has fewer than 200 impressions. Each refresh lifts at most one such post to around the 15th slot. The boost runs as an experiment, so which authors qualify depends on the viewer.
 
 A new account can still break out early. Ryan's own first viral post came three days after starting a new account, and he reports 8,000+ followers and 4M+ impressions in 4 weeks solo, reaching about 9,900 followers in a month. Treat that as one person's result.
 
@@ -33,7 +33,7 @@ Ryan says engagement from well-connected accounts in your niche counts for more 
 X's 2026 code still keeps a PageRank-style score over follows and engagement. Ryan says it lifts or caps every post, though the code only uses it in spam and enforcement rules, not as a multiplier on every post.
 
 - Engage genuinely with people in your niche to build a dense, high-quality network.
-- Stay out of engagement groups (accounts that agree to engage with each other's posts). X's [authenticity policy](https://help.x.com/en/rules-and-policies/authenticity) bans "coordinating to exchange engagement", and they barely work anyway: X's code comments say only actions on posts served in the Home feed count, so opening a post straight from a group chat "has no ranking impact".
+- Stay out of engagement groups (accounts that agree to engage with each other's posts). X's [authenticity policy](https://help.x.com/en/rules-and-policies/authenticity) bans "coordinating to exchange engagement". The groups barely work anyway: X's code comments say only actions on posts served in the Home feed count, so opening a post straight from a group chat "has no ranking impact".
 
 > [!RISK] Labels limit every post
 > A spam or inauthentic-behaviour label cuts the visibility of a post or your whole account. Account labels also add up from what your posts collected. Avoid content that gets you muted, blocked or reported, and check X's Under the Hood tool to see labels on your account or posts marked as spam.
@@ -46,7 +46,7 @@ X's 2026 code still keeps a PageRank-style score over follows and engagement. Ry
 >
 > This is Ryan's advice from reading the code, unverified beyond that.
 
-Ryan also warns that a troll blocking or muting you cuts your reach. For one troll, X's code comments say otherwise. Blocks and reports mostly change what *similar* viewers see, not your reach for everyone. A pile-on is different. X's `agatha` jobs label accounts whose posts draw many blocks and reports relative to likes. Mute trolls anyway, because the fight costs you time.
+Ryan also warns that a troll blocking or muting you cuts your reach. For a single troll, X's code comments say otherwise. Blocks and reports mostly change what *similar* viewers see, not your reach for everyone. A pile-on is different. X's `agatha` jobs label accounts whose posts draw many blocks and reports relative to likes. Mute trolls anyway, because the fight costs you time.
 
 > [!DO] Check your labels
 > Open [X's Under the Hood tool](https://x.com/i/jf/under_the_hood) and look for labels on your account or posts. Write down what you find, even if it's "none".

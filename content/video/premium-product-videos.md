@@ -14,7 +14,7 @@ description: Set fixed rules for design, motion and music so every video looks d
 
 A video feels premium when **every choice looks deliberate**. When your font, background, music and colour never wander, viewers assume someone made those choices on purpose. Most cheap-looking videos fail by piling things on: too many effects, unnecessary sound effects, hype music.
 
-Rolf Reber and colleagues [reviewed processing fluency](https://pages.ucsd.edu/~pwinkiel/abs_beauty-PSPR-2004.htm) and found people like things more when repetition, symmetry and clear contrast make them easy to take in. Ehrenberg-Bass researchers add, in [*How B2B Brands Grow*](https://marketingscience.info/news-and-insights/how-b2b-brands-grow), that buyers choose brands that are easy to bring to mind, and that brands compete through distinctive assets like logos, characters and colours.
+Rolf Reber and colleagues [reviewed processing fluency](https://pages.ucsd.edu/~pwinkiel/abs_beauty-PSPR-2004.htm) and found people like things more when repetition, symmetry and clear contrast make them easy to take in. In [*How B2B Brands Grow*](https://marketingscience.info/news-and-insights/how-b2b-brands-grow), Ehrenberg-Bass researchers add that buyers choose brands that are easy to bring to mind, and that brands compete through distinctive assets like logos, characters and colours.
 
 The rules below come from @leomeethewoo, whose studio sells product videos to fintech companies and made 50+ of them in one summer. They're his team's practice, not tested claims. His model is Apple, whose videos he reads as built to make existing buyers feel special.
 

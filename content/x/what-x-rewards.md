@@ -54,7 +54,7 @@ The diagram adds up four of those contributions for one viewer: each action's ch
 
 ## Aim at the goal, not the numbers
 
-The weights shift silently. In [the history of X's weights file](https://github.com/xai-org/x-algorithm/commits/main/home-mixer/params/param.rs), the like weight was 0.5 in August 2026, rose to 0.6 and then 0.66 in mid-October, and has been 0.708 since November 5. Any tactic built on one exact number breaks on the next tweak.
+The weights shift silently. [The history of X's weights file](https://github.com/xai-org/x-algorithm/commits/main/home-mixer/params/param.rs) shows the like weight at 0.5 in August 2026, then 0.6 and 0.66 in mid-October, and 0.708 since November 5. Any tactic built on one exact number breaks on the next tweak.
 
 The goal underneath stays put. X wants people sharing and talking. To guess what each viewer wants, the model reads their recent engagement history and loads signals like installed apps and inferred gender. You can't game that per viewer. You can write posts people want to pass on.
 
