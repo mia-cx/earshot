@@ -53,7 +53,7 @@ Generic AI output usually means the AI knows nothing about your business. The re
 Adding a missing secondary category is often the fastest local win: the author says clients who added one appeared for new searches within a week.
 
 > [!RISK] Only categories you really are
-> Google's guidelines say to use "as few categories as possible" to describe your core business, and never to use categories as keywords. Copy a competitor's category only if it's work you actually do.
+> Google's guidelines say to use "as few categories as possible" to describe your core business, and never to use categories as keywords. Copy a competitor's category only if it describes what your business is. Offering a service isn't enough: list services in the services section instead.
 
 > [!TRICK] Category audit prompt
 > ```
@@ -70,9 +70,9 @@ The services section is the other part you fully control. List every service wit
 
 ## Win on recent reviews and replies
 
-**Track review pace, not star rating: recent reviews count more than old totals.** Google confirms the base of this: "more reviews and positive ratings can help your business's local ranking". Recency is the experts' view: Whitespark's panel ranks review recency 11th of 187 factors.
+**Track your review pace alongside count and rating.** Google confirms that "more reviews and positive ratings can help your business's local ranking". Recency is the experts' view: Whitespark's panel ranks review recency 11th of 187 factors. Watch it, but don't expect it to predict who outranks whom.
 
-A business with 90 reviews gaining 15 a month beats one with 200 reviews where 180 are two years old. The services and neighbourhoods customers mention also signal what you're relevant for.
+The author's experience is that a business with 90 reviews gaining 15 a month beats one with 200 reviews where 180 are two years old. That's one practitioner's observation, not a rule. The services and neighbourhoods customers mention also signal what you're relevant for.
 
 > [!TRICK] Review velocity prompt
 > ```
@@ -115,7 +115,7 @@ Run the audits in order of impact, one block a week, then switch to a steady rou
 > The author names attribute, description and photo audits but doesn't share those prompts. He claims 90 days of this outranks long-established businesses; that's his unverified claim.
 
 > [!DO] Run the category audit
-> Run the category audit prompt for your main service and city. Note the missing secondary category in your business file above, add it to your profile, then download the file for your agent's folder.
+> Run the category audit prompt for your main service and city. Note any secondary category the leaders have that you're missing. If it describes what your business is, add it to your profile. Then download the business file for your agent's folder.
 
 > [!CHECK] On a Google Business Profile, what change often gives the fastest local ranking win?
 > Adding a secondary category the map-pack leaders have and you're missing. Your categories decide which searches show you on the map.

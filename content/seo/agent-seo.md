@@ -33,7 +33,7 @@ For anything that needs approval, you see the diff first.
 
 ## Check the site after every deploy
 
-**Four silent changes can kill a site with no error anyone sees.** Each sends a direct instruction to Google: [`noindex`](https://developers.google.com/search/docs/crawling-indexing/robots/intro) removes a page, a [canonical](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls) hands its ranking to another URL, and robots.txt stops crawling.
+**Four silent changes can kill a site with no error anyone sees.** Each sends Google a signal: [`noindex`](https://developers.google.com/search/docs/crawling-indexing/robots/intro) removes a page, a [canonical](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls) can make Google show another URL in its place, and robots.txt stops crawling.
 
 - A page turns noindex.
 - A canonical starts pointing somewhere else.

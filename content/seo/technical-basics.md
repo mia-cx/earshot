@@ -64,7 +64,7 @@ An agent saying "done" isn't Google seeing the page. Confirm each fix from Googl
 - Keep structured data matching the facts visible on the page. Test it with Google's Rich Results Test.
 - Compress images, drop scripts you don't need, and fix anything broken on mobile.
 - Add an `llms.txt` file only if a tool you use reads it. It has no confirmed effect on AI citations, and Google says AI Overviews [need no special files](https://developers.google.com/search/docs/appearance/ai-features).
-- To keep a page out of Google, use `noindex`, not robots.txt. Google can [still index a blocked URL](https://developers.google.com/search/docs/crawling-indexing/robots/intro) if other sites link to it.
+- To keep a public page out of Google, use `noindex`, and leave the page crawlable so Google can read the tag. A URL blocked in robots.txt [can still be indexed](https://developers.google.com/search/docs/crawling-indexing/robots/intro) if other sites link to it. Put staging and admin pages behind a login instead.
 
 ## Let the AI search bots in
 

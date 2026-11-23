@@ -14,7 +14,7 @@ description: Use Search Console data to add missing answers to pages Google alre
 
 **A page that already ranks is closer to a win than a page that doesn't exist.** Google has decided it's relevant. If it sits on page 2 or 3 (positions 10 to 30), Google thinks the page fits but is incomplete. Add what's missing and it can climb.
 
-Search Console shows what's missing. Each page's Queries tab lists every search it appeared for, including ones the article never mentions. Add those answers.
+Search Console shows what's missing. Each page's Queries tab lists searches it appeared for, including ones the article never mentions. Add those answers. The tab [hides anonymised queries and stops at 1,000 rows](https://support.google.com/webmasters/answer/17010575), so a query missing from it doesn't mean the page never showed for it.
 
 Give changes time to show up. Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) says updates take anywhere from a few hours to several months, and advises waiting a few weeks before judging. Expect one to three months, not days.
 
@@ -141,6 +141,7 @@ These checks repeat, so hand them to an agent with a written playbook. Borja Fat
 
 - [Google Search Central: SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
 - [Google Search Central: Ask Google to recrawl your URLs](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl)
+- [Search Console Help: Performance report data discrepancies](https://support.google.com/webmasters/answer/17010575)
 - [Amy Schade, Nielsen Norman Group, *Inverted Pyramid: Writing for Comprehension* (2018)](https://www.nngroup.com/articles/inverted-pyramid/)
 - [Google Search Central: Control your snippets in search results](https://developers.google.com/search/docs/appearance/snippet)
 - [Google Search Central: SEO link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)

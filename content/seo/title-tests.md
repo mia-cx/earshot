@@ -54,7 +54,7 @@ Note which query words the results above you use that you don't. In the author's
 > - Makes a specific promise: "7 ways to get more leads".
 > - Gives a reason to click now: the current year. In Q4 only, use next year (2027 in November 2026), because nobody else has yet. Don't do this earlier in the year.
 > - Fits under 60 characters. Google has no character limit and cuts titles to fit the screen, so 60 is a rough target.
-> - Promises nothing the page doesn't deliver. Bad clicks hurt (see *How Google decides who ranks*).
+> - Promises nothing the page doesn't deliver (see *How Google decides who ranks*).
 >
 > For a prompt that drafts three titles and three meta descriptions, see *Improve the pages that already rank*.
 
@@ -100,7 +100,7 @@ If you want an answer before touching the page, you can buy one.
 > Pages ranking 3 to 10 whose click rate is 40% or more below normal for their position. A position-4 page under 1% is a first target.
 
 > [!CHECK] After a title change, impressions rose, click rate fell and clicks went up. Did the new title win?
-> Yes. Judge title tests on clicks, because a new title often ranks for new long-tail queries, which raises impressions and lowers click rate.
+> Maybe. Clicks are the right measure, because a new title often adds long-tail queries that raise impressions and lower click rate. But a before-and-after test can't rule out a season or a demand spike, so only a split test or a repeat shows the title caused it.
 
 > [!CHECK] Why do title tests teach you faster than new articles in SEO?
 > Search Console shows a new title's effect in about two weeks, while a new article can take months to tell you anything.

@@ -5,7 +5,7 @@ description: Know which signals Google trusts, so you write pages it wants to sh
 ---
 
 > [!TLDR] Google rewards the page that satisfies the searcher best, and it measures that partly from clicks.
-> - Google watches what searchers do after they click. Pages that satisfy them climb; pages that disappoint sink.
+> - Google uses aggregated click data to judge whether results help, so write titles your page delivers on.
 > - Trust comes from real experience. Show a real author, and add something the top results don't have.
 > - AI can find the gaps. Only you can fill them with firsthand tests, data and examples.
 > - The easiest wins are in topics nobody covers well yet.
@@ -18,9 +18,9 @@ The US antitrust court record shows how Google does it. Judge Amit Mehta's [2024
 
 The 2024 leak of Google's internal docs, [published by Rand Fishkin](https://sparktoro.com/blog/an-anonymous-source-shared-thousands-of-leaked-google-search-api-documents-with-me-everyone-in-seo-should-see-them/), mentions "good clicks", "bad clicks" and "last longest clicks". It names those fields, not how much they weigh.
 
-Two things follow. A ranking page that gets skipped leaves rankings on the table. A page that overpromises earns clicks that bounce straight back, which tells Google it didn't help. Never write a title the page can't deliver.
+The record doesn't show how one skipped result or one quick return affects a single page. The safe reading is the simple one: earn the click with a clear title, then deliver what it promised. Never write a title the page can't deliver.
 
-AI Overviews take some of those clicks. Trackers disagree on how often they show: from about 4 in 10 US desktop searches ([Advanced Web Ranking](https://www.advancedwebranking.com/seo/organic-ctr)) to over 8 in 10 ([Search Engine Roundtable](https://www.seroundtable.com/over-80-of-google-searches-have-ai-overviews-42372.html), combining several tools). [Ahrefs estimates](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update) the #1 result gets about 58% fewer clicks when one shows. That figure is a correlation from desktop informational searches, not a controlled test.
+AI Overviews take some of those clicks. How often they show depends on what's sampled. [Advanced Web Ranking](https://www.advancedwebranking.com/seo/organic-ctr) saw them on 43% of its sampled US desktop results in July 2026. SE Ranking found 82.5% in a sample of US branded queries ([Search Engine Roundtable](https://www.seroundtable.com/over-80-of-google-searches-have-ai-overviews-42372.html)). [Ahrefs estimates](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update) the #1 result's click rate is about 58% lower than forecast when one shows. That figure is a correlation from desktop informational searches, not a controlled test.
 
 ## Show who wrote it
 
@@ -80,7 +80,7 @@ The same marketer notes a second edge: new or fast-moving categories often have 
 > Add what they lack from your own experience: your tests, data, screenshots or a new angle. AI can find the gap, but only you can fill it.
 
 > [!CHECK] Why should a page's title never promise more than the page delivers?
-> Google ranks pages partly on how people click, and clicks that bounce straight back count against the page.
+> Google ranks pages partly on aggregated click data about whether results help. A title that overpromises wins clicks the page can't satisfy, which works against you.
 
 ## Sources
 
