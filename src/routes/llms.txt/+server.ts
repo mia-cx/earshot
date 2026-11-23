@@ -9,7 +9,7 @@ export const GET = ({ url }) => {
 	const body = [
 		'# Earshot',
 		'',
-		`> A free marketing course for builders with ADHD: ${course.lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, rewritten from free posts on X. Each lesson starts with the short version and ends with one task.`,
+		`> A free marketing course for builders with ADHD: ${course.lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, grounded in marketing research and official documentation and applied through free posts practitioners shared on X, with every source linked. Each lesson starts with the short version and ends with one task.`,
 		'',
 		'## Agent skills',
 		'',

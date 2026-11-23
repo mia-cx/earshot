@@ -7,7 +7,7 @@
   </picture>
 </a>
 
-A marketing and growth course for builders, learned from zero. Rewritten from the best posts people shared for free on X, with credit and links on every lesson.
+A marketing and growth course for builders, learned from zero. Each lesson starts from what marketing research and official documentation show, then applies it through the best posts practitioners shared for free on X, with credit and links on every lesson. `research/literature/` holds the sources and claim checks behind each module.
 
 Built for ADHD brains: every lesson starts with the short version, keeps sections short, marks cheap tricks and risks, and ends with one thing to do now. Your progress stays in your browser.
 
