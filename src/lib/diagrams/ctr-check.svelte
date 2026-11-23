@@ -1,7 +1,9 @@
 <script lang="ts">
 	/**
-	 * A page's click rate against Borja Fat's typical CTR for its Google position, as taught in
-	 * "Test titles for quick wins". A page 40% or more below its benchmark is a title-test target.
+	 * A page's click rate against a benchmark CTR for its Google position, as taught in "Test titles for
+	 * quick wins". Benchmarks start at Borja Fat's numbers from his own sites; the lesson says your own
+	 * average CTR per position beats any table, so the reader can type theirs in. A page 40% or more
+	 * below its benchmark is a title-test target.
 	 */
 	const benchmarks = [
 		{ position: 3, ctr: 9 },
@@ -16,8 +18,11 @@
 	const id = $props.id();
 	let position = $state(4);
 	let ctr = $state(2);
+	/** The reader's own benchmark per position, once they type one. */
+	let own: Record<number, number> = $state({});
 
-	const bench = $derived(benchmarks.find((b) => b.position === position)?.ctr ?? benchmarks[1].ctr);
+	const benchmarkFor = (b: { position: number; ctr: number }) => own[b.position] ?? b.ctr;
+	const bench = $derived(benchmarkFor(benchmarks.find((b) => b.position === position) ?? benchmarks[1]));
 	const line = $derived(Math.round(bench * UNDERPERFORMER * 10) / 10);
 	const gap = $derived(Math.round((1 - ctr / bench) * 100));
 	const under = $derived(ctr <= line);
@@ -25,10 +30,10 @@
 	const percent = (value: number) => `${Number(value.toFixed(1))}%`;
 	const along = (value: number) => `${(Math.min(value, SCALE) / SCALE) * 100}%`;
 
-	const verdict = $derived(under ? 'CTR underperformer' : 'Not an underperformer');
+	const verdict = $derived(under ? 'Underperformer against this benchmark' : 'Not an underperformer');
 	const detail = $derived(
 		under
-			? `${percent(ctr)} is ${gap}% below the ${bench}% benchmark for position ${position}. Test a new title.`
+			? `${percent(ctr)} is ${gap}% below the ${bench}% benchmark for position ${position}. If that's your own average, test a new title.`
 			: ctr < bench
 				? `${percent(ctr)} is ${gap}% below the ${bench}% benchmark. Underperformers sit at ${percent(line)} or less.`
 				: `${percent(ctr)} is at or above the ${bench}% benchmark for position ${position}.`
@@ -40,8 +45,8 @@
 		{#each benchmarks as b (b.position)}
 			<button type="button" class="row" aria-pressed={position === b.position} onclick={() => (position = b.position)}>
 				<span class="label">Position {b.position}</span>
-				<span class="track"><span class="bar" style="width: {along(b.ctr)}"></span></span>
-				<span class="value">{b.ctr}%</span>
+				<span class="track"><span class="bar" style="width: {along(benchmarkFor(b))}"></span></span>
+				<span class="value">{percent(benchmarkFor(b))}</span>
 			</button>
 		{/each}
 
@@ -57,14 +62,26 @@
 		</div>
 	</div>
 
+	<label class="own mt-4">
+		Your benchmark for position {position}
+		<input
+			type="number"
+			min="0.1"
+			max={SCALE}
+			step="0.1"
+			bind:value={() => bench, (value) => value > 0 && (own[position] = value)}
+		/>
+		%
+	</label>
+
 	<div class="mt-5" aria-live="polite">
 		<p class="diagram-output">{verdict}</p>
 		<p class="text-sm text-muted">{detail}</p>
 	</div>
 
 	<figcaption>
-		Typical click rates by position from Borja Fat's own sites, not an industry standard. The shaded stretch is 40% or
-		more below the benchmark: a CTR underperformer.
+		Benchmarks start at Borja Fat's click rates from his own sites, not an industry standard. Type in your own average
+		CTR at each position. The shaded stretch is 40% or more below the benchmark: a CTR underperformer.
 	</figcaption>
 </figure>
 
@@ -198,6 +215,25 @@
 			border: 2px solid var(--paper);
 			border-radius: 4px;
 			background: var(--ink);
+		}
+	}
+
+	.own {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.4rem;
+		font-size: 0.875rem;
+		font-weight: 600;
+		& input {
+			width: 5rem;
+			padding: 0.3rem 0.5rem;
+			font: inherit;
+			font-variant-numeric: tabular-nums;
+			color: var(--ink);
+			background: var(--paper);
+			border: 1px solid var(--field-line);
+			border-radius: 8px;
 		}
 	}
 
