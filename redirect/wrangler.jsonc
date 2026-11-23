@@ -1,0 +1,10 @@
+// Redirects seo.mia.cx to earshot.mia.cx (worker.js). Deployed with production (.github/workflows/deploy.yml).
+{
+	"$schema": "../node_modules/wrangler/config-schema.json",
+	"name": "earshot-redirect",
+	"account_id": "492214885e7a580ccc1d141dfdb4dc5f",
+	"main": "worker.js",
+	"compatibility_date": "2026-10-01",
+	"workers_dev": false,
+	"routes": [{ "pattern": "seo.mia.cx", "custom_domain": true }]
+}

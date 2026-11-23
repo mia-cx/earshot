@@ -1,8 +1,8 @@
 name: Release
 
-# Every push to main deploys to staging.seo.mia.cx and opens or updates the Changesets release pull
-# request. Merging that pull request bumps the version in package.json; that commit deploys to
-# seo.mia.cx and becomes a tagged GitHub release.
+# Every push to main deploys to staging.earshot.mia.cx and opens or updates the Changesets release
+# pull request. Merging that pull request bumps the version in package.json; that commit deploys to
+# earshot.mia.cx and becomes a tagged GitHub release.
 on:
   push:
     branches: [main]

@@ -1,13 +1,14 @@
 // Every page is prerendered and served as a static asset; the Worker answers only what no page matches.
-// Production is `earshot` on seo.mia.cx, deployed when a release pull request merges. Staging is
-// `earshot-staging` on staging.seo.mia.cx, deployed from every push to main (.github/workflows/release.yml).
+// Production is `earshot` on earshot.mia.cx, deployed when a release pull request merges. Staging is
+// `earshot-staging` on staging.earshot.mia.cx, deployed from every push to main (.github/workflows/release.yml).
+// seo.mia.cx redirects to production from its own Worker (redirect/).
 {
 	"$schema": "./node_modules/wrangler/config-schema.json",
 	"name": "earshot",
 	"account_id": "492214885e7a580ccc1d141dfdb4dc5f",
 	"main": ".svelte-kit/cloudflare/_worker.js",
 	"compatibility_date": "2026-10-01",
-	"routes": [{ "pattern": "seo.mia.cx", "custom_domain": true }],
+	"routes": [{ "pattern": "earshot.mia.cx", "custom_domain": true }],
 	"assets": {
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"
@@ -15,7 +16,7 @@
 	"observability": { "enabled": true },
 	"env": {
 		"staging": {
-			"routes": [{ "pattern": "staging.seo.mia.cx", "custom_domain": true }]
+			"routes": [{ "pattern": "staging.earshot.mia.cx", "custom_domain": true }]
 		}
 	}
 }
