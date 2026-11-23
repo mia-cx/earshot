@@ -38,10 +38,11 @@ Retention takes as much planning as acquisition, so answer these questions early
 > [!FORM] Your retention plan
 > 1. Which single action means a new user got value? Finish the sentence: "A user is onboarded when they…"
 > 2. How many of last month's sign-ups did it? Check your analytics.
-> 3. Hero features: which features bring people back?
-> 4. Levelling up: how does a casual user become a power user?
-> 5. Segments: which usage numbers matter for your product, so you can split users by them?
-> 6. Churn: why do people leave, and which campaign would win them back?
+> 3. At what rhythm should an activated user repeat that action, and how many of the sign-ups from two months ago still do?
+> 4. Hero features: which features bring people back?
+> 5. Levelling up: how does a casual user become a power user?
+> 6. Segments: which usage numbers matter for your product, so you can split users by them?
+> 7. Churn: why do people leave, and which campaign would win them back?
 
 Track the site with Google Analytics and in-product actions with a product analytics tool. Kunal uses Redash and Dune for on-chain data.
 
@@ -87,10 +88,10 @@ If you sell a service or a membership, weekly check-ins are part of retention. *
 > ```
 
 > [!DO] Write your onboarded event
-> Fill in the first two questions of your retention plan above: your onboarded event, and how many of last month's sign-ups did it. Download the plan and put both answers at the top of your roadmap.
+> Fill in the first three questions of your retention plan above: your onboarded event, how many of last month's sign-ups did it, and the rhythm that counts as activated. Download the plan and put the activated number at the top of your roadmap.
 
 > [!CHECK] In retention, how do you define "onboarded"?
-> As one key action that shows a user got value, done at the rhythm you expect, such as "saved a pin every week, four weeks after sign-up".
+> As one key action that shows a user got value. Count them as activated only once they keep doing it at the rhythm you expect, such as "saved a pin every week, four weeks after sign-up".
 
 > [!CHECK] You send emails triggered by what customers do. How do you prove they add revenue?
 > Hold out 10% of customers who receive nothing, then compare revenue between the two groups.

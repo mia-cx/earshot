@@ -83,8 +83,8 @@ For *Stay sharp*:
 > 6. Micro KPI: which input that we control drives it?
 > 7. Which essay did you read, and which line of your strategy changed because of it?
 
-> [!DO] Read one essay for your hardest module
-> Pick the module you found hardest and open its first essay above (no essay listed: open the first source of its first lesson). Read it, then change one line of your one-page strategy above (from *Fit your strategy on one page*) because of it, note what changed, and download it.
+> [!DO] Read one essay or book for your hardest module
+> Pick the module you found hardest and open its first essay or book above (none listed: open the first source of its first lesson). Read it, or the chapter on your problem, then change one line of your one-page strategy above (from *Fit your strategy on one page*) because of it, note what changed, and download it.
 
 > [!CHECK] What do the four parts of a GACC marketing brief stand for?
 > Goal, Audience, Creative, Channel.

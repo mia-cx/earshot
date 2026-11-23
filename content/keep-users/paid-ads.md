@@ -44,8 +44,9 @@ The only way to know what ads add for your account is to switch them off somewhe
 [Google's researchers call this a geo experiment](https://research.google/pubs/measuring-ad-effectiveness-using-geo-experiments/): split regions at random into ads on and ads off. The off regions show what would have happened anyway.
 
 > [!TRICK] Run a regional holdout
-> - Turn Meta ads off in 5 matched regions for 4 weeks.
-> - Compare the real sales drop with the sales Meta's attribution said it drove.
+> - Turn Meta ads off in 5 matched regions for 4 weeks, and keep them running in 5 similar regions.
+> - Compare sales in the two groups. The gap between them, not the drop in the off regions alone, is what ads added, because demand can move in both.
+> - Compare that gap with the sales Meta's attribution said it drove.
 > - For an ongoing estimate per channel, try marketing mix modelling with the free tools [Google Meridian](https://developers.google.com/meridian) or [Meta Robyn](https://facebookexperimental.github.io/Robyn/). Both can take your holdout results as a check.
 
 > [!RISK] You lose sales in the test regions
@@ -105,7 +106,7 @@ Competitors' ad accounts are increasingly run by agents bidding in the same auct
 > How long it has run. Nobody keeps paying for a clearly losing ad, so one live for 60+ days probably pays for itself. It's a heuristic: brand ads and neglected accounts run long too.
 
 > [!CHECK] Meta says your ads drove most of your sales. How do you find out what they really add?
-> Switch ads off in a few matched regions for a few weeks and compare the real sales drop with what Meta claimed. Pick regions small enough to afford the lost sales.
+> Switch ads off in a few matched regions for a few weeks while similar regions keep them. The sales gap between the two groups is what ads added; compare it with what Meta claimed. Pick regions small enough to afford the lost sales.
 
 > [!CHECK] In paid ads, why must every sale be counted exactly once?
 > Ad algorithms learn from the sale events you send them. Duplicated or missing sales teach them from wrong data.

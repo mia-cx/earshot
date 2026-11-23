@@ -6,7 +6,7 @@ description: Spot underpricing from your close rate, margin per client and hours
 
 > [!TLDR]
 > - In most businesses, a minority of customers earns all the profit and a few lose money. Revenue reports hide which is which.
-> - If you close more than about 40% of sales calls, you're probably too cheap.
+> - A high close rate on sales calls can mean you're too cheap. Read it with your lead mix and margin before you raise prices.
 > - Count margin per client, with your own hours at what it would cost to replace you.
 > - Compare hours delivered with hours contracted, then fix your process, reprice or rescope, and drop a client only last.
 
@@ -16,7 +16,7 @@ Closing most of your sales calls feels like winning, but past a point **your pri
 
 That number is his, unverified, and he sells agency consulting. Most teams still barely touch pricing: Patrick Campbell, whose company ProfitWell sold pricing software, [says its research found](https://www.mindtheproduct.com/a-guide-to-unlocking-growth-with-optimized-pricing/) companies spend 10 hours or less a year on it. No method is published, so treat it as a vendor's claim.
 
-The check itself is free. Keep a sheet with calls, closes and close rate, and flag it whenever the rate stays above 40%.
+The check itself is free. Keep a sheet with calls, closes and close rate, and note where each lead came from. Warm referrals close more often at any price, and ten calls is a small sample, so a high rate is a reason to test a higher price, not proof you need one.
 
 ## Count margin per client, not revenue
 
@@ -69,13 +69,13 @@ Kaplan's order for fixing an unprofitable customer:
 The bot sorts and suggests. Talking to the client stays your job.
 
 > [!DO] Work out your close rate
-> Make a sheet with three columns: date, call, closed (yes or no). Fill in your last 10 sales calls and calculate the close rate. If it's above 40%, write a higher price for your next proposal.
+> Make a sheet with four columns: date, call, lead source (cold or referral), closed (yes or no). Fill in your last 10 sales calls and calculate the close rate. If you close most cold leads and your margin is thin, test a higher price in your next proposal.
 
-> [!CHECK] What close rate on sales calls suggests your price is too low?
-> Above about 40%.
+> [!CHECK] You close 6 of your last 10 sales calls. Does that mean your price is too low?
+> Maybe. @huntkyle's rule of thumb puts the line at about 40%, but check where the leads came from and your margin first: warm referrals close at any price, and ten calls is a small sample. Treat it as a reason to test a higher price.
 
 > [!CHECK] A client's 90-day time log shows far more hours than their contract covers. What are your options?
-> Reprice, rescope or sunset that client. A bot can sort and suggest, but talking to the client stays your job.
+> Fix your own process first, then reprice or rescope, and drop the client only last. A bot can sort and suggest, but talking to the client stays your job.
 
 > [!CHECK] Why count gross margin per client, with your own hours priced at what it would cost to replace you?
 > In most businesses a few customers earn all the profit and some lose money, and revenue reports hide which. Counting your hours reveals the ones near or below zero margin.

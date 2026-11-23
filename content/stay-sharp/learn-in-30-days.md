@@ -7,7 +7,7 @@ description: Pick two AI skills, build on real work for 30 days, and judge it at
 > [!TLDR]
 > - Skill grows from practice on a real task with fast feedback, not from courses alone. Pick two of five AI skills that fit your goal.
 > - Spend 30 days building one thing, using it on real work and showing it to 3 people. Judge the result at 3 months, because new routines take about two months to stick.
-> - Audit your week to find tasks AI can draft. The paid part is the last 20%: choosing and fixing.
+> - Audit your week to find tasks AI can draft. Your value is the judgment: choosing, fixing and catching mistakes. How much of a task that is varies.
 > - Have an AI interview you and write your plan, then report back to the same chat weekly.
 
 ## Pick two skills that fit your goal
@@ -104,8 +104,8 @@ Check any course or channel it names before you pay for it. The prompt asks it t
 > [!CHECK] You've listed every task in your week. Which ones get an AI assistant?
 > The ones where AI drafts and you fix, out of three groups: AI does it alone, AI drafts and you fix, AI can't help yet. Time each one before and after.
 
-> [!CHECK] When AI drafts most of a task, why is the last 20% the part people pay for?
-> Choosing, fixing and catching mistakes is the skill. AI writes 50 ads in a minute; knowing which 3 to test is the job.
+> [!CHECK] When AI drafts most of a task, what is the part people pay you for?
+> The judgment: choosing, fixing and catching mistakes. AI writes 50 ads in a minute; knowing which 3 to test is the job. How much of a task that is varies, so don't count on a fixed 20%.
 
 ## Sources
 

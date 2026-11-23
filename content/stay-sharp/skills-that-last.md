@@ -29,7 +29,7 @@ Three yeses means a skill is worth learning. @notkvtwts cites four studies behin
 
 - [PwC, 2026](https://www.prnewswire.com/news-releases/ai-reshapes-global-labour-market-into-two-distinct-paths-rewarding-human-skills-pwc-2026-global-ai-jobs-barometer-302798987.html): jobs asking for AI skills advertise 62% more pay and grew 69%, against 9% for all jobs. That's advertised pay, not what people earn.
 - [MIT, 2023](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714): professionals did writing tasks 40% faster and 18% better with ChatGPT. Their work shifted from drafting to editing.
-- [Stanford, 2026](https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/): workers aged 22 to 25 in jobs where AI replaces tasks are now 19% behind their peers in less exposed jobs. The post quotes 13% from the first 2025 version; the gap has widened since. In jobs where AI assists people, employment held up.
+- [Stanford, 2026](https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/): employment of workers aged 22 to 25 in the jobs most exposed to AI is 19% below where it would be had it grown as fast as in less exposed jobs. That's a growth comparison, not a count of jobs AI replaced. The post quotes 13% from the first 2025 version; the gap has widened since. Separately, the decline sits in jobs where AI replaces tasks; where AI mostly assists people, employment held up.
 - [Lightcast, 2025](https://lightcast.io/resources/blog/beyond-the-buzz-press-release-2025-07-23): 51% of job ads asking for AI skills are outside IT and computer science.
 
 ## Cover every channel at a working level
