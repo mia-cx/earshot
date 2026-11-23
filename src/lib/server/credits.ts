@@ -17,7 +17,8 @@ const posts = new Map<string, string>();
 const research = new Set<string>();
 for (const lesson of course.lessons) {
 	for (const [, handle, id] of lesson.sources.matchAll(X_POST)) posts.set(id, handle);
-	for (const [, url] of lesson.sources.matchAll(LINK)) if (!url.startsWith('https://x.com/')) research.add(documentKey(url));
+	for (const [, url] of lesson.sources.matchAll(LINK))
+		if (!url.startsWith('https://x.com/')) research.add(documentKey(url));
 }
 
 /**
