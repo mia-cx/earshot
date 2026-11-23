@@ -1,6 +1,7 @@
 import { existsSync } from 'node:fs';
 import { error } from '@sveltejs/kit';
 import { course } from '#lib/server/course.ts';
+import { sourcePosts } from '#lib/server/credits.ts';
 
 export const entries = () => course.lessons.map((l) => ({ module: l.module, lesson: l.id.split('/')[1] }));
 
@@ -10,5 +11,5 @@ export const load = ({ params }) => {
 	const { tricks, tldr, task, ...rest } = lesson;
 	// Narration made by research/tools/voice.mjs, when it exists for this lesson.
 	const audio = existsSync(`static/audio/${lesson.id}.mp3`) ? `/audio/${lesson.id}.mp3` : null;
-	return { lesson: rest, audio };
+	return { lesson: rest, audio, basedOn: sourcePosts(lesson.sources) };
 };

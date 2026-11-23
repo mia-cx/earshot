@@ -1,3 +1,11 @@
+<script lang="ts" module>
+	/** Who makes Earshot, as the footer credits her: the author and publisher in structured data. */
+	export const maker = { '@type': 'Person', name: 'Mia', url: 'https://mia.cx' };
+
+	/** Describes the share image, `static/og.png`. */
+	const IMAGE_ALT = 'Earshot: a free marketing course for builders with ADHD';
+</script>
+
 <script lang="ts">
 	import { page } from '$app/state';
 
@@ -7,11 +15,13 @@
 	 * Pages readers use privately (`/review`, `/lab`) pass `noindex` and no description. Every page of
 	 * a staging build is noindex, so staging never competes with the live site in search.
 	 * `crumbs` mirrors the visible trail above the page (module, then lesson) as a BreadcrumbList.
+	 * Lessons pass `type="article"`.
 	 */
 	let {
 		title,
 		description,
 		noindex = false,
+		type = 'website',
 		crumbs = [],
 		schema = [],
 		markdown
@@ -19,6 +29,7 @@
 		title: string;
 		description?: string;
 		noindex?: boolean;
+		type?: 'website' | 'article';
 		crumbs?: { name: string; href: string }[];
 		schema?: object[];
 		/** The page's Markdown copy, linked so an agent reading the page finds it. */
@@ -57,17 +68,21 @@
 		<meta name="robots" content="noindex" />
 	{:else}
 		{#if description}<meta name="description" content={description} />{/if}
+		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href={canonical} />
 		{#if markdown}<link rel="alternate" type="text/markdown" href={markdown} />{/if}
-		<meta property="og:type" content="website" />
+		<meta property="og:type" content={type} />
 		<meta property="og:site_name" content="Earshot" />
+		<meta property="og:locale" content="en_US" />
 		<meta property="og:title" content={title} />
 		{#if description}<meta property="og:description" content={description} />{/if}
 		<meta property="og:url" content={canonical} />
 		<meta property="og:image" content={image} />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content={IMAGE_ALT} />
 		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:image:alt" content={IMAGE_ALT} />
 		{#each all as data, i (i)}
 			{@html json(data)}
 		{/each}
