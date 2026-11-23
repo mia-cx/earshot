@@ -7,15 +7,17 @@ description: Record talks with users and buyers, then reshape each one for every
 > [!TLDR]
 > - Your customers describe their problem better than you can. Record them, and build content from their words.
 > - Record short conversations with users, then turn each into a video, a thread, a LinkedIn post and single-idea posts.
-> - If you sell to businesses, case studies are among the content B2B marketers rate most effective.
+> - If you sell to businesses, B2B marketers rate case studies among their most effective content.
 > - Have a bot read your sales call transcripts for post ideas, each tied to the exact line that sparked it.
 > - Reshape research into each platform's native format instead of posting the same article everywhere.
 
 ## Talk to people instead of preaching
 
-Most brand content is preachy: the company telling you what it thinks. Kunal Gandhi's alternative is to start conversations with everyone around your product (users, partners, other builders) and **turn what they say into content**.
+Most brand content preaches: a company lecturing about what it thinks. Kunal Gandhi's alternative is to talk with the people around your product (users, partners, other builders) and **turn what they say into content**.
 
-You get a steady supply of material, and it comes in your users' words rather than yours. That's the stronger copy. Joanna Wiebe of Copyhackers [mines customers' exact phrases](https://copyhackers.com/2014/10/amazon-review-mining/) for headlines, and in one test a line taken word for word from a customer review got over 400% more clicks than the headline she'd written. A conversation with a bigger brand or person also lends you some of their reach.
+That gives you steady material in your users' own words, which makes stronger copy. Joanna Wiebe of Copyhackers [mines customers' exact phrases](https://copyhackers.com/2014/10/amazon-review-mining/) for headlines; in one test, a line lifted word for word from a customer review got over 400% more clicks than the one she wrote.
+
+Talking with a bigger brand or builder also lends you some of their reach.
 
 > [!TRICK] Run the five-minute conversation chain
 > 1. Record a 5-minute conversation with a user.
@@ -28,15 +30,15 @@ You get a steady supply of material, and it comes in your users' words rather th
 
 ## Write case studies in every format
 
-If you sell to businesses or sell a service, case studies are one of your strongest formats. In the [Content Marketing Institute's 2025 survey](https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research-2025) of 980 B2B marketers, 53% rated case studies and customer stories among their most effective content, second only to video at 58%. A year earlier case studies came first. These are marketers' own ratings, not measured sales.
+If you sell to businesses or offer a service, case studies are one of your strongest formats. In the [Content Marketing Institute's 2025 survey](https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research-2025) of 980 B2B marketers, 53% rated case studies and customer stories among their most effective content, second only to video at 58%. A year earlier case studies came first. These are marketers' own ratings, not measured sales.
 
-Kunal's team at an AI startup wrote over 50, then repackaged each one into different formats for different prospects. Kunal says it sped up sales, with no numbers given.
+Kunal's team at an AI startup wrote over 50 case studies and repackaged each one into different formats for different prospects. Kunal says it sped up sales, with no numbers given.
 
 A case study is a conversation with a customer, written up with the result. The same chain applies: one interview becomes a write-up, a thread and a short clip.
 
 ## Mine your sales calls
 
-Every sales call is a recording of a buyer explaining their problem in their own words. @huntkyle puts that to work with a scheduled bot: it reads each new transcript, pulls post ideas anchored to exact quotes, and coaches the seller on the call itself. The first version ran as two separate agents, one for content ideas and one for coaching.
+Every sales call records a buyer explaining their problem in their own words. @huntkyle puts that to work with a scheduled bot: it reads each new transcript, pulls post ideas anchored to exact quotes, and coaches the seller on the call itself. The first version ran as two separate agents, one for content ideas and one for coaching.
 
 > [!TRICK] Set up the call-notes bot
 > Record every sales call so transcripts land in one folder, then schedule this prompt:

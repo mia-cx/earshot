@@ -8,15 +8,15 @@ description: Build a brand document and a voice document that every draft starts
 > - The best words for your posts already exist: your readers' own. Write them down instead of inventing them.
 > - Before you write posts, get interviewed (by a person or by AI) and keep the transcript as your brand document.
 > - Then compile what makes your favourite writers distinctive into a second document. Learn from voices; don't clone them.
-> - Feed both to AI every time you ideate or draft, so the output sounds like you.
+> - Feed both to AI every time you plan or draft, so the output sounds like you.
 
 ## Write the brand document first
 
-Copywriter Joanna Wiebe's rule is ["Instead of writing your message, steal it"](https://copyhackers.com/2014/10/amazon-review-mining/) from the people you write for. She reads hundreds of reviews and copies the phrases customers use, word for word. For a rehab centre, a headline lifted straight from one Amazon review, "If you think you need rehab, you do", got over 400% more clicks than the original in her test. A brand document does the same job for you: it collects your own story and your reader's exact words before you write.
+The strongest copy borrows your readers' exact words. Copywriter Joanna Wiebe's rule is ["Instead of writing your message, steal it"](https://copyhackers.com/2014/10/amazon-review-mining/): she reads hundreds of reviews and copies customer phrases word for word. In her test for a rehab centre, a headline lifted straight from one Amazon review ("If you think you need rehab, you do") got over 400% more clicks than the original.
 
-Dan Koe's process for a new client starts with a recorded interview. The transcript becomes the brand document, and it goes into the AI every time anyone plans or drafts a post.
+A brand document does that work up front, collecting your story and your reader's exact words before you write. Dan Koe starts every new client with a recorded interview, then feeds the transcript to AI whenever anyone plans or drafts a post.
 
-You can do this alone. Answer the nine sections below, or paste them into Claude and have it interview you one section at a time. Exact words matter more than polish: the way your reader complains to a friend is the language your posts should use.
+You can do this alone. Answer the nine sections below, or paste them into Claude and have it interview you one section at a time. Exact words beat polish: write how your reader complains to a friend.
 
 > [!FORM] Your brand document
 > 1. Who you help: Describe one real person. What does a bad day look like for them? What do they say when they complain to a friend (exact words)? What have they already tried that didn't work?
@@ -31,9 +31,9 @@ You can do this alone. Answer the nine sections below, or paste them into Claude
 
 ## Study the voices that shaped you
 
-Don't try to clone anyone's voice with AI. A copy of someone else is the weakest place to stand: Jenni Romaniuk's [research on distinctive brands](https://contagious.cz/images/IO/jenni-romaniuk-on-distinctive-assets.pdf) finds that a cue you share with others works less well than one only you own. Instead, **write down what makes a voice distinctive**: the core ideas, the turns of phrase with personality, the worldview people rally behind. That document makes drafting easier without making you a copy.
+Don't ask AI to clone someone else's voice. Jenni Romaniuk's [research on distinctive brands](https://contagious.cz/images/IO/jenni-romaniuk-on-distinctive-assets.pdf) finds a cue you share with others works less well than one only you own. Instead, **write down what makes a voice distinctive**: core ideas, turns of phrase with personality, and the worldview people rally behind. That document sharpens your drafts without making you a copy.
 
-Run it on the people you learn from. Also read their top posts on each platform yourself and note the patterns that repeat. If you're not posting yet, list 5 to 10 people who shaped your thinking. Your angle is how you combine and reinterpret them.
+Build it from the people you learn from. Read their top posts on each platform yourself and note repeating patterns. If you aren't posting yet, list 5 to 10 people who shaped your thinking. Your angle is how you combine and reinterpret them.
 
 > [!TRICK] Learn a voice the way Franklin did
 > Benjamin Franklin taught himself to write from essays in *The Spectator*, as he describes in his [*Autobiography*](https://www.gutenberg.org/ebooks/148). It works on posts too:

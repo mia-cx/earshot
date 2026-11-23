@@ -6,14 +6,14 @@ description: End each post with one low-effort ask that fits how well the reader
 
 > [!TLDR]
 > - People act when motivation, ability and a prompt meet. Your call to action is the prompt, so ask for one thing.
-> - Match the ask to how well they know you: strangers follow or share, fans reply or click, warm readers buy. Small yeses lead to bigger ones.
+> - Match the ask to how well they know you: strangers follow or share, regulars reply or click, warm readers buy. Small yeses lead to bigger ones.
 > - Keep the ask low effort, and don't save it only for the end.
 
 ## Readers act when you prompt them
 
-BJ Fogg's [behavior model](https://behaviormodel.org/) says a behaviour happens when motivation, ability and a prompt meet at the same moment. A call to action is the prompt, and Fogg is [blunt about it](https://behaviormodel.org/prompts/): "Without a Prompt, the target behavior will not happen." Ability matters just as much, and Fogg's [fix](https://behaviormodel.org/ability/) is to make the behaviour smaller and simpler.
+Close every post with **one low-effort ask**: the action you picked in *Write for one reader and one action*.
 
-So close every post with **one low-effort ask**: the action you chose in *Write for one reader and one action*.
+BJ Fogg's [behavior model](https://behaviormodel.org/) explains why. A behaviour happens when motivation, ability and a prompt meet at the same moment. Your call to action is the prompt, and Fogg is [blunt about it](https://behaviormodel.org/prompts/): "Without a Prompt, the target behavior will not happen." Ability matters just as much, and his [fix](https://behaviormodel.org/ability/) is to make the step smaller and simpler.
 
 > [!TRICK] Use a call to action for each action
 > ```
@@ -27,9 +27,11 @@ So close every post with **one low-effort ask**: the action you chose in *Write 
 
 ## Match the ask to the funnel stage
 
-Ask for what fits how well the reader knows you. Asking a stranger for a sale is a big jump; asking for a follow is a small one. Robert Cialdini explains why the small step comes first: people like to stay [consistent with what they've already said or done](https://www.influenceatwork.com/7-principles-of-persuasion/). In the classic Drive Safely study, homeowners who had first agreed to put a small card in their window were four times as likely to accept a large, unattractive sign on their lawn.
+Ask for what fits how well the reader knows you. A sale is a big jump for a stranger; a follow is a small step.
 
-These stages are the top, middle and bottom of the funnel from *Map the whole funnel*.
+Small yeses lead to bigger ones. Robert Cialdini notes that people like to stay [consistent with what they've already said or done](https://www.influenceatwork.com/7-principles-of-persuasion/). In the classic Drive Safely study, homeowners who first agreed to put a small card in their window were four times as likely to accept a large, unattractive sign on their lawn.
+
+These stages match the top, middle and bottom of the funnel from *Map the whole funnel*.
 
 | Stage | Who they are | What to ask for |
 | --- | --- | --- |
@@ -39,11 +41,11 @@ These stages are the top, middle and bottom of the funnel from *Map the whole fu
 
 ## Place the ask where people still are
 
-The end of a post isn't the only spot for an ask. Attention drops as people scroll: in Therese Fessenden's [NN/g eyetracking study](https://www.nngroup.com/articles/scrolling-and-attention/), 57% of viewing time on a web page went to the first screen and 74% to the first two. That was measured on web pages, not social feeds, so take the direction from it, not the numbers.
+Don't save your ask only for the end. Attention drops as people scroll: in Therese Fessenden's [NN/g eyetracking study](https://www.nngroup.com/articles/scrolling-and-attention/), 57% of viewing time on a web page went to the first screen and 74% to the first two. That measured web pages, not social feeds, so take the direction from it, not the numbers.
 
-- Place a call to action early too, where the most readers are still reading.
+- Put a call to action early too, while most readers are still with you.
 - Post your call to action as a reply under your best-performing post.
-- Ask readers for something: their advice, or what they want you to write next.
+- Ask readers for input: their advice, or what they want you to write next.
 
 > [!FORM] Your call to action
 > 1. Action: what should they do? Read, reply, share, follow or buy.

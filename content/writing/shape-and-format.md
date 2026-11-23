@@ -1,22 +1,24 @@
 ---
 title: Shape posts for skimmers
 order: 3
-description: Give posts a clear shape and format them so phone readers can scan them.
+description: Structure posts and format them so phone readers can scan them fast.
 ---
 
 > [!TLDR]
-> - Most readers scan first. Short, scannable, plain text tested 124% more usable.
-> - Pick a shape for every post, open with the point and proof, and close with a directed last line.
-> - Format for phones: short paragraphs, one thought per line, the key words first.
+> - Most readers scan first. Short, scannable, hype-free text tested 124% more usable.
+> - Pick a shape for every post, open with the point and proof, and close with a deliberate last line.
+> - Format for phones: short paragraphs, one thought per line, key words first.
 > - Cut every word that doesn't change the meaning.
 
 ## People scan first
 
-Jakob Nielsen's [1997 study at Nielsen Norman Group](https://www.nngroup.com/articles/how-users-read-on-the-web/) found that 79% of people scanned a new page and only 16% read it word by word. Making the text concise, scannable and free of hype made it 124% more usable. Kara Pernice's [later eyetracking work](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/) found people skim the top and left edge in an F shape, on desktop and phones, whenever nothing tells their eyes where to go. Shape and formatting are those cues.
+Most readers don't read top to bottom. In Jakob Nielsen's [1997 Nielsen Norman Group study](https://www.nngroup.com/articles/how-users-read-on-the-web/), 79% of people scanned a new page and only 16% read word by word. Making text concise, scannable and free of hype made it 124% more usable.
+
+Without visual cues, eyes skim the top and left edge in an F shape. Kara Pernice's [eyetracking work at NN/g](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/) saw that on both desktop and phones. Shape and formatting are those cues.
 
 ## Give every post a shape
 
-A post without a structure reads like a ramble. Pick a shape before you write, then open fast and close firmly: Pernice puts the most important point in the first two paragraphs. **The last line is the second most important line** after the hook, in the guide author's view, so never let a post trail off.
+A post without structure reads like a ramble. Pick a shape before you write, open fast and close firmly. Pernice puts the most important points in the first two paragraphs. In the guide author's view, **the last line is the second most important line** after the hook, so never let a post trail off.
 
 > [!TRICK] Pick a shape, open fast, close firm
 > Six shapes:
@@ -49,7 +51,7 @@ Most of your readers are probably on a phone. In Kate Moran's [NN/g study](https
 
 ## Make every word earn its place
 
-George Orwell's rules in [*Politics and the English Language*](https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/) (1946) still hold: never use a long word where a short one will do, cut any word you can, prefer the active voice. The test: if deleting a word doesn't change the meaning, delete it.
+If deleting a word doesn't change the meaning, delete it. George Orwell's rules in [*Politics and the English Language*](https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/politics-and-the-english-language/) (1946) still hold: pick a short word over a long one, cut every word you can, and prefer active voice.
 
 > [!TRICK] Cut and sharpen word by word
 > - Cut filler: really, very, just, actually.
@@ -59,7 +61,7 @@ George Orwell's rules in [*Politics and the English Language*](https://www.orwel
 > - Say "you" more than "I".
 > - Avoid AI tells: em dashes, and the "it's not [X], it's [Y]" pattern.
 
-About "AI tells": [Maurice Jakesch, Jeffrey Hancock and Mor Naaman](https://arxiv.org/abs/2206.07271) found, across 4,600 people, that readers can't reliably spot AI text because they look for the wrong cues. Dropping em dashes avoids a stereotype; plain, specific words are what make a post yours.
+One caveat on "AI tells": across 4,600 people, [Maurice Jakesch, Jeffrey Hancock and Mor Naaman](https://arxiv.org/abs/2206.07271) found readers can't reliably spot AI text because they look for the wrong cues. Skipping em dashes avoids a stereotype; plain, specific words are what make a post yours.
 
 > [!DO] Reformat one post
 > Take your last post or a draft. Break it into lines of one thought each, cut every "really, very, just, actually", and rewrite the last line as a takeaway, a question or a tease. Preview it on your phone and save the new version.

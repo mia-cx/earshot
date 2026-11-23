@@ -12,9 +12,9 @@ description: Pick one platform and post about your real work 3 to 5 times a week
 
 ## One hit is not a brand
 
-The best evidence on this comes from advertising. Les Binet and Peter Field analysed 996 campaigns in the IPA's effectiveness databank for [*The Long and the Short of It*](https://ipa.co.uk/media/5811/long_and_short_of_it_presentation_final.pdf). Short-term pushes gave a big jump in sales that decayed quickly. Brand building gave a smaller jump that decayed slowly and built up over years, and it was what drove growth and profit.
+Short-term spikes fade fast; a brand builds over years. In [*The Long and the Short of It*](https://ipa.co.uk/media/5811/long_and_short_of_it_presentation_final.pdf), Les Binet and Peter Field analysed 996 campaigns in the IPA effectiveness databank. Short-term pushes gave a big jump in sales that decayed quickly. Brand building gave a smaller jump that decayed slowly, built up over years, and drove growth and profit.
 
-A post with a million views followed by posts at a thousand is the short-term kind: the post was fine and nobody cares who wrote it. Dan Koe's aim is **a body of work people want to explore**: they read one post, then go looking for more.
+A post with a million views followed by posts at a thousand is the short-term kind: the post worked, and nobody cares who wrote it. Dan Koe's aim is **a body of work people want to explore**: they read one post, then go looking for more.
 
 The test: if you stopped posting, would anyone ask where you went? A brand's ideas play out over 6 to 12 months of posts, so no single post has to carry everything.
 
@@ -32,7 +32,7 @@ Working alone, you hold all three. *Write down what makes you you* covers the br
 
 When anyone can build something in a weekend, attention goes to people others already know and trust. Writing in public about your real work is the cheapest way to become one of them.
 
-Joe Pulizzi, author of *Content Inc.*, calls the one-platform step "building the base". [In his words](https://www.magnificent.com/magnificent-stuff/content-inc-model), you "focus on one content type, and one platform, and consistently deliver on time." Spreading to other platforms comes later, once the base works.
+Joe Pulizzi, author of *Content Inc.*, calls starting on one platform "building the base". [In his words](https://www.magnificent.com/magnificent-stuff/content-inc-model), you "focus on one content type, and one platform, and consistently deliver on time." Other platforms come later, once the base works.
 
 1. Pick the one platform where the people you want to reach spend time. For most builders that's X or LinkedIn.
 2. Post 3 to 5 times a week about what you built and learned: an agent you made, a task you sped up, your exact setup.
@@ -42,19 +42,19 @@ Joe Pulizzi, author of *Content Inc.*, calls the one-platform step "building the
 The 3 to 5 times a week is @notkvtwts's opinion, not a measured result.
 
 > [!RISK] It takes longer than a few months
-> @notkvtwts says to expect a few months. In Pulizzi's own experience there was "radio silence" for the first six months, saw the first signs between months six and nine, and made no direct revenue until after twelve. Plan for that, so a quiet third month doesn't make you quit.
+> @notkvtwts says to expect a few months. Pulizzi's own experience was slower: "radio silence" for the first six months, the first signs between months six and nine, and no direct revenue until after twelve. Plan for that, so a quiet third month doesn't make you quit.
 
 ## Start from your own account
 
-Early on, a founder posting from their own account drives more growth than a company page or paid campaigns. That's Kunal Gandhi's experience, not a study: Kunal built a marketing team at an AI startup and says the team "achieved a lot more through social media than we thought".
+Early on, a founder posting from their own account drives more growth than a company page or paid campaigns. That's Kunal Gandhi's experience, not a study: after building a marketing team at an AI startup, Kunal says they "achieved a lot more through social media than we thought".
 
-Kunal went further and made social media training part of new-hire onboarding, starting with the CEO. If you have a team, everyone's account is a channel.
+Kunal even made social media training part of new-hire onboarding, starting with the CEO. If you have a team, every account is a channel.
 
 ## Steady beats often
 
 Kunal says post daily; @notkvtwts says 3 to 5 times a week. Pick the number you can keep up for months. **Consistency beats volume**, and you can raise it later.
 
-The data agrees. A [2025 Buffer study](https://buffer.com/resources/consistent-posting-study/) of over 100,000 accounts across 26 weeks found that people who posted in at least 20 of those weeks got about 4.5 times the engagement per post of people who posted in 4 weeks or fewer, and the gain flattened after about 21 weeks. It's a correlation from a company that sells scheduling tools, but it points the same way as Pulizzi: on time, every time, beats a burst.
+The data agrees. A [2025 Buffer study](https://buffer.com/resources/consistent-posting-study/) tracked over 100,000 accounts across 26 weeks. People who posted in at least 20 of those weeks got about 4.5 times the engagement per post of those who posted in 4 weeks or fewer, and the gain flattened after about 21 weeks. It's a correlation from a company that sells scheduling tools, but it points the same way as Pulizzi: on time, every time, beats a burst.
 
 ## Four ways content fails
 

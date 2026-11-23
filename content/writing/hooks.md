@@ -1,11 +1,11 @@
 ---
 title: Make the first line earn the second
 order: 2
-description: Write hooks that get the next line read, using eight proven types.
+description: Write hooks that earn the next line, using five levers and eight hook types.
 ---
 
 > [!TLDR]
-> - A hook has one job: get the next line read. It does that by opening a gap between what the reader knows and what they want to know.
+> - A hook has one job: get the next line read. It opens a gap between what the reader knows and what they want to know.
 > - The gap has to be the right size. Too vague or too complete, and they scroll on.
 > - Lead with what the reader gets. Curiosity alone is the weakest pull.
 > - Write the hook last, in 5 to 10 versions, then cut.
@@ -14,17 +14,17 @@ description: Write hooks that get the next line read, using eight proven types.
 
 The first line doesn't have to sell anything. Its only job is to **get the second line read**.
 
-Psychologist George Loewenstein [described curiosity](https://doi.org/10.1037/0033-2909.116.1.75) as the itch of noticing a gap in what you know. The gap has to be the right size. In [a meta-analysis of 8,977 headline A/B tests](https://doi.org/10.1038/s41598-024-81575-9) from the publisher Upworthy, Marianne Aubin Le Quéré and J. Nathan Matias found that a more specific headline got more clicks when the original was vague, and fewer clicks when the original already said enough. Give enough to make the gap feel worth closing, and keep the answer for the next line.
+It works by opening a right-sized gap. Psychologist George Loewenstein [described curiosity](https://doi.org/10.1037/0033-2909.116.1.75) as the itch of noticing a gap in what you know. Marianne Aubin Le Quéré and J. Nathan Matias tested that in [a meta-analysis of 8,977 headline A/B tests](https://doi.org/10.1038/s41598-024-81575-9) from Upworthy. More specific headlines won more clicks when the original was vague, and fewer clicks when it already said enough. Give enough detail to make the gap worth closing, and save the answer for line two.
 
 - Lead with the most interesting thing. Cut the warm-up. If your best line is at the bottom, move it to the top.
-- Be specific. "I hit 5.8M impressions in my first month" beats "I grew fast". Numbers, names and timeframes beat vague promises, up to the point where the line gives the whole answer away.
+- Be specific. "I hit 5.8M impressions in my first month" beats "I grew fast". Numbers, names and timeframes beat vague promises, until the line gives the whole answer away.
 - Answer "what's in it for me?" Keep it short. Create tension with a question, a surprise or a contradiction.
 
 ## Pull at least one lever
 
 Every working hook pulls at least one of five levers: self-interest, curiosity, novelty, emotion (surprise, fear, FOMO, excitement) or identity ("people like me"). The strongest stack two or three.
 
-The levers aren't equal. John Caples built [*Tested Advertising Methods*](https://openlibrary.org/works/OL3350190W) on ad tests, and in them self-interest and news headlines won. He found curiosity on its own "seldom enough", but a strong addition to a self-interest headline.
+The levers aren't equal. In the ad tests behind [*Tested Advertising Methods*](https://openlibrary.org/works/OL3350190W), John Caples found self-interest and news headlines won. Curiosity alone was "seldom enough", though it strengthened a self-interest headline.
 
 Example: "If you're a founder under 1K followers, this one change doubled my reach." The first half is identity. The second is self-interest plus curiosity.
 
@@ -59,7 +59,9 @@ A hook isn't always the first sentence. In a video it's the first two seconds; i
 
 ## Write the hook last
 
-You don't know what the post promises until it's written. So write the body first, then write many hooks and cut down to one. Caples gave the same advice in 1932: "Write a number of headlines for every advertisement and then select the best one." Upworthy ran over 27,000 A/B tests between 2013 and 2015, many of them pitting headlines for the same story against each other.
+You don't know what a post promises until it's written. Draft the body first, then write several hooks and cut down to one.
+
+In 1932, Caples gave the same advice: "Write a number of headlines for every advertisement and then select the best one." Between 2013 and 2015, Upworthy ran over 27,000 A/B tests, many pitting rival headlines for the same story against each other.
 
 > [!TRICK] Write 5 to 10 hooks, keep one
 > 1. Write the post first, hook last.
