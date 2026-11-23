@@ -27,18 +27,30 @@
 	]);
 
 	let finishing = $state(false);
-	let copied = $state<'Copied' | 'Copy failed' | null>(null);
+	let copied = $state<'copied' | 'failed' | null>(null);
+	let copiedTimer: ReturnType<typeof setTimeout> | undefined;
 
 	/** Copies the lesson's public URL, so a link shared from a mirror still points at the live site. */
 	const copyLink = async () => {
+		const link = data.link;
+		clearTimeout(copiedTimer);
+		let result: 'copied' | 'failed' = 'copied';
 		try {
-			await navigator.clipboard.writeText(data.link);
-			copied = 'Copied';
+			await navigator.clipboard.writeText(link);
 		} catch {
-			copied = 'Copy failed';
+			result = 'failed';
 		}
-		setTimeout(() => (copied = null), 1500);
+		if (link !== data.link) return;
+		copied = result;
+		if (result === 'copied') copiedTimer = setTimeout(() => (copied = null), 1500);
 	};
+
+	// Client navigation reuses this component, so feedback from one lesson must not show on the next.
+	$effect(() => {
+		void data.link;
+		clearTimeout(copiedTimer);
+		copied = null;
+	});
 	let active = $state('');
 	let panel = $state<HTMLElement>();
 
@@ -86,7 +98,7 @@
 	type="article"
 	markdown={data.lesson.markdownHref}
 	image={data.image}
-	imageAlt="{data.lesson.title}, a lesson in {module.title} on Earshot"
+	imageAlt={data.image === '/og.png' ? undefined : `${data.lesson.title}, a lesson in ${module.title} on Earshot`}
 	schema={[
 		{
 			'@context': 'https://schema.org',
@@ -206,9 +218,24 @@
 		{:else}
 			<span class="mr-auto"></span>
 		{/if}
-		<button type="button" class="text-sm text-muted underline" onclick={copyLink} aria-live="polite">
-			{copied ?? 'Copy lesson link'}
-		</button>
+		{#if copied === 'failed'}
+			<!-- The clipboard is blocked here, so hand over the link to copy by hand. -->
+			<label class="flex items-center gap-2 text-sm text-muted">
+				Copy this link:
+				<!-- svelte-ignore a11y_autofocus -->
+				<input
+					readonly
+					autofocus
+					value={data.link}
+					onfocus={(e) => e.currentTarget.select()}
+					class="w-64 rounded border border-line bg-paper px-2 py-1 text-ink"
+				/>
+			</label>
+		{:else}
+			<button type="button" class="text-sm text-muted underline" onclick={copyLink} aria-live="polite">
+				{copied === 'copied' ? 'Copied' : 'Copy lesson link'}
+			</button>
+		{/if}
 		{#if done}
 			<button type="button" class="text-sm text-muted underline" onclick={() => progress.set(data.lesson.id, false)}>
 				Mark as not done
