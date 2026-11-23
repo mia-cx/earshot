@@ -1,12 +1,12 @@
+import { STORAGE_PREFIX } from './storage.ts';
+
 /**
  * A backup is one JSON file holding every saved `earshot:*` key in this browser (done lessons,
  * the review deck, answers, settings), so the reader can move their progress to another browser.
  */
-const PREFIX = 'earshot:';
-
 type Saved = Record<string, string>;
 
-const ours = (entries: [string, unknown][]) => entries.filter(([key]) => key.startsWith(PREFIX));
+const ours = (entries: [string, unknown][]) => entries.filter(([key]) => key.startsWith(STORAGE_PREFIX));
 
 /** The backup file's text for what's saved, e.g. `exportBackup({ ...localStorage })`. */
 export const exportBackup = (saved: Saved) =>

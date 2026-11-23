@@ -78,8 +78,6 @@ export type Module = {
 export type Course = { modules: Module[]; lessons: Lesson[] };
 
 /** A lesson without its body, for navigation. */
-export type LessonLink = Pick<Lesson, 'id' | 'href' | 'module' | 'number' | 'title' | 'summary' | 'minutes'> & {
-	checks: number;
-};
+export type LessonLink = Pick<Lesson, 'id' | 'href' | 'module' | 'number' | 'title' | 'summary' | 'minutes'>;
 
 export type Outline = (Omit<Module, 'lessons'> & { lessons: LessonLink[] })[];

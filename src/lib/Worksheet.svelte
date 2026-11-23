@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { answers } from './answers.ts';
 	import type { Form, Question } from './course.ts';
+	import { downloadFile } from './download.ts';
 
 	/**
 	 * A lesson's `[!FORM]` worksheet: one answer field per question, saved in this browser as the
@@ -32,13 +33,7 @@
 		].join('\n\n')}\n`;
 	};
 
-	const download = () => {
-		const link = document.createElement('a');
-		link.href = URL.createObjectURL(new Blob([markdown()], { type: 'text/markdown' }));
-		link.download = `${form.id}.md`;
-		link.click();
-		URL.revokeObjectURL(link.href);
-	};
+	const download = () => downloadFile(`${form.id}.md`, markdown(), 'text/markdown');
 
 	const escape = (text: string) =>
 		text.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] ?? c);

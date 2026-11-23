@@ -1,9 +1,11 @@
 <script lang="ts">
+	import { writeJson } from './storage.ts';
+
 	/**
 	 * Text size, spacing and font for this reader. Each choice is a `data-*` attribute on <html> that
 	 * `layout.css` reads; it's saved in this browser and applied before first paint by app.html.
 	 */
-	const KEY = 'earshot:reader';
+	const STORAGE_NAME = 'reader';
 
 	const SETTINGS = [
 		{
@@ -45,11 +47,7 @@
 
 	const save = () => {
 		Object.assign(document.documentElement.dataset, chosen);
-		try {
-			localStorage.setItem(KEY, JSON.stringify(chosen));
-		} catch {
-			// Storage blocked: the settings last for this visit.
-		}
+		writeJson(STORAGE_NAME, chosen);
 	};
 </script>
 
