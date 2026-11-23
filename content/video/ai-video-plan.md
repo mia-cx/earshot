@@ -4,15 +4,19 @@ order: 3
 description: Set up a director agent and get a shootable story and shot list before any image.
 ---
 
-> [!TLDR]
+> [!TLDR] Catch every error at the cheapest stage, and have a reviewer other than the writer check the work.
 > - Catch errors in text first, then in images, then in video. Each stage costs more than the one before.
-> - One coding agent directs, an image model draws, a video model animates. You approve direction and spend.
+> - One coding agent directs, an image model draws, a video model animates. A separate agent reviews. You approve direction and spend.
 > - Write a story AI can shoot: a one-sentence point, the best image first, episodic shots, no known failure shots.
 > - Storyboard every shot with angle, motion and a colour table, then check the sketches in greyscale.
 
 ## Fix errors where they're cheapest
 
 Editing a prompt is free. Regenerating an image is cheap. Regenerating video is billed per second. So **every check belongs as early as possible**.
+
+Barry Boehm and Victor Basili made this rule famous in software: [a bug found after delivery often costs 100 times more to fix than one found in design](https://www.cs.umd.edu/projects/SoftEng/ESEG/papers/82.78.pdf), though only about 5 times more in small projects. Tim Menzies and colleagues later [checked 171 software projects and found no consistent effect](https://arxiv.org/abs/1609.04886). In AI video the rule holds for a plainer reason: the price list. Every rerolled second is billed again.
+
+The second rule is who checks. Jie Huang and colleagues found that [language models struggle to correct their own reasoning without outside feedback](https://arxiv.org/abs/2310.01798), and sometimes get worse. Boehm and Basili report that peer review catches a median of about 60% of defects. So the reviewer is a separate agent that never saw the chat.
 
 The workflow in this lesson and the next comes from @EianLu, who attributes a very low reroll rate to these rules (his own experience):
 
@@ -90,6 +94,8 @@ A short film needs a point you can say in one sentence, its most striking image 
 
 **Prefer episodic stories**, where no shot has to match the one before. Continuous stories break most easily. Then let a fresh agent, one that has never seen your chat, review the result.
 
+Write around what video models get wrong. OpenAI says its Sora model [may struggle with the physics of a complex scene, with cause and effect, and with telling left from right](https://openai.com/index/sora/). The list in the prompt below is @EianLu's, from his own failed shots.
+
 > [!TRICK] Develop the story, then have it reviewed
 > Story prompt:
 >
@@ -127,6 +133,8 @@ A short film needs a point you can say in one sentence, its most striking image 
 ## Storyboard angle, motion and colour
 
 Shot design and colour decide quality more than plot does. Each shot needs a different angle from the last, something that moves, and a reason for any camera move. Lock the palette before the first image, and check it in greyscale: if people merge into the background, the contrast is too low.
+
+The prompt's 38% / 62% rule for heads is the author's. Stephen Palmer's lab at Berkeley found viewers [prefer a single front-facing subject at the centre](https://palmerlab.berkeley.edu/pdf/PalmerGardner&Wickens-1.pdf), and a subject facing sideways placed so it faces into the frame. Use the off-centre lines for people in profile, looking into the space you left them.
 
 > [!TRICK] Turn the story into a shot list
 > If you have a reference film, the agent studies it frame by frame first. Otherwise it designs to the rules in the prompt.
@@ -171,4 +179,9 @@ Once the shot list and palette are approved, move on to *Generate AI shots witho
 
 ## Sources
 
+- [Barry Boehm and Victor R. Basili, *Software Defect Reduction Top 10 List* (2001)](https://www.cs.umd.edu/projects/SoftEng/ESEG/papers/82.78.pdf)
+- [Tim Menzies et al., *Are Delayed Issues Harder to Resolve?* (2016)](https://arxiv.org/abs/1609.04886)
+- [Jie Huang et al., *Large Language Models Cannot Self-Correct Reasoning Yet* (2024)](https://arxiv.org/abs/2310.01798)
+- [OpenAI: Sora (2024)](https://openai.com/index/sora/)
+- [Stephen E. Palmer, Jonathan S. Gardner and Thomas D. Wickens, *Aesthetic Issues in Spatial Composition* (2008)](https://palmerlab.berkeley.edu/pdf/PalmerGardner&Wickens-1.pdf)
 - [@EianLu: AI video workflow with Claude Code, Codex and Seedance (original in Chinese)](https://x.com/EianLu/status/2118317430665613741)
