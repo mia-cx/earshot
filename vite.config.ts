@@ -22,6 +22,9 @@ export default withSvartzHost(
 					runes: ({ filename }) => (filename.split(/[/\\]/).includes('node_modules') ? undefined : true)
 				},
 				adapter: adapter(),
+				// Every page's CSS goes in its HTML, so the first page paints without waiting on stylesheets.
+				// Later pages load client-side and fetch their CSS as files.
+				inlineStyleThreshold: Infinity,
 				// The public origin, for canonical URLs, the sitemap and robots.txt in prerendered pages.
 				// `pnpm build` fails without it; see the sitemap route.
 				paths: { origin: process.env.SITE_URL }
