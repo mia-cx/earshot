@@ -5,12 +5,14 @@ description: Pick two AI skills, build on real work for 30 days, and judge it at
 ---
 
 > [!TLDR]
-> - Pick two of five AI skills that fit your goal. Learn them on real problems, not courses alone.
-> - Spend 30 days building one thing, using it on real work and showing it to 3 people. Judge the result at 3 months.
+> - Skill grows from practice on a real task with fast feedback, not from courses alone. Pick two of five AI skills that fit your goal.
+> - Spend 30 days building one thing, using it on real work and showing it to 3 people. Judge the result at 3 months, because new routines take about two months to stick.
 > - Audit your week to find tasks AI can draft. The paid part is the last 20%: choosing and fixing.
 > - Have an AI interview you and write your plan, then report back to the same chat weekly.
 
 ## Pick two skills that fit your goal
+
+[Anders Ericsson's research on expert performance](https://gwern.net/doc/psychology/writing/1993-ericsson.pdf) found that people improve through deliberate practice: a task built to stretch you, quick feedback on how you did, and many repeats of the same kind of task. A real problem gives you all three. A course on its own rarely does.
 
 Two skills that complement each other beat one skill alone. @notkvtwts names five to choose from: AI workflow design, context engineering, AI automation and agents, AI-assisted development, and content and distribution.
 
@@ -31,9 +33,11 @@ Two skills that complement each other beat one skill alone. @notkvtwts names fiv
 >
 > Then keep going, and judge it only after 3 months.
 
+Why 3 months: in [a UCL study by Phillippa Lally](https://www.bps.org.uk/research-digest/how-form-habit), people repeating one new daily behaviour took 66 days on average before it felt automatic, and some took far longer. Missing a single day barely set them back.
+
 ## Find the tasks AI should draft
 
-AI does roughly 80% of a task fast. The skill people pay for is the last 20%: choosing, fixing and catching mistakes. The author's example: AI writes 50 ads in a minute, and the skill is knowing which 3 to test and why the other 47 won't work.
+The author says AI does roughly 80% of a task fast, and the skill people pay for is the last 20%: choosing, fixing and catching mistakes. The split is a rough guess, and it varies by task. In [the MIT writing study](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714), ChatGPT shifted people's time from drafting to editing. In [a Harvard and BCG experiment](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf), AI made consultants far better on some tasks and worse on one that looked just as hard. That's why you audit task by task. The author's example: AI writes 50 ads in a minute, and the skill is knowing which 3 to test and why the other 47 won't work.
 
 > [!TRICK] Audit your week in three groups
 > 1. List every task you do in a normal week.
@@ -103,5 +107,9 @@ Check any course or channel it names before you pay for it. The prompt asks it t
 
 ## Sources
 
+- [Ericsson, Krampe and Tesch-Römer, *The Role of Deliberate Practice in the Acquisition of Expert Performance* (1993)](https://gwern.net/doc/psychology/writing/1993-ericsson.pdf)
+- [BPS Research Digest: How to form a habit (Lally et al., 2010)](https://www.bps.org.uk/research-digest/how-form-habit)
+- [MIT News: Study finds ChatGPT boosts worker productivity for some writing tasks (Noy and Zhang, 2023)](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714)
+- [Dell'Acqua et al., *Navigating the Jagged Technological Frontier* (2023)](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf)
 - [@notkvtwts: five AI skills, the 30-day plan, the week audit and the learning-plan prompt](https://x.com/notkvtwts/status/2115810173830750575)
 - [@notkvtwts: reposting the same guide](https://x.com/notkvtwts/status/2116886564802576703)

@@ -12,7 +12,9 @@ description: Choose skills that AI amplifies, and keep the ones you need to supe
 
 ## Learn skills AI amplifies
 
-The skills that pay are the ones where AI makes someone who already knows a field faster. Skills AI can do without you are losing value. Run any skill you're considering through **three questions**:
+The skills that pay are the ones where AI makes someone who already knows a field faster. Skills AI can do without you are losing value. [PwC's 2026 analysis of over a billion job ads](https://www.prnewswire.com/news-releases/ai-reshapes-global-labour-market-into-two-distinct-paths-rewarding-human-skills-pwc-2026-global-ai-jobs-barometer-302798987.html) splits jobs the same way. Where AI frees experts to spend more time on judgement, job openings grew twice as fast and pay rose 42% faster than where AI lets non-experts do the work.
+
+Run any skill you're considering through **three questions**:
 
 > [!FORM] Your skill test
 > 1. Which three skills are you considering?
@@ -21,12 +23,12 @@ The skills that pay are the ones where AI makes someone who already knows a fiel
 > 4. Does it need knowledge of a field, like sales, health or law? Yes or no for each skill.
 > 5. Which skill got three yeses?
 
-If it passes all three, it's worth learning. The author, @notkvtwts, cites these studies to back the split (not checked here):
+If it passes all three, it's worth learning. The author, @notkvtwts, cites these studies to back the split. They hold up, and one gap has grown since:
 
-- PwC, across over a billion job ads: jobs asking for AI skills pay 62% more and grew 69%, against 9% for all jobs.
-- MIT: writing tasks done 40% faster and 18% better with AI.
-- Stanford, 2025: workers aged 22 to 25 in jobs AI can do alone dropped 13% relative to other jobs.
-- Lightcast: over half of job ads asking for AI skills are outside tech.
+- [PwC, 2026](https://www.prnewswire.com/news-releases/ai-reshapes-global-labour-market-into-two-distinct-paths-rewarding-human-skills-pwc-2026-global-ai-jobs-barometer-302798987.html): jobs asking for AI skills advertise 62% more pay and grew 69%, against 9% for all jobs. That's advertised pay, not what people earn.
+- [MIT, 2023](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714): professionals did writing tasks 40% faster and 18% better with ChatGPT. Their work shifted from drafting to editing.
+- [Stanford, 2026](https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/): workers aged 22 to 25 in jobs where AI replaces tasks are now 19% behind their peers in less exposed jobs. The post quotes 13% from the first 2025 version; the gap has widened since. In jobs where AI assists people, employment held up.
+- [Lightcast, 2025](https://lightcast.io/resources/blog/beyond-the-buzz-press-release-2025-07-23): 51% of job ads asking for AI skills are outside IT and computer science.
 
 ## Cover every channel at a working level
 
@@ -47,7 +49,9 @@ These two don't conflict. Rule: go broad across channels, go deep in the one fie
 
 ## Keep the skills supervision needs
 
-Skills you stop using fade faster than you expect, and checking AI's work needs exactly those skills. Anthropic's research on its own staff calls this the paradox of supervision: "supervising Claude requires the very coding skills that may atrophy from AI overuse."
+Skills you stop using fade faster than you expect. [A review of 53 studies on skill decay](https://gwern.net/doc/psychology/spaced-repetition/1998-arthur.pdf) found large losses after a year without practice, and thinking skills faded faster than physical ones.
+
+Checking AI's work needs exactly those skills. [Lisanne Bainbridge spotted this in 1983](https://ckrybus.com/static/papers/Bainbridge_1983_Automatica.pdf) in factories: automation leaves people to watch the machine and take over when it fails, but someone who only watches slowly stops being an expert. [Anthropic's research on its own staff](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic) found the same and calls it the paradox of supervision: "supervising Claude requires the very coding skills that may atrophy from AI overuse."
 
 When you hit something beyond your understanding, learn it properly instead of pasting in a one-line explanation. For how to tell when you've stopped checking, see *Use AI without surrendering your judgment*.
 
@@ -72,6 +76,13 @@ When you hit something beyond your understanding, learn it properly instead of p
 
 ## Sources
 
+- [PwC: 2026 Global AI Jobs Barometer (press release)](https://www.prnewswire.com/news-releases/ai-reshapes-global-labour-market-into-two-distinct-paths-rewarding-human-skills-pwc-2026-global-ai-jobs-barometer-302798987.html)
+- [MIT News: Study finds ChatGPT boosts worker productivity for some writing tasks (Noy and Zhang, 2023)](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714)
+- [Brynjolfsson, Chandar and Chen, *Canaries in the Coal Mine* (Stanford Digital Economy Lab, revised 2026)](https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/)
+- [Lightcast: *Beyond the Buzz* (2025)](https://lightcast.io/resources/blog/beyond-the-buzz-press-release-2025-07-23)
+- [Arthur, Bennett, Stanush and McNelly, *Factors That Influence Skill Decay and Retention* (1998)](https://gwern.net/doc/psychology/spaced-repetition/1998-arthur.pdf)
+- [Lisanne Bainbridge, *Ironies of Automation* (1983)](https://ckrybus.com/static/papers/Bainbridge_1983_Automatica.pdf)
+- [Anthropic: How AI is transforming work at Anthropic (2025)](https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic)
 - [@notkvtwts: the three-question skill test and the studies behind it](https://x.com/notkvtwts/status/2115810173830750575)
 - [@notkvtwts: reposting the same guide](https://x.com/notkvtwts/status/2116886564802576703)
 - [@kunalvg: generalist skills and learning the tech, quoting @saintniko](https://x.com/kunalvg/status/2042111501608391080)

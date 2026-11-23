@@ -5,11 +5,14 @@ description: Spot underpricing from your close rate, margin per client and hours
 ---
 
 > [!TLDR]
+> - In most businesses a minority of customers earns all the profit and a few lose money. Revenue reports hide which ones.
 > - If you close more than about 40% of sales calls, you're probably too cheap.
 > - Count margin per client, with your own hours at what it would cost to replace you.
-> - Compare hours delivered with hours contracted, then reprice, rescope or drop the worst clients.
+> - Compare hours delivered with hours contracted, then fix your process, reprice or rescope, and drop a client only last.
 
 ## A high close rate is a price signal
+
+Most businesses rarely revisit their price. Patrick Campbell, whose company ProfitWell sold pricing software, [says its research found](https://www.mindtheproduct.com/a-guide-to-unlocking-growth-with-optimized-pricing/) companies spend 10 hours or less a year on pricing. He doesn't publish the method, so treat it as a vendor's claim.
 
 Closing most of your sales calls feels like success. Past a point, **it means your price is too low**. @huntkyle's rule of thumb: above about 40%, you're probably losing 20% margin on every sale.
 
@@ -17,7 +20,9 @@ That number is his, unverified, and he sells consulting to agencies. But the che
 
 ## Count margin per client, not revenue
 
-A billing report shows revenue. It hides which clients cost you money. In Hunt's audits, 10% to 20% of an agency's clients sit at close to or below zero gross margin once the owner's hours are counted.
+A billing report shows revenue. It hides which clients cost you money. [Robert Kaplan at Harvard Business School](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability), who co-developed activity-based costing, found that in nearly every company studied, 15% to 20% of customers produce all of the profit or more, and the least profitable few wipe out part of it. His method needs two numbers: what an hour of each person's time costs, and how many hours each customer takes.
+
+In Hunt's audits, 10% to 20% of an agency's clients sit at close to or below zero gross margin once the owner's hours are counted. That's his figure, but it fits Kaplan's pattern.
 
 Three numbers fix that view: gross margin per client, with your hours priced at what it would cost to replace you; churn graded against a benchmark; and a 13-week forecast instead of a flat line.
 
@@ -36,11 +41,18 @@ Three numbers fix that view: gross margin per client, with your hours priced at 
 > Ask me first before you: send an invoice, chase a payment, or move money.
 > ```
 >
-> The churn grades and the 50% / 60% margin lines are Hunt's benchmarks.
+> The churn grades and the 50% / 60% margin lines are Hunt's benchmarks for agencies.
 
 ## Find the clients you're subsidising
 
 Scope creep is a pricing problem you can't see without a time log. Across three agencies, Hunt found $18K to $20K of work being delivered on $8K to $10K retainers (his anecdote).
+
+Kaplan's order for fixing an unprofitable customer:
+
+1. Fix your own process first. Customers shouldn't pay for your inefficiencies.
+2. Reprice: every extra you offer should at least cover its cost.
+3. Rescope or sell them more of what's profitable.
+4. Drop the client only as a last resort.
 
 > [!TRICK] Run a 90-day scope check
 > ```
@@ -62,8 +74,10 @@ The bot sorts and suggests. Talking to the client stays your job.
 > Reprice, rescope or sunset that client. A bot can sort and suggest, but talking to the client stays your job.
 
 > [!CHECK] Why count gross margin per client, with your own hours priced at what it would cost to replace you?
-> Revenue reports hide which clients cost you money. Counting your hours reveals the ones near or below zero margin.
+> In most businesses a few customers earn all the profit and some lose money, and revenue reports hide which. Counting your hours reveals the ones near or below zero margin.
 
 ## Sources
 
+- [Robert S. Kaplan, *A Balanced Scorecard Approach to Measure Customer Profitability* (HBS Working Knowledge, 2005)](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability)
+- [Patrick Campbell, *A Guide to Unlocking Growth with Optimized Pricing* (2020)](https://www.mindtheproduct.com/a-guide-to-unlocking-growth-with-optimized-pricing/)
 - [@huntkyle: running business operations with bots, including close rate, month-end and scope checks](https://x.com/huntkyle/status/2118086670918750341)

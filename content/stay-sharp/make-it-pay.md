@@ -8,13 +8,13 @@ description: Package what you've learned into an offer, and price it by value, n
 > - Busy founders and creators pay one AI-equipped person to run their content as a creative director.
 > - An agent that already saves you hours every week can be sold to businesses with the same task.
 > - Sell outbound only to companies whose offer already sells: high price, proof in a case study.
-> - When AI cuts your delivery time, keep the price and take the margin.
+> - Clients pay for a result that's hard to get. When AI cuts your delivery time, keep the price and take the margin, for as long as the result stays hard to get elsewhere.
 
 ## Be the creative team a busy founder lacks
 
 Founders and creators who have no time for content will pay one person who uses AI well to act as their creative director, for a fraction of what a team costs. Dan Koe describes two versions: be your own creative team (personal brand, audience, digital products, email list), or be one for clients.
 
-The gap Koe sees in clients: most founders still post "announcement" content and don't know how influence is built online. Agencies Koe spoke to say AI moved the human job to **reviewing and rewriting drafts**. One said it now takes 4 hours a day instead of 12.
+The gap Koe sees in clients: most founders still post "announcement" content and don't know how influence is built online. Agencies Koe spoke to say AI moved the human job to **reviewing and rewriting drafts**. One said it now takes 4 hours a day instead of 12. The direction matches [an MIT experiment with 444 professionals](https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1_0.pdf): with ChatGPT, their time moved from rough drafting to ideas and editing, and the work got done faster.
 
 Koe puts the range at $10k to $75k a month across 1 to 3 clients, "if you're good at this and practice", and warns it is not a quick win. Koe also sells Eden, a tool for exactly this work, so weigh the numbers accordingly. The skills come from *Write down what makes you you* and *Plan six months of ideas in one sitting*.
 
@@ -46,6 +46,9 @@ Clients pay for the result, not your time. When AI shrinks the work, keep the pr
 
 Kyle Hunt's example: an agency audit sold at $5,000 used to take 5 hours by hand. After feeding AI every past audit transcript plus the frameworks used, it takes the AI about 30 minutes, then 30 minutes of human checking. The price stayed at $5,000. That's one self-reported example from someone who sells agency consulting.
 
+> [!RISK] The margin lasts only while the result is scarce
+> If AI lets anyone produce the same result, buyers stop paying for it. [PwC's 2026 analysis of job ads](https://www.prnewswire.com/news-releases/ai-reshapes-global-labour-market-into-two-distinct-paths-rewarding-human-skills-pwc-2026-global-ai-jobs-barometer-302798987.html) found pay rose 42% faster in roles where AI frees experts for judgement than in roles where it lets non-experts do the work. Sell the judgement, not the hours AI now does.
+
 For the checking half, see *Use AI without surrendering your judgment*. See *Read your pricing from your numbers* for when to raise prices.
 
 > [!FORM] Your offer
@@ -68,6 +71,8 @@ For the checking half, see *Use AI without surrendering your judgment*. See *Rea
 
 ## Sources
 
+- [Shakked Noy and Whitney Zhang, *Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence* (MIT, 2023)](https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1_0.pdf)
+- [PwC: 2026 Global AI Jobs Barometer (press release)](https://www.prnewswire.com/news-releases/ai-reshapes-global-labour-market-into-two-distinct-paths-rewarding-human-skills-pwc-2026-global-ai-jobs-barometer-302798987.html)
 - [@thedankoe: the one-person creative team](https://x.com/thedankoe/status/2117664712532123680)
 - [@mogulinfluence: sharing Dan Koe's article](https://x.com/mogulinfluence/status/2118351989511749841)
 - [@notkvtwts: build a scheduled agent, then resell it](https://x.com/notkvtwts/status/2115810173830750575)
