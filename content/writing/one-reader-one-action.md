@@ -22,7 +22,7 @@ The "right person" is the reader you pictured in *Say what you are, for whom, ag
 
 One idea per post is easier to remember and easier to pass on. If you have three ideas, you have three posts.
 
-It also helps the feed. X's [published SimClusters code](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/simclusters_v2/README.md) groups accounts into about 145,000 communities by who follows whom, then places each post by who likes it. A post about three topics draws likes from mixed communities and fits none of them well. That last step is one author's reading of the code, not a test. *How X picks what people see* covers the feed in detail.
+It also helps the feed. X's [published SimClusters code](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/simclusters_v2/README.md) groups accounts into about 145,000 communities by who follows whom, then places each post by who likes it. One author reads this to mean a post about three topics fits none of them well. The code lets a post span several communities, so that's a guess, not a tested result. *How X picks what people see* covers the feed in detail.
 
 Every post needs three things: a specific reader, a clear takeaway and a specific call to action.
 
