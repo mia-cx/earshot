@@ -6,27 +6,29 @@ description: Diagnose a lost AI prompt, make one fix, and rerun to see if it mov
 
 > [!TLDR]
 > - Run AI visibility as an experiment: same prompts, one change, rerun. In a controlled study, adding evidence to a page raised its share of AI answers by 30 to 40%.
-> - When you don't appear, find which of four causes applies before you write anything new.
-> - AI leans on other people's pages. Sort every source it cites into own, claim, earn or contest; each needs a different action.
+> - When AI skips you, find which of four causes applies before writing anything new.
+> - AI leans on other people's pages. Sort every cited source into own, claim, earn or contest; each needs a different action.
 
 ## Change one thing, then rerun
 
-**AI visibility improves through small, measured experiments, not through publishing more.** [Pranjal Aggarwal and colleagues](https://arxiv.org/abs/2311.09735) ran exactly this test (KDD 2024): they rewrote source pages one method at a time and measured how much of each page the AI answer used. Adding quotations, statistics or cited sources raised visibility by 30 to 40%. Keyword stuffing didn't help, and the biggest gains went to pages ranked lower in search. Their engine and queries were a benchmark, not your market, so rerun your own prompts to check.
+**AI visibility improves through small, measured experiments, not by publishing more.** [Pranjal Aggarwal and colleagues](https://arxiv.org/abs/2311.09735) tested this directly (KDD 2024): they rewrote source pages one method at a time and measured how much of each page the AI answer used.
 
-Keep a fixed set of real buying prompts (see *Track the questions buyers ask AI*) so every check is comparable. Answers vary from run to run, so rerun each prompt several times before you call a change.
+Adding quotations, statistics or cited sources raised visibility by 30 to 40%, with the biggest gains on pages ranked lower in search. Keyword stuffing didn't help. Their engine and queries were a benchmark, not your market, so rerun your own prompts to check.
+
+Keep a fixed list of real buying prompts (see *Track the questions buyers ask AI*) so before and after stay comparable. Because answers vary from run to run, rerun each prompt several times before calling a change.
 
 > [!TRICK] The experiment loop
 > 1. Run your saved prompts in each AI separately: ChatGPT, Google's AI answers, and so on.
 > 2. Record brands recommended and sources cited in separate columns.
-> 3. Find the prompts that name competitors but not you.
-> 4. Read the sources cited again and again across those answers, to see what evidence they rely on.
+> 3. Find prompts that name competitors but not you.
+> 4. Read the sources cited repeatedly across those answers to see what evidence they rely on.
 > 5. Make one specific change: improve your own page, or pitch the cited page.
 > 6. Rerun the same prompts. Track visibility and activated users.
 > 7. Double down on what moved.
 
 ## Diagnose before you create
 
-When you lose a prompt, the reflex is to write a new article. Most lost prompts don't need one. Work out the cause first:
+When you lose a prompt, the reflex is to write a new article. Most lost prompts don't need one. Find the cause first:
 
 | Cause | Sign | Fix |
 | --- | --- | --- |
@@ -35,22 +37,22 @@ When you lose a prompt, the reflex is to write a new article. Most lost prompts 
 | Crawl or index problem | The page exists but AI and Google can't reach it | Fix it technically (see *Get your site found at all*). Allow OAI-SearchBot and PerplexityBot |
 | Third-party problem | AI draws on Reddit threads, review sites, articles and directories that barely mention you | Work those sources (next section) |
 
-The crawl cause is written down by the engines themselves. [OpenAI says](https://developers.openai.com/api/docs/bots) sites that block OAI-SearchBot "will not be shown in ChatGPT search answers". [Perplexity](https://docs.perplexity.ai/guides/bots) asks you to allow PerplexityBot. [Google](https://developers.google.com/search/docs/appearance/ai-features) only links pages that are indexed and eligible for a snippet.
+The engines spell out the crawl rules themselves. [OpenAI says](https://developers.openai.com/api/docs/bots) sites blocking OAI-SearchBot "will not be shown in ChatGPT search answers". [Perplexity](https://docs.perplexity.ai/guides/bots) asks you to allow PerplexityBot. [Google](https://developers.google.com/search/docs/appearance/ai-features) links only pages that are indexed and eligible for a snippet.
 
-Granola, the AI meeting-notes company, ran this diagnosis on every lost prompt. [Discovered Labs](https://discoveredlabs.com/case-studies/granola), the agency that did the work, reports that from January to August 2026 monthly new active users from AI search rose 4,600%, non-branded AI citation rate 558%, non-branded mention rate 739%, and organic sessions 134%. The citation and mention rates come from the agency's own tool. Read them as direction, not promise.
+Granola, the AI meeting-notes company, ran this diagnosis on every lost prompt. [Discovered Labs](https://discoveredlabs.com/case-studies/granola), the agency that did the work, reports that from January to August 2026 monthly new active users from AI search rose 4,600%, non-branded AI citation rate 558%, non-branded mention rate 739%, and organic sessions 134%. Those citation and mention rates come from the agency's own tool, so read them as direction, not a promise.
 
 > [!DIAGRAM] ai-loop
 
 > [!TRICK] Read the searches the assistant runs
-> Assistants turn your question into several hidden web searches. [OpenAI](https://help.openai.com/en/articles/9237897-chatgpt-search) says ChatGPT rewrites it into "one or more targeted queries", and Google calls the same move "query fan-out". About ten per question is TheoAGI's estimate. In ChatGPT or Claude, open the "searching" step under the answer to read them. Each search is a page you need, or a site you need to be on.
+> Assistants break your question into hidden web searches. [OpenAI](https://help.openai.com/en/articles/9237897-chatgpt-search) says ChatGPT rewrites it into "one or more targeted queries"; Google calls the same move "query fan-out". TheoAGI estimates about ten per question. In ChatGPT or Claude, open the "searching" step under the answer to read them. Each search is a page you need, or a site you need to be on.
 
 ## Sort the sources AI trusts
 
-For a third-party problem, the question is not "how do we get more backlinks?" It is "which sources shape this specific recommendation, and why are competitors better represented there?"
+For a third-party problem, stop asking "how do we get more backlinks?" Ask "which sources shape this specific recommendation, and why are competitors better represented there?"
 
-**You need both your own pages and other people's.** [Mahe Chen and colleagues at the University of Toronto](https://arxiv.org/abs/2509.08919) found AI search has "a systematic and overwhelming bias" toward earned, third-party sources over brands' own sites. [An audit by Dmitrij Żatuchin](https://arxiv.org/abs/2606.25787) of 131,512 citations in answers about brands found 82.4% pointed away from the brand's sites. Both studies observe patterns; neither tests what causes a citation.
+**You need both your own pages and other people's.** [Mahe Chen and colleagues at the University of Toronto](https://arxiv.org/abs/2509.08919) found AI search shows "a systematic and overwhelming bias" toward earned, third-party sources over brands' own sites. In [Dmitrij Żatuchin's audit](https://arxiv.org/abs/2606.25787) of 131,512 citations in answers about brands, 82.4% pointed away from the brand's sites. Both studies are observational; neither tests what causes a citation.
 
-TheoAGI quotes one vendor's dataset (44,070 citations across 10 brands): 85% went to third-party pages and under 4% to the brand's own site, but brands whose own site got cited were named far more often. That dataset isn't published, so treat the second half as one vendor's observation.
+TheoAGI quotes an unpublished vendor dataset (44,070 citations across 10 brands): 85% went to third-party pages and under 4% to the brand's own site, yet brands whose own site got cited were named far more often. Treat the second half as one vendor's observation.
 
 > [!TRICK] Own, claim, earn, contest
 > Label each source AI cites for a buyer question by who controls it:

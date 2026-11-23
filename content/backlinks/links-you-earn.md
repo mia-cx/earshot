@@ -12,66 +12,68 @@ description: Earn links by handing writers the list entry, number, fix or visual
 
 ## Make the writer's page better
 
-**Every earned link answers the writer's question: "what does this give my readers?"** [Brin and Page built PageRank](https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/) on academic citation counting: a link is one page citing another. Google's own test for content asks whether it gives ["original information, reporting, research, or analysis"](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) and whether you'd recommend it to a friend. A pitch that hands over a finished improvement is easy to say yes to.
+**Every earned link answers one question for the writer: "what does this give my readers?"** [Brin and Page built PageRank](https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/) on academic citation counting: a link is one page citing another. Google's own content check asks whether a page offers ["original information, reporting, research, or analysis"](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) and whether you'd recommend it to a friend. Hand a writer a finished improvement and saying yes is easy.
 
-Most tactics below come from one SaaS builder's ranked list of 69 link tactics (the author sells a backlink tool, Distribb). The top tier: getting into roundups, publishing statistics, and answering journalists. Recovering links and building free tools come next; visuals, video and case studies rank lower.
+Most tactics below come from one SaaS builder's ranked list of 69 link tactics (the author sells Distribb, a backlink tool). Top tier: roundups, original statistics, and journalist requests. Next: recovering links and building free tools. Visuals, video and case studies sit lower.
 
 ## Get into the lists buyers read
 
-AI search leans on third-party pages. [Mahe Chen and colleagues at the University of Toronto](https://arxiv.org/abs/2509.08919) compared AI engines with Google and found a "systematic and overwhelming bias" toward earned, third-party sources over brands' own sites. And "best X for Y" roundups are the single most-cited kind of page in [one vendor's data](https://arxiv.org/abs/2606.20065), at about a fifth of all AI citations. Being on those lists puts you in front of buyers and in AI answers at once.
+AI search leans on third-party pages. Comparing AI engines with Google, [Mahe Chen and colleagues at the University of Toronto](https://arxiv.org/abs/2509.08919) found a "systematic and overwhelming bias" toward earned, third-party sources over brands' own sites.
+
+In [one vendor's data](https://arxiv.org/abs/2606.20065), "best X for Y" roundups were the single most-cited page type, at about a fifth of all AI citations. Being on those lists puts you in front of buyers and inside AI answers at once.
 
 > [!RISK] "Mostly listicles" is too strong
-> One builder says the cited sources for buying queries are mostly listicles. In the data above they're the largest single type, not the majority, and that study is correlational, from a vendor's own clients. Check your own queries before you bet on roundups alone.
+> One builder says cited sources for buying queries are mostly listicles. In the data above they're the largest single type, not the majority, and that study is correlational, from a vendor's own clients. Check your own queries before betting on roundups alone.
 
 > [!TRICK] Earn a spot in a cited roundup
-> 1. Search your buying query on Google and in ChatGPT. Open the cited sources (both show them). Also find competitors' roundups in your category.
+> 1. Search your buying query on Google and ChatGPT. Open the cited sources (both show them) and find competitors' roundups in your category.
 > 2. Collect the site owners' emails. An agent can find them for you.
-> 3. Find a buyer need the list misses.
-> 4. Send a tested feature or a fresh example that covers that need.
-> 5. Include the exact text you propose, so the author can paste it in. Keep the pitch to 120 to 180 words, with your evidence.
-> 6. Follow up once after a week. If there's still no answer, stop.
+> 3. Spot a buyer need the list misses.
+> 4. Send a tested feature or fresh example that covers that need.
+> 5. Include the exact text you propose so the author can paste it straight in. Keep the pitch to 120 to 180 words, with your evidence.
+> 6. Follow up once after a week. Still no answer, stop.
 > 7. Later, check your entry and send updates so details stay accurate.
 >
 > Paying for a spot is a separate route with separate risks: see *Tricks with a price tag*.
 
 > [!RISK] Cold email law
-> Emailing site owners is cold email, and it must follow CAN-SPAM (US) and GDPR (EU) rules. The [FTC's CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) says the law "makes no exception for business-to-business email": include your postal address and a working opt-out. See *Fix cold email by its symptoms* for the mechanics.
+> Emailing site owners is cold email, so CAN-SPAM (US) and GDPR (EU) rules apply. The [FTC's CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) states the law "makes no exception for business-to-business email": include your postal address and a working opt-out. See *Fix cold email by its symptoms* for the mechanics.
 
 ## Give writers evidence to cite
 
-Writers need sources. If you publish the number nobody else has, they link to you. AI engines quote the same evidence: in [Pranjal Aggarwal and colleagues' GEO study](https://arxiv.org/abs/2311.09735) (KDD 2024), adding statistics, quotations or cited sources to a page raised its visibility in AI answers by 30 to 40%, while stuffing in keywords didn't help.
+Writers need sources. Publish the number nobody else has and they link to you. AI engines quote the same evidence: in [Pranjal Aggarwal and colleagues' GEO study](https://arxiv.org/abs/2311.09735) (KDD 2024), adding statistics, quotations or cited sources raised a page's visibility in AI answers by 30 to 40%. Keyword stuffing didn't help.
 
 > [!TRICK] Publish statistics people can cite
 > - Pick a question your buyers need answered.
-> - Publish original stats on it, and explain the sample and method so each number is checkable.
-> - Write each finding as a complete sentence that can be quoted on its own.
+> - Publish original stats on it, explaining the sample and method so each number is checkable.
+> - Write each finding as a standalone sentence anyone can quote.
 > - Keep the research URL stable as you update findings, so links survive.
-> - Link the research to the relevant product pages.
+> - Link the research to your relevant product pages.
 
 > [!TRICK] Answer journalist requests
 > - Platforms: Qwoted, Featured, SourceBottle, ResponseSource, Dot Star Media (some are paid).
 > - Show real experience in your profile.
 > - Filter requests by topic and deadline; answer only ones you know.
-> - Lead with the direct answer, so the reporter has a usable quote.
+> - Lead with the direct answer so the reporter gets a usable quote.
 > - Add an original number or firsthand example, plus a link to your research page so they can verify it.
 > - Log requests and replies so you never pitch the same one twice.
 >
 > Neither publication nor a link is guaranteed.
 
 > [!TRICK] Build a free calculator
-> Find a calculation your buyers repeat. Have Claude build the calculator, then test it with normal and unusual inputs. Give it a permanent URL and offer it to relevant guides as a shortcut for their readers. If it fits, also publish it on developer platforms: npm, browser extension stores, WordPress plugins.
+> Find a calculation your buyers repeat. Have Claude build the calculator, then test it with normal and unusual inputs. Give it a permanent URL and offer it to relevant guides as a shortcut for their readers. Where it fits, publish it on developer platforms too: npm, browser extension stores, WordPress plugins.
 
 ## Fill the gaps in other people's pages
 
-Existing articles already have readers. Find what they're missing and offer it.
+Existing articles already have readers. Find what's missing and hand it over.
 
-- **Mine competitors' links.** Look at which competitor pages get linked, and read the sentence around each link to learn why the author added it. Create the evidence those publishers lack, then pitch that specific missing answer.
+- **Mine competitors' links.** See which competitor pages earn links, then read the sentence around each link to learn why the author added it. Create the evidence those publishers lack and pitch that specific missing answer.
 - **Replace broken resources.** Guides naming tools that have shut down are the same opening.
   1. In a backlink tool, filter a competitor's pages to those returning 404 that still have backlinks.
   2. Read the archived page to see what readers expected.
   3. Publish a matching replacement on your site.
   4. Email each linking editor the broken URL, where it sits on their page, and your replacement.
-- **Offer a visual.** Find text-heavy guides and offer a graphic for one named section. Ask before you make it, use the author's checked facts, and send the image with embed code that credits you.
+- **Offer a visual.** Find text-heavy guides and offer a graphic for one named section. Ask before making it, use the author's checked facts, and send the image with embed code that credits you.
 - **Offer a video.** Find guides missing a demo and pitch a short video for one section. Record it only after the author agrees, then send it with suggested source-credit wording.
 
 ## Collect links you're already owed

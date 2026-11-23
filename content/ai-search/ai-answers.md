@@ -5,18 +5,18 @@ description: Build a list of buyer questions and log who AI recommends for each 
 ---
 
 > [!TLDR]
-> - AI rarely gives the same answer twice, so visibility is how often you appear across many runs of a buyer question, not your spot in one answer.
+> - AI rarely gives the same answer twice. Measure visibility by how often you appear across many runs of a buyer question, not your spot in one answer.
 > - Map the decisions buyers make before paying, and turn each into a Google keyword and an AI prompt.
 > - Track Google and AI separately: they pick sources differently.
-> - Log which brands and URLs each AI cites, every week, and judge success by customers.
+> - Log brands and URLs each AI cites weekly, and judge success by customers.
 
 ## Start from buying decisions
 
-**Your unit of measurement is a question a buyer asks before choosing, asked many times.** [Rand Fishkin at SparkToro and Patrick O'Donnell at Gumshoe](https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/) had 600 volunteers run 12 prompts nearly 3,000 times in ChatGPT, Claude and Google's AI. ChatGPT and Google's AI had under a 1 in 100 chance of naming the same brands twice, yet strong brands still appeared in most runs. Fishkin's conclusion: how often you appear across many runs is a fair measure, and a "ranking position in AI" isn't. The study isn't peer reviewed, and O'Donnell sells AI tracking.
+**Your unit of measurement is a question a buyer asks before choosing, asked many times.** "What's the best meeting notes app for a sales team?" tells you more than the keyword "meeting notes app", because it carries the decision.
 
-"What's the best meeting notes app for a sales team?" tells you more than the keyword "meeting notes app", because it carries the decision.
+You ask it many times because AI answers drift. [Rand Fishkin at SparkToro and Patrick O'Donnell at Gumshoe](https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/) had 600 volunteers run 12 prompts nearly 3,000 times in ChatGPT, Claude and Google's AI. ChatGPT and Google's AI had under a 1 in 100 chance of naming the same brands twice, yet strong brands still appeared in most runs. Fishkin's conclusion: how often you appear across many runs is a fair measure, and a "ranking position in AI" isn't. The study isn't peer reviewed, and O'Donnell sells AI tracking.
 
-List the decisions people make before buying something like yours. Take the wording from your inbox, sales calls and reviews, not your imagination. Turn each one into two things: a Google keyword and an AI prompt. Then check where you show up for both.
+List the decisions people make before buying something like yours. Take the wording from your inbox, sales calls and reviews, not your head. Turn each one into a Google keyword and an AI prompt, then check where you show up for both.
 
 For each question, ask:
 
@@ -26,7 +26,7 @@ For each question, ask:
 
 ## Track Google and AI separately
 
-A page can climb in Google and barely move in ChatGPT. AI mentions can rise while organic traffic stays flat. [Mahe Chen and colleagues at the University of Toronto](https://arxiv.org/abs/2509.08919) found AI engines pick their sources very differently from Google, and from each other. If you assume good SEO means good AI visibility, you'll miss both kinds of gap, so keep two sets of numbers.
+A page can climb in Google and barely move in ChatGPT, or gain AI mentions while organic traffic stays flat. [Mahe Chen and colleagues at the University of Toronto](https://arxiv.org/abs/2509.08919) found AI engines pick sources very differently from Google, and from each other. Assume good SEO means good AI visibility and you'll miss both gaps, so keep two sets of numbers.
 
 Search Console won't split them for you: Google counts [AI Overviews and AI Mode traffic](https://developers.google.com/search/docs/appearance/ai-features) inside the ordinary "Web" report.
 
@@ -34,9 +34,9 @@ The two public examples in this module come from Granola (meeting notes) and Ram
 
 ## Count customers, not mentions
 
-Visibility is a signal. The test is whether qualified visitors and customers arrive, so track new active users from AI search next to your citation counts.
+Visibility is a signal. The test is whether qualified visitors and customers arrive, so track new active users from AI search beside citation counts.
 
-Analytics undercounts AI. **Add "How did you hear about us?" to your signup form.** One founder compared the answers with analytics: the referrer credited Google with 3.4 times more signups than the customers themselves did.
+Analytics undercounts AI. **Add "How did you hear about us?" to your signup form.** One founder compared those answers with analytics: the referrer credited Google with 3.4 times more signups than customers themselves did.
 
 > [!TRICK] Measure AI search for free
 > Skip paid visibility trackers at first. From TheoAGI's playbook:
@@ -54,14 +54,14 @@ Analytics undercounts AI. **Add "How did you hear about us?" to your signup form
 > [!TRICK] A weekly citation log
 > One marketing engineer's routine:
 > 1. Write a script that asks ChatGPT, Claude and Perplexity 100 real buyer questions every Monday and saves the answers.
-> 2. Log which brands and which URLs each answer cites.
-> 3. Read the cited pages. The author observes they share three traits: a direct answer in the first paragraph, original numbers, and a clear author. Only the numbers are tested: in the [GEO study](https://arxiv.org/abs/2311.09735), adding statistics, quotations or sources raised a page's share of AI answers by 30 to 40%.
+> 2. Log which brands and URLs each answer cites.
+> 3. Read the cited pages. The author observes they share three traits: a direct answer in the first paragraph, original numbers, and a clear author. Only the numbers are tested: in the [GEO study](https://arxiv.org/abs/2311.09735), adding statistics, quotations or cited sources raised a page's share of AI answers by 30 to 40%.
 > 4. Rewrite your 10 most important pages to match.
 > 5. Add `llms.txt` (a file that tells AI what your site is about) and schema markup.
 >
-> Skip step 5 unless you have another reason for it. Google says its AI answers need "no special schema.org structured data" and no "AI text files". Jeremy Howard's [`llms.txt` proposal](https://llmstxt.org/) is for agents reading your docs, mostly coding agents, and claims no effect on AI citations. Add structured data only where it describes what the page already shows. For the first-paragraph rule, see *Improve the pages that already rank*.
+> Skip step 5 unless you have another reason for it. Google says its AI answers need "no special schema.org structured data" and no "AI text files". Jeremy Howard's [`llms.txt` proposal](https://llmstxt.org/) is for agents reading your docs, mostly coding agents, and claims no effect on AI citations. Add structured data only to describe what the page already shows. For the first-paragraph rule, see *Improve the pages that already rank*.
 
-You don't need the script on day one. A spreadsheet and ten questions asked by hand gives you a baseline; automate once the list stops changing.
+Skip the script on day one. Ten questions asked by hand in a spreadsheet give a baseline; automate once the list stops changing.
 
 > [!DO] Start your question sheet
 > Write 10 real buyer questions in a spreadsheet. Ask each one in ChatGPT and fill two columns: brands named, URLs cited.

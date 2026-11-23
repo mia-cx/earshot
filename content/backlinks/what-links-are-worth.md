@@ -5,24 +5,26 @@ description: Score a link prospect, then aim it at a page it can actually move.
 ---
 
 > [!TLDR]
-> - A link counts because a person might follow it. Google's ranking began as a model of people clicking links.
-> - Chase a link when it reaches your buyers, you genuinely qualify, and a real person could click it.
-> - Domain Rating (DR) is a third-party estimate and a tiebreaker, not the reason.
-> - Point your few links at pages already ranking 10 to 30. Google treats mass directory submissions and automated links as spam.
+> - A link counts because a person might follow it. Google's ranking started as a model of people clicking links.
+> - Chase a link when it reaches your buyers, you genuinely qualify, and a person could click it.
+> - Domain Rating (DR) is a third-party estimate: a tiebreaker, not the reason.
+> - Point your few links at pages already ranking 10 to 30. Skip mass directory submissions and automated links: Google treats both as spam.
 
 ## Judge a link by who could click it
 
-**A link is a path for a person before it is a signal for Google.** [Sergey Brin and Lawrence Page's 1998 paper](https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/) describes PageRank as "a model of user behavior": a surfer keeps clicking links, and the chance they land on your page is its score. A page's vote is split across all its links, so one link from a focused page counts for more than one link among hundreds. A [later Google patent](https://patents.google.com/patent/US7716225B1/en) weights each link by how likely a real person is to click it, by its position, its words and its fit with the page. A patent isn't proof Google uses it, but [Google still names PageRank](https://developers.google.com/search/docs/appearance/ranking-systems-guide) as a core ranking system.
+**A link is a path for a person before it is a signal for Google.** [Sergey Brin and Lawrence Page's 1998 paper](https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/) describes PageRank as "a model of user behavior": a surfer keeps clicking links, and the chance they land on your page is its score. Each page splits its vote across all its links, so one link on a focused page counts for more than one buried among hundreds.
 
-So ask whether people who could buy from you visit that site, and whether they would ever click your link there. A useful listing, a tool people keep referencing, or a real editorial mention outweighs a hundred placeholder pages that exist only to hold a URL.
+A [later Google patent](https://patents.google.com/patent/US7716225B1/en) weights each link by how likely a person is to click it, using its spot on the page, its wording and its topic fit. A patent isn't proof Google uses it, though [Google still names PageRank](https://developers.google.com/search/docs/appearance/ranking-systems-guide) as a core ranking system.
 
-[Domain Rating is Ahrefs' own score](https://help.ahrefs.com/en/articles/1409408-what-is-domain-rating-dr), ranking a site's backlinks against others in Ahrefs' database. Ahrefs says it correlates with rankings and warns against judging a site by DR alone. Google doesn't use it. High DR on a site your buyers never visit is worth little.
+Ask whether your buyers visit that site and whether they would click your link. A useful listing, a tool people keep referencing, or a real editorial mention beats a hundred placeholder pages built only to hold a URL.
+
+[Domain Rating is Ahrefs' own score](https://help.ahrefs.com/en/articles/1409408-what-is-domain-rating-dr), comparing a site's backlinks against others in Ahrefs' database. Ahrefs says it correlates with rankings, yet warns against judging a site by DR alone. Google doesn't use it. High DR on a site your buyers never visit is worth little.
 
 > [!DIAGRAM] link-value
 
 ## Score every prospect on five things
 
-Before you spend time on a site, score it on these. If it fails relevance or eligibility, stop there, whatever its DR.
+Score every site on these five checks before you spend time on it. If it fails relevance or eligibility, stop there, whatever its DR.
 
 | Check | Question to ask |
 | --- | --- |
@@ -32,22 +34,24 @@ Before you spend time on a site, score it on these. If it fails relevance or eli
 | Placement | Once accepted, does the page actually show your URL, and is it clickable? |
 | Audience | Do real visitors arrive here who could become customers? |
 
-Placement catches a common trap: some sites accept your listing but show no link, or restrict clickable links to paid plans. Check a live listing before you submit. Where you choose the wording, use [descriptive link text](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) that says what your page is, not a string of keywords.
+Placement catches a common trap: some sites accept your listing without showing a link, or restrict clickable links to paid plans. Check a live listing before you submit.
+
+When you choose the wording, use [descriptive link text](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) that says what your page is, not a string of keywords.
 
 ## Aim links at pages close to page one
 
-You will only earn a few links, so spend them where they move something. Pages Google already ranks a little are the best targets: Google already shows them for your searches, they just need a push. A brand-new page with no rankings gets far less from the same link.
+You'll only earn a few links, so spend them where they move something. Pages Google already ranks a little are your best targets: Google already shows them for your searches, and they just need a push. A brand-new page with no rankings gets far less from the same link.
 
 > [!TRICK] Send links to your page-two pages
 > 1. In Google Search Console, open Performance and look at pages by average position.
-> 2. Pick the pages sitting at positions 10 to 30 (bottom of page one to page three).
+> 2. Pick pages sitting at positions 10 to 30 (bottom of page one to page three).
 > 3. Point new links at those pages, not your home page.
-> 4. Aim for 2 to 5 links a month. Free sources count: directories, podcast guest spots, partner pages, answering journalist requests.
+> 4. Aim for 2 to 5 links a month. Free sources count: directories, podcast guest spots, partner pages, journalist requests.
 >
 > One agency owner's report, not a measured study. Before linking, make the page itself complete: see *Improve the pages that already rank*.
 
 > [!RISK] Mass submission is link spam
-> Google's spam policies name low-quality directory links, automated link creation and manipulative link schemes as link spam. Since 2022, Google's SpamBrain system has neutralised such links, so they pass nothing, and a pattern of them can earn a manual action. Use backlink lists to find a few places that fit, never as a batch to submit everywhere.
+> Google's spam policies name low-quality directory links, automated link creation and manipulative link schemes as link spam. Since 2022, Google's SpamBrain system has neutralised them so they pass nothing, and a pattern of them can earn a manual action. Use backlink lists to pick a few places that fit, never as a batch to submit everywhere.
 
 > [!DO] Pick your five link targets
 > Open Search Console, find five pages ranking between positions 10 and 30, and paste their URLs into a doc titled "Link targets". If your site isn't in Search Console yet, set it up first (see *Get your site found at all*).
