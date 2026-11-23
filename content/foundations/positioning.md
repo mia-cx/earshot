@@ -27,14 +27,15 @@ Write yours in one document before you market anything. If you can't answer a qu
 > 6. If not us, what would users choose instead? Include doing nothing.
 > 7. What are we against? Name a status quo, a bad habit or an incumbent way of doing things.
 
-Answer in Dunford's order. Each answer builds on the one before:
+Answer questions 1 to 6 in Dunford's order. Each answer builds on the one before:
 
 1. Question 6: the alternatives buyers really consider.
 2. Questions 3 and 4: what you have that they don't.
 3. Question 1: what that does for buyers.
 4. Question 5: who cares most.
 5. Question 2: the category that makes it obvious.
-6. Question 7: what you're against.
+
+Question 7 isn't part of Dunford's method. It's this course's messaging exercise, covered in *Name the enemy* below.
 
 For a deeper version, work through Dunford's [positioning exercise](https://hackernoon.com/obviously-awesome-a-product-positioning-exercise-604e8ced841e).
 

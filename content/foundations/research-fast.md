@@ -8,7 +8,7 @@ description: Build a first market hypothesis with AI, then check it against what
 > - Feed an AI model raw market material and ask questions that force it to think, not summarise.
 > - Check it by asking buyers what they did, not what they think.
 > - Reviews already say why people buy and complain, in words you can reuse.
-> - A competitor's oldest running ads are probably the ones that pay for themselves.
+> - A competitor's oldest running ads are a shortlist of ideas to test, not proof they pay.
 
 ## Load the AI with raw material
 
@@ -66,7 +66,7 @@ Read reviews at scale instead of guessing. One author says most teams have read 
 
 ## Sort competitors' ads oldest first
 
-A competitor's longest-running ads are probably the ones paying for themselves. Pull their live Meta ads and sort oldest first.
+A competitor's longest-running ads make a good shortlist of ideas to test. The source author reads a long run as a sign the ad pays for itself; the data can't show that. Pull their live Meta ads and sort oldest first.
 
 Meta's public Ad Library shows each ad's copy and start date; the source also pulls landing pages using Virlo, a tool its author co-founded. In the EU, the [Digital Services Act](https://www.eu-digital-services-act.com/Digital_Services_Act_Article_39.html) requires large platforms to publish run dates and keep each ad listed for a year after it stops.
 
@@ -85,7 +85,7 @@ Meta's public Ad Library shows each ad's copy and start date; the source also pu
 > From customer reviews of your product and your competitors. They already say why people buy and complain, in phrasing you can reuse word for word.
 
 > [!CHECK] Why should you sort a competitor's ads oldest first?
-> The ads a competitor keeps running longest are probably paying for themselves, since few teams keep paying for a loser. Run time is a lead to test, not proof: the library shows dates, not results.
+> To shortlist ideas worth testing. A long run hints that the ad is worth keeping, but the library shows dates, not spend or results, so treat it as a lead, not proof.
 
 ## Sources
 

@@ -6,7 +6,7 @@ description: Name each funnel stage for your product and define what "done" look
 
 > [!TLDR] Marketing runs from first contact to payment. Retention proves the product works; new buyers grow it.
 > - Marketing covers the whole path: acquisition, onboarding, engagement, retention, monetisation.
-> - Fix retention until it holds steady, then put most of your effort into winning new users.
+> - Fix retention until enough users stay to pay for growth. From there, growth comes mainly from new users.
 > - Define "onboarded" as one event: the first action that gives the user value.
 > - Decide on day one how you'll make money.
 
@@ -46,7 +46,9 @@ Use Google Analytics for the website and a product analytics tool for what happe
 
 Fix leaks before you pour in traffic. Brian Balfour, who led growth at HubSpot, calls a [retention curve that flattens](https://brianbalfour.com/essays/hubspot-growth-framework-100m) the best sign of product-market fit: a steady share of users keeps getting value week after week. If your curve keeps dropping towards zero, every new user leaks out.
 
-Once retention holds, shift your focus to acquisition. Byron Sharp and colleagues at the Ehrenberg-Bass Institute found that brands grow and shrink mainly through how many new buyers they win, not how many they keep ([Answering critics](https://marketingscience.info/news-and-insights/answering-critics)). The source author's advice to spend most of your time on retention fits a leaky product. Once the curve flattens, growth comes mainly from new users.
+A flat curve isn't enough on its own: it can flatten at a level too low to pay for growth. Check that the share who stay can cover what it costs to win each user.
+
+Byron Sharp and colleagues at the Ehrenberg-Bass Institute found that brands grow and shrink mainly through how many new buyers they win, not how many they keep ([Answering critics](https://marketingscience.info/news-and-insights/answering-critics)). Neither Balfour nor Sharp names a moment to switch. The source author's advice to spend most of your time on retention fits a leaky product; once enough users stay, growth comes mainly from winning new ones.
 
 The same author says products now have short shelf lives (an opinion, not a measured trend). And decide how you'll charge from day one: free with no revenue model isn't sustainable.
 
@@ -66,8 +68,8 @@ The same author says products now have short shelf lives (an opinion, not a meas
 > [!CHECK] You're defining "onboarded" for a note-taking app. What should the definition be?
 > One countable event: the first action that gives the user value, such as saving their first note.
 
-> [!CHECK] Your retention curve has flattened: a steady share of users keeps coming back. Where should most of your effort go now?
-> Into winning new users. A flat curve shows the product works. Ehrenberg-Bass research found growth comes mainly from new buyers, not from keeping more of the ones you have.
+> [!CHECK] Your retention curve has flattened: a steady share of users keeps coming back. Where will most of your growth come from now?
+> From new users, as long as the share who stay can pay for winning them. Ehrenberg-Bass research found growth comes mainly from new buyers, not from keeping more of the ones you have.
 
 ## Sources
 
