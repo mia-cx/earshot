@@ -5,23 +5,25 @@ description: Write LinkedIn DMs from your competitors' ads and test them before 
 ---
 
 > [!TLDR]
-> - A problem several competitors pay to advertise this month is one your buyers already care about. Open your DM with it.
-> - Find it free in the LinkedIn Ad Library, then have Claude turn the ads into three short DMs.
-> - Send each DM to 50 people, keep the winner, write three new versions of it, then scale.
-> - An agent can do the research and drafting. You read and approve every send.
+> - Open with the buyer's problem, not your product. If several competitors pay to advertise a problem this month, buyers already care about it.
+> - Find it free in the LinkedIn Ad Library, then ask Claude to turn the ads into three short DMs.
+> - Test the three on a slice of your list before you scale, and treat a small test as a hint, not a verdict.
+> - Let an agent draft while you read and approve every send, because LinkedIn's terms ban automated messaging and scraping.
 
 ## Start from a problem someone paid to advertise
 
-Every LinkedIn ad is a message a company paid to show buyers. When **three competitors all pay to talk about the same problem**, that problem is on your buyers' minds right now. That makes it the best first line for a cold DM: you're not guessing what they care about.
+Rob Fitzpatrick's first rule in [*The Mom Test*](https://www.momtestbook.com/) is to [talk about their life instead of your idea](https://learningleader.com/robfitzpatrick/). A cold DM that leads with your product asks a stranger to care about you. One that leads with a problem they already have is about them. Competitors' ads tell you which problem to pick.
 
-The method comes from @DinScales26, who sells a done-for-you LinkedIn outreach service and a sending tool. It's written for agencies sending DMs on a client's behalf; the steps below are adapted for your own product. The post shows no results, so test it on a small slice first.
+Every LinkedIn ad is a message a company paid to show buyers. When **three competitors all pay to talk about the same problem**, that problem is on your buyers' minds right now. Use it as your opening line instead of guessing what they care about.
+
+This method comes from @DinScales26, who sells a done-for-you LinkedIn outreach service and a sending tool. They wrote it for agencies messaging on a client's behalf, and the steps below adapt it for your own product. The post shows no results, so test it on a small slice first.
 
 > [!TRICK] Mine the LinkedIn Ad Library
-> 1. Go to linkedin.com/ad-library. No account needed.
+> 1. Go to linkedin.com/ad-library, which LinkedIn [describes as publicly available](https://www.linkedin.com/help/linkedin/answer/a1517918). It holds ads run since June 2023.
 > 2. List the 3 companies you lose deals to. Search each as the advertiser, with the date filter set to the last 30 days.
 > 3. For each ad, note three things: the problem it opens with, the offer (a demo, a free audit, a report), and the job title it's written for ("for heads of sales").
-> 4. Find the problem all 3 companies advertise. Copy the text of 5 to 10 ads about it into one doc.
-> 5. Paste the doc into Claude. Tell it what you sell and one result you got for a customer. Ask for 3 DMs, 2 lines each, under 20 words. Tell it to keep the problem from the ads and drop the ad wording: a DM that reads like an ad gets ignored.
+> 4. Find the problem all 3 companies advertise, and gather your notes on the 5 to 10 ads about it. Keep the notes in your own words; don't copy the ad text.
+> 5. Give your notes to Claude. Tell it what you sell and one result you got for a customer. Ask for 3 DMs, 2 lines each, under 20 words, about that problem in plain words, because a DM that reads like an ad gets ignored.
 >
 > Each DM comes out in this shape:
 >
@@ -29,63 +31,67 @@ The method comes from @DinScales26, who sells a done-for-you LinkedIn outreach s
 > we helped [company like theirs] fix [the problem from the ads] in [how long]. want the breakdown?
 > ```
 
-Read every DM before it goes out. Claude can't always tell when a line sounds robotic, and you only get one first message per person.
+Read every DM before it goes out. Claude can miss when a line sounds robotic, and you only get one first message per person.
 
 ## Test small, then scale the winner
 
-Don't send your best guess to your whole list. Split-test on a slice first.
+Don't send your best guess to the whole list. Split-test on a slice first.
 
 > [!TRICK] Three DMs, 150 people, one week
 > 1. In LinkedIn Sales Navigator, filter by your buyer's job title, industry and company headcount.
 > 2. Send each of your 3 DMs to 50 people (150 total).
-> 3. After a week, take the DM with the most replies and write 3 new versions of it.
-> 4. Send those to the rest of your list (the author's example: the remaining 850 of 1,000).
+> 3. After a week, compare replies. If one DM clearly beats the others, write 3 new versions of it.
+> 4. Test those on fresh slices of your list before you send to the rest (the author's example sends to the remaining 850 of 1,000). If the counts are close, call it a tie and keep testing.
 
-> [!RISK] LinkedIn restricts accounts that look automated
-> LinkedIn limits how many invitations and messages you can send each week, and restricts accounts that behave like automation. Stay inside the weekly limits and send at a human pace.
+> [!RISK] 50 sends can't pick a winner
+> At a 10% reply rate, 50 sends gives you about 5 replies per DM, and 5 against 8 can be pure luck. Evan Miller's [rule of thumb for A/B tests](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) says telling 10% from 15% apart takes about 576 sends per version. Decide the sample size before you start, and don't stop early because one looks ahead. With a small list, keep a DM only if it wins by a wide margin, and keep testing.
+
+> [!RISK] LinkedIn restricts accounts that send too much
+> LinkedIn [limits how many invitations you can send](https://www.linkedin.com/help/linkedin/answer/a550555) and restricts accounts that hit the limit, typically for a week. It doesn't publish the number, so send at a human pace.
 
 ## Hand the research to an agent, keep the send
 
-Once the method works by hand, an agent can repeat the research every week. It needs three tools, each connected through an MCP (the connector that lets an agent use a tool on its own).
+Once the method works by hand, an agent can do the thinking every week while you do the collecting and the sending. The author's setup connects an ad scraper and a sending tool through MCP (the connector that lets an agent use a tool on its own); both break LinkedIn's terms (see below), so this version keeps those two steps with you.
 
 > [!TRICK] A weekly DM research agent
-> **Connections:**
-> - **Apify:** searches the LinkedIn Ad Library and pulls every ad a company runs.
-> - **Firecrawl:** reads your website and case studies, so the agent knows what you sell and your results.
-> - **A sending tool with an MCP:** handles DMs, follow-ups and one inbox for replies. The author names their own, Eaglesend.
+> **You:** read competitors' new ads in the LinkedIn Ad Library each week and write down, in your own words, the problems they open with. Don't paste their ad text into the tool; LinkedIn's terms also limit copying other people's content. Send every DM yourself in LinkedIn.
 >
-> Add them to an agent such as Claude Code and give it this job:
-> 1. Pull new ads every week.
+> **The agent** (such as Claude Code, with Firecrawl to read your website and case studies, so it knows what you sell and your results):
+> 1. Read this week's notes.
 > 2. Find the problems that repeat.
-> 3. Rewrite the ads as DMs.
+> 3. Turn each problem into a DM.
 > 4. Write new versions of the best DM.
 > 5. Send you the drafts.
->
-> You read each draft and say yes or no before anything goes out.
 
-> [!RISK] Automated messaging breaks LinkedIn's terms
-> LinkedIn's terms prohibit third-party automation of messaging. Keep a human approval step on every send, and let the agent do research and drafting only.
+> [!RISK] Automated messaging and scraping break LinkedIn's terms
+> Section 8.2 of LinkedIn's [User Agreement](https://www.linkedin.com/legal/user-agreement) bans bots that "send or redirect messages", along with scripts, crawlers and browser plugins that scrape or copy the site. That covers an automated sending tool and can cover a scraper pulling the Ad Library. Keep a human approval step on every send, and consider collecting the ads by hand.
 
-For how to keep an agent from doing damage on its own, see *Keep bots from doing damage*.
+To keep an agent from doing damage on its own, see *Keep bots from doing damage*.
 
 > [!FORM] Your competitor ads
 > 1. If not us, what would users choose instead? Include doing nothing.
 > 2. Which 3 companies do you lose deals to?
-> 3. Paste the text of 5 of their ads from the last 30 days. Under each, note the problem it opens with, the offer and the job title it's written for.
+> 3. For 5 of their ads from the last 30 days, note in your own words the problem each opens with, the offer and the job title it's written for.
 > 4. Which problem do all 3 companies advertise?
 
 > [!DO] Pull your competitors' ads
 > Open linkedin.com/ad-library and search the 3 companies you lose deals to (last 30 days). Fill in your competitor ads above, then download them.
 
 > [!CHECK] When an agent researches and drafts your LinkedIn DMs, which step stays yours?
-> Approving every send. LinkedIn's terms prohibit third-party automation of messaging, so the agent only researches and drafts.
+> Collecting the ads and sending the DMs. LinkedIn's User Agreement bans scraping and bots that send messages, so the agent only researches and drafts, and you send each DM yourself.
 
 > [!CHECK] You have three LinkedIn DM drafts and 1,000 buyers on your list. How do you send them?
-> Send each draft to 50 people. After a week, write three new versions of the one with the most replies and send those to the rest.
+> Send each draft to a slice first, such as 50 people. Only a wide margin means anything at that size: if one clearly wins, write new versions of it and test them on fresh slices. If the counts are close, call it a tie and keep testing before you send to the rest.
 
 > [!CHECK] Why open a cold LinkedIn DM with a problem your competitors all pay to advertise?
-> A problem several competitors pay to show buyers is on those buyers' minds right now, so you aren't guessing what they care about.
+> It makes the DM about the buyer's life, not your idea. A problem several competitors pay to show buyers is on their minds right now, so you aren't guessing what they care about.
 
 ## Sources
 
+- [Rob Fitzpatrick, *The Mom Test*](https://www.momtestbook.com/)
+- [The Learning Leader: Rob Fitzpatrick on the Mom Test rules](https://learningleader.com/robfitzpatrick/)
+- [LinkedIn Help: LinkedIn's Ad Library](https://www.linkedin.com/help/linkedin/answer/a1517918)
+- [LinkedIn Help: Invitation limit reached](https://www.linkedin.com/help/linkedin/answer/a550555)
+- [LinkedIn: User Agreement](https://www.linkedin.com/legal/user-agreement)
+- [Evan Miller, *How Not To Run an A/B Test* (2010)](https://www.evanmiller.org/how-not-to-run-an-ab-test.html)
 - [@DinScales26: competitor ads into LinkedIn DMs, testing and automation](https://x.com/DinScales26/status/2119077318769385871)
