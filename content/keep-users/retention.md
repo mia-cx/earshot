@@ -38,7 +38,7 @@ Retention takes as much planning as acquisition, so answer these questions early
 > [!FORM] Your retention plan
 > 1. Which single action means a new user got value? Finish the sentence: "A user is onboarded when they…"
 > 2. How many of last month's sign-ups did it? Check your analytics.
-> 3. At what rhythm should an activated user repeat that action, and how many of the sign-ups from two months ago still do?
+> 3. At what rhythm should an activated user repeat that action, how long after sign-up do you check, and how many sign-ups old enough to be checked still do it?
 > 4. Hero features: which features bring people back?
 > 5. Levelling up: how does a casual user become a power user?
 > 6. Segments: which usage numbers matter for your product, so you can split users by them?
