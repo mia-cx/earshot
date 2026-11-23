@@ -20,7 +20,7 @@ description: Audit and fix your Google Business Profile against the businesses i
 
 You can't move your shop, so focus on relevance and prominence. Google says "businesses with complete and accurate info are more likely to show up", and there's no way to pay for a better local ranking.
 
-Pick the most specific category that fits, and keep your name, address and phone number identical everywhere. Link the profile to the matching service page on your site, fill in contact and booking details, upload real job photos, publish current offers, and track calls and bookings from the profile. After every job, ask for an honest review and reply with relevant details.
+Start by [verifying your profile](https://support.google.com/business/answer/7091): Google says a verified business is more likely to show up in search. Pick the most specific category that fits, and keep your name, address and phone number identical everywhere. Link the profile to the matching service page on your site, fill in contact and booking details, upload real job photos, publish current offers, and track calls and bookings from the profile. After every job, ask for an honest review and reply with relevant details.
 
 > [!TRICK] Citation sites to fill in
 > List your business only where customers in your area really look: Google Business Profile, Apple Business, Bing Places, Yelp, Better Business Bureau, Manta, Brownbook, EZlocal, Hotfrog, CitySquares, Cylex, Cybo, Foursquare, MerchantCircle, Superpages, DexKnows, Yellowbook, Alignable, Nextdoor Business, Chamber of Commerce.
@@ -50,7 +50,7 @@ Generic AI output usually means the AI knows nothing about your business. The re
 
 **Your primary and secondary GBP categories decide which searches put you on the map.** In Whitespark's [2026 Local Search Ranking Factors](https://whitespark.ca/local-search-ranking-factors/) survey, 47 local SEO experts ranked the primary category first and secondary categories eighth. That's expert opinion, not Google data.
 
-Adding a missing secondary category is often the fastest local win: the author says clients who added one appeared for new searches within a week.
+The author calls adding a missing secondary category the fastest local win. He says clients who added one appeared for new searches within a week.
 
 > [!RISK] Only categories you really are
 > Google's guidelines say to use "as few categories as possible" to describe your core business, and never to use categories as keywords. Copy a competitor's category only if it describes what your business is. Offering a service isn't enough: list services in the services section instead.
@@ -85,22 +85,22 @@ The author's experience is that a business with 90 reviews gaining 15 a month be
 
 Reply to every review for the customers reading them, not to rank. The author says Google has confirmed that replying helps local ranking, yet Google's own page says only that replies show you value feedback and help you stand out. Whitespark's experts rank owner replies 122nd of 187 ranking factors.
 
-Templates with variations cut each reply to under a minute and let you mention services and places naturally.
+Templates with variations cut each reply to under a minute. Write them for the customer, not for keywords: Google's [reply tips](https://support.google.com/business/answer/3474122) ask for short replies that are "conversational, not promotional", and Whitespark's experts rank keywords in replies 182nd of 187 factors.
 
 > [!TRICK] Review response template prompt
 > ```
-> Go to my GBP listing at [URL] and these competitors: [URL1], [URL2], [URL3]. For each listing, analyze the last 30 review responses from the business owner. Note: how many reviews have responses vs no response, average response time, whether responses mention specific services or locations, response length and tone, and how negative reviews are handled. Put this in a spreadsheet comparing my response strategy vs competitors. Then write me a review response template system: one template for 5-star reviews that naturally includes service + location keywords, one for 4-star reviews, one for 3-star reviews, and one for 1-2 star reviews that's professional and defuses negativity. Each template should have 3 variations so my responses don't look robotic.
+> Go to my GBP listing at [URL] and these competitors: [URL1], [URL2], [URL3]. For each listing, analyze the last 30 review responses from the business owner. Note: how many reviews have responses vs no response, average response time, whether responses mention specific services or locations, response length and tone, and how negative reviews are handled. Put this in a spreadsheet comparing my response strategy vs competitors. Then write me a review response template system: one template for 5-star reviews that thanks them for the specific job they mentioned, one for 4-star reviews, one for 3-star reviews, and one for 1-2 star reviews that's professional and defuses negativity. Each template should have 3 variations so my responses don't look robotic.
 > ```
 
 ## Post weekly and fix in order
 
-**Post 2 to 3 times a week naming the neighbourhoods you serve.** Most competitors never post on their GBP, so steady updates show customers you're active. One simple angle: "just completed a kitchen remodel in [neighborhood]", rotated across 8 to 10 neighbourhoods a month.
+**Post 2 to 3 times a week naming the neighbourhoods you serve.** The author finds most competitors never post on their GBP, so steady updates show customers you're active. One simple angle: "just completed a kitchen remodel in [neighborhood]", rotated across 8 to 10 neighbourhoods a month.
 
 Posts help people choose you more than they help you rank: Whitespark's experts put post frequency 148th of 187 ranking factors. The author says posts expire after 7 days, though Google now says posts [stay up for 6 months](https://support.google.com/business/answer/7342169) unless you set a date range.
 
 > [!TRICK] Posting calendar prompt
 > ```
-> Go to my GBP listing at [URL] and these competitors: [URL1], [URL2], [URL3]. For each listing, check their GBP posts section. Note: how many posts in the last 90 days, what type of posts, whether posts include images and CTAs, what topics they cover, and how often they post. Put this in a spreadsheet. Then build me an 8-week GBP posting calendar. I want 2-3 posts per week covering: seasonal service promotions, before-and-after project showcases, neighborhood-specific content mentioning areas we serve ([area1], [area2], [area3]), review highlights, and team spotlights. Each post should naturally include at least one target keyword from this list: [keyword1], [keyword2], [keyword3]. Write the first 4 weeks of posts for me - full copy and image suggestions.
+> Go to my GBP listing at [URL] and these competitors: [URL1], [URL2], [URL3]. For each listing, check their GBP posts section. Note: how many posts in the last 90 days, what type of posts, whether posts include images and CTAs, what topics they cover, and how often they post. Put this in a spreadsheet. Then build me an 8-week GBP posting calendar. I want 2-3 posts per week covering: seasonal service promotions, before-and-after project showcases, neighborhood-specific content mentioning areas we serve ([area1], [area2], [area3]), review highlights, and team spotlights. Each post should name the service and the area it happened in. Write the first 4 weeks of posts for me - full copy and image suggestions.
 > ```
 
 Run the audits in order of impact, one block a week, then switch to a steady routine.
@@ -117,8 +117,8 @@ Run the audits in order of impact, one block a week, then switch to a steady rou
 > [!DO] Run the category audit
 > Run the category audit prompt for your main service and city. Note any secondary category the leaders have that you're missing. If it describes what your business is, add it to your profile. Then download the business file for your agent's folder.
 
-> [!CHECK] On a Google Business Profile, what change often gives the fastest local ranking win?
-> Adding a secondary category the map-pack leaders have and you're missing. Your categories decide which searches show you on the map.
+> [!CHECK] On a Google Business Profile, which change does the author call the fastest local ranking win?
+> Adding a secondary category the map-pack leaders have and you're missing, if it describes what your business is. Your categories decide which searches show you on the map.
 
 > [!CHECK] Which three factors does Google say decide local rankings, and which one can your profile change?
 > Relevance, distance and prominence. Your profile controls relevance: complete, accurate categories, services and details. Reviews feed prominence.
@@ -132,6 +132,7 @@ Run the audits in order of impact, one block a week, then switch to a steady rou
 - [Google Business Profile Help: Guidelines for representing your business on Google](https://support.google.com/business/answer/3038177)
 - [Google Maps Help: Prohibited and restricted content (fake engagement)](https://support.google.com/contributionpolicy/answer/7400114)
 - [Google Business Profile Help: Create and manage posts](https://support.google.com/business/answer/7342169)
+- [Google Business Profile Help: Tips to get more reviews](https://support.google.com/business/answer/3474122)
 - [Darren Shaw, Whitespark, *2026 Local Search Ranking Factors* (2025)](https://whitespark.ca/local-search-ranking-factors/)
 - [@bloggersarvesh: local SEO with AI, GBP audit prompts and five-week plan](https://x.com/bloggersarvesh/status/2088983373859725755)
 - [@borjafat: local listings and reviews](https://x.com/borjafat/status/2116164330014007296)

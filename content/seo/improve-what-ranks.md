@@ -12,11 +12,11 @@ description: Use Search Console data to add missing answers to pages Google alre
 
 ## Start with pages Google already trusts
 
-**A page that already ranks is closer to a win than a page that doesn't exist.** Google has decided it's relevant. If it sits on page 2 or 3 (positions 10 to 30), Google thinks the page fits but is incomplete. Add what's missing and it can climb.
+**A page that already ranks is closer to a win than a page that doesn't exist.** Google already shows it for real searches. If it sits on page 2 or 3 (positions 10 to 30), @asaio87 reads that as relevant but incomplete. Add what's missing and it can climb.
 
 Search Console shows what's missing. Each page's Queries tab lists searches it appeared for, including ones the article never mentions. Add those answers. The tab [hides anonymised queries and stops at 1,000 rows](https://support.google.com/webmasters/answer/17010575), so a query missing from it doesn't mean the page never showed for it.
 
-Give changes time to show up. Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) says updates take anywhere from a few hours to several months, and advises waiting a few weeks before judging. Expect one to three months, not days.
+Give changes time to show up. Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) says updates take anywhere from a few hours to several months, and advises waiting a few weeks before judging. @asaio87 gives it one to three months.
 
 > [!TRICK] Refresh a top page from its own query data
 > From @asaio87, who runs an SEO agency.
@@ -41,14 +41,14 @@ Give changes time to show up. Google's [SEO Starter Guide](https://developers.go
 > ```
 >
 > 4. Search Console → URL Inspection → Request indexing for each updated page. Once is enough: Google says [asking again won't speed it up](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl).
-> 5. Wait 7 to 14 days, pull the queries again, repeat.
+> 5. Wait until URL Inspection shows Google has recrawled the page, then give it a few weeks. Pull the queries again and repeat.
 
 > [!TRICK] The Monday version
 > Nicholas Dulait (who sells an SEO agent, ChatSEO) runs a lighter loop for one hour every Monday:
 > 1. Search Console, last 28 days: list searches where your average position is 5 to 15, with clicks, impressions and the ranking page.
 > 2. Group them by page.
 > 3. For the 3 pages with the most impressions, decide what to add or change so the page answers those searches better.
-> 4. Skip any page you edited recently that Google hasn't crawled since. Dulait waits 60 days. URL Inspection shows the last crawl date, which is a better test: Google says crawling takes a few days to a few weeks.
+> 4. Skip any page you edited recently that Google hasn't crawled since. Dulait waits 60 days. URL Inspection [shows the last crawl date](https://support.google.com/webmasters/answer/9012289), which is a better test: Google says crawling takes a few days to a few weeks.
 
 ## Other refreshes worth doing
 
@@ -61,7 +61,7 @@ Give changes time to show up. Google's [SEO Starter Guide](https://developers.go
 
 **Put the answer in the first two paragraphs.** Journalists call this the inverted pyramid. Amy Schade at the [Nielsen Norman Group](https://www.nngroup.com/articles/inverted-pyramid/) explains why it fits the web: people skim, and can stop at any point and still get the main idea. Skip the 300-word warm-up story.
 
-Check that the main keyword appears in three places: the title, the meta description and the first paragraph. Many pages miss at least one. Keep the title matching the H1, and give the page a useful share image.
+Check that the main keyword appears in three places: the title, the meta description and the first paragraph. Keep the title matching the H1, and give the page a useful share image.
 
 Treat the meta description as click copy, not a ranking lever: Google [builds most snippets from the page itself](https://developers.google.com/search/docs/appearance/snippet) and uses your description only when it fits the search better.
 
@@ -135,13 +135,14 @@ These checks repeat, so hand them to an agent with a written playbook. Borja Fat
 > Answer the main question in the first two paragraphs. Then check the main keyword appears in the title, the meta description and the first paragraph.
 
 > [!CHECK] Why improve a page ranking at positions 10 to 30 before writing a new one?
-> Google already finds that page relevant but incomplete, so adding the missing answers can move it up. A brand-new page starts from nothing.
+> Google already shows that page for real searches, so adding the answers it's missing can move it up. A brand-new page starts from nothing.
 
 ## Sources
 
 - [Google Search Central: SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
 - [Google Search Central: Ask Google to recrawl your URLs](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl)
 - [Search Console Help: Performance report data discrepancies](https://support.google.com/webmasters/answer/17010575)
+- [Search Console Help: URL Inspection tool](https://support.google.com/webmasters/answer/9012289)
 - [Amy Schade, Nielsen Norman Group, *Inverted Pyramid: Writing for Comprehension* (2018)](https://www.nngroup.com/articles/inverted-pyramid/)
 - [Google Search Central: Control your snippets in search results](https://developers.google.com/search/docs/appearance/snippet)
 - [Google Search Central: SEO link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)

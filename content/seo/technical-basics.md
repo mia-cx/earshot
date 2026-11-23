@@ -40,7 +40,7 @@ The checklist below ends with two jobs no agent can do: writing that doesn't rea
 > - Internally link every orphan page.
 > - Write alt text for every image.
 > - Compress images to WebP.
-> - Pass Core Web Vitals: LCP under 2.5 seconds, INP under 200 ms, CLS under 0.1.
+> - Pass Core Web Vitals: LCP 2.5 seconds or less, INP 200 ms or less, CLS 0.1 or less.
 > - Rewrite anything that sounds like AI slop.
 > - Add a real author with a real bio.
 > - Earn backlinks from sites people trust.
@@ -96,18 +96,18 @@ A third kind of bot fetches a page when a person asks the assistant about it: Ch
 
 > [!RISK] Cloudflare can block bots for you
 > If your site runs behind Cloudflare, three settings change what bots see:
-> - **AI Crawler and Agent access policies** (Security → Settings → Bot traffic) split Search, Agent and Training controls. Setting Search to Block shuts out AI search bots. Training rules also hit bots that do both search and training.
-> - **Managed robots.txt:** when training is disallowed, Cloudflare adds its own rules at the top of your robots.txt.
-> - **Bot Fight Mode** challenges automated-looking traffic, and [firewall rules can't make exceptions to it](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/). One reading list (i365dev/awesome-seo) warns it can challenge legitimate crawlers. After launch, check Security → Analytics → Events for requests labelled Bot Fight Mode.
+> - **AI Crawler and Agent access policies** (Security → Settings → Bot traffic) split Search, Agent and Training controls. Setting Search to Block shuts out AI search bots. Setting Training to Disallow blocks training bots, but not bots that also do search.
+> - **Managed robots.txt:** with Bot Preference Sync on, Cloudflare [adds its own rules](https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/) to the top of your robots.txt whenever one of those policies blocks bots.
+> - **Bot Fight Mode** challenges automated-looking traffic, and [WAF custom rules can't make exceptions to it](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/). One reading list (i365dev/awesome-seo) warns it can challenge legitimate crawlers. After launch, check Security → Analytics → Events for requests labelled Bot Fight Mode.
 
 ## Set up Bing too
 
 **Bing's index feeds Microsoft Copilot, and Bing shows where AI answers cited you.** Google doesn't. Bing's [AI Performance report](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/) lists citations across Copilot, Bing and some partners, with the searches behind them. Setup takes about ten minutes.
 
 > [!TRICK] Bing Webmaster Tools in ten minutes
-> 1. Sign in to Bing Webmaster Tools, open My Sites → Import, and import your site from Google Search Console. That verifies the site and brings your sitemaps along.
+> 1. Sign in to Bing Webmaster Tools, open My Sites → Import, and import your site from Google Search Console. That [verifies the site and brings your sitemaps along](https://blogs.bing.com/webmaster/2019/9/Import-sites-from-Search-Console-to-Bing-Webmaster-Tools/).
 > 2. Check the sitemap is listed. Submit it if not.
-> 3. Turn on IndexNow, which notifies Bing (and [other engines that use it](https://www.indexnow.org/faq), not Google) the moment a page changes. Many site builders include it or offer a plugin. On Cloudflare, switch on Crawler Hints.
+> 3. Turn on IndexNow, which notifies Bing (and [other engines that use it](https://www.indexnow.org/faq), not Google) the moment a page changes. Many site builders include it or offer a plugin. On Cloudflare, switch on [Crawler Hints](https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/).
 > 4. Open **AI Performance** to see how often Copilot, Bing's AI summaries and some partners cited each page, plus a sample of "grounding queries" (the searches the AI ran to find you). It counts citations, not clicks, and it's the closest thing to free citation data you'll get.
 
 ## Fix buyer pages first
@@ -143,7 +143,10 @@ This order comes from a case study of Granola's AI search work, relayed secondha
 - [Anthropic: Does Anthropic crawl data from the web?](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler)
 - [Perplexity: Perplexity crawlers](https://docs.perplexity.ai/guides/bots)
 - [Cloudflare: Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/)
+- [Cloudflare: Managed robots.txt](https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/)
+- [Cloudflare: Crawler Hints](https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/)
 - [Bing Webmaster Blog: AI visibility insights in Bing Webmaster Tools (2026)](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/)
+- [Bing Webmaster Blog: Import sites from Search Console to Bing Webmaster Tools (2019)](https://blogs.bing.com/webmaster/2019/9/Import-sites-from-Search-Console-to-Bing-Webmaster-Tools/)
 - [IndexNow: FAQ](https://www.indexnow.org/faq)
 - [@suraj_sharma14: technical SEO checklist prompt](https://x.com/suraj_sharma14/status/2116062550416871512)
 - [@borjafat: indexability, rendering and structured data checks](https://x.com/borjafat/status/2116164330014007296)
