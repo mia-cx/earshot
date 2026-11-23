@@ -15,7 +15,7 @@ description: Record talks with users and buyers, then reshape each one for every
 
 Most brand content preaches: a company lecturing about what it thinks. Kunal Gandhi's alternative is to talk with the people around your product (users, partners, other builders) and **turn what they say into content**.
 
-That gives you steady material in your users' own words, which makes stronger copy. Joanna Wiebe of Copyhackers [mines customers' exact phrases](https://copyhackers.com/2014/10/amazon-review-mining/) for headlines; in one test, a line lifted word for word from a customer review got over 400% more clicks than the control headline.
+That gives you steady material in your users' own words, which makes stronger copy. Joanna Wiebe of Copyhackers [mines customers' exact phrases](https://copyhackers.com/2014/10/amazon-review-mining/) for headlines; in one test, a line lifted word for word from a customer review got over 400% more clicks than the original headline.
 
 Talking with a bigger brand or builder also lends you some of their reach.
 
@@ -61,7 +61,7 @@ Every sales call records a buyer explaining their problem in their own words. @h
 
 Don't post the same article on five sites. Take one piece of research and rebuild it in the form each platform rewards: a demo on YouTube, a finding as a Reddit answer, a case study on Behance.
 
-Save this for after your base works. Joe Pulizzi's Content Inc. model [starts on one platform](https://www.magnificent.com/magnificent-stuff/content-inc-model) instead of "every channel you can possibly think of", and spreads to others only once that base has an audience.
+Save this for later. Joe Pulizzi's Content Inc. model [starts on one platform](https://www.magnificent.com/magnificent-stuff/content-inc-model) instead of "every channel you can possibly think of", and spreads to others only once that base has an audience.
 
 > [!TRICK] Match each piece to its native platform
 > From @borjafat's workflow:
@@ -85,7 +85,7 @@ Save this for after your base works. Joe Pulizzi's Content Inc. model [starts on
 > Record a 5-minute conversation with a user who agreed to be published, post it as a video, turn it into an X thread, then a LinkedIn post, then pull each central idea out as its own post.
 
 > [!CHECK] Why build content from recorded conversations instead of writing it all yourself?
-> It comes in your customers' own words, which readers recognise. In one of Joanna Wiebe's tests, a headline lifted from a customer review got over 400% more clicks than the control headline.
+> It comes in your customers' own words, which readers recognise. In one of Joanna Wiebe's tests, a headline lifted from a customer review got over 400% more clicks than the original headline.
 
 > [!CHECK] When you reuse one piece of research on several platforms, why rebuild it for each instead of posting the same article everywhere?
 > Each platform rewards its own native form, and rewording one thin article across many sites to plant links is spam under Google's policies.

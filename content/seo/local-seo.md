@@ -50,7 +50,7 @@ Generic AI output usually means the AI knows nothing about your business. The re
 
 **Your primary and secondary GBP categories decide which searches put you on the map.** In Whitespark's [2026 Local Search Ranking Factors](https://whitespark.ca/local-search-ranking-factors/) survey, 47 local SEO experts ranked the primary category first and secondary categories eighth. That's expert opinion, not Google data.
 
-The author calls a missing secondary category the fastest local win: he says clients who added one appeared for new searches within a week.
+The author calls adding a missing secondary category the fastest local win. He says clients who added one appeared for new searches within a week.
 
 > [!RISK] Only categories you really are
 > Google's guidelines say to use "as few categories as possible" to describe your core business, and never to use categories as keywords. Copy a competitor's category only if it describes what your business is. Offering a service isn't enough: list services in the services section instead.
@@ -117,7 +117,7 @@ Run the audits in order of impact, one block a week, then switch to a steady rou
 > [!DO] Run the category audit
 > Run the category audit prompt for your main service and city. Note any secondary category the leaders have that you're missing. If it describes what your business is, add it to your profile. Then download the business file for your agent's folder.
 
-> [!CHECK] On a Google Business Profile, which change does this lesson's author call the fastest local ranking win?
+> [!CHECK] On a Google Business Profile, which change does the author call the fastest local ranking win?
 > Adding a secondary category the map-pack leaders have and you're missing, if it describes what your business is. Your categories decide which searches show you on the map.
 
 > [!CHECK] Which three factors does Google say decide local rankings, and which one can your profile change?

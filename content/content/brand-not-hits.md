@@ -16,7 +16,7 @@ Short-term spikes fade fast; a brand builds over years. In [*The Long and the Sh
 
 A post with a million views followed by posts at a thousand works like the short-term kind: the post worked, and nobody cares who wrote it. Dan Koe's aim is **a body of work people want to explore**: they read one post, then go looking for more.
 
-The test: if you stopped posting, would anyone ask where you went? Koe plays a brand's ideas out over 6 to 12 months of posts, so no single post has to carry everything.
+The test: if you stopped posting, would anyone ask where you went? Koe spreads a brand's ideas over 6 to 12 months of posts, so no single post has to carry everything.
 
 ## Three jobs sit behind every brand
 
@@ -48,7 +48,7 @@ The 3 to 5 times a week is @notkvtwts's opinion, not a measured result.
 
 Early on, a founder's own account can be the strongest growth channel. That's Kunal Gandhi's view, not a study: "Your founder's X presence is your strongest growth channel."
 
-While building a marketing team at an AI startup, Kunal made social media training part of new-hire onboarding, starting with the CEO. The team "achieved a lot more through social media than we thought". If you have a team, every account is a channel.
+While building a marketing team at an AI startup, Kunal made social media training part of new-hire onboarding, starting with the CEO. Kunal says the team "achieved a lot more through social media than we thought". If you have a team, every account is a channel.
 
 ## Steady beats often
 

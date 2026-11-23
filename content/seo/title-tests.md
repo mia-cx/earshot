@@ -40,7 +40,7 @@ Other studies find much lower numbers. [Advanced Web Ranking](https://www.advanc
 
 ## See the results page as a searcher does
 
-**Search the query in a private window before rewriting.** Google rewrites some titles when a title is half-empty, out of date, inaccurate, repeated across pages, or unclear about which heading is the main one. It often takes the replacement from a heading or other prominent text on the page. Its [title link docs](https://developers.google.com/search/docs/appearance/title-link) list those causes; in 2021 Google said it [kept the title element about 87% of the time](https://developers.google.com/search/blog/2021/09/more-info-about-titles).
+**Search the query in a private window before rewriting.** Google rewrites some titles when a title is half-empty, out of date, inaccurate or repeated across pages, or when the page has no clear main title. It often takes the replacement from a heading or other prominent text on the page. Its [title link docs](https://developers.google.com/search/docs/appearance/title-link) list those causes; in 2021 Google said it [kept the title element about 87% of the time](https://developers.google.com/search/blog/2021/09/more-info-about-titles).
 
 Keep the title and H1 saying the same thing. You can also ask Claude to run the search several times until it catches a rewrite.
 

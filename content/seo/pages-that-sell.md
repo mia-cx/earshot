@@ -51,7 +51,7 @@ Before paying, buyers look for the same five answers. Give each its own page:
 
 Put a trial or demo button on every one.
 
-TheoAGI, who read 66 SEO articles for a playbook, says these decision pages ("X vs Y", "X alternatives", "best X for one kind of person", "X pricing") are also the ones AI answers cite, because people read them right before choosing. That's TheoAGI's reading, not a measured result.
+TheoAGI, who read 66 SEO articles for a playbook, says AI answers cite these decision pages ("X vs Y", "X alternatives", "best X for one kind of person", "X pricing") too, because people read them right before choosing. That's TheoAGI's reading, not a measured result.
 
 > [!TRICK] Rules for a decision page
 > These numbers come from the SEO skills TheoAGI reviewed. Treat them as rules of thumb, not tested thresholds.

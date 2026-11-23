@@ -68,7 +68,7 @@ A note on evidence: this is Koe's client process, described anecdotally, and Koe
 > Write down what makes their voice distinctive: core ideas, turns of phrase and worldview. Then combine it with others in your own way.
 
 > [!CHECK] In a brand interview, why do you record the exact words your reader uses when complaining to a friend?
-> That language is what your posts should use. Readers recognise their own words: Joanna Wiebe's headline lifted from one customer review got over 400% more clicks than the control headline.
+> That language is what your posts should use. Readers recognise their own words: Joanna Wiebe's headline lifted from one customer review got over 400% more clicks than the original headline.
 
 ## Sources
 

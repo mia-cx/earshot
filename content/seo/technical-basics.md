@@ -97,7 +97,7 @@ A third kind of bot fetches a page when a person asks the assistant about it: Ch
 > [!RISK] Cloudflare can block bots for you
 > If your site runs behind Cloudflare, three settings change what bots see:
 > - **AI Crawler and Agent access policies** (Security → Settings → Bot traffic) split Search, Agent and Training controls. Setting Search to Block shuts out AI search bots. Setting Training to Disallow blocks training bots, but not bots that also do search.
-> - **Managed robots.txt:** with Bot Preference Sync on, any of those policies set to block makes Cloudflare [add its own rules](https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/) at the top of your robots.txt.
+> - **Managed robots.txt:** with Bot Preference Sync on, Cloudflare [adds its own rules](https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/) to the top of your robots.txt whenever one of those policies blocks bots.
 > - **Bot Fight Mode** challenges automated-looking traffic, and [WAF custom rules can't make exceptions to it](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/). One reading list (i365dev/awesome-seo) warns it can challenge legitimate crawlers. After launch, check Security → Analytics → Events for requests labelled Bot Fight Mode.
 
 ## Set up Bing too

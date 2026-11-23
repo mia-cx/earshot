@@ -19,7 +19,7 @@ description: Give an SEO agent real data, hard limits and a deploy check, and ve
 
 ## Give it three permission tiers
 
-An agent with more permissions than its job needs does damage when it misreads a task or follows instructions hidden in a page it read. OWASP calls this [excessive agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) and its fixes include minimum permissions, human approval for high-impact actions, and limits enforced outside the model.
+An agent with more permissions than its job needs does damage when it misreads a task or follows instructions hidden in a page it read. OWASP calls this [excessive agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/). Its fixes include minimum permissions, human approval for high-impact actions, and limits enforced outside the model.
 
 | Tier | Actions |
 | --- | --- |
