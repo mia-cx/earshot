@@ -29,11 +29,10 @@
 	let finishing = $state(false);
 	let copied = $state<'Copied' | 'Copy failed' | null>(null);
 
-	/** Copies the lesson's canonical URL, so a link shared from a mirror still points at the live site. */
+	/** Copies the lesson's public URL, so a link shared from a mirror still points at the live site. */
 	const copyLink = async () => {
-		const canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.href;
 		try {
-			await navigator.clipboard.writeText(canonical ?? location.href.split('#')[0]);
+			await navigator.clipboard.writeText(data.link);
 			copied = 'Copied';
 		} catch {
 			copied = 'Copy failed';
