@@ -19,20 +19,22 @@
 
 	const id = $props.id();
 	let position = $state(4);
-	let ctr = $state(2);
+	let chosen = $state(2);
 	/** The reader's own benchmark per position, once they type one. */
 	let own: Record<number, number> = $state({});
 
 	const benchmarkFor = (b: { position: number; ctr: number }) => own[b.position] ?? b.ctr;
 	const bench = $derived(benchmarkFor(benchmarks.find((b) => b.position === position) ?? benchmarks[1]));
+	const scale = $derived(
+		Math.min(100, Math.max(MIN_SCALE, Math.ceil(Math.max(...benchmarks.map(benchmarkFor)) * HEADROOM)))
+	);
+	/** The page CTR as shown: the reader's choice, kept on the track when a lower benchmark shrinks it. */
+	const ctr = $derived(Math.min(chosen, scale));
 	const line = $derived(Math.round(bench * UNDERPERFORMER * 10) / 10);
 	const gap = $derived(Math.round((1 - ctr / bench) * 100));
 	const under = $derived(ctr <= line);
 
 	const percent = (value: number) => `${Number(value.toFixed(1))}%`;
-	const scale = $derived(
-		Math.min(100, Math.max(MIN_SCALE, Math.ceil(Math.max(...benchmarks.map(benchmarkFor)) * HEADROOM)))
-	);
 	const along = (value: number) => `${(Math.min(value, scale) / scale) * 100}%`;
 
 	const verdict = $derived(under ? 'Underperformer against this benchmark' : 'Not an underperformer');
@@ -61,7 +63,7 @@
 				<span class="zone" style="width: {along(line)}"></span>
 				<span class="bar" style="width: {along(ctr)}"></span>
 				<span class="tick" style="left: {along(bench)}"></span>
-				<input id="{id}-ctr" type="range" min="0" max={scale} step="0.1" bind:value={ctr} aria-valuetext={percent(ctr)} />
+				<input id="{id}-ctr" type="range" min="0" max={scale} step="0.1" bind:value={() => ctr, (value) => (chosen = value)} aria-valuetext={percent(ctr)} />
 			</span>
 			<output class="value" for="{id}-ctr">{percent(ctr)}</output>
 		</div>
