@@ -21,7 +21,7 @@ Earshot is read by people with ADHD who are learning marketing from zero. The de
 - **Review (`/review`)**: one card at a time with a progress bar. An optional "Type it first" field sits above Show answer; what the reader typed shows beside the answer and is never saved. While focus is in the card, Space reveals, 1 is "Not yet", 2 is "Got it"; focus moves to each new card. When nothing is due it says when cards come back and offers a practice round.
 - **Tricks (`/tricks`)**: every cheap trick as a card bordered in its module's colour, filterable by module, with "Pick one for me". On wide screens the cards form a two-column masonry whose columns end level (`src/lib/balance.ts`), each column in course order.
 - **Sources (`/sources`)**: every cited author, then every lesson's sources grouped by module (`src/lib/server/credits.ts` counts them for the landing page and footer).
-- **Footer**: on every page. The course in one line, the credit count with a link to the sources, the modules, the pages, what agents read (skills, `llms.txt`, sitemap), and who made it: Mia, the 0rwx AI level, the GitHub repo and Svartz.
+- **Footer**: on every page. The course in one line, the credit count with a link to the sources, the modules, the pages, what agents read (skills, `llms.txt`, sitemap), and who made it: Mia, the 0rwx AI level, the GitHub repo and Svartz. A "Questions and ideas" link opens the repo's GitHub Discussions.
 - **Lab (`/lab`)**: every diagram under any module colour, for building and checking diagrams. Not linked from the nav.
 
 ## Search and sharing
@@ -34,7 +34,7 @@ Enforced by `src/lib/server/build-course.spec.ts`: title, summary, TLDR first, a
 
 ## Worksheets
 
-Where a lesson asks the reader questions to answer, `> [!FORM] Title` with the questions as a list places a worksheet right there in the lesson (`src/lib/Worksheet.svelte`): one answer field per question, saved in the browser as the reader types (`src/lib/answers.ts`). Answers belong to the question, not the form: a later lesson that asks an earlier question again, word for word, shows the reader's answer with a link to where it was first asked, and editing it there edits it everywhere. That lets a later worksheet build on an earlier one. Forms with the same title are one sheet. **Download Markdown** saves the sheet so far as a `.md` file: this form's questions plus every answered question on the sheet. **Save as PDF** prints the same from a hidden frame. Both name the lessons the questions came from.
+Where a lesson asks the reader questions to answer, `> [!FORM] Title` with the questions as a list places a worksheet right there in the lesson (`src/lib/Worksheet.svelte`): one answer field per question, saved in the browser as the reader types (`src/lib/answers.ts`). Answers belong to the question, not the form: a later lesson that asks an earlier question again, word for word, shows the reader's answer with a link to where it was first asked, and editing it there edits it everywhere. That lets a later worksheet build on an earlier one. Forms with the same title are one sheet. **Download Markdown** saves the sheet so far as a `.md` file: this form's questions plus every answered question on the sheet. **Save as PDF** prints the same from a hidden frame. Both name the lessons the questions came from. **Check my work** gives feedback without accounts or a server: it copies a review prompt with the lesson's Markdown copy and the sheet so far, and links Claude and ChatGPT to paste it into.
 
 ## Diagrams
 
