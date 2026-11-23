@@ -1,19 +1,34 @@
 ---
 title: Read the classics next
 order: 5
-description: Pick the essay that deepens the module you found hardest, and read it today.
+description: Pick the book or essay that deepens the module you found hardest, and start there.
 ---
 
 > [!TLDR]
-> - Twenty older essays still cover positioning, traction and growth process well.
-> - They're grouped below by the course module they go deeper on.
-> - Start with the module you found hardest, not with essay 1.
+> - Eight books hold the frameworks most marketing advice borrows from. Twenty older essays still cover positioning, traction and growth process well.
+> - Both are grouped below by the course module they deepen.
+> - Start with the module you found hardest, not with the first item.
 
 ## Start where the course felt hardest
 
-Kunal Gandhi kept these 20 from a decade of marketing bookmarks and still returns to them. Some are 10 years old and **still hold up** on positioning, traction and growth process.
+Don't read this list in order. Pick one book or essay for your hardest module and apply it to current work.
 
-Don't read them in order. Read one for the module that gave you the most trouble, and apply it to something you're working on now. Seven modules have no essay here (X, outreach, search, backlinks, AI search, video and agents). For those, the posts under each lesson's Sources are the next read.
+Kunal Gandhi kept these 20 essays from a decade of bookmarks and still returns to them. In his view, some are 10 years old and **still hold up** on positioning, traction and growth process. The eight books are older still, and each goes deeper than any post on its core idea.
+
+X, search, backlinks, AI search, video and agents have no book or essay here. For those, read the sources under each lesson next.
+
+## The books behind the course
+
+One book for each idea most marketing advice is built on:
+
+- **What marketing is:** Al Ries and Jack Trout, [*Positioning: The Battle for Your Mind*](https://openlibrary.org/works/OL1892673W) (1981). Positioning happens in the buyer's head, not in the product.
+- **What marketing is:** April Dunford, [*Obviously Awesome*](https://www.aprildunford.com/obviously-awesome) (2019). A step-by-step method that breaks positioning into five parts you can work through with your team.
+- **Writing that gets read:** Eugene Schwartz, [*Breakthrough Advertising*](https://breakthroughadvertisingbook.com/) (1966). Copy channels a desire buyers already have, and what you say depends on how aware of the problem they are.
+- **Content that builds a brand:** Byron Sharp, [*How Brands Grow*](http://marketingscience.info/how-brands-grow) (2010). Brands grow mostly by reaching more buyers, including people who buy rarely, not by making loyal buyers more loyal.
+- **Content that builds a brand:** Les Binet and Peter Field, [*The Long and the Short of It*](https://ipa.co.uk/knowledge/publications-reports/the-long-and-the-short-of-it-balancing-short-and-long-term-marketing-strategies) (2013). Across 996 campaigns, the biggest results came from spending about 60% on brand building and 40% on direct response.
+- **Launching:** Gabriel Weinberg and Justin Mares, [*Traction*](https://openlibrary.org/works/OL20015670W) (2014). Test several channels cheaply, then put everything into the one that works.
+- **Outreach:** Rob Fitzpatrick, [*The Mom Test*](https://www.momtestbook.com/) (2013). How to learn whether people would really buy when everyone is too polite to tell you your idea is bad.
+- **Outreach:** Bob Moesta with Greg Engle, [*Demand-Side Sales 101*](https://demandsidesales.com/) (2020). Stop pushing your product and help buyers make the progress they're already trying to make.
 
 ## Foundations and writing
 
@@ -68,8 +83,8 @@ For *Stay sharp*:
 > 6. Micro KPI: which input that we control drives it?
 > 7. Which essay did you read, and which line of your strategy changed because of it?
 
-> [!DO] Read one essay for your hardest module
-> Pick the module you found hardest and open its first essay above (no essay listed: open the first source of its first lesson). Read it, then change one line of your one-page strategy above (from *Fit your strategy on one page*) because of it, note what changed, and download it.
+> [!DO] Read one essay or book for your hardest module
+> Pick the module you found hardest and open its first essay or book above (none listed: open the first source of its first lesson). Read it, or the chapter on your problem, then change one line of your one-page strategy above (from *Fit your strategy on one page*) because of it, note what changed, and download it.
 
 > [!CHECK] What do the four parts of a GACC marketing brief stand for?
 > Goal, Audience, Creative, Channel.
@@ -82,4 +97,5 @@ For *Stay sharp*:
 
 ## Sources
 
+- [Les Binet and Peter Field, *The Long and the Short of It*, IPA presentation (2013)](https://ipa.co.uk/media/5811/long_and_short_of_it_presentation_final.pdf)
 - [@kunalvg: twenty marketing essays that still hold up](https://x.com/kunalvg/status/2090754749297819741)

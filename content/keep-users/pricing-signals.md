@@ -5,21 +5,30 @@ description: Spot underpricing from your close rate, margin per client and hours
 ---
 
 > [!TLDR]
-> - If you close more than about 40% of sales calls, you're probably too cheap.
+> - In most businesses, a minority of customers earns all the profit and a few lose money. Revenue reports hide which is which.
+> - A high close rate on sales calls can mean you're too cheap. Read it with your lead mix and margin before you raise prices.
 > - Count margin per client, with your own hours at what it would cost to replace you.
-> - Compare hours delivered with hours contracted, then reprice, rescope or drop the worst clients.
+> - Compare hours delivered with hours contracted, then fix your process, reprice or rescope, and drop a client only last.
 
 ## A high close rate is a price signal
 
-Closing most of your sales calls feels like success. Past a point, **it means your price is too low**. @huntkyle's rule of thumb: above about 40%, you're probably losing 20% margin on every sale.
+Closing most of your sales calls feels like winning, but past a point **your price is too low**. @huntkyle's rule of thumb: above about 40%, you're probably losing 20% margin on every sale.
 
-That number is his, unverified, and he sells consulting to agencies. But the check is free: keep a sheet with calls, closes and close rate, and flag it when the rate stays above 40%.
+That number is his, unverified, and he sells agency consulting. Most teams still barely touch pricing: Patrick Campbell, whose company ProfitWell sold pricing software, [says its research found](https://www.mindtheproduct.com/a-guide-to-unlocking-growth-with-optimized-pricing/) companies spend 10 hours or less a year on it. No method is published, so treat it as a vendor's claim.
+
+The check itself is free. Keep a sheet with calls, closes and close rate, and note where each lead came from. Warm referrals close more often at any price, and ten calls is a small sample, so a high rate is a reason to test a higher price, not proof you need one.
 
 ## Count margin per client, not revenue
 
-A billing report shows revenue. It hides which clients cost you money. In Hunt's audits, 10% to 20% of an agency's clients sit at close to or below zero gross margin once the owner's hours are counted.
+A billing report shows revenue, not which clients lose you money. [Robert Kaplan at Harvard Business School](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability), co-developer of activity-based costing, found that in nearly every company studied, 15% to 20% of customers produce all of the profit or more, while the least profitable few wipe part of it out. His method needs two numbers: the hourly cost of each person's time, and the hours each customer takes.
 
-Three numbers fix that view: gross margin per client, with your hours priced at what it would cost to replace you; churn graded against a benchmark; and a 13-week forecast instead of a flat line.
+In Hunt's audits, 10% to 20% of an agency's clients sit near or below zero gross margin once the owner's hours are counted. That's his figure, though it fits Kaplan's pattern.
+
+Fix your view with three numbers:
+
+- Gross margin per client, with your hours priced at what it would cost to replace you.
+- Monthly churn, graded against a benchmark.
+- A 13-week revenue forecast instead of a flat line.
 
 > [!TRICK] Month-end bot prompt
 > Give it exported files, not logins (see *Keep bots from doing damage*).
@@ -36,11 +45,18 @@ Three numbers fix that view: gross margin per client, with your hours priced at 
 > Ask me first before you: send an invoice, chase a payment, or move money.
 > ```
 >
-> The churn grades and the 50% / 60% margin lines are Hunt's benchmarks.
+> The churn grades and the 50% / 60% margin lines are Hunt's benchmarks for agencies.
 
 ## Find the clients you're subsidising
 
-Scope creep is a pricing problem you can't see without a time log. Across three agencies, Hunt found $18K to $20K of work being delivered on $8K to $10K retainers (his anecdote).
+Scope creep is a pricing problem you can't see without a time log. Across three agencies, Hunt saw $18K to $20K of work delivered on $8K to $10K retainers (his anecdote).
+
+Kaplan's order for fixing an unprofitable customer:
+
+1. Fix your own process first. Customers shouldn't pay for your inefficiencies.
+2. Reprice: every extra you offer should at least cover its cost.
+3. Rescope or sell them more of what's profitable.
+4. Drop the client only as a last resort.
 
 > [!TRICK] Run a 90-day scope check
 > ```
@@ -53,17 +69,19 @@ Scope creep is a pricing problem you can't see without a time log. Across three 
 The bot sorts and suggests. Talking to the client stays your job.
 
 > [!DO] Work out your close rate
-> Make a sheet with three columns: date, call, closed (yes or no). Fill in your last 10 sales calls and calculate the close rate. If it's above 40%, write a higher price for your next proposal.
+> Make a sheet with four columns: date, call, lead source (cold or referral), closed (yes or no). Fill in your last 10 sales calls and calculate the close rate. If you close most cold leads and your margin is thin, test a higher price in your next proposal.
 
-> [!CHECK] What close rate on sales calls suggests your price is too low?
-> Above about 40%.
+> [!CHECK] You close 6 of your last 10 sales calls. Does that mean your price is too low?
+> Maybe. @huntkyle's rule of thumb puts the line at about 40%, but check where the leads came from and your margin first: warm referrals close at any price, and ten calls is a small sample. Treat it as a reason to test a higher price.
 
 > [!CHECK] A client's 90-day time log shows far more hours than their contract covers. What are your options?
-> Reprice, rescope or sunset that client. A bot can sort and suggest, but talking to the client stays your job.
+> Fix your own process first, then reprice or rescope, and drop the client only last. A bot can sort and suggest, but talking to the client stays your job.
 
 > [!CHECK] Why count gross margin per client, with your own hours priced at what it would cost to replace you?
-> Revenue reports hide which clients cost you money. Counting your hours reveals the ones near or below zero margin.
+> In most businesses a few customers earn all the profit and some lose money, and revenue reports hide which. Counting your hours reveals the ones near or below zero margin.
 
 ## Sources
 
+- [Robert S. Kaplan, *A Balanced Scorecard Approach to Measure Customer Profitability* (HBS Working Knowledge, 2005)](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability)
+- [Patrick Campbell, *A Guide to Unlocking Growth with Optimized Pricing* (2020)](https://www.mindtheproduct.com/a-guide-to-unlocking-growth-with-optimized-pricing/)
 - [@huntkyle: running business operations with bots, including close rate, month-end and scope checks](https://x.com/huntkyle/status/2118086670918750341)
