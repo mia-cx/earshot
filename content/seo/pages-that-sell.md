@@ -4,7 +4,7 @@ order: 3
 description: Pick buyer keywords and build the pricing, comparison and switching pages that convert.
 ---
 
-> [!TLDR]
+> [!TLDR] Every search has an intent, and the page that meets the buyer's intent is the one that ranks and sells.
 > - Pick keywords from the words buyers use, ranked by intent to buy, not by search volume.
 > - Your most valuable pages answer purchase questions: price, comparisons, alternatives, switching, trial terms.
 > - Build each topic outward from a product page, with guides and detail pages linked both ways.
@@ -14,13 +14,15 @@ description: Pick buyer keywords and build the pricing, comparison and switching
 
 **Choose keywords by how close they are to a purchase, not by volume.** A thousand searches from people who will never pay are worth less than fifty from people comparing plans.
 
+Google judges results by intent. Its [Search Quality Rater Guidelines](https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf) sort searches into Know (learn something), Do (buy, download, sign up), Website (reach one site) and Visit-in-person. Raters score each result by how well it meets the likely intent. A buyer search is a Do search, and a blog post rarely meets it.
+
 Find the words in three places:
 
 - Sales calls and support questions: how people describe the problem in their own words.
 - Search Console, filtered to queries that signal buying ("pricing", "vs", "alternative", "for [role]").
 - Google autocomplete for specific problems.
 
-Then search each one and look at what ranks. The live results show which page format buyers expect: a list, a comparison, a tool, a guide. Group searches that need the same answer onto one page. To compete in a crowded space, narrow it to a specific buyer plus a use case ("crm for dentists" rather than "crm").
+Then search each one and look at what ranks. The live results are Google's current reading of the intent, so they show which page format buyers expect: a list, a comparison, a tool, a guide. Group searches that need the same answer onto one page. To compete in a crowded space, narrow it to a specific buyer plus a use case ("crm for dentists" rather than "crm").
 
 > [!TRICK] Find keywords you can actually rank for
 > - LowFruits and KWFinder find long-tail keywords with low competition, which are easier to rank for.
@@ -55,7 +57,7 @@ These decision pages ("X vs Y", "X alternatives", "best X for one kind of person
 > The numbers come from the SEO skills TheoAGI reviewed. They are rules of thumb, not tested thresholds.
 > - Google the query first. If 6 or more of the top 10 are the same type of page, build that type. If they're all blog posts and you sell a product, skip it.
 > - Two keywords share one page when 4 or more of their top 10 results match.
-> - Answer in the first 40 to 80 words, and name your product. AI engines lift passages, not whole pages.
+> - Answer in the first 40 to 80 words, and name your product. AI engines lift passages, not whole pages, and Google's [passage ranking](https://developers.google.com/search/docs/appearance/ranking-systems-guide) judges sections of a page too.
 > - A "best of" list has 5 to 8 options. 3 reads as an advert, 25 as a directory.
 > - Take every price from the vendor's own page and mark it "checked on" with the date.
 > - Give every option one real drawback, yours included. Don't rank yourself first in your own list.
@@ -63,7 +65,7 @@ These decision pages ("X vs Y", "X alternatives", "best X for one kind of person
 
 ## Grow topics from a product page
 
-Topical authority means covering a subject well enough that Google treats you as a source on it. **Start from the product page, not from a blog idea.**
+Topical authority means covering a subject well enough that Google treats you as a source on it. It's a practitioner idea: Google's only published [topic authority](https://developers.google.com/search/blog/2023/05/understanding-news-topic-authority) system covers news. What Google does document is that links between your pages [help it find them and understand them](https://developers.google.com/search/docs/crawling-indexing/links-crawlable). **Start from the product page, not from a blog idea.**
 
 1. Choose the product page the topic should lead to.
 2. List the buyer questions around it.
@@ -87,7 +89,7 @@ Programmatic SEO means generating many pages from one template and a data source
 > - Publish, watch Search Console for 60 days, and fix the pages Google drops. Korzhov notes Google indexes thin pages slowly and removes them later.
 
 > [!RISK] Scaled content abuse
-> Google's spam policy on scaled content abuse targets mass-produced pages with little unique value. Hundreds of near-identical pages can get dropped or penalised. If a row has no facts of its own, don't make it a page.
+> Google's [spam policies](https://developers.google.com/search/docs/essentials/spam-policies) name two traps here. Scaled content abuse is many pages made mainly to rank, "regardless of how" they're produced, AI or not. Doorway abuse is many similar pages for cities or regions that all funnel to one page. Hundreds of near-identical pages can get dropped or penalised. If a row has no facts of its own, don't make it a page.
 >
 > Pace matters on a new site too. Dulait's earlier product, a business plan generator, had real demand and low competition, and never ranked: a brand-new domain with no brand searches and no backlinks, publishing at a rate that looked like generated content. Start slower than you can produce: the authors TheoAGI read suggest 1 to 4 new pages a week. They disagree on the number, not the direction.
 
@@ -111,6 +113,11 @@ Programmatic SEO means generating many pages from one template and a data source
 
 ## Sources
 
+- [Google: Search Quality Rater Guidelines (2025)](https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf)
+- [Google Search Central: A guide to Google Search ranking systems](https://developers.google.com/search/docs/appearance/ranking-systems-guide)
+- [Google Search Central: Understanding news topic authority (2023)](https://developers.google.com/search/blog/2023/05/understanding-news-topic-authority)
+- [Google Search Central: SEO link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)
+- [Google Search Central: Spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies)
 - [@borjafat: buyer keywords, purchase pages, topical authority, programmatic pages](https://x.com/borjafat/status/2116164330014007296)
 - [@korzhov_dm: programmatic SEO from one spreadsheet](https://x.com/korzhov_dm/status/2118984106335756532)
 - [@hridoyreh: keyword research tools](https://x.com/hridoyreh/status/2118957811581526027)

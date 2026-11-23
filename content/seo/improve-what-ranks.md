@@ -4,7 +4,7 @@ order: 4
 description: Use Search Console data to add missing answers to pages Google already trusts.
 ---
 
-> [!TLDR]
+> [!TLDR] A page Google already shows has data on what searchers wanted from it, so improving it beats starting from nothing.
 > - Your fastest SEO gains come from improving top pages, not writing new ones.
 > - Search Console shows which queries a page gets seen for but doesn't answer. Add those answers.
 > - Answer the main question in the first two paragraphs, and link pages where a reader wants to go next.
@@ -14,7 +14,9 @@ description: Use Search Console data to add missing answers to pages Google alre
 
 **A page that already ranks is closer to a win than a page that doesn't exist.** Google has decided it's relevant. If it ranks on page 2 or 3 (positions 10 to 30), Google thinks the page fits but is incomplete. Add what's missing and it can climb.
 
-Search Console tells you what's missing. Every page has a Queries tab listing the searches it appeared for. Some of those queries the article never mentions. Those are your additions. Expect results over one to three months, not days.
+Search Console tells you what's missing. Every page has a Queries tab listing the searches it appeared for. Some of those queries the article never mentions. Those are your additions.
+
+Be patient with the result. Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) says changes take anywhere from a few hours to several months, and to wait a few weeks before judging. Expect one to three months, not days.
 
 > [!TRICK] Refresh a top page from its own query data
 > From @asaio87, who runs an SEO agency.
@@ -38,7 +40,7 @@ Search Console tells you what's missing. Every page has a Queries tab listing th
 > Stop after page #1 and wait for me before moving to the next.
 > ```
 >
-> 4. Search Console → URL Inspection → Request indexing for each updated page.
+> 4. Search Console → URL Inspection → Request indexing for each updated page. Once is enough: Google says [asking again won't speed it up](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl).
 > 5. Wait 7 to 14 days, pull the queries again, repeat.
 
 > [!TRICK] The Monday version
@@ -46,7 +48,7 @@ Search Console tells you what's missing. Every page has a Queries tab listing th
 > 1. Search Console, last 28 days: list searches where your average position is 5 to 15, with clicks, impressions and the ranking page.
 > 2. Group them by page.
 > 3. For the 3 pages with the most impressions, decide what to add or change so the page answers those searches better.
-> 4. Skip any page you edited in the last 60 days. Google hasn't re-read it yet.
+> 4. Skip any page you edited recently that Google hasn't crawled since. Dulait waits 60 days. URL Inspection shows the last crawl date, which is a better test: Google says crawling takes a few days to a few weeks.
 
 ## Other refreshes worth doing
 
@@ -57,7 +59,9 @@ Search Console tells you what's missing. Every page has a Queries tab listing th
 
 ## Answer the question up front
 
-**Put the answer in the first two paragraphs.** No "in today's digital world" intro, no 300-word story before the point. Then check the main keyword appears in the title, the meta description and the first paragraph. Many pages miss at least one. Keep the title matching the H1, and give the page a useful share image.
+**Put the answer in the first two paragraphs.** Journalists call this the inverted pyramid. Amy Schade at the [Nielsen Norman Group](https://www.nngroup.com/articles/inverted-pyramid/) explains why it suits the web: people skim, and they can stop at any point and still get the main idea. No "in today's digital world" intro, no 300-word story before the point.
+
+Then check the main keyword appears in the title, the meta description and the first paragraph. Many pages miss at least one. The meta description earns the click, not the ranking: Google [builds most snippets from the page itself](https://developers.google.com/search/docs/appearance/snippet) and uses your description only when it fits the search better. Keep the title matching the H1, and give the page a useful share image.
 
 > [!TRICK] Check the intro and get title options
 > From @asaio87:
@@ -73,10 +77,12 @@ Search Console tells you what's missing. Every page has a Queries tab listing th
 >
 > Keep my tone of voice, no fluff, no filler words
 > ```
+>
+> Google sets no length limit. It cuts titles and descriptions to fit the screen, so these numbers are rough targets.
 
 ## Link where a reader wants to go next
 
-Internal links tell Google which pages matter and help readers keep going. **Add 3 to 5 per article, only where a reader would actually click.**
+Internal links tell Google which pages matter and help readers keep going. Google's [link guidance](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) sets the floor: every page you care about needs a link from at least one other page, with anchor text that makes sense out of context. **Add 3 to 5 per article, only where a reader would actually click.** The 3 to 5 is @asaio87's rule of thumb.
 
 - Link articles to the product pages they relate to.
 - Link to orphan pages (pages nothing else links to).
@@ -131,6 +137,11 @@ Everything above runs on Search Console data. **A new domain doesn't have that d
 
 ## Sources
 
+- [Google Search Central: SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+- [Google Search Central: Ask Google to recrawl your URLs](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl)
+- [Amy Schade, Nielsen Norman Group, *Inverted Pyramid: Writing for Comprehension* (2018)](https://www.nngroup.com/articles/inverted-pyramid/)
+- [Google Search Central: Control your snippets in search results](https://developers.google.com/search/docs/appearance/snippet)
+- [Google Search Central: SEO link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)
 - [@asaio87: query-gap refresh, intro check and internal link prompts](https://x.com/asaio87/status/2119171723849245031)
 - [@borjafat: refresh moves, internal links and the Claude SEO playbook](https://x.com/borjafat/status/2116164330014007296)
 - [@borjafat: running SEO with Claude and Search Console](https://x.com/borjafat/status/2119227612258054502)

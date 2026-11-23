@@ -4,7 +4,7 @@ order: 7
 description: Audit and fix your Google Business Profile against the businesses in the map pack.
 ---
 
-> [!TLDR]
+> [!TLDR] Google ranks local results on relevance, distance and prominence, and your Business Profile is where you control relevance.
 > - For a local business, the Google Business Profile (GBP) decides whether you show in the map pack.
 > - Load your business and competitor details into an AI agent once, then run one audit prompt per task.
 > - Copy what the map-pack leaders do: their categories, their review pace, their posts, their services list.
@@ -12,7 +12,9 @@ description: Audit and fix your Google Business Profile against the businesses i
 
 ## Get your listings right first
 
-**A complete, accurate Google Business Profile is the base of local search.** Pick the most specific category that fits. Keep your name, address and phone number identical everywhere they appear. Link the profile to the matching service page on your site, fill in contact and booking details, upload real job photos, publish current offers, and track calls and bookings that come from the profile.
+**A complete, accurate Google Business Profile is the base of local search.** Google [names three factors](https://support.google.com/business/answer/7091): relevance (how well your profile matches the search), distance (how far you are from the searcher) and prominence (how well known you are, including links and reviews). You can't move your shop, so relevance and prominence are where the work goes. Google says "businesses with complete and accurate info are more likely to show up", and that there's no way to pay for a better local ranking.
+
+Pick the most specific category that fits. Keep your name, address and phone number identical everywhere they appear. Link the profile to the matching service page on your site, fill in contact and booking details, upload real job photos, publish current offers, and track calls and bookings that come from the profile.
 
 After every job, ask for an honest review, and reply with relevant details.
 
@@ -20,7 +22,7 @@ After every job, ask for an honest review, and reply with relevant details.
 > List your business only where customers in your area really look: Google Business Profile, Apple Business, Bing Places, Yelp, Better Business Bureau, Manta, Brownbook, EZlocal, Hotfrog, CitySquares, Cylex, Cybo, Foursquare, MerchantCircle, Superpages, DexKnows, Yellowbook, Alignable, Nextdoor Business, Chamber of Commerce.
 
 > [!RISK] GBP is for businesses that meet customers
-> Google Business Profile requires in-person contact with customers. Online-only businesses generally don't qualify, and a fake address breaks its rules and can get the listing removed. If you have no real location or service area, skip this lesson.
+> Google Business Profile [requires](https://support.google.com/business/answer/3038177) a place customers visit, or a service area you travel to. Online-only businesses generally don't qualify, and a virtual office or fake address breaks its rules and can get the listing removed. If you have no real location or service area, skip this lesson.
 
 ## Load context once, then run task prompts
 
@@ -42,7 +44,10 @@ Generic AI output usually means the AI knows nothing about your business. The re
 
 ## Copy the map-pack leaders' profiles
 
-**Your primary and secondary GBP categories decide which searches show you on the map.** Adding a missing secondary category is often the fastest local win. The author says clients who added one appeared for new searches within a week.
+**Your primary and secondary GBP categories decide which searches show you on the map.** In Whitespark's [2026 Local Search Ranking Factors](https://whitespark.ca/local-search-ranking-factors/) survey, 47 local SEO experts ranked the primary category as the top map-pack factor, and secondary categories eighth. That's expert opinion, not Google data. Adding a missing secondary category is often the fastest local win. The author says clients who added one appeared for new searches within a week.
+
+> [!RISK] Only categories you really are
+> Google's guidelines say to use "as few categories as possible" to describe your core business, and never to use categories as keywords. Copy a competitor's category only if it's work you actually do.
 
 > [!TRICK] Category audit prompt
 > ```
@@ -59,7 +64,7 @@ The services section is the other part you fully control. List every service wit
 
 ## Win on recent reviews and replies
 
-**Track review pace, not star rating: recent reviews count for more than total reviews.** A business with 90 reviews gaining 15 a month beats one with 200 reviews, 180 of them two years old. The services and neighbourhoods customers mention also signal what you're relevant for. The ranking weights here are the author's view, not confirmed.
+**Track review pace, not star rating: recent reviews count for more than total reviews.** Google confirms the base of this: "more reviews and positive ratings can help your business's local ranking". Recency is the experts' view: Whitespark's panel ranks review recency 11th of 187 factors. A business with 90 reviews gaining 15 a month beats one with 200 reviews, 180 of them two years old. The services and neighbourhoods customers mention also signal what you're relevant for.
 
 > [!TRICK] Review velocity prompt
 > ```
@@ -68,9 +73,9 @@ The services section is the other part you fully control. List every service wit
 > Use the services and places competitors' reviewers mention to know which details matter to customers.
 
 > [!RISK] Review rules
-> Google's review policy bans paying or rewarding customers for reviews and asking only happy customers (review gating). Ask everyone for an honest review. Don't script what they write.
+> Google's [review policy](https://support.google.com/contributionpolicy/answer/7400114) bans paying or rewarding customers for reviews and asking only happy customers (review gating). Ask everyone for an honest review. Don't script what they write.
 
-Then reply to every review. The author says Google has confirmed that replying to reviews helps local ranking (he gives no source). Templates with variations cut each reply to under a minute and let you mention services and places naturally. At 10 reviews a month, that's about 120 keyword-bearing replies a year.
+Then reply to every review, for the customers reading them. The author says Google has confirmed that replying helps local ranking. Google's own page says only that replies show you value feedback and help you stand out, and Whitespark's experts rank owner replies 122nd of 187 ranking factors. Reply because people read replies, not to rank. Templates with variations cut each reply to under a minute and let you mention services and places naturally.
 
 > [!TRICK] Review response template prompt
 > ```
@@ -79,7 +84,7 @@ Then reply to every review. The author says Google has confirmed that replying t
 
 ## Post weekly and fix in order
 
-Post 2 to 3 times a week. Most competitors never post on their GBP. **Steady posts naming the neighbourhoods you serve** show you're active and tie you to those places. Example angle: "just completed a kitchen remodel in [neighborhood]", rotated across 8 to 10 neighbourhoods a month. The author says posts expire after 7 days; that may be outdated.
+Post 2 to 3 times a week. Most competitors never post on their GBP. **Steady posts naming the neighbourhoods you serve** show customers you're active. Example angle: "just completed a kitchen remodel in [neighborhood]", rotated across 8 to 10 neighbourhoods a month. Posts help people choose you more than they help you rank: Whitespark's experts put post frequency 148th of 187 ranking factors. The author says posts expire after 7 days. Google now says posts [stay up for 6 months](https://support.google.com/business/answer/7342169) unless you set a date range.
 
 > [!TRICK] Posting calendar prompt
 > ```
@@ -103,14 +108,19 @@ Run the audits in order of impact, one block a week, then switch to a steady rou
 > [!CHECK] On a Google Business Profile, what change often gives the fastest local ranking win?
 > Adding a secondary category the map-pack leaders have and you're missing. Your categories decide which searches show you on the map.
 
-> [!CHECK] One local competitor has 200 reviews, mostly two years old. Another has 90 and gains 15 a month. Which is ahead on the map?
-> The one gaining 15 a month. Track review pace, not total count or star rating, because recent reviews count for more.
+> [!CHECK] Which three factors does Google say decide local rankings, and which one can your profile change?
+> Relevance, distance and prominence. Your profile controls relevance: complete, accurate categories, services and details. Reviews feed prominence.
 
 > [!CHECK] Why should a plumber list every service from their website on their Google Business Profile?
 > A service missing from the profile is invisible for that map search, even when the website offers it.
 
 ## Sources
 
+- [Google Business Profile Help: Tips to improve your local ranking on Google](https://support.google.com/business/answer/7091)
+- [Google Business Profile Help: Guidelines for representing your business on Google](https://support.google.com/business/answer/3038177)
+- [Google Maps Help: Prohibited and restricted content (fake engagement)](https://support.google.com/contributionpolicy/answer/7400114)
+- [Google Business Profile Help: Create and manage posts](https://support.google.com/business/answer/7342169)
+- [Darren Shaw, Whitespark, *2026 Local Search Ranking Factors* (2025)](https://whitespark.ca/local-search-ranking-factors/)
 - [@bloggersarvesh: local SEO with AI, GBP audit prompts and five-week plan](https://x.com/bloggersarvesh/status/2088983373859725755)
 - [@borjafat: local listings and reviews](https://x.com/borjafat/status/2116164330014007296)
 - [@2whazzuup: local citation sites](https://x.com/2whazzuup/status/2119247229601062993)

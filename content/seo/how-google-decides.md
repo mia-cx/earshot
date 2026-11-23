@@ -4,32 +4,37 @@ order: 1
 description: Know which signals Google trusts, so you write pages it wants to show.
 ---
 
-> [!TLDR]
+> [!TLDR] Google rewards the page that satisfies the searcher best, and it measures that partly from clicks.
 > - Google watches what searchers do after they click. Pages that satisfy them climb; pages that disappoint sink.
-> - Show a real author with real experience, and add something the top results don't have.
+> - Trust comes from real experience. Show a real author, and add something the top results don't have.
 > - AI can find the gaps. Only you can fill them with firsthand tests, data and examples.
 > - The easiest wins are in topics nobody covers well yet.
 
 ## Clicks are a ranking signal
 
-**Google ranks pages partly by how people click on them.** Google's VP of Search, Pandu Nayak, described a system called NavBoost in the 2023 US antitrust trial: it uses about 13 months of click data to decide which pages deserve the top spots. The 2024 leak of Google's internal docs mentions "good clicks", "bad clicks" and "last longest clicks".
+**Google ranks pages partly by how people click on them.** Google says so itself: [How Search works](https://www.google.com/search/howsearchworks/how-search-works/ranking-results/) uses "aggregated and anonymized interaction data to assess whether search results are relevant". The court record shows how. In the US antitrust case, Judge Amit Mehta's [2024 opinion](https://storage.courtlistener.com/recap/gov.uscourts.dcd.223205/gov.uscourts.dcd.223205.1033.0_2.pdf) describes NavBoost, one of Google's core ranking signals. It remembers which results people clicked for each query, over the last 13 months, according to the testimony of Pandu Nayak, Google's VP of Search. Bing's guidelines say the same openly: Bing checks whether people [click a result and stay, or quickly come back](https://www.seroundtable.com/bing-ranking-algorithm-signals-29706.html).
 
-Two things follow. A page that ranks but gets skipped is leaving rankings on the table. And a page that overpromises earns clicks that bounce straight back, which hurts it. Never write a title the page can't deliver.
+The 2024 leak of Google's internal docs, [published by Rand Fishkin](https://sparktoro.com/blog/an-anonymous-source-shared-thousands-of-leaked-google-search-api-documents-with-me-everyone-in-seo-should-see-them/), mentions "good clicks", "bad clicks" and "last longest clicks". It names the fields but doesn't show how much they weigh.
 
-The same author cites two more numbers worth knowing, though they weren't checked independently: AI Overviews appear on about 8 in 10 searches (Search Engine Roundtable), and the #1 result gets about 58% fewer clicks when one shows (Ahrefs).
+Two things follow. A page that ranks but gets skipped is leaving rankings on the table. And a page that overpromises earns clicks that bounce straight back, which tells Google it didn't help. Never write a title the page can't deliver.
+
+AI Overviews take some of those clicks. Trackers disagree on how often they appear: from about 4 in 10 US desktop searches ([Advanced Web Ranking](https://www.advancedwebranking.com/seo/organic-ctr)) to over 8 in 10 ([Search Engine Roundtable](https://www.seroundtable.com/over-80-of-google-searches-have-ai-overviews-42372.html), combining several tools). [Ahrefs estimates](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update) the #1 result gets about 58% fewer clicks when one shows. That's a correlation from desktop data on informational searches, not a controlled test.
 
 ## Show who wrote it
 
-Readers and search engines both ask "should I trust this?" Make the answer easy:
+Readers and search engines both ask "should I trust this?" Google's [Search Quality Rater Guidelines](https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf) call this E-E-A-T: experience, expertise, authoritativeness and trust, with trust the most important. Experience means first-hand use: a review from someone who used the product beats one from someone who didn't. E-E-A-T [isn't a ranking factor by itself](https://developers.google.com/search/docs/fundamentals/creating-helpful-content). It describes what Google's systems try to reward. Make the answer easy:
 
 - A real byline on every article, linked to the author's relevant experience.
-- Firsthand tests shown on the page.
+- Firsthand tests shown on the page, and how you ran them.
 - A factual About page.
 - The same company facts (name, address, what you do) everywhere you appear.
 
+> [!RISK] Never invent an author
+> Google's guidance counts fake author profiles, AI headshots and invented credentials as deception. If AI helped write the page, say so.
+
 ## Add what only you can provide
 
-The top 10 results for most queries say the same things in the same way. **Your page wins by adding what they lack**: your own tests, your own data, screenshots of you doing the thing, a new angle.
+The top 10 results for most queries say the same things in the same way. **Your page wins by adding what they lack**: your own tests, your own data, screenshots of you doing the thing, a new angle. Google's [own checklist](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) asks whether a page offers "original information, reporting, research, or analysis" and "substantial value when compared to other pages in search results".
 
 Split the work. AI researches the gap: it reads the top results, YouTube transcripts, forum threads and review complaints, and compares what buyers ask with what pages answer. You fill the gap. Have Claude interview you for examples, analyse your own records, count complaints in reviews, run the same task in competing products and note what happened. Write those sentences yourself. When AI drafts the page, have it mark every fact it couldn't verify as `[CHECK]`, then clear every mark before publishing.
 
@@ -63,7 +68,7 @@ AI removes the excuses for skipping audits, but it can't choose which keywords m
 > Paste your most important article into the prompt above. Fill in your page's gap with one of the angles it suggests, download it, and add the paragraph to the page.
 
 > [!CHECK] What signals make a page easy for readers and Google to trust?
-> A real byline linked to the author's experience, firsthand tests shown on the page, a factual About page, and the same company facts everywhere you appear.
+> A real byline linked to the author's experience, firsthand tests shown on the page, a factual About page, and the same company facts everywhere you appear. Trust matters most, and first-hand experience builds it.
 
 > [!CHECK] The top 10 Google results for your keyword all say the same thing. How does your page win?
 > Add what they lack from your own experience: your tests, data, screenshots or a new angle. AI can find the gap, but only you can fill it.
@@ -73,6 +78,15 @@ AI removes the excuses for skipping audits, but it can't choose which keywords m
 
 ## Sources
 
+- [Google: How Search works, ranking results](https://www.google.com/search/howsearchworks/how-search-works/ranking-results/)
+- [Amit P. Mehta, *United States v. Google LLC*, memorandum opinion (2024)](https://storage.courtlistener.com/recap/gov.uscourts.dcd.223205/gov.uscourts.dcd.223205.1033.0_2.pdf)
+- [Rand Fishkin, SparkToro: the leaked Google Search API documents (2024)](https://sparktoro.com/blog/an-anonymous-source-shared-thousands-of-leaked-google-search-api-documents-with-me-everyone-in-seo-should-see-them/)
+- [Search Engine Roundtable: how Bing ranks pages, from Bing's webmaster guidelines (2020)](https://www.seroundtable.com/bing-ranking-algorithm-signals-29706.html)
+- [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- [Google: Search Quality Rater Guidelines (2025)](https://static.googleusercontent.com/media/guidelines.raterhub.com/en//searchqualityevaluatorguidelines.pdf)
+- [Ahrefs, *Update: AI Overviews reduce clicks by 58%* (2026)](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update)
+- [Advanced Web Ranking: Google organic CTR by position (2026)](https://www.advancedwebranking.com/seo/organic-ctr)
+- [Search Engine Roundtable: over 80% of Google searches have AI Overviews (2026)](https://www.seroundtable.com/over-80-of-google-searches-have-ai-overviews-42372.html)
 - [@borjafat: click signals, NavBoost and the 2024 leak](https://x.com/borjafat/status/2119227612258054502)
 - [@asaio87: adding firsthand information, gap prompt](https://x.com/asaio87/status/2119171723849245031)
 - [@borjafat: author bylines and filling content gaps](https://x.com/borjafat/status/2116164330014007296)

@@ -4,7 +4,7 @@ order: 2
 description: Make your site crawlable and indexable with one checklist your coding agent runs.
 ---
 
-> [!TLDR]
+> [!TLDR] A page Google and AI bots can't fetch, read and index can't rank, so make it readable without JavaScript first.
 > - Most technical SEO is a mechanical checklist. A coding agent can apply almost all of it.
 > - The last two items, human writing and earned links, are yours.
 > - Let the AI search bots in, and set up Bing Webmaster Tools. Block a search bot and you vanish from that assistant's answers.
@@ -12,7 +12,11 @@ description: Make your site crawlable and indexable with one checklist your codi
 
 ## Technical SEO is a checklist
 
-If Google can't fetch, render and index a page, nothing else in this module matters. **The fixes are mechanical**: server-side rendering, a sitemap, no stray noindex tags, unique titles, fast pages. That makes them a good job for a coding agent, especially on a site you built quickly with one.
+If Google can't fetch, render and index a page, nothing else in this module matters. Google's [SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) starts there for that reason. **The fixes are mechanical**: server-side rendering, a sitemap, no stray noindex tags, unique titles, fast pages. That makes them a good job for a coding agent, especially on a site you built quickly with one.
+
+Rendering matters most. Googlebot runs JavaScript, but Google [still recommends](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics) server-side or pre-rendering, because "not all bots can run JavaScript". [Vercel's crawler logs](https://vercel.com/blog/the-rise-of-the-ai-crawler) found that none of the major AI crawlers (OpenAI's, Anthropic's, Perplexity's) render it. A page that's empty until scripts run is empty to them.
+
+Speed counts less than people think. Google [uses Core Web Vitals in ranking](https://developers.google.com/search/docs/appearance/page-experience), but it still shows the most relevant page "even if the page experience is sub-par". The [web.dev thresholds](https://web.dev/articles/vitals) apply to real visitors at the 75th percentile, not to one lab test. Pass them, then stop polishing.
 
 The checklist below ends with two items no agent can do for you: writing that doesn't read like AI filler, and links from sites people trust. Those are covered in *How Google decides who ranks* and the *Backlinks* module.
 
@@ -53,13 +57,14 @@ An agent saying "done" is not the same as Google seeing the page. Confirm each f
 
 - Inspect key URLs in Search Console to confirm they can be indexed.
 - Look for blocks or noindex tags you didn't mean to add.
-- Make sure every page is in your navigation and sitemap, reached by normal crawlable links.
+- Make sure every page is in your navigation and sitemap, reached by normal `<a href>` links.
 - After every publish, check the new page is in the sitemap. Sitemaps can stop updating without any warning: one founder found a live page missing from his the day after he published it.
 - Check the rendered page actually shows the answer, not an empty shell waiting for JavaScript.
 - Open `www.yoursite.com`: it should redirect to your main address.
 - Keep structured data matching the facts visible on the page. Test it with Google's Rich Results Test.
 - Compress images, remove scripts you don't need, and fix anything broken on mobile.
-- Add an `llms.txt` file only if a tool you use reads it. It has no confirmed effect on AI citations.
+- Add an `llms.txt` file only if a tool you use reads it. It has no confirmed effect on AI citations, and Google says AI Overviews [need no special files](https://developers.google.com/search/docs/appearance/ai-features).
+- To keep a page out of Google, use `noindex`, not robots.txt. Google can [still index a blocked URL](https://developers.google.com/search/docs/crawling-indexing/robots/intro) if other sites link to it.
 
 ## Let the AI search bots in
 
@@ -73,7 +78,9 @@ AI companies run two kinds of bot. **Training bots collect pages to train models
 | Google | Google-Extended | Googlebot |
 | Microsoft | none listed | Bingbot (feeds Copilot) |
 
-Each setting is separate: you can block GPTBot and still show up in ChatGPT search. Google-Extended is only a word you use in robots.txt, not a bot that visits. It controls Gemini training and doesn't affect Google Search.
+Each setting is separate: you can block GPTBot and still show up in ChatGPT search ([OpenAI's crawler docs](https://developers.openai.com/api/docs/bots)). Google-Extended is only a word you use in robots.txt, not a bot that visits. It controls Gemini training and [doesn't affect Google Search](https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers).
+
+A third kind of bot fetches a page because a person asked the assistant about it: ChatGPT-User, Claude-User, Perplexity-User. OpenAI and Perplexity say these may ignore robots.txt, because a person started the fetch.
 
 > [!TRICK] Test what the search bots get
 > 1. Open your **live** robots.txt in a browser (`https://yoursite.com/robots.txt`), not the copy in your project. Your CDN can add rules you never wrote.
@@ -91,16 +98,16 @@ Each setting is separate: you can block GPTBot and still show up in ChatGPT sear
 > If your site runs behind Cloudflare, three settings change what bots see:
 > - **AI Crawler and Agent access policies** (Security → Settings → Bot traffic) have separate Search, Agent and Training settings. Search set to Block shuts out AI search bots. Training rules also hit bots that do both search and training.
 > - **Managed robots.txt**: when training is disallowed, Cloudflare adds its own block of rules at the top of your robots.txt.
-> - **Bot Fight Mode** challenges traffic that looks automated, and firewall rules can't make exceptions to it. One reading list (i365dev/awesome-seo) warns it can challenge legitimate crawlers. After launch, open Security → Analytics → Events and look for requests labelled Bot Fight Mode.
+> - **Bot Fight Mode** challenges traffic that looks automated, and [firewall rules can't make exceptions to it](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/). One reading list (i365dev/awesome-seo) warns it can challenge legitimate crawlers. After launch, open Security → Analytics → Events and look for requests labelled Bot Fight Mode.
 
 ## Set up Bing too
 
-**Bing's index feeds Microsoft Copilot, and Bing shows you where AI answers cited you.** Google doesn't. Setup takes about ten minutes.
+**Bing's index feeds Microsoft Copilot, and Bing shows you where AI answers cited you.** Google doesn't. Bing's [AI Performance report](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/) lists citations across Copilot, Bing and some partners, with the searches behind them. Setup takes about ten minutes.
 
 > [!TRICK] Bing Webmaster Tools in ten minutes
 > 1. Sign in to Bing Webmaster Tools, open My Sites → Import, and import your site from Google Search Console. That verifies the site and brings your sitemaps along.
 > 2. Check the sitemap is listed. Submit it if not.
-> 3. Turn on IndexNow, which tells Bing (and other engines that use it, not Google) the moment a page changes. Many site builders have it built in or as a plugin. On Cloudflare, switch on Crawler Hints.
+> 3. Turn on IndexNow, which tells Bing (and [other engines that use it](https://www.indexnow.org/faq), not Google) the moment a page changes. Many site builders have it built in or as a plugin. On Cloudflare, switch on Crawler Hints.
 > 4. Open **AI Performance**: how often Copilot, Bing's AI summaries and some partners cited each of your pages, plus a sample of "grounding queries", the searches the AI ran to find you. It counts citations, not clicks, and it's the closest thing to free citation data you'll get.
 
 ## Fix buyer pages first
@@ -123,6 +130,21 @@ This order comes from a case study of Granola's AI search work, relayed secondha
 
 ## Sources
 
+- [Google Search Central: SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+- [Google Search Central: JavaScript SEO basics](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics)
+- [Vercel, *The rise of the AI crawler* (2024)](https://vercel.com/blog/the-rise-of-the-ai-crawler)
+- [Google Search Central: Understanding page experience](https://developers.google.com/search/docs/appearance/page-experience)
+- [web.dev: Web Vitals](https://web.dev/articles/vitals)
+- [Google Search Central: Introduction to robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
+- [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
+- [Google Search Central: Google's common crawlers](https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers)
+- [Google Search Central: FAQ rich results removed (2026)](https://developers.google.com/search/updates)
+- [OpenAI: Overview of OpenAI crawlers](https://developers.openai.com/api/docs/bots)
+- [Anthropic: Does Anthropic crawl data from the web?](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler)
+- [Perplexity: Perplexity crawlers](https://docs.perplexity.ai/guides/bots)
+- [Cloudflare: Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/)
+- [Bing Webmaster Blog: AI visibility insights in Bing Webmaster Tools (2026)](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/)
+- [IndexNow: FAQ](https://www.indexnow.org/faq)
 - [@suraj_sharma14: technical SEO checklist prompt](https://x.com/suraj_sharma14/status/2116062550416871512)
 - [@borjafat: indexability, rendering and structured data checks](https://x.com/borjafat/status/2116164330014007296)
 - [@wespreadjam: Granola case study, fixing buyer pages first](https://x.com/wespreadjam/status/2115568290307469548)
