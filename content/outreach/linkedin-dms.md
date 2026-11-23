@@ -40,8 +40,8 @@ Don't send your best guess to the whole list. Split-test on a slice first.
 > [!TRICK] Three DMs, 150 people, one week
 > 1. In LinkedIn Sales Navigator, filter by your buyer's job title, industry and company headcount.
 > 2. Send each of your 3 DMs to 50 people (150 total).
-> 3. After a week, take the DM with the most replies and write 3 new versions of it.
-> 4. Send those to the rest of your list (the author's example: the remaining 850 of 1,000).
+> 3. After a week, compare replies. If one DM clearly beats the others, write 3 new versions of it.
+> 4. Test those on fresh slices of your list before you send to the rest (the author's example sends to the remaining 850 of 1,000). If the counts are close, call it a tie and keep testing.
 
 > [!RISK] 50 sends can't pick a winner
 > At a 10% reply rate, 50 sends gives you about 5 replies per DM, and 5 against 8 can be pure luck. Evan Miller's [rule of thumb for A/B tests](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) says telling 10% from 15% apart takes about 576 sends per version. Decide the sample size before you start, and don't stop early because one looks ahead. With a small list, keep a DM only if it wins by a wide margin, and keep testing.
@@ -51,22 +51,17 @@ Don't send your best guess to the whole list. Split-test on a slice first.
 
 ## Hand the research to an agent, keep the send
 
-Once the method works by hand, an agent can repeat the research every week. Connect three tools through MCP (the connector that lets an agent use a tool on its own).
+Once the method works by hand, an agent can do the thinking every week while you do the collecting and the sending. The author's setup connects an ad scraper and a sending tool through MCP (the connector that lets an agent use a tool on its own); both break LinkedIn's terms (see below), so this version keeps those two steps with you.
 
 > [!TRICK] A weekly DM research agent
-> **Connections:**
-> - **Apify:** searches the LinkedIn Ad Library and pulls every ad a company runs.
-> - **Firecrawl:** reads your website and case studies, so the agent knows what you sell and your results.
-> - **A sending tool with an MCP:** handles DMs, follow-ups and one inbox for replies. The author names their own, Eaglesend.
+> **You:** copy competitors' new ads from the LinkedIn Ad Library into a file each week, and send every DM yourself in LinkedIn.
 >
-> Add them to an agent such as Claude Code and give it this job:
-> 1. Pull new ads every week.
+> **The agent** (such as Claude Code, with Firecrawl to read your website and case studies, so it knows what you sell and your results):
+> 1. Read this week's ads file.
 > 2. Find the problems that repeat.
 > 3. Rewrite the ads as DMs.
 > 4. Write new versions of the best DM.
 > 5. Send you the drafts.
->
-> You read each draft and say yes or no before anything goes out.
 
 > [!RISK] Automated messaging and scraping break LinkedIn's terms
 > Section 8.2 of LinkedIn's [User Agreement](https://www.linkedin.com/legal/user-agreement) bans bots that "send or redirect messages", along with scripts, crawlers and browser plugins that scrape or copy the site. That covers an automated sending tool and can cover a scraper pulling the Ad Library. Keep a human approval step on every send, and consider collecting the ads by hand.
@@ -83,10 +78,10 @@ To keep an agent from doing damage on its own, see *Keep bots from doing damage*
 > Open linkedin.com/ad-library and search the 3 companies you lose deals to (last 30 days). Fill in your competitor ads above, then download them.
 
 > [!CHECK] When an agent researches and drafts your LinkedIn DMs, which step stays yours?
-> Approving every send. LinkedIn's User Agreement bans bots that send messages, so the agent only researches and drafts.
+> Collecting the ads and sending the DMs. LinkedIn's User Agreement bans scraping and bots that send messages, so the agent only researches and drafts, and you send each DM yourself.
 
 > [!CHECK] You have three LinkedIn DM drafts and 1,000 buyers on your list. How do you send them?
-> Send each draft to a slice first, such as 50 people. After a week, write three new versions of the one with the most replies and send those to the rest. With slices that small, trust only a wide margin.
+> Send each draft to a slice first, such as 50 people. Only a wide margin means anything at that size: if one clearly wins, write new versions of it and test them on fresh slices. If the counts are close, call it a tie and keep testing before you send to the rest.
 
 > [!CHECK] Why open a cold LinkedIn DM with a problem your competitors all pay to advertise?
 > It makes the DM about the buyer's life, not your idea. A problem several competitors pay to show buyers is on their minds right now, so you aren't guessing what they care about.

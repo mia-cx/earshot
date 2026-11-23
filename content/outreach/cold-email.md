@@ -48,11 +48,11 @@ Following up is where the replies are. Dean's study found one follow-up lifted r
 
 When someone replies with interest, **answer within 5 minutes**. The cheat sheet gives that number. James Oldroyd and colleagues [found most companies answer online leads far too slowly](https://scholarsarchive.byu.edu/facpub/9711/).
 
-> [!TRICK] Swap the unsubscribe link for a reply word
-> Instead of an unsubscribe link, ask people to reply with a word to opt out, such as "banana".
+> [!TRICK] Offer a reply word to opt out
+> Ask people to reply with a word to opt out, such as "banana". It works only while you're not a Gmail bulk sender. Once you've sent 5,000 messages in a day to personal Gmail accounts, Google counts you as one for good, and you then need one-click unsubscribe headers and a visible unsubscribe link as well.
 
 > [!RISK] Opt-out rules differ by country and volume
-> The US [CAN-SPAM Act](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) accepts a reply-based opt-out, B2B included, but also requires your postal address in every email and honouring opt-outs within 10 business days. Gmail requires one-click unsubscribe above 5,000 messages a day. EU and UK law may require more. Check the rules for where your prospects are and how much you send, and honour every opt-out.
+> The US [CAN-SPAM Act](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) accepts a reply-based opt-out, B2B included, but also requires your postal address in every email and honouring opt-outs within 10 business days. [Gmail requires one-click unsubscribe](https://support.google.com/a/answer/14229414) from bulk senders: anyone who has sent 5,000 messages in a day to personal Gmail accounts, even if their volume later drops. EU and UK law may require more. Check the rules for where your prospects are and how much you send, and honour every opt-out.
 
 > [!FORM] Your cold email
 > 1. What do we do? What problem do we solve? Give one short, precise answer.
@@ -76,6 +76,7 @@ When someone replies with interest, **answer within 5 minutes**. The cheat sheet
 ## Sources
 
 - [Google: Email sender guidelines](https://support.google.com/a/answer/81126)
+- [Google: Email sender guidelines FAQ](https://support.google.com/a/answer/14229414)
 - [Microsoft: Outlook's new requirements for high-volume senders (2025)](https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/strengthening-email-ecosystem-outlook%E2%80%99s-new-requirements-for-high%E2%80%90volume-senders/4399730)
 - [Brian Dean, *We Analyzed 12 Million Outreach Emails* (2019)](https://backlinko.com/email-outreach-study)
 - [Apple: Mail Privacy Protection](https://www.apple.com/legal/privacy/data/en/mail-privacy-protection/)

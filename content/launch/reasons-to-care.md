@@ -6,13 +6,13 @@ description: Write a launch post that makes strangers stop, reply and quote it.
 
 > [!TLDR]
 > - People share what surprises them, helps them or stirs a strong feeling. An announcement does none of that.
-> - Strangers give a post a second or two. "We're excited to announce" never passes.
+> - Feed posts get little time: about 1.7 seconds on average in Facebook's mobile feed. Lead with why a stranger should care; "We're excited to announce" never does.
 > - Give strangers something to add: a demo they can examine, dispute or try.
 > - Before you write copy, answer the narrative questions below to put your product inside a conversation people already have.
 
-## Strangers decide in a second or two
+## Lead with why they should care
 
-Every launch post hits one filter first: **why do I care?** Meta's 2016 [feed attention research](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative) found people spend about 1.7 seconds on a mobile feed item.
+Every launch post hits one filter first: **why do I care?** Meta's 2016 [feed attention research](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative) found people spend about 1.7 seconds on a mobile News Feed item on average. That's an average for one platform, not a deadline, but it shows how little time a post gets.
 
 We also know what makes people pass a post on. Jonah Berger and Katherine Milkman [tracked three months of New York Times articles](https://journals.sagepub.com/doi/10.1509/jmr.10.0353) and found people share surprising, useful and high-arousal content (awe, anger, anxiety) more, and share content that leaves them sad or flat less.
 
@@ -76,7 +76,7 @@ A launch is one moment. Your brand is what people see the rest of the year (see 
 > Fill in your launch narrative above, one line per question, then download it. Keep it next to you when you write the launch post.
 
 > [!CHECK] What question does every launch post have to answer for a stranger scrolling past?
-> "Why do I care?" They give a post a second or two, so announcement language like "We're excited to announce" never passes.
+> "Why do I care?" Feed posts get very little time, so announcement language like "We're excited to announce" loses them before the point arrives.
 
 > [!CHECK] Your launch post says "Excited to announce our new platform". What do you replace it with?
 > A specific demo strangers can examine, dispute or try: the real input, the real output, and what you fixed by hand. That gives them something to add when they quote it.

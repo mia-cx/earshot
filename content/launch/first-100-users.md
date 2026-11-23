@@ -25,7 +25,7 @@ Early users come from places where people already hunt for new tools: communitie
 > [!TRICK] Run a small Bullseye on the lists
 > 1. Skim the lists and note every place your buyer might browse.
 > 2. Rank them: likely, possible, long shot.
-> 3. Pick the top three and post or submit to each in the same week.
+> 3. Pick the top three and run one small, cheap test on each in the same week: a post, a listing or a few conversations, whatever fits that place.
 > 4. Count the sign-ups or conversations each one brought.
 > 5. Put your effort into the one that worked. If none did, go back to step 2.
 
