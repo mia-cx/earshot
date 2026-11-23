@@ -2,6 +2,9 @@ import { course } from './course.ts';
 
 const X_POST = /https:\/\/x\.com\/(\w+)\/status\/(\d+)/g;
 
+/** The X posts a lesson's Sources section links, once each, in order. */
+export const sourcePosts = (sources: string) => [...new Set(sources.match(X_POST))];
+
 const posts = new Map<string, string>();
 for (const lesson of course.lessons)
 	for (const [, handle, id] of lesson.sources.matchAll(X_POST)) posts.set(id, handle);

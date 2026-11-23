@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { page } from '$app/state';
 	import CheckCard from '#lib/CheckCard.svelte';
 	import Diagram from '#lib/Diagram.svelte';
 	import ListenBar from '#lib/ListenBar.svelte';
 	import { progress } from '#lib/progress.svelte.ts';
 	import { checkIds, review } from '#lib/review.svelte.ts';
-	import Seo from '#lib/Seo.svelte';
+	import Seo, { maker } from '#lib/Seo.svelte';
 	import Worksheet from '#lib/Worksheet.svelte';
 
 	let { data } = $props();
@@ -70,7 +71,24 @@
 <Seo
 	title="{data.lesson.title} · Earshot"
 	description={data.lesson.summary}
+	type="article"
 	markdown={data.lesson.markdownHref}
+	schema={[
+		{
+			'@context': 'https://schema.org',
+			'@type': 'Article',
+			headline: data.lesson.title,
+			description: data.lesson.summary,
+			url: new URL(data.lesson.href, page.url.origin).href,
+			image: new URL('/og.png', page.url.origin).href,
+			inLanguage: 'en',
+			timeRequired: `PT${data.lesson.minutes}M`,
+			author: maker,
+			publisher: maker,
+			isPartOf: { '@type': 'WebSite', name: 'Earshot', url: new URL('/', page.url.origin).href },
+			isBasedOn: data.basedOn
+		}
+	]}
 	crumbs={[
 		{ name: module.title, href: module.href },
 		{ name: data.lesson.title, href: data.lesson.href }

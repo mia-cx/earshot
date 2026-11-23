@@ -16,6 +16,10 @@
 		dark = !dark;
 		const theme = dark ? 'dark' : 'light';
 		document.documentElement.dataset.theme = theme;
+		// Tint the browser toolbar to match (the theme-color tags in app.html).
+		for (const meta of document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]')) {
+			meta.media = meta.dataset.scheme === theme ? 'all' : 'not all';
+		}
 		try {
 			localStorage.setItem(KEY, theme);
 		} catch {

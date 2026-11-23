@@ -4,7 +4,7 @@
 	import Diagram from '#lib/Diagram.svelte';
 	import { progress } from '#lib/progress.svelte.ts';
 	import Route from '#lib/Route.svelte';
-	import Seo from '#lib/Seo.svelte';
+	import Seo, { maker } from '#lib/Seo.svelte';
 
 	let { data } = $props();
 
@@ -13,17 +13,23 @@
 	const next = $derived(lessons.find((l) => !progress.done.has(l.id)));
 	const minutes = $derived(Math.round(lessons.reduce((n, l) => n + l.minutes, 0) / lessons.length));
 	const show = $derived(data.showcase);
+	const description = $derived(
+		`${lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, rewritten from the best free posts on X. Short version first, one small task per lesson, no sign-up.`
+	);
 </script>
 
 <Seo
 	title="Earshot: a free marketing course for builders with ADHD"
-	description="{lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, rewritten from the best free posts on X. Short version first, one small task per lesson, no sign-up."
+	{description}
 	schema={[
 		{
 			'@context': 'https://schema.org',
 			'@type': 'WebSite',
 			name: 'Earshot',
-			url: new URL('/', page.url.origin).href
+			url: new URL('/', page.url.origin).href,
+			description,
+			inLanguage: 'en',
+			publisher: maker
 		}
 	]}
 />
