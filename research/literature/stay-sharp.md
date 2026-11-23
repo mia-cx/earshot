@@ -57,7 +57,7 @@ Verdicts in the claim checks: **supported** (the source says this), **overstated
 | --- | --- | --- |
 | PwC: over a billion job ads; professionalised roles grew jobs twice as fast and pay 42% faster | **supported** | PwC 2026 |
 | PwC: AI-skill jobs advertise 62% more pay and grew 69% against 9% | **supported** | PwC 2026 |
-| MIT: writing 40% faster and 18% better | **supported** | MIT News 2023 |
+| MIT: writing 40% faster and 18% better | **overstated**: MIT News reports 40% less time, not 40% faster. Fixed: "took 40% less time", "rated 18% better" | MIT News 2023 |
 | MIT: "Their work shifted from drafting to editing", linked to MIT News | **misattributed**: MIT News doesn't say it; the working paper does. Fixed: cited to Noy and Zhang | Noy and Zhang 2023 |
 | Stanford: 22 to 25 year olds 19% below the kept-pace line; a growth comparison | **supported** | Canaries, August 2026 |
 | "The post quotes 13% from the first 2025 version; the gap has widened since" | **overstated**: 13% was a regression estimate; the measure behind 19% stood at 15% in July 2025. Fixed: says both | Canaries paper, August 2026 |

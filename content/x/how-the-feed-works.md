@@ -46,7 +46,7 @@ In Epstein's words, your followers feed Thunder for your account, "and that's wh
 
 ## Keep a launch in one post
 
-X shows at most one post per conversation in a viewer's feed. `DedupConversationFilter` keeps the highest-scoring post in a reply chain and drops the rest. In Epstein's example, if you spread a launch across 5 tweets in a thread, 4 of them never reach non-followers.
+X shows at most one post per conversation in a viewer's feed. `DedupConversationFilter` keeps the highest-scoring post in a reply chain and drops the rest. Replies from accounts a viewer doesn't follow are also filtered out by default. In Epstein's example, if you spread a launch across 5 tweets in a thread, non-followers will mostly see one of them at best.
 
 Your main post has to stand alone. Give a stranger everything they need there, with nothing left for the replies to explain. *Give strangers a reason to care* covers what goes in it.
 
@@ -61,7 +61,7 @@ Your main post has to stand alone. Give a stranger everything they need there, w
 > X finds candidate posts, drops some (stale, seen, blocked or muted), scores the rest per viewer, then runs final safety checks.
 
 > [!CHECK] You plan to announce a launch on X across five tweets. What do you change?
-> Put the whole launch in one self-contained post. X shows one post per conversation, so the other tweets never reach non-followers.
+> Put the whole launch in one self-contained post. X shows one post per conversation and filters out replies for non-followers by default, so the other tweets mostly won't reach them.
 
 > [!CHECK] What does X's ranking model actually score when it ranks your post for one viewer?
 > Its prediction of what that viewer will do: like, reply, share, follow, mute and so on, each multiplied by a weight and added up.

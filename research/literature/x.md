@@ -92,7 +92,7 @@ Verdicts: **supported** (the source says this), **overstated** (the source says 
 | A post can go viral inside one niche | **supported** in mechanism | README; Satuluri et al. |
 | Big accounts get bigger launches; followers are "where it stops" | **one person's claim** (Epstein's framing); mechanism supported by the out-of-network discount | README |
 | One post per conversation; the highest-scoring one wins | **supported** | dedup_conversation_filter.rs |
-| A 5-tweet launch thread: 4 never reach non-followers | **supported** | dedup_conversation_filter.rs; `OONRetweetReplyFilter` drops replies from accounts the viewer doesn't follow |
+| A 5-tweet launch thread: 4 never reach non-followers | **overstated**: `OONRetweetReplyFilter` drops out-of-network replies by default but can admit Phoenix replies, and dedup keeps one post per conversation per candidate set, not the same post for every viewer. Fixed: "mostly see one of them at best" | dedup_conversation_filter.rs; oon_retweet_reply_filter.rs |
 
 ### Optimise for shares and replies (`what-x-rewards.md`)
 
@@ -108,7 +108,7 @@ Verdicts: **supported** (the source says this), **overstated** (the source says 
 | The model reads recent history and loads installed apps and inferred gender | **supported** | query hydrators |
 | Berger and Milkman: 3 months of *NYT* articles; awe, anger, anxiety spread more, sadness less; useful and surprising spread more | **supported** | Berger & Milkman 2012 |
 | People share what makes them look smart and what's useful | **supported** | Penn Today 2013 |
-| Anger earns "mutes and blocks, the heaviest negatives" | **overstated**: report (−234) is the heaviest and block (−31.2) the lightest of the three. Fixed: "mutes, blocks and reports" | param.rs |
+| Anger earns "mutes and blocks, the heaviest negatives" | **overstated**: report (−234) is the heaviest and block (−31.2) the lightest of the three. "Not interested" (−53.07) also outweighs block. Fixed: "mutes, blocks and reports, which all carry large negative weights, reports the largest" | param.rs |
 | Ryan's list of shareable-post habits | **one person's claim** | Ryan's post |
 
 ### Stay out of the filters (`stay-visible.md`)
@@ -119,7 +119,7 @@ Verdicts: **supported** (the source says this), **overstated** (the source says 
 | Filters drop seen posts, out-of-network reposts and replies, blocked and muted accounts and keywords; visibility filtering drops labelled posts | **supported** | README |
 | Out-of-network posts get a discount below 1 | **supported** | README |
 | Each extra post from you is multiplied by a decaying factor | **supported** | README "Author Diversity" |
-| Cold-start boost for posts under 2 hours from authors under 50,000 followers with under 200 impressions; "not every viewer gets it" | **overstated**: only original posts qualify, at most one post per refresh is lifted (to about slot 15), and the experiment arms decide which authors qualify for which viewers. Fixed | author_cold_start.rs; param.rs |
+| Cold-start boost for posts under 2 hours from authors under 50,000 followers with under 200 impressions; "not every viewer gets it" | **overstated**: only original posts qualify, at most one post per refresh is lifted (to about slot 15), and the experiment arms decide which authors qualify for which viewers. The thresholds are necessary, not sufficient: impressions are Home impressions, and the post must already clear a rank cutoff. Fixed: "can be boosted" | author_cold_start.rs; param.rs |
 | Ryan: first viral post in 3 days; 8,000+ followers and 4M+ impressions in 4 weeks; about 9,900 in a month | **one person's claim** | Ryan's article; @AIGuide_ |
 | "Follower count isn't part of the score" | **overstated**: no weight rewards it, but the cold-start boost reads follower count. Fixed: "No weight in the score rewards follower count" | param.rs; author_cold_start.rs |
 | Ryan has watched big accounts fade over about 18 months | **one person's claim** | Ryan's article |

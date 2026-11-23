@@ -65,7 +65,7 @@ The goal underneath stays put. X wants people sharing and talking. To guess what
 
 People share what stirs them up, surprises them, or helps them. Jonah Berger and Katherine Milkman studied three months of *New York Times* articles and found [high-arousal emotions made stories spread more](https://journals.sagepub.com/doi/10.1509/jmr.10.0353). Awe, anger and anxiety worked, while sadness didn't. Useful and surprising articles spread more too.
 
-In [an interview on *Contagious*](https://penntoday.upenn.edu/2013-04-18/interviews/qa-jonah-berger), Berger adds that people share what makes them look smart and what's practically useful. Anger spreads, but on X it also invites mutes, blocks and reports, the heaviest weights in the table. Aim for awe and usefulness.
+In [an interview on *Contagious*](https://penntoday.upenn.edu/2013-04-18/interviews/qa-jonah-berger), Berger adds that people share what makes them look smart and what's practically useful. Anger spreads, but on X it also invites mutes, blocks and reports, which all carry large negative weights, reports the largest of all. Aim for awe and usefulness.
 
 Ryan's list puts that into practice:
 

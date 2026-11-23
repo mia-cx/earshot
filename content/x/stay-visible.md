@@ -6,7 +6,7 @@ description: Keep your posts eligible for the feed and your account's reputation
 
 > [!TLDR] A post can only rank if it survives X's filters, which are written in X's code.
 > - A post has 48 hours to take off, and each extra post you send the same viewer counts for less.
-> - Fresh posts from accounts under 50,000 followers get a small boost. Big accounts get no guaranteed reach.
+> - Fresh posts from accounts under 50,000 followers can get a small boost. Big accounts get no guaranteed reach.
 > - Labels for spam or inauthentic behaviour limit who sees your posts. X's Under the Hood tool shows them.
 > - Write your own posts, stay out of fights and check your labels.
 
@@ -20,7 +20,7 @@ Posting more isn't free. Each extra post from you in the same viewer's feed gets
 
 ## Small accounts get a head start
 
-Starting small isn't a handicap. X's code gives a cold-start boost to original posts (not replies or reposts) from authors with up to 50,000 followers. A post qualifies while it's under 2 hours old and has fewer than 200 impressions. Each refresh lifts at most one such post to around the 15th slot. The boost runs as an experiment, so which authors qualify depends on the viewer.
+Starting small isn't a handicap. X's code has a cold-start boost for original posts (not replies or reposts) from authors with up to 50,000 followers. A post can be boosted while it's under 2 hours old and has fewer than 200 Home feed impressions, if it already ranks well enough to be in the running. Each refresh lifts at most one such post to around the 15th slot. The boost runs as an experiment, so which authors qualify depends on the viewer.
 
 A new account can still break out early. Ryan's own first viral post came three days after starting a new account, and he reports 8,000+ followers and 4M+ impressions in 4 weeks solo, reaching about 9,900 followers in a month. Treat that as one person's result.
 
@@ -58,7 +58,7 @@ Ryan also warns that a troll blocking or muting you cuts your reach. For a singl
 > Block or mute them, and don't argue. Their block mostly affects viewers like them, so the fight costs you more than their block does.
 
 > [!CHECK] On X, why does a new account with 300 followers have a fair shot at reach?
-> X's code boosts fresh posts, under 2 hours old, from authors under 50,000 followers while they have few impressions. Follower count isn't scored.
+> X's code can boost fresh posts, under 2 hours old, from authors under 50,000 followers while they have few impressions. No weight in the score rewards follower count.
 
 ## Sources
 
