@@ -8,13 +8,15 @@ description: Plan, ticket and review a multi-channel campaign that agents build 
 > - Plan out loud first, then let an agent question you until the offer and the goal are agreed.
 > - Give every finding a source and a date, and keep approved decisions apart from ideas.
 > - Break the campaign into tickets that say what they depend on and when they're ready for review.
-> - Review the campaign as a whole: every asset can pass its own checks and still contradict the others.
+> - Review the campaign as a whole: agents working in parallel make choices that clash, so every asset can pass its own checks and still contradict the others.
 
 ## Plan out loud, then get questioned
 
-Shann Holmberg does about 70% of his marketing work inside an agent workspace, including work that goes live. He starts a campaign by talking for 5 to 10 minutes into a transcription tool: the goal, the context, what he's tried, what he's unsure about. It doesn't need to be neat.
+Start messy. Shann Holmberg says he does about 70% of his marketing work inside an agent workspace, including work that goes live. He starts a campaign by talking for 5 to 10 minutes into a transcription tool: the goal, the context, what he's tried, what he's unsure about.
 
-Then an agent questions the plan (he uses Matt Pocock's planning skills), and he answers. If the agent asks what makes a lead qualified, the answer decides which results it should use. **If the offer isn't agreed, you're not ready to make creative around it.**
+Next, let an agent question the plan (he uses Matt Pocock's planning skills). Its questions fill the gaps it would otherwise guess at. If it asks what makes a lead qualified, your answer decides which results it should use. **If the offer isn't agreed, you're not ready to make creative around it.**
+
+Anthropic saw the same need when [building its research agents](https://www.anthropic.com/engineering/multi-agent-research-system): each task needs an objective, an output format, the sources to use and clear limits. Without them, agents duplicated work and left gaps.
 
 > [!TRICK] Give the first run a goal that says when to stop
 > Once the plan and context files exist, Holmberg's first prompt is short, because the files hold the context:
@@ -70,7 +72,7 @@ Agents can't tell a decision from a suggestion unless the files do.
 
 ## Run the campaign on tickets
 
-During planning, break the campaign into tickets. Each one names the deliverable, the context to read, the checks before review, what it depends on and who (or which agent) has it. A coordinator agent hands out the tickets that are ready (see *Put a coordinator over your bots*). When one is blocked on you, it records the exact question, and other work carries on.
+During planning, break the campaign into tickets. Each one names the deliverable, the context to read, the checks before review, what it depends on and who (or which agent) has it. A coordinator agent hands out ready tickets (see *Put a coordinator over your bots*). When one is blocked on you, it logs the exact question so other work keeps moving.
 
 **Dependencies set the order.** Competitor research, a review of past campaigns and prospect research can run at the same time. Final copy needs an agreed offer, ads need a page to point to, and follow-up emails must match what someone signed up for.
 
@@ -114,7 +116,9 @@ Don't add agents for their own sake. Holmberg's first content system used four a
 
 ## Check the campaign as a whole
 
-**Assets can pass their own checks and still disagree with each other.** Before launch, ask:
+**Assets can pass their own checks and still disagree with each other.** Walden Yan of Cognition [explains why](https://cognition.com/blog/dont-build-multi-agents): every piece of work carries small decisions, and parallel agents can't see each other's.
+
+The ad and the landing page matter most. Nielsen Norman Group's research on [information scent](https://www.nngroup.com/articles/information-scent/) shows that a link promising more than the page delivers spends the visitor's trust, and they leave. Before launch, check three things:
 
 - Does the ad promise what the landing page delivers?
 - Does the email use the same offer?
@@ -122,14 +126,20 @@ Don't add agents for their own sake. Holmberg's first content system used four a
 
 If you change the offer during review, every asset that mentions it goes back for revision.
 
-Inside a ticket, an agent can loop: make, check, fix, check again (see *Check the work before it ships*). Give the loop a retry limit and a time or token budget, and have it ask you when it keeps failing the same check. It may need a missing product photo, a different tool or a decision from you. Passing the checks doesn't make the creative good: you still judge the direction.
+Inside a ticket, an agent can loop: make, check, fix, check again (see *Check the work before it ships*). Cap its retries and its time or token budget, and have it ask you when it keeps failing the same check. [OpenAI's agent guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) sets the same trigger: past a set number of failures, hand the job to a person. It may need a missing product photo, a different tool or a decision from you.
+
+Passing the checks still doesn't make the creative good. You judge the direction.
 
 ## Learn from results and from your fixes
 
-Start the review from one question, such as "which creative angles brought qualified leads last month, and what should we test next?" Answering it takes spend, lead outcomes and the angle each ad tested, which usually live in three tools: the ad platform, analytics and the CRM. Campaign and ad IDs say what ran. Tracking parameters on links (UTM tags) say where visits came from. Where they carry through to the CRM, you can tie a sale back to an ad (see *Run paid ads you can measure*).
+Start the review from one question, such as "which creative angles brought qualified leads last month, and what should we test next?" Answering it needs spend, lead outcomes and the angle each ad tested, which usually live in three tools: the ad platform, analytics and the CRM.
+
+Campaign and ad IDs say what ran. Tracking parameters on links (UTM tags) say where visits came from. Where they carry through to the CRM, you can tie a sale back to an ad (see *Run paid ads you can measure*).
 
 > [!RISK] Confident reports from missing data
-> Tracking is never complete, and a scheduled data update can fail without anyone noticing. Tell the workflow to flag missing tracking instead of crediting every sale to an ad, and to flag a failed update instead of writing a confident report from last week's numbers.
+> Tracking is never complete, and a scheduled data update can fail silently. Google Analytics [shows "(not set)"](https://support.google.com/analytics/answer/10917952) where a campaign value is missing and counts "Meta" and "meta" as two sources. Put `utm_source`, `utm_medium` and `utm_campaign` on every campaign link that points to your site, in one agreed spelling. Never tag links between your own pages: Google Analytics [credits the events after that click](https://support.google.com/analytics/answer/11242841) to your internal tag, so event and conversion reports can name the wrong source even though the session's source stays the same.
+>
+> Tell the workflow to flag missing tracking instead of crediting every sale to an ad, and to flag a failed update instead of writing a confident report from last week's numbers.
 
 Then add what the numbers can't show: sales followed up late, the offer changed halfway, one ad attracted the wrong buyers. Save it next to the results.
 
@@ -158,4 +168,9 @@ Then run the workflow on the next campaign. If it gets worse, it was relying on 
 
 ## Sources
 
+- [Anthropic: How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)
+- [Walden Yan, *Don't build multi-agents* (2025)](https://cognition.com/blog/dont-build-multi-agents)
+- [Raluca Budiu, NN/g: *Information scent* (2020)](https://www.nngroup.com/articles/information-scent/)
+- [OpenAI: A practical guide to building agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)
+- [Google Analytics Help: Collect campaign data with custom URLs](https://support.google.com/analytics/answer/10917952)
 - [@shannholmberg: how to become a marketing engineer](https://x.com/shannholmberg/status/2098004743536750869)

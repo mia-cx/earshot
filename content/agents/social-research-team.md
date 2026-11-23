@@ -8,11 +8,14 @@ description: Set up research bots that share one folder and send you a weekly sh
 > - Run several narrow research bots on schedules. Each writes to its own file in one shared folder.
 > - A head bot reads every file and sends you the 5 best ideas each Monday. Writing and posting stay with you.
 > - Add one bot at a time, and only once the last one works.
+> - Studying only hits misleads you. Compare each outlier with similar videos that flopped before you copy it.
 > - The prompts below use Virlo as the data source. Swap in any source your agent can read; the structure stays the same.
 
 ## Share one folder, not one chat
 
 The team is a set of bots that never talk to each other directly. **They talk through files.** Each bot reads a shared brief, does one research job on a schedule, and writes its findings to its own file. A head bot reads all of them and turns them into your plan.
+
+Anthropic's [research agents](https://www.anthropic.com/engineering/multi-agent-research-system) work this way: each subagent saves its work and passes back a link, so nothing gets lost in a chain of summaries. Anthropic's [context guide](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) recommends the same for any long job: notes in files outside the model, read back when needed.
 
 The folder is `social/`, with these files:
 
@@ -26,10 +29,12 @@ The design rules are worth copying into any agent you build:
 - Read free data before paying for searches.
 - Stay silent on days with nothing new.
 - Mark "why it worked" as opinion; the data only shows that it did.
-- Cite sample sizes, and call any pattern under 6 videos "early".
+- Cite sample sizes, and call any pattern under 6 videos "early". Six is the author's rule, not a statistical test, but the instinct is right: Amos Tversky and Daniel Kahneman showed that people [trust small samples](https://doi.org/10.1037/h0031322) far more than they should.
 
 > [!RISK] The author sells the data source
-> The prompts come from Virlo's co-founder. Virlo is a paid database of 21.6M+ viral TikTok, Instagram and YouTube Shorts videos, and the prompts call its specific tools (marketing agents, Virality Score) and Grok Bot features (skills, routines) that may change. No results are reported. To stay portable, replace each "On Virlo" or "from Virlo" line with whatever your agent can reach: another data tool, Meta's public Ad Library for ads, or files you export by hand.
+> The prompts come from Virlo's co-founder, with no results reported. Virlo is a paid database that says it holds 21.6M+ viral TikTok, Instagram and YouTube Shorts videos. The prompts also call Virlo tools (marketing agents, Virality Score) and Grok Bot features (skills, routines) that may change.
+>
+> To stay portable, swap each "On Virlo" or "from Virlo" line for whatever your agent can reach: another data tool, Meta's public Ad Library for ads, or files you export by hand.
 
 ## Wire it into your agent tool
 
@@ -63,7 +68,10 @@ Any agent tool that can connect to data, save a repeatable skill and run on a sc
 
 ## Start with a head and an outlier finder
 
-The head bot interviews you once, writes the shared brief, and each Monday scores ideas for fit, ease and novelty. The Outlier Finder feeds it: videos that did far better than their creator's size, because that shows the format did the work, not the audience.
+The head bot interviews you once, writes the shared brief, and each Monday scores ideas for fit, ease and novelty. The Outlier Finder feeds it videos that did far better than their creator's size. That hints the format did some of the work, though it can't rule out luck or timing, so the finder also looks for similar videos that flopped.
+
+> [!RISK] Outliers hide the failures
+> Study only winners and risky choices look like the cause of success, because everyone who tried the same move and failed is out of view. Jerker Denrell's research on [learning from successes](https://ora.ox.ac.uk/objects/uuid:a8102a34-f7a4-40de-91c0-139355f97358) shows this trap. Before copying an outlier, ask the bot for 5 videos in your niche using the same hook or format that flopped. If they exist, the format didn't do the work alone.
 
 > [!TRICK] Head of Social bot
 > ```
@@ -121,6 +129,8 @@ The head bot interviews you once, writes the shared brief, and each Monday score
 > - Link, creator, followers, views and score.
 > - First line, hook type and format.
 > - Your best guess at why it took off.
+> - Up to 3 videos in my niche with the same hook or format
+>   that flopped, and what differs.
 > - Whether my business could shoot it this week.
 >
 > Add them to social/outliers.md. On a day with nothing new,
@@ -183,7 +193,7 @@ The Niche Map runs monthly and shows who owns your topic and which formats nobod
 
 ## Sort trends and mine comments
 
-Trend Radar judges each trend on one thing: would your buyer care. Size doesn't matter. Comment Miner collects your audience's exact words under the week's best videos, so each video you make answers a real comment.
+Trend Radar judges each trend on one test: whether your buyer would care. Size doesn't matter. Comment Miner collects your audience's exact words under the week's best videos, so each video you make answers a real comment.
 
 > [!TRICK] Trend Radar bot
 > ```
@@ -210,7 +220,7 @@ Trend Radar judges each trend on one thing: would your buyer care. Size doesn't 
 > ```
 
 > [!RISK] Trending sounds may not be licensed
-> A sound that's free for creators may not be cleared for brands. The prompt flags likely problems, but check the licence yourself before you post with it.
+> On TikTok, [businesses can't use the general music library](https://ads.tiktok.com/help/article/commercial-music-library?lang=en) for commercial posts, ads included. Use the Commercial Music Library of pre-cleared songs, or a track you've licensed yourself. The prompt flags likely problems, but check the licence before you post.
 
 > [!TRICK] Comment Miner bot
 > ```
@@ -248,8 +258,13 @@ Trend Radar judges each trend on one thing: would your buyer care. Size doesn't 
 > With the sample size, marked as early, since any pattern under 6 videos is early. Its reason why it worked is marked as opinion.
 
 > [!CHECK] Why should a bot watching competitors sort their ads oldest first?
-> The oldest ads are the ones they've kept paying for, which makes them the most likely to work.
+> The oldest ads are the ones they've kept paying for. That's a better signal than a new ad, but not proof it works: some ads run because nobody switched them off.
 
 ## Sources
 
+- [Anthropic: How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)
+- [Anthropic: Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
+- [Jerker Denrell, *Vicarious learning, undersampling of failure, and the myths of management* (2003)](https://ora.ox.ac.uk/objects/uuid:a8102a34-f7a4-40de-91c0-139355f97358)
+- [Amos Tversky, Daniel Kahneman, *Belief in the law of small numbers* (1971)](https://doi.org/10.1037/h0031322)
+- [TikTok: About the Commercial Music Library](https://ads.tiktok.com/help/article/commercial-music-library?lang=en)
 - [@dsqjaffa: scheduled social research bots sharing one folder](https://x.com/dsqjaffa/status/2119160045263077664)

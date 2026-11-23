@@ -5,20 +5,24 @@ description: Pick a first job, write its charter, and test it three times before
 ---
 
 > [!TLDR]
-> - Give each bot exactly one job, from first input to finished draft.
+> - Give each bot exactly one job, from first input to finished draft. One clear job is easier to brief, test and fix than a role.
 > - Your first job should happen weekly, touch 2 or more apps, and follow the same steps every time.
 > - Paste one fixed charter into every bot and fill the brackets.
 > - Dry-run it, then run it by hand on 3 different inputs before you put it on a schedule.
 
 ## One bot, one job, end to end
 
-Don't automate a role that is really five undefined jobs. Give each bot **one job from first input to finished draft**, the same way you wouldn't hire before you have systems.
+Don't automate a vague role that hides five undefined jobs. Give each bot **one job from first input to finished draft**, the same way you wouldn't hire before you have systems. [OpenAI's agent guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) backs this up: teams "achieve greater success with an incremental approach", getting one agent working before adding more.
 
-Test the brief with one question: could the bot finish without asking you, the client or anyone else? Missing information forces it to ask or guess, and guessing creates revisions.
+When Anthropic [built its research agents](https://www.anthropic.com/engineering/multi-agent-research-system), it found each delegated task needs four things: an objective, an output format, the tools and sources to use, and clear boundaries. The charter below has a line for each.
+
+Test the brief before you run it: could the bot finish without asking you, the client or anyone else? Missing details force it to ask or guess, and guessing creates revisions.
 
 ## Pick a first job that can't embarrass the tool
 
-A messy first automation makes the whole tool look bad. Start with a job that passes all three checks, and leave anything that fails one for month two:
+A messy first automation makes the whole tool look bad. Start with a job that passes all three checks, and leave anything that fails one for month two.
+
+Stable steps make a job safe to hand off. But if no step needs judgement or reading messy text, OpenAI's guide says fixed-step automation may be enough, and it costs less than an agent.
 
 > [!FORM] Your first bot's job
 > 1. Which 3 tasks did you do last week?
@@ -70,9 +74,11 @@ Kyle Hunt pastes the same charter into every bot. He wrote it for Grok Bot, but 
 
 ## Dry-run, then run it by hand three times
 
-Before the first real run, ask the bot to describe its plan. A misread job then shows up as a chat message, and the fix is one line in the charter.
+Before the first real run, ask the bot to describe its plan. If it misread the job, you catch it in chat and fix one line in the charter.
 
 One clean run only proves the easy case. Run the job manually on 3 different inputs, fixing the charter each time, before you schedule it.
+
+Three runs is a minimum, not proof. Anthropic started testing its agents on about 20 real requests. The review ladder in *Check the work before it ships* catches what three runs miss.
 
 > [!TRICK] Your first week with a new bot
 > Dry-run prompt:
@@ -84,7 +90,7 @@ One clean run only proves the easy case. Run the job manually on 3 different inp
 > - Wednesday to Friday: 3 live runs on different inputs. Review everything and fix the charter each time.
 > - Next Monday: put it on a routine and start counting toward 9 of 10 clean runs.
 >
-> Triggers: use the clock for reports (weekdays at 7am, the 1st of the month). Use events, such as a new Slack message, for anything that only matters when something happens, where your tool supports it.
+> Triggers: use a schedule for reports (weekdays at 7am, the 1st of the month). Where your tool supports it, use events, like a new Slack message, for work that only runs when something happens.
 
 > [!DO] Score three jobs against the checks
 > Fill in your first bot's job above for 3 tasks you did last week: yes or no for weekly, 2+ apps and stable steps. The one with three yeses is your first bot. Then download it.
@@ -100,4 +106,6 @@ One clean run only proves the easy case. Run the job manually on 3 different inp
 
 ## Sources
 
+- [OpenAI: A practical guide to building agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)
+- [Anthropic: How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)
 - [@huntkyle: one job per bot, the charter, and the first-week plan](https://x.com/huntkyle/status/2118086670918750341)

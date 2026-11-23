@@ -5,6 +5,7 @@ description: Add one bot that reads the others' work and sends you a daily page 
 ---
 
 > [!TLDR]
+> - A coordinator pays off when your bots do separate jobs. Jobs that share decisions belong in one bot.
 > - Put one coordinator over your bots. It reads their output and tells you what needs you; it never does the work.
 > - Bots hand off a file and a five-part note, never a whole chat.
 > - Bots stay silent when nothing changed, and every Friday each routine earns a keep or a kill.
@@ -12,9 +13,13 @@ description: Add one bot that reads the others' work and sends you a daily page 
 
 ## One coordinator that never does the work
 
-Twelve bots all reporting to you is the same mistake as twelve direct reports. Separate the roles: **one long-lived coordinator talks to you and routes work, and never executes tasks itself.** Workers each own one job and report back through it. Kyle Hunt calls his version a chief of staff: "air traffic control, not the entire airport."
+Twelve bots reporting straight to you is the same mistake as twelve direct reports. Split the roles: **one long-lived coordinator talks to you and routes work, and never executes tasks itself.** Each worker owns one job and reports back through it. Kyle Hunt calls his version a chief of staff: "air traffic control, not the entire airport."
 
-DeepSeek's team built the same split into an always-on agent, called Router/Worker. The router handles every human conversation and dispatch, can run without a shell and on a lighter model. Workers get isolated context, full tools and the strongest model, and never message humans directly. In their test (a synthetic workload, 5 runs each, which they call indicative only), it finished tasks in a median 12.4 minutes against 20.4 for a single agent told to use subagents. It used more tokens to do it.
+The split pays off on separate jobs, at a token cost. Anthropic uses it in [its research agents](https://www.anthropic.com/engineering/multi-agent-research-system), where a lead agent with subagents beat a single agent by 90.2% on its internal test, using about 15 times the tokens of a chat.
+
+Anthropic also names where it breaks: jobs where agents need the same context, or where steps depend on each other. As Cognition's Walden Yan [warns](https://cognition.com/blog/dont-build-multi-agents), every action carries decisions, and parallel agents make decisions that clash. Give the coordinator independent jobs (an audit, a call summary, a month-end report) and keep one piece of work inside one bot.
+
+DeepSeek's team built the same split into an always-on agent called Router/Worker. The router handles human conversation and dispatch, and can run on a lighter model with no shell. Workers get isolated context, full tools and the strongest model, and never message people directly. In their test (a synthetic workload, 5 runs each, which they call indicative only), it finished tasks in a median 12.4 minutes against 20.4 for a single agent told to use subagents, using more tokens to do it.
 
 > [!TRICK] Chief-of-staff bot prompt
 > ```
@@ -69,9 +74,11 @@ If you sell audits, proposals or diagnostics, the first draft is a good worker j
 
 ## Hand off files, and stay quiet otherwise
 
-When one bot passes work to another, pass the file and a short note: the job, a link to the file, what's decided, what's still open, who's next. Passing whole chats or chained summaries makes the next bot read stale ideas, and by the third hop nobody has read the original. Make each bot read the source document, not just the last bot's summary.
+When one bot hands off to another, pass the file and a five-part note: the job, a link to the file, what's decided, what's still open, who's next. Whole chats and chained summaries pass stale ideas along until nobody has read the original.
 
-A routine that pings you with no news trains you to mute it, and then you miss the day it matters. Every bot gets the line "If nothing changed since your last run, send me nothing." DeepSeek's agent works the same way: it watches event streams and speaks only when it has something.
+Make each bot read the source document, not just the last bot's summary. Anthropic's subagents save their work and pass back a link, which Anthropic found "prevents information loss". The "what's decided" line carries the choices Yan warns get lost.
+
+Stay quiet when nothing changed. A routine that pings you with no news trains you to mute it, so you miss the day it matters. In a study of doctors' alerts, [Jessica Ancker and colleagues found](https://pmc.ncbi.nlm.nih.gov/articles/PMC5387195/) the chance of acting on a reminder dropped by 30% for each extra reminder in the same visit. Give every bot the line "If nothing changed since your last run, send me nothing." DeepSeek's agent works the same way: it watches event streams and speaks only when it has news.
 
 ## Keep, kill, or hire
 
@@ -93,6 +100,9 @@ A routine that pings you with no news trains you to mute it, and then you miss t
 
 ## Sources
 
+- [Anthropic: How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system)
+- [Walden Yan, *Don't build multi-agents* (2025)](https://cognition.com/blog/dont-build-multi-agents)
+- [Jessica S. Ancker et al., *Effects of workload, work complexity, and repeated alerts on alert fatigue in a clinical decision support system* (2017)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5387195/)
 - [@huntkyle: chief-of-staff bot, Auditor bot, handoffs and pruning](https://x.com/huntkyle/status/2118086670918750341)
 - [@DeepSeekHarness: Router/Worker design, silence and drift watchdog](https://x.com/DeepSeekHarness/status/2116857257245987236)
 - [@addyosmani: reading the original, not the summary](https://x.com/addyosmani/status/2117512471930167377)
