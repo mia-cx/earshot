@@ -54,7 +54,7 @@ While building a marketing team at an AI startup, Kunal made social media traini
 
 Kunal says post daily; @notkvtwts says 3 to 5 times a week. Pick the number you can keep up for months. **Show up every week**, and raise the number later.
 
-A [2025 Buffer study](https://buffer.com/resources/consistent-posting-study/) tracked over 100,000 accounts across 26 weeks. People who posted in at least 20 of those weeks got more than 5 times the engagement per post of those who posted in 4 weeks or fewer, and the gain flattened after about 21 weeks. It counted weeks with any post, not posts per week, so it can't settle daily versus three times a week. It's also a correlation from a company that sells scheduling tools. It points the same way as Pulizzi: on time, every week, beats a burst.
+A [2025 Buffer study](https://buffer.com/resources/consistent-posting-study/) tracked over 100,000 accounts across 26 weeks. People who posted in at least 20 of those weeks got more than 5 times the engagement per post of those who posted in 4 weeks or fewer, and after about 21 weeks the gain levelled off, then dipped. It counted weeks with any post, not posts per week, so it can't settle daily versus three times a week. It's also a correlation from a company that sells scheduling tools. It points the same way as Pulizzi: on time, every week, beats a burst.
 
 ## Four ways content fails
 

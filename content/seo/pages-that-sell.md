@@ -35,7 +35,7 @@ Search each phrase and look at what ranks. Live results show Google's current re
 > From Nicholas Dulait, who co-founded ChatSEO, an SEO agent he sells.
 > 1. **Intent**: search the keyword. If blog posts and a definition box rank, skip it for now. If product and category pages with prices rank, it's a target.
 > 2. **Your size**: if the top 10 are all big brands, mark it "later".
-> 3. **Already yours**: Search Console → Performance → filter on the exact search → Pages tab. If one of your pages already shows up, improve that page. Two pages chasing one search split Google's attention, and neither wins.
+> 3. **Already yours**: Search Console → Performance → filter on the exact search → Pages tab. If one of your pages already shows up, improve that page instead of writing a second one for the same search.
 >
 > If an AI model helps you sort keywords, give it volumes from a real tool and tell it never to estimate them. Any volume without a tool behind it is a guess.
 

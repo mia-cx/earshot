@@ -52,7 +52,7 @@ Note which query words the results above you use that you don't. In the author's
 > Write at least three candidates. Each one:
 > - Puts the query words as close to the start as possible: "How to get more leads…"
 > - Makes a specific promise: "7 ways to get more leads".
-> - Gives a reason to click now: the current year. In Q4 only, use next year (2027 in November 2026), because nobody else has yet. Don't do this earlier in the year.
+> - Gives a reason to click now: the current year, when the page is up to date for it.
 > - Fits under 60 characters. Google has no character limit and cuts titles to fit the screen, so 60 is a rough target.
 > - Promises nothing the page doesn't deliver (see *How Google decides who ranks*).
 >
