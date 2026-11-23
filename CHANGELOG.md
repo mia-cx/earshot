@@ -1,5 +1,20 @@
 # earshot
 
+## 0.1.4
+
+### Patch Changes
+
+- 142592c: Worksheets have a Check my work button: it copies the lesson and your answers as a review prompt to paste into Claude or ChatGPT. The footer links to GitHub Discussions for questions and ideas.
+- 68511d1: The AI agents lessons now start from the research behind them, from Anthropic's and OpenAI's agent guides to the BCG field study and OWASP's agent security list, and say plainly where the original posts overreach.
+- 1f1317e: The landing page, footer and sources page say what the course stands on: the studies, books, guides and essays each lesson cites, and the posts that apply them.
+- 582a84b: The Backlinks and AI search lessons now open with the research behind each idea, from Google's own documentation and the PageRank paper to peer-reviewed studies of what AI search cites, and they correct the claims that research disputes.
+- e4a162f: The "What marketing is" lessons now open with the research behind each idea (Sharp, Binet and Field, Godin, Dunford, Christensen, Fitzpatrick, Rumelt, McClure) and correct claims the evidence doesn't support, such as spending most of your time on retention.
+- cc35ddb: The Keep and convert and Stay sharp lessons now open with the research behind each trick, correct the claims the evidence disputes, and the reading list adds eight classic marketing books.
+- 37504ae: The Launching and Outreach lessons now start from the research behind each tactic, from Paul Graham, *Traction*, Cialdini, Berger and Milkman, and platform rules, and correct the claims that research disputes.
+- a89956a: The search engine lessons now open with what Google, Bing and the research say, and correct the tips that the sources contradict.
+- be11618: The writing and content lessons now open with the research behind each tip, from Nielsen Norman Group, Caples, Fogg, Cialdini, Binet and Field, Pulizzi and others, and correct the claims that research doesn't support.
+- c713bd9: The X and Video lessons now start from the research and X's own ranking code, and correct the claims that didn't hold up, like reading one mute as cancelling 89 likes.
+
 ## 0.1.3
 
 ### Patch Changes
