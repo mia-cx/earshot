@@ -12,9 +12,11 @@ description: Write a positioning doc that says what you do, who it's for and wha
 
 ## Write your positioning down first
 
-April Dunford defines positioning as how your product leads at something a well-defined set of customers cares a lot about ([quickstart guide](https://www.aprildunford.com/post/a-quickstart-guide-to-positioning)). Dunford's method starts with **competitive alternatives**: what customers would do if you didn't exist, because a difference only counts against what buyers really compare you with. Al Ries and Jack Trout [made the idea famous in 1972](https://ries.com/about/history-of-positioning): the position lives in the buyer's mind.
+Positioning lives in your buyer's mind, an idea Al Ries and Jack Trout [made famous in 1972](https://ries.com/about/history-of-positioning). April Dunford defines it as how your product leads at something a well-defined set of customers cares a lot about ([quickstart guide](https://www.aprildunford.com/post/a-quickstart-guide-to-positioning)).
 
-Write it in one document before any marketing work. If you can't answer a question below, that's the finding: **you don't understand the product well enough yet** to market it.
+Dunford's method starts with **competitive alternatives**: what buyers would do if you didn't exist. A difference only counts against what they actually compare you with.
+
+Write yours in one document before you market anything. If you can't answer a question below, that's the finding: **you don't understand the product well enough yet**.
 
 > [!FORM] Your positioning doc
 > 1. What do we do? What problem do we solve? Give one short, precise answer.
@@ -25,7 +27,7 @@ Write it in one document before any marketing work. If you can't answer a questi
 > 6. If not us, what would users choose instead? Include doing nothing.
 > 7. What are we against? Name a status quo, a bad habit or an incumbent way of doing things.
 
-Answer in Dunford's order, because each answer builds on the one before:
+Answer in Dunford's order. Each answer builds on the one before:
 
 1. Question 6: the alternatives buyers really consider.
 2. Questions 3 and 4: what you have that they don't.
@@ -38,13 +40,13 @@ For a deeper version, work through Dunford's [positioning exercise](https://hack
 
 ## What weak positioning breaks
 
-Unclear positioning shows up in two places. The product drifts because nobody is obsessed with a specific user. And the go-to-market plan is thin: no clear ideal customer, no chosen channels, no idea how to grow those channels.
+Unclear positioning breaks two things at once. Your product drifts because nobody is obsessed with a specific user. Your go-to-market plan stays thin: no clear ideal customer, no chosen channels, no plan to grow them.
 
-Both problems trace back to the same blank page, so fix the page first.
+Both trace back to the same blank page. Fix the page first.
 
 ## Name the enemy
 
-Win the conviction battle before the distribution battle. Decide who or what your product stands against, write your messaging around that, and only then plan where to post it. Dunford agrees: buyers often choose to do nothing, so argue against the status quo.
+Win the conviction battle before the distribution battle. Decide who or what your product stands against, write your messaging around it, and only then plan where to post. Dunford agrees: buyers often choose to do nothing, so argue against the status quo.
 
 - If you don't strongly believe in the product, fix that first.
 - Pick a clear opposing force: a status quo, a bad habit, an incumbent way of doing things.
@@ -55,7 +57,9 @@ Win the conviction battle before the distribution battle. Decide who or what you
 
 ## Picture one reader
 
-Your positioning names a group. Your writing needs a person. Clayton Christensen's [jobs to be done](https://www.christenseninstitute.org/theory/jobs-to-be-done/) theory says people "hire" a product to make progress in a situation, and the situation explains their choice better than demographics. So picture one specific reader in their situation before you write, and get more detailed the closer the piece is to a sale.
+Your positioning names a group. Your writing needs a person.
+
+Clayton Christensen's [jobs to be done](https://www.christenseninstitute.org/theory/jobs-to-be-done/) theory says people "hire" a product to make progress in a specific situation. That situation explains their choice better than demographics. Picture one reader in that situation before you write, and add more detail the closer the piece is to a sale.
 
 > [!FORM] Your reader
 > - What are they struggling with right now?
@@ -66,7 +70,7 @@ Your positioning names a group. Your writing needs a person. Clayton Christensen
 *Write for one reader and one action* picks this up when you start writing posts.
 
 > [!DO] Write your positioning doc
-> Fill in the positioning doc above, one or two sentences per question, starting with question 6. Then download it. Leave a blank where you're unsure; that blank is your research list for *Research a market in an afternoon*.
+> Fill in the positioning doc above, one or two sentences per question, starting with question 6. Download it when you're done. Leave a blank where you're unsure. Every blank is your research list for *Research a market in an afternoon*.
 
 > [!CHECK] In April Dunford's positioning method, where do you start, and why?
 > With competitive alternatives: what buyers would do if you didn't exist, including nothing. A difference only counts against what buyers really compare you with.

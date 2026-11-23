@@ -12,9 +12,11 @@ description: Name each funnel stage for your product and define what "done" look
 
 ## Marketing is more than getting users
 
-Dave McClure's [pirate metrics](https://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-long-version) split growth into stages every user moves through: acquisition, activation, retention, referral and revenue. Each stage is a number you can measure, so you can see where people drop out. This course uses a version for builders: activation becomes onboarding and engagement, and referral sits with acquisition.
+It's tempting to treat marketing as getting people in the door. The job actually runs across five stages, from first contact to payment.
 
-It's tempting to treat marketing as acquisition: get people in the door. But the job runs across five stages, from first contact to paying. One marketer (@kunalvg) sums it up as "acquisition is easy, retention is hard", and says just making onboarding smoother puts you ahead of most competitors.
+That maps to Dave McClure's [pirate metrics](https://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-long-version): acquisition, activation, retention, referral and revenue. Each stage is a number you can track, so you can see where people drop off. This course adapts it for builders: activation splits into onboarding and engagement, and referral sits under acquisition.
+
+One marketer (@kunalvg) sums it up as "acquisition is easy, retention is hard", and says smoother onboarding alone puts you ahead of most competitors.
 
 | Stage | The question | Done looks like |
 | --- | --- | --- |
@@ -28,7 +30,9 @@ It's tempting to treat marketing as acquisition: get people in the door. But the
 
 ## Define onboarding as one event
 
-"Onboarded" should be a single event you can count: the first action that delivers value. McClure called this activation, a happy first visit. In a crypto product that might be "wallet connected" or "first transaction". In a note-taking app it might be the first saved note. Design that flow with whoever builds the product, then engineer the first "aha" moment inside it.
+"Onboarded" should be one countable event: the first action that delivers value. McClure called this activation, a happy first visit.
+
+In a crypto product, that might be a connected wallet or first transaction. In a note-taking app, it's the first saved note. Design that path with whoever builds the product, and build the first "aha" moment right into it.
 
 > [!FORM] Your onboarded event
 > 1. Which single action means a new user got value? Finish the sentence: "A user is onboarded when they…"
@@ -40,11 +44,11 @@ Use Google Analytics for the website and a product analytics tool for what happe
 
 ## Fix retention first, then grow
 
-Brian Balfour, who led growth at HubSpot, calls a [retention curve that flattens](https://brianbalfour.com/essays/hubspot-growth-framework-100m) the best sign of product-market fit: some users keep getting value week after week. If the curve keeps falling towards zero, every new user leaks out, so fix that first.
+Fix leaks before you pour in traffic. Brian Balfour, who led growth at HubSpot, calls a [retention curve that flattens](https://brianbalfour.com/essays/hubspot-growth-framework-100m) the best sign of product-market fit: a steady share of users keeps getting value week after week. If your curve keeps dropping towards zero, every new user leaks out.
 
-Once the curve holds, the evidence points the other way. Byron Sharp and colleagues at the Ehrenberg-Bass Institute found that brands grow and shrink mainly through how many new buyers they win, not how many they keep ([Answering critics](https://marketingscience.info/news-and-insights/answering-critics)). So the source author's advice, to spend most of a marketer's time on retention, fits a product whose users still leak out. After that, most growth comes from new users.
+Once retention holds, shift your focus to acquisition. Byron Sharp and colleagues at the Ehrenberg-Bass Institute found that brands grow and shrink mainly through how many new buyers they win, not how many they keep ([Answering critics](https://marketingscience.info/news-and-insights/answering-critics)). The source author's advice to spend most of your time on retention fits a leaky product. Once the curve flattens, growth comes mainly from new users.
 
-The same author says products now have short shelf lives; that's an opinion, not a measured trend. And plan monetisation from the start: free with no revenue model isn't sustainable.
+The same author says products now have short shelf lives (an opinion, not a measured trend). And decide how you'll charge from day one: free with no revenue model isn't sustainable.
 
 ## Where the course covers each stage
 

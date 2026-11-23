@@ -12,11 +12,11 @@ description: Build a first market hypothesis with AI, then check it against what
 
 ## Load the AI with raw material
 
-Nielsen Norman Group compared AI-generated "users" with real research and found the AI feedback shallow and too favourable ([NN/g](https://www.nngroup.com/articles/synthetic-users/)). Use AI for desk research and hypotheses, never for the final decision.
+Use AI for desk research and hypotheses, never for the final decision. Nielsen Norman Group compared AI-generated "users" with real research and found the AI feedback shallow and too favourable ([NN/g](https://www.nngroup.com/articles/synthetic-users/)).
 
-You can draft a first go-to-market hypothesis in an afternoon by giving an AI model the raw material of your market and asking hard questions. The key is the questions: **ask for synthesis, not summary**.
+To draft a first go-to-market hypothesis in an afternoon, feed an AI model your market's raw material and ask hard questions. The key is what you ask: **ask for synthesis, not summary**.
 
-The author claims this is a method taught at Y Combinator and that it replaces about four weeks of research. Neither claim is verified, and the post ends with a plug for Gojiberry, the author's company.
+The source author claims Y Combinator teaches this method and that it replaces about four weeks of research. Neither claim is verified, and the post ends with a plug for Gojiberry, their company.
 
 > [!TRICK] Run a three-hour market research session
 > 1. Gather raw material:
@@ -42,7 +42,9 @@ The author claims this is a method taught at Y Combinator and that it replaces a
 
 ## Check every hypothesis with buyers
 
-People are polite about your idea, so opinions mislead. Rob Fitzpatrick's [*The Mom Test*](https://www.momtestbook.com/) gives three rules: talk about their life instead of your idea, ask about specifics in the past instead of opinions about the future, and listen more than you talk. Bob Moesta saw why when selling condos: prospects said they didn't need a dining room, but buyers' stories kept coming back to their dining table ([Christensen Institute](https://www.christenseninstitute.org/theory/jobs-to-be-done/)).
+People are polite about your idea, so opinions mislead. Rob Fitzpatrick's [*The Mom Test*](https://www.momtestbook.com/) has three rules: talk about their life instead of your idea, ask about past specifics instead of future opinions, and listen more than you talk.
+
+Bob Moesta saw why selling condos: prospects said they didn't need a dining room, yet actual buyers kept coming back to their dining table ([Christensen Institute](https://www.christenseninstitute.org/theory/jobs-to-be-done/)).
 
 1. Pick the riskiest claim in your AI hypothesis.
 2. Find five people who have the problem now.
@@ -52,7 +54,9 @@ People are polite about your idea, so opinions mislead. Rob Fitzpatrick's [*The 
 
 ## Read buyers' own words in reviews
 
-Reviews already say why people buy and why they complain, in the exact words that stop someone scrolling. Joanna Wiebe of Copyhackers calls this [review mining](https://copyhackers.com/2014/10/amazon-review-mining/). A headline lifted from an Amazon book review, "If you think you need rehab, you do", got a rehab clinic over 400% more clicks in Wiebe's test. Read reviews at scale instead of guessing. One author says most teams have read fewer than 50; that's an estimate, not a measured number.
+Reviews already tell you why people buy and complain, in the exact words that stop a scroll. Joanna Wiebe of Copyhackers calls this [review mining](https://copyhackers.com/2014/10/amazon-review-mining/). In Wiebe's test for a rehab clinic, a headline lifted from an Amazon book review ("If you think you need rehab, you do") got over 400% more clicks.
+
+Read reviews at scale instead of guessing. One author says most teams have read fewer than 50 (an estimate, not a measured number).
 
 > [!TRICK] Mine 5,000 reviews for buyer language
 > 1. Scrape about 5,000 reviews of your product and your competitors from Amazon, Trustpilot, Reddit and the App Store.
@@ -62,7 +66,9 @@ Reviews already say why people buy and why they complain, in the exact words tha
 
 ## Sort competitors' ads oldest first
 
-The ads a competitor keeps running the longest are probably the ones paying for themselves. Look up each competitor's live Meta ads with their copy, start date and landing page, and sort oldest first. Meta's public Ad Library shows each ad's copy and start date. In the EU, the [Digital Services Act](https://www.eu-digital-services-act.com/Digital_Services_Act_Article_39.html) makes large platforms publish each ad's run dates and keep it listed for a year after it stops. The source's own prompt pulls the data through Virlo, a tool its author co-founded.
+A competitor's longest-running ads are probably the ones paying for themselves. Pull their live Meta ads and sort oldest first.
+
+Meta's public Ad Library shows each ad's copy and start date; the source also pulls landing pages using Virlo, a tool its author co-founded. In the EU, the [Digital Services Act](https://www.eu-digital-services-act.com/Digital_Services_Act_Article_39.html) requires large platforms to publish run dates and keep each ad listed for a year after it stops.
 
 > [!RISK] A long run isn't proof of profit
 > The library shows when an ad ran, not what it spent or earned. A small ad someone forgot to switch off can run for months. Treat run time as a lead to test, not a result to copy.
@@ -73,7 +79,7 @@ The ads a competitor keeps running the longest are probably the ones paying for 
 > Open a competitor's reviews on any one site (G2, Trustpilot, an app store) and read 30. Paste the 10 most vivid phrases into a doc, word for word, each tagged "complaint" or "reason to buy".
 
 > [!CHECK] An AI model hands you a confident market thesis. How do you check it?
-> Ask buyers about specific things they did in the past, not their opinion of your idea. Talk about their life, ask about specifics, and listen more than you talk.
+> Talk about buyers' lives instead of your idea, ask about specific past events instead of future opinions, and listen more than you talk.
 
 > [!CHECK] You want ad hooks that sound like your buyers. Where do you get the words?
 > From customer reviews of your product and your competitors. They already say why people buy and complain, in phrasing you can reuse word for word.
