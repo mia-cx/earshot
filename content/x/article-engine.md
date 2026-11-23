@@ -12,7 +12,7 @@ description: Publish one long article a day on one topic and point your posts at
 
 ## One topic, one article a day
 
-**Sticking to one topic keeps the same people engaging, so X learns which community should see you.** Venu Satuluri and colleagues at Twitter describe this system as [SimClusters](https://dl.acm.org/doi/10.1145/3394486.3403370). It places accounts and posts into interest communities based on who engages with them.
+**Sticking to one topic keeps the same people engaging, so X learns which community should see you.** Venu Satuluri and colleagues at Twitter describe this system as [SimClusters](https://dl.acm.org/doi/10.1145/3394486.3403370). It finds interest communities from who follows whom, then places each post in them by who engages with it.
 
 Nicholas Dulait (@NicholasDulait) crossed 5,000 X followers in 5 months by publishing one long article a day on one topic and pointing short posts at it. His post is a bare checklist with no breakdown of what drove the growth, so treat it as one person's recipe to test. Quotes on your articles help too, since X's code weighs a predicted quote at 5 against about 0.7 for a like.
 
@@ -44,7 +44,7 @@ Put a number up front. Jakob Nielsen's eyetracking studies at NN/g found that [n
 
 Your second and third posts of the day compete with your first for the same viewer. In X's code, each extra post from the same author in one feed gets multiplied by a decaying factor.
 
-The sources disagree on what that means for your pace. Ryan argues for posting less, saying that if you post too much X doesn't give every post a chance. Nicholas posts 2 to 3 times a day plus an article. Neither gives a number.
+The sources disagree on what that means for your pace. Ryan warns that if you post too much, X doesn't give every post a chance. Nicholas posts 2 to 3 times a day plus an article. Neither gives a number.
 
 Use this rule instead: give every post its own job. A daily article plus a few posts that quote it or share one idea from it works, because each one points people to the same piece.
 

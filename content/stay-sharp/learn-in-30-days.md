@@ -39,7 +39,7 @@ Give it 3 months before judging. In [a UCL study by Phillippa Lally](https://www
 
 Audit your work task by task. @notkvtwts says AI does roughly 80% of a task fast, leaving the paid 20%: choosing, fixing and catching mistakes. Their example: AI writes 50 ads in a minute, and the skill is knowing which 3 to test and why the other 47 won't work.
 
-That 80/20 split is a rough guess and varies sharply by task. In [the MIT writing study](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714), ChatGPT shifted people's time from drafting to editing. In [a Harvard and BCG experiment](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf), AI made consultants far better on some tasks and worse on one that looked just as hard.
+That 80/20 split is a rough guess and varies sharply by task. In [the MIT writing study](https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1_0.pdf), ChatGPT shifted people's time from rough drafting to ideas and editing. In [a Harvard and BCG experiment](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf), AI made consultants far better on some tasks and worse on one that looked just as hard.
 
 > [!TRICK] Audit your week in three groups
 > 1. List every task you do in a normal week.
@@ -111,7 +111,7 @@ Check any course or channel it names before you pay for it. The prompt asks it t
 
 - [Ericsson, Krampe and Tesch-Römer, *The Role of Deliberate Practice in the Acquisition of Expert Performance* (1993)](https://gwern.net/doc/psychology/writing/1993-ericsson.pdf)
 - [BPS Research Digest: How to form a habit (Lally et al., 2010)](https://www.bps.org.uk/research-digest/how-form-habit)
-- [MIT News: Study finds ChatGPT boosts worker productivity for some writing tasks (Noy and Zhang, 2023)](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714)
+- [Shakked Noy and Whitney Zhang, *Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence* (MIT, 2023)](https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1_0.pdf)
 - [Dell'Acqua et al., *Navigating the Jagged Technological Frontier* (2023)](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf)
 - [@notkvtwts: five AI skills, the 30-day plan, the week audit and the learning-plan prompt](https://x.com/notkvtwts/status/2115810173830750575)
 - [@notkvtwts: reposting the same guide](https://x.com/notkvtwts/status/2116886564802576703)

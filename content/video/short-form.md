@@ -125,8 +125,8 @@ The bots read and write a shared `social/` folder. Start with `social/brief.md`:
 >   read.
 >
 > SEND ME
-> A 6-line summary. Compare saves on TikTok only, since that's
-> the one platform that has them.
+> A 6-line summary. Compare saves only on platforms whose
+> data includes them.
 > ```
 
 > [!FORM] Your outlier

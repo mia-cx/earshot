@@ -14,7 +14,7 @@ description: Set fixed rules for design, motion and music so every video looks d
 
 A video feels premium when **every choice looks deliberate**. When your font, background, music and colour never wander, viewers assume someone made those choices on purpose. Most cheap-looking videos fail by piling things on: too many effects, unnecessary sound effects, hype music.
 
-Rolf Reber and colleagues [reviewed processing fluency](https://pages.ucsd.edu/~pwinkiel/abs_beauty-PSPR-2004.htm) and found people like things more when repetition, symmetry and clear contrast make them easy to take in. The [Ehrenberg-Bass Institute](https://marketingscience.info/news-and-insights/differentiation-versus-distinctiveness) adds that buyers pick brands they recognise easily, built through consistent colours and house styles.
+Rolf Reber and colleagues [reviewed processing fluency](https://pages.ucsd.edu/~pwinkiel/abs_beauty-PSPR-2004.htm) and found people like things more when repetition, symmetry and clear contrast make them easy to take in. In [*How B2B Brands Grow*](https://marketingscience.info/news-and-insights/how-b2b-brands-grow), Ehrenberg-Bass researchers add that buyers choose brands that are easy to bring to mind, and that brands compete through distinctive assets like logos, characters and colours.
 
 The rules below come from @leomeethewoo, whose studio sells product videos to fintech companies and made 50+ of them in one summer. They're his team's practice, not tested claims. His model is Apple, whose videos he reads as built to make existing buyers feel special.
 
@@ -89,7 +89,6 @@ These BPM ranges are Leo's opinion. The research only backs the direction, that 
 ## Sources
 
 - [Rolf Reber, Norbert Schwarz and Piotr Winkielman, *Processing Fluency and Aesthetic Pleasure* (2004)](https://pages.ucsd.edu/~pwinkiel/abs_beauty-PSPR-2004.htm)
-- [Ehrenberg-Bass Institute: Differentiation versus distinctiveness](https://marketingscience.info/news-and-insights/differentiation-versus-distinctiveness)
 - [Ehrenberg-Bass Institute: How B2B Brands Grow (2023)](https://marketingscience.info/news-and-insights/how-b2b-brands-grow)
 - [Stephen E. Palmer, Jonathan S. Gardner and Thomas D. Wickens, *Aesthetic Issues in Spatial Composition* (2008)](https://palmerlab.berkeley.edu/pdf/PalmerGardner&Wickens-1.pdf)
 - [Page Laubheimer, *Executing UX Animations: Duration and Motion Characteristics* (2020)](https://www.nngroup.com/articles/animation-duration/)

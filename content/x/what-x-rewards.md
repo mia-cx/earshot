@@ -54,7 +54,7 @@ The diagram adds up four of those contributions for one viewer: each action's ch
 
 ## Aim at the goal, not the numbers
 
-The weights shift silently. Ryan saw the like weight rise from 0.5 in August to 0.66 in October 2026, and by November 21 the code had 0.708. Any tactic built on one exact number breaks on the next tweak.
+The weights shift silently. [The history of X's weights file](https://github.com/xai-org/x-algorithm/commits/main/home-mixer/params/param.rs) shows the like weight at 0.5 in August 2026, then 0.6 and 0.66 in mid-October, and 0.708 since November 5. Any tactic built on one exact number breaks on the next tweak.
 
 The goal underneath stays put. X wants people sharing and talking. To guess what each viewer wants, the model reads their recent engagement history and loads signals like installed apps and inferred gender. You can't game that per viewer. You can write posts people want to pass on.
 
@@ -65,7 +65,7 @@ The goal underneath stays put. X wants people sharing and talking. To guess what
 
 People share what stirs them up, surprises them, or helps them. Jonah Berger and Katherine Milkman studied three months of *New York Times* articles and found [high-arousal emotions made stories spread more](https://journals.sagepub.com/doi/10.1509/jmr.10.0353). Awe, anger and anxiety worked, while sadness didn't. Useful and surprising articles spread more too.
 
-In [an interview on *Contagious*](https://penntoday.upenn.edu/2013-04-18/interviews/qa-jonah-berger), Berger adds that people share what makes them look smart and what's practically useful. Anger spreads, but on X it also earns mutes and blocks, the heaviest negatives. Aim for awe and usefulness.
+In [an interview on *Contagious*](https://penntoday.upenn.edu/2013-04-18/interviews/qa-jonah-berger), Berger adds that people share what makes them look smart and what's practically useful. Anger spreads, but on X it also invites mutes, blocks and reports, which all carry large negative weights, reports the largest of all. Aim for awe and usefulness.
 
 Ryan's list puts that into practice:
 
@@ -96,6 +96,7 @@ Ryan's list puts that into practice:
 ## Sources
 
 - [xAI: X For You feed algorithm, action weights (GitHub)](https://github.com/xai-org/x-algorithm/blob/main/home-mixer/params/param.rs)
+- [xAI: history of the action weights file (GitHub)](https://github.com/xai-org/x-algorithm/commits/main/home-mixer/params/param.rs)
 - [Jonah Berger and Katherine L. Milkman, *What Makes Online Content Viral?* (2012)](https://journals.sagepub.com/doi/10.1509/jmr.10.0353)
 - [Penn Today: Q&A with Jonah Berger on *Contagious* (2013)](https://penntoday.upenn.edu/2013-04-18/interviews/qa-jonah-berger)
 - [@ryangrowthh: X's action weights and what they reward](https://x.com/ryangrowthh/status/2117684231983800732)

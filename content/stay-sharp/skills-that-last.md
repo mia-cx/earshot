@@ -28,8 +28,8 @@ Run any skill you're considering through **three questions**:
 Three yeses means a skill is worth learning. @notkvtwts cites four studies behind that split. They hold up, and one gap has grown since:
 
 - [PwC, 2026](https://www.prnewswire.com/news-releases/ai-reshapes-global-labour-market-into-two-distinct-paths-rewarding-human-skills-pwc-2026-global-ai-jobs-barometer-302798987.html): jobs asking for AI skills advertise 62% more pay and grew 69%, against 9% for all jobs. That's advertised pay, not what people earn.
-- [MIT, 2023](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714): professionals did writing tasks 40% faster and 18% better with ChatGPT. Their work shifted from drafting to editing.
-- [Stanford, 2026](https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/): employment of workers aged 22 to 25 in the jobs most exposed to AI is 19% below where it would be had it grown as fast as in less exposed jobs. That's a growth comparison, not a count of jobs AI replaced. The post quotes 13% from the first 2025 version; the gap has widened since. Separately, the decline sits in jobs where AI replaces tasks; where AI mostly assists people, employment held up.
+- [MIT, 2023](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714): professionals took 40% less time on writing tasks with ChatGPT, and their work was rated 18% better. In [the working paper](https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1_0.pdf), their time shifted from rough drafting to ideas and editing.
+- [Stanford, 2026](https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/): employment of workers aged 22 to 25 in the jobs most exposed to AI is 19% below where it would be had it grown as fast as in less exposed jobs. That's a growth comparison, not a count of jobs AI replaced. The post quotes 13%, an estimate from a different model in the first 2025 version. On the paper's current measure, the gap grew from 15% to 19% between July 2025 and June 2026. Separately, the decline sits in jobs where AI replaces tasks; where AI mostly assists people, employment held up.
 - [Lightcast, 2025](https://lightcast.io/resources/blog/beyond-the-buzz-press-release-2025-07-23): 51% of job ads asking for AI skills are outside IT and computer science.
 
 ## Cover every channel at a working level
@@ -80,6 +80,7 @@ When you hit something beyond your understanding, learn it properly instead of p
 
 - [PwC: 2026 Global AI Jobs Barometer (press release)](https://www.prnewswire.com/news-releases/ai-reshapes-global-labour-market-into-two-distinct-paths-rewarding-human-skills-pwc-2026-global-ai-jobs-barometer-302798987.html)
 - [MIT News: Study finds ChatGPT boosts worker productivity for some writing tasks (Noy and Zhang, 2023)](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714)
+- [Shakked Noy and Whitney Zhang, *Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence* (MIT, 2023)](https://economics.mit.edu/sites/default/files/inline-files/Noy_Zhang_1_0.pdf)
 - [Brynjolfsson, Chandar and Chen, *Canaries in the Coal Mine* (Stanford Digital Economy Lab, revised 2026)](https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/)
 - [Lightcast: *Beyond the Buzz* (2025)](https://lightcast.io/resources/blog/beyond-the-buzz-press-release-2025-07-23)
 - [Arthur, Bennett, Stanush and McNelly, *Factors That Influence Skill Decay and Retention* (1998)](https://gwern.net/doc/psychology/spaced-repetition/1998-arthur.pdf)
