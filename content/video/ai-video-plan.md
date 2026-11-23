@@ -94,7 +94,7 @@ A shootable AI short needs a one-sentence point, its most striking image first, 
 
 **Prefer episodic stories**, where no shot has to match the one before. Continuous stories break the fastest. Once the story is down, hand it to a fresh agent that has never seen your chat.
 
-Write around what video models get wrong. OpenAI says its Sora model [may struggle with the physics of a complex scene, with cause and effect, and with telling left from right](https://openai.com/index/sora/). The longer failure list in the prompt below comes from @EianLu's own failed shots.
+Write around what video models get wrong. In 2024, OpenAI said its first Sora model [may struggle with the physics of a complex scene, with cause and effect, and with telling left from right](https://openai.com/index/sora/). The longer failure list in the prompt below comes from @EianLu's own failed shots.
 
 > [!TRICK] Develop the story, then have it reviewed
 > Story prompt:

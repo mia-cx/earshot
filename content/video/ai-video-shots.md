@@ -57,7 +57,7 @@ Seedance's [API docs](https://ai.byteplus.com/ark/region:ap-southeast-1/docs/cre
 
 Most bad clips trace back to the prompt. Give every clip the same seven sections, time each second, and **phrase fixes positively** because models often ignore "doesn't".
 
-Model makers agree. Google's [Veo prompt guide](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide) warns against "no" or "don't" and says "specificity helps avoid generic outputs". OpenAI notes Sora can [confuse left and right](https://openai.com/index/sora/), so the fixes below give directions in screen terms.
+Model makers point the same way. Google's [Veo prompt guide](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide) advises against "no" or "don't" even in the negative prompt, where you list unwanted things as plain nouns, and says "specificity helps avoid generic outputs". In 2024, OpenAI noted that Sora could [confuse left and right](https://openai.com/index/sora/), so the fixes below give directions in screen terms.
 
 > [!TRICK] Use the seven-part clip prompt
 > ```
@@ -173,6 +173,6 @@ Agents can't feel motion or hear sound. Watching and listening stays your job.
 ## Sources
 
 - [BytePlus ModelArk: Create a video generation task (Seedance)](https://ai.byteplus.com/ark/region:ap-southeast-1/docs/create-video-generation-task-api)
-- [Google Cloud: Video generation prompt guide (Veo)](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide)
+- [Google Cloud: Video generation prompt guide (Veo)](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide)
 - [OpenAI: Sora (2024)](https://openai.com/index/sora/)
 - [@EianLu: AI video workflow with Claude Code, Codex and Seedance (original in Chinese)](https://x.com/EianLu/status/2118317430665613741)

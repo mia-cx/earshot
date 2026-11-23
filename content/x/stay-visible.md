@@ -20,17 +20,17 @@ Posting more isn't free. Each extra post from you in the same viewer's feed gets
 
 ## Small accounts get a head start
 
-Starting small isn't a handicap. X's code includes a cold-start boost for posts under 2 hours old from authors under 50,000 followers, while the post has fewer than 200 impressions. It runs as an experiment, so not every viewer gets it.
+Starting small isn't a handicap. X's code includes a cold-start boost for original posts (not replies or reposts) under 2 hours old from authors with up to 50,000 followers, while the post has fewer than 200 impressions. Each refresh lifts at most one such post to around the 15th slot. It runs as an experiment that decides which authors qualify for which viewers.
 
 A new account can still break out early. Ryan's own first viral post came three days after starting a new account, and he reports 8,000+ followers and 4M+ impressions in 4 weeks solo, reaching about 9,900 followers in a month. Treat that as one person's result.
 
-Big accounts get no guaranteed reach either. Follower count isn't part of the score, and Ryan says he has watched many big accounts fade over about 18 months.
+Big accounts get no guaranteed reach either. No weight in the score rewards follower count, and Ryan says he has watched many big accounts fade over about 18 months.
 
 ## Reputation and labels
 
-Engagement from well-connected accounts in your niche counts for more than a big follower count. Twitter's 2023 open-source release computed a credibility score called [Tweepcred](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/graph/batch/job/tweepcred/README), using PageRank over who mentions and reposts whom.
+Ryan says engagement from well-connected accounts in your niche counts for more than a big follower count. Twitter's 2023 open-source release computed a credibility score called [Tweepcred](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/graph/batch/job/tweepcred/README), using PageRank over who mentions and reposts whom.
 
-X's 2026 code still keeps a PageRank-style score, used in its spam rules. Ryan says it lifts or caps every post, though the code only shows it in spam rules, not as a multiplier on every post.
+X's 2026 code still keeps a PageRank-style score over follows and engagement. Ryan says it lifts or caps every post, though the code only uses it in spam and enforcement rules, not as a multiplier on every post.
 
 - Engage genuinely with people in your niche to build a dense, high-quality network.
 - Engagement groups (accounts that agree to engage with each other's posts) do little. X's code comments say only actions on posts served in the Home feed count, so opening a post straight from a group chat "has no ranking impact".
@@ -46,7 +46,7 @@ X's 2026 code still keeps a PageRank-style score, used in its spam rules. Ryan s
 >
 > This is Ryan's advice from reading the code, unverified beyond that.
 
-Ryan also warns that a troll blocking or muting you cuts your reach. X's code comments say otherwise. Blocks and reports mostly change what *similar* viewers see, not your reach for everyone. Mute them anyway, because the fight costs you time.
+Ryan also warns that a troll blocking or muting you cuts your reach. For one troll, X's code comments say otherwise. Blocks and reports mostly change what *similar* viewers see, not your reach for everyone. A pile-on is different. X's `agatha` jobs label accounts whose posts draw many blocks and reports relative to likes. Mute trolls anyway, because the fight costs you time.
 
 > [!DO] Check your labels
 > Open [X's Under the Hood tool](https://x.com/i/jf/under_the_hood) and look for labels on your account or posts. Write down what you find, even if it's "none".

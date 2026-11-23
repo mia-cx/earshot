@@ -32,7 +32,7 @@ To reach strangers, your post has to come from a source that doesn't rely on fol
 | Thunder | Recent posts from accounts the viewer follows |
 | Phoenix | Posts from accounts the viewer doesn't follow, matched to an interest profile built from their history |
 | SimClusters | Posts popular in the viewer's interest community, grouped by who engages with what |
-| Popular Posts | A small shared list of popular recent posts, first seeded from the most-followed active accounts |
+| Popular Posts | A shared list of popular recent posts, first seeded from the most-followed active accounts |
 
 Phoenix drives broad virality. SimClusters drives niche virality. Venu Satuluri and colleagues at Twitter explain SimClusters in their [KDD 2020 paper](https://dl.acm.org/doi/10.1145/3394486.3403370). It finds overlapping communities from who follows whom, then places both accounts and posts inside them.
 

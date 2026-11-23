@@ -1,6 +1,6 @@
 # Literature: Video (`content/video/`)
 
-Research pass, November 2026. Every source below was opened and read for this pass. "Not verified" marks anything I could not open.
+Research pass and independent audit, November 2026. Every source below was opened and read. "Not verified" marks anything that could not be opened.
 
 The module came from four X posts: @leomeethewoo on premium product videos, @tuanle and @dsqjaffa on short-form formats, and @EianLu's AI video workflow. The checks below come from perception research, the Ehrenberg-Bass Institute, platform documentation, and the AI video models' own docs.
 
@@ -10,38 +10,37 @@ The module came from four X posts: @leomeethewoo on premium product videos, @tua
 | --- | --- | --- |
 | [Palmer, Gardner & Wickens, "Aesthetic issues in spatial composition" (*Spatial Vision*, 2008)](https://palmerlab.berkeley.edu/pdf/PalmerGardner&Wickens-1.pdf) | Psychophysics experiments on framing single objects | Centre bias, inward bias, rule of thirds |
 | [Reber, Schwarz & Winkielman, "Processing fluency and aesthetic pleasure" (*Personality and Social Psychology Review*, 2004)](https://pages.ucsd.edu/~pwinkiel/abs_beauty-PSPR-2004.htm) | Review paper | Why repetition and consistency read as quality |
-| [Ehrenberg-Bass Institute: "Differentiation versus distinctiveness"](https://marketingscience.info/news-and-insights/differentiation-versus-distinctiveness) | Institute article | Distinctive assets: logos, house styles |
-| [Romaniuk, Sharp, Dawes & Faghidno, "How B2B Brands Grow" (Ehrenberg-Bass and LinkedIn B2B Institute, 2023)](https://marketingscience.info/news-and-insights/how-b2b-brands-grow) | Institute report page | Brands grow by acquiring customers, not loyalty |
+| [Romaniuk, Sharp, Dawes & Faghidno, "How B2B Brands Grow" (Ehrenberg-Bass and LinkedIn B2B Institute, 2023)](https://marketingscience.info/news-and-insights/how-b2b-brands-grow) | Institute report page | Mental availability, distinctive assets, growth through new customers |
 | [Page Laubheimer, "Executing UX Animations: Duration and Motion Characteristics" (NN/g, 2020)](https://www.nngroup.com/articles/animation-duration/) | Usability research article | Easing vs linear motion |
 | [Husain, Thompson & Schellenberg, "Effects of musical tempo and mode on arousal, mood, and spatial abilities" (*Music Perception*, 2002)](https://research.bond.edu.au/en/publications/effects-of-musical-tempo-and-mode-on-arousal-mood-and-spatial-abi/) | Experiment | Tempo changes arousal; mode changes mood |
 | [Cristos Goodrow, "On YouTube's recommendation system" (YouTube blog, 2021)](https://blog.youtube/inside-youtube/on-youtubes-recommendation-system/) | YouTube's VP of Engineering | What YouTube's recommender reads |
 | [TikTok, "How TikTok recommends videos #ForYou" (2020)](https://newsroom.tiktok.com/en-us/how-tiktok-recommends-videos-for-you) | TikTok newsroom | Follower count is not a direct factor |
-| [YouTube Help: "Measure key moments for audience retention"](https://support.google.com/youtube/answer/9314415) | Official help page | Comparing a video against your own typical retention; the first 30 seconds |
+| [YouTube Help: "Measure key moments for audience retention"](https://support.google.com/youtube/answer/9314415) | Official help page | Comparing a video against your own typical retention |
+| [Meta for Developers: Instagram Media Insights](https://developers.facebook.com/documentation/instagram-platform/reference/instagram-media/insights) | Official API reference | Instagram reports saves on posts and reels |
 | [Boehm & Basili, "Software Defect Reduction Top 10 List" (*IEEE Computer*, 2001)](https://www.cs.umd.edu/projects/SoftEng/ESEG/papers/82.78.pdf) | Short paper | Cost of fixing late; peer review |
 | [Menzies et al., "Are Delayed Issues Harder to Resolve?" (2016)](https://arxiv.org/abs/1609.04886) | Study of 171 software projects | Counter-evidence to the general cost-escalation rule |
 | [Huang et al., "Large Language Models Cannot Self-Correct Reasoning Yet" (ICLR 2024)](https://arxiv.org/abs/2310.01798) | Peer-reviewed paper | Why a separate reviewer beats self-review |
 | [OpenAI: "Sora" (2024)](https://openai.com/index/sora/) | Model announcement with stated weaknesses | Physics, cause and effect, left and right |
-| [Google Cloud: Video generation prompt guide (Veo)](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/video-gen-prompt-guide) | Official documentation | Negative phrasing, specificity |
+| [Google Cloud: Video generation prompt guide (Veo)](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide) | Official documentation (moved from the Vertex AI docs path in 2026) | Negative phrasing, specificity |
 | [BytePlus ModelArk: Create a video generation task (Seedance)](https://ai.byteplus.com/ark/region:ap-southeast-1/docs/create-video-generation-task-api) | Official API documentation | First and last frames, aspect ratio, resolution, audio |
 
 ## What the sources say
 
 ### Framing (Palmer et al. 2008)
 
-Abstract: for front-facing single objects, "preference was greatest for pictures whose subject was located at or near the center of the frame and decreased monotonically and symmetrically with distance from the center (the center bias)." For left- or right-facing objects, viewers also preferred "objects to face into rather than out of the frame (the inward bias)." The same held when participants took their own photos. Later work from the lab describes this as contradicting the rule of thirds.
+Abstract: for front-facing single objects, "preference was greatest for pictures whose subject was located at or near the center of the frame and decreased monotonically and symmetrically with distance from the center (the center bias)." For left- or right-facing objects, viewers also preferred "objects to face into rather than out of the frame (the inward bias)." The data are "generally inconsistent with the rule of thirds": off-centre positions work "only when the object faces into the frame".
 
 ### Fluency (Reber et al. 2004)
 
-"The more fluently perceivers can process an object, the more positive their aesthetic response." Repetition, symmetry, figure-ground contrast and prototypicality all raise fluency and with it liking.
+"The more fluently perceivers can process an object, the more positive their aesthetic response." Figural goodness, figure-ground contrast, stimulus repetition, symmetry and prototypicality all raise fluency and with it liking.
 
 ### Distinctiveness and growth (Ehrenberg-Bass)
 
-- "Distinctiveness is all about making your brand easily identified by customers. Brand names, logos, jingles, slogans and house styles contribute to this." Buyers "naturally buy the brands they remember and can find when needed."
-- How B2B Brands Grow (2023): "brands grow by acquiring new customers, not by increasing customer loyalty", through advertising that builds memory structures and reaches every category buyer.
+How B2B Brands Grow (2023): buyers choose brands that are "easy to mind" and "easy to find"; "brands grow by acquiring new customers, not by increasing customer loyalty"; "Brands compete through 'meaningless distinctiveness' – logos, characters, colors – not through meaningful differentiation."
 
 ### Easing (Laubheimer, NN/g 2020)
 
-"Completely linear motion looks weird and unnatural to users." Objects in the world "tend to accelerate and decelerate when they start and, respectively, stop moving." Ease-out is the usual choice for things entering.
+"Completely linear motion looks weird and unnatural to users." An object that "subtly speeds up or down over time" feels more natural.
 
 ### Tempo (Husain et al. 2002)
 
@@ -49,76 +48,87 @@ Four versions of one Mozart sonata, fast or slow, major or minor. "Tempo manipul
 
 ### Recommendation systems
 
-- YouTube (Goodrow 2021): signals are "clicks, watchtime, survey responses, sharing, likes, and dislikes"; "the job of our recommendation system is to find that audience"; adding watch time in 2012 caused "an immediate 20% drop in views".
-- TikTok (2020): recommendations use interactions, video information and device settings; "neither follower count nor whether the account has had previous high-performing videos are direct factors."
-- YouTube Help: the retention report compares a video with "your 10 most recent videos of similar length"; "Intro" is the share still watching after 30 seconds; a strong intro may mean the opening "matched the viewer's expectation of the video's thumbnail and title."
+- YouTube (Goodrow 2021): signals are "clicks, watchtime, survey responses, sharing, likes, and dislikes".
+- TikTok (2020): "neither follower count nor whether the account has had previous high-performing videos are direct factors", though a video "is likely to receive more views if posted by an account that has more followers".
+- YouTube Help: "use typical retention to compare your 10 latest videos of similar length".
+- Instagram API: the `saved` metric ("Number of time your app user's Instagram media was saved") exists for `FEED` posts and `REELS`.
 
 ### Catching errors early
 
 - Boehm & Basili (2001): "Finding and fixing a software problem after delivery is often 100 times more expensive than finding and fixing it during the requirements and design phase", but "for small, noncritical software systems to be more like 5:1 than 100:1." Peer review "catches from 31 to 93 percent of the defects, with a median of around 60 percent."
-- Menzies et al. (2016) tested the "delayed issue effect" in 171 projects and "found no evidence" that later fixes cost consistently more. The general rule is disputed; it holds where the later stage is visibly more expensive, as with per-second video billing.
-- Huang et al. (2024): "LLMs struggle to self-correct their responses without external feedback", and sometimes "their performance even degrades after self-correction."
+- Menzies et al. (2016) tested the "delayed issue effect" in 171 projects and "found no evidence" that later fixes cost consistently more.
+- Huang et al. (2024): "LLMs struggle to self-correct their responses without external feedback, and at times, their performance even degrades after self-correction."
 
 ### Video model behaviour
 
-- Sora (OpenAI 2024): the model "may struggle to simulate the physics of a complex scene", may miss cause and effect ("a cookie might not show a mark after a character bites it"), and "may also confuse spatial details included in a prompt, such as discerning left from right."
-- Veo prompt guide (Google): "Not recommended: using instructive language or words such as "no" or "don't"", for example "no walls". Recommended: "Describe what you don't want to see" as plain nouns in the negative prompt field. "Specificity helps avoid generic outputs."
-- Seedance API (BytePlus): first-and-last-frame generation takes two images with roles `first_frame` and `last_frame`; if their aspect ratios differ, "the first frame image takes precedence, and the last frame image will be automatically cropped to fit." 2.0 mini outputs 480p or 720p only. `generate_audio` defaults to `true` and adds "synchronized voice, sound effects, and music"; `false` returns a silent video.
+- Sora (OpenAI, February 2024, the first Sora model): it "may struggle to simulate the physics of a complex scene", may miss cause and effect ("a cookie might not show a mark after a character bites it"), and "may also confuse spatial details included in a prompt, such as discerning left from right."
+- Veo prompt guide (Google), on the negative prompt field: "Not recommended: using instructive language or words such as "no" or "don't". For example, avoid prompts such as "no walls"". Recommended: list unwanted things as plain nouns ("wall, frame"). On subjects: "Specificity helps avoid generic outputs."
+- Seedance API (BytePlus): first-and-last-frame generation takes two images with roles `first_frame` and `last_frame` (Seedance 2.5 series, 2.0 series and 1.0 pro). If their aspect ratios differ, "the first frame image takes precedence, and the last frame image will be automatically cropped to fit." To "strictly ensure the first and last frames exactly match the specified images", use this mode. Seedance 2.0 mini supports 480p and 720p only. `generate_audio` defaults to `true` and generates "matching human voice, sound effects and background music".
 
 ## Claim check
+
+Verdicts: **supported** (the source says this), **overstated** (the source says something narrower), **misattributed**, **disputed**, **unsupported**, **one person's claim** (labelled as such in the lesson).
 
 ### Make product videos feel premium (`premium-product-videos.md`)
 
 | Claim | Verdict | Source |
 | --- | --- | --- |
-| Premium means nothing looks accidental; fixed rules make choices look deliberate | **Supported**: consistency builds recognition (distinctive assets), and repetition raises processing fluency and liking | Ehrenberg-Bass; Reber et al. 2004 |
-| Apple's videos aren't trying to make more people know Apple; they make existing buyers feel special | **Disputed** as a growth strategy: Ehrenberg-Bass finds brands grow by acquiring new customers, not loyalty | How B2B Brands Grow 2023 |
-| Leo's studio made 50+ videos in one summer | **Unverified**, his claim | Leo's post |
-| Apple keeps a brand guideline for video | **Unverified**, Leo's claim | Leo's post |
-| The key object sits in the centre of the frame | **Confirmed** for a single front-facing object (centre bias) | Palmer et al. 2008 |
-| Linear motion reads as cheap; ease your keyframes | **Supported**: linear motion "looks weird and unnatural" | Laubheimer 2020 |
-| Tempo sets the energy of the whole video | **Supported**: tempo changes arousal, not mood; mode (major/minor) changes mood | Husain et al. 2002 |
-| BPM ranges (60–80 regal, 90–110 smooth, 115–123 elite) | **Unverified**, Leo's opinion; research supports only "faster is more arousing" | Husain et al. 2002 |
+| People like things more when repetition, symmetry and contrast make them easy to take in | **supported** | Reber et al. 2004 |
+| "The Ehrenberg-Bass Institute adds that buyers pick brands they recognise easily, built through consistent colours and house styles" | **misattributed**: the cited page is an unsigned blog post republished on the Institute's site, not Institute research. Fixed: cited to Romaniuk, Sharp et al.'s *How B2B Brands Grow*, which says buyers choose brands that are easy to mind and that brands compete through logos, characters and colours | How B2B Brands Grow 2023 |
+| Leo's studio sells to fintech and made 50+ videos in one summer | **one person's claim** | Leo's post |
+| Apple's videos make existing buyers feel special | **one person's claim**; the Watch out adds that brands grow through new customers | Leo's post; How B2B Brands Grow 2023 |
+| Apple keeps a brand guideline; the team storyboards in Figma | **one person's claim** | Leo's post |
+| Viewers prefer a single front-facing object in the centre, and a sideways one facing into the frame | **supported** | Palmer et al. 2008 |
+| Linear motion "looks weird and unnatural" | **supported** | Laubheimer 2020 |
+| Tempo changed arousal, mode changed mood | **supported** | Husain et al. 2002 |
+| BPM ranges (60–80 regal, 90–110 smooth, 115–123 elite) | **one person's claim** (labelled); research supports only "faster is more arousing" | Husain et al. 2002 |
+| Brands grow by acquiring new customers, not loyalty | **supported** | How B2B Brands Grow 2023 |
 
 ### Reuse formats that already work (`short-form.md`)
 
 | Claim | Verdict | Source |
 | --- | --- | --- |
-| "Algorithms push formats they already recognise" | **Disputed** as stated: YouTube and TikTok describe ranking on viewer responses (watch time, shares, surveys, interactions), not format recognition | Goodrow 2021; TikTok 2020 |
-| Proven formats work | **Supported** on the viewer side: familiar, prototypical forms are processed more fluently; formats that broke out already earned the viewer signals the ranker reads | Reber et al. 2004; Goodrow 2021 |
-| tuanle: 4B+ views, 4M-view iPhone video; Buldak 900M views; Stan; MrBeast starts from title and thumbnail | **Unverified**, chapter list only | tuanle's post |
-| Judge a video against the creator's usual views | **Supported**: YouTube's own retention report compares a video with the creator's 10 most recent similar videos | YouTube Help |
-| Small creators' outliers show the format did the work | **Supported** on TikTok: follower count and past hits are not direct ranking factors | TikTok 2020 |
-| Shortlist creators under ~100,000 followers | **Unverified** threshold, a practitioner heuristic | None |
-| TikTok is the only platform with saves (analyst bot prompt) | **Unverified**: no platform docs checked | None |
+| YouTube reads clicks, watch time, surveys, shares, likes and dislikes | **supported** | Goodrow 2021 |
+| TikTok describes similar signals | **supported** | TikTok 2020 |
+| People like familiar, easy-to-process forms more | **supported** | Reber et al. 2004 (prototypicality, repetition) |
+| tuanle: 4B+ views, the 4M-view video, Buldak, Stan, MrBeast | **one person's claim** (chapter list only) | tuanle's post |
+| YouTube's retention report compares with your 10 latest videos of similar length | **supported** | YouTube Help |
+| TikTok: follower count and past hits aren't direct factors, though a bigger following can bring more views | **supported** | TikTok 2020 |
+| dsqjaffa co-founded Virlo | **supported** | Their X bio in the scraped post |
+| Analyst bot: TikTok is "the one platform that has" saves | **disputed**: Instagram reports saves on posts and reels. Fixed: "Compare saves only on platforms whose data includes them" | Instagram Media Insights |
 
 ### Plan an AI video before you pay for it (`ai-video-plan.md`)
 
 | Claim | Verdict | Source |
 | --- | --- | --- |
-| Each stage costs more than the one before; catch errors early | **Confirmed** for this pipeline by the price list (video billed per second); **disputed** as a general law in software | Seedance docs; Boehm & Basili 2001; Menzies et al. 2016 |
-| A separate review agent passes prompts before spend | **Supported**: models self-correct poorly without outside feedback; peer review catches a median ~60% of defects | Huang et al. 2024; Boehm & Basili 2001 |
-| Very low reroll rate from these rules | **Unverified**, EianLu's experience | EianLu's post |
-| AI video fails at crossing people, hands with small objects, text, mirrors, left/right | **Partly confirmed**: OpenAI lists physics, cause and effect, and left/right confusion; the rest are EianLu's list | Sora 2024 |
-| Seedance prices (~¥1.5/s at 720p for 2.5; ~¥0.5/s for 2.0 mini) | **Unverified**: Volcengine pricing not opened | None |
-| Heads at 38% or 62% of frame width | **Disputed** as a general rule: viewers prefer a single front-facing subject centred; for subjects facing sideways, facing into the frame matters more | Palmer et al. 2008 |
-| Check palette in greyscale for contrast | **Unverified**: painters' value-study practice; no source opened | None |
+| Video is billed per second; prompt edits are free | **one person's claim** (EianLu's prices, labelled) | EianLu's post |
+| Late bugs often cost 100 times more, about 5 times in small projects | **supported** | Boehm & Basili 2001 |
+| 171 projects showed no consistent effect | **supported** | Menzies et al. 2016 |
+| Models struggle to self-correct without outside feedback | **supported** | Huang et al. 2024 |
+| Peer review catches a median of about 60% of defects | **supported** | Boehm & Basili 2001 |
+| Very low reroll rate from these rules | **one person's claim** | EianLu's post |
+| "OpenAI says its Sora model may struggle with physics, cause and effect, left and right" | **overstated** as a current fact: this is OpenAI's February 2024 note on the first Sora model. Fixed: dated to 2024 | OpenAI 2024 |
+| Seedance prices (~¥1.5/s, ~¥0.5/s) | **one person's claim** (labelled; Volcengine pricing not opened) | EianLu's post |
+| Viewers prefer centred front-facing subjects; 38/62% lines only for profiles facing in | **supported** | Palmer et al. 2008 |
+| Codex alone can do the job; Claude has better directing taste | **one person's claim** | EianLu's post |
+| Check palette sketches in greyscale for contrast | **one person's claim** (EianLu's practice) | EianLu's post |
 
 ### Generate AI shots without rerolls (`ai-video-shots.md`)
 
 | Claim | Verdict | Source |
 | --- | --- | --- |
-| Generating between drawn first and last frames prevents most errors | **Supported in mechanism**: Seedance's docs say to use first-and-last-frame mode when frames must strictly match; "most errors" is EianLu's claim | Seedance docs |
-| Both frames must be the same size | **Confirmed in effect**: a mismatched last frame is auto-cropped to the first frame's ratio | Seedance docs |
-| Models often ignore negatives; phrase fixes positively | **Confirmed**: Google's Veo guide says not to write "no" or "don't" | Veo prompt guide |
-| Give direction in screen terms | **Supported**: models confuse left and right in prompts | Sora 2024 |
-| Seedance 2.5 adds music despite "no music" | **Confirmed in mechanism**: audio generation defaults to on and includes music; set `generate_audio` to `false` | Seedance docs |
-| Seedance 2.5 costs about 3x 2.0 mini | **Unverified** (prices not opened) | None |
-| Generate at 720p and upscale | **Consistent** with docs: 2.0 mini supports only 480p and 720p | Seedance docs |
-| BT.601 decode, BT.709 tag | **Unverified**, EianLu's practice | None |
+| Seedance takes `first_frame` and `last_frame`; mismatched ratios crop the last frame | **supported** | Seedance docs |
+| First-and-last-frame mode prevents most logic errors | **one person's claim**; the docs recommend the mode when frames must match exactly | EianLu's post; Seedance docs |
+| "Google's Veo guide warns against 'no' or 'don't'" | **overstated**: the advice is about how to fill the negative prompt field. Fixed: says so; link updated to the guide's new address | Veo prompt guide |
+| "Specificity helps avoid generic outputs" | **supported** | Veo prompt guide |
+| "OpenAI notes Sora can confuse left and right" | **overstated** as current: a 2024 note. Fixed: dated | OpenAI 2024 |
+| Seedance adds music by default; set `generate_audio` to `false` | **supported** | Seedance docs |
+| 2.0 mini outputs 720p at most, so upscale in post | **supported** | Seedance docs |
+| Seedance 2.5 costs about 3x 2.0 mini | **one person's claim** | EianLu's post |
+| Failure fixes table, BT.601 decoding, post-production settings | **one person's claim** | EianLu's post |
 
 ## Not verified
 
-- Pixar in a Box (Khan Academy) on storyboards and story reels was considered for the AI video lessons; the pages didn't load, so it's not used.
 - Volcengine (Chinese) pricing pages for Seedance were not opened; all prices stay labelled as the author's.
-- The Disney animation principles (*The Illusion of Life*, Thomas & Johnston, 1981) were not opened; the easing claim rests on NN/g instead.
+- Instagram's own Help Center pages return 400 to scripts; the saves metric was read from Meta's developer reference instead.
+- Romaniuk's *Building Distinctive Brand Assets* (2018) and the Disney animation principles (*The Illusion of Life*, 1981) were not opened.

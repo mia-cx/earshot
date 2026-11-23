@@ -24,7 +24,7 @@ One book for each idea most marketing advice is built on:
 - **What marketing is:** Al Ries and Jack Trout, [*Positioning: The Battle for Your Mind*](https://openlibrary.org/works/OL1892673W) (1981). Positioning happens in the buyer's head, not in the product.
 - **What marketing is:** April Dunford, [*Obviously Awesome*](https://www.aprildunford.com/obviously-awesome) (2019). A step-by-step method that breaks positioning into five parts you can work through with your team.
 - **Writing that gets read:** Eugene Schwartz, [*Breakthrough Advertising*](https://breakthroughadvertisingbook.com/) (1966). Copy channels a desire buyers already have, and what you say depends on how aware of the problem they are.
-- **Content that builds a brand:** Byron Sharp, [*How Brands Grow*](http://marketingscience.info/how-brands-grow) (2010). Brands grow mostly by reaching more buyers, including people who buy rarely, not by making loyal buyers more loyal.
+- **Content that builds a brand:** Byron Sharp, [*How Brands Grow*](https://marketingscience.info/learn-with-us/books#how-brands-grow) (2010). Brands grow mostly by reaching more buyers, including people who buy rarely, not by making loyal buyers more loyal.
 - **Content that builds a brand:** Les Binet and Peter Field, [*The Long and the Short of It*](https://ipa.co.uk/knowledge/publications-reports/the-long-and-the-short-of-it-balancing-short-and-long-term-marketing-strategies) (2013). Across 996 campaigns, the biggest results came from spending about 60% on brand building and 40% on direct response.
 - **Launching:** Gabriel Weinberg and Justin Mares, [*Traction*](https://openlibrary.org/works/OL20015670W) (2014). Test several channels cheaply, then put everything into the one that works.
 - **Outreach:** Rob Fitzpatrick, [*The Mom Test*](https://www.momtestbook.com/) (2013). How to learn whether people would really buy when everyone is too polite to tell you your idea is bad.
@@ -37,8 +37,8 @@ For *What marketing is*:
 - [Obviously Awesome: a product positioning exercise](https://hackernoon.com/obviously-awesome-a-product-positioning-exercise-604e8ced841e)
 - [The circles of marketing](https://seths.blog/2012/07/the-circles-of-marketing/)
 - [Marketing in four steps](https://seths.blog/2016/08/marketing-in-four-steps/)
-- [Smart marketing goals](https://blog.hubspot.com/marketing/smart-goal-examples)
-- [Why founders fail to market their products](https://medium.dave-bailey.com/why-founders-fail-to-market-their-products-f7c15935c81)
+- [SMART goal dos and don'ts](https://blog.hubspot.com/marketing/smart-goal-examples)
+- [Why founders market their products too late](https://medium.dave-bailey.com/why-founders-fail-to-market-their-products-f7c15935c81)
 - [Marketing 101 for engineers: a functional introduction](https://medium.com/hackernoon/marketing-101-for-engineers-ee9e7fcb1a51)
 - [The GACC marketing brief](https://newsletter.mkt1.co/p/the-gacc-marketing-brief-the-best) (the Goal, Audience, Creative, Channel plan from *Fit your strategy on one page*)
 
