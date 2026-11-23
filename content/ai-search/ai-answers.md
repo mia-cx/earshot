@@ -37,6 +37,7 @@ The public examples in this module come from Granola (meeting notes) and Ramp (f
 > [!TRICK] Count the AI bots that visit
 > 1. Open your server or CDN logs and filter by the AI bot names listed in *Get your site found at all*.
 > 2. Count visits per bot per week, and note which pages they read.
+> 3. Keep Googlebot and Bingbot in a separate count. Both crawl for ordinary search too, so their visits don't tell you how often AI search fetched your pages.
 >
 > Ramp logged thousands of visits from 7 AI platforms in 2 weeks, and Claude's crawler visited more than all the other named AI crawlers combined. Some bots pose as normal browsers (DeepSeek showed up as a Chrome version from 2017), so named bots are a floor, not the total.
 
