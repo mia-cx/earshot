@@ -50,7 +50,7 @@ A flat curve isn't enough on its own: it can flatten at a level too low to pay f
 
 Byron Sharp and colleagues at the Ehrenberg-Bass Institute found that brands grow and shrink mainly through how many new buyers they win, not how many they keep ([Answering critics](https://marketingscience.info/news-and-insights/answering-critics)). Neither Balfour nor Sharp names a moment to switch. The source author's advice to spend most of your time on retention fits a leaky product; once enough users stay, growth comes mainly from winning new ones.
 
-The same author says products now have short shelf lives (an opinion, not a measured trend). And decide how you'll charge from day one: free with no revenue model isn't sustainable.
+The same author says products now have short shelf lives (an opinion, not a measured trend). They also advise deciding how you'll charge from day one, because free with no revenue model isn't sustainable.
 
 ## Where the course covers each stage
 

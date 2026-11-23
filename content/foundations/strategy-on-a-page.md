@@ -16,7 +16,7 @@ A goal is not a strategy. Strategy professor Richard Rumelt calls mistaking the 
 
 Good strategy has three parts: a **diagnosis** of the main obstacle, a **guiding policy** for getting past it, and **coherent actions** that back each other up.
 
-A strategy you can't read in one sitting won't get used, so keep it to one page. Your positioning doc from *Say what you are, for whom, against what* fills the first two sections. Write the growth strategy as the obstacle and your approach; the initiatives are the coherent actions.
+Keep the whole strategy to one page so you can read it in one sitting. Your positioning doc from *Say what you are, for whom, against what* fills the first two sections. Write the growth strategy as the obstacle and your approach; the initiatives are the coherent actions.
 
 > [!TRICK] Fill in a one-page strategy
 > - Four sections: Brand promise, Target audience, Growth strategy, Marketing initiatives.

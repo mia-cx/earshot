@@ -20,9 +20,9 @@ The "right person" is the reader you pictured in *Say what you are, for whom, ag
 
 ## Keep one idea per post
 
-One idea per post is easier to remember and easier to pass on. If you have three ideas, you have three posts.
+One idea per post is easier to remember and easier to pass on. The Heaths found [simplicity](https://stanfordmag.org/contents/getting-attention) is the first trait sticky ideas share. If you have three ideas, you have three posts.
 
-It also helps the feed. X's [published SimClusters code](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/simclusters_v2/README.md) groups accounts into about 145,000 communities by who follows whom, then places each post by who likes it. One author reads this to mean a post about three topics fits none of them well. The code lets a post span several communities, so that's a guess, not a tested result. *How X picks what people see* covers the feed in detail.
+It may also help in the feed. [X's 2026 feed code](https://github.com/xai-org/x-algorithm) still uses SimClusters as one way to find posts for people who don't follow you. Twitter's [2023 SimClusters code](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/simclusters_v2/README.md) groups accounts into about 145,000 communities by who follows whom, then places each post by who likes it. One author reads this to mean a post about three topics fits none of them well. The code lets a post span several communities, so that's a guess, not a tested result. *How X picks what people see* covers the feed in detail.
 
 Every post needs three things: a specific reader, a clear takeaway and a specific call to action.
 
@@ -71,7 +71,8 @@ The user is the main character. The product is what helped.
 
 - [Stanford Magazine: Getting Attention, on Chip and Dan Heath's *Made to Stick* (2007)](https://stanfordmag.org/contents/getting-attention)
 - [Hoa Loranger, Nielsen Norman Group: Plain Language Is for Everyone, Even Experts (2017)](https://www.nngroup.com/articles/plain-language-experts/)
-- [Twitter: SimClusters README in the-algorithm](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/simclusters_v2/README.md)
+- [Twitter: SimClusters README in the-algorithm (2023)](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/simclusters_v2/README.md)
+- [xAI: X For You feed algorithm (GitHub)](https://github.com/xai-org/x-algorithm)
 - [Christensen Institute: Jobs to Be Done](https://www.christenseninstitute.org/theory/jobs-to-be-done/)
 - [@ryangrowthh: copywriting guide (action, clarity, one idea)](https://x.com/ryangrowthh/status/2118723940638138486)
 - [@ryangrowthh: one idea per post and the X algorithm](https://x.com/ryangrowthh/status/2117684231983800732)

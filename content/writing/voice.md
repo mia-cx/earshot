@@ -27,13 +27,13 @@ To pick your tone, start with Kate Moran's [four scales at NN/g](https://www.nng
 
 ## Polish is no longer a signal
 
-AI output arrives tidy and confident, so polish no longer signals quality. Readers can't spot it either: across six experiments with 4,600 people, [Maurice Jakesch, Jeffrey Hancock and Mor Naaman](https://arxiv.org/abs/2206.07271) found people could not reliably tell AI-written text from human writing.
+AI output arrives tidy and confident, so polish no longer signals quality. Readers can't spot it either. Across six experiments with 4,600 participants, [Maurice Jakesch, Jeffrey Hancock and Mor Naaman](https://arxiv.org/abs/2206.07271) found people couldn't tell AI-written job, hosting and dating profiles from human ones. Untrained readers in [Elizabeth Clark and colleagues' study](https://aclanthology.org/2021.acl-long.565/) did no better than chance on stories, news and recipes.
 
 Judge every draft by your own standard. If you wouldn't sign your name to it, don't publish it. Addy Osmani says most of their own AI-made creative work stays unpublished for this reason.
 
 ## Use AI as an editor, not an author
 
-Write the draft yourself and let AI check it against your rules. In a 2024 study of 300 writers, [Anil Doshi and Oliver Hauser](https://doi.org/10.1126/sciadv.adn5290) found stories written from AI-generated ideas scored better one by one, yet came out more alike. Their writers still wrote every word; the study only tested AI ideas. Writing first and using AI as an editor is this course's suggestion for keeping the ideas yours, not a tested result.
+Write the draft yourself and let AI check it against your rules. In a 2024 study of 293 writers, [Anil Doshi and Oliver Hauser](https://doi.org/10.1126/sciadv.adn5290) found stories written from AI-generated ideas scored better one by one, yet came out more alike. Their writers still wrote every word; the study only tested AI ideas. Writing first and using AI as an editor is this course's suggestion for keeping the ideas yours, not a tested result.
 
 Load a writing guide into a Claude Project and let it critique your drafts. The source post uses Ryan's [copywriting masterclass](https://x.com/ryangrowthh/status/2118723940638138486), which the earlier lessons in this module draw from, and offers no evidence beyond the guide author's own growth.
 
@@ -88,6 +88,7 @@ If you want AI to write first drafts, keep the final pass for yourself and make 
 - [Kate Moran, Nielsen Norman Group: The Impact of Tone of Voice on Users' Brand Perception (2016)](https://www.nngroup.com/articles/tone-voice-users/)
 - [Kate Moran, Nielsen Norman Group: The Four Dimensions of Tone of Voice (2016)](https://www.nngroup.com/articles/tone-of-voice-dimensions/)
 - [Maurice Jakesch, Jeffrey Hancock and Mor Naaman: Human heuristics for AI-generated language are flawed (2023)](https://arxiv.org/abs/2206.07271)
+- [Elizabeth Clark et al.: All That's 'Human' Is Not Gold: Evaluating Human Evaluation of Generated Text (2021)](https://aclanthology.org/2021.acl-long.565/)
 - [Anil Doshi and Oliver Hauser: Generative AI enhances individual creativity but reduces the collective diversity of novel content (2024)](https://doi.org/10.1126/sciadv.adn5290)
 - [@ryangrowthh: copywriting guide (voice)](https://x.com/ryangrowthh/status/2118723940638138486)
 - [@AIGuide_: turning the guide into a Claude editor](https://x.com/AIGuide_/status/2119241264843358402)

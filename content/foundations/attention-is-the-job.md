@@ -18,15 +18,15 @@ Byron Sharp's research at the Ehrenberg-Bass Institute found that brands grow ma
 
 Attention also has to last. Build a name people keep, not only this week's clicks. Les Binet and Peter Field studied IPA effectiveness cases and found the best results came from about 60% long-term brand building and 40% short-term sales activation ([IPA](https://ipa.co.uk/knowledge/ipa-blog/the-next-chapter-for-the-long-and-the-short-of-it)).
 
-That attention now sits in social feeds, not on TV or radio. Startups call this "founder-led marketing": the person who built the thing talks about it in public. Content here means good content, not a lot of it.
+Dan Koe argues that attention now sits in social feeds, not on TV or radio. Startups call this "founder-led marketing": the person who built the thing talks about it in public. Content here means good content, not a lot of it.
 
-Dan Koe points to two forecasts. Goldman Sachs Research [estimated in 2023](https://www.goldmansachs.com/insights/articles/the-creator-economy-could-approach-half-a-trillion-dollars-by-2027) that the creator economy's total addressable market could grow from $250B to $480B by 2027. WPP Media [forecast in June 2025](https://www.theguardian.com/media/2025/jun/10/social-media-creators-to-overtake-traditional-media-in-ad-revenue-this-year) that creators would pass traditional media in ad revenue that year. Both are projections, not measured results.
+Koe points to two forecasts. Goldman Sachs Research [estimated in 2023](https://www.goldmansachs.com/insights/articles/the-creator-economy-could-approach-half-a-trillion-dollars-by-2027) that the creator economy's total addressable market could grow from $250B to $480B by 2027. WPP Media [forecast in June 2025](https://www.theguardian.com/media/2025/jun/10/social-media-creators-to-overtake-traditional-media-in-ad-revenue-this-year) that creators would pass traditional media in ad revenue that year. Both are projections, not measured results.
 
 ## Marketing starts at the product
 
 When your marketing isn't working, go one circle in.
 
-That's Seth Godin's rule from [The circles of marketing](https://seths.blog/2012/07/the-circles-of-marketing/). The product sits in the centre. Around it sit usability, support and atmosphere. Next is your story and the tribe it's for (this course also puts price and community in that ring). Only the outermost ring holds ads, spin, buzz, hype, clicks and "getting the word out", the part most people call marketing.
+That's Seth Godin's rule from [The circles of marketing](https://seths.blog/2012/07/the-circles-of-marketing/). The product sits in the centre. Around it sit usability, support and atmosphere. Next are your story, price, community and the tribe it's for. Only the outermost ring holds ads, spin, buzz, hype, clicks and "getting the word out", the part most people call marketing.
 
 Spend your effort from the centre outwards:
 
@@ -54,7 +54,7 @@ So marketing's job is simpler than it looks: make sure everyone who should know 
 
 ## Get the strategy right, then execute
 
-Good execution of the right strategy beats great execution of a mediocre one, and most teams are running a mediocre strategy. You still need both.
+In @kunalvg's view, good execution of the right strategy beats great execution of a mediocre one, and most teams run a mediocre strategy. You still need both.
 
 The rest of this module gives you the strategy half: who you're for (*Say what you are, for whom, against what*), what buyers say (*Research a market in an afternoon*) and a plan (*Fit your strategy on one page*).
 

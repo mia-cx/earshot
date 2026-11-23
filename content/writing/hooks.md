@@ -14,7 +14,7 @@ description: Write hooks that earn the next line, using five levers and eight ho
 
 The first line doesn't have to sell anything. Its only job is to **get the second line read**.
 
-It works by opening a right-sized gap. Psychologist George Loewenstein [described curiosity](https://doi.org/10.1037/0033-2909.116.1.75) as the itch of noticing a gap in what you know. Marianne Aubin Le Quéré and J. Nathan Matias tested that in [a meta-analysis of 8,977 headline A/B tests](https://doi.org/10.1038/s41598-024-81575-9) from Upworthy. More specific headlines won more clicks when the original was vague, and fewer clicks when it already said enough. Give enough detail to make the gap worth closing, and save the answer for line two.
+It works by opening a right-sized gap. Psychologist George Loewenstein [described curiosity](https://doi.org/10.1037/0033-2909.116.1.75) as the itch of noticing a gap in what you know. Marianne Aubin Le Quéré and J. Nathan Matias tested that in [a meta-analysis of 8,977 headline A/B tests](https://doi.org/10.1038/s41598-024-81575-9) from Upworthy. More specific headlines won more clicks when the original was vague, and fewer clicks when it already said enough. In Upworthy's archive, more detail would have cost clicks on about half the headlines and helped fewer than 1 in 10. Give enough detail to make the gap worth closing, and save the answer for line two.
 
 - Lead with the most interesting thing. Cut the warm-up. If your best line is at the bottom, move it to the top.
 - Be specific. "I hit 5.8M impressions in my first month" beats "I grew fast". Numbers, names and timeframes beat vague promises, until the line gives the whole answer away.
@@ -61,7 +61,7 @@ A hook isn't always the first sentence. In a video it's the first two seconds; i
 
 You don't know what a post promises until it's written. Draft the body first, then write several hooks and cut down to one.
 
-In 1932, Caples gave the same advice: "Write a number of headlines for every advertisement and then select the best one." Between 2013 and 2015, Upworthy ran over 27,000 A/B tests, many pitting rival headlines for the same story against each other.
+Caples gives the same advice in *Tested Advertising Methods*: "Write a number of headlines for every advertisement and then select the best one." Between 2013 and 2015, Upworthy ran over 27,000 A/B tests, many pitting rival headlines for the same story against each other.
 
 > [!TRICK] Write 5 to 10 hooks, keep one
 > 1. Write the post first, hook last.
@@ -85,7 +85,7 @@ In 1932, Caples gave the same advice: "Write a number of headlines for every adv
 > A gap between what they know and what they want to know. It fails when the gap is the wrong size: too vague to care about, or so complete there's nothing left to find out.
 
 > [!CHECK] Your hook says "I grew fast." How do you make it stronger?
-> Make it specific with a number, a name or a timeframe, as in "I hit 5.8M impressions in my first month." Specifics beat vague promises.
+> Make it specific with a number, a name or a timeframe, as in "I hit 5.8M impressions in my first month." Specifics win when the hook is vague, but once it says enough, more detail costs clicks.
 
 > [!CHECK] Why should you write a post's hook after the body?
 > You don't know what the post promises until it's written. Then you write 5 to 10 hooks and cut to the best one.
@@ -94,7 +94,7 @@ In 1932, Caples gave the same advice: "Write a number of headlines for every adv
 
 - [George Loewenstein: The Psychology of Curiosity: A Review and Reinterpretation (1994)](https://doi.org/10.1037/0033-2909.116.1.75)
 - [Marianne Aubin Le Quéré and J. Nathan Matias: When curiosity gaps backfire (2025)](https://doi.org/10.1038/s41598-024-81575-9)
-- [John Caples, *Tested Advertising Methods* (1932)](https://openlibrary.org/works/OL3350190W)
+- [John Caples, *Tested Advertising Methods* (1932; 5th edition revised by Fred E. Hahn, 1997)](https://openlibrary.org/works/OL3350190W)
 - [@ryangrowthh: copywriting guide (hooks, levers, eight types, formats)](https://x.com/ryangrowthh/status/2118723940638138486)
 - [@AIGuide_: sharing Ryan's guide](https://x.com/AIGuide_/status/2119241264843358402)
 - [@ryangrowthh: first-month growth figures](https://x.com/ryangrowthh/status/2117684231983800732)
