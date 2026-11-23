@@ -39,7 +39,7 @@ Hunt says prompting matters less as models get smarter; Osmani calls it a thinki
 
 ## Set it up once and let it learn
 
-Put a standing brief in a Claude Project, a custom GPT or a Gemini Gem, so you never re-explain your business. The last rule in the template below matters most: every correction becomes a new line, so the same mistake doesn't come back. Prune it too, or the brief grows past what the bot reads well.
+Put a standing brief in a Claude Project, a custom GPT or a Gemini Gem, so you never re-explain your business. The last rule in the template below matters most: every correction becomes a new line, so the same mistake doesn't come back. Prune the brief too, or it grows too long for the bot to read well.
 
 > [!TRICK] Paste this into the instructions box
 > ```
@@ -104,7 +104,7 @@ You don't have to write the process doc from scratch. Give AI your finished work
 > Make one folder for the job you most want to hand off. Put in 3 finished examples you're proud of and a text file with 10 banned words or phrases. That folder is what every future bot run reads first.
 
 > [!CHECK] Before you hand a job to a bot, what three things do you gather for it to read?
-> A step-by-step process doc, 3 finished examples you were happy with that vary in topic or format, and a style guide with a banned-words list.
+> A step-by-step process doc, 3 finished examples you were happy with (varied in topic or format), and a style guide with a banned-words list.
 
 > [!CHECK] You've corrected a bot twice and its output still misses. What do you do?
 > Stop tweaking and rewrite the prompt. Then add the correction as a new rule in its standing context file.

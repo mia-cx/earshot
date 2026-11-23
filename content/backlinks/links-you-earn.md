@@ -37,7 +37,7 @@ In [one vendor's data](https://arxiv.org/abs/2606.20065), "best X for Y" roundup
 > Paying for a spot is a separate route with separate risks: see *Tricks with a price tag*.
 
 > [!RISK] Cold email law
-> Emailing site owners is cold email, so email marketing law applies: CAN-SPAM in the US, and in the UK the [ICO's PECR rules](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/), which let you email a company but need consent before you email an individual or sole trader. EU countries set their own rules. The [FTC's CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) states the law "makes no exception for business-to-business email": include your postal address and a working opt-out. See *Fix cold email by its symptoms* for the mechanics.
+> Emailing site owners falls under email marketing law. In the UK, the [ICO's PECR rules](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/) let you email a company, but you need consent for an individual or sole trader. EU countries set their own rules; in the US, CAN-SPAM applies. The [FTC's CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) states the law "makes no exception for business-to-business email": include your postal address and a working opt-out. See *Fix cold email by its symptoms* for the mechanics.
 
 ## Give writers evidence to cite
 

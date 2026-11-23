@@ -118,7 +118,7 @@ Don't add agents for their own sake. Holmberg's first content system used four a
 
 **Assets can pass their own checks and still disagree with each other.** Walden Yan of Cognition [explains why](https://cognition.com/blog/dont-build-multi-agents): every piece of work carries small decisions, and parallel agents can't see each other's.
 
-The ad and the landing page matter most. Nielsen Norman Group's guide to [information scent](https://www.nngroup.com/articles/information-scent/) warns that a link promising more than the page delivers uses up the visitor's trust, and a page that doesn't quickly confirm the promise makes them leave. Before launch, check three things:
+The ad and the landing page matter most. Nielsen Norman Group's guide to [information scent](https://www.nngroup.com/articles/information-scent/) warns that a link promising more than the page delivers uses up the visitor's trust. If the page doesn't confirm what they clicked for right away, they leave. Before launch, check three things:
 
 - Does the ad promise what the landing page delivers?
 - Does the email use the same offer?
@@ -137,7 +137,7 @@ Start the review from one question, such as "which creative angles brought quali
 Campaign and ad IDs say what ran. Tracking parameters on links (UTM tags) say where visits came from. Where they carry through to the CRM, you can tie a sale back to an ad (see *Run paid ads you can measure*).
 
 > [!RISK] Confident reports from missing data
-> Tracking is never complete, and a scheduled data update can fail silently. Google Analytics [shows "(not set)"](https://support.google.com/analytics/answer/10917952) where a campaign value is missing and counts "Meta" and "meta" as two sources. Put `utm_source`, `utm_medium` and `utm_campaign` on every campaign link that points to your site, in one agreed spelling. Never tag links between your own pages: Google Analytics [credits events sent with a new tag mid-visit](https://support.google.com/analytics/answer/11242841) to that tag, so event and conversion reports can name the wrong source even though the session's source stays the same.
+> Tracking is never complete, and a scheduled data update can fail silently. Google Analytics [shows "(not set)"](https://support.google.com/analytics/answer/10917952) where a campaign value is missing and counts "Meta" and "meta" as two sources. Put `utm_source`, `utm_medium` and `utm_campaign` on every campaign link that points to your site, in one agreed spelling. Never tag links between your own pages. Google Analytics [credits events sent with a new mid-visit tag](https://support.google.com/analytics/answer/11242841) to that tag. Event and conversion reports can then show the wrong source, even though the session keeps its original one.
 >
 > Tell the workflow to flag missing tracking instead of crediting every sale to an ad, and to flag a failed update instead of writing a confident report from last week's numbers.
 

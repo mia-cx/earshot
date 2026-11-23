@@ -56,7 +56,7 @@ Read them as direction, not a promise.
 
 For a third-party problem, stop asking "how do we get more backlinks?" Ask "which sources shape this specific recommendation, and why are competitors better represented there?"
 
-**You need both your own pages and other people's.** [Mahe Chen and colleagues at the University of Toronto](https://arxiv.org/abs/2509.08919) found AI search shows "a systematic and overwhelming bias" toward earned, third-party sources over brands' own sites. In [Dmitrij Żatuchin's audit](https://arxiv.org/abs/2606.25787) of 131,512 citations in answers about brands, mostly Nordic and Baltic ones, 82.4% pointed away from the brand's sites. Both studies are observational; neither tests what causes a citation.
+**You need both your own pages and other people's.** [Mahe Chen and colleagues at the University of Toronto](https://arxiv.org/abs/2509.08919) found AI search shows "a systematic and overwhelming bias" toward earned, third-party sources over brands' own sites. In [Dmitrij Żatuchin's audit](https://arxiv.org/abs/2606.25787) of 131,512 citations in answers about brands (mostly Nordic and Baltic), 82.4% pointed away from the brand's sites. Both studies are observational; neither tests what causes a citation.
 
 TheoAGI quotes an unpublished vendor dataset (44,070 citations across 10 brands): 85% went to third-party pages and under 4% to the brand's own site, yet brands whose own site got cited were named far more often. Treat the second half as one vendor's observation.
 

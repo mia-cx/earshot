@@ -19,7 +19,7 @@ The split pays off on separate jobs, at a token cost. Anthropic uses it in [its 
 
 Anthropic also names where it breaks: jobs where agents need the same context, or where steps depend on each other. As Cognition's Walden Yan [warns](https://cognition.com/blog/dont-build-multi-agents), every action carries decisions, and parallel agents make decisions that clash. Give the coordinator independent jobs (an audit, a call summary, a month-end report) and keep one piece of work inside one bot.
 
-DeepSeek's team built the same split into an always-on agent called Router/Worker. The router handles human conversation and dispatch, and can run on a lighter model with no shell. Workers get isolated context, full tools and the strongest model, and never message people directly. In their test (a synthetic workload, 5 runs each, which they call indicative only), it finished tasks in a median 12.4 minutes, using more tokens to do it. A single agent with a subagent tool took 20.4 minutes when left to choose, because it never delegated. Told to delegate, it took 13.8, but its slowest tasks still ran to 29 minutes.
+DeepSeek's team built the same split into an always-on agent called Router/Worker. The router handles human conversation and dispatch, and can run on a lighter model with no shell. Workers get isolated context, full tools and the strongest model, and never message people directly. In their test (a synthetic workload, 5 runs each, which they call indicative only), Router/Worker finished in a median 12.4 minutes, using more tokens. Left to choose, a single agent with a subagent tool took 20.4 minutes because it never delegated. Told to delegate, it took 13.8, though its slowest tasks still ran to 29 minutes.
 
 > [!TRICK] Chief-of-staff bot prompt
 > ```
