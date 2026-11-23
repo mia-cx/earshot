@@ -31,7 +31,7 @@ Even at the low end that's 3 × 5 × 5 × 4 = 300 angles. Koe says one run gives
 
 Joe Pulizzi's Content Inc. model [starts with two steps](https://www.magnificent.com/magnificent-stuff/content-inc-model). First is the sweet spot, "the story you should be telling", where he advises you to "be the leading expert in a very small particular niche." Second is the content tilt: "telling a different story that can break through all the content clutter".
 
-Koe's map combines both through two inputs. Your brand and voice documents (from *Write down what makes you you*) give the pillars and your lens: how you see things differently. Research gives the proof: which ideas and formats have performed in those topics over the past 6 to 12 months.
+In Koe's map, your brand and voice documents (from *Write down what makes you you*) cover both steps: they give the pillars and your lens, how you see things differently. Koe adds a second input Pulizzi doesn't name: research on which ideas and formats have performed in those topics over the past 6 to 12 months.
 
 Either input alone fails. Pure lens gives original posts nobody asked for. Pure research gives the same posts as everyone else.
 
@@ -71,7 +71,7 @@ One way to stay original: research platforms you don't post on. Koe says that's 
 > Take the pattern, such as the structure, hook shape or format, and fill it with your own ideas. Never copy a post 1:1.
 
 > [!CHECK] Why does a content map need both your own lens and research on what performs?
-> Your lens alone gives original posts nobody asked for. Research alone gives the same posts as everyone else. Pulizzi calls the two halves the sweet spot and the content tilt.
+> Your lens alone gives original posts nobody asked for. Research alone gives the same posts as everyone else. Together they give posts that are yours and that people want.
 
 ## Sources
 

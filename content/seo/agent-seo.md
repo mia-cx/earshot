@@ -19,7 +19,7 @@ description: Give an SEO agent real data, hard limits and a deploy check, and ve
 
 ## Give it three permission tiers
 
-An agent with more permissions than its job needs does damage when it misreads a task or follows instructions hidden in a page it read. OWASP calls this [excessive agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) and recommends three fixes: minimum permissions, human approval for high-impact actions, and limits enforced outside the model.
+An agent with more permissions than its job needs does damage when it misreads a task or follows instructions hidden in a page it read. OWASP calls this [excessive agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) and its fixes include minimum permissions, human approval for high-impact actions, and limits enforced outside the model.
 
 | Tier | Actions |
 | --- | --- |
@@ -57,10 +57,10 @@ Free SEO skills and repos for agents are everywhere, and GitHub stars don't tell
 > TheoAGI's two picks after reading 14 repos: RomeoSEO/seo-skills (the clearest method, MIT licence, nothing sold inside) and AgriciDaniel/claude-seo (the most precise technical checks; it adds a link to a paid community after big reports).
 
 > [!RISK] Scores and installers
-> - Some tools give your site a score out of 100. The weights were never checked against real rankings or citations. Read the findings and ignore the number.
+> - Some tools give your site a score out of 100. TheoAGI found that none of the three that do had checked their weights against real rankings or citations. Read the findings and ignore the number.
 > - Read every file of a skill or repo before you install it. One popular SEO repo installs by piping a script from its main branch straight into your shell (`curl | bash`), so whatever is on that branch runs on your machine.
 
-Two companies that sell SEO tools, Distribb and ChatSEO, wrote most of the articles behind this playbook. TheoAGI says so up front.
+Two companies that sell SEO tools, Distribb and ChatSEO, wrote most of the articles behind this playbook. TheoAGI says so.
 
 > [!DO] Run the number test
 > Ask your agent for your top 5 pages by clicks over the last 3 months, then compare its list with Search Console → Performance → Pages. Write down whether they match.

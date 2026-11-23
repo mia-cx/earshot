@@ -12,7 +12,7 @@ description: Build a brand document and a voice document that every draft starts
 
 ## Write the brand document first
 
-The strongest copy borrows your readers' exact words. Copywriter Joanna Wiebe's rule is ["Instead of writing your message, steal it"](https://copyhackers.com/2014/10/amazon-review-mining/): she reads hundreds of reviews and copies customer phrases word for word. In her test for a rehab centre, a headline lifted straight from one Amazon review ("If you think you need rehab, you do") got over 400% more clicks than the original.
+The strongest copy borrows your readers' exact words. Copywriter Joanna Wiebe's rule is ["Instead of writing your message, steal it"](https://copyhackers.com/2014/10/amazon-review-mining/): she reads reviews and copies customer phrases word for word. In her test for a rehab centre, a headline lifted straight from one Amazon review ("If you think you need rehab, you do") got over 400% more clicks than the original.
 
 A brand document does that work up front, collecting your story and your reader's exact words before you write. Dan Koe starts every new client with a recorded interview, then feeds the transcript to AI whenever anyone plans or drafts a post.
 
@@ -68,7 +68,7 @@ A note on evidence: this is Koe's client process, described anecdotally, and Koe
 > Write down what makes their voice distinctive: core ideas, turns of phrase and worldview. Then combine it with others in your own way.
 
 > [!CHECK] In a brand interview, why do you record the exact words your reader uses when complaining to a friend?
-> That language is what your posts should use. Readers recognise their own words: Joanna Wiebe's headline lifted from one customer review got over 400% more clicks than the one she wrote.
+> That language is what your posts should use. Readers recognise their own words: Joanna Wiebe's headline lifted from one customer review got over 400% more clicks than the control headline.
 
 ## Sources
 

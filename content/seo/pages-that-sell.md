@@ -51,7 +51,7 @@ Before paying, buyers look for the same five answers. Give each its own page:
 
 Put a trial or demo button on every one.
 
-These decision pages ("X vs Y", "X alternatives", "best X for one kind of person", "X pricing") are also the pages AI answers cite most, because people read them right before choosing.
+TheoAGI, who read 66 SEO articles for a playbook, says these decision pages ("X vs Y", "X alternatives", "best X for one kind of person", "X pricing") are also the ones AI answers cite, because people read them right before choosing. That's TheoAGI's reading, not a measured result.
 
 > [!TRICK] Rules for a decision page
 > These numbers come from the SEO skills TheoAGI reviewed. Treat them as rules of thumb, not tested thresholds.
@@ -90,7 +90,7 @@ These decision pages ("X vs Y", "X alternatives", "best X for one kind of person
 
 > [!RISK] Scaled content abuse
 > Google's [spam policies](https://developers.google.com/search/docs/essentials/spam-policies) name two traps here:
-> - **Scaled content abuse:** many pages made mainly to rank, "regardless of how" they're produced, AI or not.
+> - **Scaled content abuse:** many pages made mainly to rank, "no matter how it's created", AI or not.
 > - **Doorway abuse:** many similar pages for cities or regions that all funnel to one destination.
 >
 > Hundreds of near-identical pages can get dropped or penalised. If a row has no facts of its own, don't make it a page.

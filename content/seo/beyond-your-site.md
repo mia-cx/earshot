@@ -16,7 +16,7 @@ description: Get found via LinkedIn, YouTube and rising searches before your own
 Search your target query. If LinkedIn articles, Medium posts or forum threads sit on page one, Google is happy to rank that platform for it. Publish a complete answer there and link to your site as the next step.
 
 > [!RISK] Where this becomes spam
-> People call this "parasite SEO", a name tied to abuse Google penalises. Google's [site reputation abuse policy](https://developers.google.com/search/docs/essentials/spam-policies) targets content placed on a host "mainly because of that host's already-established ranking signals", such as paid coupon or casino pages on a news site. Platforms built for user content, like forums, and signed opinion pieces are named as fine. Publish under your own name, on platforms where anyone can post, and write for that platform's readers.
+> People call this "parasite SEO", a name tied to abuse Google penalises. Google's [site reputation abuse policy](https://developers.google.com/search/docs/essentials/spam-policies) targets content placed on a host "mainly because of that host's already-established ranking signals", such as a third-party casino ad page on a medical site. Platforms built for user content, like forums, and signed opinion pieces are named as fine. Publish under your own name, on platforms where anyone can post, and write for that platform's readers.
 
 Keep it simple: put the topic in the headline and the answer up top. Write for that platform's readers, not as a copy of your blog post, and link to one relevant next step, not five.
 

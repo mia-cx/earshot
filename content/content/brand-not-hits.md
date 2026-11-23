@@ -12,11 +12,11 @@ description: Pick one platform and post about your real work 3 to 5 times a week
 
 ## One hit is not a brand
 
-Short-term spikes fade fast; a brand builds over years. In [*The Long and the Short of It*](https://ipa.co.uk/media/5811/long_and_short_of_it_presentation_final.pdf), Les Binet and Peter Field analysed 996 campaigns in the IPA effectiveness databank. Short-term pushes gave a big jump in sales that decayed quickly. Brand building gave a smaller jump that decayed slowly, built up over years, and drove growth and profit.
+Short-term spikes fade fast; a brand builds over years. In [*The Long and the Short of It*](https://ipa.co.uk/media/5811/long_and_short_of_it_presentation_final.pdf), Les Binet and Peter Field analysed 996 campaigns in the IPA effectiveness databank. Short-term pushes gave a big jump in sales that decayed quickly. Brand building gave a smaller jump that decayed slowly, built up over years, and drove growth and profit. They studied ad campaigns, not posts, and say a brand needs both kinds.
 
-A post with a million views followed by posts at a thousand is the short-term kind: the post worked, and nobody cares who wrote it. Dan Koe's aim is **a body of work people want to explore**: they read one post, then go looking for more.
+A post with a million views followed by posts at a thousand works like the short-term kind: the post worked, and nobody cares who wrote it. Dan Koe's aim is **a body of work people want to explore**: they read one post, then go looking for more.
 
-The test: if you stopped posting, would anyone ask where you went? A brand's ideas play out over 6 to 12 months of posts, so no single post has to carry everything.
+The test: if you stopped posting, would anyone ask where you went? Koe plays a brand's ideas out over 6 to 12 months of posts, so no single post has to carry everything.
 
 ## Three jobs sit behind every brand
 
@@ -46,15 +46,15 @@ The 3 to 5 times a week is @notkvtwts's opinion, not a measured result.
 
 ## Start from your own account
 
-Early on, a founder posting from their own account drives more growth than a company page or paid campaigns. That's Kunal Gandhi's experience, not a study: after building a marketing team at an AI startup, Kunal says they "achieved a lot more through social media than we thought".
+Early on, a founder's own account can be the strongest growth channel. That's Kunal Gandhi's view, not a study: "Your founder's X presence is your strongest growth channel."
 
-Kunal even made social media training part of new-hire onboarding, starting with the CEO. If you have a team, every account is a channel.
+While building a marketing team at an AI startup, Kunal made social media training part of new-hire onboarding, starting with the CEO. The team "achieved a lot more through social media than we thought". If you have a team, every account is a channel.
 
 ## Steady beats often
 
 Kunal says post daily; @notkvtwts says 3 to 5 times a week. Pick the number you can keep up for months. **Show up every week**, and raise the number later.
 
-A [2025 Buffer study](https://buffer.com/resources/consistent-posting-study/) tracked over 100,000 accounts across 26 weeks. People who posted in at least 20 of those weeks got about 4.5 times the engagement per post of those who posted in 4 weeks or fewer, and the gain flattened after about 21 weeks. It counted weeks with any post, not posts per week, so it can't settle daily versus three times a week. It's also a correlation from a company that sells scheduling tools. It points the same way as Pulizzi: on time, every week, beats a burst.
+A [2025 Buffer study](https://buffer.com/resources/consistent-posting-study/) tracked over 100,000 accounts across 26 weeks. People who posted in at least 20 of those weeks got more than 5 times the engagement per post of those who posted in 4 weeks or fewer, and the gain flattened after about 21 weeks. It counted weeks with any post, not posts per week, so it can't settle daily versus three times a week. It's also a correlation from a company that sells scheduling tools. It points the same way as Pulizzi: on time, every week, beats a burst.
 
 ## Four ways content fails
 
@@ -82,7 +82,7 @@ From Kunal's list of content mistakes:
 > Pick the number you can keep up for months, so you post every week. You can raise it later.
 
 > [!CHECK] Why does a viral hit fade while steady posting builds a brand?
-> Binet and Field's analysis of 996 campaigns found short-term spikes decay fast, while brand building grows slowly and lasts for years. Steady posting is the brand-building kind.
+> Binet and Field's analysis of 996 ad campaigns found short-term spikes decay fast, while brand building grows slowly and lasts for years. Steady posting works like the brand-building kind.
 
 ## Sources
 

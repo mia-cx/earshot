@@ -14,7 +14,7 @@ description: Know which signals Google trusts, so you write pages it wants to sh
 
 **Google ranks pages partly by how people click on them.** Its [How Search works](https://www.google.com/search/howsearchworks/how-search-works/ranking-results/) page says it uses "aggregated and anonymized interaction data to assess whether search results are relevant". Bing says the same openly: it checks whether people [click a result and stay, or quickly come back](https://www.seroundtable.com/bing-ranking-algorithm-signals-29706.html).
 
-The US antitrust court record shows how Google does it. Judge Amit Mehta's [2024 opinion](https://storage.courtlistener.com/recap/gov.uscourts.dcd.223205/gov.uscourts.dcd.223205.1033.0_2.pdf) describes NavBoost, one of Google's core ranking signals. Based on testimony from Pandu Nayak, Google's VP of Search, NavBoost remembers which results people clicked for each query over the last 13 months.
+The US antitrust court record shows how Google does it. Judge Amit Mehta's [2024 opinion](https://storage.courtlistener.com/recap/gov.uscourts.dcd.223205/gov.uscourts.dcd.223205.1033.0_2.pdf) describes NavBoost, one of Google's core ranking signals. Google's Eric Lehman testified that NavBoost remembers which results people clicked for each query. Pandu Nayak, Google's VP of Search, testified that it learns from the last 13 months of that click data.
 
 The 2024 leak of Google's internal docs, [published by Rand Fishkin](https://sparktoro.com/blog/an-anonymous-source-shared-thousands-of-leaked-google-search-api-documents-with-me-everyone-in-seo-should-see-them/), mentions "good clicks", "bad clicks" and "last longest clicks". It names those fields, not how much they weigh.
 
@@ -31,14 +31,14 @@ E-E-A-T [isn't a ranking factor by itself](https://developers.google.com/search/
 - A real byline on every article, linked to the author's relevant experience.
 - Firsthand tests shown on the page, and how you ran them.
 - A factual About page.
-- The same company facts (name, address, what you do) everywhere you appear.
+- The same company facts (name, address, what you do) everywhere you appear. That one is Borja Fat's advice; Google's guidance doesn't mention it.
 
 > [!RISK] Never invent an author
-> Google's guidance counts fake author profiles, AI headshots and invented credentials as deception. If AI helped write the page, say so.
+> Google's guidance counts fake author profiles, AI headshots and invented credentials as deception. If AI wrote much of the page, say so.
 
 ## Add what only you can provide
 
-**Your page wins by adding what the top 10 results lack:** your own tests, your own data, screenshots of you doing the thing, or a new angle. Most top results repeat each other. Google's [own checklist](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) asks whether a page offers "original information, reporting, research, or analysis" and "substantial value when compared to other pages in search results".
+**Your page wins by adding what the top 10 results lack:** your own tests, your own data, screenshots of you doing the thing, or a new angle. Top results often repeat each other. Google's [own checklist](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) asks whether a page offers "original information, reporting, research, or analysis" and "substantial value when compared to other pages in search results".
 
 Split the work. Let AI find the gap by reading the top results, YouTube transcripts, forum threads and review complaints, then comparing what buyers ask with what existing pages answer.
 
@@ -59,7 +59,7 @@ You fill the gap. Have Claude interview you for examples, analyse your own recor
 
 **Firsthand content is hard to fake, and your work already produces it every week.** One marketer had engineers and other staff write up problems they solved, using basic keyword guidelines. Over four years they published 70+ articles and report top rankings and steady business without much link building (no traffic numbers given). If you work alone, every bug you fixed or customer question you answered is a candidate page.
 
-The same marketer notes a second edge: new or fast-moving categories often have plenty of search volume with no good answer yet. He saw this in crypto, and it holds for any young category. Check how weak the current results are before writing anything else.
+The same marketer notes a second edge: new or fast-moving categories often have plenty of search volume with no good answer yet. He saw this in crypto. Before you write, check how weak the current results are in your own category.
 
 ## Some rankings aren't about SEO
 
@@ -74,7 +74,7 @@ The same marketer notes a second edge: new or fast-moving categories often have 
 > Paste your most important article into the prompt above. Fill in your page's gap with one of the angles it suggests, download it, and add the paragraph to the page.
 
 > [!CHECK] What signals make a page easy for readers and Google to trust?
-> A real byline linked to the author's experience, firsthand tests shown on the page, a factual About page, and the same company facts everywhere you appear. Trust matters most, and first-hand experience builds it.
+> A real byline linked to the author's experience, firsthand tests shown on the page, and a factual About page. Trust matters most, and first-hand experience builds it.
 
 > [!CHECK] The top 10 Google results for your keyword all say the same thing. How does your page win?
 > Add what they lack from your own experience: your tests, data, screenshots or a new angle. AI can find the gap, but only you can fill it.

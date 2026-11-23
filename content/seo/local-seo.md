@@ -94,7 +94,7 @@ Templates with variations cut each reply to under a minute and let you mention s
 
 ## Post weekly and fix in order
 
-**Post 2 to 3 times a week naming the neighbourhoods you serve.** Most competitors never post on their GBP, so steady updates show customers you're active. One simple angle: "just completed a kitchen remodel in [neighborhood]", rotated across 8 to 10 neighbourhoods a month.
+**Post 2 to 3 times a week naming the neighbourhoods you serve.** The author finds most competitors never post on their GBP, so steady updates show customers you're active. One simple angle: "just completed a kitchen remodel in [neighborhood]", rotated across 8 to 10 neighbourhoods a month.
 
 Posts help people choose you more than they help you rank: Whitespark's experts put post frequency 148th of 187 ranking factors. The author says posts expire after 7 days, though Google now says posts [stay up for 6 months](https://support.google.com/business/answer/7342169) unless you set a date range.
 

@@ -5,7 +5,7 @@ description: Find pages where the title loses clicks, write better ones, and tes
 ---
 
 > [!TLDR] The title is the one thing a searcher reads before choosing, so it's the fastest lever on clicks, if you test it fairly.
-> - A new title on a ranking page reports back in about two weeks. New articles take months.
+> - A new title on a ranking page reports back within weeks. New articles take months.
 > - Target pages ranking 3 to 10 whose click rate is far below normal for their position.
 > - Write at least three titles: query first, a specific promise, a reason to click now, under 60 characters.
 > - Change one thing, compare equal windows, and judge on clicks, not click rate.
@@ -14,7 +14,7 @@ description: Find pages where the title loses clicks, write better ones, and tes
 
 **Title tests give you more learning cycles per year than anything else in SEO.** Google picks up a new title on its next crawl, which [takes a few days to a few weeks](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl), and Search Console shows the effect soon after. A new article can take months to tell you anything.
 
-Studies agree that position and title drive clicks. Brian Dean's [Backlinko study](https://backlinko.com/google-ctr-stats) of about 4 million results found that moving up one spot raises click rate by about a third on average. Once you rank, the title decides who earns the click.
+Studies agree that position and title drive clicks. Brian Dean's [Backlinko study](https://backlinko.com/google-ctr-stats) of about 4 million results found that moving up one spot raised click rate by about a third on average, though moving from #10 to #9 made no significant difference. Its data predates AI Overviews. Once you rank, the title decides who earns the click.
 
 This lesson follows Borja Fat, who runs Distribb and claims 20M+ clicks across connected sites in 12 months. His benchmarks come from his own data, so treat them as starting points.
 
@@ -40,7 +40,7 @@ Other studies find much lower numbers. [Advanced Web Ranking](https://www.advanc
 
 ## See the results page as a searcher does
 
-**Search the query in a private window before rewriting.** Google rewrites some titles, usually to your H1, when a title is too long, keyword-stuffed, repeated across pages, out of date or off-topic. Its [title link docs](https://developers.google.com/search/docs/appearance/title-link) list those causes; in 2021 Google said it [kept the title element about 87% of the time](https://developers.google.com/search/blog/2021/09/more-info-about-titles).
+**Search the query in a private window before rewriting.** Google rewrites some titles when a title is half-empty, out of date, inaccurate, repeated across pages, or unclear about which heading is the main one. It often takes the replacement from a heading or other prominent text on the page. Its [title link docs](https://developers.google.com/search/docs/appearance/title-link) list those causes; in 2021 Google said it [kept the title element about 87% of the time](https://developers.google.com/search/blog/2021/09/more-info-about-titles).
 
 Keep the title and H1 saying the same thing. You can also ask Claude to run the search several times until it catches a rewrite.
 
@@ -103,7 +103,7 @@ If you want an answer before touching the page, you can buy one.
 > Maybe. Clicks are the right measure, because a new title often adds long-tail queries that raise impressions and lower click rate. But a before-and-after test can't rule out a season or a demand spike, even if you repeat it. Clicks went up; only a split test against unchanged pages shows the title caused it.
 
 > [!CHECK] Why do title tests teach you faster than new articles in SEO?
-> Search Console shows a new title's effect in about two weeks, while a new article can take months to tell you anything.
+> Google recrawls a page within days or weeks, so Search Console shows a new title's effect fast, while a new article can take months to tell you anything.
 
 ## Sources
 
