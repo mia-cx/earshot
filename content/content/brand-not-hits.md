@@ -52,9 +52,9 @@ Kunal even made social media training part of new-hire onboarding, starting with
 
 ## Steady beats often
 
-Kunal says post daily; @notkvtwts says 3 to 5 times a week. Pick the number you can keep up for months. **Consistency beats volume**, and you can raise it later.
+Kunal says post daily; @notkvtwts says 3 to 5 times a week. Pick the number you can keep up for months. **Show up every week**, and raise the number later.
 
-The data agrees. A [2025 Buffer study](https://buffer.com/resources/consistent-posting-study/) tracked over 100,000 accounts across 26 weeks. People who posted in at least 20 of those weeks got about 4.5 times the engagement per post of those who posted in 4 weeks or fewer, and the gain flattened after about 21 weeks. It's a correlation from a company that sells scheduling tools, but it points the same way as Pulizzi: on time, every time, beats a burst.
+A [2025 Buffer study](https://buffer.com/resources/consistent-posting-study/) tracked over 100,000 accounts across 26 weeks. People who posted in at least 20 of those weeks got about 4.5 times the engagement per post of those who posted in 4 weeks or fewer, and the gain flattened after about 21 weeks. It counted weeks with any post, not posts per week, so it can't settle daily versus three times a week. It's also a correlation from a company that sells scheduling tools. It points the same way as Pulizzi: on time, every week, beats a burst.
 
 ## Four ways content fails
 
@@ -79,7 +79,7 @@ From Kunal's list of content mistakes:
 > If you stopped posting, would anyone ask where you went? A viral post followed by silence means the post worked and the brand doesn't exist.
 
 > [!CHECK] You can't decide between posting daily or 3 times a week. How do you choose?
-> Pick the number you can keep up for months. Consistency beats volume, and you can raise it later.
+> Pick the number you can keep up for months, so you post every week. You can raise it later.
 
 > [!CHECK] Why does a viral hit fade while steady posting builds a brand?
 > Binet and Field's analysis of 996 campaigns found short-term spikes decay fast, while brand building grows slowly and lasts for years. Steady posting is the brand-building kind.

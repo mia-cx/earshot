@@ -33,7 +33,7 @@ Judge every draft by your own standard. If you wouldn't sign your name to it, do
 
 ## Use AI as an editor, not an author
 
-Write the draft yourself and let AI check it against your rules. In a 2024 study of 300 writers, [Anil Doshi and Oliver Hauser](https://doi.org/10.1126/sciadv.adn5290) found stories written from AI-generated ideas scored better one by one, yet came out more alike. A drafting AI pulls you towards everyone else; an editing AI sharpens what's already yours.
+Write the draft yourself and let AI check it against your rules. In a 2024 study of 300 writers, [Anil Doshi and Oliver Hauser](https://doi.org/10.1126/sciadv.adn5290) found stories written from AI-generated ideas scored better one by one, yet came out more alike. Their writers still wrote every word; the study only tested AI ideas. Writing first and using AI as an editor is this course's suggestion for keeping the ideas yours, not a tested result.
 
 Load a writing guide into a Claude Project and let it critique your drafts. The source post uses Ryan's [copywriting masterclass](https://x.com/ryangrowthh/status/2118723940638138486), which the earlier lessons in this module draw from, and offers no evidence beyond the guide author's own growth.
 

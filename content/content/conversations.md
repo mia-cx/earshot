@@ -6,7 +6,7 @@ description: Record talks with users and buyers, then reshape each one for every
 
 > [!TLDR]
 > - Your customers describe their problem better than you can. Record them, and build content from their words.
-> - Record short conversations with users, then turn each into a video, a thread, a LinkedIn post and single-idea posts.
+> - Record short conversations with users who agree to be published, then turn each into a video, a thread, a LinkedIn post and single-idea posts.
 > - If you sell to businesses, B2B marketers rate case studies among their most effective content.
 > - Have a bot read your sales call transcripts for post ideas, each tied to the exact line that sparked it.
 > - Reshape research into each platform's native format instead of posting the same article everywhere.
@@ -20,8 +20,8 @@ That gives you steady material in your users' own words, which makes stronger co
 Talking with a bigger brand or builder also lends you some of their reach.
 
 > [!TRICK] Run the five-minute conversation chain
-> 1. Record a 5-minute conversation with a user.
-> 2. Post it as a video.
+> 1. Record a 5-minute conversation with a user. Ask first whether you may publish it, and say where.
+> 2. With their yes, post it as a video.
 > 3. Turn the video into an X thread.
 > 4. Turn the thread into a LinkedIn post.
 > 5. Pull each central idea out as its own standalone post.
@@ -61,7 +61,7 @@ Every sales call records a buyer explaining their problem in their own words. @h
 
 Posting the same article on five sites reaches nobody new. Take one piece of research and rebuild it in the form each platform rewards: a demo on YouTube, a finding as a Reddit answer, a case study on Behance.
 
-Do this once your main platform runs steadily. Joe Pulizzi's Content Inc. model [puts diversifying after](https://www.magnificent.com/magnificent-stuff/content-inc-model) you've built one base and grown an audience on it.
+Reshaping a piece for another channel is fine while you build your base. Joe Pulizzi's Content Inc. model [waits only on launching separate content programmes](https://www.magnificent.com/magnificent-stuff/content-inc-model) until one base has an audience.
 
 > [!TRICK] Match each piece to its native platform
 > From @borjafat's workflow:
@@ -79,10 +79,10 @@ Do this once your main platform runs steadily. Joe Pulizzi's Content Inc. model 
 > Rewording the same thin article across dozens of sites to collect links is spam under [Google's spam policies](https://developers.google.com/search/docs/essentials/spam-policies). Swapping in synonyms counts as scaled content abuse, and articles spread across other sites to plant links count as link spam. Each version should be built for its platform and worth reading on its own.
 
 > [!DO] Ask one user for five minutes
-> Send one user a message asking for a 5-minute recorded call this week about how they use what you built.
+> Send one user a message asking for a 5-minute recorded call this week about how they use what you built, and whether you may publish it.
 
 > [!CHECK] What are the steps of the five-minute conversation chain for content?
-> Record a 5-minute conversation with a user, post it as a video, turn it into an X thread, then a LinkedIn post, then pull each central idea out as its own post.
+> Record a 5-minute conversation with a user who agreed to be published, post it as a video, turn it into an X thread, then a LinkedIn post, then pull each central idea out as its own post.
 
 > [!CHECK] Why build content from recorded conversations instead of writing it all yourself?
 > It comes in your customers' own words, which readers recognise. In one of Joanna Wiebe's tests, a headline lifted from a customer review got over 400% more clicks than the one she wrote.

@@ -64,8 +64,8 @@ The user is the main character. The product is what helped.
 > [!CHECK] Your draft post covers three separate ideas. What do you do?
 > Split it into three posts. One idea per post is easier to remember and pass on.
 
-> [!CHECK] On X, why does a post about three topics reach fewer of the right people?
-> X places a post among communities of shared interests by who likes it. Mixed topics draw likes from mixed communities, so the post fits none of them well.
+> [!CHECK] On X, how does a post find its interest communities?
+> By who engages with it: X places a post among communities of shared interests by who likes it. That a mixed-topic post reaches fewer of the right people is one author's reading, not something X has shown.
 
 ## Sources
 
