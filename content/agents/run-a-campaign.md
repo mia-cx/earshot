@@ -137,7 +137,7 @@ Start the review from one question, such as "which creative angles brought quali
 Campaign and ad IDs say what ran. Tracking parameters on links (UTM tags) say where visits came from. Where they carry through to the CRM, you can tie a sale back to an ad (see *Run paid ads you can measure*).
 
 > [!RISK] Confident reports from missing data
-> Tracking is never complete, and a scheduled data update can fail silently. Google Analytics [shows "(not set)"](https://support.google.com/analytics/answer/10917952) where a campaign value is missing and counts "Meta" and "meta" as two sources. Put `utm_source`, `utm_medium` and `utm_campaign` on every campaign link that points to your site, in one agreed spelling. Never tag links between your own pages: that overwrites where the visit came from.
+> Tracking is never complete, and a scheduled data update can fail silently. Google Analytics [shows "(not set)"](https://support.google.com/analytics/answer/10917952) where a campaign value is missing and counts "Meta" and "meta" as two sources. Put `utm_source`, `utm_medium` and `utm_campaign` on every campaign link that points to your site, in one agreed spelling. Never tag links between your own pages: Google Analytics [credits the events after that click](https://support.google.com/analytics/answer/11242841) to your internal tag, so event and conversion reports can name the wrong source even though the session's source stays the same.
 >
 > Tell the workflow to flag missing tracking instead of crediting every sale to an ad, and to flag a failed update instead of writing a confident report from last week's numbers.
 
