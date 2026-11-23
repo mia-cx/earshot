@@ -9,7 +9,7 @@ description: Catch bot mistakes with a finish line, a fresh reviewer and spot ch
 > - When a draft is wrong, fix the charter, not the draft. Most bad output traces to missing input.
 > - Decide what "verified" means before the agent starts, and ask what each passing check didn't prove.
 > - Review with a fresh agent that sees only the finished work, and open the sources behind any summary.
-> - Start every bot at full review and drop to spot checks only after 9 of 10, then 18 of 20, clean runs.
+> - Start every bot at full review and drop to spot checks only after 9 of 10, then 18 of 20, clean reviewed runs.
 
 ## You can't see where the bot is weak
 
@@ -68,9 +68,10 @@ Never trust a summary on faith. Open a couple of original documents and recomput
 Hunt puts the AI error rate at 1 to 5% (his estimate), which clients won't accept. So every new bot starts at full review, and review only drops as a measured clean-run rate earns it.
 
 > [!TRICK] The review ladder
+> Hunt's rule of thumb, not a tested reliability measure:
 > 1. 100% review on every new bot.
-> 2. Once 9 of the last 10 pass without revision, drop to 50%.
-> 3. Once 18 of the last 20 pass clean, drop to 10% spot checks.
+> 2. Once 9 of the last 10 reviewed runs pass without revision, drop to 50%.
+> 3. Once 18 of the last 20 reviewed runs pass clean, drop to 10% spot checks. Runs you didn't review don't count.
 >
 > If you're fixing the same thing two weeks running, go back up a stage. Anything a client sees stays a draft you send yourself.
 
@@ -84,7 +85,7 @@ Hunt puts the AI error rate at 1 to 5% (his estimate), which clients won't accep
 > Paste your recent revision comments (from email, Slack or doc comments) into the diagnostic prompt above. Copy the top reason it finds into your bot's charter as one pass/fail line.
 
 > [!CHECK] On the review ladder for a new bot, when do you review less?
-> Start at 100% review. Drop to 50% once 9 of the last 10 runs pass without revision, then to 10% spot checks once 18 of the last 20 do.
+> Start at 100% review. Drop to 50% once 9 of the last 10 reviewed runs pass without revision, then to 10% spot checks once 18 of the last 20 reviewed runs do. It's Hunt's rule of thumb, not a tested measure.
 
 > [!CHECK] Your bot writes great first drafts. Why still check every run of a new job?
 > AI quality is jagged: in the BCG study, AI helped on most tasks but made consultants 19% less likely to be right on one that looked just as hard. You can't tell in advance which side a job falls on.

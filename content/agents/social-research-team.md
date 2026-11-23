@@ -68,7 +68,7 @@ Any agent tool that can connect to data, save a repeatable skill and run on a sc
 
 ## Start with a head and an outlier finder
 
-The head bot interviews you once, writes the shared brief, and each Monday scores ideas for fit, ease and novelty. The Outlier Finder feeds it videos that did far better than their creator's size, because that shows the format did the work, not the audience.
+The head bot interviews you once, writes the shared brief, and each Monday scores ideas for fit, ease and novelty. The Outlier Finder feeds it videos that did far better than their creator's size. That hints the format did some of the work, though it can't rule out luck or timing, so the finder also looks for similar videos that flopped.
 
 > [!RISK] Outliers hide the failures
 > Study only winners and risky choices look like the cause of success, because everyone who tried the same move and failed is out of view. Jerker Denrell's research on [learning from successes](https://ora.ox.ac.uk/objects/uuid:a8102a34-f7a4-40de-91c0-139355f97358) shows this trap. Before copying an outlier, ask the bot for 5 videos in your niche using the same hook or format that flopped. If they exist, the format didn't do the work alone.
@@ -129,6 +129,8 @@ The head bot interviews you once, writes the shared brief, and each Monday score
 > - Link, creator, followers, views and score.
 > - First line, hook type and format.
 > - Your best guess at why it took off.
+> - Up to 3 videos in my niche with the same hook or format
+>   that flopped, and what differs.
 > - Whether my business could shoot it this week.
 >
 > Add them to social/outliers.md. On a day with nothing new,
