@@ -104,6 +104,17 @@ const render = async (id, meta, depth = 0) => {
 	return out.join('\n');
 };
 
+const readTranscription = async (path) => {
+	try {
+		const existing = await readFile(path, 'utf8');
+		const start = existing.search(/\r?\n---\r?\n## Image text[^\r\n]*\(transcribed by hand;/);
+		return start === -1 ? '' : existing.slice(start);
+	} catch (error) {
+		if (error.code === 'ENOENT') return '';
+		throw error;
+	}
+};
+
 const only = process.argv.slice(2);
 const lines = (await readFile(`${ROOT}tools/links.txt`, 'utf8'))
 	.trim()
@@ -113,8 +124,11 @@ await mkdir(`${ROOT}sources`, { recursive: true });
 await Promise.all(
 	lines.map(async (line) => {
 		const [group, , id, label] = line.split('\t');
-		const md = await render(id, `${label || ''} [${group}]`);
-		await writeFile(`${ROOT}sources/${id}.md`, md);
+		const path = `${ROOT}sources/${id}.md`;
+		const scraped = await render(id, `${label || ''} [${group}]`);
+		const transcription = await readTranscription(path);
+		const md = transcription ? `${scraped.trimEnd()}\n${transcription}` : scraped;
+		await writeFile(path, md);
 		console.log(id, md.length);
 	})
 );
