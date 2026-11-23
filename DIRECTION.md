@@ -25,6 +25,6 @@ To add sources: append to `links.txt`, scrape, analyse into a new batch file, pl
 
 ## State
 
-v0.1.0 is live on seo.mia.cx: 63 lessons (153 tricks) across 13 modules, built from 60 posts (one inaccessible). Public repo `mia-cx/earshot`. Every push to main deploys the `earshot-staging` Worker to staging.seo.mia.cx; merging a Changesets release pull request deploys the `earshot` Worker to seo.mia.cx and tags the release.
+Live on earshot.mia.cx, the canonical address to match the name: 63 lessons (153 tricks) across 13 modules, built from 60 posts (one inaccessible). Public repo `mia-cx/earshot`. seo.mia.cx 301-redirects there. Every push to main deploys the `earshot-staging` Worker to staging.earshot.mia.cx; merging a Changesets release pull request deploys the `earshot` Worker to earshot.mia.cx and tags the release.
 
-Next: add seo.mia.cx to Google Search Console and submit its sitemap.
+Next: add earshot.mia.cx to Google Search Console and submit its sitemap.
