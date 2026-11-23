@@ -12,13 +12,16 @@ description: Count each sale once, match pages to ads, and measure what ads real
 
 ## Ads get credit for sales they didn't cause
 
-Ads go to people who were likely to buy anyway, so "saw the ad, then bought" overstates what the ad did. Brett Gordon and colleagues compared 15 randomised experiments at Facebook with the usual tracking-based estimates. [In half of them the estimates were off by a factor of three](https://www.kellogg.northwestern.edu/faculty/gordon_b/files/fb_comparison.pdf), mostly too high. At eBay, [Steven Tadelis's team switched off search ads](https://www.nber.org/system/files/working_papers/w20171/w20171.pdf) and found ads on eBay's own brand name brought almost no extra sales: people clicked the free result instead.
+Ads often reach people who were likely to buy anyway, so "saw the ad, then bought" overstates what the ad did. Two large field experiments show how far off that gets:
 
-Everything below is one person's playbook for working inside that problem: @korzhov_dm's eleven marketing-engineering workflows, written for Meta and Google ads on an online store. His numbers are unverified claims. If you don't spend on ads yet, skim this and come back when you do.
+- Across 15 randomised Facebook experiments, Brett Gordon and colleagues found tracking-based estimates were [off by a factor of three in half the studies](https://www.kellogg.northwestern.edu/faculty/gordon_b/files/fb_comparison.pdf), mostly too high.
+- At eBay, [Steven Tadelis's team switched off search ads](https://www.nber.org/system/files/working_papers/w20171/w20171.pdf) and found ads on eBay's own brand name added almost no extra sales: people clicked the free result instead.
+
+The playbook below is one person's way of working inside that problem: @korzhov_dm's eleven workflows for Meta and Google ads on an online store. His numbers are unverified claims. If you don't spend on ads yet, skim this and come back when you do.
 
 ## Count every sale exactly once
 
-Ad platforms optimise on the conversion events you send them. [Meta's documentation](https://developers.facebook.com/docs/marketing-api/conversions-api/best-practices/) says only events it can match to a person feed its delivery optimisation. If sales are duplicated or missing, **the algorithm learns from wrong data**. Korzhov claims most accounts send duplicates or miss about a quarter of orders.
+Ad platforms optimise on the conversion events you send. [Meta's documentation](https://developers.facebook.com/docs/marketing-api/conversions-api/best-practices/) says only events matched to a person feed delivery optimisation. Duplicate or missing sales mean **the algorithm learns from wrong data**. Korzhov claims most accounts send duplicates or miss about a quarter of orders.
 
 > [!TRICK] Deduplicate the purchase event
 > 1. Stack: Google Tag Manager, GA4, server-side tracking (Stape), Meta Conversions API.
@@ -27,7 +30,7 @@ Ad platforms optimise on the conversion events you send them. [Meta's documentat
 
 ## Match the page to the ad
 
-The ad promises one thing, the page says another, and that gap is where most paid traffic leaves. [Nielsen Norman Group's research on information scent](https://www.nngroup.com/articles/information-scent/) explains why: people click on a guess of what the page holds, and leave fast when the page doesn't confirm it. Closing that gap costs less than any increase in spend.
+The ad promises one thing, the page says another, and that gap is where most paid traffic leaves. [Nielsen Norman Group's research on information scent](https://www.nngroup.com/articles/information-scent/) shows people click on a guess of what the page holds, and leave fast when the page doesn't confirm it. Fixing the page costs less than raising ad spend.
 
 > [!TRICK] Rewrite the page per ad
 > - Build a landing page whose headline and first section change to match the ad the visitor clicked. AI writes the variants.
@@ -36,7 +39,9 @@ The ad promises one thing, the page says another, and that gap is where most pai
 
 ## Measure what ads really add
 
-Korzhov puts platform over-crediting at 2 to 5 times. The experiments above point the same way, though the size varies by account. The only way to know yours is to switch ads off somewhere and watch what happens. [Google's researchers call this a geo experiment](https://research.google/pubs/measuring-ad-effectiveness-using-geo-experiments/): regions are split at random into ads on and ads off, and the off regions show what would have happened anyway.
+The only way to know what ads add for your account is to switch them off somewhere and watch sales. Korzhov puts platform over-crediting at 2 to 5 times; the experiments above point the same way, though the size varies by account.
+
+[Google's researchers call this a geo experiment](https://research.google/pubs/measuring-ad-effectiveness-using-geo-experiments/): split regions at random into ads on and ads off. The off regions show what would have happened anyway.
 
 > [!TRICK] Run a regional holdout
 > - Turn Meta ads off in 5 matched regions for 4 weeks.
@@ -47,7 +52,7 @@ Korzhov puts platform over-crediting at 2 to 5 times. The experiments above poin
 > Four weeks without ads in five regions means four weeks of lost sales there. Pick regions small enough that you can afford the drop.
 
 > [!RISK] A small test may show nothing
-> Sales swing a lot from week to week, and an ad's effect is small next to that. [Randall Lewis and Justin Rao](https://ideas.repec.org/a/oup/qjecon/v130y2015i4p1941-1973.html) found that even large retailers' ad experiments often left a return-on-spend range over 100 points wide. If your regions are small, a "no change" result may only mean the test was too small to see it.
+> Weekly sales are noisy, and an ad's lift is small next to that swing. [Randall Lewis and Justin Rao](https://ideas.repec.org/a/oup/qjecon/v130y2015i4p1941-1973.html) found that even large retailers' ad experiments often left a return-on-spend range over 100 points wide. With small regions, "no change" may just mean the test was too small to see it.
 
 > [!DIAGRAM] holdout
 
@@ -64,7 +69,9 @@ Korzhov puts platform over-crediting at 2 to 5 times. The experiments above poin
 > [!RISK] Copying creative invites IP complaints
 > Copy the structure only. Never reuse a competitor's wording, footage or claims.
 
-Creative matters more than any other choice you make. [Nielsen's analysis of about 500 campaigns](https://www.nielsen.com/insights/2017/when-it-comes-to-advertising-effectiveness-what-is-key/) found the ad itself drove more of the sales lift than reach, targeting or timing. Korzhov's claim goes further: the account that tests more creatives usually wins on Meta. He compares a $20k shoot that gives 10 videos with the same budget in API calls giving 1,000 (his estimate).
+**Creative matters more than any other choice you make.** [Nielsen's analysis of about 500 campaigns](https://www.nielsen.com/insights/2017/when-it-comes-to-advertising-effectiveness-what-is-key/) found the ad itself drove more sales lift than reach, targeting or timing.
+
+Korzhov goes further and claims the account that tests more creatives usually wins on Meta. He compares a $20k shoot giving 10 videos with the same budget in API calls giving 1,000 (his estimate).
 
 > [!TRICK] Batch AI UGC-style ads
 > - Tools: Veo, Seedance or Kling for video; ElevenLabs for voice; auto-captions; a script that runs them in batches.

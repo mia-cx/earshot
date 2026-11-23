@@ -5,26 +5,30 @@ description: Spot underpricing from your close rate, margin per client and hours
 ---
 
 > [!TLDR]
-> - In most businesses a minority of customers earns all the profit and a few lose money. Revenue reports hide which ones.
+> - In most businesses, a minority of customers earns all the profit and a few lose money. Revenue reports hide which is which.
 > - If you close more than about 40% of sales calls, you're probably too cheap.
 > - Count margin per client, with your own hours at what it would cost to replace you.
 > - Compare hours delivered with hours contracted, then fix your process, reprice or rescope, and drop a client only last.
 
 ## A high close rate is a price signal
 
-Most businesses rarely revisit their price. Patrick Campbell, whose company ProfitWell sold pricing software, [says its research found](https://www.mindtheproduct.com/a-guide-to-unlocking-growth-with-optimized-pricing/) companies spend 10 hours or less a year on pricing. He doesn't publish the method, so treat it as a vendor's claim.
+Closing most of your sales calls feels like winning, but past a point **your price is too low**. @huntkyle's rule of thumb: above about 40%, you're probably losing 20% margin on every sale.
 
-Closing most of your sales calls feels like success. Past a point, **it means your price is too low**. @huntkyle's rule of thumb: above about 40%, you're probably losing 20% margin on every sale.
+That number is his, unverified, and he sells agency consulting. Most teams still barely touch pricing: Patrick Campbell, whose company ProfitWell sold pricing software, [says its research found](https://www.mindtheproduct.com/a-guide-to-unlocking-growth-with-optimized-pricing/) companies spend 10 hours or less a year on it. No method is published, so treat it as a vendor's claim.
 
-That number is his, unverified, and he sells consulting to agencies. But the check is free: keep a sheet with calls, closes and close rate, and flag it when the rate stays above 40%.
+The check itself is free. Keep a sheet with calls, closes and close rate, and flag it whenever the rate stays above 40%.
 
 ## Count margin per client, not revenue
 
-A billing report shows revenue. It hides which clients cost you money. [Robert Kaplan at Harvard Business School](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability), who co-developed activity-based costing, found that in nearly every company studied, 15% to 20% of customers produce all of the profit or more, and the least profitable few wipe out part of it. His method needs two numbers: what an hour of each person's time costs, and how many hours each customer takes.
+A billing report shows revenue, not which clients lose you money. [Robert Kaplan at Harvard Business School](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability), co-developer of activity-based costing, found that in nearly every company studied, 15% to 20% of customers produce all of the profit or more, while the least profitable few wipe part of it out. His method needs two numbers: the hourly cost of each person's time, and the hours each customer takes.
 
-In Hunt's audits, 10% to 20% of an agency's clients sit at close to or below zero gross margin once the owner's hours are counted. That's his figure, but it fits Kaplan's pattern.
+In Hunt's audits, 10% to 20% of an agency's clients sit near or below zero gross margin once the owner's hours are counted. That's his figure, though it fits Kaplan's pattern.
 
-Three numbers fix that view: gross margin per client, with your hours priced at what it would cost to replace you; churn graded against a benchmark; and a 13-week forecast instead of a flat line.
+Fix your view with three numbers:
+
+- Gross margin per client, with your hours priced at what it would cost to replace you.
+- Monthly churn, graded against a benchmark.
+- A 13-week revenue forecast instead of a flat line.
 
 > [!TRICK] Month-end bot prompt
 > Give it exported files, not logins (see *Keep bots from doing damage*).
@@ -45,7 +49,7 @@ Three numbers fix that view: gross margin per client, with your hours priced at 
 
 ## Find the clients you're subsidising
 
-Scope creep is a pricing problem you can't see without a time log. Across three agencies, Hunt found $18K to $20K of work being delivered on $8K to $10K retainers (his anecdote).
+Scope creep is a pricing problem you can't see without a time log. Across three agencies, Hunt saw $18K to $20K of work delivered on $8K to $10K retainers (his anecdote).
 
 Kaplan's order for fixing an unprofitable customer:
 

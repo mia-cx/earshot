@@ -6,30 +6,30 @@ description: Define your onboarded event, find what brings users back, and messa
 
 > [!TLDR]
 > - Customers who stay are worth more every year, but new customers are what grow you. Plan for both.
-> - Define "onboarded" as one key action, repeated at the rhythm you expect, and build the first one into the product.
+> - Define "onboarded" as one key action repeated on your expected rhythm, and build that first moment into the product.
 > - Trigger email and SMS on what people do, and hold 10% back to prove the messages add revenue.
 > - Check-ins say what happens next and by when. They don't wait for approval nobody needs to give.
 
 ## Keep customers, and keep finding new ones
 
-*Map the whole funnel* named the stages. This lesson works through the ones after acquisition.
+**Retention multiplies what acquisition brings in. It doesn't replace it.** *Map the whole funnel* named the stages; this lesson covers what happens after someone signs up.
 
-[Fred Reichheld's research at Bain](https://media.bain.com/Images/BB_Prescription_cutting_costs.pdf) found that customers get more profitable each year they stay: they buy more, cost less to serve and refer others. In financial services, a 5% rise in retention lifted profit by more than 25%. But keeping customers is not how you grow. [A 2014 study by Byron Sharp's team at the Ehrenberg-Bass Institute](https://ideas.repec.org/a/eee/jbrese/v67y2014i5p990-997.html) found that growing and shrinking brands differed mostly in how many new customers they won, not in how many they lost.
+Customers who stay get more profitable each year. [Fred Reichheld's research at Bain](https://media.bain.com/Images/BB_Prescription_cutting_costs.pdf) found they buy more, cost less to serve and refer others: in financial services, a 5% rise in retention lifted profit by more than 25%.
 
-So retention multiplies what acquisition brings in. It doesn't replace it.
+Keeping customers still won't grow you on its own. [A 2014 study by Byron Sharp's team at the Ehrenberg-Bass Institute](https://ideas.repec.org/a/eee/jbrese/v67y2014i5p990-997.html) found that growing and shrinking brands differed mostly in how many new customers they won, not in how many they lost.
 
 ## Define onboarded as a habit, not a click
 
-Decide what "onboarded" means as **one key action that shows a user got value**. In @kunalvg's crypto examples it's "wallet connected" or "first transaction". For a writing app it might be "document shared".
+Define "onboarded" as **one key action that shows a user got value**. In @kunalvg's crypto examples it's "wallet connected" or "first transaction". For a writing app it might be "document shared".
 
-[Casey Winters, who led growth at Pinterest and Grubhub](https://www.caseyaccidental.com/p/why-onboarding-is-the-most-crucial-part-of-your-growth-strategy), adds the part a single event misses: how often. A user is activated when they still do the key action at the rhythm you expect, some weeks after sign-up. Pinterest used "saved a pin every week, four weeks after sign-up".
+A single click misses half the picture: how often. [Casey Winters, who led growth at Pinterest and Grubhub](https://www.caseyaccidental.com/p/why-onboarding-is-the-most-crucial-part-of-your-growth-strategy), counts a user as activated only when they still do that key action on your expected rhythm, weeks after sign-up. Pinterest used "saved a pin every week, four weeks after sign-up".
 
 1. Pick the key action: the one that only happens when someone got value.
 2. Pick the rhythm from the offline habit you replace. Ordering takeaway by phone is monthly, so Grubhub aimed for monthly orders.
 3. Watch each month's sign-ups over time. Activated users are the ones still doing it at that rhythm.
-4. Engineer the first "aha" moment inside the product with whoever builds it, so a new user feels the value before they leave.
+4. Build the first "aha" moment into the product with whoever builds it, so new users feel the value before they leave.
 
-Kunal argues that smoother onboarding alone puts you ahead of 90% of projects. That's his read of crypto, but the logic carries: most teams spend their effort on getting people in, not on what happens next.
+Kunal argues that smoother onboarding alone puts you ahead of 90% of projects. That's his read of crypto, though the point holds: most teams spend their effort getting people in, not on what happens next.
 
 ## Know why people stay and why they leave
 
@@ -43,19 +43,19 @@ Retention takes as much planning as acquisition, so answer these questions early
 > 5. Segments: which usage numbers matter for your product, so you can split users by them?
 > 6. Churn: why do people leave, and which campaign would win them back?
 
-For the numbers, use Google Analytics for the website, plus a product analytics tool for what happens inside the product. Kunal uses Redash and Dune for on-chain data.
+Track the site with Google Analytics and in-product actions with a product analytics tool. Kunal uses Redash and Dune for on-chain data.
 
-To judge your numbers, [Lenny Rachitsky and Casey Winters asked about 20 growth leaders](https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29) what good looks like six months after sign-up. Their rough answers: about 25% still active for a consumer social app, 40% of paying subscribers for consumer software, and 60% of paying companies for small-business software. Those are practitioner estimates, not a study.
+For rough benchmarks, [Lenny Rachitsky and Casey Winters asked about 20 growth leaders](https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29) what good six-month retention looks like: about 25% active for consumer social, 40% of paying subscribers for consumer software, and 60% of paying companies for small-business software. These are practitioner estimates, not a study.
 
-Pricing belongs here too. Write down why, how and what you'll charge on day one. Free with no revenue model doesn't last. *Read your pricing from your numbers* covers the signals that tell you the price is wrong.
+Pricing belongs here too. Write down why, how and what you'll charge on day one; free with no revenue model doesn't last. *Read your pricing from your numbers* covers the signals that your price is wrong.
 
 > [!DIAGRAM] funnel
 
 ## Message people on what they did
 
-[BJ Fogg's behaviour model](https://behaviormodel.org/) says an action happens only when motivation, ability and a prompt meet at the same moment. A message fired by what someone just did arrives while their motivation is still there. Selling again to someone who already bought also costs a fraction of finding a new customer, so send messages based on what each person did.
+Send messages triggered by what a user just did. [BJ Fogg's behaviour model](https://behaviormodel.org/) says an action happens only when motivation, ability and a prompt meet at the same moment, so a timely prompt catches motivation while it's still there. Selling again to an existing customer also costs a fraction of finding a new one.
 
-The holdout is what makes them measurable. [Ron Kohavi's experiments at Microsoft](https://hbr.org/2017/09/the-surprising-power-of-online-experiments) showed how often intuition misjudges a change; only a random group that gets nothing tells you what the messages added.
+To measure whether the messages add revenue, hold out a random control group. [Ron Kohavi's experiments at Microsoft](https://hbr.org/2017/09/the-surprising-power-of-online-experiments) showed how often intuition misjudges a change; only a random group that gets nothing tells you what the messages added.
 
 > [!TRICK] Build five behaviour flows with a holdout
 > 1. Use Klaviyo (or your email tool). Send it product events: viewed, added to cart, bought, went quiet.
@@ -63,7 +63,7 @@ The holdout is what makes them measurable. [Ron Kohavi's experiments at Microsof
 > 3. Hold out 10% of customers at random. They receive nothing.
 > 4. Compare revenue between the two groups.
 
-The source, @korzhov_dm, writes for online stores and says most have one abandoned-cart email and nothing else (his claim). Swap in your own product's events, such as signed up, reached the aha moment, went quiet.
+@korzhov_dm writes for online stores and claims most have one abandoned-cart email and nothing else. Swap in your own events, such as signed up, reached the aha moment, or went quiet.
 
 > [!DIAGRAM] holdout
 
@@ -71,7 +71,7 @@ The source, @korzhov_dm, writes for online stores and says most have one abandon
 
 If you sell a service or a membership, weekly check-ins are part of retention. **End each one with what happens next and by when**, not a request for feedback.
 
-@huntkyle read the Slack messages of an agency with 35 clients and chronically late delivery. Every message ended "let me know what you think", and the team waited 1 to 3 days for approvals clients never asked to give. Hunt sells agency consulting, and this is his anecdote.
+@huntkyle read the Slack history of a 35-client agency with chronically late delivery. Every message ended "let me know what you think", leaving the team waiting 1 to 3 days for approvals clients never asked to give. Hunt sells agency consulting, and this is his anecdote.
 
 > [!TRICK] Check-ins bot prompt
 > Fill in the brackets, run it weekly, and send nothing without reading it first.

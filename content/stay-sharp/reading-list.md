@@ -1,19 +1,21 @@
 ---
 title: Read the classics next
 order: 5
-description: Pick the essay that deepens the module you found hardest, and read it today.
+description: Pick the book or essay that deepens the module you found hardest, and start there.
 ---
 
 > [!TLDR]
 > - Eight books hold the frameworks most marketing advice borrows from. Twenty older essays still cover positioning, traction and growth process well.
-> - Both are grouped below by the course module they go deeper on.
+> - Both are grouped below by the course module they deepen.
 > - Start with the module you found hardest, not with the first item.
 
 ## Start where the course felt hardest
 
-Kunal Gandhi kept the 20 essays below from a decade of marketing bookmarks and still returns to them. Some are 10 years old and **still hold up** on positioning, traction and growth process. The books are older still, and each one goes deeper than any post on the idea it's known for.
+Don't read this list in order. Pick one book or essay for your hardest module and apply it to current work.
 
-Don't read them in order. Pick one for the module that gave you the most trouble, and apply it to something you're working on now. X, search, backlinks, AI search, video and agents have no book or essay here. For those, the sources under each lesson are the next read.
+Kunal Gandhi kept these 20 essays from a decade of bookmarks and still returns to them. In his view, some are 10 years old and **still hold up** on positioning, traction and growth process. The eight books are older still, and each goes deeper than any post on its core idea.
+
+X, search, backlinks, AI search, video and agents have no book or essay here. For those, read the sources under each lesson next.
 
 ## The books behind the course
 

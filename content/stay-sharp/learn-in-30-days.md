@@ -12,9 +12,9 @@ description: Pick two AI skills, build on real work for 30 days, and judge it at
 
 ## Pick two skills that fit your goal
 
-[Anders Ericsson's research on expert performance](https://gwern.net/doc/psychology/writing/1993-ericsson.pdf) found that people improve through deliberate practice: a task built to stretch you, quick feedback on how you did, and many repeats of the same kind of task. A real problem gives you all three. A course on its own rarely does.
+You learn faster on a real problem than in a course. [Anders Ericsson's research on expert performance](https://gwern.net/doc/psychology/writing/1993-ericsson.pdf) shows skill grows through deliberate practice: a task built to stretch you, quick feedback, and many repeats of the same kind of task. A real problem gives you all three; a course alone rarely does.
 
-Two skills that complement each other beat one skill alone. @notkvtwts names five to choose from: AI workflow design, context engineering, AI automation and agents, AI-assisted development, and content and distribution.
+@notkvtwts argues two complementary skills beat one alone, and names five to choose from: AI workflow design, context engineering, AI automation and agents, AI-assisted development, and content and distribution.
 
 | Your goal | Pair these |
 | --- | --- |
@@ -33,11 +33,13 @@ Two skills that complement each other beat one skill alone. @notkvtwts names fiv
 >
 > Then keep going, and judge it only after 3 months.
 
-Why 3 months: in [a UCL study by Phillippa Lally](https://www.bps.org.uk/research-digest/how-form-habit), people repeating one new daily behaviour took 66 days on average before it felt automatic, and some took far longer. Missing a single day barely set them back.
+Give it 3 months before judging. In [a UCL study by Phillippa Lally](https://www.bps.org.uk/research-digest/how-form-habit), people repeating one new daily behaviour took 66 days on average before it felt automatic, and some took far longer. Missing a single day barely set them back.
 
 ## Find the tasks AI should draft
 
-The author says AI does roughly 80% of a task fast, and the skill people pay for is the last 20%: choosing, fixing and catching mistakes. The split is a rough guess, and it varies by task. In [the MIT writing study](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714), ChatGPT shifted people's time from drafting to editing. In [a Harvard and BCG experiment](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf), AI made consultants far better on some tasks and worse on one that looked just as hard. That's why you audit task by task. The author's example: AI writes 50 ads in a minute, and the skill is knowing which 3 to test and why the other 47 won't work.
+Audit your work task by task. @notkvtwts says AI does roughly 80% of a task fast, leaving the paid 20%: choosing, fixing and catching mistakes. Their example: AI writes 50 ads in a minute, and the skill is knowing which 3 to test and why the other 47 won't work.
+
+That 80/20 split is a rough guess and varies sharply by task. In [the MIT writing study](https://news.mit.edu/2023/study-finds-chatgpt-boosts-worker-productivity-writing-0714), ChatGPT shifted people's time from drafting to editing. In [a Harvard and BCG experiment](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf), AI made consultants far better on some tasks and worse on one that looked just as hard.
 
 > [!TRICK] Audit your week in three groups
 > 1. List every task you do in a normal week.
@@ -48,7 +50,7 @@ The author says AI does roughly 80% of a task fast, and the skill people pay for
 
 ## Let an AI write your plan
 
-Instead of hunting for a course, have an AI interview you and build a week-by-week plan for one skill. Fill in the brackets, paste it, and answer its questions. Save the chat and come back to it every week with what you did, so the plan adjusts. The author reports no results beyond their own use.
+Skip the course hunt and have an AI interview you into a week-by-week plan for one skill. Fill in the brackets, paste it, and answer its questions. Save the chat and report back weekly with what you did so the plan adjusts. @notkvtwts reports no results beyond their own use.
 
 > [!TRICK] Paste the learning-plan prompt
 > ```

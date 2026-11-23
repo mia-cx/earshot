@@ -6,27 +6,33 @@ description: Use AI on real decisions and still know what you shipped and why.
 
 > [!TLDR]
 > - In experiments, people with an AI assistant copied its wrong answers and felt more sure while doing it. You won't feel the slide.
-> - The test: can you explain the answer? Hand whole decisions to AI only where being wrong is cheap.
+> - The test is whether you can explain the answer. Hand whole decisions to AI only where being wrong is cheap.
 > - Write your guess before you ask, then check what would make the answer wrong.
 > - Produce only as much as you can review. Someone answers for what ships, and that's you.
 
 ## Notice when you stop checking
 
-[Wharton researchers Steven Shaw and Gideon Nave](https://ssrn.com/abstract=6097646) gave 1,372 people reasoning puzzles and an AI assistant that was secretly wrong on some of them. People asked the AI on most puzzles. Their accuracy rose 25 points when it was right and fell 15 points when it was wrong, and their confidence went up either way. Rewards for right answers didn't stop it. They call this **cognitive surrender**. [A Microsoft survey of 319 knowledge workers](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/) found the same direction at work: the more people trusted AI, the less they reported checking it.
+People copy wrong AI answers and feel more sure while doing it. [Wharton researchers Steven Shaw and Gideon Nave](https://ssrn.com/abstract=6097646) gave 1,372 people reasoning puzzles and an AI assistant that was secretly wrong on some of them. People asked the AI on most puzzles: accuracy rose 25 points when it was right, fell 15 points when it was wrong, and confidence rose either way, even with rewards for right answers. They call this **cognitive surrender**.
 
-Using AI sits on a spectrum. At the top is **offloading**: the AI does the task, you still own the result. In the middle is deferral: the output becomes your input and stops being a guess you might reject. At the bottom is surrender: the output quietly becomes yours and you feel no need to check it.
+[A Microsoft survey of 319 knowledge workers](https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/) found the same direction at work: the more people trusted AI, the less they reported checking it.
 
-Nobody chooses to slide. You read one answer carefully, skim the next, scan the outline of the one after. Then someone asks about a line and you can't explain it, even with your agent's help. That's the test: if you can't explain it, you've surrendered it.
+Using AI sits on a spectrum:
 
-You don't need to hold everything in your head. It's fine to rebuild understanding of one part on demand by asking the agent to explain that slice, as long as you know which parts you no longer hold.
+- **Offloading:** the AI does the task, and you still own the result.
+- **Deferral:** the output becomes your input instead of a guess you might reject.
+- **Surrender:** the output quietly becomes yours, and you feel no need to check it.
+
+Nobody chooses to slide. You read one answer carefully, skim the next, and scan the outline after that. Then someone asks about a line and you can't explain it, even with your agent's help. That's the test: if you can't explain it, you've surrendered it.
+
+You don't need to hold everything in your head. Rebuilding one part on demand by asking the agent to explain that slice is fine, as long as you know which parts you no longer hold.
 
 > [!DIAGRAM] surrender-scale
 
 ## Hand off only what's cheap to get wrong
 
-You can't tell from the output where AI is weak. In [a Harvard and BCG experiment with 758 consultants](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf), those using GPT-4 produced work rated over 40% better on tasks inside its abilities, but were 19 percentage points less likely to get the right answer on a task just outside them. The two kinds of task looked equally hard.
+You can't tell from the output where AI is weak. In [a Harvard and BCG experiment with 758 consultants](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf), GPT-4 lifted rated quality by over 40% on tasks inside its abilities, yet made consultants 19 percentage points less likely to be right on a task just outside them. Both kinds of task looked equally hard.
 
-Delegate the whole decision when a mistake costs little. Addy Osmani, who works on Claude Code at Anthropic, let AI pick between three similarly rated hotels and would do it again. Not for investing money, advising kids on careers, or product calls, though.
+Delegate the whole decision when a mistake costs little. Addy Osmani, who works on Claude Code at Anthropic, let AI pick between three similarly rated hotels and would do it again. He draws the line at investing money, advising kids on careers, and product calls.
 
 Keep the reasoning yourself where other people live with the result: what to build, what changes users feel, whether it's safe to ship. You can offload the work and much of the checking, but not the accountability. Four questions stay yours:
 
@@ -37,9 +43,9 @@ Keep the reasoning yourself where other people live with the result: what to bui
 
 ## Guess first, then try to break the answer
 
-Before you run an agent on anything non-trivial, write what you expect the answer to be. A bad guess is fine. Once you've read a polished answer, it's hard to picture any other. In Shaw and Nave's experiments, the AI's answer overrode both people's gut feeling and their careful reasoning. A guess written first gives you something to compare against.
+Write down what you expect the answer to be before you run an agent on anything non-trivial. A bad guess is fine. Once you've read a polished answer, it's hard to picture another: in Shaw and Nave's experiments, AI answers overrode both gut feeling and careful reasoning. Your guess gives you something to compare against.
 
-- No idea at all? Ask for a "blind spot pass": give the model what you know and have it find what you don't know you're missing.
+- If you have no idea at all, ask for a "blind spot pass": give the model what you know and have it find what you don't know you're missing.
 - Ask yourself whether you want help thinking or want the thinking done for you. Both are fine if you know which.
 - Ask what would have to be true for the answer to be wrong, then go check that. A test you can run beats the model's own confidence rating.
 - On an open question where you've taken a hard stance, have more than one model argue the opposite side, then decide for yourself.
@@ -54,7 +60,7 @@ Before you run an agent on anything non-trivial, write what you expect the answe
 
 ## Make only what you can review
 
-Osmani calls it the **orchestration tax**: the gap between what your agents produce and what you'd put your name on. If finished work piles up faster than you can review it, another session won't help. Tighten the checks so less needs you, or slow down.
+If finished work piles up faster than you can review it, another session won't help. Osmani calls this gap the **orchestration tax**: the spread between what your agents produce and what you'd put your name on. Tighten the checks so less needs you, or slow down.
 
 Human attention is the limit, not the model. The DeepSeek Harness team reports that one person can follow only 3 to 5 active agent sessions at once (their own observation, not a controlled study).
 
