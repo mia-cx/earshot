@@ -43,9 +43,9 @@ jobs:
           printf '/*\n  X-Robots-Tag: noindex\n' > _headers
       - run: pnpm build
       - run: pnpm exec wrangler deploy ${{ inputs.environment == 'staging' && '--env staging' || '' }}
-      # Tells the IndexNow search engines (Bing, Yandex, Seznam, Naver) about every page in the sitemap,
-      # so a release is crawled within days. static/<key>.txt proves the site is ours. A failed
-      # ping leaves the release alone.
+      # Tells the IndexNow search engines (Bing, Yandex, Seznam, Naver) that every page in the sitemap
+      # may have changed, so they recrawl without waiting for their own schedule. static/<key>.txt
+      # proves the site is ours. A failed or stalled ping leaves the release alone.
       - name: Ping IndexNow
         if: inputs.environment == 'production'
         continue-on-error: true
@@ -55,4 +55,4 @@ jobs:
           grep -oP '(?<=<loc>)[^<]+' .svelte-kit/cloudflare/sitemap.xml \
             | jq -Rn --arg site "$SITE_URL" --arg key "$INDEXNOW_KEY" \
               '{host: ($site | ltrimstr("https://")), key: $key, keyLocation: "\($site)/\($key).txt", urlList: [inputs]}' \
-            | curl -sS --fail-with-body -H 'Content-Type: application/json; charset=utf-8' --data @- https://api.indexnow.org/indexnow
+            | curl -sS --fail-with-body --max-time 30 -H 'Content-Type: application/json; charset=utf-8' --data @- https://api.indexnow.org/indexnow
