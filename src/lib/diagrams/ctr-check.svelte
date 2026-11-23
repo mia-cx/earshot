@@ -10,8 +10,10 @@
 		{ position: 4, ctr: 6 },
 		{ position: 5, ctr: 4 }
 	];
-	/** CTR at the right end of every track, in percent. */
-	const SCALE = 12;
+	/** Smallest CTR at the right end of every track, in percent. The track grows with higher benchmarks. */
+	const MIN_SCALE = 12;
+	/** Room to the right of the highest benchmark, so a page can beat it. */
+	const HEADROOM = 1.5;
 	/** Share of the benchmark at or below which a page is an underperformer: 40% or more below. */
 	const UNDERPERFORMER = 0.6;
 
@@ -28,7 +30,8 @@
 	const under = $derived(ctr <= line);
 
 	const percent = (value: number) => `${Number(value.toFixed(1))}%`;
-	const along = (value: number) => `${(Math.min(value, SCALE) / SCALE) * 100}%`;
+	const scale = $derived(Math.max(MIN_SCALE, Math.ceil(Math.max(...benchmarks.map(benchmarkFor)) * HEADROOM)));
+	const along = (value: number) => `${(Math.min(value, scale) / scale) * 100}%`;
 
 	const verdict = $derived(under ? 'Underperformer against this benchmark' : 'Not an underperformer');
 	const detail = $derived(
@@ -56,7 +59,7 @@
 				<span class="zone" style="width: {along(line)}"></span>
 				<span class="bar" style="width: {along(ctr)}"></span>
 				<span class="tick" style="left: {along(bench)}"></span>
-				<input id="{id}-ctr" type="range" min="0" max={SCALE} step="0.1" bind:value={ctr} aria-valuetext={percent(ctr)} />
+				<input id="{id}-ctr" type="range" min="0" max={scale} step="0.1" bind:value={ctr} aria-valuetext={percent(ctr)} />
 			</span>
 			<output class="value" for="{id}-ctr">{percent(ctr)}</output>
 		</div>
@@ -67,9 +70,9 @@
 		<input
 			type="number"
 			min="0.1"
-			max={SCALE}
+			max="100"
 			step="0.1"
-			bind:value={() => bench, (value) => value > 0 && (own[position] = value)}
+			bind:value={() => bench, (value) => value > 0 && value <= 100 && (own[position] = value)}
 		/>
 		%
 	</label>
@@ -88,7 +91,7 @@
 <style>
 	.chart {
 		display: grid;
-		grid-template-columns: max-content minmax(0, 1fr) 2.75rem;
+		grid-template-columns: max-content minmax(0, 1fr) 3.5rem;
 		gap: 0.3rem 0.6rem;
 	}
 
@@ -127,6 +130,7 @@
 	}
 
 	.value {
+		white-space: nowrap;
 		font-variant-numeric: tabular-nums;
 		font-weight: 700;
 		text-align: right;
