@@ -37,7 +37,7 @@ GitHub Actions deploys it (`.github/workflows/release.yml`):
 
 Describe a change for the changelog with `pnpm changeset`. The Cloudflare token and account are the mia-cx organisation's `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
 
-`SITE_URL` is the public origin. Canonical URLs, the sitemap, robots.txt and the share image use it, and the build fails without it. To build and serve locally: `SITE_URL=http://localhost:8787 pnpm build && pnpm exec wrangler dev`.
+`SITE_URL` is the public origin. Canonical URLs, the sitemap, robots.txt and the share image use it, and the build fails without it. After a production deploy, every sitemap URL goes to IndexNow; the key is the name and content of `static/<key>.txt`. To build and serve locally: `SITE_URL=http://localhost:8787 pnpm build && pnpm exec wrangler dev`.
 
 Lesson narration in `static/audio/` is kept out of git, so deployed lessons have none yet.
 
