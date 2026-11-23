@@ -14,7 +14,7 @@
 	const minutes = $derived(Math.round(lessons.reduce((n, l) => n + l.minutes, 0) / lessons.length));
 	const show = $derived(data.showcase);
 	const description = $derived(
-		`${lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, rewritten from the best free posts on X. Short version first, one small task per lesson, no sign-up.`
+		`${lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, grounded in marketing research and the best free posts on X. Short version first, one small task per lesson, no sign-up.`
 	);
 </script>
 
@@ -127,10 +127,11 @@
 </section>
 
 <section class="credits" aria-labelledby="credits-title">
-	<h2 id="credits-title">Rewritten from free posts, with credit</h2>
+	<h2 id="credits-title">Grounded in research, with credit</h2>
 	<p>
-		Every lesson links the posts it came from: {data.posts} posts by {data.authors.length} people who shared what
-		worked for them on X.
+		Every lesson starts from what the research shows and cites it: {data.research} studies, books, guides and essays.
+		Then it puts that to work with {data.posts} posts by {data.authors.length} people who shared what worked for them
+		on X.
 	</p>
 	<ul>
 		{#each data.authors as handle (handle)}

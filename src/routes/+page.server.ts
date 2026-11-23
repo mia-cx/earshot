@@ -23,6 +23,7 @@ export const load = () => {
 			check: lesson.checks[0]
 		},
 		tricks: course.lessons.reduce((n, l) => n + l.tricks.length, 0),
+		research: credits.research,
 		posts: credits.posts,
 		authors: credits.authors,
 		skills: skillGroups
