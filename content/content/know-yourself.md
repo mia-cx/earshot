@@ -5,11 +5,14 @@ description: Build a brand document and a voice document that every draft starts
 ---
 
 > [!TLDR]
+> - The best words for your posts already exist: your readers' own. Write them down instead of inventing them.
 > - Before you write posts, get interviewed (by a person or by AI) and keep the transcript as your brand document.
-> - Then compile what makes your favourite writers distinctive into a second document.
+> - Then compile what makes your favourite writers distinctive into a second document. Learn from voices; don't clone them.
 > - Feed both to AI every time you ideate or draft, so the output sounds like you.
 
 ## Write the brand document first
+
+Copywriter Joanna Wiebe's rule is ["Instead of writing your message, steal it"](https://copyhackers.com/2014/10/amazon-review-mining/) from the people you write for. She reads hundreds of reviews and copies the phrases customers use, word for word. For a rehab centre, a headline lifted straight from one Amazon review, "If you think you need rehab, you do", got over 400% more clicks than the original in her test. A brand document does the same job for you: it collects your own story and your reader's exact words before you write.
 
 Dan Koe's process for a new client starts with a recorded interview. The transcript becomes the brand document, and it goes into the AI every time anyone plans or drafts a post.
 
@@ -28,9 +31,17 @@ You can do this alone. Answer the nine sections below, or paste them into Claude
 
 ## Study the voices that shaped you
 
-Don't try to clone anyone's voice with AI. Instead, **write down what makes a voice distinctive**: the core ideas, the turns of phrase with personality, the worldview people rally behind. That document makes drafting easier without making you a copy.
+Don't try to clone anyone's voice with AI. A copy of someone else is the weakest place to stand: Jenni Romaniuk's [research on distinctive brands](https://contagious.cz/images/IO/jenni-romaniuk-on-distinctive-assets.pdf) finds that a cue you share with others works less well than one only you own. Instead, **write down what makes a voice distinctive**: the core ideas, the turns of phrase with personality, the worldview people rally behind. That document makes drafting easier without making you a copy.
 
 Run it on the people you learn from. Also read their top posts on each platform yourself and note the patterns that repeat. If you're not posting yet, list 5 to 10 people who shaped your thinking. Your angle is how you combine and reinterpret them.
+
+> [!TRICK] Learn a voice the way Franklin did
+> Benjamin Franklin taught himself to write from essays in *The Spectator*, as he describes in his [*Autobiography*](https://www.gutenberg.org/ebooks/148). It works on posts too:
+> 1. Pick one post you admire. Write a short note on what each sentence says.
+> 2. Put it away for a few days.
+> 3. Rewrite the post from your notes alone, in your own words.
+> 4. Compare yours with the original and note where theirs is clearer, tighter or bolder.
+> 5. Shuffle your notes and rebuild the post in the best order you can find. Franklin did this to learn how to arrange ideas.
 
 > [!TRICK] Extract a voice-and-ideas document
 > Give an AI that can read social posts the handles and run this prompt. Koe connects Eden (Koe's own tool) to Claude or ChatGPT over MCP; any assistant with web access works, or paste the posts in yourself.
@@ -57,9 +68,12 @@ A note on evidence: this is Koe's client process, described anecdotally, and Koe
 > Write down what makes their voice distinctive: core ideas, turns of phrase and worldview. Then combine it with others in your own way.
 
 > [!CHECK] In a brand interview, why do you record the exact words your reader uses when complaining to a friend?
-> That language is what your posts should use. Exact words matter more than polish.
+> That language is what your posts should use. Readers recognise their own words: Joanna Wiebe's headline lifted from one customer review got over 400% more clicks than the one she wrote.
 
 ## Sources
 
+- [Joanna Wiebe, Copyhackers: How to find your message using review mining (2014)](https://copyhackers.com/2014/10/amazon-review-mining/)
+- [Jenni Romaniuk on distinctive assets, Contagious interview (2022)](https://contagious.cz/images/IO/jenni-romaniuk-on-distinctive-assets.pdf)
+- [Benjamin Franklin, *Autobiography* (Project Gutenberg)](https://www.gutenberg.org/ebooks/148)
 - [@thedankoe: the brand interview and voice-extraction prompt](https://x.com/thedankoe/status/2117664712532123680)
 - [@mogulinfluence: repost of Dan Koe's article](https://x.com/mogulinfluence/status/2118351989511749841)

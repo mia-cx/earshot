@@ -5,8 +5,9 @@ description: Record talks with users and buyers, then reshape each one for every
 ---
 
 > [!TLDR]
+> - Your customers describe their problem better than you can. Record them, and build content from their words.
 > - Record short conversations with users, then turn each into a video, a thread, a LinkedIn post and single-idea posts.
-> - If you sell to businesses, case studies speed up sales more than any other content.
+> - If you sell to businesses, case studies are among the content B2B marketers rate most effective.
 > - Have a bot read your sales call transcripts for post ideas, each tied to the exact line that sparked it.
 > - Reshape research into each platform's native format instead of posting the same article everywhere.
 
@@ -14,7 +15,7 @@ description: Record talks with users and buyers, then reshape each one for every
 
 Most brand content is preachy: the company telling you what it thinks. Kunal Gandhi's alternative is to start conversations with everyone around your product (users, partners, other builders) and **turn what they say into content**.
 
-You get a steady supply of material, and it comes in your users' words rather than yours. A conversation with a bigger brand or person also lends you some of their reach.
+You get a steady supply of material, and it comes in your users' words rather than yours. That's the stronger copy. Joanna Wiebe of Copyhackers [mines customers' exact phrases](https://copyhackers.com/2014/10/amazon-review-mining/) for headlines, and in one test a line taken word for word from a customer review got over 400% more clicks than the headline she'd written. A conversation with a bigger brand or person also lends you some of their reach.
 
 > [!TRICK] Run the five-minute conversation chain
 > 1. Record a 5-minute conversation with a user.
@@ -27,7 +28,9 @@ You get a steady supply of material, and it comes in your users' words rather th
 
 ## Write case studies in every format
 
-If you sell to businesses or sell a service, case studies move buyers more than anything else you publish. Kunal's team at an AI startup wrote over 50, then repackaged each one into different formats for different prospects. Kunal says it sped up sales, with no numbers given.
+If you sell to businesses or sell a service, case studies are one of your strongest formats. In the [Content Marketing Institute's 2025 survey](https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research-2025) of 980 B2B marketers, 53% rated case studies and customer stories among their most effective content, second only to video at 58%. A year earlier case studies came first. These are marketers' own ratings, not measured sales.
+
+Kunal's team at an AI startup wrote over 50, then repackaged each one into different formats for different prospects. Kunal says it sped up sales, with no numbers given.
 
 A case study is a conversation with a customer, written up with the result. The same chain applies: one interview becomes a write-up, a thread and a short clip.
 
@@ -50,11 +53,13 @@ Every sales call is a recording of a buyer explaining their problem in their own
 > Ask me first before you: contact anyone from the call, or post any idea.
 > ```
 >
-> The close-rate line is a pricing signal; *Read your pricing from your numbers* explains it.
+> The close-rate line is a pricing signal; *Read your pricing from your numbers* explains it. The 40% threshold is @huntkyle's rule of thumb, not a tested figure.
 
 ## Reshape for each platform
 
 Posting the same article on five sites reaches nobody new. Take one piece of research and rebuild it in the form each platform rewards: a demo on YouTube, a finding as a Reddit answer, a case study on Behance.
+
+Do this once your main platform runs steadily. Joe Pulizzi's Content Inc. model [puts diversifying after](https://www.magnificent.com/magnificent-stuff/content-inc-model) you've built one base and grown an audience on it.
 
 > [!TRICK] Match each piece to its native platform
 > From @borjafat's workflow:
@@ -69,7 +74,7 @@ Posting the same article on five sites reaches nobody new. Take one piece of res
 > From @2whazzuup's list: research report → SlideShare; coding tutorial → DEV; DIY process → Instructables; design case study → Behance; real newsletter → Substack. Other publishing hosts: Hashnode, Medium, WordPress.com, Blogger, Tumblr, Bear Blog, Flipboard, Issuu, Calaméo, Yumpu, Dribbble, Tealfeed, Vocal Media, HubPages, Google Sites.
 
 > [!RISK] Reshaping is not spinning
-> Rewording the same thin article across dozens of sites to collect links is link spam. Each version should be built for its platform and worth reading on its own.
+> Rewording the same thin article across dozens of sites to collect links is spam under [Google's spam policies](https://developers.google.com/search/docs/essentials/spam-policies). Swapping in synonyms counts as scaled content abuse, and articles spread across other sites to plant links count as link spam. Each version should be built for its platform and worth reading on its own.
 
 > [!DO] Ask one user for five minutes
 > Send one user a message asking for a 5-minute recorded call this week about how they use what you built.
@@ -77,14 +82,18 @@ Posting the same article on five sites reaches nobody new. Take one piece of res
 > [!CHECK] What are the steps of the five-minute conversation chain for content?
 > Record a 5-minute conversation with a user, post it as a video, turn it into an X thread, then a LinkedIn post, then pull each central idea out as its own post.
 
-> [!CHECK] You sell to businesses and want content that speeds up sales. What do you write?
-> Case studies, each repackaged into different formats for different prospects.
+> [!CHECK] Why build content from recorded conversations instead of writing it all yourself?
+> It comes in your customers' own words, which readers recognise. In one of Joanna Wiebe's tests, a headline lifted from a customer review got over 400% more clicks than the one she wrote.
 
 > [!CHECK] When you reuse one piece of research on several platforms, why rebuild it for each instead of posting the same article everywhere?
 > The same article on five sites reaches nobody new. Each platform rewards its own native form, and rewording one thin article across many sites is link spam.
 
 ## Sources
 
+- [Joanna Wiebe, Copyhackers: How to find your message using review mining (2014)](https://copyhackers.com/2014/10/amazon-review-mining/)
+- [Stephanie Stahl, Content Marketing Institute: B2B Content Marketing Benchmarks, Budgets, and Trends, Outlook for 2025 (2024)](https://contentmarketinginstitute.com/b2b-research/b2b-content-marketing-trends-research-2025)
+- [Joe Pulizzi on the Content Inc. model, Magnificent Marketing interview](https://www.magnificent.com/magnificent-stuff/content-inc-model)
+- [Google Search Central: Spam policies](https://developers.google.com/search/docs/essentials/spam-policies)
 - [@kunalvg: conversations as content](https://x.com/kunalvg/status/1696130516045471844)
 - [@kunalvg: power-user group chats as your content strategy](https://x.com/kunalvg/status/2042111501608391080)
 - [@kunalvg: 50+ case studies in every format](https://x.com/kunalvg/status/1697157671567470819)
