@@ -30,7 +30,9 @@
 	const under = $derived(ctr <= line);
 
 	const percent = (value: number) => `${Number(value.toFixed(1))}%`;
-	const scale = $derived(Math.max(MIN_SCALE, Math.ceil(Math.max(...benchmarks.map(benchmarkFor)) * HEADROOM)));
+	const scale = $derived(
+		Math.min(100, Math.max(MIN_SCALE, Math.ceil(Math.max(...benchmarks.map(benchmarkFor)) * HEADROOM)))
+	);
 	const along = (value: number) => `${(Math.min(value, scale) / scale) * 100}%`;
 
 	const verdict = $derived(under ? 'Underperformer against this benchmark' : 'Not an underperformer');
