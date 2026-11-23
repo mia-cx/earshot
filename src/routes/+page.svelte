@@ -45,7 +45,6 @@
 		sign-up
 	</p>
 	<div class="actions">
-		<a href={first.href} class="cta start">Start lesson 1 <span aria-hidden="true">→</span></a>
 		<!-- Returning readers (data-returning, set in app.html before paint) get Continue as the main action. -->
 		<span class="resume">
 			{#if progress.done.size}
@@ -56,6 +55,7 @@
 				{/if}
 			{/if}
 		</span>
+		<a href={first.href} class="cta start">Start lesson 1 <span aria-hidden="true">→</span></a>
 	</div>
 	<nav class="strip" aria-label="Modules">
 		{#each data.outline as module (module.slug)}
@@ -242,7 +242,6 @@
 			display: contents;
 		}
 		& .start {
-			order: 1;
 			padding: 0;
 			background: none;
 			color: inherit;
