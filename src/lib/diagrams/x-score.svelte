@@ -22,7 +22,7 @@
 
 	const signed = (n: number) => `${n < 0 ? '−' : '+'}${Math.abs(n).toFixed(2)}`;
 	const sentence = $derived(
-		`Score for this viewer: ${signed(score)}. ${largest.label} moves it most${largest.points < 0 ? ', downwards' : ''}.`
+		`These four actions add ${signed(score)} to this viewer's score. ${largest.label} moves it most${largest.points < 0 ? ', downwards' : ''}.`
 	);
 </script>
 
@@ -61,8 +61,9 @@
 	<p class="diagram-output mt-5" aria-live="polite">{sentence}</p>
 
 	<figcaption>
-		X predicts how likely this viewer is to take each action and multiplies by its weight. Weights from X's
-		open-source ranking code on 21 November 2026; the chances are examples, and the weights change without notice.
+		X predicts how likely this viewer is to take each action and multiplies by its weight. This shows four of the
+		actions, so it's part of the score, not all of it. Weights from X's open-source ranking code on 21 November 2026;
+		the chances are examples, and the weights change without notice.
 	</figcaption>
 </figure>
 

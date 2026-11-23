@@ -48,7 +48,7 @@ Ryan (@ryangrowthh) turned the table into like-equivalents, such as a share wort
 >
 > Profile clicks count for 0, so posts built to send people to your profile earn nothing for it.
 
-The diagram scores one post for one viewer the way X's code does: each action's chance times its weight. Raise the share chance, then the mute chance, and watch which one moves the score.
+The diagram works through part of one viewer's score the way X's code does, for four of the actions: each action's chance times its weight. Raise the share chance, then the mute chance, and watch which one moves it.
 
 > [!DIAGRAM] x-score
 
