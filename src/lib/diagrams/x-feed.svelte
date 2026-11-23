@@ -16,7 +16,7 @@
 
 	const stages = [
 		{ name: 'Find', result: 'Thousands of candidates' },
-		{ name: 'Score', result: 'Every candidate scored for one viewer' },
+		{ name: 'Score', result: 'The remaining candidates scored for one viewer' },
 		{ name: 'Filter', result: 'Some dropped, the rest ranked into the feed' }
 	];
 
@@ -95,8 +95,8 @@
 	</div>
 
 	<figcaption>
-		Every feed refresh runs these three stages. Names and steps from X’s open-source ranking code; parts of the system
-		are closed.
+		A simplified picture of each feed refresh, based on X’s open-source ranking code. In the real pipeline, stale, seen,
+		blocked and muted posts can be dropped before scoring, and safety checks run after. Parts of the system are closed.
 	</figcaption>
 </figure>
 

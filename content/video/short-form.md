@@ -30,7 +30,7 @@ Only the chapter list of tuanle's video was available, so the reasoning behind t
 
 A big creator's views mostly reflect their audience size. The useful signal is the **outlier**: a video that did far better than that creator's usual views or follower count. The gap suggests the format did some of the work. It doesn't prove it: luck, timing and topic play a part too, so treat outliers as formats worth testing, not proof they work.
 
-The platforms judge a video against its own baseline too. YouTube's [retention report](https://support.google.com/youtube/answer/9314415) compares a video's retention curve with your own 10 most recent videos of similar length. TikTok says follower count and past hits aren't direct ranking factors, though a bigger following can still bring more views.
+Judge your own format tests the same way. YouTube Studio's [retention report](https://support.google.com/youtube/answer/9314415) can compare a video's retention curve with your 10 most recent videos of similar length; that's your private analytics, not how YouTube ranks. TikTok says follower count and past hits aren't direct ranking factors, though a bigger following can still bring more views.
 
 1. Shortlist creators under about 100,000 followers who have several breakouts.
 2. For each one, scroll their last 20 videos and note their usual views.
