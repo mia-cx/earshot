@@ -5,13 +5,16 @@ description: Publish a page per buying decision, join the right threads, and lis
 ---
 
 > [!TLDR]
+> - AI splits a question into narrower searches, so a page that answers one buyer segment's exact version has a search to match.
 > - Where AI barely mentions you, write one page per buyer segment's version of the decision, plus supporting comparison pages.
 > - Join only the Reddit threads your tracked buyer questions lead to, and contribute before you link.
 > - Publish an agent skill for your API so AI assistants can find and use your product.
 
 ## Write one page per decision and buyer
 
-**A small business and a large one ask the same question with different requirements, so each deserves its own answer.** Pick a category where your AI visibility is low, study what AI already cites there, and write dedicated pages for each buyer segment.
+**A small business and a large one ask the same question with different requirements, so each deserves its own answer.** AI search doesn't run your buyer's question as typed. [OpenAI says](https://help.openai.com/en/articles/9237897-chatgpt-search) ChatGPT rewrites it into "one or more targeted queries", adding context such as location. [Google](https://developers.google.com/search/docs/appearance/ai-features) describes "query fan-out": "issuing multiple related searches across subtopics". A page built for one segment's version of the decision is a direct match for one of those narrower searches.
+
+Pick a category where your AI visibility is low, study what AI already cites there, and write dedicated pages for each buyer segment.
 
 > [!TRICK] The Ramp pattern
 > 1. Pick one category with a low baseline. Ramp had 3.2% AI visibility in accounts payable.
@@ -19,15 +22,18 @@ description: Publish a page per buying decision, join the right threads, and lis
 > 3. Write one page per segment: "accounts payable software for small businesses" and "accounts payable software for large businesses".
 > 4. Support them with related pages: accounts payable automation software comparisons, and AI in accounts payable.
 >
-> Reported result, relayed by an AI-search vendor and credited to Profound: the two pages earned 300+ citations in one month, visibility rose from 3.2% to 22.2%, and Ramp moved from 19th to 8th among fintech brands in the category. Secondhand.
+> Reported result, from [Profound's case study](https://www.tryprofound.com/customers/ramp-case-study), the vendor whose tool Ramp used: the two pages earned 300+ citations in one month, visibility rose from 3.2% to 22.2%, and Ramp moved from 19th to 8th among fintech brands in the category.
+
+> [!RISK] The "one month" doesn't match the charts
+> Profound's text says one month, but its own charts span 1 December 2024 to 15 February 2025, about ten weeks. The page names no AI engines and no prompt count, so you can't rerun its measurement. Expect a slower, smaller result.
 
 The commercial pages themselves are covered in *Build the pages buyers check before paying*.
 
 ## Join only the threads your questions point to
 
-Reddit threads are among the third-party sources AI cites. Your tracked buyer questions tell you which conversations matter: when a thread shows up as a cited source for a question you track, that is where to participate. Focus on communities close to your product and buyer instead of posting everywhere.
+Reddit threads are among the third-party sources AI cites. In [one vendor's data](https://arxiv.org/abs/2606.20065) (correlational, from its own clients), Reddit was among the most-cited sources after company sites and YouTube. Your tracked buyer questions tell you which conversations matter: when a thread shows up as a cited source for a question you track, that is where to participate. Focus on communities close to your product and buyer instead of posting everywhere.
 
-Post things the community would value even without your link, and participate before you promote. Answer on Reddit and Quora as yourself, and say you work on the product. Mention your company in at most one answer per subreddit per week. The wider community list lives in *Find your first 100 users*.
+Post things the community would value even without your link, and participate before you promote. Answer on Reddit and Quora as yourself, and say you work on the product. TheoAGI's rule of thumb: mention your company in at most one answer per subreddit per week. Each subreddit's own rules come first. The wider community list lives in *Find your first 100 users*.
 
 > [!RISK] Links without context are spam
 > On Reddit and Hacker News, a link dropped without context gets treated as spam. Answer the question in full in the thread, and add your link only where it genuinely helps.
@@ -36,8 +42,10 @@ Post things the community would value even without your link, and participate be
 
 AI assistants look for tools to use on a person's behalf. If your product has an API, give agents instructions for using it, and list them where assistants look.
 
+[Anthropic's Agent Skills docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) explain how an agent finds a skill. At startup it reads only each skill's `name` and `description`, and "the `description` is what Claude matches your request against". So the description must say what your skill does and when to use it, in the words a user would type.
+
 > [!TRICK] List an agent skill on skills.sh
-> 1. Write a `SKILL.md` that tells an agent how to use your API. Claude can write it for you.
+> 1. Write a `SKILL.md` that tells an agent how to use your API, with a `description` that names the task and when to use it. Claude can write it for you.
 > 2. Put it in a public GitHub repo.
 > 3. Run this once:
 >
@@ -68,6 +76,11 @@ AI assistants look for tools to use on a person's behalf. If your product has an
 
 ## Sources
 
+- [OpenAI: ChatGPT search](https://help.openai.com/en/articles/9237897-chatgpt-search)
+- [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
+- [Profound: How Ramp increased AI brand visibility 7x in accounts payable](https://www.tryprofound.com/customers/ramp-case-study)
+- [Pratyush Kumar, *Generative Engine Optimization at Scale* (2026)](https://arxiv.org/abs/2606.20065)
+- [Anthropic: Agent Skills overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
 - [@wespreadjam: Ramp's pages per buying decision](https://x.com/wespreadjam/status/2117333079106932897)
 - [@wespreadjam: Granola's Reddit targeting from tracked questions](https://x.com/wespreadjam/status/2115568290307469548)
 - [@2whazzuup: links without context on Reddit and Hacker News](https://x.com/2whazzuup/status/2119247229601062993)

@@ -5,14 +5,16 @@ description: Run a weekly routine that turns 20 prospects into live, checked lin
 ---
 
 > [!TLDR]
+> - Links build up slowly from places that fit. Google treats bulk and automated links as spam, so a small weekly habit beats a burst.
 > - Pick 2 or 3 categories of sites that fit your business, and shortlist 20 prospects.
-> - Build one reusable submission kit so each submission takes minutes.
-> - Submit five a week on a fixed Monday-to-Friday rhythm.
+> - Build one reusable submission kit, then submit five a week on a fixed Monday-to-Friday rhythm.
 > - Approval is not a link. Open the live page and check, then keep only what sent visitors or relationships.
 
 ## Pick two or three categories that fit
 
-**Start narrow: two or three kinds of site, chosen for where your buyers already look.** The categories differ by business:
+**Start narrow: a few kinds of site, worked by hand, every week.** [Google's SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide) says links from other sites build up "naturally over time", and warns that "you can overdo promoting your site and actually harm it". [Google's spam policies](https://developers.google.com/search/docs/essentials/spam-policies#link-spam) name low-quality directory links and links made by automated programs as link spam. A steady habit in places your buyers already look stays on the right side of both.
+
+The categories differ by business:
 
 - SaaS: software directories, startup launches, developer resources.
 - Local tutoring company: local listings, educational resources, community partnerships.
@@ -24,7 +26,7 @@ From those categories, shortlist 20 prospects and score each one as in *Know wha
 
 Most submissions ask for the same things. Gather them once in a folder: website URL, short description, long description, logo, screenshots, founder bio and story, tagline, project examples.
 
-**Keep the name, the one-line description and the logo identical everywhere**, so Google and AI tools recognise every listing as the same product. Tailor the longer descriptions to each audience instead of pasting the same promotional copy everywhere.
+**Keep the name, the one-line description and the logo identical everywhere**, so people and search tools can match every listing to the same product. That's practitioner advice, not a documented rule. Tailor the longer descriptions to each audience instead of pasting the same promotional copy everywhere.
 
 Pick 20 to 30 launch platforms and software directories where your buyers look, not 300.
 
@@ -39,7 +41,7 @@ Pick 20 to 30 launch platforms and software directories where your buyers look, 
 
 ## Track the link, not the approval
 
-A site accepting your submission does not mean you have a backlink. Visit the published page and check the actual link: it may be missing, unclickable or marked nofollow.
+A site accepting your submission does not mean you have a backlink. Visit the published page and check the actual link: it may be missing, unclickable or marked nofollow. Google says links marked [`nofollow`, `ugc` or `sponsored`](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links) "will generally not be followed". They can still send visitors, so record the attribute and judge the link by its traffic.
 
 > [!TRICK] Tracker columns
 > | Field | What to record |
@@ -70,7 +72,7 @@ These lists are for discovery: pick only entries where you qualify and your buye
 > - **More:** a searchable list at https://backlinkforme.com/backlinks (the list author's own site).
 
 > [!RISK] Empty profiles and reciprocal badges
-> Listings that require a link back to them, and mass submissions to many directories, can count as link schemes under Google's spam policies. A profile created only to hold your URL adds nothing. Fill in every profile you create, and skip directories whose free route demands a reciprocal badge.
+> Google's spam policies name "requiring a link as part of a Terms of Service" without letting you mark it nofollow, low-quality directory links, and automated submissions as link spam. A profile created only to hold your URL adds nothing. Fill in every profile you create, and skip directories whose free route demands a reciprocal badge.
 
 > [!FORM] Your link kit
 > 1. What do we do? What problem do we solve? Give one short, precise answer.
@@ -93,6 +95,9 @@ These lists are for discovery: pick only entries where you qualify and your buye
 
 ## Sources
 
+- [Google Search Central: SEO Starter Guide](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+- [Google Search Central: Spam policies, link spam](https://developers.google.com/search/docs/essentials/spam-policies#link-spam)
+- [Google Search Central: Qualify your outbound links](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links)
 - [@2whazzuup: 200 backlink opportunities and a weekly workflow](https://x.com/2whazzuup/status/2119247229601062993)
 - [@borjafat: claiming business listings and keeping details consistent](https://x.com/borjafat/status/2116164330014007296)
 - [@TheoAGI: the one SEO/GEO playbook distilled from 66 articles](https://x.com/TheoAGI/status/2120163220312699025)
