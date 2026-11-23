@@ -16,7 +16,6 @@ export const GET = ({ url }) => {
 		'',
 		`- [Course home](${at('/')}): what the course is and how a lesson works.`,
 		`- [First lesson: ${first.title}](${at(first.markdownHref ?? first.href)}): ${first.summary}`,
-		`- [Course map](${at('/map')}): every module and lesson in order.`,
 		`- [Sources](${at('/sources')}): the research and posts behind the lessons.`,
 		'',
 		'## Agent skills',
