@@ -13,13 +13,17 @@ description: Catch bot mistakes with a finish line, a fresh reviewer and spot ch
 
 ## You can't see where the bot is weak
 
-In a field experiment with 758 Boston Consulting Group consultants, [Fabrizio Dell'Acqua, Ethan Mollick and colleagues](https://doi.org/10.1287/orsc.2025.21838) found AI made them 25.1% faster with better work on tasks it handled well. On one task picked to sit just outside what it could do, consultants using AI were 19% less likely to get the right answer. The authors call this a jagged frontier: tasks that look equally hard fall on different sides. And [OpenAI researchers found](https://arxiv.org/abs/2509.04664) that models guess rather than say "I don't know", because their training rewards guessing, so a confident draft tells you nothing about whether it's right.
+AI quality has a **jagged frontier**: tasks that look equally hard fall on different sides. In a field experiment with 758 Boston Consulting Group consultants, [Fabrizio Dell'Acqua, Ethan Mollick and colleagues](https://doi.org/10.1287/orsc.2025.21838) found AI made them 25.1% faster with better work on tasks it handled well. On one task picked just outside that edge, AI users were 19% less likely to get the right answer.
+
+A bot won't warn you when it crosses that line. [OpenAI researchers found](https://arxiv.org/abs/2509.04664) models guess rather than say "I don't know" because training rewards guessing. A confident draft tells you nothing about whether it's right.
 
 ## Fix the brief, not the draft
 
-When a bot's output is wrong, correct the charter or shared config, not the single draft. **Most bad output traces to missing input**, and recording why something failed is how your taste compounds into the system.
+When a bot's output is wrong, fix the charter or shared config, not the draft. **Most bad output traces to missing input**, and recording why something failed is how your taste compounds into the system.
 
-Kyle Hunt saw 50%+ client revision rates as an agency COO; he traces 80% of them to bad briefing, incomplete onboarding information and no client-specific do's-and-don'ts list. Addy Osmani says the same from the engineering side: when output misses your standard, write down why in shared config, a hook or a test. If a second round of corrections hasn't got there, stop tweaking and rewrite the prompt.
+As an agency COO, Kyle Hunt saw 50%+ client revision rates and traced 80% of them to bad briefing, incomplete onboarding information and no client-specific do's-and-don'ts list. Addy Osmani says the same from engineering: when output misses your standard, write down why in shared config, a hook or a test.
+
+If two rounds of corrections haven't got there, stop tweaking and rewrite the prompt.
 
 > [!TRICK] Run a revision diagnostic
 > Pull your last ~500 revision comments (or as many as you have) and run:
@@ -37,7 +41,7 @@ Set a tangible finish line up front: a passing test, a screenshot, a log. Decide
 - When it reports done, read the command it ran and its output before you read its summary.
 - At the end, ask "Did I miss anything?" Osmani says it routinely surfaces two or three more items.
 
-A green check proves one thing. Cheap generated tests produce lots of green that can miss broken features, especially when the test shares the feature's mistake. The rule from the Claude Code team's review write-up: "If you can't say what the checks would miss, ask for a real review rather than a quick approval."
+A green check only proves what it tested. Cheap generated tests pass easily while missing broken features, especially when the test shares the feature's mistake. The rule from the Claude Code team's review write-up: "If you can't say what the checks would miss, ask for a real review rather than a quick approval."
 
 ## Review with a fresh agent
 
@@ -55,7 +59,7 @@ The agent you've been working with fills gaps from context it shares with you. A
 
 ## Open the sources behind any summary
 
-When an agent summarises customer calls, research or data, open a couple of the original documents and recompute any number your recommendation depends on. After a synthesis of fifty customer calls, read two of the calls yourself. For an audit, trace every number back to the client's own file.
+Never trust a summary on faith. Open a couple of original documents and recompute any number your recommendation depends on. After summarising fifty customer calls, read two yourself. For an audit, trace every number back to the client's file.
 
 ## Step review down as the bot earns it
 

@@ -12,7 +12,7 @@ description: Design an agent that filters noise, works ahead, keeps context lean
 
 ## Filter with rules, then the model
 
-Most incoming events need no action. **Drop noise with cheap, fixed rules first** (source, channel, allowlists) and send only the ambiguous candidates to the model, whose policies you can edit in plain language.
+Most incoming events need no action. **Drop noise with cheap, fixed rules first** (source, channel, allowlists). Send only the ambiguous candidates to the model, where you can edit the policy in plain language.
 
 For each source, set one of three modes:
 
@@ -40,7 +40,7 @@ Match what the agent says to where it says it, and keep its reasoning and tool l
 
 ## Treat the context window as a cache
 
-Put in what the model is likely to need soon, and leave the long tail outside with a pointer it can follow.
+Keep what the model needs soon in context, and leave the long tail outside behind a pointer.
 
 Anthropic's [context guide](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) treats context as a budget: every token added makes the model a little worse at recalling the rest. Its agents keep "lightweight identifiers" such as file paths and links, and load the content only when needed. [Liu and colleagues found](https://arxiv.org/abs/2307.03172) that models are worst at using facts placed in the middle of a long input, so a bigger window doesn't fix a stuffed one.
 
@@ -53,18 +53,24 @@ Anthropic's [context guide](https://www.anthropic.com/engineering/effective-cont
 
 ## Never block the conversation
 
-A long-running tool should start in the background and report back as a new event; a blocking call leaves the agent deaf until it finishes. Replace `run()` with `start()` (returns "Started" at once) and `stop()`, and deliver results as new messages. DeepSeek has built this but hasn't turned it on by default. Sharma suggests a durable workflow engine such as Temporal, so a run resumes from the exact step after a crash or a multi-day approval. Anthropic [built the same](https://www.anthropic.com/engineering/multi-agent-research-system) for its research agents, because "agents are stateful and errors compound" and restarting from scratch is slow and costly.
+A blocking tool call leaves the agent deaf until it finishes. Run long tools in the background instead: replace `run()` with `start()` (returns "Started" at once) and `stop()`, and deliver results as new messages. DeepSeek has built this but hasn't turned it on by default.
 
-Keep the agent in the cloud and the tools where they live. The agent keeps its state in a database, runs on stateless cloud compute, and reaches your machines through a thin daemon. Your laptop sleeping no longer stops it, and a device that reconnects runs its queued tasks. Anthropic calls this ["decoupling the brain from the hands"](https://www.anthropic.com/research/managed-agents): the agent's history lives in a log outside the model, so a crashed agent restarts from where it was, and logins stay in a vault the model never sees. DeepSeek's prototype is [on GitHub](https://github.com/deepseek-ai/dsh-superagent-prototype) (not an official product).
+Pair that with durable state so a crash or multi-day approval doesn't wipe out a run. Sharma suggests a durable workflow engine like Temporal to resume from the exact step. Anthropic [built the same](https://www.anthropic.com/engineering/multi-agent-research-system) for its research agents because "agents are stateful and errors compound", making a restart from scratch slow and costly.
+
+Keep the agent in the cloud and its tools where they live. Store state in a database, run on stateless cloud compute, and reach your machines through a thin daemon. Your laptop sleeping no longer stops it, and a reconnecting device runs its queued tasks.
+
+Anthropic calls this ["decoupling the brain from the hands"](https://www.anthropic.com/research/managed-agents): the agent's history sits in a log outside the model, so a crashed agent restarts from where it was, and logins stay in a vault the model never sees. DeepSeek's prototype is [on GitHub](https://github.com/deepseek-ai/dsh-superagent-prototype) (not an official product).
 
 > [!RISK] One compromised loop reaches every machine
 > If the cloud loop is compromised, every device connected to it can be taken over. Give each connection the least access it needs and keep credentials out of the model's context; see *Keep bots from doing damage*.
 
 ## Build delegation into the structure
 
-Telling a single agent to delegate is unreliable, because it decides case by case whether work is "small". Anthropic says the same of its own agents: they're "not yet great at coordinating and delegating to other agents in real time". In DeepSeek's test, a neutral prompt delegated in 0 of 5 runs and a delegation-first prompt in 4 of 5; the one run where it judged the work "small" produced the slowest results. The workload was synthetic and the authors call it indicative only.
+Telling a single agent to delegate is unreliable, because it decides case by case whether a job is "small". Anthropic says the same of its own agents: they're "not yet great at coordinating and delegating to other agents in real time".
 
-The fix is structural: the coordinator has no tools to do the work, and workers see only their own threads. See *Put a coordinator over your bots* for the timings and the solo version of this split.
+In DeepSeek's test, a neutral prompt delegated in 0 of 5 runs and a delegation-first prompt in 4 of 5. The one run where it called the work "small" was the slowest. The workload was synthetic and the authors call it indicative only.
+
+Fix it in the structure, not the prompt: give the coordinator no tools to do the work, and give workers only their own threads. See *Put a coordinator over your bots* for the timings and the solo version of this split.
 
 > [!DO] Write your agent's filter table
 > Fill in your agent's filters above: put every source your agent watches (inboxes, channels, repos, calendars) under one mode, then download it.

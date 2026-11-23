@@ -32,7 +32,9 @@ The design rules are worth copying into any agent you build:
 - Cite sample sizes, and call any pattern under 6 videos "early". Six is the author's rule, not a statistical test, but the instinct is right: Amos Tversky and Daniel Kahneman showed that people [trust small samples](https://doi.org/10.1037/h0031322) far more than they should.
 
 > [!RISK] The author sells the data source
-> The prompts come from Virlo's co-founder. Virlo is a paid database that says it holds 21.6M+ viral TikTok, Instagram and YouTube Shorts videos, and the prompts call its specific tools (marketing agents, Virality Score) and Grok Bot features (skills, routines) that may change. No results are reported. To stay portable, replace each "On Virlo" or "from Virlo" line with whatever your agent can reach: another data tool, Meta's public Ad Library for ads, or files you export by hand.
+> The prompts come from Virlo's co-founder, with no results reported. Virlo is a paid database that says it holds 21.6M+ viral TikTok, Instagram and YouTube Shorts videos. The prompts also call Virlo tools (marketing agents, Virality Score) and Grok Bot features (skills, routines) that may change.
+>
+> To stay portable, swap each "On Virlo" or "from Virlo" line for whatever your agent can reach: another data tool, Meta's public Ad Library for ads, or files you export by hand.
 
 ## Wire it into your agent tool
 
@@ -66,10 +68,10 @@ Any agent tool that can connect to data, save a repeatable skill and run on a sc
 
 ## Start with a head and an outlier finder
 
-The head bot interviews you once, writes the shared brief, and each Monday scores ideas for fit, ease and novelty. The Outlier Finder feeds it: videos that did far better than their creator's size, because that shows the format did the work, not the audience.
+The head bot interviews you once, writes the shared brief, and each Monday scores ideas for fit, ease and novelty. The Outlier Finder feeds it videos that did far better than their creator's size, because that shows the format did the work, not the audience.
 
 > [!RISK] Outliers hide the failures
-> Jerker Denrell's research on [learning from successes](https://ora.ox.ac.uk/objects/uuid:a8102a34-f7a4-40de-91c0-139355f97358) shows that when you only study winners, risky choices look like the cause of success, because the many who tried the same thing and failed are out of view. Before you copy an outlier's format, ask the bot for 5 videos in your niche that used the same hook or format and flopped. If they exist, the format didn't do the work alone.
+> Study only winners and risky choices look like the cause of success, because everyone who tried the same move and failed is out of view. Jerker Denrell's research on [learning from successes](https://ora.ox.ac.uk/objects/uuid:a8102a34-f7a4-40de-91c0-139355f97358) shows this trap. Before copying an outlier, ask the bot for 5 videos in your niche using the same hook or format that flopped. If they exist, the format didn't do the work alone.
 
 > [!TRICK] Head of Social bot
 > ```
@@ -189,7 +191,7 @@ The Niche Map runs monthly and shows who owns your topic and which formats nobod
 
 ## Sort trends and mine comments
 
-Trend Radar judges each trend on one thing: would your buyer care. Size doesn't matter. Comment Miner collects your audience's exact words under the week's best videos, so each video you make answers a real comment.
+Trend Radar judges each trend on one test: whether your buyer would care. Size doesn't matter. Comment Miner collects your audience's exact words under the week's best videos, so each video you make answers a real comment.
 
 > [!TRICK] Trend Radar bot
 > ```

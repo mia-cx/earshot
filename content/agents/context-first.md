@@ -12,30 +12,30 @@ description: Set up a bot with your examples, rules and playbook so it stops pro
 
 ## Input beats wording
 
-A bot defaults to the most generic answer. It only produces work at your level once it reads **your process docs, finished examples and style guide**, so what you feed it matters more than how you phrase the request.
+A bot defaults to the most generic answer. It only reaches your standard once it reads **your process docs, finished examples and style guide**, so what you feed it matters more than how you phrase the request.
 
-Anthropic's engineers call this [context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents): find the smallest set of high-signal information that gets the result, and give "diverse, canonical examples" rather than a long list of rules. [OpenAI's agent guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) says to write a bot's instructions from the procedures and scripts you already use. Ethan Mollick, who studies AI at work at Wharton, [puts it plainly](https://www.oneusefulthing.org/p/on-boarding-your-ai-intern): "giving the AI context and constraints makes a big difference."
+Anthropic's engineers call this [context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents): give the smallest set of high-signal information that gets the result, with "diverse, canonical examples" rather than a long list of rules. [OpenAI's agent guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) says to write instructions from the procedures and scripts you already use. Wharton's Ethan Mollick, who studies AI at work, [puts it plainly](https://www.oneusefulthing.org/p/on-boarding-your-ai-intern): "giving the AI context and constraints makes a big difference."
 
-Kyle Hunt runs a solo agency on bots and built guides for most of what he delivers. He reports $382,428 in year one at 87% margins, after spending $7,000 to $8,000 a month on AI. Those are his own numbers, and his posts also sell his consulting.
+Kyle Hunt runs a solo agency on bots with guides for most of what he delivers. He reports $382,428 in year one at 87% margins, after spending $7,000 to $8,000 a month on AI. Those are his own numbers, and his posts also sell his consulting.
 
-Before you automate a job, gather three things:
+Before you automate a job, gather three files and tell the bot to read them before every run:
 - a process doc: how you do the job, step by step
-- 3 finished examples you were happy with, as different from each other as your real work is
+- 3 finished examples you were happy with, varied in topic or format (three near-identical ones teach the bot to copy one shape)
 - a style guide plus a banned-words list
-
-Then tell the bot to read those files before every run. Three near-identical examples teach the bot to copy one shape, so pick ones that differ in topic or format.
 
 ## Write the brief yourself first
 
-An agent fills the gaps in a vague request and returns something that looks finished. Your prompt shows how well you understand the problem, so write the brief before you ask for help. Addy Osmani's checklist:
+A vague request doesn't stop an agent. It fills the gaps and returns something that only looks finished. Write the brief yourself first; your prompt shows how well you understand the problem. Addy Osmani's checklist:
 
 - the audience
 - what's out of scope
 - the definition of done
 
-Anthropic saw what happens without them when it [built its research agents](https://www.anthropic.com/engineering/multi-agent-research-system): agents given a vague task duplicated each other's work and left gaps. If you can't fill those in, ask the agent to interview you about what it doesn't understand. If two rounds of corrections haven't landed, stop tweaking and rewrite the prompt.
+Anthropic saw what happens without them when [building its research agents](https://www.anthropic.com/engineering/multi-agent-research-system): agents given a vague task duplicated each other's work and left gaps.
 
-Hunt says prompting matters less as models get smarter; Osmani calls prompting a thinking skill. They agree on the part that counts: the substance you supply (data, examples, intent, finish line), not clever wording.
+If you can't fill in the brief yet, ask the agent to interview you about what it doesn't understand. If two rounds of corrections haven't landed, stop tweaking and rewrite the prompt.
+
+Hunt says prompting matters less as models get smarter; Osmani calls it a thinking skill. Both land on the same point: supply real substance (data, examples, intent, finish line), not clever wording.
 
 ## Set it up once and let it learn
 
@@ -79,7 +79,7 @@ Put a standing brief in a Claude Project, a custom GPT or a Gemini Gem, so you n
 
 ## Let the bot write your playbook
 
-You don't have to write the process doc from scratch. Give AI your finished work and recordings of you doing the job, and have it extract the steps. Comparing recordings side by side shows where you do the job inconsistently, which is exactly where a bot would guess. Hunt says this cut one 10 to 14 day process to 5 days (his anecdote).
+You don't have to write the process doc from scratch. Give AI your finished work and recordings of you doing the job, and have it extract the steps. Comparing recordings side by side exposes where you're inconsistent, which is exactly where a bot would guess. Hunt says this cut one 10 to 14 day process to 5 days (his anecdote).
 
 > [!TRICK] Playbook-from-recordings prompt
 > ```

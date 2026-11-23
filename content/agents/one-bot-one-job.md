@@ -12,11 +12,11 @@ description: Pick a first job, write its charter, and test it three times before
 
 ## One bot, one job, end to end
 
-Don't automate a role that is really five undefined jobs. Give each bot **one job from first input to finished draft**, the same way you wouldn't hire before you have systems.
+Don't automate a vague role that hides five undefined jobs. Give each bot **one job from first input to finished draft**, the same way you wouldn't hire before you have systems. [OpenAI's agent guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) backs this up: teams "achieve greater success with an incremental approach", getting one agent working before adding more.
 
-[OpenAI's agent guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) reports that teams "achieve greater success with an incremental approach": get one agent working before you add more. When Anthropic [built its research agents](https://www.anthropic.com/engineering/multi-agent-research-system), it found each delegated task needs four things: an objective, an output format, the tools and sources to use, and clear boundaries. The charter below has a line for each.
+When Anthropic [built its research agents](https://www.anthropic.com/engineering/multi-agent-research-system), it found each delegated task needs four things: an objective, an output format, the tools and sources to use, and clear boundaries. The charter below has a line for each.
 
-Test the brief with one question: could the bot finish without asking you, the client or anyone else? Missing information forces it to ask or guess, and guessing creates revisions.
+Test the brief before you run it: could the bot finish without asking you, the client or anyone else? Missing details force it to ask or guess, and guessing creates revisions.
 
 ## Pick a first job that can't embarrass the tool
 
@@ -74,7 +74,7 @@ Kyle Hunt pastes the same charter into every bot. He wrote it for Grok Bot, but 
 
 ## Dry-run, then run it by hand three times
 
-Before the first real run, ask the bot to describe its plan. A misread job then shows up as a chat message, and the fix is one line in the charter.
+Before the first real run, ask the bot to describe its plan. If it misread the job, you catch it in chat and fix one line in the charter.
 
 One clean run only proves the easy case. Run the job manually on 3 different inputs, fixing the charter each time, before you schedule it.
 
@@ -90,7 +90,7 @@ Three runs is a minimum, not proof. Anthropic started testing its agents on abou
 > - Wednesday to Friday: 3 live runs on different inputs. Review everything and fix the charter each time.
 > - Next Monday: put it on a routine and start counting toward 9 of 10 clean runs.
 >
-> Triggers: use the clock for reports (weekdays at 7am, the 1st of the month). Use events, such as a new Slack message, for anything that only matters when something happens, where your tool supports it.
+> Triggers: use a schedule for reports (weekdays at 7am, the 1st of the month). Where your tool supports it, use events, like a new Slack message, for work that only runs when something happens.
 
 > [!DO] Score three jobs against the checks
 > Fill in your first bot's job above for 3 tasks you did last week: yes or no for weekly, 2+ apps and stable steps. The one with three yeses is your first bot. Then download it.
