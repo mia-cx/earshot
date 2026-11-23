@@ -1,5 +1,11 @@
 # earshot
 
+## 0.1.1
+
+### Patch Changes
+
+- 9c71359: Earshot lives at earshot.mia.cx. Links to seo.mia.cx redirect to the same page there.
+
 ## 0.1.0
 
 ### Minor Changes
