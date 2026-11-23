@@ -41,7 +41,7 @@ Ad platforms optimise on the conversion events you send. [Meta's documentation](
 
 The only way to know what ads add for your account is to switch them off somewhere and watch sales. Korzhov puts platform over-crediting at 2 to 5 times; the experiments above point the same way, though the size varies by account.
 
-[Google's researchers call this a geo experiment](https://research.google/pubs/measuring-ad-effectiveness-using-geo-experiments/): split regions at random into ads on and ads off. The off regions show what would have happened anyway.
+[Google's researchers call this a geo experiment](https://research.google/pubs/measuring-ad-effectiveness-using-geo-experiments/): split regions at random into ads on and ads off. The off regions show what would have happened anyway. If Meta offers your account a Conversion Lift test, which holds out people instead of regions, use that first: Meta's own [GeoLift](https://facebookincubator.github.io/GeoLift/) team builds region tests for when it isn't possible.
 
 > [!TRICK] Run a regional holdout
 > - Turn Meta ads off in 5 matched regions for 4 weeks, and keep them running in 5 similar regions.
@@ -62,7 +62,7 @@ The only way to know what ads add for your account is to switch them off somewhe
 **Run time is the best public hint that an ad performs.** Nobody keeps paying for an ad that clearly loses money, so an ad live for two months is probably paying for itself. It's a heuristic, not proof: big brands also run awareness ads for months, and some accounts simply aren't managed.
 
 > [!TRICK] Rebuild competitor ads that ran 60+ days
-> 1. Have Claude Code write a scraper for the Meta Ad Library (free and public) covering 30 competitors.
+> 1. List the active ads of up to 30 competitors in the [Meta Ad Library](https://www.facebook.com/ads/library/) (free and public). Read it by hand, or use its [API](https://developers.facebook.com/docs/graph-api/reference/ads_archive/), which covers commercial ads only where they reached the EU. Don't scrape it: Meta's [terms](https://www.facebook.com/legal/automated_data_collection_terms) forbid automated collection without written permission.
 > 2. Keep the ads that have run for more than 60 days.
 > 3. Have AI rebuild each format for your product, with your own footage and claims.
 > 4. Upload them paused, and review before switching them on.
@@ -117,6 +117,9 @@ Korzhov expects agents to run competitors' ad accounts, bidding in the same auct
 - [Blake, Nosko and Tadelis, *Consumer Heterogeneity and Paid Search Effectiveness* (2014)](https://www.nber.org/system/files/working_papers/w20171/w20171.pdf)
 - [Lewis and Rao, *The Unfavorable Economics of Measuring the Returns to Advertising* (2015)](https://ideas.repec.org/a/oup/qjecon/v130y2015i4p1941-1973.html)
 - [Vaver and Koehler, *Measuring Ad Effectiveness Using Geo Experiments* (Google, 2011)](https://research.google/pubs/measuring-ad-effectiveness-using-geo-experiments/)
+- [Meta Open Source: GeoLift](https://facebookincubator.github.io/GeoLift/)
+- [Meta for Developers: Ad Library API (ads_archive)](https://developers.facebook.com/docs/graph-api/reference/ads_archive/)
+- [Meta: Automated Data Collection Terms](https://www.facebook.com/legal/automated_data_collection_terms)
 - [Meta for Developers: Conversions API best practices](https://developers.facebook.com/documentation/ads-commerce/conversions-api/best-practices)
 - [Meta for Developers: Deduplicate Pixel and server events](https://developers.facebook.com/documentation/ads-commerce/conversions-api/deduplicate-pixel-and-server-events)
 - [Raluca Budiu, *Information Scent* (Nielsen Norman Group, 2020)](https://www.nngroup.com/articles/information-scent/)
