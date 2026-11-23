@@ -85,7 +85,7 @@ Caples gives the same advice in *Tested Advertising Methods*: "Write a number of
 > A gap between what they know and what they want to know. It fails when the gap is the wrong size: too vague to care about, or so complete there's nothing left to find out.
 
 > [!CHECK] Your hook says "I grew fast." How do you make it stronger?
-> Make it specific with a number, a name or a timeframe, as in "I hit 5.8M impressions in my first month." Specifics beat vague promises.
+> Make it specific with a number, a name or a timeframe, as in "I hit 5.8M impressions in my first month." Specifics win when the hook is vague, but once it says enough, more detail costs clicks.
 
 > [!CHECK] Why should you write a post's hook after the body?
 > You don't know what the post promises until it's written. Then you write 5 to 10 hooks and cut to the best one.
