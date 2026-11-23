@@ -5,7 +5,7 @@ description: Diagnose a lost AI prompt, make one fix, and rerun to see if it mov
 ---
 
 > [!TLDR]
-> - Run AI visibility as an experiment: same prompts, one change, rerun. In a controlled study, adding evidence to a page made AI answers draw on it 30 to 40% more.
+> - Run AI visibility as an experiment: same prompts, one change, rerun. In a controlled study, adding evidence to a page gave it 30 to 40% more weight in AI answers.
 > - When AI skips you, find which of four causes applies before writing anything new.
 > - AI leans on other people's pages. Sort every cited source into own, claim, earn or contest; each needs a different action.
 
@@ -13,7 +13,7 @@ description: Diagnose a lost AI prompt, make one fix, and rerun to see if it mov
 
 **AI visibility improves through small, measured experiments, not by publishing more.** [Pranjal Aggarwal and colleagues](https://arxiv.org/abs/2311.09735) tested this directly (KDD 2024): they rewrote source pages one method at a time and measured how much of each page the AI answer used.
 
-Adding quotations, statistics or cited sources raised the paper's visibility score by 30 to 40%, with the biggest gains on pages ranked lower in search. That score counts how many of an answer's words come from the page, weighted toward the top. It measures how much one answer uses the page, not how often the page shows up across runs. Keyword stuffing didn't help. Their engine and queries were a benchmark, not your market, so rerun your own prompts to check.
+Adding quotations, statistics or cited sources raised the paper's visibility score by 30 to 40%, with the biggest gains on pages ranked lower in search. That score counts the words in answer sentences that cite the page, weighted toward the top of the answer. It measures how much one answer uses the page, not how often the page shows up across runs. Keyword stuffing didn't help. Their engine and queries were a benchmark, not your market, so rerun your own prompts to check.
 
 Keep a fixed list of real buying prompts (see *Track the questions buyers ask AI*) so before and after stay comparable. Because answers vary from run to run, rerun each prompt several times before calling a change.
 
