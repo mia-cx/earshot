@@ -28,6 +28,10 @@
 					if (typeof reader[name] === "string") document.documentElement.dataset[name] = reader[name];
 				}
 			} catch {}
+			// Mark returning readers (src/lib/progress.svelte.ts), so the home page leads with Continue from the first paint.
+			try {
+				if (JSON.parse(localStorage.getItem("earshot:done") ?? "[]").length) document.documentElement.dataset.returning = "";
+			} catch {}
 		</script>
 		%sveltekit.head%
 	</head>
