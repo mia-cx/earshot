@@ -108,7 +108,7 @@ Verdicts: **supported** (the source says this), **overstated** (the source says 
 | Peer review catches a median of about 60% of defects | **supported** | Boehm & Basili 2001 |
 | Very low reroll rate from these rules | **one person's claim** | EianLu's post |
 | "OpenAI says its Sora model may struggle with physics, cause and effect, left and right" | **overstated** as a current fact: this is OpenAI's February 2024 note on the first Sora model. Fixed: dated to 2024 | OpenAI 2024 |
-| Seedance prices (~¥1.5/s, ~¥0.5/s) | **one person's claim** (labelled; Volcengine pricing not opened) | EianLu's post |
+| Seedance prices (~¥1.5/s, ~¥0.5/s) | **supported**: Volcengine lists ¥70 and ¥23 per million tokens at 720p, and 720p at 24 fps is about 21,600 tokens a second | EianLu's post; [Volcengine Ark: Model pricing](https://www.volcengine.com/docs/82379/1544106) |
 | Viewers prefer centred front-facing subjects; 38/62% lines only for profiles facing in | **supported** | Palmer et al. 2008 |
 | Codex alone can do the job; Claude has better directing taste | **one person's claim** | EianLu's post |
 | Check palette sketches in greyscale for contrast | **one person's claim** (EianLu's practice) | EianLu's post |
@@ -129,6 +129,6 @@ Verdicts: **supported** (the source says this), **overstated** (the source says 
 
 ## Not verified
 
-- Volcengine (Chinese) pricing pages for Seedance were not opened; all prices stay labelled as the author's.
+- Seedance 2.5's price relative to 2.0 mini rests on the author's post; the lesson keeps it labelled as his.
 - Instagram's own Help Center pages return 400 to scripts; the saves metric was read from Meta's developer reference instead.
 - Romaniuk's *Building Distinctive Brand Assets* (2018) and the Disney animation principles (*The Illusion of Life*, 1981) were not opened.

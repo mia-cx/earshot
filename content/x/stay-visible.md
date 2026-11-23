@@ -33,7 +33,7 @@ Ryan says engagement from well-connected accounts in your niche counts for more 
 X's 2026 code still keeps a PageRank-style score over follows and engagement. Ryan says it lifts or caps every post, though the code only uses it in spam and enforcement rules, not as a multiplier on every post.
 
 - Engage genuinely with people in your niche to build a dense, high-quality network.
-- Engagement groups (accounts that agree to engage with each other's posts) do little. X's code comments say only actions on posts served in the Home feed count, so opening a post straight from a group chat "has no ranking impact".
+- Stay out of engagement groups (accounts that agree to engage with each other's posts). X's [authenticity policy](https://help.x.com/en/rules-and-policies/authenticity) bans "coordinating to exchange engagement", and they barely work anyway: X's code comments say only actions on posts served in the Home feed count, so opening a post straight from a group chat "has no ranking impact".
 
 > [!RISK] Labels limit every post
 > A spam or inauthentic-behaviour label cuts the visibility of a post or your whole account. Account labels also add up from what your posts collected. Avoid content that gets you muted, blocked or reported, and check X's Under the Hood tool to see labels on your account or posts marked as spam.
@@ -63,6 +63,7 @@ Ryan also warns that a troll blocking or muting you cuts your reach. For one tro
 ## Sources
 
 - [xAI: X For You feed algorithm (GitHub)](https://github.com/xai-org/x-algorithm)
+- [X Help: Authenticity policy](https://help.x.com/en/rules-and-policies/authenticity)
 - [Twitter: Tweepcred, PageRank reputation in the 2023 algorithm release (GitHub)](https://github.com/twitter/the-algorithm/blob/main/src/scala/com/twitter/graph/batch/job/tweepcred/README)
 - [@ryangrowthh: filters, reputation and the small-account boost](https://x.com/ryangrowthh/status/2117684231983800732)
 - [@AIGuide_: Ryan's growth to about 9,900 followers in a month](https://x.com/AIGuide_/status/2119241264843358402)

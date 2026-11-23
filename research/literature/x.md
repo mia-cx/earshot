@@ -126,7 +126,7 @@ Verdicts: **supported** (the source says this), **overstated** (the source says 
 | Engagement from well-connected niche accounts counts for more than a big follower count | **unsupported** as a fact: Ryan's view; the 2026 score has no such term. Fixed: attributed to Ryan | Ryan's article; README |
 | Tweepcred: PageRank over who mentions and reposts whom | **supported** | tweepcred README |
 | The 2026 PageRank-style score is used in spam rules | **overstated**: it runs over follows and engagement and also feeds enforcement and label rules. Fixed | README `user-cred-v2`; code search |
-| Engagement groups do little: only Home-served actions count | **supported** | param.rs comment |
+| Engagement groups do little: only Home-served actions count | **supported**, and they're banned: the authenticity policy prohibits "coordinating to exchange engagement" (read via Wayback, 15 Nov 2026) | param.rs comment; X authenticity policy |
 | Labels limit visibility; account labels aggregate; Under the Hood shows them | **supported** | README |
 | Ryan's account-hygiene tricks (Premium, ID, no 100% AI copy, avoid politics) | **one person's claim** | Ryan's article |
 | A troll blocking you: "X's code comments say otherwise" | **overstated**: true for one person's block, but `agatha` labels accounts from blocks and reports relative to likes, so a pile-on can still cost you. Fixed | param.rs comment; README `agatha` |
