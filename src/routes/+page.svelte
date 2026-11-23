@@ -13,6 +13,10 @@
 	const next = $derived(lessons.find((l) => !progress.done.has(l.id)));
 	const minutes = $derived(Math.round(lessons.reduce((n, l) => n + l.minutes, 0) / lessons.length));
 	const show = $derived(data.showcase);
+
+	$effect(() => {
+		document.documentElement.toggleAttribute('data-returning', progress.done.size > 0);
+	});
 	const description = $derived(
 		`${lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, grounded in marketing research and the best free posts on X. Short version first, one small task per lesson, no sign-up.`
 	);
@@ -37,16 +41,21 @@
 <section class="hero">
 	<h1>A free marketing course for builders with ADHD</h1>
 	<p class="facts tabular-nums">
-		{lessons.length} lessons · about {minutes} minutes each · {data.tricks} cheap tricks · no sign-up
+		{lessons.length} lessons · about {minutes} minutes each · {data.tricks} cheap tricks · {data.research} sources cited · no
+		sign-up
 	</p>
 	<div class="actions">
-		<a href={first.href} class="cta">Start lesson 1 <span aria-hidden="true">→</span></a>
-		<!-- Space is held for returning readers, so the page doesn't jump when their progress loads. -->
+		<!-- Returning readers (data-returning, set in app.html before paint) get Continue as the main action. -->
 		<span class="resume">
-			{#if progress.done.size && next}
-				<a href={next.href}>Continue with {next.title}</a>
+			{#if progress.done.size}
+				{#if next}
+					<a href={next.href} class="cta">Continue with lesson {lessons.indexOf(next) + 1} <span aria-hidden="true">→</span></a>
+				{:else}
+					<a href="/map" class="cta">Review on your map <span aria-hidden="true">→</span></a>
+				{/if}
 			{/if}
 		</span>
+		<a href={first.href} class="cta start">Start lesson 1 <span aria-hidden="true">→</span></a>
 	</div>
 	<nav class="strip" aria-label="Modules">
 		{#each data.outline as module (module.slug)}
@@ -225,8 +234,18 @@
 	}
 
 	.resume {
-		min-height: 1.5em;
-		& a {
+		display: none;
+	}
+
+	:global([data-returning]) {
+		& .resume {
+			display: contents;
+		}
+		& .start {
+			padding: 0;
+			background: none;
+			color: inherit;
+			font-size: 1rem;
 			font-weight: 650;
 			text-decoration: underline;
 			text-underline-offset: 5px;
