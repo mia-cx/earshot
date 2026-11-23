@@ -1,10 +1,10 @@
 ---
 title: Let an agent run your SEO
 order: 8
-description: Give an SEO agent real data, approval gates and a deploy check, and vet its skills first.
+description: Give an SEO agent real data, hard limits and a deploy check, and vet its skills.
 ---
 
-> [!TLDR]
+> [!TLDR] An SEO agent guesses when it lacks data and acts on what it's allowed to, so give it real data and enforce its limits outside the model.
 > - Numbers come from your tools, never from the model.
 > - Sort every action into allowed, needs approval, and never alone. Enforce the "never" in code, not in the prompt.
 > - Snapshot your key pages before every deploy and compare after, for the four changes that quietly kill a site.
@@ -12,12 +12,14 @@ description: Give an SEO agent real data, approval gates and a deploy check, and
 
 ## Numbers come from tools
 
-A model will happily invent a search volume or a click count. **Every number must come from a tool the agent called or a page it fetched.** If it can't check something, it writes "not checked".
+**Every number must come from a tool the agent called or a page it fetched.** Models happily invent search volumes and click counts. OpenAI's researchers [explain why](https://openai.com/index/why-language-models-hallucinate/): training and benchmarks "reward guessing over acknowledging uncertainty", and rare facts like your page's clicks can't be predicted from patterns. If the agent can't check a number, it writes "not checked".
 
 > [!TRICK] Catch a model that makes up numbers
-> Ask the agent for your top 5 pages by clicks over the last 3 months. Then open Search Console → Performance → Pages and compare. If the lists differ, it's guessing. Connect Search Console before it does anything else: mcp-gsc (AminForou/mcp-gsc on GitHub) is a free connector that runs on your machine and is read-only by default.
+> Ask the agent for your top 5 pages by clicks over the last 3 months, then compare with Search Console → Performance → Pages. If the lists differ, it's guessing. Connect Search Console first: mcp-gsc (AminForou/mcp-gsc on GitHub) is a free local connector that's read-only by default.
 
 ## Give it three permission tiers
+
+An agent with more permissions than its job needs does damage when it misreads a task or follows instructions hidden in a page it read. OWASP calls this [excessive agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) and recommends three fixes: minimum permissions, human approval for high-impact actions, and limits enforced outside the model.
 
 | Tier | Actions |
 | --- | --- |
@@ -27,11 +29,11 @@ A model will happily invent a search volume or a click count. **Every number mus
 
 For anything that needs approval, you see the diff first.
 
-**Put the "never" tier in a hook, not in the prompt.** A hook is a small script your agent tool runs before every action, and it can refuse the action. A line in the prompt is only a request. *Keep bots from doing damage* covers where to set approval gates.
+**Put the "never" tier in a hook, not the prompt.** A hook is a small script your agent tool runs before every action, and it can refuse the action. In Claude Code, a [`PreToolUse` hook](https://code.claude.com/docs/en/hooks) blocks a tool call by exiting with code 2. A line in the prompt is only a request. *Keep bots from doing damage* covers where to set approval gates.
 
 ## Check the site after every deploy
 
-Four changes kill a site quietly, with no error anyone sees:
+**Four silent changes can kill a site with no error anyone sees.** Each sends Google a signal: [`noindex`](https://developers.google.com/search/docs/crawling-indexing/robots/intro) removes a page, a [canonical](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls) can make Google show another URL in its place, and robots.txt stops crawling.
 
 - A page turns noindex.
 - A canonical starts pointing somewhere else.
@@ -50,7 +52,7 @@ Give drafts a scorecard, not a vibe check. The best skill TheoAGI read scores 8 
 Free SEO skills and repos for agents are everywhere, and GitHub stars don't tell you whether the advice is current. TheoAGI found a repo with 11,000 stars that gets ChatGPT's crawler wrong.
 
 > [!TRICK] The one-question test for an SEO tool
-> Ask it: "Which bot decides whether my site shows up in ChatGPT search?" OpenAI's docs say OAI-SearchBot. GPTBot only collects training data. If the tool gets this wrong, check the rest of its advice against primary docs too.
+> Ask it: "Which bot decides whether my site shows up in ChatGPT search?" [OpenAI's docs](https://developers.openai.com/api/docs/bots) say OAI-SearchBot. GPTBot only collects training data. If the tool gets this wrong, check the rest of its advice against primary docs too.
 >
 > TheoAGI's two picks after reading 14 repos: RomeoSEO/seo-skills (the clearest method, MIT licence, nothing sold inside) and AgriciDaniel/claude-seo (the most precise technical checks; it adds a link to a paid community after big reports).
 
@@ -74,4 +76,10 @@ Two companies that sell SEO tools, Distribb and ChatSEO, wrote most of the artic
 
 ## Sources
 
+- [Adam Kalai and others, OpenAI, *Why language models hallucinate* (2025)](https://openai.com/index/why-language-models-hallucinate/)
+- [OWASP GenAI Security Project: LLM06:2025 Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/)
+- [Claude Code docs: Hooks reference](https://code.claude.com/docs/en/hooks)
+- [Google Search Central: Introduction to robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
+- [Google Search Central: Consolidate duplicate URLs](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls)
+- [OpenAI: Overview of OpenAI crawlers](https://developers.openai.com/api/docs/bots)
 - [@TheoAGI: the one SEO/GEO playbook distilled from 66 articles](https://x.com/TheoAGI/status/2120163220312699025)
