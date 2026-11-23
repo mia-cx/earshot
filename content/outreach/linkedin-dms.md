@@ -22,8 +22,8 @@ This method comes from @DinScales26, who sells a done-for-you LinkedIn outreach 
 > 1. Go to linkedin.com/ad-library, which LinkedIn [describes as publicly available](https://www.linkedin.com/help/linkedin/answer/a1517918). It holds ads run since June 2023.
 > 2. List the 3 companies you lose deals to. Search each as the advertiser, with the date filter set to the last 30 days.
 > 3. For each ad, note three things: the problem it opens with, the offer (a demo, a free audit, a report), and the job title it's written for ("for heads of sales").
-> 4. Find the problem all 3 companies advertise. Copy the text of 5 to 10 ads about it into one doc.
-> 5. Paste the doc into Claude. Tell it what you sell and one result you got for a customer. Ask for 3 DMs, 2 lines each, under 20 words. Tell it to keep the problem from the ads and drop the ad wording, because a DM that reads like an ad gets ignored.
+> 4. Find the problem all 3 companies advertise, and gather your notes on the 5 to 10 ads about it. Keep the notes in your own words; don't copy the ad text.
+> 5. Give your notes to Claude. Tell it what you sell and one result you got for a customer. Ask for 3 DMs, 2 lines each, under 20 words, about that problem in plain words, because a DM that reads like an ad gets ignored.
 >
 > Each DM comes out in this shape:
 >
@@ -71,7 +71,7 @@ To keep an agent from doing damage on its own, see *Keep bots from doing damage*
 > [!FORM] Your competitor ads
 > 1. If not us, what would users choose instead? Include doing nothing.
 > 2. Which 3 companies do you lose deals to?
-> 3. Paste the text of 5 of their ads from the last 30 days. Under each, note the problem it opens with, the offer and the job title it's written for.
+> 3. For 5 of their ads from the last 30 days, note in your own words the problem each opens with, the offer and the job title it's written for.
 > 4. Which problem do all 3 companies advertise?
 
 > [!DO] Pull your competitors' ads
