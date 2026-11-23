@@ -6,12 +6,12 @@ description: How X finds, scores and filters every post, and where reach beyond 
 
 > [!TLDR] X ranks your post by predicting what each viewer will do with it.
 > - Every refresh finds candidates, filters some out, and scores the rest for each viewer.
-> - Followers and strangers are ranked together, with an edge for accounts the viewer follows. Reach beyond your followers comes from interest matching, not follows.
+> - Posts from accounts the viewer follows and from accounts they don't are ranked together, with an edge for followed accounts. Reach beyond your followers comes from interest matching, not follows.
 > - X shows one post per conversation, so put a launch in one self-contained post.
 
-## Every post passes three stages
+## Every refresh runs three stages
 
-X publishes its For You feed code on GitHub as [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm). Every refresh narrows millions of posts to thousands of candidates, then scores each one for each viewer.
+X publishes its For You feed code on GitHub as [xai-org/x-algorithm](https://github.com/xai-org/x-algorithm). Every refresh narrows millions of posts to thousands of candidates, drops some, then scores the rest for each viewer.
 
 Ryan (@ryangrowthh), who read the code, nicknames the stages Scouts, Judge and Bouncer:
 
@@ -57,7 +57,7 @@ Your main post has to stand alone. Give a stranger everything they need there, w
 > [!DO] Name your cluster
 > Fill in your cluster above, then download it. To count, tick each of your last 10 posts that stays inside the community.
 
-> [!CHECK] What three stages does every post pass through in X's For You feed?
+> [!CHECK] What three stages does X's For You feed run on each refresh?
 > X finds candidate posts, drops some (stale, seen, blocked or muted), scores the rest per viewer, then runs final safety checks.
 
 > [!CHECK] You plan to announce a launch on X across five tweets. What do you change?
