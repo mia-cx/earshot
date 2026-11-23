@@ -2,7 +2,9 @@
 
 Question: what do primary sources say about the principles the agents lessons rest on, and which of the posts' claims hold up?
 
-Written for a fresh agent. Every source below was opened and read on 2026-11-23 unless marked "not verified". Claim checks use **confirmed**, **disputed** or **unverified**. "Unverified" here usually means "one person's own number": DIRECTION keeps those in, labelled.
+Written for a fresh agent. Every source below was opened and read on 2026-11-23 unless marked "not verified".
+
+The claim tables carry the verdicts of an independent audit (2026-11-23) by a reader who did not write the lessons and re-opened every source: **supported**, **overstated**, **misattributed**, **disputed**, **unsupported**, or **one person's claim** (a practitioner's number, labelled as such in the lesson, which DIRECTION keeps in). Where the lesson changed, the table says how.
 
 ## Sources read
 
@@ -21,7 +23,7 @@ Shared across lessons. Each line paraphrases what the source says.
 
 ### Working with AI, and checking it
 
-- **Fabrizio Dell'Acqua, Edward McFowland III, Ethan Mollick, Hila Lifshitz, Katherine C. Kellogg, Saran Rajendran, Lisa Krayer, François Candelon, Karim R. Lakhani: [Navigating the jagged technological frontier](https://doi.org/10.1287/orsc.2025.21838)** (Organization Science, 2026; SSRN working paper 2023). Pre-registered experiment with 758 BCG consultants. On 18 tasks inside the frontier of AI capability, AI users completed 12.2% more tasks, 25.1% faster, with significantly higher quality. On a task chosen to be outside the frontier, AI users were 19% less likely to reach the correct answer. The frontier is "jagged": similar-looking tasks fall on different sides. (Read from the abstract in the published PDF. The 2023 working paper states the outside-frontier result as 19 percentage points; the published abstract says 19%.)
+- **Fabrizio Dell'Acqua, Edward McFowland III, Ethan Mollick, Hila Lifshitz, Katherine C. Kellogg, Saran Rajendran, Lisa Krayer, François Candelon, Karim R. Lakhani: [Navigating the jagged technological frontier](https://doi.org/10.1287/orsc.2025.21838)** (Organization Science, 2026; SSRN working paper 2023). Pre-registered experiment with 758 BCG consultants. On 18 tasks inside the frontier of AI capability, AI users completed 12.2% more tasks, 25.1% faster, with significantly higher quality. On a task chosen to be outside the frontier, AI users were 19% less likely to reach the correct answer. The frontier is "jagged": similar-looking tasks fall on different sides. (Read from the published abstract; the publisher returns 403 to scripts, so the audit re-read it through Crossref. The 2023 working paper states the outside-frontier result as 19 percentage points; the published abstract says 19%.)
 - **Ethan Mollick: [On-boarding your AI intern](https://www.oneusefulthing.org/p/on-boarding-your-ai-intern)** (May 2023). Treat AI as a fast, strange intern that "sometimes lie[s] to make you happy". "Giving the AI context and constraints makes a big difference." Point out errors as you would to a person. For delegated tasks, "expect to review and offer oversight". His book *Co-Intelligence* (2024) expands this: not verified, not cited in lessons.
 - **Adam Tauman Kalai, Ofir Nachum, Santosh Vempala, Edwin Zhang: [Why language models hallucinate](https://arxiv.org/abs/2509.04664)** (OpenAI, 2025). Models guess when unsure because "training and evaluation procedures reward guessing over acknowledging uncertainty".
 - **Jie Huang et al.: [Large language models cannot self-correct reasoning yet](https://arxiv.org/abs/2310.01798)** (ICLR 2024). "LLMs struggle to self-correct their responses without external feedback", and performance sometimes degrades after self-correction.
@@ -29,8 +31,9 @@ Shared across lessons. Each line paraphrases what the source says.
 - **Amos Tversky, Daniel Kahneman: [Belief in the law of small numbers](https://doi.org/10.1037/h0031322)** (Psychological Bulletin, 1971). "People have erroneous intuitions about the laws of chance": they expect small samples to mirror the population. Read from the abstract on the Semantic Scholar record; full text not opened.
 - **Jerker Denrell: [Vicarious learning, undersampling of failure, and the myths of management](https://ora.ox.ac.uk/objects/uuid:a8102a34-f7a4-40de-91c0-139355f97358)** (Organization Science, 2003). Learning from the successes you can see "undersamples failure"; risky practices unrelated to performance across the whole population can look like they cause success among survivors.
 - **Jessica S. Ancker et al.: [Effects of workload, work complexity, and repeated alerts on alert fatigue](https://pmc.ncbi.nlm.nih.gov/articles/PMC5387195/)** (BMC Medical Informatics and Decision Making, 2017). The likelihood of accepting a clinical reminder "dropped by 30% for each additional reminder received per encounter".
-- **Raluca Budiu (NN/g): [Information scent](https://www.nngroup.com/articles/information-scent/)** (2020). Information scent is the user's estimate of what a link will deliver. Misleading links "use up your visitors' trust"; a landing page that doesn't deliver on the link's promise loses the visitor.
+- **Raluca Budiu (NN/g): [Information scent](https://www.nngroup.com/articles/information-scent/)** (2020). An explainer, not a new study, built on information-foraging theory. Information scent is the user's estimate of what a link will deliver. A misleading title gets the click but will "use up your visitors' trust"; a landing page that doesn't give enough context soon enough makes users "simply leave".
 - **Google Analytics Help: [Collect campaign data with custom URLs](https://support.google.com/analytics/answer/10917952)**. Always set `utm_source`, `utm_medium` and `utm_campaign`; missing parameters show as "(not set)"; values are case sensitive, so "Meta" and "meta" split reports.
+- **Google Analytics Help: [Campaigns and traffic sources](https://support.google.com/analytics/answer/11242841)**. A new campaign value sent mid-session doesn't start a new session; it is "associated with the events for which [it was] collected" and used for event-based attribution, while the session keeps its original source.
 
 ### Security
 
@@ -40,8 +43,9 @@ Shared across lessons. Each line paraphrases what the source says.
 
 ### Rules for sending
 
-- **X: [Developer guidelines](https://docs.x.com/developer-guidelines)**. Bots must turn on the "Automated" label, say in the bio who runs them, and be tied to a human-managed account. Auto-replying to anyone who mentions a keyword is "unsolicited interaction"; reply only if the user clearly requested or opted into the interaction (X's policy says a follow alone isn't enough), one reply per interaction. No bulk DMs, uninvited mentions or identical cross-posting. "Deploying AI-generated replies that break these rules is a violation, even if the content itself is helpful." (help.x.com's automation rules page blocks automated fetches; not verified directly.)
-- **FTC: [CAN-SPAM Act compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)**. Accurate headers and subject lines, identify the message as an ad, a valid postal address, a clear opt-out honoured within 10 business days. "The law makes no exception for business-to-business email." "You can't contract away your legal responsibility." Penalties up to $53,088 per email (2024 figure).
+- **X: [Developer guidelines](https://docs.x.com/developer-guidelines)**. Automated accounts must be labelled, say in the bio who runs them, and be tied to a human-managed account. Auto-replying to anyone who mentions a keyword is "unsolicited interaction". Reply to users "only if user engaged first. Max 1 reply per interaction." Auto-DMs to new followers are "unsolicited contact, even though they followed you". No bulk DMs, uninvited mentions or identical cross-posting. "Deploying AI-generated replies that break these rules is a violation, even if the content itself is helpful." (help.x.com's automation rules page returns 403 to scripts and has no Wayback snapshot; not verified directly.)
+- **FTC: [CAN-SPAM Act compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)**. Accurate headers and subject lines, identify the message as an ad, a valid postal address, a clear opt-out honoured within 10 business days. "The law makes no exception for business-to-business email." "You can't contract away your legal responsibility." Penalties up to $53,088 per email. ftc.gov answers scripted requests with a 404; read through the Wayback Machine (snapshot 2026-11-17).
+- **Cornell LII: [15 U.S. Code § 7704](https://www.law.cornell.edu/uscode/text/15/7704)**. Section (a)(5)(A) requires the ad identification, the opt-out notice and a postal address; (a)(5)(B) says the ad-identification requirement "does not apply ... if the recipient has given prior affirmative consent to receipt of the message". The FTC guide does not mention this exception.
 - **ICO: [Electronic mail marketing (PECR)](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)**. No marketing emails to individuals without specific consent, except soft opt-in for existing customers. You can email corporate bodies, but sole traders and some partnerships count as individuals. Never hide your identity; give a working opt-out. Guidance is under review after the Data (Use and Access) Act. GDPR for EU recipients: not verified, not cited.
 - **TikTok: [About the Commercial Music Library](https://ads.tiktok.com/help/article/commercial-music-library?lang=en)**. "A pre-cleared global music library of 1 million songs". "Businesses cannot use the general music library for commercial usage", including organic posts, ads and branded content.
 
@@ -55,14 +59,17 @@ Shared across lessons. Each line paraphrases what the source says.
 
 Principles: start with the simplest system that works; a fixed-step automation is often enough, and agents earn their cost where judgement, messy text or hard-to-maintain rules are involved (Anthropic, OpenAI). Close the loop with results from the environment (Anthropic: ground truth at each step).
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| An automation follows fixed steps; an agent gets a goal and works out the steps | **confirmed** | Anthropic, Building effective agents; OpenAI guide |
-| About half a marketing team's hours go to building reports | **unverified** (one author, no data) | @korzhov_dm |
-| 1,000 on-brand ads for a couple hundred dollars | **unverified** (vendor claim) | @codyschneider |
-| Pipeline replaces six roles | **unverified** | @codyschneider |
-| Route results to yourself for approval first | **confirmed** as practice | OpenAI guide: human oversight for high-risk actions until confidence grows |
-| A benchmark is a credible marketing asset | **unverified** (no reported results) | @suraj_sharma14 |
+| An automation follows fixed steps; an agent gets a goal and works out the steps; find "the simplest solution possible" | **supported** | Anthropic, Building effective agents |
+| Use an agent where the job needs judgement, messy rules or unstructured text; otherwise "a deterministic solution may suffice" | **supported** | OpenAI guide |
+| About half a marketing team's hours go to building reports | **one person's claim** (@korzhov_dm: "pulling numbers into slides"), labelled | @korzhov_dm |
+| Competitor-check schedule; Claude Code, Grok Bot, Hermes Agent; run 2 to 3 weeks | **one person's claim** (@notkvtwts) | @notkvtwts |
+| Script Studio's steps (median-scored outliers, receipts, five hooks) | **one person's claim** (@mattepstein, internal tool) | @mattepstein |
+| 1,000 on-brand ads for a couple hundred dollars; replaces six roles | **one person's claim**, and he sells Graphed; labelled | @codyschneider |
+| Route results to yourself for approval first | **supported** as practice | OpenAI guide: human oversight for high-risk actions until confidence grows |
+| DeepSeek's table: 4 designs, 5 runs each, p50/p95 times, tokens, "indicative only" | **supported** | @DeepSeekHarness |
+| A benchmark is a credible marketing asset | **one person's claim** (@suraj_sharma14), and the lesson says nobody reports results | @suraj_sharma14 |
 
 Change: added the principle that most weekly reports are a workflow with one AI step, and Anthropic's "simplest solution" rule; one CHECK answer now says which to reach for first.
 
@@ -70,112 +77,135 @@ Change: added the principle that most weekly reports are a workflow with one AI 
 
 Principles: output quality depends on context more than wording (Anthropic context engineering; Mollick); write instructions from your existing procedures (OpenAI); examples should be diverse and canonical (Anthropic); context is finite and degrades as it grows (Anthropic; Liu et al.).
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| A bot gives generic work until it reads your process, examples and style | **confirmed** in principle | Anthropic context engineering; Mollick |
-| Hunt: $382,428 year one at 87% margins, $7k to $8k a month on AI | **unverified** (his numbers; he sells consulting) | @huntkyle |
-| Use 3 finished examples | **disputed in part** | Anthropic: examples should be diverse; three near-identical ones get copied |
-| Every correction becomes a new rule, so the brief gets better each week | **disputed in part** | Anthropic: context has diminishing returns and rot; a file that only grows degrades. Prune and merge |
-| A vague request gets filled with guesses | **confirmed** | Anthropic multi-agent: vague task descriptions led agents to duplicate work and leave gaps |
-| Recordings cut a 10 to 14 day process to 5 days | **unverified** (anecdote) | @huntkyle |
-| Grok "Teach a task" records up to 10 minutes | **unverified** (product claim, not opened) | @huntkyle |
+| Smallest set of high-signal information; "diverse, canonical examples" rather than a laundry list | **supported** | Anthropic context engineering |
+| Write instructions from existing procedures | **supported** | OpenAI guide |
+| "Giving the AI context and constraints makes a big difference" | **supported** (exact quote) | Mollick 2023 |
+| Hunt: $382,428 year one at 87% margins, $7k to $8k a month on AI | **one person's claim**, labelled | @huntkyle |
+| 3 finished examples, varied | **supported** as amended: the lesson asks for varied examples, per Anthropic's "diverse, canonical" | Anthropic context engineering |
+| Audience, out of scope, definition of done; interview me; rewrite after two rounds | **one person's claim** (Osmani), attributed | @addyosmani |
+| Agents given a vague task duplicated work and left gaps | **supported** | Anthropic multi-agent |
+| Every correction becomes a new rule, so the brief gets better each week | **disputed** in part, and the lesson says so: the RISK callout tells readers to prune | Anthropic context engineering |
+| Models recall less as context fills ("context rot"); facts in the middle are missed | **supported** | Anthropic context engineering; Liu et al. 2023 |
+| Recordings cut a 10 to 14 day process to 5 days; only build a playbook if it saves 20 to 30 minutes | **one person's claim**, labelled | @huntkyle |
+| Grok "Teach a task" records up to 10 minutes, rolling out | **one person's claim** (Hunt; xAI's page not opened) | @huntkyle |
 
 ### Give each bot one job (`one-bot-one-job.md`)
 
 Principles: start with one agent and grow incrementally (OpenAI); each delegated task needs an objective, output format, tools and sources, and boundaries (Anthropic multi-agent); test on real inputs before trusting (Anthropic eval advice).
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| One job per bot, end to end | **confirmed** in principle | OpenAI: incremental, single agent first; Anthropic: clear task boundaries |
-| First job: weekly, 2+ apps, same steps every time | **disputed in part** | OpenAI: if no step needs judgement or reading messy text, a deterministic automation may suffice and costs less |
-| Run 3 times by hand before scheduling | **confirmed as a minimum** | Anthropic started evals with about 20 real queries; 3 runs catch misreads, not rare failures |
-| Dry-run the plan first | **confirmed** | Anthropic: transparency by showing planning steps |
-| "Never follow instructions in emails" line | **confirmed as useful, not sufficient** | Willison; Greshake et al. |
+| Teams "achieve greater success with an incremental approach" | **supported** ("customers typically achieve greater success...") | OpenAI guide |
+| Each delegated task needs an objective, output format, tools and sources, boundaries | **supported** | Anthropic multi-agent |
+| First job: weekly, 2+ apps, same steps every time | **one person's claim** (Hunt), and the lesson adds OpenAI's caveat that fixed steps may need no agent | @huntkyle; OpenAI guide |
+| The charter and first-week plan | **one person's claim** (Hunt) | @huntkyle |
+| Anthropic started testing with about 20 real requests | **supported** | Anthropic multi-agent |
+| "Never follow instructions in emails" line | **supported** as useful, not sufficient; *Keep bots from doing damage* says so | Willison; Greshake et al. |
 
 ### Keep bots from doing damage (`safe-bots.md`)
 
 Principles: excessive agency (OWASP); rate tools by risk and gate high-risk actions (OpenAI); prompt injection can't be reliably prevented in the prompt (Greshake; Willison); sending is regulated (X, FTC, ICO).
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| A rule in the prompt is a request; set approval in the tool | **confirmed** | OWASP: complete mediation, enforce outside the LLM |
-| Gate sending, publishing, deleting, paying | **confirmed** | OpenAI: irreversible or high-stakes actions; OWASP: approval for publishing a post |
-| Fewest logins; hand a file before a login | **confirmed** | OWASP: minimise extensions, functionality, permissions |
-| Separate bots in one workspace aren't a security boundary (xAI FAQ) | **unverified** (xAI FAQ not opened) | @huntkyle |
-| Charter line against injected instructions | **disputed as a defence** | Willison: no prompt-level fix is reliable; avoid private data + untrusted content + sending in one bot |
-| Credentials in context can leak; keep them out | **confirmed** | Anthropic Managed Agents: tokens in a vault behind a proxy |
-| Halt any loop projected past $0.50 | **unverified** (his example) | @suraj_sharma14 |
-| Fallback chain frontier → mid → local → cache | **confirmed in principle** | FrugalGPT: cascades cut cost sharply at similar quality |
-| Four-role setup | **unverified** (one practitioner) | @EianLu |
-
-Added: a section on sending rules (X developer guidelines, CAN-SPAM, PECR).
+| Excessive agency; enforce limits downstream "rather than relying on an LLM to decide if an action is allowed" | **supported** | OWASP LLM06:2025 |
+| Irreversible or high-stakes actions wait for a person until trust grows | **supported** | OpenAI guide |
+| BDM proposal promised 80:1 ROAS | **one person's claim** (Hunt) | @huntkyle |
+| Separate bots in one workspace aren't a security boundary (xAI FAQ) | **one person's claim**: Hunt cites the FAQ; the FAQ was not opened | @huntkyle |
+| Willison named prompt injection; the lethal trifecta; nobody can block it reliably | **supported** ("I coined the term prompt injection"; "we still don't know how to 100% reliably prevent this") | Willison 2025 |
+| Indirect prompt injection ran against real AI products | **supported** (Bing's GPT-4 chat) | Greshake et al. 2023 |
+| A compromised cloud loop can take over every connected machine; credentials in context can leak | **supported** as DeepSeek's stated risks | @DeepSeekHarness |
+| X lets a bot reply only to someone who "clearly asked for or opted into" the interaction | **misattributed**: that wording isn't in the cited developer guidelines, which say "only if user engaged first. Max 1 reply per interaction". Lesson now uses the guideline's rule and its follower-DM example | X developer guidelines |
+| Keyword auto-replies, bulk DMs, uninvited mentions banned, "even if the content itself is helpful"; label automated accounts | **supported** | X developer guidelines |
+| CAN-SPAM covers B2B; headers, subject, postal address, opt-out within 10 business days; can't contract away responsibility | **supported** | FTC guide |
+| No ad label needed if the recipient opted in | **misattributed**: true, but the FTC guide doesn't say it; the statute does. Lesson now links 15 U.S.C. § 7704(a)(5)(B) | Cornell LII, 15 U.S.C. § 7704 |
+| PECR: consent for individuals and sole traders; soft opt-in only for your own similar products and existing customers; companies need no consent; name yourself and give an opt-out | **supported**. The ICO notes this guidance is under review after the Data (Use and Access) Act | ICO PECR guide |
+| Halt any loop projected past $0.50; frontier → mid → local → cache | **one person's claim**, labelled; FrugalGPT supports cascading in principle | @suraj_sharma14; FrugalGPT |
+| Four-role setup and prompt | **one person's claim** | @EianLu |
 
 ### Check the work before it ships (`quality-control.md`)
 
 Principles: AI quality is uneven in ways you can't see in advance (Dell'Acqua et al.); models guess rather than admit uncertainty (Kalai et al.); self-review without outside feedback rarely fixes reasoning (Huang et al.); models favour their own output (Panickssery et al.); small samples mislead (Tversky and Kahneman).
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| Hunt: 50%+ revision rates; 80% trace to bad briefing | **unverified** (his experience) | @huntkyle |
-| Creative agency: 70% average revision rate, 40% from incomplete briefs | **unverified** | @huntkyle |
-| Give the agent a way to check its own work | **confirmed** | Anthropic: ground truth from the environment; Huang et al.: external feedback needed |
-| "Did I miss anything?" surfaces two or three more items | **unverified** (Osmani's experience) | @addyosmani |
-| A fresh agent finds what's unclear | **confirmed in part** | Panickssery et al.: same-model reviewers favour their own model's text; use a different model or a person when it matters |
-| AI error rate 1 to 5% | **unverified** (his estimate); the error rate depends on the task | @huntkyle; Dell'Acqua et al. |
-| Ladder: 9 of 10, then 18 of 20 | **confirmed as drift detection, weak for rare errors** | Binomial arithmetic above; Tversky and Kahneman |
-| 13% size mismatch caught by reviewer | **unverified** (anecdote) | @EianLu |
-
-Change: one CHECK card now tests the jagged-frontier principle.
+| 758 BCG consultants; 25.1% faster with better work inside the frontier; 19% less likely to be right outside it | **supported** | Dell'Acqua et al. 2026, abstract via Crossref |
+| Models guess because training rewards guessing | **supported** | Kalai et al. 2025 |
+| Hunt: 50%+ revision rates, 80% from bad briefing; agency at 70%, one editor 115%, 40% and 30% causes | **one person's claim**, labelled | @huntkyle |
+| Self-review without outside feedback rarely fixes reasoning, sometimes worsens it | **supported** | Huang et al. 2024 |
+| "Did I miss anything?" surfaces two or three more items | **one person's claim** (Osmani), attributed | @addyosmani |
+| "If you can't say what the checks would miss, ask for a real review" | **one person's claim**: Osmani quoting the Claude Code team's write-up, which was not opened | @addyosmani |
+| 13% cup mismatch, hat brim, left/right reversals caught by a reviewer | **one person's claim** (EianLu, in Chinese) | @EianLu |
+| Models rate their own writing above equally good writing | **supported** | Panickssery et al. 2024 |
+| AI error rate 1 to 5% | **one person's claim** (Hunt's estimate), labelled | @huntkyle |
+| Ladder: 9 of 10, then 18 of 20 | **one person's claim**, labelled "not a tested reliability measure" | @huntkyle |
+| A bot that fails 1 run in 5 still scores 9 of 10 about 38% of the time | **supported** (binomial: 0.8¹⁰ + 10 × 0.2 × 0.8⁹ = 0.376) | Arithmetic above |
+| People trust small samples too much | **supported** | Tversky and Kahneman 1971, abstract |
+| $1.4M agency misspelled client names; $2.1M agency wanted QA without a checklist | **one person's claim** | @huntkyle |
 
 ### Put a coordinator over your bots (`run-a-team.md`)
 
 Principles: orchestrator-worker works for parallel, independent jobs and costs many more tokens (Anthropic); it breaks when agents need shared context (Anthropic; Cognition); hand off references to stored work (Anthropic); repeated alerts get ignored (Ancker et al.).
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| Coordinator routes, never executes | **confirmed** as a pattern | Anthropic orchestrator-workers; OpenAI manager pattern |
-| DeepSeek: median 12.4 vs 20.4 minutes, more tokens | **unverified** (synthetic, 5 runs, their own) | @DeepSeekHarness; direction matches Anthropic's 90.2% and 15x tokens |
-| Hand off a file, not a chat | **confirmed** | Anthropic: lightweight references prevent information loss. Cognition adds: record the decisions, since actions carry implicit ones |
-| Silence when nothing changed | **confirmed** | Ancker et al.: acceptance fell 30% per extra reminder |
-| Hunt hired after about 19 months | **unverified** (anecdote) | @huntkyle |
+| Coordinator routes, never executes; "air traffic control, not the entire airport" | **supported** as a pattern; the quote is Hunt's | Anthropic orchestrator-workers; @huntkyle |
+| Lead agent with subagents beat a single agent by 90.2%; about 15× the tokens of chat | **supported** | Anthropic multi-agent |
+| Breaks where agents need the same context or depend on each other; actions carry implicit decisions | **supported** | Anthropic multi-agent; Cognition |
+| Router on a lighter model with no shell; workers isolated, strongest model, never message people | **supported** ("can run without a Bash tool at all") | @DeepSeekHarness |
+| 12.4 minutes median "against 20.4 for a single agent told to use subagents" | **disputed** by its own source: 20.4 was the single agent with a neutral prompt, which never delegated; told to delegate, it took 13.8 (p95 29.0). Lesson now gives both | @DeepSeekHarness, section 7.1 table |
+| Subagents save work and pass back a reference, which "prevents information loss" | **supported** | Anthropic multi-agent |
+| Reminder acceptance dropped 30% for each extra reminder per encounter | **supported** | Ancker et al. 2017 |
+| DeepSeek's watchdog judges drift, retries transient failures, answers why in plain language | **supported** | @DeepSeekHarness |
+| Hunt's framework covers 8 areas; first 90 days building unasked processes; first hire after about 19 months solo | **one person's claim** | @huntkyle |
 
 ### Build a social research team (`social-research-team.md`)
 
 Principles: shared files as memory between agents (Anthropic multi-agent and context engineering); studying only winners undersamples failure (Denrell); small samples mislead (Tversky and Kahneman); businesses can't use TikTok's general music library (TikTok).
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| Bots talk through files | **confirmed** as a pattern | Anthropic: subagents store work externally and pass references |
-| Study outliers relative to creator size | **disputed in part** | Denrell: winners-only samples make risky choices look causal. Compare with similar videos that flopped |
-| Patterns under 6 videos are "early" | **confirmed in spirit; 6 is the author's rule** | Tversky and Kahneman |
-| Virlo has 21.6M+ videos | **unverified** (vendor claim) | @dsqjaffa |
-| Old ads are the ones they keep paying for | **unverified heuristic** | No source opened; long-running is a signal, not proof of profit |
-| A trending sound may not be cleared for brands | **confirmed, and stronger** | TikTok: businesses can't use the general library commercially |
-
-Change: one CHECK answer softened on old ads.
+| Bots talk through files; notes outside the model, read back when needed | **supported** | Anthropic multi-agent; Anthropic context engineering |
+| Patterns under 6 videos are "early" | **one person's claim** for the number, labelled; the instinct is **supported** | @dsqjaffa; Tversky and Kahneman 1971 |
+| Virlo holds 21.6M+ videos; the author is its co-founder | **one person's claim**, and the conflict is named in the lesson | @dsqjaffa |
+| Studying only winners makes risky choices look like the cause of success | **supported** | Denrell 2003, abstract |
+| Old ads are the ones they've kept paying for | **one person's claim**; the CHECK answer adds that some ads run because nobody switched them off | @dsqjaffa |
+| Businesses can't use TikTok's general music library for commercial posts, ads included | **supported** (page updated July 2025) | TikTok Commercial Music Library |
 
 ### Design an always-on agent (`agent-architecture.md`)
 
 Principles: context is a finite budget, so load by reference (Anthropic; Liu et al.); route by difficulty (FrugalGPT, OpenAI); durable state outside the model (Anthropic Managed Agents and multi-agent); real-time delegation is weak, so build it into structure (Anthropic multi-agent).
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| Context window as a cache with IDs and pointers | **confirmed** | Anthropic: lightweight identifiers, just-in-time retrieval |
-| 95% cheap, 5% escalated | **unverified** (no evidence given) | @suraj_sharma14; FrugalGPT confirms the principle |
-| 100-word chat cap verified internally | **unverified** | @DeepSeekHarness |
-| Durable workflow resumes after a crash | **confirmed** | Anthropic multi-agent: resume from where the error occurred; Managed Agents: restart from the session log |
-| "Decoupling the brain from the hands" | **confirmed** (title of the Anthropic post, Apr 2026) | Anthropic |
-| Delegation: 0 of 5 vs 4 of 5 | **unverified** (synthetic) | @DeepSeekHarness; Anthropic: agents "not yet great at coordinating and delegating" |
+| Filter events with cheap fixed rules, then the model (fast path, slow path) | **supported** as DeepSeek's design | @DeepSeekHarness |
+| A cascade of models can match the best model for up to 98% less | **supported** | FrugalGPT, abstract |
+| 95% cheap, 5% escalated | **one person's claim**, labelled "no evidence for the split" | @suraj_sharma14 |
+| Prototype with the most capable model, then swap in smaller ones | **supported** | OpenAI guide |
+| 100-word chat cap, "simple, effective", verified internally | **one person's claim** (DeepSeek), labelled | @DeepSeekHarness |
+| Context is a budget; keep "lightweight identifiers" and load just in time | **supported** | Anthropic context engineering |
+| Models are worst with facts in the middle of long inputs | **supported** | Liu et al. 2023 |
+| `start()` returns "Started" at once; built but not yet on by default | **supported** | @DeepSeekHarness |
+| Temporal resumes from the exact step | **one person's claim** (Sharma) | @suraj_sharma14 |
+| Anthropic built resume-from-failure because "agents are stateful and errors compound" | **supported** | Anthropic multi-agent |
+| "Decoupling the brain from the hands": session log outside the model, `wake()` restarts, credentials in a vault | **supported** | Anthropic Managed Agents |
+| DeepSeek's prototype is on GitHub, not an official product | **supported** (the README says so) | deepseek-ai/dsh-superagent-prototype |
+| Agents are "not yet great at coordinating and delegating to other agents in real time" | **supported** | Anthropic multi-agent |
+| Delegation: 0 of 5 neutral vs 4 of 5 delegation-first; the "small" run was the long tail | **supported**, synthetic and labelled | @DeepSeekHarness |
 
 ### Run a whole campaign with agents (`run-a-campaign.md`)
 
 Principles: a delegated task needs objective, format, sources and boundaries (Anthropic); parallel agents make conflicting implicit decisions (Cognition), so check assets together; an ad that promises more than the page delivers spends trust (NN/g); retry limits then hand back (OpenAI); tracking is incomplete when UTM tags are missing or inconsistent (Google).
 
-| Claim | Status | Source |
+| Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
-| Holmberg does about 70% of his marketing in an agent workspace | **unverified** (self-report) | @shannholmberg |
-| Assets can pass their own checks and still disagree | **confirmed** | Cognition: conflicting implicit decisions |
-| Ad must match the landing page | **confirmed** | NN/g information scent |
-| Retry limit, then ask you | **confirmed** | OpenAI: failure thresholds trigger human intervention; Anthropic: stopping conditions |
-| Tracking is never complete | **confirmed in part** | Google: missing UTM parameters show as (not set); inconsistent case splits reports |
-| More context helped more than more agents | **unverified** (his experience); consistent with Anthropic and OpenAI | @shannholmberg |
+| Holmberg does about 70% of his marketing in an agent workspace; talks 5 to 10 minutes; Matt Pocock's planning skills | **one person's claim** (self-report). The post is an X article not in `research/sources/`; read through the fxtwitter API | @shannholmberg |
+| Each task needs an objective, output format, sources and limits; without them agents duplicated work | **supported** | Anthropic multi-agent |
+| Four agents for three production steps; better writer context helped more than more agents | **one person's claim** | @shannholmberg |
+| Assets can pass their own checks and still disagree | **supported** | Cognition: "actions carry implicit decisions" |
+| NN/g "research ... shows" a link promising more than the page delivers spends trust | **overstated**: the source is an explainer, not a study, and splits the point in two (misleading titles use up trust; pages without context make users leave). Lesson now calls it a guide and states both | NN/g information scent |
+| Retry limit, then hand to a person | **supported** | OpenAI guide: exceeding failure thresholds |
+| Missing UTM values show as "(not set)"; "Meta" and "meta" are two sources | **supported** | GA: custom URLs |
+| Tagging internal links "credits the events after that click" to the tag | **overstated** and uncited in Sources: GA attaches a mid-session campaign value to the events collected with it, for event-based attribution; the session keeps its source. Lesson reworded; the page added to Sources | GA: campaigns and traffic sources |

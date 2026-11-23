@@ -37,7 +37,7 @@ When you lose a prompt, the reflex is to write a new article. Most lost prompts 
 | Crawl or index problem | The page exists but AI and Google can't reach it | Fix it technically (see *Get your site found at all*). Allow OAI-SearchBot and PerplexityBot |
 | Third-party problem | AI draws on Reddit threads, review sites, articles and directories that barely mention you | Work those sources (next section) |
 
-The engines spell out the crawl rules themselves. [OpenAI says](https://developers.openai.com/api/docs/bots) sites blocking OAI-SearchBot "will not be shown in ChatGPT search answers". [Perplexity](https://docs.perplexity.ai/guides/bots) asks you to allow PerplexityBot. [Google](https://developers.google.com/search/docs/appearance/ai-features) links only pages that are indexed and eligible for a snippet.
+The engines spell out the crawl rules themselves. [OpenAI says](https://developers.openai.com/api/docs/bots) sites blocking OAI-SearchBot "will not be shown in ChatGPT search answers". [Perplexity](https://docs.perplexity.ai/docs/resources/perplexity-crawlers) asks you to allow PerplexityBot. [Google](https://developers.google.com/search/docs/appearance/ai-features) links only pages that are indexed and eligible for a snippet.
 
 Granola, the AI meeting-notes company, ran this diagnosis on every lost prompt, according to @wespreadjam. [Discovered Labs](https://discoveredlabs.com/case-studies/granola), the agency behind Granola's wider SEO and AI-search programme, reports results for the programme as a whole, not for this diagnosis alone:
 
@@ -50,13 +50,13 @@ Read them as direction, not a promise.
 > [!DIAGRAM] ai-loop
 
 > [!TRICK] Read the searches the assistant runs
-> Assistants break your question into hidden web searches. [OpenAI](https://help.openai.com/en/articles/9237897-chatgpt-search) says ChatGPT rewrites it into "one or more targeted queries"; Google calls the same move "query fan-out". TheoAGI estimates about ten per question. In ChatGPT or Claude, open the "searching" step under the answer to read them. Each search is a page you need, or a site you need to be on.
+> Assistants break your question into hidden web searches. [OpenAI](https://help.openai.com/en/articles/9237897-searching-the-web-with-chatgpt) says ChatGPT rewrites it into "one or more targeted queries"; Google calls the same move "query fan-out". TheoAGI estimates about ten per question. In ChatGPT or Claude, open the "searching" step under the answer to read them. Each search is a page you need, or a site you need to be on.
 
 ## Sort the sources AI trusts
 
 For a third-party problem, stop asking "how do we get more backlinks?" Ask "which sources shape this specific recommendation, and why are competitors better represented there?"
 
-**You need both your own pages and other people's.** [Mahe Chen and colleagues at the University of Toronto](https://arxiv.org/abs/2509.08919) found AI search shows "a systematic and overwhelming bias" toward earned, third-party sources over brands' own sites. In [Dmitrij Żatuchin's audit](https://arxiv.org/abs/2606.25787) of 131,512 citations in answers about brands, 82.4% pointed away from the brand's sites. Both studies are observational; neither tests what causes a citation.
+**You need both your own pages and other people's.** [Mahe Chen and colleagues at the University of Toronto](https://arxiv.org/abs/2509.08919) found AI search shows "a systematic and overwhelming bias" toward earned, third-party sources over brands' own sites. In [Dmitrij Żatuchin's audit](https://arxiv.org/abs/2606.25787) of 131,512 citations in answers about brands (mostly Nordic and Baltic), 82.4% pointed away from the brand's sites. Both studies are observational; neither tests what causes a citation.
 
 TheoAGI quotes an unpublished vendor dataset (44,070 citations across 10 brands): 85% went to third-party pages and under 4% to the brand's own site, yet brands whose own site got cited were named far more often. Treat the second half as one vendor's observation.
 
@@ -94,8 +94,8 @@ TheoAGI quotes an unpublished vendor dataset (44,070 citations across 10 brands)
 - [Mahe Chen, Xiaoxuan Wang, Kaiwen Chen and Nick Koudas, *Generative Engine Optimization: How to Dominate AI Search* (2025)](https://arxiv.org/abs/2509.08919)
 - [Dmitrij Żatuchin, *Cited Web Sources in LLM Answers about Brands: A Multilingual Audit* (2026)](https://arxiv.org/abs/2606.25787)
 - [OpenAI: Overview of OpenAI crawlers](https://developers.openai.com/api/docs/bots)
-- [OpenAI: ChatGPT search](https://help.openai.com/en/articles/9237897-chatgpt-search)
-- [Perplexity: Perplexity crawlers](https://docs.perplexity.ai/guides/bots)
+- [OpenAI: Searching the web with ChatGPT](https://help.openai.com/en/articles/9237897-searching-the-web-with-chatgpt)
+- [Perplexity: Perplexity crawlers](https://docs.perplexity.ai/docs/resources/perplexity-crawlers)
 - [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
 - [Discovered Labs: How Granola grew monthly activated users from AI search 4,600%](https://discoveredlabs.com/case-studies/granola)
 - [@wespreadjam: Granola's diagnose-then-fix loop and own/claim/earn/contest](https://x.com/wespreadjam/status/2115568290307469548)

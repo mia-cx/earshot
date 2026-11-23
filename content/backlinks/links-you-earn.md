@@ -14,7 +14,7 @@ description: Earn links by handing writers the list entry, number, fix or visual
 
 **Every earned link answers one question for the writer: "what does this give my readers?"** [Brin and Page built PageRank](https://research.google/pubs/the-anatomy-of-a-large-scale-hypertextual-web-search-engine/) on academic citation counting: a link is one page citing another. Google's own content check asks whether a page offers ["original information, reporting, research, or analysis"](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) and whether you'd recommend it to a friend. Hand a writer a finished improvement and saying yes is easy.
 
-Most tactics below come from one SaaS builder's ranked list of 69 link tactics (the author sells Distribb, a backlink tool). Top tier: roundups, original statistics, and journalist requests. Next: recovering links and building free tools. Visuals, video and case studies sit lower.
+Most tactics below come from one SaaS builder's ranked list of 69 link tactics (the author sells Distribb, a backlink tool). Top tier: link exchanges (see *Tricks with a price tag*), roundups, original statistics and journalist requests. Next: mining competitors' links, recovering links and building free tools. Visuals, video and case studies sit lower.
 
 ## Get into the lists buyers read
 
@@ -37,7 +37,7 @@ In [one vendor's data](https://arxiv.org/abs/2606.20065), "best X for Y" roundup
 > Paying for a spot is a separate route with separate risks: see *Tricks with a price tag*.
 
 > [!RISK] Cold email law
-> Emailing site owners is cold email, so CAN-SPAM (US) and GDPR (EU) rules apply. The [FTC's CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) states the law "makes no exception for business-to-business email": include your postal address and a working opt-out. See *Fix cold email by its symptoms* for the mechanics.
+> Emailing site owners falls under email marketing law. In the UK, the [ICO's PECR rules](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/) let you email a company, but you need consent for an individual or sole trader. EU countries set their own rules; in the US, CAN-SPAM applies. The [FTC's CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) states the law "makes no exception for business-to-business email": include your postal address and a working opt-out. See *Fix cold email by its symptoms* for the mechanics.
 
 ## Give writers evidence to cite
 
@@ -81,7 +81,7 @@ Existing articles already have readers. Find what's missing and hand it over.
 - **Unlinked mentions:** search Google for `"your brand" -site:yoursite.com` to find pages that name you without linking, and ask for the link.
 - **Reused assets:** search for your charts and quotes used without credit.
 - **Dead pages:** restore removed pages that still have live backlinks, or redirect old URLs to equivalent replacements.
-- **Tools you use:** list your software, document your workflow and result, and send the case study to the vendor's relevant editor. Vendors often feature customer stories with a link.
+- **Tools you use:** list your software, document your workflow and result, and send the case study to the vendor's relevant editor. A vendor that runs customer stories may feature yours with a link.
 
 > [!DO] Find five roundups to pitch
 > Search your main buying query in Google and ChatGPT, open the cited "best X" lists, and log five in a sheet with the author's contact and one buyer need each list misses.
@@ -103,6 +103,7 @@ Existing articles already have readers. Find what's missing and hand it over.
 - [Mahe Chen, Xiaoxuan Wang, Kaiwen Chen and Nick Koudas, *Generative Engine Optimization: How to Dominate AI Search* (2025)](https://arxiv.org/abs/2509.08919)
 - [Pratyush Kumar, *Generative Engine Optimization at Scale* (2026)](https://arxiv.org/abs/2606.20065)
 - [US Federal Trade Commission: CAN-SPAM Act, a compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
+- [UK Information Commissioner's Office: Electronic mail marketing (PECR)](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)
 - [@borjafat: 69 backlink tactics, ranked by tier](https://x.com/borjafat/status/2116164330014007296)
 - [@SimonHoiberg: finding the listicles Google and ChatGPT cite](https://x.com/SimonHoiberg/status/2119368837208686724)
 - [@2whazzuup: journalist platforms and free tools on developer platforms](https://x.com/2whazzuup/status/2119247229601062993)

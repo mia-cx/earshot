@@ -14,7 +14,7 @@ description: Weigh four risky link shortcuts and decide which, if any, you will 
 
 **[Google's spam policies](https://developers.google.com/search/docs/essentials/spam-policies#link-spam) define link spam by purpose: links created "primarily for the purpose of manipulating search rankings".** Paid links are allowed only when marked `rel="sponsored"` or `nofollow`, which stops them passing ranking credit. "Excessive link exchanges" are named as a link scheme outright.
 
-Enforcement is mostly quiet. Since [Google's December 2022 link spam update](https://developers.google.com/search/blog/2022/12/december-22-link-spam-update), SpamBrain detects sites that buy and sell links and neutralises those links, so "any credit passed" is lost. Usually, a bought link is money for nothing. At worst, a pattern of them can earn a [manual action](https://support.google.com/webmasters/answer/9044175) for unnatural links, which can push down some or all of your site.
+Enforcement is mostly quiet. Since [Google's December 2022 link spam update](https://developers.google.com/search/blog/2022/12/december-22-link-spam-update), SpamBrain detects sites that buy and sell links and neutralises those links, so "any credit passed" is lost. Once caught, a bought link is money for nothing. At worst, a pattern of them can earn a [manual action](https://support.google.com/webmasters/answer/9044175) for unnatural links, which can push down some or all of your site.
 
 None of this means these tactics never work. The upside is real readers; the ranking credit is the part most likely to vanish. Weigh each one on its own.
 
