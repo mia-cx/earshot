@@ -20,7 +20,7 @@ The check itself is free. Keep a sheet with calls, closes and close rate, and no
 
 ## Count margin per client, not revenue
 
-A billing report shows revenue, not which clients lose you money. [Robert Kaplan at Harvard Business School](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability), [co-developer of activity-based costing](https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6487), found that in virtually every customer profitability study, 15% to 20% of customers produce all of the profit or more, while the least profitable few wipe part of it out. His method needs two numbers: the hourly cost of each person's time, and the hours each customer takes.
+A billing report shows revenue, not which clients lose you money. [Robert Kaplan at Harvard Business School](https://www.library.hbs.edu/working-knowledge/a-balanced-scorecard-approach-to-measure-customer-profitability), who [co-developed activity-based costing](https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6487), found that in virtually every customer profitability study, 15% to 20% of customers produce all the profit or more. The least profitable few wipe part of it out. His method needs two numbers: the hourly cost of each person's time, and the hours each customer takes.
 
 In Hunt's audits, 10% to 20% of an agency's clients sit near or below zero gross margin once the owner's hours are counted. That's his figure, though it fits Kaplan's pattern.
 

@@ -54,15 +54,15 @@ Pricing belongs here too. Write down why, how and what you'll charge on day one;
 
 ## Message people on what they did
 
-Send messages triggered by what a user just did. [BJ Fogg's behaviour model](https://behaviormodel.org/) says an action happens only when motivation, ability and a prompt meet at the same moment, so a timely prompt catches motivation while it's still there. Keeping a customer also costs less than finding one: winning a new customer costs [5 to 25 times more](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers), depending on the study and the industry.
+Send messages triggered by what a user just did. [BJ Fogg's behaviour model](https://behaviormodel.org/) says an action happens only when motivation, ability and a prompt meet at the same moment, so a timely prompt catches motivation while it's still there. Keeping a customer is cheaper too: winning a new one costs [5 to 25 times more](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers), depending on the study and the industry.
 
-To measure whether the messages add revenue, hold out a random control group. [Ron Kohavi's experiments at Microsoft](https://hbr.org/2017/09/the-surprising-power-of-online-experiments) showed that even experts misjudge which changes will pay off; only a random group that gets nothing tells you what the messages added. Decide the test's size and end date before it starts, because [checking until the difference looks real](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) makes chance results look like wins.
+To measure whether the messages add revenue, hold out a random control group. [Ron Kohavi's experiments at Microsoft](https://hbr.org/2017/09/the-surprising-power-of-online-experiments) showed that even experts misjudge which changes will pay off; only a random group that gets nothing tells you what the messages added. Decide the test's size and end date before you start, because [checking until the difference looks real](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) turns chance results into false wins.
 
 > [!TRICK] Build five behaviour flows with a holdout
 > 1. Use Klaviyo (or your email tool). Send it product events: viewed, added to cart, bought, went quiet.
 > 2. Build five flows, each fired by one behaviour.
 > 3. Hold out 10% of customers at random. They receive nothing.
-> 4. Fix how many customers and how many weeks the test runs before you start.
+> 4. Before you start, fix how many customers you'll test and for how many weeks.
 > 5. Compare revenue between the two groups only at the end. On a small list, the test may show nothing either way.
 
 @korzhov_dm writes for online stores and claims most have one abandoned-cart email and nothing else. Swap in your own events, such as signed up, reached the aha moment, or went quiet.

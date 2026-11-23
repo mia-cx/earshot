@@ -7,7 +7,7 @@ description: Read a cold email campaign's numbers and know which part to fix.
 > [!TLDR]
 > - Cold email fails in three places, in order: the inbox, the offer, the list. Each failure pattern points to one of them.
 > - Pass the inbox first. Google and Microsoft set sender rules, and the law sets opt-out rules.
-> - Follow up. In a study of 12 million outreach emails, sending one follow-up went with about 66% more replies.
+> - Follow up. In a study of 12 million outreach emails, those with one follow-up got about 66% more replies.
 > - Most numbers here are one practitioner's cheat sheet, not shown data. Treat them as starting points to test.
 
 ## Read the symptom, fix the cause
@@ -44,7 +44,7 @@ Skip AI-written personalised first lines. The cheat sheet puts them at about a 0
 
 ## Follow up, then answer fast
 
-Following up is where the replies are. In Dean's study, emails with one follow-up got 65.8% more replies, and three or more messages did best overall. That's a correlation in the data, not a controlled test. The cheat sheet's follow-up #4 is two words: "Hi John???"
+Following up is where the replies are. In Dean's study, emails with one follow-up got 65.8% more replies, and three or more messages did best overall. That's a correlation, not a controlled test. The cheat sheet's follow-up #4 is two words: "Hi John???"
 
 When someone replies with interest, **answer within 5 minutes**. The cheat sheet gives that number. James Oldroyd and colleagues [found most companies answer online leads far too slowly](https://scholarsarchive.byu.edu/facpub/9711/).
 
@@ -52,7 +52,7 @@ When someone replies with interest, **answer within 5 minutes**. The cheat sheet
 > Ask people to reply with a word to opt out, such as "banana". It works only while you're not a Gmail bulk sender. Google counts you as one once you've sent close to 5,000 or more messages in a day to personal Gmail accounts, and for good. Check your status before you rely on a reply word: bulk senders also need one-click unsubscribe headers and a visible unsubscribe link.
 
 > [!RISK] Opt-out rules differ by country and volume
-> The US [CAN-SPAM Act](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) accepts a reply-based opt-out, B2B included, but also requires your postal address in every email and honouring opt-outs within 10 business days. [Gmail requires one-click unsubscribe](https://support.google.com/a/answer/14229414) from bulk senders: anyone who has sent close to 5,000 or more messages in a day to personal Gmail accounts, even if their volume later drops. [Yahoo](https://senders.yahooinc.com/best-practices/) also requires one-click unsubscribe from bulk senders and asks them to honour it within 2 days. In the UK, [PECR](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/) lets you email companies but needs consent before you email an individual or sole trader, and EU countries set their own rules. Check the rules for where your prospects are and how much you send, and honour every opt-out.
+> The US [CAN-SPAM Act](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) accepts a reply-based opt-out, B2B included, but also requires your postal address in every email and honouring opt-outs within 10 business days. [Gmail requires one-click unsubscribe](https://support.google.com/a/answer/14229414) from bulk senders: anyone who has sent close to 5,000 or more messages in a day to personal Gmail accounts, even if their volume later drops. [Yahoo](https://senders.yahooinc.com/best-practices/) also requires one-click unsubscribe from bulk senders and asks them to honour opt-outs within 2 days. In the UK, [PECR](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/) lets you email companies, but you need consent for individuals and sole traders. EU countries set their own rules. Check the rules for where your prospects are and how much you send, and honour every opt-out.
 
 > [!FORM] Your cold email
 > 1. What do we do? What problem do we solve? Give one short, precise answer.

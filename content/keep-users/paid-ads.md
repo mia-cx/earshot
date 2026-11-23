@@ -30,7 +30,7 @@ Ad platforms optimise on the conversion events you send. [Meta's documentation](
 
 ## Match the page to the ad
 
-The ad promises one thing, the page says another, and Korzhov says that gap is where most paid traffic leaves. [Nielsen Norman Group's research on information scent](https://www.nngroup.com/articles/information-scent/) shows why: people click on a guess of what the page holds, and leave fast when the page doesn't confirm it. He also claims fixing the page costs less than raising ad spend.
+[Nielsen Norman Group's research on information scent](https://www.nngroup.com/articles/information-scent/) shows people click on a guess of what the page holds, and leave fast when the page doesn't confirm it. Korzhov says the gap between ad and page is where most paid traffic leaves. He also claims fixing the page costs less than raising ad spend.
 
 > [!TRICK] Rewrite the page per ad
 > - Build a landing page whose headline and first section change to match the ad the visitor clicked. AI writes the variants.
@@ -84,7 +84,7 @@ Korzhov goes further and claims the account that tests more creatives usually wi
 
 ## Let an agent run the account on hard rules
 
-Korzhov expects competitors' ad accounts to be run by agents bidding in the same auction with the same platform data. Two agents with the same rules tie. **The winner has inputs others lack**: your review data, a scrape of your competitors, and what a customer really costs you across all channels.
+Korzhov expects agents to run competitors' ad accounts, bidding in the same auction with the same platform data. Two agents with the same rules tie. **The winner has inputs others lack**: your review data, a scrape of your competitors, and what a customer really costs you across all channels.
 
 > [!TRICK] Build an hourly ad agent
 > Connect Claude Code to your Meta and Google Ads accounts, run it on a schedule with spend limits, and give it these rules:
