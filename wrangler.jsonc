@@ -18,9 +18,15 @@
 		"directory": ".svelte-kit/cloudflare"
 	},
 	"observability": { "enabled": true },
+	// Lesson narration, served at /narration/… (scripts/narrate.ts writes it). Remote, so `pnpm dev`
+	// plays the real bucket too; every environment shares it, since audio is stored under a hash of
+	// the text it reads.
+	"r2_buckets": [{ "binding": "NARRATION", "bucket_name": "earshot-narration", "remote": true }],
 	"env": {
 		"staging": {
-			"routes": [{ "pattern": "staging.seo.mia.cx", "custom_domain": true }]
+			"routes": [{ "pattern": "staging.seo.mia.cx", "custom_domain": true }],
+			// Bindings don't carry over into an environment.
+			"r2_buckets": [{ "binding": "NARRATION", "bucket_name": "earshot-narration", "remote": true }]
 		}
 	}
 }

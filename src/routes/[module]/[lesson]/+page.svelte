@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { defineMarker, type MarkerElement } from '@mia-cx/marker';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import CheckCard from '#lib/CheckCard.svelte';
 	import Diagram from '#lib/Diagram.svelte';
-	import ListenBar from '#lib/ListenBar.svelte';
+	import Narrator from '#lib/Narrator.svelte';
 	import { progress } from '#lib/progress.svelte.ts';
 	import { review } from '#lib/review.svelte.ts';
 	import Seo, { maker } from '#lib/Seo.svelte';
@@ -53,6 +54,10 @@
 	});
 	let active = $state('');
 	let panel = $state<HTMLElement>();
+	let body = $state<MarkerElement>();
+
+	// A <mia-marker> wraps the title and body: it draws the reader's selection and the narrator's word cursor.
+	$effect(defineMarker);
 
 	const finish = async () => {
 		const wasDone = done;
@@ -161,21 +166,31 @@
 	</nav>
 
 	<article class="mt-8 min-w-0">
-		<h1 class="text-4xl leading-[1.08] font-[800] tracking-tight text-balance sm:text-5xl">{data.lesson.title}</h1>
+		<!--
+			The title (after its module) and the body's headings, paragraphs and lists are narrated
+			(#lib/narration.ts); the marker around them highlights the spoken word.
+		-->
+		<mia-marker bind:this={body}>
+			<h1
+				class="text-4xl leading-[1.08] font-[800] tracking-tight text-balance sm:text-5xl"
+				data-narration-intro="Module {module.number}: {module.title}."
+			>
+				{data.lesson.title}
+			</h1>
 
-		{#if data.audio}<div class="mt-6"><ListenBar src={data.audio} /></div>{/if}
-
-		<div class="lesson mt-8">
-			{#each data.lesson.blocks as block, i (i)}
-				{#if block.kind === 'html'}
-					{@html block.html}
-				{:else if block.kind === 'diagram'}
-					<Diagram name={block.name} />
-				{:else}
-					<Worksheet form={block.form} lesson={data.lesson} />
-				{/if}
-			{/each}
-		</div>
+			<div class="lesson mt-8" data-narration>
+				{#each data.lesson.blocks as block, i (i)}
+					{#if block.kind === 'html'}
+						{@html block.html}
+					{:else if block.kind === 'diagram'}
+						<Diagram name={block.name} />
+					{:else}
+						<Worksheet form={block.form} lesson={data.lesson} />
+					{/if}
+				{/each}
+			</div>
+		</mia-marker>
+		<Narrator lesson={data.lesson.id} {body} />
 
 		{#if data.lesson.checks.length}
 			<section class="topic" aria-labelledby="check-yourself">

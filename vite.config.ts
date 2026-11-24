@@ -21,7 +21,9 @@ export default withSvartzHost(
 					// Force runes mode for the project, except for libraries. Can be removed in svelte 6.
 					runes: ({ filename }) => (filename.split(/[/\\]/).includes('node_modules') ? undefined : true)
 				},
-				adapter: adapter(),
+				// `pnpm dev` plays narration from the real bucket; builds and tests use a local, empty one, so
+				// they need no Cloudflare login.
+				adapter: adapter({ platformProxy: { remoteBindings: process.env.npm_lifecycle_event === 'dev' } }),
 				// Every page's CSS goes in its HTML, so the first page paints without waiting on stylesheets.
 				// Later pages load client-side and fetch their CSS as files.
 				inlineStyleThreshold: Infinity,
@@ -38,7 +40,7 @@ export default withSvartzHost(
 					test: {
 						name: 'server',
 						environment: 'node',
-						include: ['src/**/*.{test,spec}.{js,ts}'],
+						include: ['{src,scripts}/**/*.{test,spec}.{js,ts}'],
 						exclude: ['src/**/*.svelte.{test,spec}.{js,ts}']
 					}
 				}
