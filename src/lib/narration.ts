@@ -158,9 +158,13 @@ const sha256 = async (input: string) => {
 	return Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, '0')).join('');
 };
 
-/** The key a section's audio is stored under: a hash of its spoken text, voice, model and format. */
-export const sectionKey = (text: string, voice: string, model: string) =>
-	sha256(JSON.stringify({ v: NARRATION_VERSION, text, voice, model, format: NARRATION_FORMAT }));
+/**
+ * The key a section's audio is stored under: a hash of its spoken text, where each of its words starts
+ * (markup alone can split a word for the marker, as `<em>any</em>way` does, and its timings must
+ * split with it), voice, model and format.
+ */
+export const sectionKey = ({ text, offsets }: { text: string; offsets: number[] }, voice: string, model: string) =>
+	sha256(JSON.stringify({ v: NARRATION_VERSION, text, offsets, voice, model, format: NARRATION_FORMAT }));
 
 /** The index of the word being spoken at `seconds`: the last one started, or 0 before the first. */
 export const wordAt = (timings: number[], seconds: number) => {

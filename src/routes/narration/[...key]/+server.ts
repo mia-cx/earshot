@@ -15,7 +15,14 @@ const SERVED = /^(?:sections\/[0-9a-f]{64}\.mp3|lessons\/[a-z0-9-]+\/[a-z0-9-]+\
 
 export const GET = async ({ params, request }) => {
 	if (!SERVED.test(params.key)) error(404, 'No such narration');
-	const object = await env.NARRATION.get(params.key, { range: request.headers, onlyIf: request.headers });
+	// Only the cache-revalidation conditions: a failed If-None-Match is a 304, but R2 would answer a
+	// failed If-Match without a body too, and that must not read as "your copy is current".
+	const revalidate = new Headers();
+	for (const name of ['if-none-match', 'if-modified-since']) {
+		const value = request.headers.get(name);
+		if (value) revalidate.set(name, value);
+	}
+	const object = await env.NARRATION.get(params.key, { range: request.headers, onlyIf: revalidate });
 	if (!object) error(404, 'No such narration');
 
 	const headers = new Headers();

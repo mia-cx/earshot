@@ -79,19 +79,21 @@
 			</div>
 		</fieldset>
 	{/each}
-	<div class="volume">
-		<label for="narration-volume">Narration volume</label>
-		<input
-			id="narration-volume"
-			type="range"
-			min="0"
-			max="1"
-			step="0.05"
-			value={volume.level}
-			aria-valuetext="{Math.round(volume.level * 100)}%"
-			oninput={(event) => volume.set(event.currentTarget.valueAsNumber)}
-		/>
-	</div>
+	{#if volume.adjustable}
+		<div class="volume">
+			<label for="narration-volume">Narration volume</label>
+			<input
+				id="narration-volume"
+				type="range"
+				min="0"
+				max="1"
+				step="0.05"
+				value={volume.level}
+				aria-valuetext="{Math.round(volume.level * 100)}%"
+				oninput={(event) => volume.set(event.currentTarget.valueAsNumber)}
+			/>
+		</div>
+	{/if}
 </div>
 
 <style>

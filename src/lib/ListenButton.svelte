@@ -41,6 +41,8 @@
 		display: none;
 		position: absolute;
 		top: 0;
+		/* Out of flow, so no sibling spacing (a TL;DR box's, say) may shift it. */
+		margin: 0;
 		left: calc(-1 * (var(--size) + var(--gap)));
 		width: var(--size);
 		@container (width >= 48rem) {

@@ -113,6 +113,15 @@ describe('a rerun', () => {
 		expect(characters).toBe(26);
 	});
 
+	// Proves a markup-only edit that splits a word for the marker re-records its section, so the
+	// timings never have fewer words than the page highlights.
+	it('records a section again when markup splits a word', async () => {
+		const before = await read('m/one', page('<p>Read it anyway now.</p>'));
+		const after = await read('m/one', page('<p>Read it <em>any</em>way now.</p>'));
+		expect(after.sections[0].text).toBe(before.sections[0].text);
+		expect(plan([after], voicedIndex([before]), { only: [], all: false }).generate).toHaveLength(1);
+	});
+
 	// Proves a new voice is never mixed with audio in the old one.
 	it('records every section again in a new voice', async () => {
 		const before = await read('m/one', page('<p>First.</p><blockquote><p>Q</p></blockquote><p>Second.</p>'));

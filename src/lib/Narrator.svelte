@@ -54,7 +54,7 @@
 		if (!narration.sections) return [];
 		const found = await Promise.all(
 			lessonSections(root).map(async (blocks) => {
-				const key = await sectionKey(sectionText(blocks).text, narration.voice, narration.model);
+				const key = await sectionKey(sectionText(blocks), narration.voice, narration.model);
 				const timings = narration.sections[key];
 				if (!timings) return [];
 				const opener = blocks[0].closest(TLDR) ?? blocks[0];
@@ -160,16 +160,22 @@
 		show(markerWord(current, wordAt(timings, heard)));
 	};
 
-	/** When the latest start began, for its fade-in. */
+	/** When sound last started coming out, for its fade-in; infinite while a start waits for audio. */
 	let started = 0;
-	/** The volume to play at now: the reader's volume, faded in after each start. */
-	const level = () => volume.level * Math.min(1, (performance.now() - started) / 1000 / FADE_IN);
+	/** The volume to play at now: the reader's volume, faded in from when sound started. */
+	const level = () => {
+		// The fade starts once the audio actually plays, after any loading or seeking.
+		if (started === Number.POSITIVE_INFINITY && audio && audio.readyState >= audio.HAVE_FUTURE_DATA && !audio.seeking)
+			started = performance.now();
+		return volume.level * Math.max(0, Math.min(1, (performance.now() - started) / 1000 / FADE_IN));
+	};
 
 	/** Loads section `s` at `seconds` without playing it. */
 	const cue = (s: number, seconds = 0) => {
 		if (!audio) return;
 		if (s !== current) {
 			current = s;
+			hold = undefined;
 			audio.src = `/narration/sections/${sections[s].key}.mp3`;
 		}
 		audio.currentTime = seconds;
@@ -178,7 +184,8 @@
 	const play = (s: number, seconds = 0) => {
 		cue(s, seconds);
 		pausedBySelection = false;
-		started = performance.now();
+		// Silent until `level` sees audio playing and starts the fade, however long it takes to arrive.
+		started = Number.POSITIVE_INFINITY;
 		if (audio) audio.volume = 0;
 		output ??= new AudioContext();
 		// Starting another section interrupts a pending play; that rejection is expected.
@@ -190,14 +197,19 @@
 	/** Plays section `s`, picking up where it paused if it's the one paused in. */
 	const resume = (s: number) => play(s, current === s ? (audio?.currentTime ?? 0) : 0);
 
-	/** The Listen button: pauses, resumes the section on screen, or starts the first one on screen. */
+	/**
+	 * The Listen button: pauses, resumes the paused section, or starts the first section on screen.
+	 * With none on screen (past the last one, say), it starts the last one scrolled past.
+	 */
 	const listen = () => {
 		if (playing) return audio?.pause();
+		if (current >= 0) return resume(current);
 		const onScreen = ({ blocks }: Voiced) =>
 			(blocks.at(-1) as Element).getBoundingClientRect().bottom > innerHeight / 4 &&
 			blocks[0].getBoundingClientRect().top < innerHeight;
-		if (sections[current] && onScreen(sections[current])) return resume(current);
-		play(Math.max(0, sections.findIndex(onScreen)));
+		const visible = sections.findIndex(onScreen);
+		const passed = sections.findLastIndex(({ blocks }) => blocks[0].getBoundingClientRect().top < innerHeight);
+		play(visible >= 0 ? visible : Math.max(0, passed));
 	};
 
 	/** At the end of a section, stop. */
@@ -232,10 +244,11 @@
 					const index = word - root.wordIndexOf(block);
 					if (index >= 0 && index < counts[b]) {
 						const seconds = timings[(before + index) * 2];
-						hold = { seconds, word };
 						const from = Math.max(0, seconds - PREROLL);
-						if (playing) return play(s, from);
-						cue(s, from);
+						if (playing) play(s, from);
+						else cue(s, from);
+						// Set after the cue, which drops any hold from another section.
+						hold = { seconds, word };
 						shown = -1;
 						return show(word);
 					}

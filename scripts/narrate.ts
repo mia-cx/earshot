@@ -57,7 +57,7 @@ export const readLesson = async (html: string, voice: string, model: string): Pr
 	return Promise.all(
 		lessonSections(document).map(async (blocks) => {
 			const spoken = sectionText(blocks);
-			return { key: await sectionKey(spoken.text, voice, model), ...spoken };
+			return { key: await sectionKey(spoken, voice, model), ...spoken };
 		})
 	);
 };
@@ -98,12 +98,14 @@ const wrangler = (...command: string[]) =>
 	run('node_modules/.bin/wrangler', [...command, '--remote'], { maxBuffer: 1 << 26 });
 const upload = (key: string, file: string, type: string) =>
 	wrangler('r2', 'object', 'put', `${BUCKET}/${key}`, '--file', file, '--content-type', type);
+/** Fetches an object into `file`; false only when it doesn't exist, so a failed read stops the run. */
 const download = async (key: string, file: string) => {
 	try {
 		await wrangler('r2', 'object', 'get', `${BUCKET}/${key}`, '--file', file);
 		return true;
-	} catch {
-		return false;
+	} catch (error) {
+		if (String((error as { stderr?: unknown }).stderr).includes('The specified key does not exist')) return false;
+		throw error;
 	}
 };
 const readJson = async <T>(file: string): Promise<T> => JSON.parse(await readFile(file, 'utf8'));
@@ -176,8 +178,13 @@ async function main() {
 		if (sections.length) lessons.push({ id: relative(SITE, file).replace(/\.html$/, ''), sections });
 	}
 	const indexFile = join(CACHE, 'index.json');
-	const stored = (await download('index.json', indexFile)) ? await readJson<Partial<Index>>(indexFile) : {};
-	const index: Index = { sections: stored.sections ?? [], lessons: stored.lessons ?? {} };
+	const readIndex = async (): Promise<Index> => {
+		const stored = (await download('index.json', indexFile)) ? await readJson<Partial<Index>>(indexFile) : {};
+		return { sections: stored.sections ?? [], lessons: stored.lessons ?? {} };
+	};
+	const index = await readIndex();
+	/** The lessons this run rewrote, whose entries in the index are this run's to set. */
+	const rewritten = new Set<string>();
 	const { voiced, generate: missing, characters } = plan(lessons, index, { only: values.only, all: values.all });
 
 	console.log(`${lessons.length} lessons; voicing ${voiced.length}:`);
@@ -195,7 +202,12 @@ async function main() {
 		checkSpend(characters, budget, character_limit - character_count);
 	}
 
+	// Another run (CI, or someone's local one) may have saved since this one read the index: merge into
+	// the latest copy, so neither run's sections or lessons go missing.
 	const saveIndex = async () => {
+		const latest = await readIndex();
+		index.sections = [...new Set([...latest.sections, ...index.sections])];
+		for (const [id, keys] of Object.entries(latest.lessons)) if (!rewritten.has(id)) index.lessons[id] = keys;
 		await writeFile(indexFile, JSON.stringify(index));
 		await upload('index.json', indexFile, 'application/json');
 	};
@@ -240,6 +252,7 @@ async function main() {
 		await writeFile(file, JSON.stringify(narration));
 		await upload(`lessons/${lesson.id}.json`, file, 'application/json');
 		index.lessons[lesson.id] = Object.keys(narration.sections);
+		rewritten.add(lesson.id);
 		await saveIndex();
 		console.log(`  narrated ${lesson.id}: ${added.length} new sections`);
 	}
