@@ -1,0 +1,64 @@
+name: Narration
+
+# Voices lessons in Mia's cloned voice, into the earshot-narration R2 bucket that staging, production
+# and `pnpm dev` all play from. Audio is stored under a hash of the text it reads, so a push only pays
+# for the blocks it changed, in lessons that already have narration. Run it by hand to voice new
+# lessons, or the whole course with --all and a bigger budget. A run that would spend more than its
+# budget generates nothing and fails.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      only:
+        description: Lessons to voice as well, as module/lesson, separated by spaces
+        type: string
+        default: ''
+      all:
+        description: Voice every lesson in the course
+        type: boolean
+        default: false
+      budget:
+        description: Most ElevenLabs characters this run may spend
+        type: number
+        default: 25000
+
+permissions:
+  contents: read
+
+# One run at a time: they share the bucket's index.json.
+concurrency:
+  group: narration
+  cancel-in-progress: false
+
+jobs:
+  narrate:
+    name: Narrate lessons
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      ELEVENLABS_VOICE_ID: ${{ vars.ELEVENLABS_VOICE_ID }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      # The narration reads the prerendered lessons; the origin doesn't change what they say.
+      - run: pnpm build
+        env:
+          SITE_URL: https://seo.mia.cx
+      - name: Narrate what is missing
+        env:
+          ONLY: ${{ inputs.only }}
+          ALL: ${{ inputs.all }}
+          BUDGET: ${{ inputs.budget || 25000 }}
+        run: |
+          args=(--budget "$BUDGET")
+          for lesson in $ONLY; do args+=(--only "$lesson"); done
+          if [ "$ALL" = "true" ]; then args+=(--all); fi
+          pnpm narrate "${args[@]}"

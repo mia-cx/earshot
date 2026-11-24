@@ -39,7 +39,26 @@ Describe a change for the changelog with `pnpm changeset`. The Cloudflare token 
 
 `SITE_URL` is the public origin. Canonical URLs, the sitemap, robots.txt and the share image use it, and the build fails without it. After a production deploy, every sitemap URL goes to IndexNow; the key is the name and content of `static/<key>.txt`. To build and serve locally: `SITE_URL=http://localhost:8787 pnpm build && pnpm exec wrangler dev`.
 
-Lesson narration in `static/audio/` is kept out of git, so deployed lessons have none yet.
+## Narration
+
+Lessons are read aloud in Mia's cloned ElevenLabs voice. `scripts/narrate.ts` reads the prerendered lessons and voices each heading, paragraph and list item of the body as its own clip (`src/lib/narration.ts` decides what is read). Callouts, diagrams, worksheets, quotes, tables, code and Sources stay silent. Each clip and its word timings live in the `earshot-narration` R2 bucket under a hash of exactly the text it reads, its voice and its model, so editing one paragraph regenerates only that paragraph, and changed text never plays stale audio. `/narration/…` serves them; every environment shares the bucket.
+
+A run generates nothing when it would spend more than its budget (25,000 characters by default) or more than the ElevenLabs account has left. By default it keeps lessons that already have narration up to date; name a lesson with `--only` to voice it, or pass `--all` for the whole course (about 180,000 characters; one lesson is 1,000 to 4,000).
+
+Locally:
+
+```sh
+cp .env.example .env                          # the ElevenLabs key and voice ID
+pnpm exec wrangler login                      # R2 access, and the dev server's remote bucket
+SITE_URL=https://seo.mia.cx pnpm build
+pnpm narrate --only foundations/positioning --dry-run   # what it would voice, and the cost
+pnpm narrate --only foundations/positioning             # voice one lesson
+pnpm dev                                      # plays narration from the real bucket
+```
+
+Only `pnpm dev` binds the bucket remotely; builds and tests use an empty local one and need no login.
+
+In CI, the Narration workflow (`.github/workflows/narration.yml`) runs on every push to `main` and keeps narrated lessons current. Run it by hand to voice new lessons or the whole course, with a bigger budget. It reads the `ELEVENLABS_API_KEY` secret, the `ELEVENLABS_VOICE_ID` variable and the organisation's `CLOUDFLARE_API_TOKEN`.
 
 ## Write a lesson
 

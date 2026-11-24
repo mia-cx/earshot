@@ -235,8 +235,18 @@ html {
 	--space-heading: 0.875rem;
 }
 
-/* Lesson body: short measure, generous rhythm, loud structure. */
-.lesson {
+/*
+ * Lesson body: short measure, generous rhythm, loud structure. On lesson pages the body is a
+ * `<mia-marker>` (src/lib/marker.ts), which redraws highlighted text from a copy of its content in
+ * `[data-marker-copy]`; the copy takes the same rules, so it lines up with the original. `:where`
+ * keeps every rule here as specific as `.lesson` alone, so later rules like the TL;DR's still win.
+ */
+.lesson,
+.lesson :where([data-marker-copy]) {
+	display: block;
+	/* The selection and the spoken word, in the module's colour. */
+	--marker-color: var(--accent-line);
+	--marker-text: var(--ink);
 	max-width: 40rem;
 	line-height: 1.65;
 	/* Long URLs break instead of pushing a narrow page sideways (WCAG 1.4.10). */
@@ -253,7 +263,8 @@ html {
 	& > [data-kind="do"] {
 		margin-top: var(--space-topic);
 	}
-	& > :first-child {
+	& > :first-child,
+	& > [data-marker-overlay] {
 		margin-top: 0;
 	}
 	& h2:not(.diagram *, .worksheet *) {

@@ -1,9 +1,10 @@
 <script lang="ts">
+	import { defineMarker, type MarkerElement } from '@mia-cx/marker';
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import CheckCard from '#lib/CheckCard.svelte';
 	import Diagram from '#lib/Diagram.svelte';
-	import ListenBar from '#lib/ListenBar.svelte';
+	import Narrator from '#lib/Narrator.svelte';
 	import { progress } from '#lib/progress.svelte.ts';
 	import { review } from '#lib/review.svelte.ts';
 	import Seo, { maker } from '#lib/Seo.svelte';
@@ -53,6 +54,10 @@
 	});
 	let active = $state('');
 	let panel = $state<HTMLElement>();
+	let body = $state<MarkerElement>();
+
+	// The lesson body is a <mia-marker>: it draws the reader's selection and the narrator's word cursor.
+	$effect(defineMarker);
 
 	const finish = async () => {
 		const wasDone = done;
@@ -163,9 +168,9 @@
 	<article class="mt-8 min-w-0">
 		<h1 class="text-4xl leading-[1.08] font-[800] tracking-tight text-balance sm:text-5xl">{data.lesson.title}</h1>
 
-		{#if data.audio}<div class="mt-6"><ListenBar src={data.audio} /></div>{/if}
+		<!-- Its headings, paragraphs and lists are narrated (#lib/narration.ts); the marker highlights the spoken word. -->
 
-		<div class="lesson mt-8">
+		<mia-marker class="lesson mt-8" data-narration bind:this={body}>
 			{#each data.lesson.blocks as block, i (i)}
 				{#if block.kind === 'html'}
 					{@html block.html}
@@ -175,7 +180,8 @@
 					<Worksheet form={block.form} lesson={data.lesson} />
 				{/if}
 			{/each}
-		</div>
+		</mia-marker>
+		<Narrator lesson={data.lesson.id} {body} />
 
 		{#if data.lesson.checks.length}
 			<section class="topic" aria-labelledby="check-yourself">
