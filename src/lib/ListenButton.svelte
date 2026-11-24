@@ -6,20 +6,22 @@
 	 * section scrolls and never leaves it. It holds no text, so the marker counts no words in it. Shown
 	 * only where the page has a left gutter; narrower pages use the Listen button.
 	 */
-	let { playing, span, onclick }: { playing: boolean; span: number; onclick: () => void } = $props();
+	import ListenIcon, { type ListenState } from './ListenIcon.svelte';
+
+	let { state, span, onclick }: { state: ListenState; span: number; onclick: () => void } = $props();
+
+	const LABELS: Record<ListenState, string> = { idle: 'Listen to this section', paused: 'Resume', playing: 'Pause' };
 </script>
 
 <span class="listen-rail" style:height="{span}px">
 	<button
 		type="button"
 		class="listen-button"
-		aria-label={playing ? 'Pause' : 'Listen to this section'}
-		data-playing={playing || undefined}
+		aria-label={LABELS[state]}
+		data-playing={state === 'playing' || undefined}
 		{onclick}
 	>
-		<svg viewBox="0 0 24 24" aria-hidden="true">
-			{#if playing}<path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" />{:else}<path d="M8 5.5v13l11-6.5z" />{/if}
-		</svg>
+		<ListenIcon {state} />
 	</button>
 </span>
 
@@ -72,10 +74,6 @@
 			border-color: var(--accent);
 			background: var(--accent);
 			color: var(--accent-ink);
-		}
-		& svg {
-			width: 18px;
-			fill: currentColor;
 		}
 	}
 </style>

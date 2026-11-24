@@ -2,6 +2,7 @@
 	import type { MarkerElement, MarkerSeekEvent } from '@mia-cx/marker';
 	import { mount, unmount, untrack } from 'svelte';
 	import ListenButton from './ListenButton.svelte';
+	import ListenIcon from './ListenIcon.svelte';
 	import {
 		blockWords,
 		type LessonNarration,
@@ -106,8 +107,8 @@
 					// In a heading or paragraph the button comes first; a TL;DR box spaces its children, so it goes last.
 					anchor: section.opener === section.blocks[0] ? (section.opener.firstChild ?? undefined) : undefined,
 					props: {
-						get playing() {
-							return playing && current === i;
+						get state() {
+							return current !== i ? 'idle' : playing ? 'playing' : 'paused';
 						},
 						get span() {
 							return spans[i] ?? 0;
@@ -279,11 +280,10 @@
 ></audio>
 
 {#if sections.length}
+	{@const state = playing ? 'playing' : current >= 0 ? 'paused' : 'idle'}
 	<button type="button" class="listen" onclick={listen}>
-		<svg viewBox="0 0 24 24" aria-hidden="true">
-			{#if playing}<path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" />{:else}<path d="M8 5.5v13l11-6.5z" />{/if}
-		</svg>
-		{playing ? 'Pause' : 'Listen'}
+		<ListenIcon {state} />
+		{{ idle: 'Listen', paused: 'Resume', playing: 'Pause' }[state]}
 	</button>
 {/if}
 
@@ -307,10 +307,6 @@
 		font-weight: 700;
 		@container (width >= 48rem) {
 			display: none;
-		}
-		& svg {
-			width: 18px;
-			fill: currentColor;
 		}
 	}
 </style>
