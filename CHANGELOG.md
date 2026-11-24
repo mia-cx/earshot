@@ -1,5 +1,17 @@
 # earshot
 
+## 0.2.0
+
+### Minor Changes
+
+- 683081f: Lessons can be read aloud in Mia's voice, section by section. Each section with narration has a play button beside its heading, in the left gutter, that reads the section through to the next box, diagram or topic, highlighting each word as it's spoken. Click a word to jump there; select text to pause. On phones, a Listen button reads from where you are.
+
+### Patch Changes
+
+- 91d37ae: Ten lessons now match their sources more closely: UK email consent rules, the GEO study's 30 to 40%, when Google shows a new title, launch rules on Hacker News, retention benchmarks, and how far agents and their tools should reach.
+- 03dc74a: New lesson, *Make your landing page look designed on purpose*: pick the style before any code, sketch five hero layouts side by side, add one signature touch that fits the product, and keep motion to the hero.
+- 03dc74a: *Give strangers a reason to care* adds three first lines that stop strangers, a comparison people can check, and launching something small every week. *Show the product at its extreme* cuts the demo to a 45-second clock.
+
 ## 0.1.5
 
 ### Patch Changes
