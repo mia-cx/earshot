@@ -183,7 +183,7 @@ async function main() {
 		return { sections: stored.sections ?? [], lessons: stored.lessons ?? {} };
 	};
 	const index = await readIndex();
-	/** The lessons this run rewrote, whose entries in the index are this run's to set. */
+	/** The lessons this run rewrote since its last save, whose entries in the index are this run's to set. */
 	const rewritten = new Set<string>();
 	const { voiced, generate: missing, characters } = plan(lessons, index, { only: values.only, all: values.all });
 
@@ -210,6 +210,8 @@ async function main() {
 		for (const [id, keys] of Object.entries(latest.lessons)) if (!rewritten.has(id)) index.lessons[id] = keys;
 		await writeFile(indexFile, JSON.stringify(index));
 		await upload('index.json', indexFile, 'application/json');
+		// Saved: from here on, a later run's entry for these lessons is the newer one.
+		rewritten.clear();
 	};
 	try {
 		for (let i = 0; i < missing.length; i += CONCURRENCY) {

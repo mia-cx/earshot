@@ -288,6 +288,10 @@
 	preload="none"
 	onplay={() => (playing = true)}
 	onpause={() => (playing = false)}
+	ontimeupdate={() => {
+		// Animation frames stop in a background tab; this keeps the fade-in going there, so it never stays muted.
+		if (audio) audio.volume = level();
+	}}
 	onseeked={sync}
 	{onended}
 ></audio>
