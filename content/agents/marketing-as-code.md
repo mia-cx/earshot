@@ -5,7 +5,7 @@ description: Turn one weekly marketing chore into a scheduled agent that reports
 ---
 
 > [!TLDR]
-> - Use the simplest system that does the job. Most weekly chores need fixed steps with one AI step, not a full agent.
+> - Use the simplest system that does the job. Most weekly chores need fixed steps that call AI only where a step needs it, not a full agent.
 > - A coding agent with access to your data and channels can run one channel as a loop that learns from its own results.
 > - Start with a weekly manual report: write every step, let an agent run it, approve the output yourself.
 > - Bigger pipelines, like research tools and pain-point-to-ad machines, are the same idea with more steps.
@@ -13,7 +13,7 @@ description: Turn one weekly marketing chore into a scheduled agent that reports
 
 ## Start with the simplest system
 
-People mix up two words. An automation follows fixed steps. An agent gets a goal and works out the steps. Anthropic's guide [*Building effective agents*](https://www.anthropic.com/engineering/building-effective-agents) draws the same line and says to find "the simplest solution possible", which may mean no agent at all.
+People mix up two words. An automation follows fixed steps and calls a model at each step that needs one, sometimes several calls in a row. If no step needs a model, it's a plain script. An agent gets a goal and picks its own steps and tools. Anthropic's guide [*Building effective agents*](https://www.anthropic.com/engineering/building-effective-agents) draws the same line and says to find "the simplest solution possible", which may mean no agent at all.
 
 Reach for an agent only when fixed steps fall short. [OpenAI's agent guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) gives three signs: the job needs judgement, its rules are too messy to maintain, or it reads unstructured text like emails and reviews. Otherwise, fixed steps are cheaper and more predictable.
 

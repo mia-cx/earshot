@@ -37,11 +37,11 @@ In [one vendor's data](https://arxiv.org/abs/2606.20065), "best X for Y" roundup
 > Paying for a spot is a separate route with separate risks: see *Tricks with a price tag*.
 
 > [!RISK] Cold email law
-> Emailing site owners falls under email marketing law. In the UK, the [ICO's PECR rules](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/) let you email a company, but you need consent for an individual or sole trader. EU countries set their own rules; in the US, CAN-SPAM applies. The [FTC's CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) states the law "makes no exception for business-to-business email": include your postal address and a working opt-out. See *Fix cold email by its symptoms* for the mechanics.
+> Emailing site owners falls under email marketing law. In the UK, the [ICO's PECR rules](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/) let you email a company, LLP or Scottish partnership, but you need consent for an individual, a sole trader or another kind of partnership. A named person's work address is still personal data, so [UK GDPR applies](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/business-to-business-marketing/) even then. EU countries set their own rules; in the US, CAN-SPAM applies. The [FTC's CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) states the law "makes no exception for business-to-business email": include your postal address and a working opt-out. See *Fix cold email by its symptoms* for the mechanics.
 
 ## Give writers evidence to cite
 
-Writers need sources. Publish the number nobody else has and they link to you. AI engines quote the same evidence: in [Pranjal Aggarwal and colleagues' GEO study](https://arxiv.org/abs/2311.09735) (KDD 2024), adding statistics, quotations or cited sources raised a page's visibility in AI answers by 30 to 40%. Keyword stuffing didn't help.
+Writers need sources. Publish the number nobody else has and they link to you. AI engines quote the same evidence: in [Pranjal Aggarwal and colleagues' GEO study](https://arxiv.org/abs/2311.09735) (KDD 2024), adding statistics, quotations or cited sources made a test AI engine use 30 to 40% more of a page in its answers than before. They counted words in sentences that cite the page, weighted toward the top of the answer. That's a lift over the page's own baseline on a benchmark, not a share of real AI answers. Keyword stuffing didn't help.
 
 > [!TRICK] Publish statistics people can cite
 > - Pick a question your buyers need answered.
@@ -104,6 +104,7 @@ Existing articles already have readers. Find what's missing and hand it over.
 - [Pratyush Kumar, *Generative Engine Optimization at Scale* (2026)](https://arxiv.org/abs/2606.20065)
 - [US Federal Trade Commission: CAN-SPAM Act, a compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
 - [UK Information Commissioner's Office: Electronic mail marketing (PECR)](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)
+- [UK Information Commissioner's Office: Business-to-business marketing](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/business-to-business-marketing/)
 - [@borjafat: 69 backlink tactics, ranked by tier](https://x.com/borjafat/status/2116164330014007296)
 - [@SimonHoiberg: finding the listicles Google and ChatGPT cite](https://x.com/SimonHoiberg/status/2119368837208686724)
 - [@2whazzuup: journalist platforms and free tools on developer platforms](https://x.com/2whazzuup/status/2119247229601062993)

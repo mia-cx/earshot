@@ -6,7 +6,7 @@ description: Define your onboarded event, find what brings users back, and messa
 
 > [!TLDR]
 > - Customers who stay are worth more every year, but new customers are what grow you. Plan for both.
-> - Define "onboarded" as one key action repeated on your expected rhythm, and build that first moment into the product.
+> - Define "onboarded" as one key action that shows a user got value, count users as activated once they repeat it on your expected rhythm, and build that first moment into the product.
 > - Trigger email and SMS on what people do, and hold 10% back to prove the messages add revenue.
 > - Check-ins say what happens next and by when. They don't wait for approval nobody needs to give.
 
@@ -18,7 +18,7 @@ Customers who stay get more profitable each year. [Fred Reichheld's research at 
 
 Keeping customers still won't grow you on its own. [A 2014 study by Erica Riebe, Byron Sharp and colleagues at the Ehrenberg-Bass Institute](https://ideas.repec.org/a/eee/jbrese/v67y2014i5p990-997.html) found that growing and shrinking brands differed mostly in how many new customers they won, not in how many they lost.
 
-## Define onboarded as a habit, not a click
+## Define onboarded, then count activated
 
 Define "onboarded" as **one key action that shows a user got value**. In @kunalvg's crypto examples it's "wallet connected" or "first transaction". For a writing app it might be "document shared".
 
@@ -46,7 +46,7 @@ Retention takes as much planning as acquisition, so answer these questions early
 
 Track the site with Google Analytics and in-product actions with a product analytics tool. Kunal uses Redash and Dune for on-chain data.
 
-For rough benchmarks, [Lenny Rachitsky and Casey Winters asked about 20 growth leaders](https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29) what good six-month retention looks like: about 25% active for consumer social, 40% of paying subscribers for consumer software, and 60% of paying companies for software sold to small and mid-sized businesses. These are practitioner estimates, not a study.
+For rough benchmarks, [Lenny Rachitsky and Casey Winters asked about 20 growth leaders](https://www.lennysnewsletter.com/p/what-is-good-retention-issue-29) what good six-month retention looks like: about 25% of registered users still active for consumer social, 40% of paying subscribers for consumer software, and 60% of paying companies for software sold to small and mid-sized businesses. These are practitioner estimates, not a study.
 
 Pricing belongs here too. Write down why, how and what you'll charge on day one; free with no revenue model doesn't last. *Read your pricing from your numbers* covers the signals that your price is wrong.
 

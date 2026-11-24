@@ -32,7 +32,8 @@ The claim tables carry the verdicts of an independent audit (2026-11-23) by a re
 ### Cold email
 
 - **US Federal Trade Commission: [CAN-SPAM Act: A Compliance Guide for Business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business).** Applies to all commercial email, and "makes no exception for business-to-business email". Requires truthful headers and subject lines, a valid postal address, a clear opt-out honoured within 10 business days.
-- GDPR and the EU/UK rules for unsolicited email: not verified for this pass. The lesson keeps its existing one-line mention and points to the cold email module.
+- **ICO: [Business-to-business marketing](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/business-to-business-marketing/).** Companies, LLPs, Scottish partnerships and some government bodies are "corporate subscribers", and PECR's electronic mail rule doesn't apply to them. Sole traders and other partnerships are "individual subscribers". Marketing to a named business contact still needs a lawful basis under UK GDPR.
+- EU rules for unsolicited email: not verified. The lesson says EU countries set their own rules and points to the cold email module.
 
 ## Lesson: Know what a link is worth (`what-links-are-worth.md`)
 
@@ -80,7 +81,8 @@ The claim tables carry the verdicts of an independent audit (2026-11-23) by a re
 | Cited sources for buying queries are "mostly listicles" | **disputed**, and the lesson says so: largest single format, not the majority | Kumar 2026; @SimonHoiberg |
 | Keep the pitch to 120 to 180 words; one follow-up | **one person's claim** (TheoAGI) | @TheoAGI |
 | CAN-SPAM "makes no exception for business-to-business email"; postal address; opt-out | **supported**. ftc.gov returns 404 to scripted requests; the page was read through the Wayback Machine (snapshot 2026-11-17) | FTC guide |
-| Adding statistics, quotations or cited sources raised AI visibility 30 to 40%; keyword stuffing didn't help | **supported** (relative gain on position-adjusted word count; up to 37% on Perplexity) | Aggarwal et al. 2024, HTML v3 |
+| Adding statistics, quotations or cited sources raised a page's visibility in AI answers by 30 to 40%; keyword stuffing didn't help | **overstated**: the 30 to 40% is a relative gain over the unedited page on position-adjusted word count, measured on GEO-bench with a simulated engine (GPT-3.5), not visibility in real AI answers. Lesson now says what was measured | Aggarwal et al. 2024, HTML v3 (sections 2 and 3) |
+| PECR lets you email a company; consent needed for an individual or sole trader | **overstated**: LLPs and Scottish partnerships may be emailed too; other partnerships need consent like sole traders; a named person's work address still falls under UK GDPR. Lesson now says so and cites the ICO's B2B page | ICO: Electronic mail marketing; ICO: Business-to-business marketing |
 | Journalist platforms; some paid; no publication guaranteed | **one person's claim**, kept as a discovery list | @2whazzuup |
 | Vendors often feature customer stories with a link | **unsupported** as a generalisation: the post only says to find vendors that "could feature your story". Lesson now says a vendor that runs customer stories may feature yours | @borjafat |
 
