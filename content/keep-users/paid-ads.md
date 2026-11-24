@@ -41,12 +41,13 @@ Ad platforms optimise on the conversion events you send. [Meta's documentation](
 
 The only way to know what ads add for your account is to switch them off somewhere and watch sales. Korzhov puts platform over-crediting at 2 to 5 times; the experiments above point the same way, though the size varies by account.
 
-[Google's researchers call this a geo experiment](https://research.google/pubs/measuring-ad-effectiveness-using-geo-experiments/): split regions at random into ads on and ads off. The off regions show what would have happened anyway. If Meta offers your account a Conversion Lift test, which holds out people instead of regions, use that first: Meta's own [GeoLift](https://facebookincubator.github.io/GeoLift/) team builds region tests for when it isn't possible.
+If Meta offers your account a Conversion Lift test, which holds out people instead of regions, use that first: Meta rates it statistically stronger. Otherwise run a geo test in Meta's free [GeoLift](https://facebookincubator.github.io/GeoLift/), which plans the test and reads the result with the same model. It compares the regions without ads against a **synthetic control**: a weighted mix of other regions that tracked them before the test, standing in for what they would have sold with ads on.
 
-> [!TRICK] Run a regional holdout
-> - Turn Meta ads off in 5 matched regions for 4 weeks, and keep them running in 5 similar regions.
-> - Compare each group's sales with its own sales in the weeks before the test. What ads added is how much the off regions changed beyond the change in the on regions, because the groups start at different levels and demand can move in both.
-> - Compare that gap with the sales Meta's attribution said it drove.
+> [!TRICK] Run a regional holdout in GeoLift
+> - Load your past sales by region into GeoLift and run its power analysis. It picks which markets go without ads and for how long. Korzhov's default is 5 regions for 4 weeks.
+> - Turn Meta ads off in those markets only.
+> - Read GeoLift's result: percent lift, incremental sales and a confidence range. With ads off, the lift comes out negative; its size is what ads added. Don't subtract raw sales changes between regions yourself: a big and a small region growing at the same rate show a gap with no ad effect.
+> - Compare it with the sales Meta's attribution claimed in the same markets, for the same conversion event, over the same number of weeks just before the test. Only work out how much Meta over-credits when the confidence range excludes zero.
 > - For an ongoing estimate per channel, try marketing mix modelling with the free tools [Google Meridian](https://developers.google.com/meridian) or [Meta Robyn](https://facebookexperimental.github.io/Robyn/). Both can take your holdout results as a check.
 
 > [!RISK] You lose sales in the test regions
@@ -106,7 +107,7 @@ Korzhov expects agents to run competitors' ad accounts, bidding in the same auct
 > How long it has run. Nobody keeps paying for a clearly losing ad, so one live for 60+ days probably pays for itself. It's a heuristic: brand ads and neglected accounts run long too.
 
 > [!CHECK] Meta says your ads drove most of your sales. How do you find out what they really add?
-> Switch ads off in a few matched regions for a few weeks while similar regions keep them. Compare how each group's sales changed against the weeks before: the extra drop in the off regions is what ads added. Then compare that with what Meta claimed. Pick regions small enough to afford the lost sales.
+> Run a geo test in GeoLift: its power analysis picks the regions that go without ads, and its synthetic control shows what they would have sold with ads on. The lift and its confidence range are what ads added. Compare that with what Meta claimed for the same regions, and pick regions small enough to afford the lost sales.
 
 > [!CHECK] In paid ads, why must every sale be counted exactly once?
 > Ad algorithms learn from the sale events you send them. Duplicated or missing sales teach them from wrong data.
@@ -116,8 +117,8 @@ Korzhov expects agents to run competitors' ad accounts, bidding in the same auct
 - [Gordon, Zettelmeyer, Bhargava and Chapsky, *A Comparison of Approaches to Advertising Measurement: Evidence from Big Field Experiments at Facebook* (2019)](https://www.kellogg.northwestern.edu/faculty/gordon_b/files/fb_comparison.pdf)
 - [Blake, Nosko and Tadelis, *Consumer Heterogeneity and Paid Search Effectiveness* (2014)](https://www.nber.org/system/files/working_papers/w20171/w20171.pdf)
 - [Lewis and Rao, *The Unfavorable Economics of Measuring the Returns to Advertising* (2015)](https://ideas.repec.org/a/oup/qjecon/v130y2015i4p1941-1973.html)
-- [Vaver and Koehler, *Measuring Ad Effectiveness Using Geo Experiments* (Google, 2011)](https://research.google/pubs/measuring-ad-effectiveness-using-geo-experiments/)
 - [Meta Open Source: GeoLift](https://facebookincubator.github.io/GeoLift/)
+- [Meta Open Source: GeoLift walkthrough](https://facebookincubator.github.io/GeoLift/docs/GettingStarted/Walkthrough/)
 - [Meta for Developers: Ad Library API (ads_archive)](https://developers.facebook.com/docs/graph-api/reference/ads_archive/)
 - [Meta: Automated Data Collection Terms](https://www.facebook.com/legal/automated_data_collection_terms)
 - [Meta for Developers: Conversions API best practices](https://developers.facebook.com/documentation/ads-commerce/conversions-api/best-practices)

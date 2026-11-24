@@ -41,7 +41,7 @@ Give changes time to show up. Google's [SEO Starter Guide](https://developers.go
 > ```
 >
 > 4. Search Console → URL Inspection → Request indexing for each updated page. Once is enough: Google says [asking again won't speed it up](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl).
-> 5. Wait until URL Inspection shows Google has recrawled the page, then give it a few weeks. Pull the queries again and repeat.
+> 5. Wait until URL Inspection shows Google has recrawled the page. That's a checkpoint, not the result: a crawl doesn't guarantee the change reaches search results. Judge the edit on queries from after the crawl, over a window as long as the one you compare it with, leaving out the last 3 days, because [Search Console data usually takes 2 to 3 days to appear](https://support.google.com/webmasters/answer/17010575). Then repeat.
 
 > [!TRICK] The Monday version
 > Nicholas Dulait (who sells an SEO agent, ChatSEO) runs a lighter loop for one hour every Monday:

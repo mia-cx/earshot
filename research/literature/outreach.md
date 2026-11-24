@@ -45,6 +45,7 @@ Research behind `content/outreach/`. Each lesson lists the principles it rests o
 | Follow-up #4 is "Hi John???"; answer within 5 minutes | **one person's claim**, labelled | cheat sheet |
 | Most companies answer online leads far too slowly | **supported** (abstract) | Oldroyd et al. |
 | Gmail bulk sender: close to 5,000+ messages a day to personal Gmail, permanently; needs one-click unsubscribe and a visible link | **supported** | Google sender guidelines and FAQ |
+| Google asks bulk senders to honour unsubscribes within 48 hours (added beside Yahoo's 2 days, second skills review) | **supported** ("fulfill unsubscribe requests within 48 hours") | Google sender guidelines FAQ |
 | CAN-SPAM: reply-based opt-out allowed, B2B included; postal address required; honour opt-outs within 10 business days | **supported** | FTC CAN-SPAM guide |
 | PECR lets you email companies; consent needed for individuals and sole traders | **overstated**: LLPs and Scottish partnerships may be emailed too; other partnerships need consent like sole traders; a named person's work address still falls under UK GDPR. Lesson now says so | ICO: Electronic mail marketing; ICO: Business-to-business marketing |
 
@@ -62,6 +63,7 @@ Research behind `content/outreach/`. Each lesson lists the principles it rests o
 | 3 DMs to 50 people each; send the winner to the other 850 | **one person's claim**, labelled; disputed as a test design (row below) | DinScales post |
 | Telling 10% from 15% apart takes about 576 sends per version; don't stop early | **supported** (16 × 0.09 / 0.05²) | Miller |
 | LinkedIn limits invitations, restricts accounts typically for a week, publishes no number | **supported** | LinkedIn Help |
+| Send 150 DMs through Sales Navigator in one week | **overstated** (second skills review, 2026-11-24): Sales Navigator allocates 50 InMail credits a month, banks up to 150, sells no extra, and refunds a credit when someone replies within 90 days. The TRICK now checks the credit balance first and splits the pilot across months or tests fewer DMs; title drops "one week". FORM unchanged | LinkedIn Help: InMail credits in Sales Navigator |
 | Section 8.2 bans bots that "send or redirect messages" and scripts, crawlers and plugins that scrape or copy | **supported** | User Agreement 8.2 |
 | The terms also limit copying other people's content | **supported** | User Agreement 8.2 |
 | The method works | **one person's claim**; the post shows no results (labelled) | DinScales post |

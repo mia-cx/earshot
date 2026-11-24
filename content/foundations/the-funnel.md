@@ -6,8 +6,8 @@ description: Name each funnel stage for your product and define what "done" look
 
 > [!TLDR] Marketing runs from first contact to payment. Retention proves the product works; new buyers grow it.
 > - Marketing covers the whole path: acquisition, onboarding, engagement, retention, monetisation.
-> - Fix retention until enough users stay to pay for growth. From there, growth comes mainly from new users.
-> - Define "onboarded" as one event: the first action that gives the user value.
+> - If people should keep using your product, fix retention until enough users stay to pay for growth. From there, growth comes mainly from new users.
+> - Define "onboarded" as a habit: the key action that gives the user value, repeated at the rhythm you expect.
 > - Decide on day one how you'll make money.
 
 ## Marketing is more than getting users
@@ -21,18 +21,18 @@ One marketer (@kunalvg) sums it up as "acquisition is easy, retention is hard", 
 | Stage | The question | Done looks like |
 | --- | --- | --- |
 | Acquisition | How do the right people find you? | A written ideal-user profile, chosen channels, content loops, partners and a referral program |
-| Onboarding | Do new users reach value fast? | One event defines "onboarded", and a first "aha" moment is built into the product |
+| Onboarding | Do new users reach value fast? | A key action repeated on a set rhythm defines "onboarded", and the first time a user does it, the "aha" moment, is built into the product |
 | Engagement | What brings them back? | You know your hero features and how a casual user becomes a power user |
 | Retention | Why do they stay or leave? | Users segmented by usage, churn reasons tracked, win-back campaigns planned |
 | Monetisation | How does this pay? | Why, how and what you'll charge, written down on day one |
 
 > [!DIAGRAM] funnel
 
-## Define onboarding as one event
+## Define onboarded as a habit
 
-"Onboarded" should be one countable event: the first action that delivers value. McClure called this activation, a happy first visit.
+"Onboarded" means a user keeps doing the key action, the one that delivers value, at the rhythm you expect. [Casey Winters](https://www.caseyaccidental.com/p/why-onboarding-is-the-most-crucial-part-of-your-growth-strategy) counted Pinterest users as onboarded when they were still saving pins every week, four weeks after sign-up.
 
-In a crypto product, that might be a connected wallet or first transaction. In a note-taking app, it's the first saved note. Design that path with whoever builds the product, and build the first "aha" moment right into it.
+The first time someone does the key action is the first value event, the "aha" moment. That's closer to McClure's activation, a happy first visit. In a crypto product, it might be a connected wallet or first transaction. In a note-taking app, it's the first saved note, and onboarded might mean saving notes every week a month later. Design the path to that first note with whoever builds the product, and build the "aha" moment right into it.
 
 > [!FORM] Your onboarded event
 > 1. Which single action means a new user got value? Finish the sentence: "A user is onboarded when they…"
@@ -42,9 +42,11 @@ In a crypto product, that might be a connected wallet or first transaction. In a
 
 Use Google Analytics for the website and a product analytics tool for what happens inside the product. (The source author uses Redash and Dune because their products are on-chain.)
 
-## Fix retention first, then grow
+## Fix the biggest leak first, then grow
 
-Fix leaks before you pour in traffic. Brian Balfour, who led growth at HubSpot, calls a [retention curve that flattens](https://brianbalfour.com/essays/hubspot-growth-framework-100m) the best sign of product-market fit: a steady share of users keeps getting value week after week. If your curve keeps dropping towards zero, every new user leaks out.
+If people should keep using your product, fix leaks before you pour in traffic. Brian Balfour, who led growth at HubSpot, calls a [retention curve that flattens](https://brianbalfour.com/essays/hubspot-growth-framework-100m) the best sign of product-market fit: a steady share of users keeps getting value week after week. If your curve keeps dropping towards zero, every new user leaks out.
+
+Balfour's example is a subscription product. A one-off purchase is meant to end, so a falling curve there is no leak. Find the stage where most buyers drop out and start there.
 
 A flat curve isn't enough on its own: it can flatten at a level too low to pay for growth. Check that the share who stay can cover what it costs to win each user.
 
@@ -59,14 +61,14 @@ The same author says products now have short shelf lives (an opinion, not a meas
 - **Monetisation:** *Keep and convert*, in *Read your pricing from your numbers*.
 - **Running it all with less effort:** *AI agents as your team*.
 
-> [!DO] Write your onboarding event
-> Fill in your onboarded event above, then download it and pin it where you work.
+> [!DO] Write when a user is onboarded
+> Fill in your onboarded sentence above with the key action and its rhythm, then download it and pin it where you work.
 
 > [!CHECK] What are the five stages of the marketing funnel?
 > Acquisition, onboarding, engagement, retention and monetisation.
 
 > [!CHECK] You're defining "onboarded" for a note-taking app. What should the definition be?
-> One countable event: the first action that gives the user value, such as saving their first note.
+> A habit: the key action, such as saving a note, still repeated at the rhythm you expect weeks after sign-up. The first saved note is the first value event, the "aha" moment.
 
 > [!CHECK] Your retention curve has flattened: a steady share of users keeps coming back. Where will most of your growth come from now?
 > From new users, as long as the share who stay can pay for winning them. Ehrenberg-Bass research found growth comes mainly from new buyers, not from keeping more of the ones you have.
@@ -75,6 +77,7 @@ The same author says products now have short shelf lives (an opinion, not a meas
 
 - [Dave McClure, *Startup Metrics for Pirates: AARRR!* (2007)](https://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-long-version)
 - [Brian Balfour, *Building a Growth Framework Towards a $100 Million Product*](https://brianbalfour.com/essays/hubspot-growth-framework-100m)
+- [Casey Winters, *Why Onboarding is the Most Crucial Part of Your Growth Strategy* (2017)](https://www.caseyaccidental.com/p/why-onboarding-is-the-most-crucial-part-of-your-growth-strategy)
 - [Ehrenberg-Bass Institute: Answering critics](https://marketingscience.info/news-and-insights/answering-critics)
 - [@kunalvg: product marketing basics and the full funnel](https://x.com/kunalvg/status/1951276376251617737)
 - [@kunalvg: marketing missteps](https://x.com/kunalvg/status/1685889947461402624)

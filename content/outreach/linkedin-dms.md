@@ -37,11 +37,12 @@ Read every DM before it goes out. Claude can miss when a line sounds robotic, an
 
 Don't send your best guess to the whole list. Split-test on a slice first.
 
-> [!TRICK] Three DMs, 150 people, one week
+> [!TRICK] Three DMs, 150 people
 > 1. In LinkedIn Sales Navigator, filter by your buyer's job title, industry and company headcount.
-> 2. Send each of your 3 DMs to 50 people (150 total).
-> 3. After a week, compare replies. If one DM clearly beats the others, write 3 new versions of it.
-> 4. Test those on fresh slices of your list before you send to the rest (the author's example sends to the remaining 850 of 1,000). If the counts are close, call it a tie and keep testing.
+> 2. Check your InMail credit balance. Sales Navigator gives [50 InMail credits a month](https://www.linkedin.com/help/sales-navigator/answer/a101030), banks up to 150, and sells no extra; a reply within 90 days refunds the credit. With fewer than 150, split the pilot across months or test fewer DMs.
+> 3. Send each of your 3 DMs to 50 people (150 total).
+> 4. A week after each send, compare replies. If one DM clearly beats the others, write 3 new versions of it.
+> 5. Test those on fresh slices of your list before you send to the rest (the author's example sends to the remaining 850 of 1,000). If the counts are close, call it a tie and keep testing.
 
 > [!RISK] 50 sends can't pick a winner
 > At a 10% reply rate, 50 sends gives you about 5 replies per DM, and 5 against 8 can be pure luck. Evan Miller's [rule of thumb for A/B tests](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) says telling 10% from 15% apart takes about 576 sends per version. Decide the sample size before you start, and don't stop early because one looks ahead. With a small list, keep a DM only if it wins by a wide margin, and keep testing.
@@ -92,6 +93,7 @@ To keep an agent from doing damage on its own, see *Keep bots from doing damage*
 - [The Learning Leader: Rob Fitzpatrick on the Mom Test rules](https://learningleader.com/robfitzpatrick/)
 - [LinkedIn Help: LinkedIn's Ad Library](https://www.linkedin.com/help/linkedin/answer/a1517918)
 - [LinkedIn Help: Invitation limit reached](https://www.linkedin.com/help/linkedin/answer/a550555)
+- [LinkedIn Help: InMail credits in Sales Navigator](https://www.linkedin.com/help/sales-navigator/answer/a101030)
 - [LinkedIn: User Agreement](https://www.linkedin.com/legal/user-agreement)
 - [Evan Miller, *How Not To Run an A/B Test* (2010)](https://www.evanmiller.org/how-not-to-run-an-ab-test.html)
 - [@DinScales26: competitor ads into LinkedIn DMs, testing and automation](https://x.com/DinScales26/status/2119077318769385871)
