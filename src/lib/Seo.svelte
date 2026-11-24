@@ -12,7 +12,8 @@
 	/**
 	 * A page's search and share metadata: title, description, canonical URL, Open Graph and
 	 * structured data. The origin comes from `prerender.origin` in `vite.config.ts` (env `SITE_URL`).
-	 * Pages readers use privately (`/review`, `/lab`) pass `noindex` and no description. Every page of
+	 * Pages readers use privately (`/map`, `/review`, `/lab`) pass `noindex`, but still describe
+	 * themselves, since crawlers that follow links to them flag a missing description. Every page of
 	 * a staging build is noindex, so staging never competes with the live site in search.
 	 * `crumbs` mirrors the visible trail above the page (module, then lesson) as a BreadcrumbList.
 	 * Lessons pass `type="article"` and their own share `image`, described by `imageAlt`.
@@ -69,10 +70,10 @@
 
 <svelte:head>
 	<title>{title}</title>
+	{#if description}<meta name="description" content={description} />{/if}
 	{#if hidden}
 		<meta name="robots" content="noindex" />
 	{:else}
-		{#if description}<meta name="description" content={description} />{/if}
 		<meta name="robots" content="max-image-preview:large" />
 		<link rel="canonical" href={canonical} />
 		{#if markdown}<link rel="alternate" type="text/markdown" href={markdown} />{/if}

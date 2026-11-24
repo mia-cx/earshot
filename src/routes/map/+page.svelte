@@ -53,7 +53,11 @@
 </script>
 
 <!-- The reader's own progress view; the landing page carries the same route for search. -->
-<Seo title="Your map · Earshot" noindex />
+<Seo
+	title="Your map · Earshot"
+	description="Your place in Earshot: the next lesson, every module's progress, review cards due, and a backup of your answers."
+	noindex
+/>
 
 <h1 class="sr-only">Your map</h1>
 
