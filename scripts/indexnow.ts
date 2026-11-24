@@ -13,7 +13,9 @@ import { join } from 'node:path';
 import { parseHTML } from 'linkedom';
 
 const BUILD = '.svelte-kit/cloudflare';
-const VOLATILE = 'script:not([type="application/ld+json"]), style, link, noscript';
+/** Scripts, styles and links to built assets; canonical and alternate links stay in the comparison. */
+const VOLATILE =
+	'script:not([type="application/ld+json"]), style, noscript, link[rel~="modulepreload"], link[rel~="preload"], link[rel~="stylesheet"]';
 
 const locs = (sitemap: string) => Array.from(sitemap.matchAll(/<loc>([^<]+)<\/loc>/g), ([, loc]) => loc);
 
@@ -24,31 +26,47 @@ export const content = (html: string) => {
 	return document.documentElement.outerHTML.replace(/>\s+</g, '><').replace(/\s+/g, ' ');
 };
 
-/** The live page, or undefined when it isn't there; any other failure throws. */
-const live = async (url: string) => {
-	const response = await fetch(url, { redirect: 'manual' });
-	if (response.status === 404) return undefined;
-	if (!response.ok) throw new Error(`${url}: ${response.status}`);
-	return response.text();
-};
-
-const built = (url: string) => {
-	const { pathname } = new URL(url);
-	return readFile(join(BUILD, pathname === '/' ? 'index.html' : `${pathname}.html`), 'utf8');
-};
-
-const changed = async (url: string) => {
-	const [before, after] = await Promise.all([live(url), built(url)]);
-	return before === undefined || content(before) !== content(after);
+/**
+ * The URLs to send: pages the new sitemap adds, pages on both whose content `changed`, and pages
+ * it drops. A page it adds goes even when it already serves the same HTML, since search engines
+ * may not have found it yet.
+ */
+export const toSubmit = async (built: string[], listed: string[], changed: (url: string) => Promise<boolean>) => {
+	const kept = built.filter((url) => listed.includes(url));
+	const flags = await Promise.all(kept.map(changed));
+	return [
+		...built.filter((url) => !listed.includes(url)),
+		...kept.filter((_, i) => flags[i]),
+		...listed.filter((url) => !built.includes(url))
+	];
 };
 
 const main = async () => {
 	const [site] = process.argv.slice(2);
 	if (!site) throw new Error('Usage: node scripts/indexnow.ts <site origin>');
+	const { origin } = new URL(site);
+
+	/** The live page on this site, or undefined when it isn't there; any other failure throws. */
+	const live = async (url: string) => {
+		const { href, origin: host } = new URL(url);
+		if (host !== origin) throw new Error(`${url} is not on ${origin}`);
+		const response = await fetch(href, { redirect: 'manual' });
+		if (response.status === 404) return undefined;
+		if (!response.ok) throw new Error(`${href}: ${response.status}`);
+		return response.text();
+	};
+	const built = (url: string) => {
+		const { pathname } = new URL(url);
+		return readFile(join(BUILD, pathname === '/' ? 'index.html' : `${pathname}.html`), 'utf8');
+	};
+	const changed = async (url: string) => {
+		const [before, after] = await Promise.all([live(url), built(url)]);
+		return before === undefined || content(before) !== content(after);
+	};
+
 	const pages = locs(await readFile(join(BUILD, 'sitemap.xml'), 'utf8'));
-	const dropped = locs((await live(`${site}/sitemap.xml`)) ?? '').filter((url) => !pages.includes(url));
-	const flags = await Promise.all(pages.map(changed));
-	for (const url of [...pages.filter((_, i) => flags[i]), ...dropped]) console.log(url);
+	const listed = locs((await live(`${origin}/sitemap.xml`)) ?? '');
+	for (const url of await toSubmit(pages, listed, changed)) console.log(url);
 };
 
 if (import.meta.main) await main();

@@ -43,12 +43,13 @@ jobs:
           printf '/*\n  X-Robots-Tag: noindex\n' > _headers
       - run: pnpm build
       # Compares the build with the pages still live, so only pages this release changes, adds or
-      # drops go to IndexNow. If the comparison fails, the ping sends every page instead.
+      # drops go to IndexNow. If the comparison fails or takes over a minute, the ping sends every
+      # page instead, and the deploy goes ahead.
       - name: Find changed pages
         id: changed
         if: inputs.environment == 'production'
         continue-on-error: true
-        run: node scripts/indexnow.ts "$SITE_URL" > "$RUNNER_TEMP/changed.txt"
+        run: timeout 60 node scripts/indexnow.ts "$SITE_URL" > "$RUNNER_TEMP/changed.txt"
       - run: pnpm exec wrangler deploy ${{ inputs.environment == 'staging' && '--env staging' || '' }}
       # Tells the IndexNow search engines (Bing, Yandex, Seznam, Naver) which pages changed, so they
       # recrawl without waiting for their own schedule. static/<key>.txt proves the site is ours. A
