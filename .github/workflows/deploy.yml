@@ -42,17 +42,31 @@ jobs:
         run: |
           printf '/*\n  X-Robots-Tag: noindex\n' > _headers
       - run: pnpm build
+      # Compares the build with the pages still live, so only pages this release changes, adds or
+      # drops go to IndexNow. If the comparison fails or takes over a minute, the ping sends every
+      # page instead, and the deploy goes ahead.
+      - name: Find changed pages
+        id: changed
+        if: inputs.environment == 'production'
+        continue-on-error: true
+        run: timeout 60 node scripts/indexnow.ts "$SITE_URL" > "$RUNNER_TEMP/changed.txt"
       - run: pnpm exec wrangler deploy ${{ inputs.environment == 'staging' && '--env staging' || '' }}
-      # Tells the IndexNow search engines (Bing, Yandex, Seznam, Naver) that every page in the sitemap
-      # may have changed, so they recrawl without waiting for their own schedule. static/<key>.txt
-      # proves the site is ours. A failed or stalled ping leaves the release alone.
+      # Tells the IndexNow search engines (Bing, Yandex, Seznam, Naver) which pages changed, so they
+      # recrawl without waiting for their own schedule. static/<key>.txt proves the site is ours. A
+      # failed or stalled ping leaves the release alone.
       - name: Ping IndexNow
         if: inputs.environment == 'production'
         continue-on-error: true
         env:
           INDEXNOW_KEY: e064b5957e6be3c51732ac04d153af69
         run: |
-          grep -oP '(?<=<loc>)[^<]+' .svelte-kit/cloudflare/sitemap.xml \
-            | jq -Rn --arg site "$SITE_URL" --arg key "$INDEXNOW_KEY" \
-              '{host: ($site | ltrimstr("https://")), key: $key, keyLocation: "\($site)/\($key).txt", urlList: [inputs]}' \
+          changed="$RUNNER_TEMP/changed.txt"
+          if [ "${{ steps.changed.outcome }}" != success ]; then
+            grep -oP '(?<=<loc>)[^<]+' .svelte-kit/cloudflare/sitemap.xml > "$changed"
+          fi
+          if [ ! -s "$changed" ]; then echo 'No page changed.'; exit 0; fi
+          cat "$changed"
+          jq -Rn --arg site "$SITE_URL" --arg key "$INDEXNOW_KEY" \
+            '{host: ($site | ltrimstr("https://")), key: $key, keyLocation: "\($site)/\($key).txt", urlList: [inputs]}' \
+            < "$changed" \
             | curl -sS --fail-with-body --max-time 30 -H 'Content-Type: application/json; charset=utf-8' --data @- https://api.indexnow.org/indexnow
