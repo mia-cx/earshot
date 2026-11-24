@@ -65,7 +65,7 @@
 			</a>
 		{/each}
 	</nav>
-	<div class="guru">
+	<div id="install" class="guru">
 		<p>Or make your agent a marketing guru:</p>
 		<div class="lesson">
 			<pre><code>npx skills add {page.url.origin}</code><button type="button" class="copy" data-copy>Copy</button></pre>
@@ -174,14 +174,10 @@
 	<h2 id="agents-title">Give the course to your agent</h2>
 	<p>
 		The methods from these lessons are also {data.skills.reduce((n, g) => n + 1 + g.branches.length, 0)} agent skills:
-		your coding agent follows the steps and you approve what goes out. Install them all:
-	</p>
-	<div class="lesson">
-		<pre><code>npx skills add {page.url.origin}</code><button type="button" class="copy" data-copy>Copy</button></pre>
-	</div>
-	<p>
-		Or read any of them as plain Markdown. The full list is <a href="/.well-known/agent-skills/index.json">index.json</a>,
-		and <a href="/llms.txt">llms.txt</a> describes the whole site for agents.
+		your coding agent follows the steps and you approve what goes out. Install them all with
+		<a href="#install">the command at the top</a>, or read any of them as plain Markdown. The full list is
+		<a href="/.well-known/agent-skills/index.json">index.json</a>, and <a href="/llms.txt">llms.txt</a> describes the
+		whole site for agents.
 	</p>
 	<div class="skills">
 		{#each data.skills as { entry, branches } (entry.name)}
@@ -275,6 +271,7 @@
 
 	.guru {
 		margin-top: 2rem;
+		scroll-margin-top: 6rem;
 		max-width: 30rem;
 		& p {
 			font-size: 1.1rem;
@@ -485,9 +482,6 @@
 			max-width: 40rem;
 			font-size: 1.1rem;
 			line-height: 1.55;
-		}
-		& .lesson {
-			margin-top: 1.25rem;
 		}
 		& a {
 			text-decoration: underline;

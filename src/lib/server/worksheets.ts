@@ -43,7 +43,7 @@ const DEFINITIONS: Definition[] = [
 		title: 'Where to find them',
 		summary: 'The places your buyers talk about the problem, and the signs one needs you now.',
 		skill: 'gtm-outreach',
-		task: 'find where these people talk about this problem: the communities, platforms and accounts, with links to real posts from the last month, ranked by how often the problem comes up.',
+		task: 'find where these people talk about this problem: the communities, platforms and accounts, with links to real posts from the last month, ranked by how often the problem comes up. Stop at that list: don’t draft messages or save leads yet.',
 		ask: [
 			'where-do-they-read-are-they-even-on-x',
 			'which-one-platform-do-the-people-you-want-to-reach-spend-time-on',

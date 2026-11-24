@@ -80,6 +80,8 @@ Review my answers against the lesson:
 Be direct and specific. Skip praise that doesn't teach me anything.`;
 
 	let checkStatus: 'idle' | 'copied' | 'empty' | 'failed' = $state('idle');
+	/** The agent prompt, shown to select and copy by hand when the clipboard is blocked. */
+	let fallback = $state('');
 
 	/** The review prompt: the lesson's Markdown copy (written by Svartz beside the page) and the sheet so far. */
 	const reviewPrompt = async (href: string) => {
@@ -108,6 +110,7 @@ ${markdown().trim()}
 		}
 		const text = 'agent' in props ? Promise.resolve(agentPrompt(props.agent)) : reviewPrompt(props.lesson.href);
 		const prompt = text.then((t) => new Blob([t], { type: 'text/plain' }));
+		fallback = '';
 		try {
 			// The write starts inside the click and takes the prompt as a promise, so Safari keeps the
 			// click's permission to use the clipboard while the lesson downloads.
@@ -116,6 +119,7 @@ ${markdown().trim()}
 		} catch (error) {
 			console.error('Worksheet: could not copy the prompt', error);
 			checkStatus = 'failed';
+			if ('agent' in props) fallback = agentPrompt(props.agent);
 		}
 	};
 
@@ -184,10 +188,14 @@ ${markdown().trim()}
 			{agent ? 'Answer at least one question, then copy the prompt.' : 'Answer at least one question, then check your work.'}
 		{:else if checkStatus === 'failed'}
 			{agent
-				? 'Couldn’t copy. Download the Markdown and give it to your agent.'
+				? 'Couldn’t copy. Select the prompt below and copy it.'
 				: 'Couldn’t copy. Download the Markdown and give it to your AI assistant with a link to this lesson.'}
 		{/if}
 	</p>
+	{#if fallback}
+		<textarea class="fallback" readonly aria-label="Prompt for your agent" value={fallback} onfocus={(e) => e.currentTarget.select()}
+		></textarea>
+	{/if}
 </form>
 
 <style>
@@ -294,6 +302,12 @@ ${markdown().trim()}
 			font-size: 0.875rem;
 			color: var(--muted);
 		}
+	}
+
+	.fallback {
+		max-height: 16rem;
+		font-family: var(--font-mono);
+		font-size: 0.8rem;
 	}
 
 	.check-status {
