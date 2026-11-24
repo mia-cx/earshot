@@ -5,7 +5,7 @@
 	import {
 		blockWords,
 		type LessonNarration,
-		narratedSections,
+		lessonSections,
 		sectionKey,
 		sectionText,
 		TLDR,
@@ -52,7 +52,7 @@
 		const narration: LessonNarration = await response.json();
 		if (!narration.sections) return [];
 		const found = await Promise.all(
-			narratedSections(root).map(async (blocks) => {
+			lessonSections(root).map(async (blocks) => {
 				const key = await sectionKey(sectionText(blocks).text, narration.voice, narration.model);
 				const timings = narration.sections[key];
 				if (!timings) return [];
@@ -153,7 +153,10 @@
 		const heard = audio.currentTime - latency();
 		if (hold && heard < hold.seconds) return show(hold.word);
 		hold = undefined;
-		show(markerWord(current, wordAt(sections[current].timings, heard)));
+		const { timings } = sections[current];
+		// Before the first word on the page (the title's module intro), nothing is highlighted.
+		if (heard < timings[0]) return show(-1);
+		show(markerWord(current, wordAt(timings, heard)));
 	};
 
 	/** When the latest start began, for its fade-in. */

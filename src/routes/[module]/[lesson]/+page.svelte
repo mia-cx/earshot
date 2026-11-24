@@ -56,7 +56,7 @@
 	let panel = $state<HTMLElement>();
 	let body = $state<MarkerElement>();
 
-	// The lesson body is a <mia-marker>: it draws the reader's selection and the narrator's word cursor.
+	// A <mia-marker> wraps the title and body: it draws the reader's selection and the narrator's word cursor.
 	$effect(defineMarker);
 
 	const finish = async () => {
@@ -166,20 +166,29 @@
 	</nav>
 
 	<article class="mt-8 min-w-0">
-		<h1 class="text-4xl leading-[1.08] font-[800] tracking-tight text-balance sm:text-5xl">{data.lesson.title}</h1>
+		<!--
+			The title (after its module) and the body's headings, paragraphs and lists are narrated
+			(#lib/narration.ts); the marker around them highlights the spoken word.
+		-->
+		<mia-marker bind:this={body}>
+			<h1
+				class="text-4xl leading-[1.08] font-[800] tracking-tight text-balance sm:text-5xl"
+				data-narration-intro="Module {module.number}: {module.title}."
+			>
+				{data.lesson.title}
+			</h1>
 
-		<!-- Its headings, paragraphs and lists are narrated (#lib/narration.ts); the marker highlights the spoken word. -->
-
-		<mia-marker class="lesson mt-8" data-narration bind:this={body}>
-			{#each data.lesson.blocks as block, i (i)}
-				{#if block.kind === 'html'}
-					{@html block.html}
-				{:else if block.kind === 'diagram'}
-					<Diagram name={block.name} />
-				{:else}
-					<Worksheet form={block.form} lesson={data.lesson} />
-				{/if}
-			{/each}
+			<div class="lesson mt-8" data-narration>
+				{#each data.lesson.blocks as block, i (i)}
+					{#if block.kind === 'html'}
+						{@html block.html}
+					{:else if block.kind === 'diagram'}
+						<Diagram name={block.name} />
+					{:else}
+						<Worksheet form={block.form} lesson={data.lesson} />
+					{/if}
+				{/each}
+			</div>
 		</mia-marker>
 		<Narrator lesson={data.lesson.id} {body} />
 

@@ -98,6 +98,17 @@ export const narratedSections = (body: Element): Element[][] => {
 	return sections.filter((section) => section.length);
 };
 
+/** The lesson title, whose `data-narration-intro` names its module, read before the title itself. */
+export const TITLE = 'h1[data-narration-intro]';
+
+/** Every section of a lesson page in reading order: its title, then its body's (`narratedSections`). */
+export const lessonSections = (page: ParentNode): Element[][] => {
+	const body = page.querySelector('[data-narration]');
+	if (!body) return [];
+	const title = page.querySelector(TITLE);
+	return [...(title && blockWords(title).length ? [[title]] : []), ...narratedSections(body)];
+};
+
 /**
  * A block as it is read aloud, and where each word starts in that text and how long it is there. A
  * word is said as `say` gives it (an X handle as a name), so one word on the page can be several spoken.
@@ -123,14 +134,16 @@ const ENDS_SENTENCE = /[.!?:;…]["'”’)\]]*$/;
  * A section as it is read aloud: its blocks' text, a paragraph break apart so the voice pauses between
  * them, and where each word starts in that text and how long it is, in reading order. A block that
  * doesn't end a sentence, like a heading, gets a full stop the page doesn't show, or the voice runs it
- * straight into the next block.
+ * straight into the next block. A section opened by the lesson title starts with its intro (the
+ * module), spoken but not on the page, so no word of it is highlighted.
  */
 export const sectionText = (blocks: Element[]) => {
-	let text = '';
+	const intro = blocks[0]?.getAttribute('data-narration-intro');
+	let text = intro ? `${intro}\n\n` : '';
 	const offsets: number[] = [];
 	const lengths: number[] = [];
-	for (const block of blocks) {
-		if (text) text += '\n\n';
+	for (const [i, block] of blocks.entries()) {
+		if (i > 0) text += '\n\n';
 		const spoken = spokenText(blockWords(block));
 		offsets.push(...spoken.offsets.map((offset) => text.length + offset));
 		lengths.push(...spoken.lengths);

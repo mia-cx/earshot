@@ -28,7 +28,7 @@ import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join, relative } from 'node:path';
 import { parseArgs, promisify } from 'node:util';
 import { parseHTML } from 'linkedom';
-import { type LessonNarration, NARRATION_FORMAT, narratedSections, sectionKey, sectionText } from '#lib/narration.ts';
+import { type LessonNarration, lessonSections, NARRATION_FORMAT, sectionKey, sectionText } from '#lib/narration.ts';
 
 const BUCKET = 'earshot-narration';
 /** The prerendered site, and where generated audio is kept between runs. */
@@ -51,13 +51,11 @@ export type Index = { sections: string[]; lessons: Record<string, string[]> };
 /** The voiced sections of one prerendered lesson page, in reading order, or none for any other page. */
 export const readLesson = async (html: string, voice: string, model: string): Promise<Section[]> => {
 	const { document } = parseHTML(html);
-	const body = document.querySelector('[data-narration]');
-	if (!body) return [];
 	// linkedom splits text at every entity (`buyer&#39;s` is three text nodes), where a browser keeps one
 	// node, and the marker counts words per text node: merge them, so both count the same words.
-	body.normalize();
+	document.documentElement.normalize();
 	return Promise.all(
-		narratedSections(body).map(async (blocks) => {
+		lessonSections(document).map(async (blocks) => {
 			const spoken = sectionText(blocks);
 			return { key: await sectionKey(spoken.text, voice, model), ...spoken };
 		})

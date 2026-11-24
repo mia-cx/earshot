@@ -78,6 +78,22 @@ it('voices each section as one text, with every word located in it', async () =>
 	expect(await readLesson('<html><body><p>Not a lesson.</p></body></html>', 'voice', 'model')).toEqual([]);
 });
 
+// Proves the title is read first, after its module, and that only the title's words are timed: the
+// module is spoken but isn't on the page to highlight.
+it('reads the module and lesson title as the first section', async () => {
+	const titled = `<html><body><h1 data-narration-intro="Module 1: What marketing is.">Say what you are</h1>
+		<div class="lesson" data-narration><p>Body.</p></div></body></html>`;
+	const [title, body] = await readLesson(titled, 'voice', 'model');
+	expect(title.text).toBe('Module 1: What marketing is.\n\nSay what you are.');
+	expect(title.offsets.map((at, i) => title.text.slice(at, at + title.lengths[i]))).toEqual([
+		'Say',
+		'what',
+		'you',
+		'are'
+	]);
+	expect(body.text).toBe('Body.');
+});
+
 describe('a rerun', () => {
 	const read = async (id: string, html: string, voice = 'voice'): Promise<Lesson> => ({
 		id,
