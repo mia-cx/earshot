@@ -80,8 +80,6 @@ Review my answers against the lesson:
 Be direct and specific. Skip praise that doesn't teach me anything.`;
 
 	let checkStatus: 'idle' | 'copied' | 'empty' | 'failed' = $state('idle');
-	/** The agent prompt, shown to select and copy by hand when the clipboard is blocked. */
-	let fallback = $state('');
 
 	/** The review prompt: the lesson's Markdown copy (written by Svartz beside the page) and the sheet so far. */
 	const reviewPrompt = async (href: string) => {
@@ -102,6 +100,10 @@ ${markdown().trim()}
 </my-answers>
 `;
 
+	/** Once the clipboard has refused, the agent prompt shows to select and copy by hand, kept current as answers change. */
+	let blocked = $state(false);
+	const fallback = $derived(blocked && 'agent' in props ? agentPrompt(props.agent) : '');
+
 	/** Copies the review or agent prompt. Nothing leaves the browser until the reader pastes it. */
 	const copyPrompt = async () => {
 		if (!exported().questions.some(answer)) {
@@ -110,16 +112,16 @@ ${markdown().trim()}
 		}
 		const text = 'agent' in props ? Promise.resolve(agentPrompt(props.agent)) : reviewPrompt(props.lesson.href);
 		const prompt = text.then((t) => new Blob([t], { type: 'text/plain' }));
-		fallback = '';
 		try {
 			// The write starts inside the click and takes the prompt as a promise, so Safari keeps the
 			// click's permission to use the clipboard while the lesson downloads.
 			await navigator.clipboard.write([new ClipboardItem({ 'text/plain': prompt })]);
 			checkStatus = 'copied';
+			blocked = false;
 		} catch (error) {
 			console.error('Worksheet: could not copy the prompt', error);
 			checkStatus = 'failed';
-			if ('agent' in props) fallback = agentPrompt(props.agent);
+			blocked = true;
 		}
 	};
 
