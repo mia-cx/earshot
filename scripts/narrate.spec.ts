@@ -47,15 +47,16 @@ it('reads a lesson body as sections of headings, paragraphs and list items', () 
 	]);
 });
 
-// Proves each section is one recording of its blocks, a paragraph break apart, and that every word's
-// position points at that word in the text sent, so the timings land on the words the page highlights.
+// Proves each section is one recording of its blocks, a paragraph break apart, with a full stop after
+// headings so the voice pauses there, and that every word's position points at that word in the text
+// sent, so the timings land on the words the page highlights.
 it('voices each section as one text, with every word located in it', async () => {
 	const sections = await readLesson(lesson, 'voice', 'model');
 	expect(sections.map((s) => s.text)).toEqual([
 		'Positioning is anyway the context that makes value obvious.',
-		'Why it matters\n\nThree reasons:\n\nIt sets the price.\n\nIt picks the buyer.\n\nThe first reason\n\nPrice follows category.',
+		'Why it matters.\n\nThree reasons:\n\nIt sets the price.\n\nIt picks the buyer.\n\nThe first reason.\n\nPrice follows category.',
 		'After the trick.',
-		'Next topic\n\nSecond paragraph, robots.txt included.'
+		'Next topic.\n\nSecond paragraph, robots.txt included.'
 	]);
 	const words = (s: (typeof sections)[number]) => s.offsets.map((at, i) => s.text.slice(at, at + s.lengths[i]));
 	expect(words(sections[1])).toEqual(
@@ -86,8 +87,8 @@ describe('a rerun', () => {
 		const before = await read('m/one', page('<h2>A</h2><p>First stays.</p><h2>B</h2><p>Second before.</p>'));
 		const after = await read('m/one', page('<h2>A</h2><p>First stays.</p><h2>B</h2><p>Second after the edit.</p>'));
 		const { generate, characters } = plan([after], voicedIndex([before]), { only: [], all: false });
-		expect(generate.map((s) => s.text)).toEqual(['B\n\nSecond after the edit.']);
-		expect(characters).toBe(25);
+		expect(generate.map((s) => s.text)).toEqual(['B.\n\nSecond after the edit.']);
+		expect(characters).toBe(26);
 	});
 
 	// Proves a new voice is never mixed with audio in the old one.

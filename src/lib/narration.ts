@@ -99,9 +99,14 @@ export const spokenText = (words: Word[]) => {
 	return { text, offsets };
 };
 
+/** Text that already ends a sentence, so the voice stops there. */
+const ENDS_SENTENCE = /[.!?:;…]["'”’)\]]*$/;
+
 /**
  * A section as it is read aloud: its blocks' text, a paragraph break apart so the voice pauses between
- * them, and where each word starts in that text and how long it is, in reading order.
+ * them, and where each word starts in that text and how long it is, in reading order. A block that
+ * doesn't end a sentence, like a heading, gets a full stop the page doesn't show, or the voice runs it
+ * straight into the next block.
  */
 export const sectionText = (blocks: Element[]) => {
 	let text = '';
@@ -113,7 +118,7 @@ export const sectionText = (blocks: Element[]) => {
 		const spoken = spokenText(words);
 		offsets.push(...spoken.offsets.map((offset) => text.length + offset));
 		lengths.push(...words.map((word) => word.text.length));
-		text += spoken.text;
+		text += ENDS_SENTENCE.test(spoken.text) ? spoken.text : `${spoken.text}.`;
 	}
 	return { text, offsets, lengths };
 };
