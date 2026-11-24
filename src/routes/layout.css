@@ -237,10 +237,15 @@ html {
 
 /*
  * Lesson body: short measure, generous rhythm, loud structure. On lesson pages the body is a
- * `<mia-marker>` (src/lib/marker.ts), which redraws highlighted text from a copy of its content in
+ * `<mia-marker>` (`@mia-cx/marker`), which redraws highlighted text from a copy of its content in
  * `[data-marker-copy]`; the copy takes the same rules, so it lines up with the original. `:where`
  * keeps every rule here as specific as `.lesson` alone, so later rules like the TL;DR's still win.
  */
+/* The marker draws its highlight on the topmost layer; isolated, that layer stays under the sticky header. */
+mia-marker.lesson {
+	isolation: isolate;
+}
+
 .lesson,
 .lesson :where([data-marker-copy]) {
 	display: block;
