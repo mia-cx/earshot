@@ -69,6 +69,10 @@ it('voices each section as one text, with every word located in it', async () =>
 	// An entity doesn't: a browser keeps "buyer's" one text node, so it's one word, as the marker counts it.
 	const [entity] = await readLesson(page('<p>Your buyer&#39;s mind, an idea.</p>'), 'voice', 'model');
 	expect(words(entity)).toEqual(['Your', "buyer's", 'mind,', 'an', 'idea.']);
+	// A handle is said as a name, and still counts as the one word the page shows.
+	const [handle] = await readLesson(page('<p>In @kunalvg&#39;s experience.</p>'), 'voice', 'model');
+	expect(handle.text).toBe("In Kunal V G's experience.");
+	expect(words(handle)).toEqual(['In', "Kunal V G's", 'experience.']);
 	expect(await readLesson('<html><body><p>Not a lesson.</p></body></html>', 'voice', 'model')).toEqual([]);
 });
 

@@ -13,6 +13,8 @@
  * as `<mia-marker>` counts them, so a word's index in the timings is its index in the highlight.
  */
 
+import { say } from './pronunciation.ts';
+
 /** Bumped when extraction or the audio format changes, so every block is voiced afresh. */
 export const NARRATION_VERSION = 3;
 /** ElevenLabs output format, part of every key. */
@@ -87,16 +89,22 @@ export const narratedSections = (body: Element): Element[][] => {
 	return sections.filter((section) => section.length);
 };
 
-/** A block as it is read aloud, and where each word starts in that text. */
+/**
+ * A block as it is read aloud, and where each word starts in that text and how long it is there. A
+ * word is said as `say` gives it (an X handle as a name), so one word on the page can be several spoken.
+ */
 export const spokenText = (words: Word[]) => {
 	let text = '';
 	const offsets: number[] = [];
+	const lengths: number[] = [];
 	for (const [i, word] of words.entries()) {
 		if (i > 0 && !word.joined) text += ' ';
+		const spoken = say(word.text);
 		offsets.push(text.length);
-		text += word.text;
+		lengths.push(spoken.length);
+		text += spoken;
 	}
-	return { text, offsets };
+	return { text, offsets, lengths };
 };
 
 /** Text that already ends a sentence, so the voice stops there. */
@@ -114,10 +122,9 @@ export const sectionText = (blocks: Element[]) => {
 	const lengths: number[] = [];
 	for (const block of blocks) {
 		if (text) text += '\n\n';
-		const words = blockWords(block);
-		const spoken = spokenText(words);
+		const spoken = spokenText(blockWords(block));
 		offsets.push(...spoken.offsets.map((offset) => text.length + offset));
-		lengths.push(...words.map((word) => word.text.length));
+		lengths.push(...spoken.lengths);
 		text += ENDS_SENTENCE.test(spoken.text) ? spoken.text : `${spoken.text}.`;
 	}
 	return { text, offsets, lengths };
