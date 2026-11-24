@@ -13,7 +13,7 @@ overrides:
   sharp: ^0.35.5
 patchedDependencies:
   svartz@2.3.0: patches/svartz@2.3.0.patch
-# Mia's own package, published for the lesson narration: installable before it's old enough for the
-# release-age rule.
+# Mia's own package, published for the lesson narration: each release is installable before it's old
+# enough for the release-age rule.
 minimumReleaseAgeExclude:
-  - '@mia-cx/marker@0.1.0'
+  - '@mia-cx/marker'

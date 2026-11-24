@@ -238,11 +238,9 @@ html {
 /*
  * On lesson pages a `<mia-marker>` (`@mia-cx/marker`) wraps the title and body: it draws the selection
  * and the spoken word, in the module's colour, redrawing highlighted text from a copy of its content
- * that takes the same rules as the original. It draws on the topmost layer; isolated, that layer stays
- * under the sticky header.
+ * that takes the same rules as the original.
  */
 mia-marker {
-	isolation: isolate;
 	--marker-color: var(--accent-line);
 	--marker-text: var(--ink);
 }

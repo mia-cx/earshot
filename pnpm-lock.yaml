@@ -33,8 +33,8 @@ importers:
         specifier: 5.3.0
         version: 5.3.0
       '@mia-cx/marker':
-        specifier: 0.1.0
-        version: 0.1.0
+        specifier: 0.1.1
+        version: 0.1.1
       '@nanostores/persistent':
         specifier: ^1.3.5
         version: 1.3.5(nanostores@1.5.5)
@@ -722,8 +722,8 @@ packages:
   '@mermaid-js/parser@1.2.1':
     resolution: {integrity: sha512-n12NohV3mrUyUL2o93IgG/ifeW9FTyeJn3zDxkhwa8MJ9Fxg3HQMlA3RiGmD/3UnJvheztkjjQAjA2T4LmUcpw==}
 
-  '@mia-cx/marker@0.1.0':
-    resolution: {integrity: sha512-Yv018IwaiDnY54XpZKmGZAMqu+kVknqJGHTQ1ydmKzJaEamKzDn6hAGnI1/VV2FOnqkqCO4OemPuYleUiKCzYw==}
+  '@mia-cx/marker@0.1.1':
+    resolution: {integrity: sha512-euFCg9lEn0aQhC8Iq5Y49Ju6zA9ZJhPBUBHK1J/rW5Fduxiyi8E5gWlrYl41k91ve96HpFyt9aGVd0h/zQ5U7A==}
 
   '@nanostores/persistent@1.3.5':
     resolution: {integrity: sha512-CNdhro3jEzNdPpPImIltnPpDKp5vxYmomHlZI7EMNoAxddImx97djxXDdPd2HIC4UczzUUMk7AMWCfMpFJHUsw==}
@@ -3177,7 +3177,7 @@ snapshots:
     dependencies:
       '@chevrotain/types': 11.1.2
 
-  '@mia-cx/marker@0.1.0': {}
+  '@mia-cx/marker@0.1.1': {}
 
   '@nanostores/persistent@1.3.5(nanostores@1.5.5)':
     dependencies:
