@@ -2,6 +2,7 @@ import { error } from '@sveltejs/kit';
 import { course } from '#lib/server/course.ts';
 import { credits } from '#lib/server/credits.ts';
 import { skillGroups } from '#lib/server/skills.ts';
+import { worksheets } from '#lib/server/worksheets.ts';
 
 /** The lesson the landing page takes apart: a short TLDR, an interactive diagram and small tricks. */
 const SHOWCASE = 'outreach/cold-email';
@@ -26,6 +27,12 @@ export const load = () => {
 		research: credits.research,
 		posts: credits.posts,
 		authors: credits.authors,
-		skills: skillGroups
+		skills: skillGroups,
+		worksheets: worksheets.map(({ title, summary, href, questions }) => ({
+			title,
+			summary,
+			href,
+			questions: questions.length
+		}))
 	};
 };

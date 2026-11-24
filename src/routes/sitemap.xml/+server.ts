@@ -1,4 +1,5 @@
 import { course } from '#lib/server/course.ts';
+import { worksheets } from '#lib/server/worksheets.ts';
 
 export const prerender = true;
 
@@ -11,6 +12,7 @@ export const GET = ({ url }) => {
 		'/',
 		'/tricks',
 		'/sources',
+		...worksheets.map((w) => w.href),
 		...course.modules.map((m) => m.href),
 		...course.lessons.map((l) => l.href)
 	];

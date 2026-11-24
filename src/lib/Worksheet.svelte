@@ -7,10 +7,15 @@
 	 * A lesson's `[!FORM]` worksheet: one answer field per question, saved in this browser as the
 	 * reader types (`answers.ts`). A question an earlier lesson asked shows that answer, and editing
 	 * it here edits it everywhere. The export holds the sheet so far: this form's questions plus every
-	 * answered question that forms with the same title ask. "Check my work" copies a review prompt
-	 * with the lesson and the sheet for the reader's own AI assistant.
+	 * answered question that forms with the same title ask. In a lesson, "Check my work" copies a
+	 * review prompt with the lesson and the sheet for the reader's own AI assistant. On a goal
+	 * worksheet (`server/worksheets.ts`), "Copy prompt for your agent" fills a fixed template that
+	 * hands the answers to one of the course's skills.
 	 */
-	let { form, lesson }: { form: Form; lesson: { href: string } } = $props();
+	type Agent = { skill: { name: string; href: string }; task: string };
+	let { form, ...props }: { form: Form } & ({ lesson: { href: string } } | { agent: Agent }) = $props();
+	const lesson = $derived('lesson' in props ? props.lesson : undefined);
+	const agent = $derived('agent' in props ? props.agent : undefined);
 
 	const answer = (q: Question) => $answers[q.id]?.trim() ?? '';
 
@@ -76,27 +81,40 @@ Be direct and specific. Skip praise that doesn't teach me anything.`;
 
 	let checkStatus: 'idle' | 'copied' | 'empty' | 'failed' = $state('idle');
 
-	/**
-	 * Copies a review prompt for the reader's own AI assistant: the lesson's Markdown copy (written
-	 * by Svartz beside the page) and the sheet so far. Nothing leaves the browser until they paste it.
-	 */
-	const checkWork = async () => {
+	/** The review prompt: the lesson's Markdown copy (written by Svartz beside the page) and the sheet so far. */
+	const reviewPrompt = async (href: string) => {
+		const response = await fetch(`${href}.md`);
+		if (!response.ok) throw new Error(`${response.status} for ${href}.md`);
+		return `${REVIEW_PROMPT}\n\n<lesson url="${location.origin}${href}">\n${(await response.text()).trim()}\n</lesson>\n\n<my-answers>\n${markdown().trim()}\n</my-answers>\n`;
+	};
+
+	/** The agent prompt: a fixed template naming the skill and its task, then the sheet so far. */
+	const agentPrompt = ({ skill, task }: Agent) => `Use the ${skill.name} skill to ${task}
+
+If you don't have the skill, read ${location.origin}${skill.href}, or install all of Earshot's skills with \`npx skills add ${location.origin}\`.
+
+My answers from Earshot's "${form.title}" worksheet are below. Before you start, ask me about anything I left blank or answered too vaguely to work from.
+
+<my-answers>
+${markdown().trim()}
+</my-answers>
+`;
+
+	/** Copies the review or agent prompt. Nothing leaves the browser until the reader pastes it. */
+	const copyPrompt = async () => {
 		if (!exported().questions.some(answer)) {
 			checkStatus = 'empty';
 			return;
 		}
-		const prompt = fetch(`${lesson.href}.md`).then(async (response) => {
-			if (!response.ok) throw new Error(`${response.status} for ${lesson.href}.md`);
-			const text = `${REVIEW_PROMPT}\n\n<lesson url="${location.origin}${lesson.href}">\n${(await response.text()).trim()}\n</lesson>\n\n<my-answers>\n${markdown().trim()}\n</my-answers>\n`;
-			return new Blob([text], { type: 'text/plain' });
-		});
+		const text = 'agent' in props ? Promise.resolve(agentPrompt(props.agent)) : reviewPrompt(props.lesson.href);
+		const prompt = text.then((t) => new Blob([t], { type: 'text/plain' }));
 		try {
 			// The write starts inside the click and takes the prompt as a promise, so Safari keeps the
 			// click's permission to use the clipboard while the lesson downloads.
 			await navigator.clipboard.write([new ClipboardItem({ 'text/plain': prompt })]);
 			checkStatus = 'copied';
 		} catch (error) {
-			console.error('Check my work: could not copy the prompt', error);
+			console.error('Worksheet: could not copy the prompt', error);
 			checkStatus = 'failed';
 		}
 	};
@@ -115,15 +133,27 @@ Be direct and specific. Skip praise that doesn't teach me anything.`;
 	};
 </script>
 
-<form class="worksheet" aria-labelledby="{form.id}-title" onsubmit={(e) => e.preventDefault()}>
-	<p class="worksheet-kind">Fill it in</p>
-	<h3 id="{form.id}-title" class="worksheet-title">{form.title}</h3>
+<!-- On a goal worksheet the page's own heading names the sheet, so the form carries only its label. -->
+<form
+	class="worksheet"
+	aria-labelledby={lesson ? `${form.id}-title` : undefined}
+	aria-label={lesson ? undefined : form.title}
+	onsubmit={(e) => e.preventDefault()}
+>
+	{#if lesson}
+		<p class="worksheet-kind">Fill it in</p>
+		<h3 id="{form.id}-title" class="worksheet-title">{form.title}</h3>
+	{/if}
 	<ol>
-		{#each form.questions as question (question.id)}
+		{#each form.questions as question, i (question.id)}
 			{@const id = `${form.id}-${question.id}`}
 			<li>
 				<label for={id}>{@html question.html}</label>
-				{#if question.lesson.href !== lesson.href}
+				{#if !lesson}
+					{#if question.lesson.href !== form.questions[i - 1]?.lesson.href}
+						<p class="first-asked">From <a href={question.lesson.href}>{question.lesson.title}</a></p>
+					{/if}
+				{:else if question.lesson.href !== lesson.href}
 					<p class="first-asked">First asked in <a href={question.lesson.href}>{question.lesson.title}</a></p>
 				{/if}
 				<textarea
@@ -136,20 +166,26 @@ Be direct and specific. Skip praise that doesn't teach me anything.`;
 		{/each}
 	</ol>
 	<div class="worksheet-actions">
-		<button type="button" onclick={checkWork}>Check my work</button>
+		<button type="button" onclick={copyPrompt}>{agent ? 'Copy prompt for your agent' : 'Check my work'}</button>
 		<button type="button" onclick={download}>Download Markdown</button>
 		<button type="button" onclick={print}>Save as PDF</button>
 		<span>Saved in this browser as you type.</span>
 	</div>
 	<p class="check-status" role="status">
-		{#if checkStatus === 'copied'}
+		{#if checkStatus === 'copied' && agent}
+			Copied the prompt with your answers. Paste it into your coding agent,
+			<a href="https://claude.ai/new" target="_blank" rel="noopener">Claude</a> or
+			<a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT</a>.
+		{:else if checkStatus === 'copied'}
 			Copied the lesson and your answers. Paste them into
 			<a href="https://claude.ai/new" target="_blank" rel="noopener">Claude</a> or
 			<a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT</a> for feedback.
 		{:else if checkStatus === 'empty'}
-			Answer at least one question, then check your work.
+			{agent ? 'Answer at least one question, then copy the prompt.' : 'Answer at least one question, then check your work.'}
 		{:else if checkStatus === 'failed'}
-			Couldn't copy. Download the Markdown and give it to your AI assistant with a link to this lesson.
+			{agent
+				? 'Couldn’t copy. Download the Markdown and give it to your agent.'
+				: 'Couldn’t copy. Download the Markdown and give it to your AI assistant with a link to this lesson.'}
 		{/if}
 	</p>
 </form>
@@ -179,7 +215,9 @@ Be direct and specific. Skip praise that doesn't teach me anything.`;
 	ol {
 		display: grid;
 		gap: 1.5rem;
-		margin-top: 1.25rem;
+		.worksheet-title + & {
+			margin-top: 1.25rem;
+		}
 		padding: 0;
 		list-style: none;
 		counter-reset: question;

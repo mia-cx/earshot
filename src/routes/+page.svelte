@@ -65,6 +65,27 @@
 			</a>
 		{/each}
 	</nav>
+	<div class="guru">
+		<p>Or make your agent a marketing guru:</p>
+		<div class="lesson">
+			<pre><code>npx skills add {page.url.origin}</code><button type="button" class="copy" data-copy>Copy</button></pre>
+		</div>
+	</div>
+</section>
+
+<section class="worksheets" aria-labelledby="worksheets-title">
+	<h2 id="worksheets-title">Worksheets that turn into agent prompts</h2>
+	<ul>
+		{#each data.worksheets as sheet (sheet.href)}
+			<li>
+				<a href={sheet.href}>
+					<h3>{sheet.title}</h3>
+					<p>{sheet.summary}</p>
+					<span class="count tabular-nums">{sheet.questions} questions</span>
+				</a>
+			</li>
+		{/each}
+	</ul>
 </section>
 
 <section class="anatomy" data-hue style="--hue: {show.hue}" aria-labelledby="anatomy">
@@ -252,6 +273,18 @@
 		}
 	}
 
+	.guru {
+		margin-top: 2rem;
+		max-width: 30rem;
+		& p {
+			font-size: 1.1rem;
+			color: var(--muted);
+		}
+		& .lesson {
+			margin-top: 0.6rem;
+		}
+	}
+
 	.strip {
 		margin-top: clamp(2.5rem, 7vw, 4.5rem);
 		display: grid;
@@ -278,6 +311,45 @@
 			&:focus-visible {
 				scale: 1 1.12;
 			}
+		}
+	}
+
+	/* One card per goal worksheet; the whole card is the link. */
+	.worksheets {
+		margin-top: clamp(5rem, 12vw, 9rem);
+		& ul {
+			margin-top: 2.5rem;
+			display: grid;
+			gap: 0.75rem;
+			grid-template-columns: repeat(auto-fill, minmax(min(17rem, 100%), 1fr));
+		}
+		& a {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			padding: 1.25rem 1.4rem;
+			border-radius: 18px;
+			background: var(--surface);
+			transition: background-color var(--duration-quick) var(--ease-out);
+			&:hover {
+				background: var(--line);
+			}
+		}
+		& h3 {
+			font-size: 1.25rem;
+			font-weight: 800;
+			letter-spacing: -0.01em;
+		}
+		& p {
+			margin-top: 0.4rem;
+			line-height: 1.5;
+			color: var(--muted);
+		}
+		& .count {
+			margin-top: auto;
+			padding-top: 1rem;
+			font-size: 0.875rem;
+			font-weight: 650;
 		}
 	}
 
