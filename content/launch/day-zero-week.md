@@ -1,6 +1,6 @@
 ---
 title: Your first week on a brand-new product
-order: 6
+order: 7
 description: Go from zero clarity to a public marketing rhythm in seven days.
 ---
 

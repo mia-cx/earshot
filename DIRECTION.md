@@ -13,7 +13,7 @@ Earshot is a marketing and growth course for builders learning it from zero. Eac
 
 5. A research pass grounded every module in the literature: `research/literature/<module>.md` lists the books, studies and official docs behind each lesson and checks every claim in it as confirmed, disputed or unverified. Lessons open with the principle and its evidence; the posts' tricks follow as ways to apply it.
 
-To add sources: append to `links.txt`, scrape, analyse into a new batch file, place the units in the outline, then write or revise the affected lessons and check their claims against the module's literature notes.
+To add sources: append to `links.txt`, scrape, analyse into a new batch file, place the units in the outline, then write or revise the affected lessons and check their claims against the module's literature notes. Text inside images on public posts is transcribed by hand into `research/sources/`. Newsletters are cited, never copied: their source file keeps the link and the points the course uses, so readers subscribe for the full piece.
 
 ## Decisions
 
@@ -28,7 +28,7 @@ To add sources: append to `links.txt`, scrape, analyse into a new batch file, pl
 
 ## State
 
-Live on seo.mia.cx: 64 lessons (160 tricks) across 13 modules, each grounded in the research it cites (214 studies, books, guides and essays) and applied through free posts on X. Public repo `mia-cx/earshot`. seo.mia.cx is the canonical address and the one we advertise: Google already lists unrelated AI-made pages for "earshot", so the name alone won't find the course. earshot.mia.cx serves the same pages without a redirect; their canonical URLs point to seo.mia.cx. Every push to main deploys the `earshot-staging` Worker to staging.seo.mia.cx; merging a Changesets release pull request deploys the `earshot` Worker to both production hostnames and tags the release.
+Live on seo.mia.cx: 65 lessons (165 tricks) across 13 modules, each grounded in the research it cites (216 studies, books, guides and essays) and applied through free posts on X and one newsletter, lessons.sh. Public repo `mia-cx/earshot`. seo.mia.cx is the canonical address and the one we advertise: Google already lists unrelated AI-made pages for "earshot", so the name alone won't find the course. earshot.mia.cx serves the same pages without a redirect; their canonical URLs point to seo.mia.cx. Every push to main deploys the `earshot-staging` Worker to staging.seo.mia.cx; merging a Changesets release pull request deploys the `earshot` Worker to both production hostnames and tags the release.
 
 seo.mia.cx is in Google Search Console with its sitemap (79 pages) and in Bing Webmaster Tools, and each release sends every page to IndexNow. Cloudflare allows every crawler, AI crawlers included.
 

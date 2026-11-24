@@ -121,20 +121,25 @@ Summary: Give strangers a reason to care, then work the conversation that follow
 - `02-the-demo.md` "Show the product at its extreme"
   - A: Make the demo prove the product at its extreme
   - E: Learn video as a medium, regardless of platform
-- `03-launch-day.md` "Line up your launch-day voices"
+- `03-landing-page.md` "Make your landing page look designed on purpose" (from lessons.sh #02, `research/sources/lessons-sh-02.md`; no analysis batch)
+  - Pick audience, style and palette before prompting an agent; lock them in the prompt
+  - Sketch five structurally different hero layouts side by side, then combine
+  - Build the core 70-80%, then add one signature touch that fits the product
+  - Spend landing-page motion on the hero; no slow headline fade-ins
+- `04-launch-day.md` "Line up your launch-day voices"
   - A: Ask connections to quote-tweet your launch, not retweet it
   - E: Coordinate a "thunderclap" and ride existing narratives
   - B: Prepare several quote angles for one launch
   - B: Match creators to angles and brief them properly
   - E: Pick influencers for fit, not reach
-- `04-after-the-launch.md` "Work the conversation after launch"
+- `05-after-the-launch.md` "Work the conversation after launch"
   - B: Work the launch conversation as a team
   - B: Measure a launch by conversations, then run a second wave
-- `05-first-100-users.md` "Find your first 100 users"
+- `06-first-100-users.md` "Find your first 100 users"
   - E: Post to 50 places for your first 100 users
   - C: Use directory and launch lists for discovery (only the software discovery, startup launch and AI/no-code lists; merge with E's list and remove duplicates)
   - C: Join only the Reddit threads your tracked buyer questions point to (only the community list and the "participate before promoting" rule)
-- `06-day-zero-week.md` "Your first week on a brand-new product"
+- `07-day-zero-week.md` "Your first week on a brand-new product"
   - E: Follow a seven-day plan when you join a day-0 product
 
 ## 06-outreach: "Outreach"

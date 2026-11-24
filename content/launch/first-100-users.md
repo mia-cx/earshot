@@ -1,6 +1,6 @@
 ---
 title: Find your first 100 users
-order: 5
+order: 6
 description: Pick the communities and launch sites where your first buyers already look.
 ---
 
