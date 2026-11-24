@@ -110,6 +110,9 @@ Verdicts: **supported** (the source says this), **overstated** (the source says 
 | People share what makes them look smart and what's useful | **supported** | Penn Today 2013 |
 | Anger earns "mutes and blocks, the heaviest negatives" | **overstated**: report (−234) is the heaviest and block (−31.2) the lightest of the three. "Not interested" (−53.07) also outweighs block. Fixed: "mutes, blocks and reports, which all carry large negative weights, reports the largest" | param.rs |
 | Ryan's list of shareable-post habits | **one person's claim** | Ryan's post |
+| Dense one-page summaries as images are doing well on X (Nov 2026) | **one person's claim**; the two examples he shows have more saves (2.7K, 3.9K) than likes (1.6K, 1.5K) | Kyle Jeong's post and its screenshots |
+| "The algo rewards long dwell time" | **supported**, as a small term: in the default `weighted` mode, `scoring.rs` adds predicted `dwell_time` × 0.0075 and predicted `click_dwell_time` × 0.385 to the sum, beside `dwell` 0.05 and `photo_expand` 0.05. The predictions' units aren't documented, so the lesson gives no like-equivalent | param.rs, scoring.rs at 2026-11-21 |
+| Image descriptions take up to 1,000 characters | **supported** | X Help Center |
 
 ### Stay out of the filters (`stay-visible.md`)
 
