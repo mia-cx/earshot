@@ -62,6 +62,7 @@ Principles: start with the simplest system that works; a fixed-step automation i
 | Claim | Audit verdict | Source that settles it |
 | --- | --- | --- |
 | An automation follows fixed steps; an agent gets a goal and works out the steps; find "the simplest solution possible" | **supported** | Anthropic, Building effective agents |
+| Most weekly chores need "fixed steps with one AI step" | **overstated**: Anthropic's workflows call a model at every step that needs one (prompt chaining runs several calls in a row); a job with no such step is a plain script; an agent is for jobs where the model picks its own steps and tools. TLDR and body now say so; the Monday report still has one AI step because only its summary needs one | Anthropic, Building effective agents |
 | Use an agent where the job needs judgement, messy rules or unstructured text; otherwise "a deterministic solution may suffice" | **supported** | OpenAI guide |
 | About half a marketing team's hours go to building reports | **one person's claim** (@korzhov_dm: "pulling numbers into slides"), labelled | @korzhov_dm |
 | Competitor-check schedule; Claude Code, Grok Bot, Hermes Agent; run 2 to 3 weeks | **one person's claim** (@notkvtwts) | @notkvtwts |
@@ -71,7 +72,7 @@ Principles: start with the simplest system that works; a fixed-step automation i
 | DeepSeek's table: 4 designs, 5 runs each, p50/p95 times, tokens, "indicative only" | **supported** | @DeepSeekHarness |
 | A benchmark is a credible marketing asset | **one person's claim** (@suraj_sharma14), and the lesson says nobody reports results | @suraj_sharma14 |
 
-Change: added the principle that most weekly reports are a workflow with one AI step, and Anthropic's "simplest solution" rule; one CHECK answer now says which to reach for first.
+Change: added the principle that most weekly chores are a fixed workflow that calls AI only where a step needs it, and Anthropic's "simplest solution" rule; one CHECK answer now says which to reach for first.
 
 ### Give the bot your context (`context-first.md`)
 
@@ -88,6 +89,7 @@ Principles: output quality depends on context more than wording (Anthropic conte
 | Agents given a vague task duplicated work and left gaps | **supported** | Anthropic multi-agent |
 | Every correction becomes a new rule, so the brief gets better each week | **disputed** in part, and the lesson says so: the RISK callout tells readers to prune | Anthropic context engineering |
 | Models recall less as context fills ("context rot"); facts in the middle are missed | **supported** | Anthropic context engineering; Liu et al. 2023 |
+| Prune rules "the bot no longer breaks" | **unsupported**, and risky: a rule the bot follows may be why it follows it. Lesson now prunes duplicates and rules that no longer apply, and keeps rules the bot follows | Anthropic context engineering: "minimal does not necessarily mean short; you still need to give the agent sufficient information up front to ensure it adheres to the desired behavior" |
 | Recordings cut a 10 to 14 day process to 5 days; only build a playbook if it saves 20 to 30 minutes | **one person's claim**, labelled | @huntkyle |
 | Grok "Teach a task" records up to 10 minutes, rolling out | **one person's claim** (Hunt; xAI's page not opened) | @huntkyle |
 
@@ -122,6 +124,7 @@ Principles: excessive agency (OWASP); rate tools by risk and gate high-risk acti
 | CAN-SPAM covers B2B; headers, subject, postal address, opt-out within 10 business days; can't contract away responsibility | **supported** | FTC guide |
 | No ad label needed if the recipient opted in | **misattributed**: true, but the FTC guide doesn't say it; the statute does. Lesson now links 15 U.S.C. § 7704(a)(5)(B) | Cornell LII, 15 U.S.C. § 7704 |
 | PECR: consent for individuals and sole traders; soft opt-in only for your own similar products and existing customers; companies need no consent; name yourself and give an opt-out | **supported**. The ICO notes this guidance is under review after the Data (Use and Access) Act | ICO PECR guide |
+| The PECR rule covers email only, and only sole traders among businesses | **overstated** by omission: the same rule covers texts and social media DMs, and some partnerships count as individuals; LLPs and Scottish partnerships count as corporate; a named person's work address still falls under UK GDPR. Lesson now says so | ICO: Electronic mail marketing; ICO: Business-to-business marketing |
 | Halt any loop projected past $0.50; frontier → mid → local → cache | **one person's claim**, labelled; FrugalGPT supports cascading in principle | @suraj_sharma14; FrugalGPT |
 | Four-role setup and prompt | **one person's claim** | @EianLu |
 
@@ -155,6 +158,8 @@ Principles: orchestrator-worker works for parallel, independent jobs and costs m
 | Lead agent with subagents beat a single agent by 90.2%; about 15× the tokens of chat | **supported** | Anthropic multi-agent |
 | Breaks where agents need the same context or depend on each other; actions carry implicit decisions | **supported** | Anthropic multi-agent; Cognition |
 | Router on a lighter model with no shell; workers isolated, strongest model, never message people | **supported** ("can run without a Bash tool at all") | @DeepSeekHarness |
+| Workers get "full tools" | **overstated** as general advice: DeepSeek's workers are coding workers with "a full set of execution tools" and "usually" the most capable models. Lesson now says so and that a marketing worker gets only the tools its job needs | @DeepSeekHarness, section 2.2 |
+| Auditor prompt: "Ask me first before you share anything with the client" | **overstated** safety: it implies the bot has a way to send. The prompt now saves drafts to a folder, gives the bot no email, chat, upload or web tool, and leaves sending to you | Lesson's own least-privilege rule (`safe-bots.md`) |
 | 12.4 minutes median "against 20.4 for a single agent told to use subagents" | **disputed** by its own source: 20.4 was the single agent with a neutral prompt, which never delegated; told to delegate, it took 13.8 (p95 29.0). Lesson now gives both | @DeepSeekHarness, section 7.1 table |
 | Subagents save work and pass back a reference, which "prevents information loss" | **supported** | Anthropic multi-agent |
 | Reminder acceptance dropped 30% for each extra reminder per encounter | **supported** | Ancker et al. 2017 |
@@ -173,6 +178,8 @@ Principles: shared files as memory between agents (Anthropic multi-agent and con
 | Studying only winners makes risky choices look like the cause of success | **supported** | Denrell 2003, abstract |
 | Old ads are the ones they've kept paying for | **one person's claim**; the CHECK answer adds that some ads run because nobody switched them off | @dsqjaffa |
 | Businesses can't use TikTok's general music library for commercial posts, ads included | **supported** (page updated July 2025) | TikTok Commercial Music Library |
+| Checking a sound against the Commercial Music Library is enough | **overstated**: the library is filtered by the region the campaign runs in and by usable placements. The RISK callout and Trend Spotter prompt now check region and placement | TikTok: How to use the Commercial Music Library (updated July 2026) |
+| The Outlier Finder reports similar videos that flopped | **unsupported** by its own steps: it searched outliers only, so it could never see flops. The prompt now runs one more one-page search per pick without the outlier filter, and says so when the source can't return weak videos | Denrell 2003 (why the flops matter) |
 
 ### Design an always-on agent (`agent-architecture.md`)
 

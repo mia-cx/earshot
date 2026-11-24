@@ -75,7 +75,7 @@ Put a standing brief in a Claude Project, a custom GPT or a Gemini Gem, so you n
 > The author's advice: give it a month before you judge it.
 
 > [!RISK] A context file that only grows gets worse
-> Models recall less as their context fills up. Anthropic calls this context rot, and [Liu and colleagues found](https://arxiv.org/abs/2307.03172) that models miss facts buried in the middle of long inputs. Once a month, merge rules that say the same thing and delete ones the bot no longer breaks.
+> Models recall less as their context fills up. Anthropic calls this context rot, and [Liu and colleagues found](https://arxiv.org/abs/2307.03172) that models miss facts buried in the middle of long inputs. Once a month, merge rules that say the same thing and delete ones that no longer apply. Keep a rule the bot always follows: reading it may be why it does.
 
 ## Let the bot write your playbook
 

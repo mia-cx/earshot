@@ -41,9 +41,11 @@ Research behind `content/keep-users/`. Every source below was opened and read on
 | Growing and shrinking brands differ mostly in acquisition, not defection | **supported**. The lesson credited "Byron Sharp's team"; it now names the first author, Erica Riebe, with Sharp. | Riebe et al. 2014; Ehrenberg-Bass |
 | Onboarded means one key action; Kunal's examples are "wallet connected" or "first transaction" | **supported** | Kunal post 1951276376251617737 |
 | Activation is the key action repeated on an expected rhythm weeks after sign-up; Pinterest used weekly savers four weeks after sign-up | **supported** | Winters 2017 |
+| TLDR and heading defined onboarded as the key action repeated on a rhythm ("a habit, not a click") | **overstated**: contradicted the lesson's own split, where onboarded is the one first-value event and the repeated habit is activation. TLDR and heading now keep the two apart | Winters 2017 (activation metric); Kunal post 1951276376251617737 |
 | Grubhub took its monthly rhythm from ordering by phone | **supported** ("once or twice a month", benchmarked at once a month) | Winters 2017 |
 | Smoother onboarding alone puts you ahead of 90% of projects | **one person's claim**, labelled (Kunal) | Kunal post 2042111501608391080 |
 | About 20 growth leaders; good six-month retention is ~25% consumer social, ~40% consumer subscriptions | **supported**, labelled as practitioner estimates | Rachitsky & Winters 2020 |
+| "About 25% active for consumer social" | **overstated** by omission: the denominator for consumer social is registered users. Lesson now says 25% of registered users | Rachitsky & Winters 2020 ("The denominator in this category is registered users") |
 | ~60% of paying companies for "small-business software" | **overstated**: the category is SMB and mid-market SaaS, sold to companies of about 100 to 1,000 employees. Lesson now says small and mid-sized businesses. | Rachitsky & Winters 2020 |
 | Kunal uses Redash and Dune for on-chain data | **supported** | Kunal post 1951276376251617737 |
 | Behaviour happens when motivation, ability and a prompt meet at the same moment | **supported** | Fogg |

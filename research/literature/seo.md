@@ -196,7 +196,7 @@ Where a claim wasn't supported, the check names the fix made in the lesson.
 
 **Claim audit**
 
-- Google picks up a new title on its next crawl, a few days to a few weeks. **Supported**: recrawl and title-link docs.
+- Google picks up a new title on its next crawl, a few days to a few weeks. **Overstated**: the title-link doc says Google must "recrawl and reprocess the page", and it may still show a different title link. Fixed in the body and CHECK card; the honest-test steps now start counting only once the new title shows for the target query, and call the test inconclusive if it never does.
 - A new title "reports back in about two weeks" (TLDR and check card). **Overstated**: that's @borjafat's figure; Google gives days to weeks. Fixed: "within weeks".
 - Moving up one spot raises click rate by about a third. **Overstated**: Backlinko's 32.3% is an average "all things being equal"; #10 to #9 made no significant difference, and the data predates AI Overviews. Fixed.
 - Borja Fat: 20M+ clicks in 12 months, and the CTR table from those sites. **One person's claim**, labelled; the `ctr-check` diagram says so too.

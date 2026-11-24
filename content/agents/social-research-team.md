@@ -124,13 +124,18 @@ The head bot interviews you once, writes the shared brief, and each Monday score
 >   creators under [100,000] followers, [language]. One page.
 > - Drop paid posts and anything already in
 >   social/outliers.md.
+> - For each pick, run one more one-page search for its hook
+>   or format without the outlier filter, to find the ones
+>   that flopped.
 >
 > SEND ME 5, HIGHEST SCORE FIRST
 > - Link, creator, followers, views and score.
 > - First line, hook type and format.
 > - Your best guess at why it took off.
 > - Up to 3 videos in my niche with the same hook or format
->   that flopped, and what differs.
+>   that flopped, and what differs. If the search can't
+>   return weak videos, say so. Never report that none
+>   flopped.
 > - Whether my business could shoot it this week.
 >
 > Add them to social/outliers.md. On a day with nothing new,
@@ -215,12 +220,13 @@ Trend Radar judges each trend on one test: whether your buyer would care. Size d
 >
 > SEND ME
 > For each MAKE: an example link, its stage, and what we'd
-> actually shoot. Flag any sound that may not be cleared for
-> brands. Save it as social/trends.md.
+> actually shoot. Flag any sound that isn't in TikTok's
+> Commercial Music Library for [region] and the placements I
+> plan to use. Save it as social/trends.md.
 > ```
 
 > [!RISK] Trending sounds may not be licensed
-> On TikTok, [businesses can't use the general music library](https://ads.tiktok.com/help/article/commercial-music-library?lang=en) for commercial posts, ads included. Use the Commercial Music Library of pre-cleared songs, or a track you've licensed yourself. The prompt flags likely problems, but check the licence before you post.
+> On TikTok, [businesses can't use the general music library](https://ads.tiktok.com/help/article/commercial-music-library?lang=en) for commercial posts, ads included. Use a track you've licensed yourself, or a song from the Commercial Music Library of pre-cleared songs. [Its songs vary by region and by placement](https://ads.tiktok.com/help/article/how-to-use-the-commercial-music-library), so check the song is available in your campaign's region and for the placement you plan. The prompt flags likely problems, but check the licence before you post.
 
 > [!TRICK] Comment Miner bot
 > ```
@@ -267,4 +273,5 @@ Trend Radar judges each trend on one test: whether your buyer would care. Size d
 - [Jerker Denrell, *Vicarious learning, undersampling of failure, and the myths of management* (2003)](https://ora.ox.ac.uk/objects/uuid:a8102a34-f7a4-40de-91c0-139355f97358)
 - [Amos Tversky, Daniel Kahneman, *Belief in the law of small numbers* (1971)](https://doi.org/10.1037/h0031322)
 - [TikTok: About the Commercial Music Library](https://ads.tiktok.com/help/article/commercial-music-library?lang=en)
+- [TikTok: How to use the Commercial Music Library](https://ads.tiktok.com/help/article/how-to-use-the-commercial-music-library)
 - [@dsqjaffa: scheduled social research bots sharing one folder](https://x.com/dsqjaffa/status/2119160045263077664)

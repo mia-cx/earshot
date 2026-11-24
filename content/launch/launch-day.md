@@ -8,7 +8,7 @@ description: Build a list of people who will quote your launch, each with their 
 > - When people are unsure, they look to others like them. A launch that many people vouch for at once gives them that proof.
 > - Ask people with an audience to quote your launch instead of retweeting it, and line them up to post at the same moment.
 > - Seed different angles (founder story, implications, a sceptical try-out) so each quote reaches a different crowd.
-> - Pick mid-sized creators who fit over big ones, brief them to write their own take, and never organise upvotes on Product Hunt or Hacker News.
+> - Pick mid-sized creators who fit over big ones, brief them to write their own take, and never organise upvotes on Product Hunt, or upvotes and comments on Hacker News.
 
 > [!DIAGRAM] launch-timeline
 
@@ -44,7 +44,7 @@ Kunal Gandhi calls this a **thunderclap**. Founders, friends and partners all po
 Attach your launch to a conversation already moving rather than fighting it. Anchor it to the platform or ecosystem you build on, and use your integrations as the onboarding story. In Gandhi's experience, getting bigger players in your ecosystem to notice you beats paid campaigns.
 
 > [!RISK] Never ask for upvotes on Product Hunt or Hacker News
-> A thunderclap of posts on X is fine. Organised voting is not. Product Hunt's [launch guide](http://help.producthunt.com/en/articles/17734384-5-how-to-promote-your-launch-and-what-to-avoid) says "Never ask for upvotes". Asking for or rewarding upvotes can get your launch removed, and votes from new accounts barely count. Hacker News's [Show HN rules](https://news.ycombinator.com/showhn.html) say "Please don't ask friends to upvote or comment." Ask people to try it and share feedback instead.
+> A thunderclap of posts on X is fine. Organised voting is not. Product Hunt's [launch guide](http://help.producthunt.com/en/articles/17734384-5-how-to-promote-your-launch-and-what-to-avoid) says "Never ask for upvotes". Asking for or rewarding upvotes can get your launch removed, and votes from new accounts barely count. Hacker News's [Show HN rules](https://news.ycombinator.com/showhn.html) say "Please don't ask friends to upvote or comment." On Product Hunt, ask people to try it and share feedback instead. On Hacker News, only ask them to try it.
 
 ## Seed different angles
 

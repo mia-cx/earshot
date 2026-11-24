@@ -101,6 +101,7 @@ Sources, read 2026-11-24: [Tuch, Presslaber, Stöcklin, Opwis & Bargas-Avila, *I
 | Thunderclap; ecosystem attention beats paid campaigns | **one person's claim**, labelled (Gandhi) | Gandhi post |
 | Product Hunt: "Never ask for upvotes"; it can get a launch removed; new accounts' votes barely count | **supported** | Product Hunt promotion guide and FAQ |
 | Hacker News: "Please don't ask friends to upvote or comment." | **supported** | Show HN guidelines |
+| "Ask people to try it and share feedback instead", for both sites; TLDR named only upvotes for HN | **overstated**: Product Hunt asks makers to request feedback and comments, but HN forbids asking for comments too. Lesson now splits the advice (on HN, only ask people to try it) and the TLDR names comments on HN | Product Hunt promotion guide; Show HN guidelines |
 | Mediocre influencers bring numbers that turn into nothing | **one person's claim**, labelled (Gandhi) | Gandhi post |
 | "Research backs this up" (fit over reach) | **overstated**: the study measures follower count against engagement, not fit. Lesson now says research backs the part about reach. | Wies et al. |
 | 800+ Instagram campaigns; engagement rises then falls with follower count; weaker tie for big accounts | **supported** | Wies et al., abstract via Crossref; AMA summary |
