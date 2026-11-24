@@ -120,6 +120,24 @@ async function* lessonPages(dir: string): AsyncGenerator<string> {
 
 const ms = (seconds: number) => Math.round(seconds * 1000) / 1000;
 
+/**
+ * Each word's start and end in seconds, flat as `[start0, end0, …]`, from ElevenLabs' per-character
+ * times. Those count code points, while a section's offsets and lengths count UTF-16 units, so an
+ * emoji or other astral character is one entry there and two here: map every unit to its code point.
+ */
+export const wordTimings = (
+	section: Pick<Section, 'text' | 'offsets' | 'lengths'>,
+	starts: number[],
+	ends: number[]
+) => {
+	const codePoint: number[] = [];
+	for (const [i, char] of Array.from(section.text).entries()) codePoint.push(...Array(char.length).fill(i));
+	return section.offsets.flatMap((first, i) => [
+		ms(starts[codePoint[first]]),
+		ms(ends[codePoint[first + section.lengths[i] - 1]])
+	]);
+};
+
 /** Records one section's audio and its words' start and end times, into the cache. */
 const generate = async (section: Section, env: { key: string; voice: string; model: string }) => {
 	const response = await fetch(
@@ -138,10 +156,7 @@ const generate = async (section: Section, env: { key: string; voice: string; mod
 	// Timings index into the text as sent; an alignment of other text would misplace every word.
 	if (alignment.characters.join('') !== section.text)
 		throw new Error(`ElevenLabs aligned different text than it was sent for section ${section.key}.`);
-	const timings = section.offsets.flatMap((first, i) => [
-		ms(alignment.character_start_times_seconds[first]),
-		ms(alignment.character_end_times_seconds[first + section.lengths[i] - 1])
-	]);
+	const timings = wordTimings(section, alignment.character_start_times_seconds, alignment.character_end_times_seconds);
 	await writeFile(join(CACHE, `${section.key}.mp3`), Buffer.from(audio_base64, 'base64'));
 	await writeFile(join(CACHE, `${section.key}.json`), JSON.stringify(timings));
 };

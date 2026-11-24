@@ -1,7 +1,15 @@
 import { parseHTML } from 'linkedom';
 import { describe, expect, it } from 'vitest';
 import { blockWords, narratedSections, spokenText, wordAt } from '#lib/narration.ts';
-import { checkSpend, type Index, type Lesson, plan, readLesson } from './narrate.ts';
+import { checkSpend, type Index, type Lesson, plan, readLesson, wordTimings } from './narrate.ts';
+
+// Proves an emoji, one ElevenLabs character but two UTF-16 units, doesn't shift the words after it:
+// "Hi 🎉 there" is 10 code points, and "there" starts at the sixth (index 5).
+it('maps word times through code points, not UTF-16 units', async () => {
+	const [section] = await readLesson(page('<p>Hi 🎉 there</p>'), 'voice', 'model');
+	const times = Array.from(section.text).map((_, i) => i);
+	expect(wordTimings(section, times, times)).toEqual([0, 1, 3, 3, 5, 9]);
+});
 
 /** A prerendered lesson page, cut down to its body. */
 const page = (body: string) =>
