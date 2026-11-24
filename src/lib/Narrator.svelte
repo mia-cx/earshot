@@ -2,66 +2,47 @@
 	import type { MarkerElement, MarkerSeekEvent } from '@mia-cx/marker';
 	import { mount, unmount, untrack } from 'svelte';
 	import ListenButton from './ListenButton.svelte';
-	import { blockKey, blockWords, type LessonNarration, narratedSections, spokenText, wordAt } from './narration.ts';
+	import { blockWords, type LessonNarration, narratedSections, sectionKey, sectionText, wordAt } from './narration.ts';
 
 	/**
-	 * Reads a lesson aloud in Mia's voice (`scripts/narrate.ts`). Each heading and paragraph with audio
-	 * gets a button in the left gutter that reads from there to the end of its section (see
-	 * `narration.ts`), then stops; narrower pages get one Listen button that reads from the block on
+	 * Reads a lesson aloud in Mia's voice (`scripts/narrate.ts`). Each section with audio (see
+	 * `narration.ts`) is one recording, with one button in the left gutter beside its heading that
+	 * reads the section and stops; narrower pages get one Listen button that reads the section on
 	 * screen. The marker highlights the spoken word, and clicking a word seeks there; selecting text pauses.
 	 */
 	let { lesson, body }: { lesson: string; body: MarkerElement | undefined } = $props();
 
 	type Voiced = {
-		el: Element;
 		key: string;
+		blocks: Element[];
+		/** How many words each block reads, so a word in the recording maps to its block. */
+		counts: number[];
+		/** Every word's start and end in the recording, flat as `[start0, end0, …]`. */
 		timings: number[];
-		/** Blocks read in one go share a section; a block with no audio yet ends one. */
-		section: number;
-		/** Headings and paragraphs get a button; so does a list item that opens a section. */
-		button: boolean;
 	};
 
 	let audio = $state<HTMLAudioElement>();
-	let blocks = $state.raw<Voiced[]>([]);
-	/** The block loaded in the player, or -1. */
+	let sections = $state.raw<Voiced[]>([]);
+	/** The section loaded in the player, or -1. */
 	let current = $state(-1);
 	let playing = $state(false);
 	/** The marker word last shown, so a frame that changes nothing writes nothing. */
 	let shown = -1;
 
-	/** The lesson's blocks that have audio in the stored voice, in reading order. */
+	/** The lesson's sections that have audio in the stored voice, in reading order. */
 	const load = async (id: string, root: Element): Promise<Voiced[]> => {
 		const response = await fetch(`/narration/lessons/${id}.json`);
 		if (!response.ok) return [];
 		const narration: LessonNarration = await response.json();
-		const keyed = await Promise.all(
-			narratedSections(root).map((section) =>
-				Promise.all(
-					section.map(async (el) => ({
-						el,
-						key: await blockKey(spokenText(blockWords(el)).text, narration.voice, narration.model)
-					}))
-				)
-			)
+		if (!narration.sections) return [];
+		const found = await Promise.all(
+			narratedSections(root).map(async (blocks) => {
+				const key = await sectionKey(sectionText(blocks).text, narration.voice, narration.model);
+				const timings = narration.sections[key];
+				return timings ? [{ key, blocks, counts: blocks.map((el) => blockWords(el).length), timings }] : [];
+			})
 		);
-		const found: Voiced[] = [];
-		let section = 0;
-		for (const blocks of keyed) {
-			let opens = true;
-			for (const { el, key } of blocks) {
-				const timings = narration.blocks[key];
-				if (!timings) {
-					section += 1;
-					opens = true;
-					continue;
-				}
-				found.push({ el, key, timings, section, button: opens || el.tagName !== 'LI' });
-				opens = false;
-			}
-			section += 1;
-		}
-		return found;
+		return found.flat();
 	};
 
 	$effect(() => {
@@ -69,42 +50,51 @@
 		if (!root) return;
 		let live = true;
 		load(lesson, root).then((found) => {
-			if (live) blocks = found;
+			if (live) sections = found;
 		});
 		return () => {
 			live = false;
 			audio?.pause();
-			blocks = [];
+			sections = [];
 			current = -1;
 			show(-1);
 		};
 	});
 
-	/** The block whose button stands for what's playing: the current one, or the last button before it in its section. */
-	const active = $derived.by(() => {
-		for (let i = current; i >= 0 && blocks[i].section === blocks[current].section; i--) if (blocks[i].button) return i;
-		return -1;
+	/** Each section's height in px, from its first block's top to its last block's bottom. */
+	let spans = $state.raw<number[]>([]);
+	$effect(() => {
+		const root = body;
+		const voiced = sections;
+		if (!root || !voiced.length) return;
+		const observer = new ResizeObserver(() => {
+			spans = voiced.map(
+				({ blocks }) =>
+					(blocks.at(-1) as Element).getBoundingClientRect().bottom - blocks[0].getBoundingClientRect().top
+			);
+		});
+		observer.observe(root);
+		return () => observer.disconnect();
 	});
 
-	// Each button goes inside its block, so it can stick within the block's height.
+	// Each section's button goes inside its first block, on a rail as tall as the section, so it sticks within it.
 	$effect(() => {
-		const voiced = blocks;
+		const voiced = sections;
 		const buttons = untrack(() =>
-			voiced.flatMap((block, i) =>
-				block.button
-					? [
-							mount(ListenButton, {
-								target: block.el,
-								anchor: block.el.firstChild ?? undefined,
-								props: {
-									get playing() {
-										return playing && active === i;
-									},
-									onclick: () => (playing && active === i ? audio?.pause() : resume(i))
-								}
-							})
-						]
-					: []
+			voiced.map((section, i) =>
+				mount(ListenButton, {
+					target: section.blocks[0],
+					anchor: section.blocks[0].firstChild ?? undefined,
+					props: {
+						get playing() {
+							return playing && current === i;
+						},
+						get span() {
+							return spans[i] ?? 0;
+						},
+						onclick: () => (playing && current === i ? audio?.pause() : resume(i))
+					}
+				})
 			)
 		);
 		return () => {
@@ -118,51 +108,62 @@
 		body.word = word;
 	};
 
-	/** Highlights the word being spoken. */
-	const sync = () => {
-		const block = blocks[current];
-		if (block && audio && body) show(body.wordIndexOf(block.el) + wordAt(block.timings, audio.currentTime));
+	/** The marker's index for word `w` of section `s`'s recording. */
+	const markerWord = (s: number, w: number) => {
+		const { blocks, counts } = sections[s];
+		let b = 0;
+		while (b < counts.length - 1 && w >= counts[b]) w -= counts[b++];
+		return (body as MarkerElement).wordIndexOf(blocks[b]) + w;
 	};
 
-	/** Loads block `i` at `seconds` without playing it. */
-	const cue = (i: number, seconds = 0) => {
+	/*
+	 * The audio clock runs ahead of what the reader hears by the output's latency (large on Bluetooth
+	 * headphones), so the highlight trails the clock by that much. An AudioContext reports it; it runs
+	 * only while the narration plays.
+	 */
+	let output: AudioContext | undefined;
+	const latency = () => (output?.state === 'running' ? output.outputLatency || 0 : 0);
+
+	/** Highlights the word being heard. */
+	const sync = () => {
+		if (current < 0 || !audio || !body) return;
+		show(markerWord(current, wordAt(sections[current].timings, audio.currentTime - latency())));
+	};
+
+	/** Loads section `s` at `seconds` without playing it. */
+	const cue = (s: number, seconds = 0) => {
 		if (!audio) return;
-		if (i !== current) {
-			current = i;
-			audio.src = `/narration/blocks/${blocks[i].key}.mp3`;
+		if (s !== current) {
+			current = s;
+			audio.src = `/narration/sections/${sections[s].key}.mp3`;
 		}
 		audio.currentTime = seconds;
 	};
 
-	const play = (i: number, seconds = 0) => {
-		cue(i, seconds);
-		// Starting another block interrupts a pending play; that rejection is expected.
+	const play = (s: number, seconds = 0) => {
+		cue(s, seconds);
+		output ??= new AudioContext();
+		// Starting another section interrupts a pending play; that rejection is expected.
 		audio?.play().catch((error: unknown) => {
 			if (!(error instanceof DOMException && error.name === 'AbortError')) throw error;
 		});
 	};
 
-	/** Plays from block `i`, picking up where it paused if it's the one paused in. */
-	const resume = (i: number) => {
-		if (current >= 0 && active === i) play(current, audio?.currentTime ?? 0);
-		else play(i);
-	};
+	/** Plays section `s`, picking up where it paused if it's the one paused in. */
+	const resume = (s: number) => play(s, current === s ? (audio?.currentTime ?? 0) : 0);
 
-	/** The Listen button: pauses, resumes the block on screen, or starts the one being read. */
+	/** The Listen button: pauses, resumes the section on screen, or starts the first one on screen. */
 	const listen = () => {
 		if (playing) return audio?.pause();
-		const onScreen = (block: Voiced) => {
-			const { top, bottom } = block.el.getBoundingClientRect();
-			return bottom > innerHeight / 4 && top < innerHeight;
-		};
-		if (blocks[current] && onScreen(blocks[current])) return play(current, audio?.currentTime ?? 0);
-		play(Math.max(0, blocks.findIndex(onScreen)));
+		const onScreen = ({ blocks }: Voiced) =>
+			(blocks.at(-1) as Element).getBoundingClientRect().bottom > innerHeight / 4 &&
+			blocks[0].getBoundingClientRect().top < innerHeight;
+		if (sections[current] && onScreen(sections[current])) return resume(current);
+		play(Math.max(0, sections.findIndex(onScreen)));
 	};
 
-	/** At the end of a block, read on through its section; at the section's end, stop. */
+	/** At the end of a section, stop. */
 	const onended = () => {
-		const next = blocks[current + 1];
-		if (next && next.section === blocks[current].section) return play(current + 1);
 		current = -1;
 		show(-1);
 	};
@@ -170,25 +171,35 @@
 	// While playing, the highlight follows the audio clock every frame.
 	$effect(() => {
 		if (!playing) return;
+		output?.resume();
 		let frame = requestAnimationFrame(function tick() {
 			sync();
 			frame = requestAnimationFrame(tick);
 		});
-		return () => cancelAnimationFrame(frame);
+		return () => {
+			cancelAnimationFrame(frame);
+			output?.suspend();
+		};
 	});
 
-	// Clicking a word seeks there, into whichever block holds it; paused stays paused.
+	// Clicking a word seeks there, into whichever section reads it; paused stays paused.
 	$effect(() => {
 		const root = body;
 		if (!root) return;
 		const onseek = ({ detail: { word } }: MarkerSeekEvent) => {
-			for (const [i, block] of blocks.entries()) {
-				const index = word - root.wordIndexOf(block.el);
-				if (index < 0 || index >= block.timings.length / 2) continue;
-				if (playing) return play(i, block.timings[index * 2]);
-				cue(i, block.timings[index * 2]);
-				shown = -1;
-				return show(word);
+			for (const [s, { blocks, counts, timings }] of sections.entries()) {
+				let before = 0;
+				for (const [b, block] of blocks.entries()) {
+					const index = word - root.wordIndexOf(block);
+					if (index >= 0 && index < counts[b]) {
+						const seconds = timings[(before + index) * 2];
+						if (playing) return play(s, seconds);
+						cue(s, seconds);
+						shown = -1;
+						return show(word);
+					}
+					before += counts[b];
+				}
 			}
 			// A word nothing voices: the highlight goes back to the word being spoken.
 			const was = shown;
@@ -217,7 +228,7 @@
 	{onended}
 ></audio>
 
-{#if blocks.length}
+{#if sections.length}
 	<button type="button" class="listen" onclick={listen}>
 		<svg viewBox="0 0 24 24" aria-hidden="true">
 			{#if playing}<path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" />{:else}<path d="M8 5.5v13l11-6.5z" />{/if}

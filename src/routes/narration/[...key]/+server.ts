@@ -6,11 +6,12 @@ export const prerender = false;
 
 /**
  * Lesson narration from the earshot-narration bucket (written by `scripts/narrate.ts`): a lesson's
- * word timings at `lessons/<module>/<lesson>.json`, and each block's audio (a heading, paragraph or
- * list item) at `blocks/<hash>.mp3`. Audio never changes behind its hash, so it is cached for good; a lesson's
- * file changes when it is voiced again, so it is revalidated. Audio answers byte ranges, for seeking.
+ * word timings at `lessons/<module>/<lesson>.json`, and each section's audio (its headings,
+ * paragraphs and list items in one recording) at `sections/<hash>.mp3`. Audio never changes behind its
+ * hash, so it is cached for good; a lesson's file changes when it is voiced again, so it is
+ * revalidated. Audio answers byte ranges, for seeking.
  */
-const SERVED = /^(?:blocks\/[0-9a-f]{64}\.mp3|lessons\/[a-z0-9-]+\/[a-z0-9-]+\.json)$/;
+const SERVED = /^(?:sections\/[0-9a-f]{64}\.mp3|lessons\/[a-z0-9-]+\/[a-z0-9-]+\.json)$/;
 
 export const GET = async ({ params, request }) => {
 	if (!SERVED.test(params.key)) error(404, 'No such narration');
@@ -22,7 +23,7 @@ export const GET = async ({ params, request }) => {
 	headers.set('etag', object.httpEtag);
 	headers.set(
 		'cache-control',
-		params.key.startsWith('blocks/') ? 'public, max-age=31536000, immutable' : 'public, no-cache'
+		params.key.startsWith('sections/') ? 'public, max-age=31536000, immutable' : 'public, no-cache'
 	);
 	headers.set('accept-ranges', 'bytes');
 	if (!object.body) return new Response(null, { status: 304, headers });

@@ -47,37 +47,50 @@ it('reads a lesson body as sections of headings, paragraphs and list items', () 
 	]);
 });
 
-// Proves the generator voices exactly the blocks the page reads, and nothing on pages that aren't lessons.
-it('voices every block a lesson reads', async () => {
-	const blocks = await readLesson(lesson, 'voice', 'model');
-	expect(blocks).toHaveLength(10);
-	expect(blocks[0].text).toBe('Positioning is anyway the context that makes value obvious.');
+// Proves each section is one recording of its blocks, a paragraph break apart, and that every word's
+// position points at that word in the text sent, so the timings land on the words the page highlights.
+it('voices each section as one text, with every word located in it', async () => {
+	const sections = await readLesson(lesson, 'voice', 'model');
+	expect(sections.map((s) => s.text)).toEqual([
+		'Positioning is anyway the context that makes value obvious.',
+		'Why it matters\n\nThree reasons:\n\nIt sets the price.\n\nIt picks the buyer.\n\nThe first reason\n\nPrice follows category.',
+		'After the trick.',
+		'Next topic\n\nSecond paragraph, robots.txt included.'
+	]);
+	const words = (s: (typeof sections)[number]) => s.offsets.map((at, i) => s.text.slice(at, at + s.lengths[i]));
+	expect(words(sections[1])).toEqual(
+		'Why it matters Three reasons: It sets the price. It picks the buyer. The first reason Price follows category.'.split(
+			' '
+		)
+	);
+	// Markup splits a word for the marker, as it does here, while the voice still reads "anyway".
+	expect(words(sections[0]).slice(0, 4)).toEqual(['Positioning', 'is', 'any', 'way']);
 	expect(await readLesson('<html><body><p>Not a lesson.</p></body></html>', 'voice', 'model')).toEqual([]);
 });
 
 describe('a rerun', () => {
 	const read = async (id: string, html: string, voice = 'voice'): Promise<Lesson> => ({
 		id,
-		blocks: await readLesson(html, voice, 'model')
+		sections: await readLesson(html, voice, 'model')
 	});
 	const voicedIndex = (lessons: Lesson[]): Index => ({
-		blocks: lessons.flatMap((l) => l.blocks.map((b) => b.key)),
-		lessons: Object.fromEntries(lessons.map((l) => [l.id, l.blocks.map((b) => b.key)]))
+		sections: lessons.flatMap((l) => l.sections.map((s) => s.key)),
+		lessons: Object.fromEntries(lessons.map((l) => [l.id, l.sections.map((s) => s.key)]))
 	});
 
-	// Proves an edit pays for the edited paragraph only.
-	it('generates only the paragraph that changed', async () => {
-		const before = await read('m/one', page('<h2>Topic</h2><p>First stays.</p><p>Second before.</p>'));
-		const after = await read('m/one', page('<h2>Topic</h2><p>First stays.</p><p>Second after the edit.</p>'));
+	// Proves an edit pays for the edited paragraph's section only.
+	it('records only the section that changed', async () => {
+		const before = await read('m/one', page('<h2>A</h2><p>First stays.</p><h2>B</h2><p>Second before.</p>'));
+		const after = await read('m/one', page('<h2>A</h2><p>First stays.</p><h2>B</h2><p>Second after the edit.</p>'));
 		const { generate, characters } = plan([after], voicedIndex([before]), { only: [], all: false });
-		expect(generate.map((b) => b.text)).toEqual(['Second after the edit.']);
-		expect(characters).toBe(22);
+		expect(generate.map((s) => s.text)).toEqual(['B\n\nSecond after the edit.']);
+		expect(characters).toBe(25);
 	});
 
 	// Proves a new voice is never mixed with audio in the old one.
-	it('voices every block again in a new voice', async () => {
-		const before = await read('m/one', page('<p>First.</p><p>Second.</p>'));
-		const after = await read('m/one', page('<p>First.</p><p>Second.</p>'), 'another voice');
+	it('records every section again in a new voice', async () => {
+		const before = await read('m/one', page('<p>First.</p><blockquote><p>Q</p></blockquote><p>Second.</p>'));
+		const after = await read('m/one', page('<p>First.</p><blockquote><p>Q</p></blockquote><p>Second.</p>'), 'another');
 		expect(plan([after], voicedIndex([before]), { only: [], all: false }).generate).toHaveLength(2);
 	});
 
@@ -93,6 +106,12 @@ describe('a rerun', () => {
 		expect(ids({ only: ['m/two'], all: false })).toEqual(['m/one', 'm/two']);
 		expect(ids({ only: [], all: true })).toEqual(['m/one', 'm/two']);
 		expect(() => plan([edited, fresh], index, { only: ['m/typo'], all: false })).toThrow('No lesson m/typo');
+	});
+
+	// Proves a section too long for one request is refused before anything is spent.
+	it('refuses a section longer than one request', async () => {
+		const long = await read('m/one', page(`<p>${'word '.repeat(1_200)}</p>`));
+		expect(() => plan([long], { sections: [], lessons: {} }, { only: ['m/one'], all: false })).toThrow('over the 5000');
 	});
 });
 

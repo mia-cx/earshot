@@ -2,7 +2,7 @@ name: Narration
 
 # Voices lessons in Mia's cloned voice, into the earshot-narration R2 bucket that staging, production
 # and `pnpm dev` all play from. Audio is stored under a hash of the text it reads, so a push only pays
-# for the blocks it changed, in lessons that already have narration. Run it by hand to voice new
+# for the sections it changed, in lessons that already have narration. Run it by hand to voice new
 # lessons, or the whole course with --all and a bigger budget. A run that would spend more than its
 # budget generates nothing and fails.
 on:

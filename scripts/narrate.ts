@@ -7,15 +7,16 @@
  *   pnpm narrate                                  keep every narrated lesson current
  *   pnpm narrate --all --budget 180000            voice the whole course
  *
- * Each block (a heading, paragraph or list item; see `src/lib/narration.ts`) is generated once, with
- * word timestamps, and stored under a hash of its text, voice and model: editing one paragraph pays
- * for that paragraph only. Nothing is generated when a run would spend more than its budget (25,000
- * characters by default) or more than the ElevenLabs account has left.
+ * Each section (its headings, paragraphs and list items; see `src/lib/narration.ts`) is recorded in
+ * one request, with word timestamps, so it plays with no seams, and stored under a hash of its text,
+ * voice and model: editing a paragraph pays for its section only. Nothing is generated when a run
+ * would spend more than its budget (25,000 characters by default) or more than the ElevenLabs
+ * account has left.
  *
  * Bucket layout:
- *   blocks/<key>.mp3, blocks/<key>.json   a block's audio and word timings
- *   lessons/<module>/<lesson>.json        a lesson's narration (LessonNarration)
- *   index.json                            what the bucket holds, so a run needn't list it
+ *   sections/<key>.mp3, sections/<key>.json   a section's audio and word timings
+ *   lessons/<module>/<lesson>.json            a lesson's narration (LessonNarration)
+ *   index.json                                what the bucket holds, so a run needn't list it
  *
  * Needs ELEVENLABS_API_KEY and ELEVENLABS_VOICE_ID (ELEVENLABS_MODEL_ID defaults to eleven_v4), from
  * the environment or .env, and R2 access through wrangler: its login locally, CLOUDFLARE_API_TOKEN
@@ -27,60 +28,58 @@ import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { join, relative } from 'node:path';
 import { parseArgs, promisify } from 'node:util';
 import { parseHTML } from 'linkedom';
-import {
-	blockKey,
-	blockWords,
-	type LessonNarration,
-	NARRATION_FORMAT,
-	narratedSections,
-	spokenText
-} from '#lib/narration.ts';
+import { type LessonNarration, NARRATION_FORMAT, narratedSections, sectionKey, sectionText } from '#lib/narration.ts';
 
 const BUCKET = 'earshot-narration';
 /** The prerendered site, and where generated audio is kept between runs. */
 const SITE = '.svelte-kit/cloudflare';
 const CACHE = '.narration';
 const DEFAULT_BUDGET = 25_000;
-/** Blocks generated at once; ElevenLabs plans allow a few concurrent requests. */
+/** The most characters ElevenLabs reads in one request; a longer section would need splitting. */
+const MAX_SECTION = 5_000;
+/** Sections generated at once; ElevenLabs plans allow a few concurrent requests. */
 const CONCURRENCY = 3;
-/** Saves the index after this many blocks, so a failed run keeps what it paid for. */
+/** Saves the index after this many sections, so a failed run keeps what it paid for. */
 const SAVE_EVERY = 12;
 
-/** One voiced block of a lesson. */
-export type Block = { key: string; text: string; offsets: number[]; lengths: number[] };
-export type Lesson = { id: string; blocks: Block[] };
-/** What the bucket holds: every generated block key, and each narrated lesson's keys. */
-export type Index = { blocks: string[]; lessons: Record<string, string[]> };
+/** One voiced section of a lesson: its text, and where each of its words starts and how long it is. */
+export type Section = { key: string; text: string; offsets: number[]; lengths: number[] };
+export type Lesson = { id: string; sections: Section[] };
+/** What the bucket holds: every recorded section key, and each narrated lesson's keys. */
+export type Index = { sections: string[]; lessons: Record<string, string[]> };
 
-/** The voiced blocks of one prerendered lesson page, in reading order, or none for any other page. */
-export const readLesson = async (html: string, voice: string, model: string): Promise<Block[]> => {
+/** The voiced sections of one prerendered lesson page, in reading order, or none for any other page. */
+export const readLesson = async (html: string, voice: string, model: string): Promise<Section[]> => {
 	const { document } = parseHTML(html);
 	const body = document.querySelector('[data-narration]');
 	if (!body) return [];
 	return Promise.all(
-		narratedSections(body)
-			.flat()
-			.map(async (el) => {
-				const words = blockWords(el);
-				const { text, offsets } = spokenText(words);
-				return { key: await blockKey(text, voice, model), text, offsets, lengths: words.map((w) => w.text.length) };
-			})
+		narratedSections(body).map(async (blocks) => {
+			const spoken = sectionText(blocks);
+			return { key: await sectionKey(spoken.text, voice, model), ...spoken };
+		})
 	);
 };
 
 /**
  * What a run does: the lessons it voices (those named, every one with `all`, else those already
- * narrated), the blocks it must generate, once each, and what they cost in characters.
+ * narrated), the sections it must record, once each, and what they cost in characters.
  */
 export const plan = (lessons: Lesson[], index: Index, scope: { only: string[]; all: boolean }) => {
 	const unknown = scope.only.filter((id) => !lessons.some((l) => l.id === id));
 	if (unknown.length) throw new Error(`No lesson ${unknown.join(', ')}. Name lessons as <module>/<lesson>.`);
 	const voiced = lessons.filter((l) => scope.all || scope.only.includes(l.id) || l.id in index.lessons);
-	const have = new Set(index.blocks);
-	const missing = new Map<string, Block>();
-	for (const block of voiced.flatMap((l) => l.blocks)) if (!have.has(block.key)) missing.set(block.key, block);
+	const have = new Set(index.sections);
+	const missing = new Map<string, Section>();
+	for (const section of voiced.flatMap((l) => l.sections))
+		if (!have.has(section.key)) missing.set(section.key, section);
 	const generate = [...missing.values()];
-	return { voiced, generate, characters: generate.reduce((sum, block) => sum + block.text.length, 0) };
+	const long = generate.find((section) => section.text.length > MAX_SECTION);
+	if (long)
+		throw new Error(
+			`A section is ${long.text.length} characters, over the ${MAX_SECTION} ElevenLabs reads at once: "${long.text.slice(0, 60)}…"`
+		);
+	return { voiced, generate, characters: generate.reduce((sum, section) => sum + section.text.length, 0) };
 };
 
 /** Refuses a run that would spend more characters than its budget or than the account has left. */
@@ -118,14 +117,14 @@ async function* lessonPages(dir: string): AsyncGenerator<string> {
 
 const ms = (seconds: number) => Math.round(seconds * 1000) / 1000;
 
-/** Generates one block's audio and its words' start and end times, into the cache. */
-const generate = async (block: Block, env: { key: string; voice: string; model: string }) => {
+/** Records one section's audio and its words' start and end times, into the cache. */
+const generate = async (section: Section, env: { key: string; voice: string; model: string }) => {
 	const response = await fetch(
 		`https://api.elevenlabs.io/v1/text-to-speech/${env.voice}/with-timestamps?output_format=${NARRATION_FORMAT}`,
 		{
 			method: 'POST',
 			headers: { 'xi-api-key': env.key, 'content-type': 'application/json' },
-			body: JSON.stringify({ text: block.text, model_id: env.model })
+			body: JSON.stringify({ text: section.text, model_id: env.model })
 		}
 	);
 	if (!response.ok) throw new Error(`ElevenLabs answered ${response.status}: ${await response.text()}`);
@@ -134,21 +133,21 @@ const generate = async (block: Block, env: { key: string; voice: string; model: 
 		alignment: { characters: string[]; character_start_times_seconds: number[]; character_end_times_seconds: number[] };
 	};
 	// Timings index into the text as sent; an alignment of other text would misplace every word.
-	if (alignment.characters.join('') !== block.text)
-		throw new Error(`ElevenLabs aligned different text than it was sent for block ${block.key}.`);
-	const timings = block.offsets.flatMap((first, i) => [
+	if (alignment.characters.join('') !== section.text)
+		throw new Error(`ElevenLabs aligned different text than it was sent for section ${section.key}.`);
+	const timings = section.offsets.flatMap((first, i) => [
 		ms(alignment.character_start_times_seconds[first]),
-		ms(alignment.character_end_times_seconds[first + block.lengths[i] - 1])
+		ms(alignment.character_end_times_seconds[first + section.lengths[i] - 1])
 	]);
-	await writeFile(join(CACHE, `${block.key}.mp3`), Buffer.from(audio_base64, 'base64'));
-	await writeFile(join(CACHE, `${block.key}.json`), JSON.stringify(timings));
+	await writeFile(join(CACHE, `${section.key}.mp3`), Buffer.from(audio_base64, 'base64'));
+	await writeFile(join(CACHE, `${section.key}.json`), JSON.stringify(timings));
 };
 
-/** A block's timings, from the cache or the bucket. */
+/** A section's timings, from the cache or the bucket. */
 const timingsOf = async (key: string) => {
 	const file = join(CACHE, `${key}.json`);
-	if (!existsSync(file) && !(await download(`blocks/${key}.json`, file)))
-		throw new Error(`blocks/${key}.json is in index.json but not in the bucket`);
+	if (!existsSync(file) && !(await download(`sections/${key}.json`, file)))
+		throw new Error(`sections/${key}.json is in index.json but not in the bucket`);
 	return readJson<number[]>(file);
 };
 
@@ -172,18 +171,17 @@ async function main() {
 
 	const lessons: Lesson[] = [];
 	for await (const file of lessonPages(SITE)) {
-		const blocks = await readLesson(await readFile(file, 'utf8'), voice, model);
-		if (blocks.length) lessons.push({ id: relative(SITE, file).replace(/\.html$/, ''), blocks });
+		const sections = await readLesson(await readFile(file, 'utf8'), voice, model);
+		if (sections.length) lessons.push({ id: relative(SITE, file).replace(/\.html$/, ''), sections });
 	}
 	const indexFile = join(CACHE, 'index.json');
-	const index: Index = (await download('index.json', indexFile))
-		? await readJson(indexFile)
-		: { blocks: [], lessons: {} };
+	const stored = (await download('index.json', indexFile)) ? await readJson<Partial<Index>>(indexFile) : {};
+	const index: Index = { sections: stored.sections ?? [], lessons: stored.lessons ?? {} };
 	const { voiced, generate: missing, characters } = plan(lessons, index, { only: values.only, all: values.all });
 
 	console.log(`${lessons.length} lessons; voicing ${voiced.length}:`);
 	for (const lesson of voiced) console.log(`  ${lesson.id}`);
-	console.log(`${missing.length} blocks to generate: ${characters} characters (budget ${budget}).`);
+	console.log(`${missing.length} sections to record: ${characters} characters (budget ${budget}).`);
 	if (values['dry-run']) return;
 
 	if (characters) {
@@ -204,45 +202,45 @@ async function main() {
 		for (let i = 0; i < missing.length; i += CONCURRENCY) {
 			// Settled, not raced: a failure still lets its batch finish, so the index records all it paid for.
 			const results = await Promise.allSettled(
-				missing.slice(i, i + CONCURRENCY).map(async (block) => {
-					await generate(block, { key: key as string, voice, model });
-					await upload(`blocks/${block.key}.mp3`, join(CACHE, `${block.key}.mp3`), 'audio/mpeg');
-					await upload(`blocks/${block.key}.json`, join(CACHE, `${block.key}.json`), 'application/json');
-					index.blocks.push(block.key);
+				missing.slice(i, i + CONCURRENCY).map(async (section) => {
+					await generate(section, { key: key as string, voice, model });
+					await upload(`sections/${section.key}.mp3`, join(CACHE, `${section.key}.mp3`), 'audio/mpeg');
+					await upload(`sections/${section.key}.json`, join(CACHE, `${section.key}.json`), 'application/json');
+					index.sections.push(section.key);
 				})
 			);
 			const failed = results.find((r) => r.status === 'rejected');
 			if (failed) throw failed.reason;
 			const done = Math.min(i + CONCURRENCY, missing.length);
-			console.log(`  generated ${done}/${missing.length}`);
+			console.log(`  recorded ${done}/${missing.length}`);
 			if (done % SAVE_EVERY < CONCURRENCY) await saveIndex();
 		}
 	} finally {
 		if (missing.length) await saveIndex();
 	}
 
-	// A lesson's file keeps the blocks it had too, so a deploy still showing older text keeps its audio.
+	// A lesson's file keeps the sections it had too, so a deploy still showing older text keeps its audio.
 	for (const lesson of voiced) {
 		const known = index.lessons[lesson.id] ?? [];
-		const added = lesson.blocks.filter((block) => !known.includes(block.key));
+		const added = lesson.sections.filter((section) => !known.includes(section.key));
 		if (!added.length) continue;
 		const file = join(CACHE, 'lessons', `${lesson.id}.json`);
 		await mkdir(join(file, '..'), { recursive: true });
 		const before =
 			known.length && (await download(`lessons/${lesson.id}.json`, file))
-				? await readJson<LessonNarration>(file)
+				? await readJson<Partial<LessonNarration>>(file)
 				: undefined;
 		const narration: LessonNarration = {
 			voice,
 			model,
-			blocks: before?.voice === voice && before.model === model ? before.blocks : {}
+			sections: before?.voice === voice && before.model === model ? (before.sections ?? {}) : {}
 		};
-		for (const block of added) narration.blocks[block.key] = await timingsOf(block.key);
+		for (const section of added) narration.sections[section.key] = await timingsOf(section.key);
 		await writeFile(file, JSON.stringify(narration));
 		await upload(`lessons/${lesson.id}.json`, file, 'application/json');
-		index.lessons[lesson.id] = Object.keys(narration.blocks);
+		index.lessons[lesson.id] = Object.keys(narration.sections);
 		await saveIndex();
-		console.log(`  narrated ${lesson.id}: ${added.length} new blocks`);
+		console.log(`  narrated ${lesson.id}: ${added.length} new sections`);
 	}
 }
 
