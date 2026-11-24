@@ -2,7 +2,15 @@
 	import type { MarkerElement, MarkerSeekEvent } from '@mia-cx/marker';
 	import { mount, unmount, untrack } from 'svelte';
 	import ListenButton from './ListenButton.svelte';
-	import { blockWords, type LessonNarration, narratedSections, sectionKey, sectionText, wordAt } from './narration.ts';
+	import {
+		blockWords,
+		type LessonNarration,
+		narratedSections,
+		sectionKey,
+		sectionText,
+		TLDR,
+		wordAt
+	} from './narration.ts';
 	import { volume } from './volume.svelte.ts';
 
 	/** A jump to a word starts this many seconds early, so its first sound isn't cut off. */
@@ -21,6 +29,8 @@
 	type Voiced = {
 		key: string;
 		blocks: Element[];
+		/** Where the section's button goes: its first block, or the TL;DR box it's read from. */
+		opener: Element;
 		/** How many words each block reads, so a word in the recording maps to its block. */
 		counts: number[];
 		/** Every word's start and end in the recording, flat as `[start0, end0, …]`. */
@@ -45,7 +55,9 @@
 			narratedSections(root).map(async (blocks) => {
 				const key = await sectionKey(sectionText(blocks).text, narration.voice, narration.model);
 				const timings = narration.sections[key];
-				return timings ? [{ key, blocks, counts: blocks.map((el) => blockWords(el).length), timings }] : [];
+				if (!timings) return [];
+				const opener = blocks[0].closest(TLDR) ?? blocks[0];
+				return [{ key, blocks, opener, counts: blocks.map((el) => blockWords(el).length), timings }];
 			})
 		);
 		return found.flat();
@@ -68,30 +80,31 @@
 		};
 	});
 
-	/** Each section's height in px, from its first block's top to its last block's bottom. */
+	/** Each section's height in px, from its opener's top to the bottom of whichever ends lower, it or the last block. */
 	let spans = $state.raw<number[]>([]);
 	$effect(() => {
 		const root = body;
 		const voiced = sections;
 		if (!root || !voiced.length) return;
 		const observer = new ResizeObserver(() => {
-			spans = voiced.map(
-				({ blocks }) =>
-					(blocks.at(-1) as Element).getBoundingClientRect().bottom - blocks[0].getBoundingClientRect().top
-			);
+			spans = voiced.map(({ blocks, opener }) => {
+				const box = opener.getBoundingClientRect();
+				return Math.max(box.bottom, (blocks.at(-1) as Element).getBoundingClientRect().bottom) - box.top;
+			});
 		});
 		observer.observe(root);
 		return () => observer.disconnect();
 	});
 
-	// Each section's button goes inside its first block, on a rail as tall as the section, so it sticks within it.
+	// Each section's button goes inside its opener, on a rail as tall as the section, so it sticks within it.
 	$effect(() => {
 		const voiced = sections;
 		const buttons = untrack(() =>
 			voiced.map((section, i) =>
 				mount(ListenButton, {
-					target: section.blocks[0],
-					anchor: section.blocks[0].firstChild ?? undefined,
+					target: section.opener,
+					// In a heading or paragraph the button comes first; a TL;DR box spaces its children, so it goes last.
+					anchor: section.opener === section.blocks[0] ? (section.opener.firstChild ?? undefined) : undefined,
 					props: {
 						get playing() {
 							return playing && current === i;

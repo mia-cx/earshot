@@ -65,10 +65,22 @@ export const blockWords = (block: Element): Word[] => {
 	return words;
 };
 
+/** The TL;DR callout, the one callout read aloud: a section of its own. */
+export const TLDR = '[data-kind="tldr"]';
+
+/** A heading or paragraph is one block; a list is one block per item; anything else is none. */
+const blocksOf = (el: Element) =>
+	/^(H2|H3|P)$/.test(el.tagName)
+		? [el]
+		: /^(UL|OL)$/.test(el.tagName)
+			? [...el.children].filter((li) => li.tagName === 'LI')
+			: [];
+
 /**
  * The sections a lesson body reads aloud, in reading order, each a list of blocks read one after
  * another. Anything that isn't a heading, paragraph or list breaks a section, as does a paragraph
- * with no words (an image), and every `##` starts one.
+ * with no words (an image), and every `##` starts one. The TL;DR is read as a section of its own:
+ * its one-line summary, then its points.
  */
 export const narratedSections = (body: Element): Element[][] => {
 	const sections: Element[][] = [[]];
@@ -76,15 +88,12 @@ export const narratedSections = (body: Element): Element[][] => {
 		if (sections.at(-1)?.length) sections.push([]);
 	};
 	for (const el of body.children) {
-		if (el.tagName === 'H2') end();
-		const blocks = /^(H2|H3|P)$/.test(el.tagName)
-			? [el]
-			: /^(UL|OL)$/.test(el.tagName)
-				? [...el.children].filter((li) => li.tagName === 'LI')
-				: [];
+		if (el.tagName === 'H2' || el.matches(TLDR)) end();
+		const blocks = el.matches(TLDR) ? [...el.children].flatMap(blocksOf) : blocksOf(el);
 		const voiced = blocks.filter((block) => blockWords(block).length);
 		if (!voiced.length) end();
 		else sections.at(-1)?.push(...voiced);
+		if (el.matches(TLDR)) end();
 	}
 	return sections.filter((section) => section.length);
 };

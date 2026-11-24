@@ -25,14 +25,15 @@ const lesson = page(`
 `);
 
 // Proves what a heading's button reads: the heading and the prose under it, lists included, through
-// subheadings, stopping at a callout, quote, table or image and before the next topic. Callouts, quotes
-// and tables stay silent, and words split by markup read as one.
+// subheadings, stopping at a callout, quote, table or image and before the next topic. The TL;DR is a
+// section of its own; other callouts, quotes and tables stay silent, and words split by markup read as one.
 it('reads a lesson body as sections of headings, paragraphs and list items', () => {
 	const { document } = parseHTML(lesson);
 	const sections = narratedSections(document.querySelector('[data-narration]') as Element).map((section) =>
 		section.map((block) => spokenText(blockWords(block)).text)
 	);
 	expect(sections).toEqual([
+		['The short version.', 'A point.'],
 		['Positioning is anyway the context that makes value obvious.'],
 		[
 			'Why it matters',
@@ -53,19 +54,20 @@ it('reads a lesson body as sections of headings, paragraphs and list items', () 
 it('voices each section as one text, with every word located in it', async () => {
 	const sections = await readLesson(lesson, 'voice', 'model');
 	expect(sections.map((s) => s.text)).toEqual([
+		'The short version.\n\nA point.',
 		'Positioning is anyway the context that makes value obvious.',
 		'Why it matters.\n\nThree reasons:\n\nIt sets the price.\n\nIt picks the buyer.\n\nThe first reason.\n\nPrice follows category.',
 		'After the trick.',
 		'Next topic.\n\nSecond paragraph, robots.txt included.'
 	]);
 	const words = (s: (typeof sections)[number]) => s.offsets.map((at, i) => s.text.slice(at, at + s.lengths[i]));
-	expect(words(sections[1])).toEqual(
+	expect(words(sections[2])).toEqual(
 		'Why it matters Three reasons: It sets the price. It picks the buyer. The first reason Price follows category.'.split(
 			' '
 		)
 	);
 	// Markup splits a word for the marker, as it does here, while the voice still reads "anyway".
-	expect(words(sections[0]).slice(0, 4)).toEqual(['Positioning', 'is', 'any', 'way']);
+	expect(words(sections[1]).slice(0, 4)).toEqual(['Positioning', 'is', 'any', 'way']);
 	// An entity doesn't: a browser keeps "buyer's" one text node, so it's one word, as the marker counts it.
 	const [entity] = await readLesson(page('<p>Your buyer&#39;s mind, an idea.</p>'), 'voice', 'model');
 	expect(words(entity)).toEqual(['Your', "buyer's", 'mind,', 'an', 'idea.']);
