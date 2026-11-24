@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { writeJson } from './storage.ts';
+	import { volume } from './volume.svelte.ts';
 
 	/**
 	 * Text size, spacing and font for this reader. Each choice is a `data-*` attribute on <html> that
 	 * `layout.css` reads; it's saved in this browser and applied before first paint by app.html.
+	 * The narration's volume is kept here too (`volume.svelte.ts`).
 	 */
 	const STORAGE_NAME = 'reader';
 
@@ -43,6 +45,7 @@
 	$effect(() => {
 		const { dataset } = document.documentElement;
 		for (const { key, options } of SETTINGS) chosen[key] = dataset[key] ?? options[0].value;
+		volume.restore();
 	});
 
 	const save = () => {
@@ -76,6 +79,19 @@
 			</div>
 		</fieldset>
 	{/each}
+	<div class="volume">
+		<label for="narration-volume">Narration volume</label>
+		<input
+			id="narration-volume"
+			type="range"
+			min="0"
+			max="1"
+			step="0.05"
+			value={volume.level}
+			aria-valuetext="{Math.round(volume.level * 100)}%"
+			oninput={(event) => volume.set(event.currentTarget.valueAsNumber)}
+		/>
+	</div>
 </div>
 
 <style>
@@ -162,7 +178,7 @@
 		gap: 0.4rem;
 	}
 
-	label {
+	.options label {
 		position: relative;
 		flex: 1 1 auto;
 		padding: 0.4rem 0.75rem;
@@ -190,9 +206,29 @@
 		}
 	}
 
-	input {
+	input[type='radio'] {
 		position: absolute;
 		opacity: 0;
 		pointer-events: none;
+	}
+
+	/* A plain slider in the ink colour, labelled like the groups above it. */
+	.volume {
+		display: grid;
+		gap: 0.4rem;
+		margin-top: 1rem;
+		& label {
+			font-size: 0.9rem;
+			color: var(--muted);
+		}
+		& input {
+			width: 100%;
+			accent-color: var(--ink);
+			cursor: pointer;
+			&:focus-visible {
+				outline: 3px solid var(--focus);
+				outline-offset: 2px;
+			}
+		}
 	}
 </style>

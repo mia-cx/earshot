@@ -3,6 +3,12 @@
 	import { mount, unmount, untrack } from 'svelte';
 	import ListenButton from './ListenButton.svelte';
 	import { blockWords, type LessonNarration, narratedSections, sectionKey, sectionText, wordAt } from './narration.ts';
+	import { volume } from './volume.svelte.ts';
+
+	/** A jump to a word starts this many seconds early, so its first sound isn't cut off. */
+	const PREROLL = 0.3;
+	/** Every start fades in over this many seconds, so it never clicks in mid-sound. */
+	const FADE_IN = 0.25;
 
 	/**
 	 * Reads a lesson aloud in Mia's voice (`scripts/narrate.ts`). Each section with audio (see
@@ -48,6 +54,7 @@
 	$effect(() => {
 		const root = body;
 		if (!root) return;
+		volume.restore();
 		let live = true;
 		load(lesson, root).then((found) => {
 			if (live) sections = found;
@@ -124,11 +131,22 @@
 	let output: AudioContext | undefined;
 	const latency = () => (output?.state === 'running' ? output.outputLatency || 0 : 0);
 
+	/** After a jump to a word, the highlight stays on it through the preroll, until its start is heard. */
+	let hold: { seconds: number; word: number } | undefined;
+
 	/** Highlights the word being heard. */
 	const sync = () => {
 		if (current < 0 || !audio || !body) return;
-		show(markerWord(current, wordAt(sections[current].timings, audio.currentTime - latency())));
+		const heard = audio.currentTime - latency();
+		if (hold && heard < hold.seconds) return show(hold.word);
+		hold = undefined;
+		show(markerWord(current, wordAt(sections[current].timings, heard)));
 	};
+
+	/** When the latest start began, for its fade-in. */
+	let started = 0;
+	/** The volume to play at now: the reader's volume, faded in after each start. */
+	const level = () => volume.level * Math.min(1, (performance.now() - started) / 1000 / FADE_IN);
 
 	/** Loads section `s` at `seconds` without playing it. */
 	const cue = (s: number, seconds = 0) => {
@@ -142,6 +160,9 @@
 
 	const play = (s: number, seconds = 0) => {
 		cue(s, seconds);
+		pausedBySelection = false;
+		started = performance.now();
+		if (audio) audio.volume = 0;
 		output ??= new AudioContext();
 		// Starting another section interrupts a pending play; that rejection is expected.
 		audio?.play().catch((error: unknown) => {
@@ -168,12 +189,13 @@
 		show(-1);
 	};
 
-	// While playing, the highlight follows the audio clock every frame.
+	// While playing, the highlight follows the audio clock every frame, and the volume fades in.
 	$effect(() => {
 		if (!playing) return;
 		output?.resume();
 		let frame = requestAnimationFrame(function tick() {
 			sync();
+			if (audio) audio.volume = level();
 			frame = requestAnimationFrame(tick);
 		});
 		return () => {
@@ -193,8 +215,10 @@
 					const index = word - root.wordIndexOf(block);
 					if (index >= 0 && index < counts[b]) {
 						const seconds = timings[(before + index) * 2];
-						if (playing) return play(s, seconds);
-						cue(s, seconds);
+						hold = { seconds, word };
+						const from = Math.max(0, seconds - PREROLL);
+						if (playing) return play(s, from);
+						cue(s, from);
 						shown = -1;
 						return show(word);
 					}
@@ -210,10 +234,20 @@
 		return () => root.removeEventListener('seek', onseek);
 	});
 
-	/** Selecting text in the lesson pauses, so the reader can read it. */
+	/** Whether selecting text paused the narration, so clearing the selection resumes it. */
+	let pausedBySelection = false;
+
+	/** Selecting text in the lesson pauses, so the reader can read it; clearing the selection resumes. */
 	const onselectionchange = () => {
 		const selection = getSelection();
-		if (playing && body && selection && !selection.isCollapsed && selection.containsNode(body, true)) audio?.pause();
+		const selecting = !!body && !!selection && !selection.isCollapsed && selection.containsNode(body, true);
+		if (selecting && playing) {
+			pausedBySelection = true;
+			audio?.pause();
+		} else if (!selecting && pausedBySelection) {
+			pausedBySelection = false;
+			if (current >= 0) resume(current);
+		}
 	};
 </script>
 
