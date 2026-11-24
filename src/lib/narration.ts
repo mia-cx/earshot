@@ -14,7 +14,7 @@
  */
 
 /** Bumped when extraction or the audio format changes, so every block is voiced afresh. */
-export const NARRATION_VERSION = 2;
+export const NARRATION_VERSION = 3;
 /** ElevenLabs output format, part of every key. */
 export const NARRATION_FORMAT = 'mp3_44100_128';
 

@@ -65,6 +65,9 @@ it('voices each section as one text, with every word located in it', async () =>
 	);
 	// Markup splits a word for the marker, as it does here, while the voice still reads "anyway".
 	expect(words(sections[0]).slice(0, 4)).toEqual(['Positioning', 'is', 'any', 'way']);
+	// An entity doesn't: a browser keeps "buyer's" one text node, so it's one word, as the marker counts it.
+	const [entity] = await readLesson(page('<p>Your buyer&#39;s mind, an idea.</p>'), 'voice', 'model');
+	expect(words(entity)).toEqual(['Your', "buyer's", 'mind,', 'an', 'idea.']);
 	expect(await readLesson('<html><body><p>Not a lesson.</p></body></html>', 'voice', 'model')).toEqual([]);
 });
 

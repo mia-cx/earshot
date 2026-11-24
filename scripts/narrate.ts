@@ -53,6 +53,9 @@ export const readLesson = async (html: string, voice: string, model: string): Pr
 	const { document } = parseHTML(html);
 	const body = document.querySelector('[data-narration]');
 	if (!body) return [];
+	// linkedom splits text at every entity (`buyer&#39;s` is three text nodes), where a browser keeps one
+	// node, and the marker counts words per text node: merge them, so both count the same words.
+	body.normalize();
 	return Promise.all(
 		narratedSections(body).map(async (blocks) => {
 			const spoken = sectionText(blocks);
