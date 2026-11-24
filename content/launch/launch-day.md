@@ -1,6 +1,6 @@
 ---
 title: Line up your launch-day voices
-order: 3
+order: 4
 description: Build a list of people who will quote your launch, each with their own angle.
 ---
 

@@ -7,7 +7,7 @@ description: Plan a launch demo that shows your product's biggest feat and prove
 > [!TLDR]
 > - Awe and surprise are among the strongest reasons people share. Your demo creates them.
 > - Show the most extreme thing your product can do, in a way nobody can dismiss as fake.
-> - In a feed, show the product, make it work without sound, and keep it short.
+> - In a feed, show the product, make it work without sound, and keep it short: about 45 seconds, opening on the result.
 
 ## The demo earns belief
 
@@ -38,10 +38,19 @@ Kunal Gandhi argues you should master video as a medium, whatever platform it la
 
 Meta's research backs the product part. In a [study of over 600 video ads](https://www.facebook.com/business/news/insights/capturing-attention-feed-video-creative), viewers remembered ads best when they showed the product and kept the message short. Meta notes that people watch feeds fast and without sound, so a feed video has to make sense on mute.
 
-> [!TRICK] Cut the demo for the feed
-> 1. Open on the extreme moment, not on a logo or a founder intro.
-> 2. Add captions or on-screen text so it works on mute.
-> 3. Cut anything that doesn't prove the feat.
+Leo (@leodev), in his free letter [lessons.sh](https://lessons.sh), counts a 45-second video at about 105 spoken words, so write every word before you record. An unscripted "hey everyone, so today I wanted to show you..." spends the seconds that decide whether anyone stays.
+
+> [!TRICK] Cut the demo to a 45-second clock
+> Leo's clock, after a breakdown by Farza and YC's Aaron Epstein:
+>
+> | Time | On screen |
+> | --- | --- |
+> | 0:00 to 0:03 | The payoff, already happening: the file mid-conversion, the terminal printing the result. No logo, no founder intro |
+> | 0:03 to 0:12 | The old painful way: six tabs, a slow upload bar, the messy config it replaces |
+> | 0:12 to 0:38 | The fast demo. Zoom in so a phone can read the text. Cut every pause, mouse trip and spinner |
+> | 0:38 to 0:45 | Freeze on the command or URL (`npx your-tool`), never a blank logo screen |
+>
+> Add captions or on-screen text so it works on mute, and have the repo or live link ready for the first reply.
 
 Start with a plain screen recording of the extreme moment. When you want it to look premium, see *Make product videos feel premium*.
 
@@ -67,3 +76,4 @@ Start with a plain screen recording of the extreme moment. When you want it to l
 - [@kunalvg: master video as a communication channel](https://x.com/kunalvg/status/2069756425468056032)
 - [@kunalvg: product previews and demo videos outperform](https://x.com/kunalvg/status/1985573315830772193)
 - [@kunalvg: launch videos and thirdweb's example](https://x.com/kunalvg/status/1685889947461402624)
+- [@leodev: lessons.sh #01, the 45-second demo script](https://lessons.sh)

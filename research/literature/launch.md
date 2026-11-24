@@ -41,6 +41,11 @@ Research behind `content/launch/`. Each lesson lists the principles it rests on 
 | Gandhi is a former Eigen Labs marketer | **supported** | his X bio ("Prev. @eigenlabs") |
 | Test a few channels cheaply, then focus on the one that works | **supported** | *Traction* ch. 2 |
 | Graham calls the Big Launch a tactic that "usually doesn't work"; all you need is an initial core of users | **supported** | Graham |
+| Three openers: the problem, the test you ran, the one-sentence capability; product named on line 2 | **one person's claim**, labelled (Leo) | lessons.sh #01 (`research/sources/lessons-sh-01.md`) |
+| A comparison people can check is useful, and useful content is shared more | **supported** in principle; the Sume blueprint is Leo's | Berger & Milkman; lessons.sh #01 |
+| Sume's markup list (Higgsfield 40%, fal 100%, Runway 414%, Sume 0%) on one video model | **one person's claim**, as reported by Leo | lessons.sh #01 |
+| Storage benchmark: 137.8K views; part 2 with the same format: 18.5K | **one person's claim**, labelled | lessons.sh #01 |
+| Launch something small every week | **supported** in principle (a launch only needs an initial core; the Big Launch usually fails); the weekly cadence is Leo's | Graham; lessons.sh #01 |
 
 ## Show the product at its extreme (`the-demo.md`)
 
@@ -57,6 +62,29 @@ Research behind `content/launch/`. Each lesson lists the principles it rests on 
 | Launches gain the most from video | **overstated**: Gandhi lists ignoring video in launches as a common mistake, not that launches gain most. Lesson now says so. | Gandhi post 1685889947461402624 |
 | Across 600+ video ads, recall was best when the ad showed the product and kept the message short | **supported** | Meta 2016 |
 | Feeds are watched fast and without sound | **supported** | Meta 2016 |
+| A 45-second video is about 105 spoken words | **one person's claim**, labelled (Leo) | lessons.sh #01 |
+| The 45-second clock: payoff by 0:03, old way to 0:12, demo to 0:38, end on the command | **one person's claim**, labelled (Leo, after Farza and Aaron Epstein); its "show the product early, keep it short" core is **supported** | Meta 2016; lessons.sh #01 |
+
+## Make your landing page look designed on purpose (`landing-page.md`)
+
+**Principles.** First impressions of a page's look form within milliseconds, and low visual complexity with a familiar (prototypical) layout reads as most appealing (Tuch et al.). Designing several options in parallel beats refining one at a time (Dow et al.). Interface motion should be short, and the more often it plays the shorter it should be (Laubheimer).
+
+Sources, read 2026-11-24: [Tuch, Presslaber, Stöcklin, Opwis & Bargas-Avila, *International Journal of Human-Computer Studies* (2012)](https://doi.org/10.1016/j.ijhcs.2012.06.003), via the [Google Research abstract page](https://research.google/pubs/the-role-of-visual-complexity-and-prototypicality-regarding-first-impression-of-websites-working-towards-understanding-aesthetic-judgments/) (ScienceDirect blocks scripts); [Dow, Glassco, Kass, Schwarz, Schwartz & Klemmer, *ACM TOCHI* 17(4) (2010)](https://hci.stanford.edu/publications/2010/parallel-prototyping/ParallelPrototyping2010.pdf), abstract on page 1; [Laubheimer, NN/g (2020)](https://www.nngroup.com/articles/animation-duration/). Lindgaard et al.'s 50 ms study (2006) was not opened (Taylor & Francis returned 403), so the lesson relies on Tuch et al. alone.
+
+| Claim | Verdict | Source that settles it |
+| --- | --- | --- |
+| 119 website screenshots; effects of complexity and prototypicality on appeal within 17 ms | **supported** (study 1: 119 screenshots at 50 to 1,000 ms; study 2: 17 to 50 ms) | Tuch et al. |
+| Low complexity and a familiar layout are judged most appealing | **supported** ("websites with low VC and high PT were perceived as highly appealing") | Tuch et al. |
+| "Stand out" should not mean an unfamiliar layout | **supported** in principle; reconciles Leo's "stand out" with Tuch et al. | Tuch et al. |
+| Most developer landing pages look the same; agents return the average template | **one person's claim**, labelled (Leo) | lessons.sh #02 |
+| Pick audience, style and palette first; lock them in the prompt | **one person's claim**, labelled (Leo) | lessons.sh #02 |
+| Novices designing web ads in parallel got more clicks, better expert ratings and more varied designs than serial | **supported** | Dow et al., abstract |
+| Five structurally different hero layouts, then combine | **one person's claim** (Leo); parallel exploration is **supported** | Dow et al.; lessons.sh #02 |
+| Build the core 70 to 80%, then one signature touch that fits | **one person's claim**, labelled (Leo) | lessons.sh #02 |
+| The four product/signature pairings | **one person's claim**, labelled as Leo's examples | lessons.sh #02 |
+| Most interface animations: 100 to 500 ms; at 500 ms "animations start to feel like a real drag" | **supported** (quotes match) | Laubheimer |
+| Respect reduce-motion settings | **supported** | Laubheimer |
+| One hero animation plus short hover states; no slow headline fade-ins | **one person's claim**, labelled (Leo) | lessons.sh #02 |
 
 ## Line up your launch-day voices (`launch-day.md`)
 

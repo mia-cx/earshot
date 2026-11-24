@@ -32,6 +32,17 @@ Launch agency founder Matt Epstein says launch comments rarely ask about feature
 > [!TRICK] Watch people scroll
 > Get on a subway or bus and watch people on their phones. Note the moment each one stops on a post, and what caught their eye. That is the filter your launch has to pass.
 
+> [!TRICK] Three first lines that stop strangers
+> Leo (@leodev), who launches developer tools on X and writes the free weekly letter [lessons.sh](https://lessons.sh), writes line 1 for someone who has never heard of the product. Pick the opener that fits:
+>
+> | Cut a first line like | Start with instead |
+> | --- | --- |
+> | "Introducing [name], a new open-source tool I built..." | The annoying problem it removes: "every online file converter makes you upload your files to a random server" |
+> | "Excited to announce v0.2 of our SDK with..." | The test you ran, and how many providers you measured |
+> | "Built a fast, lightweight library in Rust for..." | What someone can now do, in one sentence |
+>
+> Name the product on line 2. Say how to use it on line 3, in a few words: "right-click any file, pick a format, done".
+
 ## Give strangers something to add
 
 Quotes spread your launch, and strangers only quote when they have something to add. Announcements give them nothing to work with. Concrete material they can examine, dispute or try gives them a reason to chime in.
@@ -39,6 +50,16 @@ Quotes spread your launch, and strangers only quote when they have something to 
 Skip "Excited to announce our new platform" and show a specific demo. Turn a messy inventory spreadsheet into a working app, showing the input, the output and what you had to fix by hand. Those hand fixes make it believable and give people a detail to discuss.
 
 Before you publish, ask: **what could a stranger add to this?** If you can't answer, add something more specific. *Line up your launch-day voices* covers how to seed the angles they might take.
+
+Numbers work the same way. "Blazingly fast" and "way cheaper" give nobody anything to check, while a comparison people can verify is useful, and Berger and Milkman found useful content gets shared more.
+
+> [!TRICK] Make a comparison people can check
+> 1. Anchor on one workload everyone in your field knows. The Sume API launch didn't claim "up to 80% cheaper across models"; it compared prices on one popular video model.
+> 2. Stack the competitors' numbers in a vertical list (Higgsfield 40%, fal 100%, Runway 414%, Sume 0% markup). A vertical list reads in a second on a phone.
+> 3. Show the receipts: the Sume video walks through each competitor's pricing calculator on screen.
+> 4. Put the benchmark's code in the first reply, so skeptics can run it themselves.
+>
+> Free projects can do the same with latency, bundle size or hosting cost. Leo reports 137.8K views for his benchmark of 5 object storage providers from 6 regions.
 
 ## Plant the narrative before the copy
 
@@ -70,6 +91,8 @@ Gabriel Weinberg and Justin Mares teach the same habit in [*Traction*](https://l
 > [!RISK] One launch rarely makes a product
 > Paul Graham [calls the Big Launch](https://paulgraham.com/ds.html) a tactic that "usually doesn't work". All you need from a launch is an initial core of users, so plan the weeks after it, not just the day.
 
+**Launch something small every week.** The same kind of post can swing wildly on timing and who is online in its first 20 minutes. Leo's second storage benchmark, with the same hook and chart, got 18.5K views against the first one's 137.8K, by his count. A quiet day sinks a launch you spent three months on. With one small demoable piece a week, each launch adds people who recognise your name on the next.
+
 A launch is one moment. Your brand is what people see the rest of the year (see *Build a brand, not a viral hit*). The launch gets the spike, and your brand keeps the people who show up.
 
 > [!DO] Answer the narrative questions for your next launch
@@ -94,3 +117,4 @@ A launch is one moment. Your brand is what people see the rest of the year (see 
 - [@0xfJuan: give strangers something to add](https://x.com/0xfJuan/status/2114746175026798821)
 - [@kunalvg: launches as small go-to-markets](https://x.com/kunalvg/status/1685889947461402624)
 - [@kunalvg: adapting as a marketer, launch videos](https://x.com/kunalvg/status/2042111501608391080)
+- [@leodev: lessons.sh #01, first lines, checkable numbers and weekly launches](https://lessons.sh)
