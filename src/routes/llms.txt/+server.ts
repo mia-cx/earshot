@@ -1,5 +1,6 @@
 import { course } from '#lib/server/course.ts';
 import { SKILLS_PATH, skills } from '#lib/server/skills.ts';
+import { worksheets } from '#lib/server/worksheets.ts';
 
 export const prerender = true;
 
@@ -23,6 +24,12 @@ export const GET = ({ url }) => {
 		`The course's methods as agent skills. Install all of them with \`npx skills add ${url.origin}\`, or read any SKILL.md directly. Index: ${at(`${SKILLS_PATH}/index.json`)}`,
 		'',
 		...skills.map((s) => `- [${s.name}](${at(s.href)}): ${s.description}`),
+		'',
+		'## Worksheets',
+		'',
+		"Questions from the lessons, gathered for one goal. A reader's answers become a prompt for one of the skills above.",
+		'',
+		...worksheets.map((w) => `- [${w.title}](${at(w.href)}): ${w.summary} Uses ${w.skill.name}.`),
 		'',
 		...course.modules.flatMap((m) => [
 			`## ${m.number}. ${m.title}`,

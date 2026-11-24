@@ -24,6 +24,7 @@ To add sources: append to `links.txt`, scrape, analyse into a new batch file, pl
 - Lessons are plain markdown with GitHub-style callouts (`[!TLDR]`, `[!TRICK]`, `[!RISK]`, `[!DO]`), so they read fine on GitHub too.
 - Research leads, posts apply it. Where the research disputes a post, the lesson says so. Unverified numbers stay in, labelled as one person's claim. Risky tricks stay in with a concrete Watch out note; the reader decides.
 - Sources are credited and linked on every lesson: research first, then the posts.
+- Goal worksheets (`/worksheets/<slug>`, listed on the landing page) serve visitors who come for one job, like positioning or finding their audience. Each gathers questions the lessons already ask, so answers are shared, and fills a fixed, hand-written prompt that hands them to one of the skills. No AI writes the prompt.
 - Feedback without accounts: "Check my work" hands the lesson and the reader's answers to their own AI assistant. A small model running in the browser over WebGPU could give that feedback on the page later; until then the reader's assistant does it. Questions and ideas go to GitHub Discussions.
 
 ## State
