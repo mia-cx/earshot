@@ -68,7 +68,7 @@ If you sell audits, proposals or diagnostics, the first draft is a good worker j
 > Done looks like: my report template, with every finding tied to one of the client's own numbers. Cover every area in my framework, then rank the fixes, so this client gets their own order and not my standard one.
 > Tag each finding high, medium or low confidence, and list anything you couldn't check.
 > Save every draft to [Drive folder]. You have no email, chat, upload or web tool; I send everything to the client myself.
-> Ask me first before you: quote a price or fill a gap with an assumption.
+> Ask me first before you quote a price or fill a gap with an assumption.
 > ```
 > - Hunt's framework covers 8 areas: strategy, delivery, client management, team, quality, recruiting, operations, financials.
 > - Spend your 30 review minutes tracing every number back to the client's file.

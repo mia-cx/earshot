@@ -6,7 +6,7 @@ description: Define your onboarded event, find what brings users back, and messa
 
 > [!TLDR]
 > - Customers who stay are worth more every year, but new customers are what grow you. Plan for both.
-> - Define "onboarded" as one key action that shows a user got value, count them as activated once they repeat it on your expected rhythm, and build that first moment into the product.
+> - Define "onboarded" as one key action that shows a user got value, count users as activated once they repeat it on your expected rhythm, and build that first moment into the product.
 > - Trigger email and SMS on what people do, and hold 10% back to prove the messages add revenue.
 > - Check-ins say what happens next and by when. They don't wait for approval nobody needs to give.
 

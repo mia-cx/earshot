@@ -41,7 +41,7 @@ In [one vendor's data](https://arxiv.org/abs/2606.20065), "best X for Y" roundup
 
 ## Give writers evidence to cite
 
-Writers need sources. Publish the number nobody else has and they link to you. AI engines quote the same evidence: in [Pranjal Aggarwal and colleagues' GEO study](https://arxiv.org/abs/2311.09735) (KDD 2024), adding statistics, quotations or cited sources made a test AI engine's answers use 30 to 40% more of a page than before, counting words in sentences that cite it, weighted toward the top. That's a lift over the page's own baseline on a benchmark, not a share of real AI answers. Keyword stuffing didn't help.
+Writers need sources. Publish the number nobody else has and they link to you. AI engines quote the same evidence: in [Pranjal Aggarwal and colleagues' GEO study](https://arxiv.org/abs/2311.09735) (KDD 2024), adding statistics, quotations or cited sources made a test AI engine use 30 to 40% more of a page in its answers than before. They counted words in sentences that cite the page, weighted toward the top of the answer. That's a lift over the page's own baseline on a benchmark, not a share of real AI answers. Keyword stuffing didn't help.
 
 > [!TRICK] Publish statistics people can cite
 > - Pick a question your buyers need answered.

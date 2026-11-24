@@ -12,7 +12,7 @@ description: Find pages where the title loses clicks, write better ones, and tes
 
 ## Titles teach you fastest
 
-**Title tests give you more learning cycles per year than anything else in SEO.** Google notices a new title once it [recrawls and reprocesses the page](https://developers.google.com/search/docs/appearance/title-link), which takes a few days to a few weeks, and it may still show a different title link. Once yours shows, Search Console shows the effect soon after. A new article can take months to tell you anything.
+**Title tests give you more learning cycles per year than anything else in SEO.** Google notices a new title once it [recrawls and reprocesses the page](https://developers.google.com/search/docs/appearance/title-link), which takes a few days to a few weeks. Even then, Google may show a different title link. Once yours appears, Search Console shows the effect soon after. A new article can take months to tell you anything.
 
 Studies agree that position and title drive clicks. Brian Dean's [Backlinko study](https://backlinko.com/google-ctr-stats) of about 4 million results found that moving up one spot raised click rate by about a third on average, though moving from #10 to #9 made no significant difference. Its data predates AI Overviews. Once you rank, the title decides who earns the click.
 
@@ -103,7 +103,7 @@ If you want an answer before touching the page, you can buy one.
 > Maybe. Clicks are the right measure, because a new title often adds long-tail queries that raise impressions and lower click rate. But a before-and-after test can't rule out a season or a demand spike, even if you repeat it. Clicks went up; only a split test against unchanged pages shows the title caused it.
 
 > [!CHECK] Why do title tests teach you faster than new articles in SEO?
-> Google recrawls and reprocesses a page within days or weeks, so once it shows your new title, Search Console shows the effect fast, while a new article can take months to tell you anything.
+> Google recrawls and reprocesses a page within days or weeks, so once your new title appears, Search Console shows the effect fast, while a new article can take months to tell you anything.
 
 ## Sources
 

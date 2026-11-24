@@ -125,7 +125,7 @@ The head bot interviews you once, writes the shared brief, and each Monday score
 > - Drop paid posts and anything already in
 >   social/outliers.md.
 > - For each pick, run one more one-page search for its hook
->   or format without the outlier filter, to find the ones
+>   or format without the outlier filter, to find videos
 >   that flopped.
 >
 > SEND ME 5, HIGHEST SCORE FIRST
@@ -226,7 +226,7 @@ Trend Radar judges each trend on one test: whether your buyer would care. Size d
 > ```
 
 > [!RISK] Trending sounds may not be licensed
-> On TikTok, [businesses can't use the general music library](https://ads.tiktok.com/help/article/commercial-music-library?lang=en) for commercial posts, ads included. Use a track you've licensed yourself, or a song from the Commercial Music Library of pre-cleared songs. [Its songs vary by region and by placement](https://ads.tiktok.com/help/article/how-to-use-the-commercial-music-library), so check the song is available in your campaign's region and for the placement you plan. The prompt flags likely problems, but check the licence before you post.
+> On TikTok, [businesses can't use the general music library](https://ads.tiktok.com/help/article/commercial-music-library?lang=en) for commercial posts, ads included. Use a track you've licensed yourself, or a pre-cleared song from the Commercial Music Library. [Its songs vary by region and by placement](https://ads.tiktok.com/help/article/how-to-use-the-commercial-music-library), so check the song is available in your campaign's region and for the placement you plan. The prompt flags likely problems, but check the licence before you post.
 
 > [!TRICK] Comment Miner bot
 > ```

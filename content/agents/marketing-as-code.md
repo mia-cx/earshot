@@ -13,7 +13,7 @@ description: Turn one weekly marketing chore into a scheduled agent that reports
 
 ## Start with the simplest system
 
-People mix up two words. An automation follows fixed steps and calls a model at each step that needs one, sometimes several in a row. If no step needs a model, it's a plain script. An agent gets a goal and picks its own steps and tools. Anthropic's guide [*Building effective agents*](https://www.anthropic.com/engineering/building-effective-agents) draws the same line and says to find "the simplest solution possible", which may mean no agent at all.
+People mix up two words. An automation follows fixed steps and calls a model at each step that needs one, sometimes several calls in a row. If no step needs a model, it's a plain script. An agent gets a goal and picks its own steps and tools. Anthropic's guide [*Building effective agents*](https://www.anthropic.com/engineering/building-effective-agents) draws the same line and says to find "the simplest solution possible", which may mean no agent at all.
 
 Reach for an agent only when fixed steps fall short. [OpenAI's agent guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) gives three signs: the job needs judgement, its rules are too messy to maintain, or it reads unstructured text like emails and reviews. Otherwise, fixed steps are cheaper and more predictable.
 
