@@ -3,7 +3,7 @@ import { worksheets } from '#lib/server/worksheets.ts';
 
 export const prerender = true;
 
-/** Every indexable page. `/map`, `/review` and `/lab` are noindex, so they stay out. */
+/** Every page of the site. */
 export const GET = ({ url }) => {
 	if (url.hostname === 'sveltekit-prerender') {
 		throw new Error('Set SITE_URL to the public origin, e.g. SITE_URL=https://example.com pnpm build');
@@ -13,6 +13,9 @@ export const GET = ({ url }) => {
 		'/tricks',
 		'/sources',
 		'/resources',
+		'/map',
+		'/review',
+		'/lab',
 		...worksheets.map((w) => w.href),
 		...course.modules.map((m) => m.href),
 		...course.lessons.map((l) => l.href)

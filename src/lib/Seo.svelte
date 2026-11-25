@@ -12,8 +12,7 @@
 	/**
 	 * A page's search and share metadata: title, description, canonical URL, Open Graph and
 	 * structured data. The origin comes from `prerender.origin` in `vite.config.ts` (env `SITE_URL`).
-	 * Pages readers use privately (`/map`, `/review`, `/lab`) pass `noindex`, but still describe
-	 * themselves, since crawlers that follow links to them flag a missing description. Every page of
+	 * Every page is indexable except error pages, which pass `noindex`. Every page of
 	 * a staging build is noindex, so staging never competes with the live site in search.
 	 * `crumbs` mirrors the visible trail above the page (module, then lesson) as a BreadcrumbList.
 	 * Lessons pass `type="article"` and their own share `image`, described by `imageAlt`.

@@ -9,7 +9,7 @@
 	const names = Object.keys(diagrams).sort();
 </script>
 
-<Seo title="Diagram lab · Earshot" description="Every Earshot diagram at lesson width, in each module's colour." noindex />
+<Seo title="Diagram lab · Earshot" description="Every Earshot diagram at lesson width, in each module's colour." />
 
 <h1 class="text-3xl font-[800]">Diagram lab</h1>
 <div class="diagram-chips mt-4" role="group" aria-label="Module colour">
