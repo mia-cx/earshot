@@ -36,7 +36,8 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       # Staging stays out of search: every response, Markdown copies and skill files included, says
-      # noindex. The Cloudflare adapter serves a _headers file from the project root.
+      # noindex. The Cloudflare adapter serves a _headers file from the project root; this one
+      # replaces the committed file, which keeps only the files written for agents out of search.
       - name: Keep staging out of search
         if: inputs.environment == 'staging'
         run: |
