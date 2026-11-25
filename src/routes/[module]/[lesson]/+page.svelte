@@ -7,7 +7,8 @@
 	import Narrator from '#lib/Narrator.svelte';
 	import { progress } from '#lib/progress.svelte.ts';
 	import { review } from '#lib/review.svelte.ts';
-	import Seo, { maker } from '#lib/Seo.svelte';
+	import { maker, moduleId } from '#lib/schema.ts';
+	import Seo from '#lib/Seo.svelte';
 	import Worksheet from '#lib/Worksheet.svelte';
 
 	let { data } = $props();
@@ -107,8 +108,13 @@
 	schema={[
 		{
 			'@context': 'https://schema.org',
-			'@type': 'Article',
+			// The same node as the lesson in the course's structured data, so the two merge.
+			'@type': ['Article', 'LearningResource'],
+			'@id': new URL(data.lesson.href, page.url.origin).href,
 			headline: data.lesson.title,
+			name: data.lesson.title,
+			learningResourceType: 'Lesson',
+			isAccessibleForFree: true,
 			description: data.lesson.summary,
 			url: new URL(data.lesson.href, page.url.origin).href,
 			image: new URL(data.image, page.url.origin).href,
@@ -116,7 +122,7 @@
 			timeRequired: `PT${data.lesson.minutes}M`,
 			author: maker,
 			publisher: maker,
-			isPartOf: { '@type': 'WebSite', name: 'Earshot', url: new URL('/', page.url.origin).href },
+			isPartOf: { '@id': moduleId(page.url.origin, module) },
 			isBasedOn: data.basedOn
 		}
 	]}

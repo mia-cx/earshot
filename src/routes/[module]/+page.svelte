@@ -2,6 +2,8 @@
 	import Check from '#lib/Check.svelte';
 	import Diagram from '#lib/Diagram.svelte';
 	import { progress } from '#lib/progress.svelte.ts';
+	import { page } from '$app/state';
+	import { moduleCourse } from '#lib/schema.ts';
 	import Seo from '#lib/Seo.svelte';
 
 	let { data } = $props();
@@ -19,6 +21,7 @@
 	title="{module.title}: {module.lessons.length} short lessons · Earshot"
 	description="{module.summary} {module.lessons.length} short lessons, {minutes} minutes in all, free with no sign-up."
 	markdown={module.markdownHref}
+	schema={[{ '@context': 'https://schema.org', ...moduleCourse(page.url.origin, module, 'details') }]}
 	crumbs={[
 		{ name: 'Course map', href: '/map' },
 		{ name: module.title, href: module.href }

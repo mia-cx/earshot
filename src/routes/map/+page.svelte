@@ -5,6 +5,8 @@
 	import { progress } from '#lib/progress.svelte.ts';
 	import { review } from '#lib/review.svelte.ts';
 	import Route from '#lib/Route.svelte';
+	import { page } from '$app/state';
+	import { curriculum } from '#lib/schema.ts';
 	import Seo from '#lib/Seo.svelte';
 
 	let { data } = $props();
@@ -56,6 +58,7 @@
 <Seo
 	title="Your map · Earshot"
 	description="Your place in Earshot: the next lesson, every module's progress, review cards due, and a backup of your answers."
+	schema={[curriculum(page.url.origin, data.outline)]}
 />
 
 <h1 class="sr-only">Your map</h1>

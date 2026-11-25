@@ -4,7 +4,10 @@ declare global {
 	namespace App {
 		// interface Error {}
 		// interface Locals {}
-		// interface PageData {}
+		/** The root layout loads the course outline for every page. */
+		interface PageData {
+			outline: import('#lib/course.ts').Outline;
+		}
 		// interface PageState {}
 		// interface Platform {}
 	}

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { page } from '$app/state';
+	import { courseId, maker } from '#lib/schema.ts';
 	import Seo from '#lib/Seo.svelte';
 	import Worksheet from '#lib/Worksheet.svelte';
 
@@ -8,7 +10,24 @@
 	const form = $derived({ id: sheet.slug, title: sheet.title, questions: sheet.questions, sheet: sheet.questions });
 </script>
 
-<Seo title="{sheet.title}: a worksheet that becomes an agent prompt · Earshot" description={sheet.summary} />
+<Seo
+	title="{sheet.title}: a worksheet that becomes an agent prompt · Earshot"
+	description={sheet.summary}
+	schema={[
+		{
+			'@context': 'https://schema.org',
+			'@type': 'LearningResource',
+			name: sheet.title,
+			description: sheet.summary,
+			url: new URL(sheet.href, page.url.origin).href,
+			learningResourceType: 'Worksheet',
+			inLanguage: 'en',
+			isAccessibleForFree: true,
+			author: maker,
+			isPartOf: { '@id': courseId(page.url.origin) }
+		}
+	]}
+/>
 
 <article class="mx-auto mt-8 max-w-[40rem]">
 	<h1 class="text-4xl leading-[1.08] font-[800] tracking-tight text-balance sm:text-5xl">{sheet.title}</h1>
