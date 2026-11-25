@@ -20,7 +20,8 @@ To add sources: append to `links.txt`, scrape, analyse into a new batch file, pl
 - SvelteKit on Cloudflare Workers, every page prerendered. No accounts or database: progress lives in the reader's browser. The Worker leaves room for server features later.
 - `/` is a landing page for visitors; the reader's progress map is `/map`. Marketing pages follow the seo skills: one intent per page, title matching the H1, canonical, sitemap, robots.txt open to search and AI crawlers.
 - Svartz is the index, the app is the host: `content/` is a Svartz vault that indexes the lessons and writes a Markdown copy of each for agents, and the app renders every page with its own design. A full Svartz theme was ruled out: its three-column shell with a file explorer works against "start the next thing without deciding".
-- Agents get the course two ways: the gtm, seo and marketing-agents skills at `/.well-known/agent-skills/` (installable with `npx skills add <site>`), and `/llms.txt` with every lesson's Markdown copy.
+- Agents get the course two ways: the gtm, seo and marketing-agents skills at `/.well-known/agent-skills/` (installable with `npx skills add <site>`), and `/llms.txt` with every lesson's Markdown copy. Both stay out of search results (`_headers`); every page except error pages is indexable.
+- Every page carries the whole course as schema.org `Course` JSON-LD (`src/lib/schema.ts`): its modules as courses and their lessons, so a crawler that lands anywhere reads the full course. That costs about 5 KB gzipped per page.
 - Lessons are plain markdown with GitHub-style callouts (`[!TLDR]`, `[!TRICK]`, `[!RISK]`, `[!DO]`), so they read fine on GitHub too.
 - Research leads, posts apply it. Where the research disputes a post, the lesson says so. Unverified numbers stay in, labelled as one person's claim. Risky tricks stay in with a concrete Watch out note; the reader decides.
 - Sources are credited and linked on every lesson: research first, then the posts.

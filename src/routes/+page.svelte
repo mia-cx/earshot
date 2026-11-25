@@ -4,7 +4,8 @@
 	import Diagram from '#lib/Diagram.svelte';
 	import { progress } from '#lib/progress.svelte.ts';
 	import Route from '#lib/Route.svelte';
-	import Seo, { maker } from '#lib/Seo.svelte';
+	import { courseSummary, maker, moduleList } from '#lib/schema.ts';
+	import Seo from '#lib/Seo.svelte';
 
 	let { data } = $props();
 
@@ -17,9 +18,7 @@
 	$effect(() => {
 		document.documentElement.toggleAttribute('data-returning', progress.done.size > 0);
 	});
-	const description = $derived(
-		`${lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, grounded in research. One small task per lesson, free with no sign-up.`
-	);
+	const description = $derived(courseSummary(lessons.length));
 </script>
 
 <Seo
@@ -34,7 +33,8 @@
 			description,
 			inLanguage: 'en',
 			publisher: maker
-		}
+		},
+		moduleList(page.url.origin, data.outline)
 	]}
 />
 

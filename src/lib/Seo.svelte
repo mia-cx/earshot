@@ -1,7 +1,4 @@
 <script lang="ts" module>
-	/** Who makes Earshot, as the footer credits her: the author and publisher in structured data. */
-	export const maker = { '@type': 'Person', name: 'Mia', url: 'https://mia.cx' };
-
 	/** Describes the course share image, `static/og.png`. */
 	const IMAGE_ALT = 'Earshot: a free marketing course for builders with ADHD';
 
@@ -11,10 +8,12 @@
 
 <script lang="ts">
 	import { page } from '$app/state';
+	import { course } from './schema.ts';
 
 	/**
 	 * A page's search and share metadata: title, description, canonical URL, Open Graph and
-	 * structured data. The origin comes from `prerender.origin` in `vite.config.ts` (env `SITE_URL`).
+	 * structured data. Every page carries the whole course (`schema.ts`) ahead of its own `schema`.
+	 * The origin comes from `prerender.origin` in `vite.config.ts` (env `SITE_URL`).
 	 * Every page is indexable except error pages, which pass `noindex`. Every page of
 	 * a staging build is noindex, so staging never competes with the live site in search.
 	 * `crumbs` mirrors the visible trail above the page (module, then lesson) as a BreadcrumbList.
@@ -58,10 +57,11 @@
 	const absolute = (path: string) => new URL(path, page.url.origin).href;
 	const canonical = $derived(absolute(page.url.pathname));
 	const image = $derived(absolute(imagePath));
-	const all = $derived(
-		crumbs.length
+	const all = $derived([
+		course(page.url.origin, page.data.outline),
+		...schema,
+		...(crumbs.length
 			? [
-					...schema,
 					{
 						'@context': 'https://schema.org',
 						'@type': 'BreadcrumbList',
@@ -73,8 +73,8 @@
 						}))
 					}
 				]
-			: schema
-	);
+			: [])
+	]);
 	// `<` is escaped so content can never close the script tag early.
 	const json = (data: object) =>
 		`<script type="application/ld+json">${JSON.stringify(data).replace(/</g, '\\u003c')}<\/script>`;
