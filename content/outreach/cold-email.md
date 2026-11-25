@@ -34,6 +34,13 @@ So a list of 1,000 contacts that brings in 2 to 3 leads is working. In his Ramp 
 
 For replies, Brian Dean's [study of 12 million outreach emails](https://backlinko.com/email-outreach-study) found 8.5% got any response. Those were mostly SEO pitches from 2019, so use it as a rough guide.
 
+Some sending tools now rank your list by how likely each lead is to reply, so you email the likeliest first. Instantly says its ranking model, [PULSE-1](https://instantly.ai/pulse-1), gets 2.2 times more positive replies. That number comes from its own test on past campaigns: the top 20% of ranked leads got 56.2 positive replies per 1,000, against 25.7 for the whole list unranked. The best fifth of almost any sensible ranking beats the average, so it doesn't show the model beats a plain filter on company size and job title.
+
+> [!TRICK] Test a lead ranker before you trust it
+> 1. Pick how many people you can email this month, say 500.
+> 2. Take 500 from the tool's top ranks and 500 from your own filter, with the same offer and copy.
+> 3. Compare positive replies per 1,000 contacts. Keep the ranker only if it wins.
+
 ## Test the offer, not the words
 
 Cold email gives the fastest feedback on an offer of any channel. Ramp found its pitch this way: a card that saves money, with a number on it (its median customer cuts costs by 5%).
@@ -92,6 +99,7 @@ When someone replies with interest, **answer within 5 minutes**. The cheat sheet
 - [Brian Dean, *We Analyzed 12 Million Outreach Emails* (2019)](https://backlinko.com/email-outreach-study)
 - [Apple: Mail Privacy Protection](https://www.apple.com/legal/privacy/data/en/mail-privacy-protection/)
 - [James Oldroyd, Kristina McElheran and David Elkington, *The Short Life of Online Sales Leads* (2011)](https://scholarsarchive.byu.edu/facpub/9711/)
+- [Instantly: PULSE-1 (2026)](https://instantly.ai/pulse-1)
 - [FTC: CAN-SPAM Act compliance guide for business](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business)
 - [Yahoo: Sender best practices](https://senders.yahooinc.com/best-practices/)
 - [UK Information Commissioner's Office: Electronic mail marketing (PECR)](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/)

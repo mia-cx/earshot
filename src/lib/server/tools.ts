@@ -54,7 +54,7 @@ export const tools: Tool[] = [
 	{
 		name: 'Grok',
 		url: 'https://grok.com',
-		what: "Tag it under a long X post to digest it, or run the local SEO lesson's audit prompts in it.",
+		what: 'Tag it under a long X post, or paste in a long platform guide, and ask what the algorithm rewards.',
 		lesson: 'x/article-engine'
 	},
 
@@ -91,7 +91,7 @@ export const tools: Tool[] = [
 		url: 'https://instantly.ai/pulse-1',
 		what: 'Ranks your lead list by how likely each lead is to reply, so you contact the likeliest first. Only inside Instantly.',
 		lesson: 'outreach/cold-email',
-		note: 'Instantly\'s "2.2x more positive replies" comes from its own backtest: the top 20% of ranked leads against the unranked list, not against a simple fit filter. Test it on half your list.'
+		note: 'Instantly\'s "2.2x more positive replies" comes from its own backtest: the top 20% of ranked leads against the unranked list, not against a simple fit filter. The lesson shows how to test it against your own filter.'
 	},
 	{
 		name: 'LinkedIn Ad Library',
@@ -507,7 +507,7 @@ export const tools: Tool[] = [
 	{
 		name: 'TikTok Commercial Music Library',
 		url: 'https://ads.tiktok.com/resources/help/article/commercial-music-library',
-		what: 'Music cleared for business posts and ads on TikTok. Check the track is available in your region.',
+		what: 'Music cleared for business posts and ads on TikTok. Check the track is cleared for your region and for where you will use it.',
 		price: 'Free',
 		lesson: 'agents/social-research-team'
 	}
