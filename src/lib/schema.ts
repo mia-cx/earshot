@@ -1,8 +1,9 @@
 /**
  * Schema.org structured data for the course, so search engines and AI crawlers read Earshot as a
- * course. Every page carries `course` (`Seo.svelte`): the whole course with its modules as courses
- * of their own and their lessons in order. Lessons and worksheets add their own node and point back
- * to it by `@id`; the home page adds `moduleList`, the course list Google shows as a carousel.
+ * course. Every page carries `course` (`Seo.svelte`): what the course is, without its curriculum.
+ * Pages that show the curriculum add it, matching what the reader sees: `curriculum` on the home
+ * page and the map, `moduleCourse` with its lessons on a module page. Lessons and worksheets add
+ * their own node and point to their module or the course by `@id`.
  */
 import type { Outline } from './course.ts';
 
@@ -18,6 +19,7 @@ export const courseSummary = (lessons: number) =>
 export const courseId = (origin: string) => `${origin}/#course`;
 export const moduleId = (origin: string, module: Pick<Module, 'href'>) => `${origin}${module.href}#course`;
 
+const CONTEXT = 'https://schema.org';
 const duration = (minutes: number) => `PT${minutes}M`;
 const minutesIn = (module: Module) => module.lessons.reduce((n, l) => n + l.minutes, 0);
 
@@ -27,8 +29,29 @@ const free = {
 	offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD', category: 'Free' }
 };
 
-/** A module as a course of its own, without its lessons. */
-const moduleCourse = (origin: string, module: Module) => ({
+/** What the course is: its outcome, audience, cost and workload. */
+export const course = (origin: string, outline: Outline) => ({
+	'@context': CONTEXT,
+	'@type': 'Course',
+	'@id': courseId(origin),
+	name: 'Earshot',
+	description: courseSummary(outline.flatMap((m) => m.lessons).length),
+	url: `${origin}/`,
+	provider: maker,
+	author: maker,
+	educationalLevel: 'Beginner',
+	audience: { '@type': 'Audience', audienceType: 'Builders with ADHD' },
+	teaches: outline.map((m) => m.title),
+	...free,
+	hasCourseInstance: {
+		'@type': 'CourseInstance',
+		courseMode: 'Online',
+		courseWorkload: duration(outline.reduce((n, m) => n + minutesIn(m), 0))
+	}
+});
+
+/** A module as a course of its own, part of Earshot; `lessons` adds what its page lists. */
+export const moduleCourse = (origin: string, module: Module, lessons: 'titles' | 'summaries') => ({
 	'@type': 'Course',
 	'@id': moduleId(origin, module),
 	name: module.title,
@@ -36,55 +59,28 @@ const moduleCourse = (origin: string, module: Module) => ({
 	url: `${origin}${module.href}`,
 	provider: maker,
 	timeRequired: duration(minutesIn(module)),
-	...free
+	...free,
+	isPartOf: { '@id': courseId(origin) },
+	hasPart: module.lessons.map((l) => ({
+		'@type': 'LearningResource',
+		'@id': `${origin}${l.href}`,
+		name: l.title,
+		...(lessons === 'summaries' && { description: l.summary }),
+		url: `${origin}${l.href}`,
+		learningResourceType: 'Lesson',
+		timeRequired: duration(l.minutes)
+	}))
 });
 
-/** The whole course: every module, each with its lessons. */
-export const course = (origin: string, outline: Outline) => {
-	const lessons = outline.flatMap((m) => m.lessons);
-	return {
-		'@context': 'https://schema.org',
-		'@type': 'Course',
-		'@id': courseId(origin),
-		name: 'Earshot',
-		description: courseSummary(lessons.length),
-		url: `${origin}/`,
-		provider: maker,
-		author: maker,
-		educationalLevel: 'Beginner',
-		audience: { '@type': 'Audience', audienceType: 'Builders with ADHD' },
-		teaches: outline.map((m) => m.title),
-		...free,
-		hasCourseInstance: {
-			'@type': 'CourseInstance',
-			courseMode: 'Online',
-			courseWorkload: duration(lessons.reduce((n, l) => n + l.minutes, 0))
-		},
-		syllabusSections: outline.map((m) => ({
-			'@type': 'Syllabus',
-			name: m.title,
-			description: m.summary,
-			timeRequired: duration(minutesIn(m))
-		})),
-		hasPart: outline.map((m) => ({
-			...moduleCourse(origin, m),
-			isPartOf: { '@id': courseId(origin) },
-			hasPart: m.lessons.map((l) => ({
-				'@type': 'LearningResource',
-				'@id': `${origin}${l.href}`,
-				name: l.title,
-				description: l.summary,
-				url: `${origin}${l.href}`,
-				learningResourceType: 'Lesson',
-				timeRequired: duration(l.minutes)
-			}))
-		}))
-	};
-};
-
-/** The modules as a list of courses from one provider: what Google shows as a course carousel. */
-export const moduleList = (origin: string, outline: Outline) => ({
-	'@context': 'https://schema.org',
-	'@type': 'ItemList',
-	itemListElement: outline.map((m, i) => ({ '@type': 'ListItem', position: i + 1, item: moduleCourse(origin, m) }))
+/** Every module and its lessons, for the pages that show them all (home and the map). */
+export const curriculum = (origin: string, outline: Outline) => ({
+	'@context': CONTEXT,
+	'@id': courseId(origin),
+	syllabusSections: outline.map((m) => ({
+		'@type': 'Syllabus',
+		name: m.title,
+		description: m.summary,
+		timeRequired: duration(minutesIn(m))
+	})),
+	hasPart: outline.map((m) => moduleCourse(origin, m, 'titles'))
 });

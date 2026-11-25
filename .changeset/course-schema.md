@@ -2,4 +2,4 @@
 'earshot': minor
 ---
 
-Every page describes the course to search engines and AI crawlers as schema.org structured data: the whole course with its modules and lessons, each lesson as a learning resource, each worksheet as a worksheet, and the modules as a course list Google can show as a carousel.
+Search engines and AI crawlers read Earshot as a course: every page describes it as a free online course in schema.org structured data. The home page and the map add every module and lesson, each module page its lessons, and lessons and worksheets say which course they belong to.

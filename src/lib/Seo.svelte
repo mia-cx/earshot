@@ -12,7 +12,7 @@
 
 	/**
 	 * A page's search and share metadata: title, description, canonical URL, Open Graph and
-	 * structured data. Every page carries the whole course (`schema.ts`) ahead of its own `schema`.
+	 * structured data. Every page carries what the course is (`schema.ts`) ahead of its own `schema`.
 	 * The origin comes from `prerender.origin` in `vite.config.ts` (env `SITE_URL`).
 	 * Every page is indexable except error pages, which pass `noindex`. Every page of
 	 * a staging build is noindex, so staging never competes with the live site in search.

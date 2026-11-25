@@ -4,7 +4,7 @@
 	import Diagram from '#lib/Diagram.svelte';
 	import { progress } from '#lib/progress.svelte.ts';
 	import Route from '#lib/Route.svelte';
-	import { courseSummary, maker, moduleList } from '#lib/schema.ts';
+	import { courseSummary, curriculum, maker } from '#lib/schema.ts';
 	import Seo from '#lib/Seo.svelte';
 
 	let { data } = $props();
@@ -34,7 +34,7 @@
 			inLanguage: 'en',
 			publisher: maker
 		},
-		moduleList(page.url.origin, data.outline)
+		curriculum(page.url.origin, data.outline)
 	]}
 />
 
