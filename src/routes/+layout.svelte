@@ -48,6 +48,7 @@
 				Review{#if due}<span class="badge"><span class="sr-only">,</span> {due}<span class="sr-only"> due</span></span>{/if}
 			</a>
 			<a href="/tricks" aria-current={current('/tricks')} class="nav-link">Tricks</a>
+			<a href="/resources" aria-current={current('/resources')} class="nav-link">Resources</a>
 			<span class="text-muted tabular-nums max-sm:hidden">{progress.done.size}/{total} done</span>
 			<span class="flex">
 				<ReaderSettings />
@@ -92,6 +93,7 @@
 					<li><a href="/map" class="footer-link">Map</a></li>
 					<li><a href="/review" class="footer-link">Review</a></li>
 					<li><a href="/tricks" class="footer-link">Tricks</a></li>
+					<li><a href="/resources" class="footer-link">Resources</a></li>
 					<li><a href="/sources" class="footer-link">Sources and credits</a></li>
 					<li><a href="https://github.com/mia-cx/earshot/discussions" class="footer-link">Questions and ideas</a></li>
 				</ul>

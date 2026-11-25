@@ -24,6 +24,7 @@ To add sources: append to `links.txt`, scrape, analyse into a new batch file, pl
 - Lessons are plain markdown with GitHub-style callouts (`[!TLDR]`, `[!TRICK]`, `[!RISK]`, `[!DO]`), so they read fine on GitHub too.
 - Research leads, posts apply it. Where the research disputes a post, the lesson says so. Unverified numbers stay in, labelled as one person's claim. Risky tricks stay in with a concrete Watch out note; the reader decides.
 - Sources are credited and linked on every lesson: research first, then the posts.
+- `/resources` lists the tools the lessons use (`src/lib/server/tools.ts`), each tied to the lesson that teaches it, with a note when its recommender sells it or its claims are the vendor's own. Long lists of launch sites, directories and local listings stay in their lessons.
 - Goal worksheets (`/worksheets/<slug>`, listed on the landing page) serve visitors who come for one job, like positioning or finding their audience. Each gathers questions the lessons already ask, so answers are shared, and fills a fixed, hand-written prompt that hands them to one of the skills. No AI writes the prompt.
 - Feedback without accounts: "Check my work" hands the lesson and the reader's answers to their own AI assistant. A small model running in the browser over WebGPU could give that feedback on the page later; until then the reader's assistant does it. Questions and ideas go to GitHub Discussions.
 
@@ -31,6 +32,6 @@ To add sources: append to `links.txt`, scrape, analyse into a new batch file, pl
 
 Live on seo.mia.cx: 65 lessons (165 tricks) across 13 modules, each grounded in the research it cites (216 studies, books, guides and essays) and applied through free posts on X and one newsletter, lessons.sh. Public repo `mia-cx/earshot`. seo.mia.cx is the canonical address and the one we advertise: Google already lists unrelated AI-made pages for "earshot", so the name alone won't find the course. earshot.mia.cx serves the same pages without a redirect; their canonical URLs point to seo.mia.cx. Every push to main deploys the `earshot-staging` Worker to staging.seo.mia.cx; merging a Changesets release pull request deploys the `earshot` Worker to both production hostnames and tags the release.
 
-seo.mia.cx is in Google Search Console with its sitemap (79 pages) and in Bing Webmaster Tools, and each release sends the pages it changed to IndexNow. Cloudflare allows every crawler, AI crawlers included.
+seo.mia.cx is in Google Search Console with its sitemap (91 pages) and in Bing Webmaster Tools, and each release sends the pages it changed to IndexNow. Cloudflare allows every crawler, AI crawlers included.
 
 Next: watch Search Console and Bing until every lesson is indexed.
