@@ -1,5 +1,11 @@
 # earshot
 
+## 0.3.1
+
+### Patch Changes
+
+- 1a1af52: llms.txt, the Markdown copy of each page and the agent skill files stay out of search results, so a search lands on the page itself.
+
 ## 0.3.0
 
 ### Minor Changes
