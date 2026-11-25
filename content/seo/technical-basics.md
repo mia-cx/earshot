@@ -102,7 +102,7 @@ A third kind of bot fetches a page when a person asks the assistant about it: Ch
 
 ## Set up Bing too
 
-**Bing's index feeds Microsoft Copilot, and Bing shows where AI answers cited you.** Google doesn't. Bing's [AI Performance report](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/) lists citations across Copilot, Bing and some partners, with the searches behind them. Setup takes about ten minutes.
+**Bing's index feeds Microsoft Copilot, and Bing shows where AI answers cited you.** Google's [Generative AI report](https://support.google.com/webmasters/answer/16984139) shows which of your pages appeared in AI Overviews and AI Mode, but not the searches behind them. Bing's [AI Performance report](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/) lists citations across Copilot, Bing and some partners, with the searches behind them. Setup takes about ten minutes.
 
 > [!TRICK] Bing Webmaster Tools in ten minutes
 > 1. Sign in to Bing Webmaster Tools, open My Sites → Import, and import your site from Google Search Console. That [verifies the site and brings your sitemaps along](https://blogs.bing.com/webmaster/2019/9/Import-sites-from-Search-Console-to-Bing-Webmaster-Tools/).
@@ -137,6 +137,7 @@ This order comes from a case study of Granola's AI search work, relayed secondha
 - [web.dev: Web Vitals](https://web.dev/articles/vitals)
 - [Google Search Central: Introduction to robots.txt](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
 - [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
+- [Search Console Help: Generative AI performance report (Search)](https://support.google.com/webmasters/answer/16984139)
 - [Google Search Central: Google's common crawlers](https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers)
 - [Google Search Central: FAQ rich results removed (2026)](https://developers.google.com/search/updates)
 - [OpenAI: Overview of OpenAI crawlers](https://developers.openai.com/api/docs/bots)
