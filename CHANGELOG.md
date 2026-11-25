@@ -1,5 +1,17 @@
 # earshot
 
+## 0.3.0
+
+### Minor Changes
+
+- 6eb9f51: Nine worksheets for one goal each, from your positioning and your audience to where to find them, your go-to-market plan and your first marketing agent. Each gathers the questions the lessons ask, shares your answers with them, and copies a ready prompt that hands your answers to the matching agent skill. The landing page lists them under Start lesson 1, after the command that installs the skills.
+- 700189b: Add a Resources page listing 73 tools the lessons use, each with what it's for, its lesson, and a note when the person recommending it sells it.
+
+### Patch Changes
+
+- 8deb937: Search engines can index every page: your map, Review and the diagram lab join the sitemap. Only error pages stay out of search.
+- e82f872: Your map, Review and the diagram lab have a meta description, which Bing Webmaster Tools flagged as missing.
+
 ## 0.2.0
 
 ### Minor Changes
