@@ -21,7 +21,7 @@
 	title="{module.title}: {module.lessons.length} short lessons · Earshot"
 	description="{module.summary} {module.lessons.length} short lessons, {minutes} minutes in all, free with no sign-up."
 	markdown={module.markdownHref}
-	schema={[{ '@context': 'https://schema.org', ...moduleCourse(page.url.origin, module, 'summaries') }]}
+	schema={[{ '@context': 'https://schema.org', ...moduleCourse(page.url.origin, module, 'details') }]}
 	crumbs={[
 		{ name: 'Course map', href: '/map' },
 		{ name: module.title, href: module.href }

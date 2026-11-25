@@ -50,8 +50,11 @@ export const course = (origin: string, outline: Outline) => ({
 	}
 });
 
-/** A module as a course of its own, part of Earshot; `lessons` adds what its page lists. */
-export const moduleCourse = (origin: string, module: Module, lessons: 'titles' | 'summaries') => ({
+/**
+ * A module as a course of its own, part of Earshot. `lessons` matches what the page shows of each
+ * lesson: its title alone (home, map) or its details too, summary and minutes (the module page).
+ */
+export const moduleCourse = (origin: string, module: Module, lessons: 'titles' | 'details') => ({
 	'@type': 'Course',
 	'@id': moduleId(origin, module),
 	name: module.title,
@@ -65,10 +68,9 @@ export const moduleCourse = (origin: string, module: Module, lessons: 'titles' |
 		'@type': 'LearningResource',
 		'@id': `${origin}${l.href}`,
 		name: l.title,
-		...(lessons === 'summaries' && { description: l.summary }),
 		url: `${origin}${l.href}`,
 		learningResourceType: 'Lesson',
-		timeRequired: duration(l.minutes)
+		...(lessons === 'details' && { description: l.summary, timeRequired: duration(l.minutes) })
 	}))
 });
 
