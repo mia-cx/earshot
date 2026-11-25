@@ -18,7 +18,7 @@
 		document.documentElement.toggleAttribute('data-returning', progress.done.size > 0);
 	});
 	const description = $derived(
-		`${lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, grounded in marketing research and the best free posts on X. Short version first, one small task per lesson, no sign-up.`
+		`${lessons.length} short lessons on positioning, writing, launches, SEO and marketing with AI agents, grounded in research. One small task per lesson, free with no sign-up.`
 	);
 </script>
 
