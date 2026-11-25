@@ -4,6 +4,9 @@
 
 	/** Describes the course share image, `static/og.png`. */
 	const IMAGE_ALT = 'Earshot: a free marketing course for builders with ADHD';
+
+	/** Bing flags a description outside this many characters; Google cuts it off past the maximum. */
+	const DESCRIPTION_LENGTH = { min: 25, max: 160 };
 </script>
 
 <script lang="ts">
@@ -41,6 +44,16 @@
 		imageAlt?: string;
 	} = $props();
 
+	/** The description, checked as the page prerenders, so a page with one out of range fails the build. */
+	const summary = $derived.by(() => {
+		const length = description ? [...description].length : 0;
+		if (description && (length < DESCRIPTION_LENGTH.min || length > DESCRIPTION_LENGTH.max)) {
+			throw new Error(
+				`${page.url.pathname}: description is ${length} characters, outside ${DESCRIPTION_LENGTH.min}–${DESCRIPTION_LENGTH.max}`
+			);
+		}
+		return description;
+	});
 	const hidden = $derived(noindex || page.url.hostname.startsWith('staging.'));
 	const absolute = (path: string) => new URL(path, page.url.origin).href;
 	const canonical = $derived(absolute(page.url.pathname));
@@ -69,7 +82,7 @@
 
 <svelte:head>
 	<title>{title}</title>
-	{#if description}<meta name="description" content={description} />{/if}
+	{#if summary}<meta name="description" content={summary} />{/if}
 	{#if hidden}
 		<meta name="robots" content="noindex" />
 	{:else}
@@ -80,7 +93,7 @@
 		<meta property="og:site_name" content="Earshot" />
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:title" content={title} />
-		{#if description}<meta property="og:description" content={description} />{/if}
+		{#if summary}<meta property="og:description" content={summary} />{/if}
 		<meta property="og:url" content={canonical} />
 		<meta property="og:image" content={image} />
 		<meta property="og:image:width" content="1200" />
