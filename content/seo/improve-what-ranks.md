@@ -9,6 +9,7 @@ description: Use Search Console data to add missing answers to pages Google alre
 > - Search Console shows which queries a page gets seen for but doesn't answer. Add those answers.
 > - Answer the main question in the first two paragraphs, and link pages where a reader wants to go next.
 > - Give Claude your data and a playbook so it can run these checks every week.
+> - After a core update, wait a week past the rollout before you compare. Only large drops need work.
 
 ## Start with pages Google already trusts
 
@@ -56,6 +57,24 @@ Give changes time to show up. Google's [SEO Starter Guide](https://developers.go
 - Update old prices and screenshots.
 - Merge pages that cover the same thing, and redirect the old URLs to the merged one.
 - Rewrite weak titles (see *Test titles for quick wins*).
+
+## Measure a core update drop before you fix it
+
+Several times a year Google makes broad changes to how it ranks pages, called core updates. [Google says](https://developers.google.com/search/docs/appearance/core-updates) they "don't target specific sites or individual web pages", and a page that drops isn't necessarily bad: other pages may now serve the search better. The [Search Status Dashboard](https://status.search.google.com/) lists each update with its start and end dates.
+
+After the November 2026 update, posts on X said sites built on mass-produced AI content were hit hardest. The evidence so far is two domains Glenn Gabe [shared while they dropped](https://www.seroundtable.com/google-november-2026-core-update-ranking-volatility-42543.html), while other site owners reported AI-written pages outranking theirs. Google didn't say the update targeted AI content. Its spam policies already treat pages mass-produced to rank as scaled content abuse, "no matter how it's created" (see *Build the pages buyers check before paying*).
+
+> [!TRICK] Read a core update drop
+> From Google's core update guide, plus one check for AI answers:
+> 1. Wait until the Search Status Dashboard shows the update finished, then at least one more full week.
+> 2. In Search Console, compare that week with the week before the rollout started. Check Web, Image, Video and News separately. First check Google's [data anomalies list](https://support.google.com/webmasters/answer/6211453): a logging error can fake a drop.
+> 3. Open Performance → Generative AI too. Jam (@spreadjam), who sells an AI-search tool, reads it this way: clicks down while AI Overview and AI Mode impressions hold means you still appear in AI answers, so look for pages that lost rankings or clicks. Then rerun the buyer questions you track (see *Track the questions buyers ask AI*), starting with the pages closest to revenue. Where a competitor replaced you, read their cited page for what yours skipped.
+> 4. Small drop, like position 2 to 4: change nothing. Google advises against editing content that already performs well.
+> 5. Large drop, like 4 to 29: answer Google's [self-assessment questions](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) for the whole site, not just the page, and look at what now outranks your hardest-hit pages. Ask someone unconnected to the site to answer them too.
+> 6. Improve those pages properly, for example by rewriting or restructuring them. Skip quick fixes, like removing an element because you heard it hurts SEO.
+
+> [!RISK] Delete only what can't be saved
+> Google calls deleting content "a last resort". If you're thinking of deleting whole sections, Google reads that as a sign they were written for search engines first, and removing those can help the rest of the site. Recovery can take several months, sometimes until the next core update, and Google guarantees none.
 
 ## Answer the question up front
 
@@ -143,6 +162,12 @@ These checks repeat, so hand them to an agent with a written playbook. Borja Fat
 - [Google Search Central: Ask Google to recrawl your URLs](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl)
 - [Search Console Help: Performance report data discrepancies](https://support.google.com/webmasters/answer/17010575)
 - [Search Console Help: URL Inspection tool](https://support.google.com/webmasters/answer/9012289)
+- [Google Search Central: Google Search's core updates and your website](https://developers.google.com/search/docs/appearance/core-updates)
+- [Google Search Status Dashboard](https://status.search.google.com/)
+- [Search Console Help: Data anomalies in Search Console](https://support.google.com/webmasters/answer/6211453)
+- [Search Console Help: Generative AI performance report (Search)](https://support.google.com/webmasters/answer/16984139)
+- [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- [Barry Schwartz, Search Engine Roundtable, *Google November 2026 core update ranking volatility* (2026)](https://www.seroundtable.com/google-november-2026-core-update-ranking-volatility-42543.html)
 - [Amy Schade, Nielsen Norman Group, *Inverted Pyramid: Writing for Comprehension* (2018)](https://www.nngroup.com/articles/inverted-pyramid/)
 - [Google Search Central: Control your snippets in search results](https://developers.google.com/search/docs/appearance/snippet)
 - [Google Search Central: SEO link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)
@@ -151,3 +176,4 @@ These checks repeat, so hand them to an agent with a written playbook. Borja Fat
 - [@borjafat: running SEO with Claude and Search Console](https://x.com/borjafat/status/2119227612258054502)
 - [@NicholasDulait: the weekly positions 5 to 15 loop](https://x.com/NicholasDulait/status/2120063043614716174)
 - [@TheoAGI: the one SEO/GEO playbook distilled from 66 articles](https://x.com/TheoAGI/status/2120163220312699025)
+- [@spreadjam: checking AI answers after the November 2026 core update](https://x.com/spreadjam/status/2125294993413972179)

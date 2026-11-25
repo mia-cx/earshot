@@ -28,7 +28,7 @@ For each question, ask:
 
 A page can climb in Google and barely move in ChatGPT, or gain AI mentions while organic traffic stays flat. [Mahe Chen and colleagues at the University of Toronto](https://arxiv.org/abs/2509.08919) found AI engines pick sources very differently from Google, and from each other. Assume good SEO means good AI visibility and you'll miss both gaps, so keep two sets of numbers.
 
-Search Console won't split them for you: Google counts [AI Overviews and AI Mode traffic](https://developers.google.com/search/docs/appearance/ai-features) inside the ordinary "Web" report.
+Search Console splits out only part of it. Its [Generative AI report](https://support.google.com/webmasters/answer/16984139) (Performance → Generative AI) counts how often your pages appeared in AI Overviews and AI Mode, by page, country, date and device. It shows impressions, not the searches behind them. Clicks from [AI Overviews and AI Mode](https://developers.google.com/search/docs/appearance/ai-features) stay inside the ordinary "Web" totals, so you can't see what Google's AI sends you.
 
 **Each AI needs its own column too.** In one Ramp test, Claude passed on an exact offer with its link and step-by-step instructions, Perplexity mentioned it vaguely, and ChatGPT read the same pages but mentioned the offer 0 times in 32 days.
 
@@ -90,6 +90,7 @@ Skip the script on day one. Ten questions asked by hand in a spreadsheet get you
 - [Mahe Chen, Xiaoxuan Wang, Kaiwen Chen and Nick Koudas, *Generative Engine Optimization: How to Dominate AI Search* (2025)](https://arxiv.org/abs/2509.08919)
 - [Pranjal Aggarwal et al., *GEO: Generative Engine Optimization* (2024)](https://arxiv.org/abs/2311.09735)
 - [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
+- [Search Console Help: Generative AI performance report (Search)](https://support.google.com/webmasters/answer/16984139)
 - [Microsoft Bing: Introducing AI Performance in Bing Webmaster Tools](https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/)
 - [Jeremy Howard, *The /llms.txt file* (2024)](https://llmstxt.org/)
 - [@wespreadjam: Granola's buyer-decision workflow for AI search](https://x.com/wespreadjam/status/2115568290307469548)
