@@ -12,6 +12,7 @@ export const GET = ({ url }) => {
 		'/',
 		'/tricks',
 		'/sources',
+		'/resources',
 		...worksheets.map((w) => w.href),
 		...course.modules.map((m) => m.href),
 		...course.lessons.map((l) => l.href)
