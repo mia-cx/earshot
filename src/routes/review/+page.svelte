@@ -81,7 +81,6 @@
 <Seo
 	title="Review · Earshot"
 	description="Recall the check cards from Earshot lessons you finished. Cards you get right come back after 3, 7, 16, then 35 days."
-	noindex
 />
 
 <div class="mx-auto max-w-2xl">
