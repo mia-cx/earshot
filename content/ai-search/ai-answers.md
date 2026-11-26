@@ -50,7 +50,7 @@ Analytics undercounts AI. **Add "How did you hear about us?" to your signup form
 > [!TRICK] Measure AI search for free
 > Skip paid visibility trackers at first. From TheoAGI's playbook:
 > 1. Write 15 to 30 real buyer questions.
-> 2. Run each one at least twice per engine, logged out: ChatGPT, Claude, Perplexity, Gemini.
+> 2. Run each one at least twice per engine: ChatGPT, Claude, Perplexity, Gemini. Stay logged out where you can, so memory and personalisation stay out. Claude needs an account: use a fresh chat with [web search on](https://support.claude.com/en/articles/10684626-enable-and-use-web-search) and note the run as signed in. If an admin has turned web search off for your workspace, mark Claude unavailable, not as a miss.
 > 3. Log brands named and URLs cited in separate columns. Being cited and being recommended are two different numbers.
 > 4. Under about 100 AI visits a month, report counts, not percentages.
 > 5. Add Bing's [AI Performance report](https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/) for Copilot citations and the searches behind them (setup in *Get your site found at all*).
@@ -91,6 +91,7 @@ Skip the script on day one. Ten questions asked by hand in a spreadsheet get you
 - [Pranjal Aggarwal et al., *GEO: Generative Engine Optimization* (2024)](https://arxiv.org/abs/2311.09735)
 - [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
 - [Microsoft Bing: Introducing AI Performance in Bing Webmaster Tools](https://blogs.bing.com/webmaster/2026/2/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview/)
+- [Claude Help Center: Enable and use web search](https://support.claude.com/en/articles/10684626-enable-and-use-web-search)
 - [Jeremy Howard, *The /llms.txt file* (2024)](https://llmstxt.org/)
 - [@wespreadjam: Granola's buyer-decision workflow for AI search](https://x.com/wespreadjam/status/2115568290307469548)
 - [@wespreadjam: Ramp's questions for finding AI gaps](https://x.com/wespreadjam/status/2117333079106932897)

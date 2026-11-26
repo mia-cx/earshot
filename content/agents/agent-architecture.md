@@ -55,7 +55,7 @@ Anthropic's [context guide](https://www.anthropic.com/engineering/effective-cont
 
 A blocking tool call leaves the agent deaf until it finishes. Run long tools in the background instead: replace `run()` with `start()` (returns "Started" at once) and `stop()`, and deliver results as new messages. DeepSeek has built this but hasn't turned it on by default.
 
-Pair that with durable state so a crash or multi-day approval doesn't wipe out a run. Sharma suggests a durable workflow engine like Temporal to resume from the exact step. Anthropic [built the same](https://www.anthropic.com/engineering/multi-agent-research-system) for its research agents because "agents are stateful and errors compound", making a restart from scratch slow and costly.
+Pair that with durable state so a crash or multi-day approval doesn't wipe out a run. Sharma suggests a durable workflow engine like Temporal, which resumes a crashed run where it stopped. Anthropic [built the same](https://www.anthropic.com/engineering/multi-agent-research-system) for its research agents because "agents are stateful and errors compound", making a restart from scratch slow and costly. One catch: a step that was mid-call when the run crashed [starts again from the beginning](https://docs.temporal.io/activities), so make every paid or outbound step safe to repeat. Check for its earlier result before you pay or send again.
 
 Keep the agent in the cloud and its tools where they live. Store state in a database, run on stateless cloud compute, and reach your machines through a thin daemon. Your laptop sleeping no longer stops it, and a reconnecting device runs its queued tasks.
 
@@ -92,5 +92,6 @@ Fix it in the structure, not the prompt: give the coordinator no tools to do the
 - [Nelson F. Liu et al., *Lost in the middle: how language models use long contexts* (2023)](https://arxiv.org/abs/2307.03172)
 - [Lingjiao Chen, Matei Zaharia, James Zou, *FrugalGPT* (2023)](https://arxiv.org/abs/2305.05176)
 - [OpenAI: A practical guide to building agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)
+- [Temporal docs: Activities](https://docs.temporal.io/activities)
 - [@DeepSeekHarness: super-agent architecture](https://x.com/DeepSeekHarness/status/2116857257245987236)
 - [@suraj_sharma14: model routing and durable workflows](https://x.com/suraj_sharma14/status/2118682313479573689)

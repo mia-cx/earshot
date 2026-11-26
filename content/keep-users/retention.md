@@ -1,12 +1,12 @@
 ---
 title: Keep the users you get
 order: 1
-description: Define your onboarded event, find what brings users back, and message on behaviour.
+description: Define when a user is onboarded, find what brings users back, and message on behaviour.
 ---
 
 > [!TLDR]
 > - Customers who stay are worth more every year, but new customers are what grow you. Plan for both.
-> - Define "onboarded" as one key action that shows a user got value, count users as activated once they repeat it on your expected rhythm, and build that first moment into the product.
+> - Define "onboarded" as a key action that shows a user got value, still repeated on your expected rhythm weeks after sign-up. Build the first time they do it, the "aha" moment, into the product.
 > - Trigger email and SMS on what people do, and hold 10% back to prove the messages add revenue.
 > - Check-ins say what happens next and by when. They don't wait for approval nobody needs to give.
 
@@ -18,22 +18,24 @@ Customers who stay get more profitable each year. [Fred Reichheld's research at 
 
 Keeping customers still won't grow you on its own. [A 2014 study by Erica Riebe, Byron Sharp and colleagues at the Ehrenberg-Bass Institute](https://ideas.repec.org/a/eee/jbrese/v67y2014i5p990-997.html) found that growing and shrinking brands differed mostly in how many new customers they won, not in how many they lost.
 
-## Define onboarded, then count activated
+## Define onboarded as a habit, not a click
 
-Define "onboarded" as **one key action that shows a user got value**. In @kunalvg's crypto examples it's "wallet connected" or "first transaction". For a writing app it might be "document shared".
+Define "onboarded" as **a key action, repeated at the rhythm you expect**. The key action is the one that shows a user got value. For a writing app it might be "document shared".
 
-A single click misses half the picture: how often. [Casey Winters, who led growth at Pinterest and Grubhub](https://www.caseyaccidental.com/p/why-onboarding-is-the-most-crucial-part-of-your-growth-strategy), counts a user as activated only when they still do that key action on your expected rhythm, weeks after sign-up. Pinterest used "saved a pin every week, four weeks after sign-up".
+The first time a user does it is the **first value event**, the "aha" moment. @kunalvg's crypto examples are of this kind: "wallet connected" or "first transaction". One click shows value once, not that the user keeps getting it.
+
+[Casey Winters, who led growth at Pinterest and Grubhub](https://www.caseyaccidental.com/p/why-onboarding-is-the-most-crucial-part-of-your-growth-strategy), counts a user as onboarded, or activated, only when they still do the key action at your expected rhythm, weeks after sign-up. Pinterest counted "weekly savers four weeks after signup". Where users take longer to settle, he uses an early sign instead: Grubhub counted a second order within 30 days of the first.
 
 1. Pick the key action: the one that only happens when someone got value.
 2. Pick the rhythm from the offline habit you replace. Ordering takeaway by phone is monthly, so Grubhub aimed for monthly orders.
-3. Watch each month's sign-ups over time. Activated users are the ones still doing it at that rhythm.
-4. Build the first "aha" moment into the product with whoever builds it, so new users feel the value before they leave.
+3. Watch each month's sign-ups over time. Onboarded users are the ones still doing it at that rhythm.
+4. Build the first value event into the product with whoever builds it, so new users feel the value before they leave.
 
 Kunal argues that smoother onboarding alone puts you ahead of 90% of projects. That's his read of crypto, though the point holds: most teams spend their effort getting people in, not on what happens next.
 
 ## Know why people stay and why they leave
 
-Retention takes as much planning as acquisition, so answer these questions early, starting with your onboarded event:
+Retention takes as much planning as acquisition, so answer these questions early, starting with your key action and its rhythm. Finish the onboarded sentence with both. Below, an activated user means an onboarded one:
 
 > [!FORM] Your retention plan
 > 1. Which single action means a new user got value? Finish the sentence: "A user is onboarded when they…"
@@ -88,11 +90,11 @@ If you sell a service or a membership, weekly check-ins are part of retention. *
 > Ask me first before you: send any message, move a deadline, cut a deliverable or touch a price.
 > ```
 
-> [!DO] Write your onboarded event
-> Fill in the first three questions of your retention plan above: your onboarded event, how many of last month's sign-ups did it, and the rhythm that counts as activated. Download the plan and put the activated number at the top of your roadmap.
+> [!DO] Define when a user is onboarded
+> Fill in the first three questions of your retention plan above: your key action, how many of last month's sign-ups did it at least once, and the rhythm that counts as onboarded. Download the plan and put the share of sign-ups still doing it at that rhythm at the top of your roadmap.
 
 > [!CHECK] In retention, how do you define "onboarded"?
-> As one key action that shows a user got value. Count them as activated only once they keep doing it at the rhythm you expect, such as "saved a pin every week, four weeks after sign-up".
+> As a habit: a key action that shows a user got value, still repeated at the rhythm you expect weeks after sign-up, such as Pinterest's weekly savers four weeks after sign-up. The first time they do it is the first value event, the "aha" moment.
 
 > [!CHECK] You send emails triggered by what customers do. How do you prove they add revenue?
 > Hold out a random 10% of customers who receive nothing, fix the test's size and length up front, then compare revenue between the two groups at the end.

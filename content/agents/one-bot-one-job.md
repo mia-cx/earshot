@@ -78,7 +78,7 @@ Before the first real run, ask the bot to describe its plan. If it misread the j
 
 One clean run only proves the easy case. Run the job manually on 3 different inputs, fixing the charter each time, before you schedule it.
 
-Three runs is a minimum, not proof. Anthropic started testing its agents on about 20 real requests. The review ladder in *Check the work before it ships* catches what three runs miss.
+Three runs is a minimum, not proof. Anthropic started testing its agents on about 20 real requests. Three runs catch a misread job, not rare failures. After you schedule the bot, the review ladder in *Check the work before it ships* sets how much of its work you review, and the charter's pass/fail lines check the costly mistakes on every run.
 
 > [!TRICK] Your first week with a new bot
 > Dry-run prompt:

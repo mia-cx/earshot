@@ -24,7 +24,7 @@
 		{
 			name: 'Onboarding',
 			question: 'Do new users reach value fast?',
-			done: 'One event defines “onboarded”, a rhythm of repeating it defines “activated”, and a first “aha” moment is built into the product.',
+			done: 'A key action repeated on a set rhythm defines “onboarded”, and the first time a user does it, the “aha” moment, is built into the product.',
 			modules: keepAndConvert
 		},
 		{

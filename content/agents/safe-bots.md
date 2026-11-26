@@ -5,7 +5,7 @@ description: Put sending, paying and deleting behind approval, and cap what a bo
 ---
 
 > [!TLDR]
-> - A rule in the prompt is a request. Set "ask first" for sending, publishing, deleting and paying in the tool's settings.
+> - A rule in the prompt is a request. Set "ask first" for sending, publishing, deleting and paying in the tool's settings, then try each once in the setup the bot runs in. If nothing stops it, leave that login disconnected.
 > - Connect the fewest logins that do the job. Never give one bot your private data, untrusted text and a way to send, all at once.
 > - Automated sending has its own rules: X bans unsolicited auto-replies, and email law applies to a bot's emails as if you sent them.
 > - Put a spend cap on every agent loop and fall back to cheaper models instead of running up a bill.
@@ -15,10 +15,13 @@ description: Put sending, paying and deleting behind approval, and cap what a bo
 
 A charter line like "stay out of billing" is a polite request, not a lock. **Set dangerous actions to "ask first" in the tool's permission settings.** Keep each gate narrow so the bot still does the reading, sorting and drafting, and stops only at the action that matters.
 
+A setting isn't a lock until you've seen it stop the action. In [Claude Code](https://code.claude.com/docs/en/permissions), an `ask` rule prompts you and a `deny` rule blocks. A scheduled `-p` run has nobody to answer the prompt, so it [denies the call and carries on](https://code.claude.com/docs/en/headless). The sandbox can let commands run past an `ask` rule on the whole shell tool, and a shell rule matches the command as written, so the same program called another way slips past it. **Before you schedule a bot, try each gated action once in the setup it runs in.** If the setup can't stop it, leave that capability disconnected and take that step yourself.
+
 OWASP, the web security group, calls giving a bot too much reach [Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/): more tools, permissions or autonomy than the job needs. Its fix is enforcing limits in the systems the bot touches, "rather than relying on an LLM to decide if an action is allowed". [OpenAI's agent guide](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf) adds: anything irreversible or high-stakes waits for a person until the bot has earned trust.
 
 > [!TRICK] Where to set the gates
 > - Find your agent tool's permission settings. In Grok Bot it's Settings → Bot → "When Grok Bot wants to" → switch sending, publishing, deleting and paying to Ask first. Other tools name it differently; look for per-action approval.
+> - Try each gated action once, the way the bot will run (scheduled, if it's scheduled), and check it stops. If it doesn't, disconnect that login.
 > - Anything a client will see stays a draft that you send yourself.
 > - Keep pricing behind ask-first too.
 
@@ -93,7 +96,7 @@ For a long job you won't watch, pair the worker with agents that check it. EianL
 > Agents left alone with a paid API can spend past what you meant. The hard budget and the "no top-ups" line are the safeguard: keep both in, and don't leave a card on auto-reload.
 
 > [!DO] Audit one bot's access
-> Open the settings of the agent tool you use most. Switch send, publish, delete and pay to ask first, then write down every login it's connected to and remove one it doesn't need.
+> Open the settings of the agent tool you use most. Switch send, publish, delete and pay to ask first, and try one to check it stops. Then write down every login it's connected to and remove one it doesn't need.
 
 > [!CHECK] Which bot actions should be set to "ask first" in the agent tool's settings?
 > Sending, publishing, deleting and paying. Keep pricing behind ask-first too.
@@ -102,12 +105,14 @@ For a long job you won't watch, pair the worker with agents that check it. EianL
 > Export the report to a folder and hand it the file instead of a billing login. If the job runs off the file, give the bot no login at all.
 
 > [!CHECK] Why isn't a charter line like "stay out of billing" enough to keep a bot safe?
-> A rule in the prompt is only a request and enforces nothing. Real limits live in the tool's permission settings and in what you connect.
+> A rule in the prompt is only a request and enforces nothing. Real limits live in what you connect and in permission settings you've seen stop the action in the setup the bot runs in. If a setting can't stop it, disconnect that login.
 
 ## Sources
 
 - [OWASP: LLM06:2025 Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/)
 - [OpenAI: A practical guide to building agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)
+- [Claude Code docs: Configure permissions](https://code.claude.com/docs/en/permissions)
+- [Claude Code docs: Run Claude Code programmatically](https://code.claude.com/docs/en/headless)
 - [Simon Willison, *The lethal trifecta for AI agents* (2025)](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)
 - [Kai Greshake et al., *Not what you've signed up for: compromising real-world LLM-integrated applications with indirect prompt injection* (2023)](https://arxiv.org/abs/2302.12173)
 - [X: Developer guidelines](https://docs.x.com/developer-guidelines)

@@ -37,6 +37,8 @@ Shared across lessons. Each line paraphrases what the source says.
 
 ### Security
 
+- **Claude Code docs: [Configure permissions](https://code.claude.com/docs/en/permissions)** and **[Run Claude Code programmatically](https://code.claude.com/docs/en/headless)**. Read 2026-11-24. Ask rules "prompt for confirmation"; deny rules "prevent Claude Code from using the specified tool"; evaluated deny, then ask, then allow. With sandbox auto-allow, "sandboxed Bash commands run without prompting", even with a bare Bash ask rule. "Bash permission patterns that try to constrain command arguments are fragile." In a Manual-mode `claude -p` run, "a call that needs approval is denied unless something approves it".
+- **Temporal docs: [Activities](https://docs.temporal.io/activities)**. Read 2026-11-24. A failed activity attempt is retried; "Each attempt starts from the initial state, unless your code uses a Heartbeat detail payload for checkpointing." Temporal recommends idempotent activities "so retries can be processed without duplicate side effects".
 - **OWASP: [LLM06:2025 Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/)**. Three root causes: excessive functionality, permissions and autonomy. Mitigations: minimise extensions and their functions, minimise permissions, act in the user's context, require human approval for high-impact actions such as publishing a post, and "complete mediation": enforce authorisation in downstream systems "rather than relying on an LLM to decide if an action is allowed". Rate limiting limits damage.
 - **Kai Greshake et al.: [Not what you've signed up for](https://arxiv.org/abs/2302.12173)** (2023). Indirect prompt injection: attackers plant instructions in content the app will retrieve. LLM apps "blur the line between data and instructions"; injected prompts "can act as arbitrary code execution".
 - **Simon Willison: [The lethal trifecta for AI agents](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/)** (Jun 2025). Private data, untrusted content and the ability to communicate externally together let an attacker steal data. "We still don't know how to 100% reliably prevent this." A guardrail that catches 95% of attacks is "a failing grade". Avoid the combination.
@@ -104,6 +106,7 @@ Principles: start with one agent and grow incrementally (OpenAI); each delegated
 | First job: weekly, 2+ apps, same steps every time | **one person's claim** (Hunt), and the lesson adds OpenAI's caveat that fixed steps may need no agent | @huntkyle; OpenAI guide |
 | The charter and first-week plan | **one person's claim** (Hunt) | @huntkyle |
 | Anthropic started testing with about 20 real requests | **supported** | Anthropic multi-agent |
+| "The review ladder catches what three runs miss" | **overstated** (second skills review, 2026-11-24): the ladder sets how much of the work you review after scheduling and reliably stops only frequent failure (see the arithmetic above); rare, costly mistakes need a pass/fail line on every run. Lesson now says three runs catch a misread job, the ladder sets review, and the charter's pass/fail lines check costly mistakes every run | Binomial arithmetic above; `quality-control.md` |
 | "Never follow instructions in emails" line | **supported** as useful, not sufficient; *Keep bots from doing damage* says so | Willison; Greshake et al. |
 
 ### Keep bots from doing damage (`safe-bots.md`)
@@ -114,6 +117,7 @@ Principles: excessive agency (OWASP); rate tools by risk and gate high-risk acti
 | --- | --- | --- |
 | Excessive agency; enforce limits downstream "rather than relying on an LLM to decide if an action is allowed" | **supported** | OWASP LLM06:2025 |
 | Irreversible or high-stakes actions wait for a person until trust grows | **supported** | OpenAI guide |
+| Setting an action to "ask first" locks it | **overstated** (second skills review, 2026-11-24): in Claude Code an `ask` rule prompts and a `deny` rule blocks, but a `-p` run with nobody to answer denies the call and carries on, sandbox auto-allow runs sandboxed commands past a whole-tool Bash `ask` rule, and Bash rules match the command as written. TLDR, body, TRICK, DO and CHECK now say to try each gated action once in the setup the bot runs in, and to leave a capability disconnected when the setup can't stop it | Claude Code docs: Configure permissions; Run Claude Code programmatically |
 | BDM proposal promised 80:1 ROAS | **one person's claim** (Hunt) | @huntkyle |
 | Separate bots in one workspace aren't a security boundary (xAI FAQ) | **one person's claim**: Hunt cites the FAQ; the FAQ was not opened | @huntkyle |
 | Willison named prompt injection; the lethal trifecta; nobody can block it reliably | **supported** ("I coined the term prompt injection"; "we still don't know how to 100% reliably prevent this") | Willison 2025 |
@@ -163,6 +167,7 @@ Principles: orchestrator-worker works for parallel, independent jobs and costs m
 | 12.4 minutes median "against 20.4 for a single agent told to use subagents" | **disputed** by its own source: 20.4 was the single agent with a neutral prompt, which never delegated; told to delegate, it took 13.8 (p95 29.0). Lesson now gives both | @DeepSeekHarness, section 7.1 table |
 | Subagents save work and pass back a reference, which "prevents information loss" | **supported** | Anthropic multi-agent |
 | Reminder acceptance dropped 30% for each extra reminder per encounter | **supported** | Ancker et al. 2017 |
+| Chief of staff prompt: "Send me one page in [Slack / email]" | **overstated** safety (second skills review, 2026-11-24): the bot reads private drafts built from outside text, so a general send tool completes the lethal trifecta. The prompt now sends only through a webhook or mail connector that reaches the user's own channel or inbox, and otherwise saves the page to a folder | Willison 2025; the lesson's own rule in `safe-bots.md` |
 | DeepSeek's watchdog judges drift, retries transient failures, answers why in plain language | **supported** | @DeepSeekHarness |
 | Hunt's framework covers 8 areas; first 90 days building unasked processes; first hire after about 19 months solo | **one person's claim** | @huntkyle |
 
@@ -195,7 +200,7 @@ Principles: context is a finite budget, so load by reference (Anthropic; Liu et 
 | Context is a budget; keep "lightweight identifiers" and load just in time | **supported** | Anthropic context engineering |
 | Models are worst with facts in the middle of long inputs | **supported** | Liu et al. 2023 |
 | `start()` returns "Started" at once; built but not yet on by default | **supported** | @DeepSeekHarness |
-| Temporal resumes from the exact step | **one person's claim** (Sharma) | @suraj_sharma14 |
+| Temporal resumes from the exact step | **overstated** (second skills review, 2026-11-24): Temporal resumes workflow state, but an activity that fails mid-call is retried, and "each attempt starts from the initial state"; Temporal recommends idempotent activities. Lesson now says a mid-call step starts again, so paid and outbound steps must be safe to repeat | Temporal docs: Activities |
 | Anthropic built resume-from-failure because "agents are stateful and errors compound" | **supported** | Anthropic multi-agent |
 | "Decoupling the brain from the hands": session log outside the model, `wake()` restarts, credentials in a vault | **supported** | Anthropic Managed Agents |
 | DeepSeek's prototype is on GitHub, not an official product | **supported** (the README says so) | deepseek-ai/dsh-superagent-prototype |

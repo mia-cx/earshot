@@ -34,7 +34,7 @@ DeepSeek's team built the same split into an always-on agent called Router/Worke
 > - [Month-end sheet, on the 1st]
 > - The group chat, for anything a bot flagged
 >
-> Send me one page in [Slack / email], in this order:
+> Send me one page through [the Slack webhook or mail connector that reaches only my own channel or inbox]. If you have neither, save it to [folder] instead. Put things in this order:
 > 1. What needs my decision today. For each one: 1 problem, 3 options, 1 recommendation
 > 2. Drafts sitting in my review pile, oldest first, with links
 > 3. Anything off: a missing file, a number that moved more than [20]% since last week, a bot that skipped its run
@@ -52,7 +52,7 @@ DeepSeek's team built the same split into an always-on agent called Router/Worke
 > - You can message the other bots in the group chat to chase a missing piece.
 > - Ask me first before you contact a client or edit another bot's instructions.
 > ```
-> The folders it reads belong to the worker bots: the Auditor below, the Call Notes bot (*Turn one conversation into ten posts*), and the Check-ins and Month-End bots (*Keep and convert*).
+> The chief of staff reads private drafts built from other people's emails and pages, so it gets no tool that picks a recipient: only a webhook or connector that reaches you (see the lethal trifecta in *Keep bots from doing damage*). The folders it reads belong to the worker bots: the Auditor below, the Call Notes bot (*Turn one conversation into ten posts*), and the Check-ins and Month-End bots (*Keep and convert*).
 
 > [!DIAGRAM] bot-team
 

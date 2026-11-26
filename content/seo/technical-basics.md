@@ -96,8 +96,8 @@ A third kind of bot fetches a page when a person asks the assistant about it: Ch
 
 > [!RISK] Cloudflare can block bots for you
 > If your site runs behind Cloudflare, three settings change what bots see:
-> - **AI Crawler and Agent access policies** (Security → Settings → Bot traffic) split Search, Agent and Training controls. Setting Search to Block shuts out AI search bots. Setting Training to Disallow blocks training bots, but not bots that also do search.
-> - **Managed robots.txt:** with Bot Preference Sync on, Cloudflare [adds its own rules](https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/) to the top of your robots.txt whenever one of those policies blocks bots.
+> - **AI Crawler and Agent access policies** (Security → Settings → Bot traffic) split Search, Agent and Training controls. Setting Search to Block shuts out AI search bots. [Block on pages with ads](https://developers.cloudflare.com/bots/additional-configurations/block-ai-bots/) shuts them out of every page where Cloudflare detects ads. Setting Training to Disallow blocks training bots, but not bots that also do search.
+> - **Managed robots.txt:** with Bot Preference Sync on, Cloudflare [adds its own rules](https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/) to the top of your robots.txt whenever one of those policies is set to Block, Block on pages with ads, or Disallow.
 > - **Bot Fight Mode** challenges automated-looking traffic, and [WAF custom rules can't make exceptions to it](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/). One reading list (i365dev/awesome-seo) warns it can challenge legitimate crawlers. After launch, check Security → Analytics → Events for requests labelled Bot Fight Mode.
 
 ## Set up Bing too
@@ -143,6 +143,7 @@ This order comes from a case study of Granola's AI search work, relayed secondha
 - [Anthropic: Does Anthropic crawl data from the web?](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler)
 - [Perplexity: Perplexity crawlers](https://docs.perplexity.ai/guides/bots)
 - [Cloudflare: Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/bot-fight-mode/)
+- [Cloudflare: AI Crawler and Agent access policies](https://developers.cloudflare.com/bots/additional-configurations/block-ai-bots/)
 - [Cloudflare: Managed robots.txt](https://developers.cloudflare.com/bots/additional-configurations/managed-robots-txt/)
 - [Cloudflare: Crawler Hints](https://developers.cloudflare.com/cache/advanced-configuration/crawler-hints/)
 - [Bing Webmaster Blog: AI visibility insights in Bing Webmaster Tools (2026)](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/)
