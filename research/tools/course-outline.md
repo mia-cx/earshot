@@ -111,7 +111,7 @@ Summary: How the feed picks posts, what it rewards, and a routine that compounds
 
 ## 05-launch: "Launching"
 
-Summary: Give strangers a reason to care, then work the conversation that follows.
+Summary: Give strangers a reason to care, then turn the conversation into first customers.
 
 - `01-reasons-to-care.md` "Give strangers a reason to care"
   - A: Give strangers a reason to care in the first line
@@ -136,10 +136,13 @@ Summary: Give strangers a reason to care, then work the conversation that follow
   - B: Work the launch conversation as a team
   - B: Measure a launch by conversations, then run a second wave
 - `06-first-100-users.md` "Find your first 100 users"
+  - Sell it yourself, start with warm intros, and test who has an urgent problem before you automate (YC Startup School, via @itsalexvacca)
   - E: Post to 50 places for your first 100 users
   - C: Use directory and launch lists for discovery (only the software discovery, startup launch and AI/no-code lists; merge with E's list and remove duplicates)
   - C: Join only the Reddit threads your tracked buyer questions point to (only the community list and the "participate before promoting" rule)
-- `07-day-zero-week.md` "Your first week on a brand-new product"
+- `07-close-first-customers.md` "Close your first customers"
+  - Qualify on the first call, charge early, price on value, and agree how the deal gets signed (YC Startup School, via @itsalexvacca)
+- `08-day-zero-week.md` "Your first week on a brand-new product"
   - E: Follow a seven-day plan when you join a day-0 product
 
 ## 06-outreach: "Outreach"
