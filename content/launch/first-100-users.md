@@ -5,7 +5,7 @@ description: Pick the communities and launch sites where your first buyers alrea
 ---
 
 > [!TLDR]
-> - Recruit your first users by hand, in a few places at a time.
+> - Sell it yourself first. Start with people you know who need it now, and do your first outreach by hand.
 > - Treat the lists below as a menu, not a checklist. Test the few places your buyers already browse, then focus on the one that works.
 > - In communities, take part before you promote. Each one sets its own limit on self-promotion.
 > - Have an agent watch Reddit for people asking for what you make, and reply yourself within the hour.
@@ -15,7 +15,16 @@ description: Pick the communities and launch sites where your first buyers alrea
 
 Paul Graham puts it bluntly in [*Do Things That Don't Scale*](https://paulgraham.com/ds.html). "The most common unscalable thing founders have to do at the start is to recruit users manually." You can't wait for users to find you. Start narrow, like a fire you keep small until it's hot.
 
-Gabriel Weinberg and Justin Mares turn this into a method in [*Traction*](https://leananalyticsbook.com/wp-content/uploads/2014/08/Traction-1-3.pdf). They call it the Bullseye. List every channel, pick the three most promising, test each cheaply, then put your effort into the one that works. At any stage, they write, "one traction channel dominates".
+**Sell it yourself before you hire someone to sell it.** That's Gustaf Alströmer's advice in YC's *How to Get Your First Customers*. In the founder stories Max Kolysh collected, the first two or three customers almost always came through people the founders knew or were one introduction away from. Start there before setting up tools. See how Ramp did it in *Scale outbound without burning your market*.
+
+Write Pete Koomen's testable guess: "Customer X has problem Y, and we can solve it." YC would rather see 10 customers with a burning problem than 1,000 with a passing annoyance. If a buyer keeps putting off the decision, don't count on them to be an early adopter. Find someone who needs it now.
+
+> [!TRICK] Send at least 100 messages by hand
+> YC's Christina Gilbert recommends at least 100 individual outreaches, not 100 customers, before automating. Learn who replies and why. Kolysh puts tools like Apollo for lists and Clay for research in the next stage, roughly 10 to 50 customers, once you know who buys and have a pitch worth repeating.
+
+When someone takes the call, *Close your first customers* picks up from there.
+
+For finding buyers beyond your network, Gabriel Weinberg and Justin Mares offer a method in [*Traction*](https://leananalyticsbook.com/wp-content/uploads/2014/08/Traction-1-3.pdf). They call it the Bullseye. List every channel, pick the three most promising, test each cheaply, then put your effort into the one that works. At any stage, they write, "one traction channel dominates".
 
 ## Go where your buyers already look
 
@@ -118,6 +127,12 @@ Write that core once, then adapt the wording to each site's audience instead of 
 - [Hacker News: Show HN guidelines](https://news.ycombinator.com/showhn.html)
 - [Product Hunt: Launch FAQ and myths](http://help.producthunt.com/en/articles/17734646-8-launch-faq-and-myths)
 - [Google Search Central: Spam policies for Google web search](https://developers.google.com/search/docs/essentials/spam-policies)
+- [YC Startup School: Gustaf Alströmer, How to Get Your First Customers](https://www.youtube.com/watch?v=hyYCn_kAngI)
+- [YC Startup School: Max Kolysh, How to Get Your First 10 Customers](https://www.youtube.com/watch?v=_FBivfgOvuE)
+- [YC Startup School: Pete Koomen, Enterprise Sales](https://www.youtube.com/watch?v=0fKYVl12VTA)
+- [YC: Essential Startup Advice](https://www.ycombinator.com/blog/ycs-essential-startup-advice)
+- [YC Startup School: Christina Gilbert, 8 Ways To Improve Your Outbound Sales](https://www.ycombinator.com/library/ZA-8-ways-to-improve-your-outbound-sales)
+- [@itsalexvacca: YC's advice on getting your first 100 customers](https://x.com/itsalexvacca/status/2125696384003371454)
 - [@solyatic: 50 places to get your first 100 users](https://x.com/solyatic/status/2117540123294171201)
 - [@2whazzuup: 200 directories, launch platforms and communities](https://x.com/2whazzuup/status/2119247229601062993)
 - [@getcontextdev: Dench's hourly Reddit lead watch](https://x.com/getcontextdev/status/2124702311582986301)

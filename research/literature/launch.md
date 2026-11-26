@@ -141,6 +141,18 @@ Sources, read 2026-11-24: [Tuch, Presslaber, Stöcklin, Opwis & Bargas-Avila, *I
 | Product Hunt: no famous hunter needed; link straight to your product | **supported** | Product Hunt FAQ |
 | Google names low-quality directory links, excessive link exchanges and automated link creation as link spam | **supported** | Google spam policies |
 
+**YC additions.** [Gustaf Alströmer](https://www.youtube.com/watch?v=hyYCn_kAngI) says to sell before hiring and skip slow-moving prospects. [Max Kolysh](https://www.youtube.com/watch?v=_FBivfgOvuE) reports that the first two or three customers in the stories he collected were usually warm contacts and discusses Apollo and Clay for the roughly 10-to-50-customer stage. That's a rule of thumb, not a prerequisite. [YC's Essential Startup Advice](https://www.ycombinator.com/blog/ycs-essential-startup-advice) gives the 10-versus-1,000 comparison. [Pete Koomen](https://www.youtube.com/watch?v=0fKYVl12VTA) gives the customer/problem hypothesis. [Christina Gilbert](https://www.ycombinator.com/library/ZA-8-ways-to-improve-your-outbound-sales) recommends 100 or more manual outreach attempts, not 100 customers.
+
+## Close your first customers (`close-first-customers.md`)
+
+| Claim | Verdict | Source that settles it |
+| --- | --- | --- |
+| Qualify on the first call: problem, budget, who can buy; book a demo if there's a fit | **supported** | [Pete Koomen, Enterprise Sales](https://www.youtube.com/watch?v=0fKYVl12VTA) |
+| Listen about 70%, move past maybes, and ask for a commitment before building one more feature | **practitioner advice** | [Tyler Bosmeny, How to Sell](https://www.youtube.com/watch?v=xZi4kTJG-LE) |
+| Charge early; use a refund or opt-out instead of a B2B free trial | **practitioner advice** | [Gustaf Alströmer, How to Get Your First Customers](https://www.youtube.com/watch?v=hyYCn_kAngI) |
+| Agree the value with a champion; try 25% to 50% of value, with cost as a floor; if unsure, raise prices by 50% until price alone loses over a quarter of deals | **practitioner advice** | [Tom Blomfield, How To Price For B2B](https://www.youtube.com/watch?v=4hjiRmgmHiU) |
+| Ask what the champion can approve; agree pilot success metrics; use a 30- or 60-day opt-out; start SOC 2 early if needed; focus contract negotiation on material risks | **practitioner advice** | [Tom Blomfield, The Sales Playbook For Founders](https://www.youtube.com/watch?v=DH7REvnQ1y4) |
+
 ## Your first week on a brand-new product (`day-zero-week.md`)
 
 **Principles.** Positioning first: your chosen market frame sets context, and messaging follows from it (Dunford). Build traction in parallel with product from week one (Weinberg & Mares's 50% rule).
