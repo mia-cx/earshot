@@ -1,5 +1,16 @@
 # earshot
 
+## 0.4.0
+
+### Minor Changes
+
+- 7ebb162: Learn how to turn your first B2B sales calls into paid deals. The first 100 users lesson also covers warm intros and when to start using outreach tools.
+- 0106fcd: Search engines and AI crawlers read Earshot as a course: every page describes it as a free online course in schema.org structured data. The home page and the map add every module and lesson, each module page its lessons, and lessons and worksheets say which course they belong to.
+
+### Patch Changes
+
+- ea0209b: The home page's search description fits in 160 characters, so search results show it whole.
+
 ## 0.3.1
 
 ### Patch Changes
