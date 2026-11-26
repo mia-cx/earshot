@@ -77,6 +77,15 @@ Ryan's list puts that into practice:
 
 *Make the first line earn the second* covers the hook that gets someone to read far enough to share.
 
+> [!TRICK] Post a dense one-page summary as images
+> Kyle Jeong (@kylejeong) points to a format doing well on X in November 2026: one line saying whose advice it is, then two images, each a full page of short bullets.
+>
+> 1. Pick one talk, interview or case study worth reading, and name its source in the post, like "Gary Vee on how to win attention on every platform".
+> 2. Summarise it under short headings, three or four bullets each, black on white, readable on a phone.
+> 3. Paste the text into each image's description. [X allows 1,000 characters](https://help.x.com/en/using-x/write-image-descriptions); summarise if a page runs longer.
+>
+> Kyle credits dwell time. X's code does count it: how long a viewer is predicted to spend on a post is one small term in its [score](https://github.com/xai-org/x-algorithm/blob/main/xai-value-model/scoring.rs), next to opening a photo (0.05). In both his examples, more people saved the post than liked it.
+
 > [!FORM] Your share reasons
 > 1. For each of your last 5 posts, one line: why would someone send it to a friend or reply?
 > 2. The post with the weakest answer, rewritten as a new draft.
@@ -99,4 +108,7 @@ Ryan's list puts that into practice:
 - [xAI: history of the action weights file (GitHub)](https://github.com/xai-org/x-algorithm/commits/main/home-mixer/params/param.rs)
 - [Jonah Berger and Katherine L. Milkman, *What Makes Online Content Viral?* (2012)](https://journals.sagepub.com/doi/10.1509/jmr.10.0353)
 - [Penn Today: Q&A with Jonah Berger on *Contagious* (2013)](https://penntoday.upenn.edu/2013-04-18/interviews/qa-jonah-berger)
+- [xAI: X For You feed algorithm, how predictions become a score (GitHub)](https://github.com/xai-org/x-algorithm/blob/main/xai-value-model/scoring.rs)
+- [X Help Center: How to write great image descriptions](https://help.x.com/en/using-x/write-image-descriptions)
 - [@ryangrowthh: X's action weights and what they reward](https://x.com/ryangrowthh/status/2117684231983800732)
+- [@kylejeong: dense one-page summaries as images](https://x.com/kylejeong/status/2124612142536196324)
